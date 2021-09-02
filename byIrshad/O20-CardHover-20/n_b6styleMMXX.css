@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: darkblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: wheat;
+    overflow: hidden;
+}
+
+.container .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 170%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    transform: skewX(40deg);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card:hover::before {
+    left: -170%;
+    transition-delay: 1.5s;
+}
+
+.container .card img {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 2s;
+}
+
+.container .card:hover img {
+    width: 110%;
+    filter: grayscale(0%);
+}
+
+.container .card h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    margin: 5% 10%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    color: darkslategray;
+    background: white;
+    transform: perspective(500px) rotateX(90deg);
+    transform-origin: bottom;
+    transition: 0.5s;
+}
+
+.container .card:hover h2 {
+    transform: perspective(500px) rotateX(0);
+}
+
+.container .card ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container .card ul li {
+    list-style: none;
+    background: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transform-origin: left;
+    transform: perspective(500px) rotateY(90deg);
+    transition: 0.5s;
+}
+
+.container .card:hover ul li {
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.container .card:hover ul li:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.container .card:hover ul li:nth-child(2) {
+    transition-delay: 0.6s;
+}
+
+.container .card:hover ul li:nth-child(3) {
+    transition-delay: 1s;
+}

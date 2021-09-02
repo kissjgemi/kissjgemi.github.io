@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background: midnightblue;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background: darkslateblue;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-color: white;
+    transform: skew(2deg, 2deg);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.box:nth-child(1)::before,
+.box:nth-child(1)::after {
+    background: linear-gradient(315deg, #ff0057, #e64a19);
+}
+
+.box:nth-child(2)::before,
+.box:nth-child(2)::after {
+    background: linear-gradient(315deg, #89ff00, #00bcd4);
+}
+
+.box:nth-child(3)::before,
+.box:nth-child(3)::after {
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+}
+
+.box:nth-child(4)::before,
+.box:nth-child(4)::after {
+    background: linear-gradient(315deg, #ff0005, #ffc107);
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-color: white;
+    transform: skew(2deg, 2deg);
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(40px);
+}
+
+.box .glass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.box .content {
+    position: relative;
+    padding: 20px;
+    transform: translateY(60px);
+}
+
+.box .content h2 {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: rgba(255, 255, 255, 0.05);
+    transition: 0.5s;
+}
+
+.box:hover::before {
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    transform: skew(0);
+    transition: 0.5s;
+}
+
+.box:hover .glass {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    transition: 0.5s;
+}
+
+.box:hover .content h2 {
+    transform: translate(140px, -170px);
+    font-size: 5em;
+    color: rgba(255, 255, 255, 1);
+    transition: 0.5s;
+}
+
+.box .content h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.box .content p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.box .content a {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    color: #ffffff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.box:hover .content a {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.box .content a:hover {
+    color: #000000;
+    background-color: #ffffff;
+}

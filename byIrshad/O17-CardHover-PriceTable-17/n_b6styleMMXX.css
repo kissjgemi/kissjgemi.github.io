@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: indigo;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 750px;
+    display: flex;
+}
+
+.container .box {
+    position: relative;
+    width: 250px;
+    height: 750px;
+    transition: 0.5s;
+}
+
+.container .box:hover {
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0 5px 20px black;
+}
+
+.container .box .thumb {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container .box:nth-child(odd) .thumb {
+    bottom: 0;
+    left: 0;
+}
+
+.container .box:nth-child(1) .thumb {
+    background: gold;
+}
+
+.container .box:nth-child(2) .thumb {
+    background: thistle;
+}
+
+.container .box:nth-child(3) .thumb {
+    background: lightseagreen;
+}
+
+.container .box:nth-child(4) .thumb {
+    background: khaki;
+}
+
+.container .box .thumb img {
+    width: 100%;
+}
+
+.container .box .details {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    color: lightgoldenrodyellow;
+    overflow: hidden;
+}
+
+.container .box:nth-child(even) .details {
+    bottom: 0;
+    left: 0;
+}
+
+.container .box:nth-child(1) .details {
+    background: linear-gradient(145deg, cornflowerblue, deeppink);
+}
+
+.container .box:nth-child(2) .details {
+    background: linear-gradient(145deg, violet, orange);
+}
+
+.container .box:nth-child(3) .details {
+    background: linear-gradient(145deg, darkcyan, forestgreen);
+}
+
+.container .box:nth-child(4) .details {
+    background: linear-gradient(145deg, darkred, tomato);
+}
+
+.container .box .details .content {
+    position: absolute;
+    top: calc(50% + 16px);
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .box:hover .details .content {
+    top: 50%;
+}
+
+.container .box .details .content i.a1 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    font-size: 80px;
+    line-height: 150px;
+    color: lightgoldenrodyellow;
+    border-radius: 50%;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container .box .details .content.standard i.a1,
+.container .box .details .content.premium i.a1 {
+    transform: rotate(-45deg);
+}
+
+.container .box .details .content i.a1 {
+    background: linear-gradient(135deg, cornflowerblue, deeppink);
+}
+
+.container .box:nth-child(2) .details .content i.a1 {
+    background: linear-gradient(135deg, violet, orange);
+}
+
+.container .box:nth-child(3) .details .content i.a1 {
+    background: linear-gradient(135deg, darkcyan, forestgreen);
+}
+
+.container .box:nth-child(4) .details .content i.a1 {
+    background: linear-gradient(135deg, darkred, tomato);
+}
+
+.container .box .details .content h3 {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.container .box .details .content h1 {
+    padding: 16px 0;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.container .box .details .content ul {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.container .box .details .content ul li {
+    padding: 5px 0;
+}
+
+.container .box .details .content a {
+    display: inline-block;
+    padding: 5px 20px;
+    color: lightgoldenrodyellow;
+    border: 2px solid lightgoldenrodyellow;
+    text-decoration: none;
+    border-radius: 20px;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.container .box:hover .details .content a {
+    transform: scale(1);
+}
+
+.container .box .details .content a:hover {
+    font-weight: 600;
+    color: indigo;
+    background: lightgoldenrodyellow;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    .container .box {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: initial;
+        padding: 35px;
+    }
+    .container .box {
+        width: 50%;
+        height: 500px;
+        float: left;
+    }
+    .container .box .thumb {
+        display: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .container {
+        top: 0;
+        left: 0;
+        padding: 40px;
+        transform: translate(0);
+    }
+    .container .box {
+        width: 100%;
+        height: 500px;
+        float: none;
+    }
+}

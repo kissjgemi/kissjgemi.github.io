@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: darkorange;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    margin: 20px;
+    background: white;
+}
+
+.container .imgBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background: chocolate;
+}
+
+.container .imgBox::before {
+    content: 'Dino';
+    position: absolute;
+    top: 0;
+    left: 40px;
+    color: black;
+    opacity: 0.1;
+    font-size: 8em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.container .imgBox img {
+    position: relative;
+    width: 550px;
+    transform: rotate(-15deg);
+}
+
+.container .details {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+}
+
+.container .details h2 {
+    margin-left: 5%;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    line-height: 0.8em;
+    color: gray;
+}
+
+.container .details h2 span {
+    font-size: 0.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: darkgray;
+}
+
+.container .details p {
+    max-width: 80%;
+    margin-left: 15%;
+    text-align: justify;
+    font-weight: 200;
+    color: gray;
+    size: 15px;
+}
+
+.container .details h3 {
+    float: left;
+    margin-left: 5%;
+    margin-top: 25px;
+    font-size: 2.5em;
+    color: darkgray;
+}
+
+.container .details button {
+    float: right;
+    background: darkslateblue;
+    color: white;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 20px;
+    margin-right: 5%;
+    bottom: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 960px) {
+    .container {
+        height: auto;
+    }
+    .container .imgBox {
+        padding: 40px;
+        width: 100% !important;
+        height: auto;
+        text-align: center;
+    }
+    .container .imgBox img {
+        left: initial;
+        max-width: 100%;
+        transform: translateY(60px) rotate(-7.5deg);
+        z-index: 1;
+    }
+    .container .details {
+        width: 100% !important;
+        height: auto;
+        padding: 40px 20px 20px;
+    }
+    .container .details p {
+        max-width: 100%;
+        margin: 0;
+    }
+    .container .details h2,
+    .container .details h3 {
+        margin-left: 0;
+    }
+    .container .details button {
+        margin-right: 0;
+    }
+}

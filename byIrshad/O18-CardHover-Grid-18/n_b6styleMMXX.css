@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: wheat;
+}
+
+.container {
+    width: 80%;
+    margin: 150px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 40px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.container .card {
+    position: relative;
+    background: lightgrey;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.25);
+}
+
+.container .card .imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, tomato, goldenrod);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBox {
+    opacity: 0.5;
+}
+
+.container .card .imgBox img {
+    width: 100%;
+}
+
+.container .card .content {
+    position: absolute;
+    bottom: -100%;
+    padding: 20px;
+    width: 100%;
+    height: 55%;
+    text-align: center;
+    background: linear-gradient(0deg, darkslateblue, steelblue, transparent);
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    bottom: 0;
+}
+
+.container .card .content h2 {
+    margin: 0 0 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.container .card .content h2 span {
+    color: darkred;
+    font-size: 16px;
+}
+
+.container .card .content p {
+    margin: 0 0 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.container .card .content ul {
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .content ul li {
+    list-style: none;
+}
+
+.container .card .content ul li a {
+    color: white;
+    padding: 0 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
