@@ -1,0 +1,33 @@
+
+document.write('<sc'+'ript type="text/javascript" src="http://imgs.adverticum.net/scripts/doDocWrite.js"></sc'+'ript>');
+
+
+
+
+
+if ( !window.goAdverticumCached )
+	window.goAdverticumCached = '';
+
+
+
+
+
+		
+window.goAdverticumCached+='<!-- Iframe beépítés: ultraweb_osszes_190x60, 1625699 -->\r\n<script type=\"text\/javascript\">\r\n\/\/ <![CDATA[\r\n\tvar ord=Math.round(Math.random()*100000000);\r\n\tdocument.write(\'<iframe width=\"190\" height=\"60\" frameborder=\"0\" scrolling=\"no\" marginwidth=\"0\" marginheight=\"0\" src=\"http:\/\/ad.adverticum.net\/html.prm?zona=1625699&ord=\'+ord+\'\"><scr\'+\'ipt type=\"text\/javascript\" src=\"http:\/\/ad.adverticum.net\/js.prm?zona=1625699&nah=!ie&ord=\'+ord+\'\"><\\\/scr\'+\'ipt><\\\/iframe>\');\r\n\/\/ ]]>\r\n<\/script>\r\n<noscript><iframe width=\"190\" height=\"60\" frameborder=\"0\" scrolling=\"no\" marginwidth=\"0\" marginheight=\"0\" src=\"http:\/\/ad.adverticum.net\/html.prm?zona=1625699\"><a href=\"http:\/\/ad.adverticum.net\/click.prm?zona=1625699&nah=!ie\" target=\"_blank\" title=\"Kattintson a hirdetésre!\"><img border=\"0\" width=\"190\" height=\"60\" src=\"http:\/\/ad.adverticum.net\/img.prm?zona=1625699&nah=!ie\" alt=\"Hirdetés\" \/><\/a><\/iframe><\/noscript>';
+		
+
+
+window.goAdverticumWriteCached = function() {
+	document.write(window.goAdverticumCached);
+}
+
+if ( !window.goAdverticum ) {
+	if(!window.goAdverticum)document.write('<sc'+'ript src="http://imgs.adverticum.net/scripts/gwloader.js?ord='+Math.floor(Math.random()*1000000000)+'" type="text/javascript"><\/sc'+'ript>');
+} else if ( !window.goAdverticumPopup ){
+	window.goAdverticumWriteCached();
+	window.goAdverticumCached = null;
+}
+
+
+
+

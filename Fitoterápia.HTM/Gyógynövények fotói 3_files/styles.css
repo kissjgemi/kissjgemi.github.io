@@ -1,0 +1,149 @@
+body {
+	text-align: center;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 13px;
+	background-color: #1f1f1f;
+	color: #c0c0c0;
+}
+div {
+  margin-left: auto;
+  margin-right: auto; 
+  overflow: visible;
+}
+div.logo{
+  width: 680px;
+  position: relative;
+}
+div.logoLeft{
+  position: absolute;
+  left: 0px;
+}
+div.logoRight{
+  position: absolute;
+  right: 0px;
+}
+div.indexTopControls {
+  margin-top: 0px;  
+  margin-bottom: 20px;
+}
+div.indexTable {
+  margin-top: 0px;  
+  margin-bottom: 30px;
+}
+div.slideTopControls {
+  margin-top: 0px;  
+  margin-bottom: 0px;
+}
+div.slideImage {
+  margin-top: 15px;  
+  margin-bottom: 0px;
+}
+div.copyrightIndexFooter {
+  margin-top: 10px;  
+  line-height: 120%;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 10px;
+}
+div.copyrightSlideFooter {
+  margin-top: 10px;  
+  line-height: 120%;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 10px;
+}
+div.freeText {
+  line-height: 120%;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 10px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+p.margin10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+td {
+	text-align: center;
+	vertical-align: bottom;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+td.indexThumbnail {
+	vertical-align: bottom;
+}
+td.indexRingbook {
+	vertical-align: middle;
+	text-indent: 22px;
+	background-image: url(ringbook.gif);
+}
+td.indexCaption {
+	vertical-align: top;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 10px;
+}
+td.indexMain {
+	vertical-align: top;
+	font-size: 16px;
+}
+span.title {
+	color: #dfdfdf;
+}
+span.copyright {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 10px;
+}
+div.folderCaption {
+  margin-bottom: 9px;
+}
+img.slide {
+	border-color: #c0c0c0;
+	border-width: 1px;
+	border-style: solid;
+}
+img.preload {
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+}
+img.thumbnail {
+	border-color: #c0c0c0;
+	border-width: 1px;
+	border-style: solid;
+	margin-top: 20px;
+}
+img.folder {
+  vertical-align: middle;
+	border: none;
+}
+img.navButton {
+	border: none;
+}
+.slideInfo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+}
+.indexComment {
+  color: #d0d0d0;
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #c0c0c0;
+}
+a.hyperlink {
+	text-decoration: none;
+	font-weight: bold;
+	color: #8080ff;
+}
+a:hover {
+	text-decoration: underline;
+}

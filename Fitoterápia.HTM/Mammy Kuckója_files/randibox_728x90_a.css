@@ -1,0 +1,119 @@
+/* CSS Document */
+body{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+form{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+a img{
+  border: 0px;
+}
+a {
+  text-decoration: none;
+}
+select {
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+.randibox_728x90 {
+	background:url(bgr_728x90.gif) no-repeat;
+	width:728px;
+	height:90px;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+}
+.randibox_728x90 .text {
+	color:#010101;
+	font-weight:bold;
+	padding-top:0px;
+	font-size:14px;
+	float:left;
+	width:330px;
+}
+.cim {
+	color:#ff1010;
+	font-weight:bold;
+	font-size:14px;
+	display:inline-block;
+	float:left;
+	margin:60px 0 0 12px;
+	width:248px;
+}
+.randibox_728x90 .text a {
+	color:#0600ff;
+	text-decoration:underline;
+}
+.bt_360x90 {
+	margin-left:20px;
+	margin-bottom:-6px;
+}
+
+.form {
+	
+	font-size:12px;
+	font-weight:bold;
+	
+}
+.clear10 {
+	clear:both;
+	height:10px;
+	overflow:hidden;
+	width:auto;
+}
+.clear3 {
+	clear:both;
+	height:3px;
+	overflow:hidden;
+	width:auto;
+}
+
+.foto {
+	width:135px;
+	float:right;
+	margin-top:0px;
+	position:relative;
+}
+.foto a,
+.foto a:hover {
+	color:black;
+	text-decoration:none;
+}
+.foto_1 {
+	float:left;
+	width:42px;
+	height:61px;
+	display:inline;
+	margin:8px 8px 0 2px;
+	overflow:hidden;
+	border:1px solid #908989;
+}
+.foto_2 {
+	float:left;
+	width:42px;
+	height:61px;
+	display:inline;
+	margin:8px 0 0 18px;
+	overflow:hidden;
+	border:1px solid #908989;
+}
+.text_1,
+.text_2 {
+	float:left;
+	display:inline;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:black;
+	overflow:hidden;
+	height:13px;
+}
+.text_1 {
+	margin:-8px 0 0 0px;
+	width:55px;
+	text-align:center;
+}
+.text_2 {
+	margin:-8px 0 0 14px;
+	width:55px;
+	text-align:center;
+}
