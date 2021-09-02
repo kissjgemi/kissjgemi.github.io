@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    background: red;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    transform: translate(-50%, -50%);
+    background: lightgrey;
+    border: lightslategrey;
+    border-radius: 50%;
+    box-shadow: inset 15px 15px 10px darkgrey;
+}
+
+.left{
+    width: 9.99%;
+    float: left;
+}
+.right{
+    width: 9.99%;
+    float: right;
+}
+
+.jump{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.dog {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 302px;
+    height: 205px;
+    margin: 2em auto;
+    transform: translate(-50%, -50%);
+    background: transparent url('dog.png') 0 0 no-repeat;
+    animation: run 1s steps(21) infinite;
+}
+
+@keyframes run {
+    100% {background-position: -6342px, 0;}
+  }
+
+.left:checked ~ .dog {
+    transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+.jump:checked ~ .dog {
+    width: 302px;
+    height: 210px;
+    background: transparent url('jump.png') 0 0 no-repeat;
+    animation: jump 1s steps(18) infinite;
+}
+
+@keyframes jump {
+    100% {background-position: -5436px, 0;}
+  }

@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    background: red;
+}
+
+h1 {
+    text-align: center;
+}
+
+.button {
+    position: relative;
+    margin: 30px;
+    width: 160px;
+    height: 60px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+.button p {
+    position: relative;
+    line-height: 60px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    transition: 0.8s;
+    z-index: 10;
+}
+
+.button span {
+    position: relative;
+    transition: 0.8s;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 1);
+    transform: rotate(-10deg);
+}
+
+.button:hover p{
+    transform:  translate( 5%, 5%) rotate(10deg);
+    color: white;
+}
+
+.button:hover span {
+    position: absolute;
+    color: white;
+    transform: translate(-90%, -10%) rotate(360deg);
+    font-size: 60px;
+}

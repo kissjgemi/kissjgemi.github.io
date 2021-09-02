@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    background: red;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    perspective: 700px;
+    margin: 250px auto;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(30deg);
+}
+
+.side {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+}
+
+.side--front {
+    padding: 5px 0;
+    transform: rotateY(0) translateZ(125px);
+    background-color: cornflowerblue;
+}
+
+.side--left {
+    transform: rotateY(-90deg) translateZ(125px);
+    background-color: cornflowerblue;
+}
+
+.side--top {
+    transform: rotateX(90deg) translateZ(125px);
+    background-color: cornflowerblue;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    margin: 5px 0;
+    padding: 0 0 0 3px;
+    color: inherit;
+    text-align: left;
+    background:none;
+    font: inherit;
+    font-family: Impact, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    transform-origin: left;
+    transition: 0.5s;
+}
+
+button:hover {
+    margin: 0 0 0 100px;
+    padding-left: 160px;
+    width: 200%;
+    background-color: whitesmoke;
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+}
+
+button:hover p {
+    width: 260px;
+}
+
+.shape {
+    position: absolute;
+    top: -80px;
+    left: -300px;
+    width: 400px;
+    height: 500px;
+    background-color: black;
+    z-index: -10;
+    transition: 1s;
+    clip-path: polygon(50% 0%, 49% 60%, 100% 75%, 50% 90%, 50% 100%, 0 100%, 0 0);
+}
+
+button:nth-child(1):hover ~ .shape {
+    clip-path: polygon(50% 0%, 50% 7%, 100% 22%, 50% 37%, 50% 100%, 0 100%, 0 0);
+}
+button:nth-child(2):hover ~ .shape {
+    clip-path: polygon(50% 0%, 50% 18%, 100% 33%, 50% 48%, 50% 100%, 0 100%, 0 0);
+}
+button:nth-child(3):hover ~ .shape {
+    clip-path: polygon(50% 0%, 50% 30%, 100% 45%, 50% 60%, 50% 100%, 0 100%, 0 0);
+}
+button:nth-child(4):hover ~ .shape {
+    clip-path: polygon(50% 0%, 50% 41%, 100% 56%, 50% 71%, 50% 100%, 0 100%, 0 0);
+}

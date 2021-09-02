@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    background: red;
+}
+
+.container {
+    position: relative;
+    margin: 200px auto;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 30px;
+}
+
+.cube_face > i {
+    position: absolute;
+    font-size: 25px;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+.scene > i {
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    transition: bottom 0.3s;
+}
+
+.scene:hover > i {
+    bottom: -10px;
+    transform: translate(-50%, 0) rotateY(360deg);
+    transition:  0.3s 0.2s;
+}
+
+.cube {
+    transform: translateY(0) translateZ(-100px)
+               rotateX(-20deg) rotateY(20deg);
+}
+
+.scene {
+    width: 100px;
+    height: 100px;
+    perspective: 500px;
+    margin-left: 8px;
+}
+
+.cube {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in;
+}
+
+.cube_shadow {
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 40px;
+    background-color: black;
+    filter: blur(10px);
+    transition: 0.3 ease-in;
+}
+
+.scene:hover .cube_shadow {
+    left: 10px;
+    bottom: 0;
+    width: 60px;
+    height: 10px;
+    filter: blur(15px);
+}
+
+.cube_face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    opacity: 1;
+    border:  1px solid black;
+}
+
+.face-front {
+    transform: rotateY(0) translateZ(50px);
+}
+
+.face-right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.face-back {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.face-left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.face-top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.scene:hover .cube {
+    transform: translateY(-40px) translateZ(-100px) 
+               rotateX(30deg) rotateY(30deg);
+}

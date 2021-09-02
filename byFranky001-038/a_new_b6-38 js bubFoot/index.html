@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu"><head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, 
+                                   initial-scale=1, 
+                                   shrink-to-fit=no" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>newB6</title>
+
+    <link rel="stylesheet" href="n_b6styleMMXX.css">
+
+</head>
+<body class="mybody bg1">
+
+    <canvas id="canvas38a"></canvas>
+    <canvas id="canvas38b"></canvas>
+
+    <footer>
+        <span>*** Footer text here ***</span>
+    </footer>
+    
+    <svg>
+        <defs>
+            <filter id='goo1'>
+                <feGaussianBlur in='SourceGraphic'
+                 stdDeviation='10' result='blur' />
+                <feColorMatrix in='blur' mode='matrix'
+                    values='1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 10 -10' />
+                <feBlend in='SourceGraphic' in2='goo1' />
+            </filter>
+        </defs>
+    </svg>
+
+    <svg>
+        <defs>
+            <filter id='goo2'>
+                <feGaussianBlur in='SourceGraphic'
+                stdDeviation='10' result='blur' />
+                <feColorMatrix in='blur' mode='matrix'
+                    values='1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 15 -9' result='goo2' />
+                <feComposite in='SourceGraphic' in2='goo2' operator='atop' />
+            </filter>
+        </defs>
+    </svg>
+
+    <script src="n_b6scriptMMXX.js"></script>
+
+</body>
+</html>

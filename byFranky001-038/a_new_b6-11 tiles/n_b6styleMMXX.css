@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    background: red;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.portrait {
+    position: relative;
+    top: 0;
+    width: 200px;
+    height: 295px;
+    margin: 50px auto;
+    transition: .2s;
+}
+
+.part {
+    position: absolute;
+    border: 1px solid rgba(0,0,0,0);
+    background-image: url('animal.jpg');
+    background-repeat: no-repeat;
+}
+
+.part_1 {
+    width: 60%;
+    height: 90px;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+    background-position: -2px -1px;
+    background-size: 166.67%;
+}
+
+.part_2 {
+    width: 40%;
+    height: 90px;
+    top: 0;
+    left: 60%;
+    background-color: yellow;
+    background-position: -114px -1px;
+    background-size: 250%;
+}
+
+.part_3 {
+    width: 50%;
+    height: 203px;
+    top: 90px;
+    left: 50%;
+    background-color: yellow;
+    background-position: -96px -90px;
+    background-size: 204%;
+}
+
+.part_4 {
+    width: 50%;
+    height: 100px;
+    top: 90px;
+    left: 0;
+    background-color: yellow;
+    background-position: -2px -90px;
+    background-size: 204%;
+}
+
+.part_5 {
+    width: 50%;
+    height: 103px;
+    top: 190px;
+    left: 0;
+    background-color: yellow;
+    background-position: -2px -190px;
+    background-size: 204%;
+}
+
+.portrait:hover .part {
+    border: 1px solid rgba(0,0,0,1);
+    box-shadow: 5px 2px 10px rgba(0,0,0,0.8);
+    transition: .3s cubic-bezier(0.04, 1.55, 0.66, 1.12);
+}
+
+.portrait:hover .part_1 {
+    transform: translate(-1px, -5px);
+}
+
+.portrait:hover .part_2 {
+    transform: translate(1px, -5px);
+}
+
+.portrait:hover .part_3 {
+    transform: translate( 1px, 55px);
+}
+
+.portrait:hover .part_4 {
+    transform: translate(-1px, 55px);
+}
+
+.portrait:hover .part_5 {
+    transform: translate(-1px, 60px);
+}
+
+.portrait_title {
+    position: absolute;
+    top: 90px;
+    left: -5%;
+    width: 110%;
+    text-align: center;
+    font-size: 45px;
+    line-height: 48px;
+    text-shadow:  1px 2px 10px black;
+    transform: scale(0.4);
+    transform-origin: top;
+    transition: .1s;
+    box-shadow:  5px 2px 10px rgba(0,0,0,0.5),
+                inset 1px 3px 3px rgba(0,0,0,0.5),
+                inset -1px -1px 5px rgba(0,0,0,0.9);
+    opacity: 0;
+}
+
+.portrait:hover .portrait_title {
+    transform: scale(1);
+    opacity: 1;
+    transition: .3s cubic-bezier(0.04, 1.55, 0.66, 1.12);
+}

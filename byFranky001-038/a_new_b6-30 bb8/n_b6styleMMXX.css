@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    background: yellow;
+    overflow: hidden;
+}
+
+.ground {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 25%;
+    width: 100%;
+    background-color: tan;
+    z-index: -1;
+}
+
+.droid {
+    --size: 140px;
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+    margin-left: 0;
+    width: var(--size);
+    z-index: 4;
+}
+
+.radios {
+    position: absolute;
+    left: 22%;
+    transition: left .6s;
+}
+
+.radios.right {
+    left: 0%;
+}
+
+.radio {
+    position: absolute;
+    width: 2px;
+    background-color: whitesmoke;
+}
+
+.radio.short {
+    top: -60px;
+    left: 50px;
+    height: 20px;
+}
+
+.radio.long {
+    top: -78px;
+    left: 56px;
+    height: 36px;
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
+}
+
+.head {
+    position: absolute;
+    top: -46px;
+    left: 50%;
+    width: 90px;
+    height: 56px;
+    margin-left: -45px;
+    border-radius: 90px 90px 14px 14px;
+    background: snow;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.band {
+    position: absolute;
+    width: 100%;
+}
+
+.band.one {
+    top: 6px;
+    height: 6px;
+    background: thistle;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.band.two {
+    top: 17px;
+    height: 4px;
+    background: wheat;
+}
+
+.band.three {
+    top: 27px;
+    height: 4px;
+    background: lavender;
+}
+
+.eyes {
+    position: absolute;
+    display: block;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    transition: left 0.6s;
+    z-index: 10;
+}
+
+.eyes.right {
+    left: 36%;
+}
+
+.eye {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+}
+
+.eye.one {
+    top: 12px;
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    background: black;
+    border: 4px solid whitesmoke;
+}
+
+.eye.one::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 4px;
+    right: 4px;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+}
+
+.eye.two {
+    top: 30px;
+    left: 40%;
+    width: 16px;
+    height: 16px;
+    background: whitesmoke;
+    border: 1px solid black;
+}
+
+.eye.two::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 2px;
+    right: 2px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+}
+
+.body {
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    background: seashell;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.lines {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: 2px solid tan;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.lines.two {
+    top: -10px;
+    left: -250px;
+}
+
+.circle {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    margin-left: -35px;
+    background: sienna;
+    border-radius: 50%;
+}
+
+.circle::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    margin-top: -35%;
+    margin-left: -35%;
+    background: lightcoral;
+    border-radius: 50%;
+}
+
+.circle.one {
+    top: 6%;
+    left: 50%;
+    width: 90px;
+    height: 80px;
+    margin-left: -40px;
+}
+
+.circle.two {
+    top: 70%;
+    left: 18%;
+    width: 76px;
+    height: 38px;
+    transform: rotate(40deg);
+}
+
+.circle.two::after {
+    top: 110%;
+}
+
+.circle.three {
+    top: 66%;
+    left: 90%;
+    height: 30px;
+    transform: rotate(-50deg);
+}
+
+.circle.three::after {
+    top: 110%;
+}
+
+.shadow {
+    position: absolute;
+    left: 5px;
+    bottom:  -8px;
+    height: calc(var(--size)/6);
+    width: var(--size);
+    border-radius: 50%;
+    background: darkslategray;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.cloud {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    height: 2rem;
+    width: 10rem;
+    background-color: silver;
+    border-radius: 2rem;
+    box-shadow: inset 0rem --0.5rem 0 snow;
+    animation:  move-cloud 60s linear infinite;
+    z-index: 1;
+}
+
+.cloud::before {
+    content: '';
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: inherit;
+}
+
+.cloud::after {
+    content: '';
+    position: absolute;
+    bottom: 25%;
+    right: 30%;
+    height: 2.8rem;
+    width: 3.25rem;
+    border-radius: 50%;
+    background-color: inherit;
+}
+
+.cloud2 {
+    top: 15%;
+    left: 10%;
+    animation:  move-cloud 45s linear reverse infinite;
+}
+
+.cloud3 {
+    top: 15%;
+    animation:  move-cloud 25s linear infinite;
+    transform: scale(1.45);
+}
+
+.cloud4 {
+    animation:  move-cloud 20s linear infinite;
+}
+
+@keyframes move-cloud {
+    0% {
+        left: 130%;
+    }
+    100% {
+        left: -30%;
+    }
+}

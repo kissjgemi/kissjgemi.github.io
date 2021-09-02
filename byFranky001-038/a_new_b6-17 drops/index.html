@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, 
+                                   initial-scale=1, 
+                                   shrink-to-fit=no" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>newB6</title>
+
+    <link rel="stylesheet" href="n_b6styleMMXX.css">
+    <link rel="stylesheet" href="https://cdnjs.Cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+    </div>
+
+    <svg>
+        <defs>
+            <filter id='goo'>
+                <feGaussianBlur in='SourceGraphic'
+                 stdDeviation='10' />
+                <feColorMatrix in='name' mode='matrix'
+                    values='1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 30 -15' />
+                <feBlend in='SourceGraphic' />
+            </filter>
+        </defs>
+    </svg>
+</body>
+</html>
