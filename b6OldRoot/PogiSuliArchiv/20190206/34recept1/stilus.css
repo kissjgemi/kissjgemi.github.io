@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-size: 100%;
+}
+
+#tarolo {
+    max-width: 1280px;
+    margin: auto;
+}
+
+main {
+    width: 62%;
+    padding: 0 1%;
+    margin: 1%;
+    float: left;
+}
+
+aside {
+    background-color: azure;
+    width: 30%;
+    padding: 0 1%;
+    margin: 1%;
+    float: right;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        width: 96%;
+        float: none;
+    }
+    aside {
+        width: 96%;
+        float: none;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    body {
+        font-size: 110%;
+    }
+}

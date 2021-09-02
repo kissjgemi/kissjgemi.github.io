@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Ciklusok01.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">Ciklusok01.java</td></tr></table>
+<hr>
+<pre>
+<span class="literal">package</span> ciklusok01;
+
+<span class="literal">import</span> java.util.*;
+
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST0">Ciklusok01</span> {
+
+    <span class="literal">static</span> Scanner <span class="ST1">sc</span> = <span class="literal">new</span> Scanner(System.<span class="ST1">in</span>);
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f1</span>() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">1. Az [1, 10] intervallum: </span><span class="string">&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> i = 1; i &lt; 11; i++) {
+            System.<span class="ST1">out</span>.print(<span class="string">&quot;</span> <span class="string">&quot;</span> + i);
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f2</span>() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">2. Tíz véletlenszám az [1, 50] intervallumból: </span><span class="string">&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; 10; i++) {
+            <span class="literal">double</span> rnd = Math.<span class="ST3">random</span>() * 50 + 1;
+            System.<span class="ST1">out</span>.print(<span class="string">&quot;</span> <span class="string">&quot;</span> + (<span class="literal">int</span>) rnd);
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f3</span>() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">3. Az első N&lt;20 négyzetszám: </span><span class="string">&quot;</span>);
+        System.<span class="ST1">out</span>.print(<span class="string">&quot;</span><span class="string"> N = </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> N = <span class="ST1">sc</span>.nextInt();
+        <span class="literal">for</span> (<span class="literal">int</span> i = 1; i &lt; N + 1; i++) {
+            System.<span class="ST1">out</span>.print(<span class="string">&quot;</span> <span class="string">&quot;</span> + i * i);
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">main</span>(String[] args) {
+        <span class="ST3">f1</span>();
+        <span class="ST3">f2</span>();
+        <span class="ST3">f3</span>();
+    }
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+
+1. Az [1, 10] intervallum: 
+ 1 2 3 4 5 6 7 8 9 10
+
+2. Tíz véletlenszám az [1, 50] intervallumból: 
+ 42 28 24 24 47 10 41 47 31 41
+
+3. Az első N<20 négyzetszám: 
+ N = 15
+ 1 4 9 16 25 36 49 64 81 100 121 144 169 196 225
+<font color="#009933">BUILD SUCCESSFUL (total time: 5 seconds)</font>
+
+</pre></body>
+</html>

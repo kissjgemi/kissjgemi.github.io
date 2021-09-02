@@ -1,0 +1,177 @@
+<!-- aktualtimestamp: 1539839540
+2018 október 15. Programozás
+  -->
+<div class="parabellum">
+<p class="main">
+<h4>Programozás elmélet - ciklusok</h4><br />
+Ha egy bizonyos tevékenységet a programban egymásután többször végre kell hajtani, akkor ciklusokat<br />
+alkalmazunk.<br />
+A ciklusok végrehajtását, vagy az abból való kilépést feltételekhez kötjük.<br />
+Egy ciklus általános felépítése:<br />
+• fej az ismétlésre vonatkozó információk<br />
+• mag azok az utasítások, amelyeket többször végre akarunk hajtani<br />
+<br />
+előltesztelő ciklusok:<br />
+A program a ciklusba való belépés előtt megvizsgálja a belépési feltételt, és ha ez teljesül, akkor a ciklusmag végrehajtásra kerül.<br />
+hibák<br />
+• üres ciklus<br />
+• végtelen ciklus<br />
+<br />
+számlálós - for ciklusok:<br />
+• for kulcsszó vezeti be a ciklust,<br />
+• ciklus feje zárójelben (), ahol 3 dolog állítható be:<br />
+1. inicializálás<br />
+2. a futási feltétel<br />
+3. növekmény<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1539839540"><a onclick="show('less-article1539839540'); hide('more-article1539839540')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1539839540" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1539839540'); show('more-article1539839540')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+<h4>Ciklusok 1</h4><br />
+<table width="100%"><tr><td align="left">Ciklusok.java</td></tr></table>
+<pre>
+<span class="ST0">package</span> ciklusok;
+<span class="ST0">import</span> java.util.*;
+
+<span class="ST0">public</span> <span class="ST0">class</span> <span class="ST1">Ciklusok</span> {
+
+    <span class="ST0">static</span> Scanner <span class="ST2">sc</span> = <span class="ST0">new</span> Scanner(System.<span class="ST2">in</span>);<span class="comment">// tagváltozó minden metódus látja</span>
+
+    <span class="ST0">private</span> <span class="ST0">static</span> <span class="ST0">void</span> <span class="ST3">f1</span>() {
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">1. Az [1, 10] intervallum számai szóközzel tagolva: </span><span class="string">&quot;</span>);
+        <span class="ST0">for</span> (<span class="ST0">int</span> i = 1; i &lt; 11; i++) {
+            System.<span class="ST2">out</span>.print(<span class="string">&quot;</span> <span class="string">&quot;</span> + i);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="ST0">private</span> <span class="ST0">static</span> <span class="ST0">void</span> <span class="ST3">f2</span>() {
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">2. Tíz véletlenszám az [1, 50] intervallumból szóközzel tagolva: </span><span class="string">&quot;</span>);
+        <span class="ST0">for</span> (<span class="ST0">int</span> i = 0; i &lt; 10; i++) {
+            <span class="ST0">double</span> rnd = Math.<span class="ST4">random</span>() * 50 + 1;
+            System.<span class="ST2">out</span>.print(<span class="string">&quot;</span> <span class="string">&quot;</span> + (<span class="ST0">int</span>) rnd);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="ST0">private</span> <span class="ST0">static</span> <span class="ST0">void</span> <span class="ST3">f3</span>() {
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">3. Az első N&lt;20 négyzetszám: </span><span class="string">&quot;</span>);
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string"> N = </span><span class="string">&quot;</span>);
+        <span class="ST0">int</span> N = <span class="ST2">sc</span>.nextInt();
+        <span class="ST0">for</span> (<span class="ST0">int</span> i = 1; i &lt; N + 1; i++) {
+            System.<span class="ST2">out</span>.print(<span class="string">&quot;</span> <span class="string">&quot;</span> + i * i);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+
+    <span class="ST0">public</span> <span class="ST0">static</span> <span class="ST0">void</span> <span class="ST3">main</span>(String[] args) {
+        <span class="ST4">f1</span>(); <span class="comment">// Az [1, 10] intervallum számai</span>
+        <span class="ST4">f2</span>(); <span class="comment">// Tíz véletlenszám az [1, 50] intervallumból</span>
+        <span class="ST4">f3</span>(); <span class="comment">// Az első N darab négyzetszám 1...N-ig</span>  
+    }
+}
+
+</pre>
+
+<h4>Ciklusok 2</h4><br />
+<table width="100%"><tr><td align="left">Ciklusok2.java</td></tr></table>
+<pre>
+<span class="ST0">package</span> ciklusok2;
+<span class="ST0">import</span> java.util.*;
+
+<span class="ST0">public</span> <span class="ST0">class</span> <span class="ST1">Ciklusok2</span> {
+
+    <span class="ST0">static</span> Scanner <span class="ST2">sc</span> = <span class="ST0">new</span> Scanner(System.<span class="ST2">in</span>);<span class="comment">// tagváltozó minden metódus látja</span>
+
+    <span class="ST0">private</span> <span class="ST0">static</span> <span class="ST0">void</span> <span class="ST3">f1</span>() {
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">1. Az [1, 10] intervallum számai szóközzel tagolva: </span><span class="string">&quot;</span>);
+        <span class="ST0">for</span> (<span class="ST0">int</span> i = 1; i &lt; 11; i++) {
+            System.<span class="ST2">out</span>.print(<span class="string">&quot;</span> <span class="string">&quot;</span> + i);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="ST0">private</span> <span class="ST0">static</span> <span class="ST0">void</span> <span class="ST3">f2</span>() {
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">2. Tíz véletlenszám az [1, 50] intervallumból szóközzel tagolva: </span><span class="string">&quot;</span>);
+        <span class="ST0">for</span> (<span class="ST0">int</span> i = 0; i &lt; 10; i++) {
+            <span class="ST0">double</span> rnd = Math.<span class="ST4">random</span>() * 50 + 1;
+            System.<span class="ST2">out</span>.print(<span class="string">&quot;</span> <span class="string">&quot;</span> + (<span class="ST0">int</span>) rnd);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="ST0">private</span> <span class="ST0">static</span> <span class="ST0">void</span> <span class="ST3">f3</span>() {
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">3. Az első N&lt;20 négyzetszám: </span><span class="string">&quot;</span>);
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string"> N = </span><span class="string">&quot;</span>);
+        <span class="ST0">int</span> N = <span class="ST2">sc</span>.nextInt();
+        <span class="ST0">for</span> (<span class="ST0">int</span> i = 1; i &lt; N + 1; i++) {
+            System.<span class="ST2">out</span>.print(<span class="string">&quot;</span> <span class="string">&quot;</span> + i * i);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="ST0">private</span> <span class="ST0">static</span> <span class="ST0">void</span> <span class="ST3">f4</span>() {
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">4. Az első N darab páratlanszám (1-N-ig)</span><span class="string">&quot;</span>);
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string"> N = </span><span class="string">&quot;</span>);
+        <span class="ST0">int</span> N = <span class="ST2">sc</span>.nextInt();
+        <span class="ST0">for</span> (<span class="ST0">int</span> i = 1; i &lt; N + 1; i = i + 2) {
+            System.<span class="ST2">out</span>.print(<span class="string">&quot;</span> <span class="string">&quot;</span> + i);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="ST0">private</span> <span class="ST0">static</span> <span class="ST0">void</span> <span class="ST3">f5</span>() {
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">5. Az első N darab párosszám csökkenő sorrendben</span><span class="string">&quot;</span>);
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string"> N = </span><span class="string">&quot;</span>);
+        <span class="ST0">int</span> N = <span class="ST2">sc</span>.nextInt();
+        <span class="ST0">if</span> (N % 2 != 0) {
+            N--;
+        }
+        <span class="ST0">for</span> (<span class="ST0">int</span> i = N; i &gt; 0; i = i - 2) {
+            System.<span class="ST2">out</span>.print(<span class="string">&quot;</span> <span class="string">&quot;</span> + i);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="ST0">private</span> <span class="ST0">static</span> <span class="ST0">void</span> <span class="ST3">dos_ablak</span>() {
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="ST5">\n</span><span class="ST5">\n</span><span class="string">&lt;&lt;Kilépéshez: ENTER&gt;&gt;</span><span class="string">&quot;</span>);
+        Scanner sc = <span class="ST0">new</span> Scanner(System.<span class="ST2">in</span>);
+        sc.nextLine();
+    }
+
+    <span class="ST0">public</span> <span class="ST0">static</span> <span class="ST0">void</span> <span class="ST3">main</span>(String[] args) {
+        <span class="ST4">f1</span>(); <span class="comment">// Az [1, 10] intervallum számai</span>
+        <span class="ST4">f2</span>(); <span class="comment">// Tíz véletlenszám az [1, 50] intervallumból</span>
+        <span class="ST4">f3</span>(); <span class="comment">// Az első N darab négyzetszám 1...N-ig</span>
+        <span class="ST4">f4</span>(); <span class="comment">// Az első N darab páratlanszám 1-N-ig</span>
+        <span class="ST4">f5</span>(); <span class="comment">// Az első N darab párosszám N-2-ig        </span>
+        <span class="ST4">dos_ablak</span>();
+    }
+}
+
+</pre>
+
+</p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

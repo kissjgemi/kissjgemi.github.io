@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>DoliKissJGabi20190114.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">DoliKissJGabi20190114.java
+      <p align="left"><span style="background-color: #FFFF00"><b>A BESÁRGÍTOTT  
+      RÉSZEK NEM TARTOZNAK A DOLGOZATHOZ!</b></span></p> 
+      <p align="left">&nbsp;</p> 
+    </td></tr></table> 
+<hr> 
+<p align="center">A PROGRAM</p>  
+<hr> 
+ 
+<div align="left"> 
+<pre>
+<span class="literal">package</span> dolikissjgabi20190114;
+
+<span class="literal">import</span> java.io.*;
+
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST0">DoliKissJGabi20190114</span> {
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">final</span> <span class="literal">int</span> <span class="ST1">N</span> = 32;
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">int</span> <span class="ST1">t</span>[] = <span class="literal">new</span> <span class="literal">int</span>[<span class="ST1">N</span>];
+    <span class="literal">private</span> <span class="literal">static</span> RandomAccessFile <span class="ST1">f</span>;
+
+<span style="background-color: #FFFF00">    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f00</span>(<span class="literal">int</span> hossz, <span class="literal">char</span> jel, String name) {
+        System.<span class="ST1">out</span>.print(name);
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; hossz; ii++) {
+            System.<span class="ST1">out</span>.print(jel);
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+</span>
+// BEOLVASÁS az &quot;adatok.txt&quot; fájlból</pre> 
+</div> 
+ 
+<div align="left"> 
+<pre>    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f0</span>(String inputfile) {
+        <span class="literal">try</span> {
+            <span class="ST1">f</span> = <span class="literal">new</span> RandomAccessFile(inputfile, <span class="string">&quot;</span><span class="string">r</span><span class="string">&quot;</span>);
+            <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST1">N</span>; ii++) {
+                <span class="ST1">t</span>[ii] = Integer.<span class="ST3">parseInt</span>(<span class="ST1">f</span>.readLine());
+            }
+            <span class="ST1">f</span>.close();
+        } <span class="literal">catch</span> (IOException e) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">HIBA: </span><span class="string">&quot;</span> + e.getMessage());
+        }
+    }
+
+<span style="background-color: #CCFFFF">    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f1</span>() {
+</span><span style="background-color: #FFFF00">        <span class="ST3">f00</span>(60, <span class="string">'-'</span>, <span class="string">&quot;(A)&quot;</span>);</span><span style="background-color: #CCFFFF">
+
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST1">N</span>; ii++) {
+            System.<span class="ST1">out</span>.print(<span class="ST1">t</span>[ii] + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+</span>
+<span style="background-color: #FFFFCC">    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f2</span>() {
+        <span class="literal">int</span> db = 0;
+</span><span style="background-color: #FFFF00">        <span class="ST3">f00</span>(60, <span class="string">'-'</span>, <span class="string">&quot;(B)&quot;</span>);</span><span style="background-color: #FFFFCC">
+
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST1">N</span>; ii++) {
+            <span class="literal">if</span> (<span class="ST1">t</span>[ii] % 2 == 0) {
+                System.<span class="ST1">out</span>.print(<span class="ST1">t</span>[ii] + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+                db++;
+            }
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;Páros számok: &quot;</span> + db + <span class="string">&quot; db&quot;</span>);
+    }
+</span>
+<span style="background-color: #CCFFCC">    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f3</span>() {
+</span><span style="background-color: #FFFF00">        <span class="ST3">f00</span>(60, <span class="string">'-'</span>, <span class="string">&quot;(C)&quot;</span>);</span><span style="background-color: #CCFFCC">
+
+        <span class="literal">int</span> szum = 0;
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST1">N</span>; ii++) {
+            szum += <span class="ST1">t</span>[ii];
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;A számok összege: &quot;</span> + szum);
+    }
+</span>
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">main</span>(String[] args) {
+        <span class="ST3">f0</span>(<span class="string">&quot;</span><span class="string">adatok.txt</span><span class="string">&quot;</span>);
+        <span class="ST3">f1</span>();
+        <span class="ST3">f2</span>();
+        <span class="ST3">f3</span>();
+<span style="background-color: #FFFF00">        <span class="ST3">f00</span>(60, <span class="string">'-'</span>, <span class="string">&quot;VÉGE &quot;</span>);
+</span>    }
+
+}
+</pre> 
+</div> 
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<pre>
+<font color="#800080">run:</font>
+<span style="background-color: #FFFF00">(A)------------------------------------------------------------</span>
+<span style="background-color: #CCFFFF">27 -12 -16 -35 47 -1 1 -34 47 -8 45 -2 -46 -33 2 17 2 -27 -2 -40 9 2 -12 4 4 36 32 -46 -17 -35 2 49 </span>
+<span style="background-color: #FFFF00">(B)------------------------------------------------------------</span>
+<span style="background-color: #FFFFCC">-12 -16 -34 -8 -2 -46 2 2 -2 -40 2 -12 4 4 36 32 -46 2 
+Páros számok: 18 db</span>
+<span style="background-color: #FFFF00">(C)------------------------------------------------------------</span>
+<span style="background-color: #CCFFCC">A számok összege: -40</span>
+<span style="background-color: #FFFF00">VÉGE ------------------------------------------------------------</span>
+<font color="#009933">BUILD SUCCESSFUL (total time: 0 seconds)</font>
+
+</pre> 
+<hr> 
+<p align="center">IMAGE</p>
+<p align="left">Az &quot;adatok.txt&quot; fájl helye a project gyökér könyvtára!</p>
+<p align="center"><img border="0" src="javaProjectRoot.png" width="941" height="892"></p>
+<hr>
+</body> 
+</html> 

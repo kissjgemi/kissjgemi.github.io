@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Java2019mar04.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.ST4 {color: #ce7b00; font-family: Courier; font-weight: bold}
+.ST5 {color: #009900}
+.ST6 {color: #ce7b00; font-family: Courier; font-weight: bold}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+.comment {color: #969696}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">Java2019mar04.java</td></tr></table>
+<hr>
+<pre>
+<span class="literal">package</span> java2019mar04;
+
+<span class="literal">import</span> java.io.*;
+<span class="literal">import</span> java.util.*;
+
+<span class="comment">/**</span>
+<span class="comment"> *</span>
+<span class="comment"> * </span><span class="ST0">@KjG</span>
+ <span class="comment">*/</span>
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST1">Java2019mar04</span> {
+
+    <span class="literal">private</span> <span class="literal">static</span> RandomAccessFile <span class="ST2">f</span>;
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">final</span> ArrayList&lt;Client&gt; <span class="ST2">CLIENTS</span> = <span class="literal">new</span> ArrayList&lt;&gt;();
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f00</span>(<span class="literal">int</span> hossz, <span class="literal">char</span> jel, String name) {
+        <span class="literal">int</span> start = 0;
+        <span class="literal">if</span> (name.length() != 0) {
+            start = name.length() + 5;
+            System.<span class="ST2">out</span>.print(jel + <span class="string">&quot;</span><span class="string">| </span><span class="string">&quot;</span>);
+            System.<span class="ST2">out</span>.print(name + <span class="string">&quot;</span><span class="string"> |</span><span class="string">&quot;</span>);
+        }
+        <span class="literal">for</span> (<span class="literal">int</span> ii = start; ii &lt; hossz; ii++) {
+            System.<span class="ST2">out</span>.print(jel);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+    <span class="comment">// --- textdekoráció metódus vége</span>
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">inputFile</span>(String fileName, String mode) {
+        <span class="literal">try</span> {
+            <span class="ST2">f</span> = <span class="literal">new</span> RandomAccessFile(fileName, mode);
+            String sor;
+            <span class="literal">while</span> ((sor = <span class="ST2">f</span>.readLine()) != <span class="literal">null</span>) {
+                <span class="ST2">CLIENTS</span>.add(<span class="literal">new</span> Client(sor));
+            }
+            <span class="ST2">f</span>.close();
+        } <span class="literal">catch</span> (IOException e) {
+            System.<span class="ST2">err</span>.println(e.getMessage());
+            System.<span class="ST4">exit</span>(1);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">A </span><span class="string">&quot;</span> + fileName + <span class="string">&quot;</span><span class="string">... beolvasva</span><span class="string">&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">appendFile</span>(String fileName, String mode, String str) {
+        <span class="literal">try</span> {
+            <span class="ST2">f</span> = <span class="literal">new</span> RandomAccessFile(fileName, mode);
+            <span class="ST2">f</span>.seek(<span class="ST2">f</span>.length());<span class="comment">//a fájlmutatót a fájl végére mozgatja</span>
+            <span class="ST2">f</span>.writeBytes(str + <span class="string">&quot;</span><span class="ST5">\n</span><span class="string">&quot;</span>);
+            <span class="ST2">f</span>.close();
+        } <span class="literal">catch</span> (IOException e) {
+            System.<span class="ST2">err</span>.println(e.getMessage());
+            System.<span class="ST4">exit</span>(1);
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">deleteFile</span>(String fileName) {
+        File file = <span class="literal">new</span> File(fileName);
+        <span class="literal">if</span> (file.exists()) {
+            file.delete();
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f1</span>(String label, String fileName, String mode) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, label);
+        <span class="ST4">inputFile</span>(fileName, mode);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f2</span>(String label, String fileName, String mode) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, label);
+        <span class="ST4">deleteFile</span>(fileName);
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST2">CLIENTS</span>.size(); ii++) {
+            <span class="literal">if</span> (<span class="ST2">CLIENTS</span>.get(ii).isSok()) {
+                String str = String.<span class="ST4">format</span>(<span class="string">&quot;</span><span class="string">%10s</span><span class="string">&quot;</span>, <span class="ST2">CLIENTS</span>.get(ii).getId()) + <span class="string">&quot;</span> <span class="string">&quot;</span>;
+                str += String.<span class="ST4">format</span>(<span class="string">&quot;</span><span class="string">%8s</span><span class="string">&quot;</span>, <span class="ST2">CLIENTS</span>.get(ii).getSzumma()) + <span class="string">&quot;</span> <span class="string">&quot;</span>;
+                str += String.<span class="ST4">format</span>(<span class="string">&quot;</span><span class="string">%6s</span><span class="string">&quot;</span>, <span class="ST2">CLIENTS</span>.get(ii).getMennyivel()) + <span class="string">&quot;</span><span class="string"> MB</span><span class="string">&quot;</span>;
+                System.<span class="ST2">out</span>.println(str);
+                <span class="ST4">appendFile</span>(fileName, mode, str);
+            }
+        }
+
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f3</span>(String label) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, label);
+        <span class="literal">int</span> bound256 = 0, bound512 = 0, bound1000 = 0;
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST2">CLIENTS</span>.size(); ii++) {
+            <span class="literal">int</span> x = <span class="ST2">CLIENTS</span>.get(ii).getBandwidth();
+            <span class="literal">switch</span> (x) {
+                <span class="literal">case</span> 256:
+                    bound256++;
+                    <span class="literal">break</span>;
+                <span class="literal">case</span> 512:
+                    bound512++;
+                    <span class="literal">break</span>;
+                <span class="literal">case</span> 1000:
+                    bound1000++;
+                    <span class="literal">break</span>;
+                <span class="literal">default</span>:
+                    <span class="literal">break</span>;
+            }
+        }
+
+        String str = <span class="string">&quot;</span><span class="ST5">\t</span><span class="string"> 256 MB: </span><span class="string">&quot;</span> + bound256 + <span class="string">&quot;</span><span class="ST5">\n</span><span class="string">&quot;</span>;
+        str += <span class="string">&quot;</span><span class="ST5">\t</span><span class="string"> 512 MB: </span><span class="string">&quot;</span> + bound512 + <span class="string">&quot;</span><span class="ST5">\n</span><span class="string">&quot;</span>;
+        str += <span class="string">&quot;</span><span class="ST5">\t</span><span class="string">1000 MB: </span><span class="string">&quot;</span> + bound1000 + <span class="string">&quot;</span><span class="ST5">\n</span><span class="string">&quot;</span>;
+
+        System.<span class="ST2">out</span>.println(str);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">main</span>(String[] args) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">STARTofJAVA 2019mar04 Internet</span><span class="string">&quot;</span>);
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, <span class="string">&quot;&quot;</span>);
+
+        <span class="ST4">f1</span>(<span class="string">&quot;</span><span class="string">1. </span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">csv/adatforgalom.csv</span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">r</span><span class="string">&quot;</span>);
+        <span class="ST4">f2</span>(<span class="string">&quot;</span><span class="string">2. </span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">csv/tullepte.txt</span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">rw</span><span class="string">&quot;</span>);
+        <span class="ST4">f3</span>(<span class="string">&quot;</span><span class="string">3. előfizetők száma sávszélességenként:</span><span class="string">&quot;</span>);
+
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, <span class="string">&quot;&quot;</span>);
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">ENDofJAVA   2019mar04</span><span class="string">&quot;</span>);
+
+    }
+
+}
+</pre>
+
+<hr>
+<table width="100%"><tr><td align="center">Client.java</td></tr></table>
+<hr>
+<pre>
+<span class="literal">package</span> java2019mar04;
+
+<span class="comment">/**</span>
+<span class="comment"> *</span>
+<span class="comment"> * </span><span class="ST0">@KjG</span>
+ <span class="comment">*/</span>
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST1">Client</span> {
+
+    <span class="literal">public</span> String <span class="ST1">getId</span>() {
+        <span class="literal">return</span> <span class="ST2">id</span>;
+    }
+
+    <span class="literal">public</span> <span class="literal">boolean</span> <span class="ST1">isSok</span>() {
+        <span class="literal">return</span> <span class="ST2">sok</span>;
+    }
+
+    <span class="literal">public</span> <span class="literal">int</span> <span class="ST1">getBandwidth</span>() {
+        <span class="literal">return</span> <span class="ST2">bandwidth</span>;
+    }
+
+    <span class="literal">public</span> <span class="literal">int</span> <span class="ST1">getSzumma</span>() {
+        <span class="literal">return</span> <span class="ST2">szumma</span>;
+    }
+
+    <span class="literal">public</span> <span class="literal">int</span> <span class="ST1">getMennyivel</span>() {
+        <span class="literal">return</span> <span class="ST2">mennyivel</span>;
+    }
+
+    <span class="literal">private</span> <span class="literal">final</span> <span class="literal">int</span> <span class="ST2">NAPOK</span> = 31;
+
+    <span class="literal">private</span> String <span class="ST2">id</span>;
+    <span class="literal">private</span> <span class="literal">boolean</span> <span class="ST2">sok</span>;
+    <span class="literal">private</span> <span class="literal">int</span> <span class="ST2">bandwidth</span>, <span class="ST2">szumma</span>, <span class="ST2">mennyivel</span>;
+    <span class="literal">private</span> <span class="literal">int</span>[] <span class="ST2">napok</span> = <span class="literal">new</span> <span class="literal">int</span>[<span class="ST2">NAPOK</span>];
+
+    <span class="literal">private</span> <span class="literal">void</span> <span class="ST1">setSzummaSokMennyivel</span>(String[] t) {
+        <span class="literal">int</span> s = 0;
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 2; ii &lt; t.<span class="ST2">length</span>; ii++) {
+            s += Integer.<span class="ST3">parseInt</span>(t[ii]);
+        }
+        <span class="literal">this</span>.<span class="ST2">szumma</span> = s;
+        <span class="literal">this</span>.<span class="ST2">sok</span> = (<span class="ST2">szumma</span> &gt; 10240);
+        <span class="literal">if</span> (<span class="ST2">sok</span>) {
+            <span class="literal">this</span>.<span class="ST2">mennyivel</span> = <span class="ST2">szumma</span> - 10240;
+        }<span class="literal">else</span>{
+            <span class="literal">this</span>.<span class="ST2">mennyivel</span> = 0;
+        }
+    }
+
+    <span class="literal">public</span> <span class="ST1">Client</span>(String sor) {
+        String[] t = sor.split(<span class="string">&quot;</span><span class="ST4">\\</span><span class="string">s*;</span><span class="ST4">\\</span><span class="string">s*</span><span class="string">&quot;</span>);
+        <span class="literal">this</span>.<span class="ST2">id</span> = t[0];
+        <span class="literal">this</span>.<span class="ST2">bandwidth</span> = Integer.<span class="ST3">parseInt</span>(t[1]);
+        setSzummaSokMennyivel(t);
+    }
+
+}
+
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+*| STARTofJAVA 2019mar04 Internet |*************************
+------------------------------------------------------------
+-| 1.  |----------------------------------------------------
+A csv/adatforgalom.csv... beolvasva
+
+-| 2.  |----------------------------------------------------
+5067666678    10466    226 MB
+ 460121358    10524    284 MB
+ 464968584    11080    840 MB
+5214755655    10248      8 MB
+7111476821    10245      5 MB
+4342413366    10287     47 MB
+8315080518    10724    484 MB
+6508228396    10875    635 MB
+ 664356754    10380    140 MB
+2816874836    10653    413 MB
+3368856119    10720    480 MB
+
+-| 3. előfizetők száma sávszélességenként: |----------------
+	 256 MB: 41
+	 512 MB: 33
+	1000 MB: 26
+
+------------------------------------------------------------
+*| ENDofJAVA   2019mar04 |**********************************
+<font color="#009933">BUILD SUCCESSFUL (total time: 1 seconds)</font>
+
+</pre></body>
+</html>
+

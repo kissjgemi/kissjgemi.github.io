@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>KJG13ED_Arrays2.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">KJG13ED_Arrays2.java</td></tr></table>
+<hr>
+<pre>
+<span class="literal">package</span> kjg13ed_arrays2;
+
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST0">KJG13ED_Arrays2</span> {
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">final</span> <span class="literal">int</span> <span class="ST1">N</span> = 10;
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">int</span>[] <span class="ST1">t</span> = <span class="literal">new</span> <span class="literal">int</span>[<span class="ST1">N</span>];
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">int</span> <span class="ST2">rnd</span>(<span class="literal">int</span> ah, <span class="literal">int</span> fh) {
+        <span class="literal">return</span> (<span class="literal">int</span>) (Math.<span class="ST3">random</span>() * (fh - ah + 1) + ah);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">upLoadArray</span>() {
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST1">N</span>; ii++) {
+            <span class="ST1">t</span>[ii] = <span class="ST3">rnd</span>(-20, 25);
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">tablazatosKiiras</span>() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">Táblázatos kiírás</span><span class="string">&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST1">N</span>; ii++) {
+            System.<span class="ST1">out</span>.println(
+                    String.<span class="ST3">format</span>(<span class="string">&quot;</span><span class="string">%11d %6d %6.2f</span><span class="string">&quot;</span>,
+                            <span class="ST1">t</span>[ii], <span class="ST1">t</span>[ii] * 3, ((<span class="literal">double</span>) <span class="ST1">t</span>[ii] / 4 + 5)));
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">sorOsszegekkel</span>() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="ST4">\n</span><span class="ST4">\t</span><span class="string">Táblázatos kiírás sorösszegekkel</span><span class="string">&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST1">N</span>; ii++) {
+            <span class="literal">double</span> szum = <span class="ST1">t</span>[ii] + 3 * <span class="ST1">t</span>[ii] + ((<span class="literal">double</span>) <span class="ST1">t</span>[ii] / 4);
+            System.<span class="ST1">out</span>.println(
+                    String.<span class="ST3">format</span>(<span class="string">&quot;</span><span class="string">%11d %6d %6.2f %12.2f</span><span class="string">&quot;</span>,
+                            <span class="ST1">t</span>[ii], <span class="ST1">t</span>[ii] * 3, ((<span class="literal">double</span>) <span class="ST1">t</span>[ii] / 4 + 5), szum));
+        }
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">main</span>(String[] args) {
+        <span class="ST3">upLoadArray</span>();
+        <span class="ST3">tablazatosKiiras</span>();
+        <span class="ST3">sorOsszegekkel</span>();
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+	Táblázatos kiírás
+         23     69  10,75
+         24     72  11,00
+         -9    -27   2,75
+         17     51   9,25
+          0      0   5,00
+         25     75  11,25
+          9     27   7,25
+         10     30   7,50
+         15     45   8,75
+          2      6   5,50
+
+	Táblázatos kiírás sorösszegekkel
+         23     69  10,75        97,75
+         24     72  11,00       102,00
+         -9    -27   2,75       -38,25
+         17     51   9,25        72,25
+          0      0   5,00         0,00
+         25     75  11,25       106,25
+          9     27   7,25        38,25
+         10     30   7,50        42,50
+         15     45   8,75        63,75
+          2      6   5,50         8,50
+<font color="#009933">BUILD SUCCESSFUL (total time: 0 seconds)</font>
+
+</pre></body>
+</html>
+

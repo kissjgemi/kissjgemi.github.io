@@ -1,0 +1,138 @@
+http://jodies.de/ipcalc?
+
+1.
+
+Egy kb. 300 gépbõl álló hálózatot szeretnénk üzemeltetni a 192.168.64.0 hálózatcímmel.
+
+a) Milyen maszkot kell használnunk?
+b) Mi a ténylegesen kiosztható ip-címek száma
+c) Mi a broadcast-cím?
+
+
+  hálózat: 11000000(192).10101000(168).01000000(064).00000000(000)
+    méret: --------      --------      -------+      ++++++++      -> a hálózat mérete = 2^9 = 512
+    maszk: ++++++++      ++++++++      +++++++-      --------
+broadcast: 11000000(192).10101000(168).01000001(065).11111111(255)
+   prefix: 11111111(255).11111111(255).11111110(254).00000000(000) -> 8+8+7= 23
+
+
+192.168.64.0/23
+
+a) 255.255.254.0
+
+b) 521-2 = 510
+
+c) 192.168.65.255
+
+2.
+
+Egy munkaállomáson parancssorosan lekérdezzük a hálózati konfigurációt, és a következõt látjuk: ipv4 cím: 172.16.200.101 maszk: 255.255.224.0 átjárócím: 172.16.192.1
+
+a) Határozd meg a hálózat címét (prefix-szel együtt)
+b) Határozd meg a broadcast címét.
+c) Határozd meg a lehetséges munkaállomások számát.
+
+   prefix: 11111111(255).11111111(255).11100000(224).00000000(000) -> 8+8+3= 19
+    maszk: ++++++++      ++++++++      +++-----      --------
+    méret: --------      --------      ---+++++      ++++++++      -> a hálózat mérete = 2^13 = 8192
+     host: 10101100(172).00010000(016).11001000(200).01100100(101)
+  hálózat: 10101100(172).00010000(016).11000000(192).00000000(000)
+broadcast: 10101100(172).00010000(016).11011111(223).11111111(255)
+
+a) 172.16.192.0/19 a hálózat cím.
+
+b) 172.16.223.255 a broadcast cím.
+
+c) 8192-2 = 8190 a lehetséges munkaállomások száma.
+
+3.
+
+Egy vállalat négy egyenlõ nagyságú alhálózatra osztott supernetet használ.
+A supernet hálózatcíme: 10.10.64.0
+A broadcast: 10.10.67.255
+
+  hálózat: 00001010(010).00001010(010).01000000(064).00000000(000)
+broadcast: 00001010(010).00001010(010).01000011(067).11111111(255)
+    méret: --------      --------      ------++      ++++++++      -> a supernet mérete = 2^10 = 1024
+    maszk: ++++++++      ++++++++      ++++++--      --------
+   prefix: 11111111(255).11111111(255).11111100(252).00000000(000) -> 8+8+6= 22
+
+SUPERNET:
+a) Határozd meg a supernet nagyságát.
+b) Határozd meg az alhálózatok nagyságát.
+c) Határozd meg a supernet maszkját és prefixét.
+d) Határozd meg az alhálózatok hálózatcímét, maszkját és prefixét.
+
+a) 1024
+
+b) 1024/4 = 256
+
+c) maszk: 255.255.252.0, prefix: 22
+
+
+SUBNETek:
+    méret: --------      --------      --------      ++++++++      -> a subnet mérete = 2^8 = 256
+    maszk: ++++++++      ++++++++      ++++++++      --------
+
+d) maszk: 255.255.255.0, prefix: 24
+
+    cím1: 00001010(010).00001010(010).01000000(064).00000000(000)  -> 10.10.64.0/24
+    cím2: 00001010(010).00001010(010).01000001(065).00000000(000)  -> 10.10.65.0/24
+    cím3: 00001010(010).00001010(010).01000010(066).00000000(000)  -> 10.10.66.0/24
+    cím4: 00001010(010).00001010(010).01000011(067).00000000(000)  -> 10.10.67.0/24
+
+4.
+
+Egy vállalat változó hosszúságú alhálozatokra csatlakoztatja valamennyi munkaállomását. A supernet címe: 192.168.0.0
+
+Az elsõ emeleten 200 gép van.(A)
+A második emeleten 100 gép van.(B)
+A technikai részleg 50 gépet használ.(C)
+A vezetés 25 gépet használ.(D)
+Továbbá fenn szeretnénk tartani 10 címet a szervereknek.(E)
+
+a) Mekkorának kell lennie az alhálózatoknak ténylegesen?
+b) Mekkora a supernet? Milyen maszkja van?
+c) Határozza meg az alhálózati címeket és a hozzájuk tartozó prefixet és maszkot. (Többféle megoldás is lehetséges)
+
+a) (A) 256 cím, (B) 128 cím, (C) 64 cím, (D) 32 cím, (E) 16 cím
+
+SUPERNET:
+    méret: --------      --------      -------+      ++++++++      -> a supernet mérete = 2^9 = 512
+    maszk: ++++++++      ++++++++      +++++++-      --------
+   prefix: 11111111(255).11111111(255).11111110(254).00000000(000) -> 8+8+7= 23
+
+  hálózat: 11000000(192).10101000(168).xxxxxxx0(pl?254).00000000(000)
+broadcast: 11000000(192).10101000(168).xxxxxxx1(pl?255).11111111(255)
+
+SUPERNET lehetséges címek: 192.168.0.0/23 >>> 192.168.254.0/23
+                                   ?                   ?
+
+b) 512 címet tartalmaz, maszk: 255.255.254.0
+
+c) 192.168.254.0/23 választott SUPERNET címhez tartozõ SUBNETek:
+
+   (A) alhálózati cím: 192.168.254.0, 
+               prefix:24,
+                maszk: 11111111.11111111.11111111.00000000 255.255.255.0
+
+   (B) alhálózati cím: 192.168.255.128, 
+               prefix:25,
+                maszk: 11111111.11111111.11111111.10000000 255.255.255.128
+
+   (C) alhálózati cím: 192.168.255.192, 
+               prefix:26,
+                maszk: 11111111.11111111.11111111.11000000 255.255.255.192
+
+   (D) alhálózati cím: 192.168.255.224, 
+               prefix:27,
+                maszk: 11111111.11111111.11111111.11100000 255.255.255.224
+
+   (E) alhálózati cím: 192.168.255.240, 
+               prefix:27,
+                maszk: 11111111.11111111.11111111.11110000 255.255.255.240
+
+
+
+
+

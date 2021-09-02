@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+-->
+</style>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">KissJGabor13ED.java</td></tr></table>
+<hr>
+<pre>
+package kissjgabor13ed;
+
+import java.io.*;
+import java.util.*;
+
+/**
+ *
+ * @KjG
+ */
+public class KissJGabor13ED {
+
+    private static RandomAccessFile f;
+    private static final ArrayList<Tanulo> TANULO = new ArrayList<>();
+
+    private static void inputFile(String label, String fileName, String mode) {
+        try {
+            f = new RandomAccessFile(fileName, mode);
+            String sor;
+            while ((sor = f.readLine()) != null) {
+                TANULO.add(new Tanulo(sor));
+            }
+            f.close();
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+            System.exit(1);
+        }
+        System.out.println(label + fileName + "... beolvasva\n");
+    }
+
+    private static void appendFile(String fileName, String mode, String str) {
+        try {
+            f = new RandomAccessFile(fileName, mode);
+            f.seek(f.length());//a fájlmutatót a fájl végére mozgatja
+            f.writeBytes(str + "\n");
+            f.close();
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+            System.exit(1);
+        }
+    }
+
+    private static void deleteFile(String fileName) {
+        File file = new File(fileName);
+        if (file.exists()) {
+            file.delete();
+        }
+    }
+
+    private static void f2(String label, String fileName, String mode) {
+        deleteFile(fileName);
+        for (int ii = 0; ii < TANULO.size(); ii++) {
+            if (TANULO.get(ii).getOsztaly().equals("B")) {
+                String str = TANULO.get(ii).getName();
+                System.out.println(str);
+                appendFile(fileName, mode, str);
+            }
+        }
+
+        System.out.println(label + fileName + "... kiírva");
+        System.out.println("");
+    }
+
+    private static void f3(String label) {
+        int szumma = 0;
+        for (int ii = 0; ii < TANULO.size(); ii++) {
+            if (TANULO.get(ii).getNapilap().equals("Igen")) {
+                szumma++;
+            }
+        }
+
+        String str = label + szumma + " tanuló\n";
+
+        System.out.println(str);
+    }
+
+    public static void main(String[] args) {
+
+        inputFile("1. A ", "txt/forras.txt", "r");
+        f2("2. A ", "txt/B.txt", "rw");
+        f3("3. napilap olvasók száma: ");
+    }
+
+}
+
+</pre>
+
+<hr>
+<table width="100%"><tr><td align="center">Tanulo.java</td></tr></table>
+<hr>
+<pre>
+
+/**
+ *
+ * KjG
+ */
+public class Tanulo {
+
+    private String name, osztaly, napilap;
+    private int szinhaz, mozi, oldalak;
+
+    public Tanulo(String sor) {
+        String[] t = sor.split("\t");
+        this.name = t[0];
+        this.osztaly = t[1];
+        this.szinhaz = Integer.parseInt(t[2]);
+        this.mozi = Integer.parseInt(t[3]);
+        this.napilap = t[4];
+        this.oldalak = Integer.parseInt(t[5]);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getOsztaly() {
+        return osztaly;
+    }
+
+    public String getNapilap() {
+        return napilap;
+    }
+
+    public int getSzinhaz() {
+        return szinhaz;
+    }
+
+    public int getMozi() {
+        return mozi;
+    }
+
+    public int getOldalak() {
+        return oldalak;
+    }
+
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+1. A txt/forras.txt... beolvasva
+
+Albert Gyula
+Bán Béla
+Érsek Márta
+Hegedus Zoltán
+Jakab Ágnes
+Káli Lajos
+Kósa Gyula
+Kozma Kálmán
+Lakatos Réka
+Madarász Emil
+Máté Margit
+Pál Beáta
+Pásztor Mihály
+Rózsa Róbert
+Sas Ignácz
+Simon Simon
+Szabó Mária
+Szucs György
+Tatai Márk
+Tóbiás Krisztina
+Tóth János
+2. A txt/B.txt... kiírva
+
+3. napilap olvasók száma: 11 tanuló
+
+<font color="#009933">BUILD SUCCESSFUL (total time: 0 seconds)</font>
+
+</pre></body>
+</html>

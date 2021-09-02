@@ -1,0 +1,12 @@
+http_source
+http://www.met.hu/idojaras/elorejelzes/idokep_fulek/main.php
+target_file
+weather.btxt
+number_of_templates
+1
+filenames_of_templates
+s01_t0
+number_of_topics
+1
+filenames_of_topics
+s01_1.btxt

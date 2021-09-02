@@ -1,0 +1,13 @@
+http_source
+
+target_file
+economic.btxt
+number_of_templates
+1
+filenames_of_templates
+s07_t0
+number_of_topics
+2
+filenames_of_topics
+s07_1.btxt
+s07_2.btxt

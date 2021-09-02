@@ -1,0 +1,70 @@
+<!-- aktualtimestamp: 1542464823
+2018 november 12. IT alapok
+  -->
+<div class="parabellimage">
+<div id="thumb1542464823" class="thumbframe"><a onclick="show('wide1542464823'); hide('thumb1542464823')" >
+<img src="_uploaded_images/2018-11/win7VBOX.png
+" alt="win7VBOX.png" title="win7VBOX.png"></a>
+</div>
+<div id="wide1542464823" class="wideframe"><a onclick="show('thumb1542464823'); hide('wide1542464823')" >
+<img src="_uploaded_images/2018-11/win7VBOX.png
+" alt="win7VBOX.png" title="win7VBOX.png"></a>
+</div>
+<p class="main">
+<h4>Dolgozat</h4><br />
+----- I. előkészület -----<br />
+<a href="https://drive.google.com/file/d/1PryRIpYqDzwiGBYZIvUhKlR-_9ZIkP17/view?usp=sharing" target="_blank" >VBOX videó 1</a><br />
+Hozzon létre új virtuális gép-munkamenetet XYwin7 néven, ahol XY helyett a saját neve álljon. 32bites architektúrájú Windows 7-et válassza operációs rendszernek<br />
+A gyári beállításokon ne változtasson, kivéve a fájl mérete tekintetében, mely 20 GB legyen.<br />
+A boot sorrendnél tiltsa a Floppy-meghajtót, a mutatóeszköz pedig a PS/2-es egér legyen.<br />
+Mountolja be a telepítő ISO-ját.<br />
+A tárolóknál SATA vezérlővel vegyen még fel 2 db egyaránt 3-3 GB-s virtuális merevlemezt VOL1 és VOL2 néven.<br />
+A hálókártya NAT-on működjön.<br />
+A megosztott mappájának vegye fel a saját osztálya nevét viselő ESTI mappában található almappát.<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1542464823"><a onclick="show('less-article1542464823'); hide('more-article1542464823')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1542464823" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1542464823'); show('more-article1542464823')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+&nbsp;<br />
+----- II. telepítés -----<br />
+<a href="https://drive.google.com/file/d/1v6KI3ZjUwnUHdmHQXw5pOilanr1evII8/view?usp=sharing" target="_blank" >VBOX videó 2</a><br />
+A telepítés során hozzon létre a 20 GB-s tárolón két logikai partíciót, egy 15 GB-set és egy 5 GB-set. Az operációs rendszert a nagyobbra telepítse.<br />
+A számítógép neve 13EDg1 vagy 13EEg1 legyen, a felhasználónév pedig a saját teljes neve. A jelszó Minad123 legyen.<br />
+A számítógép munkahelyi LAN-ra csatlakozzon.<br />
+<br />
+----- III. személyre szabás 1. -----<br />
+<a href="https://drive.google.com/file/d/1XALdyMNn8URLIQpNCVpg9ZtxVaYKOuCa/view?usp=sharing" target="_blank" >VBOX videó 3</a><br />
+Állítsa le a gép frissítésekhez való hozzáférését.<br />
+Telepítse a VB integrációs szolgáltatását.<br />
+Az asztalon jelenítse meg a Sajátgép, a Hálózat és a Vezérlőpult ikonját, valamint hozzon létre parancsikont a parancssornak.<br />
+A fizikai gépén érje el a mintameghajtót. Másolja át az 'ESTI-1.teszt' mappából a chrome telepítő állományát a fizikai gépére a gazdagépnek szóló megosztott mappába. Telepítse a chrome-ot a virtuális gépre. Ezen felül helyezze el az asztalon a megosztási mappában talált további fájlokat (001.htm és 002.html).<br />
+Társítsa a html formátumú fájlokat a chrome böngészőhöz, a htm-kiterjesztésűeket pedig az internet explorerhez.<br />
+Jelenítse meg az ismert fájltípusok esetében is a kiterjesztést.<br />
+Telepítse a windows-szolgáltatásokban a játékokat.<br />
+Léptesse az IRODA nevű munkacsoportba a gépét.<br />
+<br />
+----- IV. személyre szabás 2. -----<br />
+<a href="https://drive.google.com/file/d/1eLvS09mOV2IOhWtq574UZOYuY1jAcflG/view?usp=sharing" target="_blank" >VBOX videó 4</a><br />
+A két 3 GB-s fizikai kötetből csináljon 1 tükrözött kötetet.<br />
+A lemezkezelőben formázza, és lássa el kötetcímkével mind a fizikai, mind pedig a logikai köteteket (a 3GB-s tükrözött kötet legyen a P, az 5GB-s logikai kötet legyen az R meghajtó).<br />
+A logikai köteten hozzon létre egy 50 MB nagyságú virtuális lemezképet (Q meghajtó)(a .VHD-fájl neve legyen szintén Q)<br />
+A helyi házirendben módosítsa a jelszóra vonatkozó szabályokat a következőképpen: a jelszó minimális hossza legyen 4 karakter!<br />
+Hozzon létre új vendégfelhasználókat f1, f2, f3 néven, akik legyenek tagjai az fgroup nevű csoportnak. Adjon olyan jelszót, ami megfelel az új jelszó bonyolultsági házirendnek. (f100; f200; f300)<br />
+Hozzon létre RG néven egy rendszergazdai jogosultsággal rendelkező felhasználót. A jelszava legyen RG00, és meg kelljen változtatni legelső belépéskor (Minad123-ra).<br />
+A tükrözött kötethez (P:) legyen csak olvasási jog-a a vendégfelhasználóknak.<br />
+A kisebb logikai partícióhoz (R:) pedig egyáltalán ne tudjanak hozzáférni.<br />
+Állítson be a virtuális köteten (Q:) kvótakezelést. A lemezhasználatot korlátozza 25 MB-re, és a figyelmeztetési érték legyen 20 MB.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

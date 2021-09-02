@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>FlowControlStatement02.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">FlowControlStatement02.java</td></tr></table>
+<hr>
+<pre>
+<span class="literal">package</span> flowcontrolstatement02;
+
+<span class="literal">import</span> java.util.*;
+
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST0">FlowControlStatement02</span> {
+
+    <span class="literal">static</span> Scanner <span class="ST1">sc</span> = <span class="literal">new</span> Scanner(System.<span class="ST1">in</span>);
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f1</span>() {
+                <span class="literal">int</span> quantity = 10;
+
+        <span class="literal">for</span>(<span class="literal">int</span> ii=0; ii&lt;quantity; ii++){
+            System.<span class="ST1">out</span>.println((<span class="literal">int</span>)(Math.<span class="ST3">random</span>()*50+1));
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f2</span>() {
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f3</span>() {
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">main</span>(String[] args) {
+        <span class="ST3">f1</span>();
+        <span class="ST3">f2</span>();
+        <span class="ST3">f3</span>();
+    }
+
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+17
+29
+50
+48
+39
+46
+47
+47
+41
+16
+<font color="#009933">BUILD SUCCESSFUL (total time: 8 seconds)</font>
+
+</pre></body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>IOProg01.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">IOProg01.java</td></tr></table>
+<hr>
+<pre>
+<span class="literal">package</span> ioprog01;
+
+<span class="literal">import</span> java.io.*;
+
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST0">IOProg01</span> {
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">final</span> <span class="literal">int</span> <span class="ST1">N</span> = 28;
+    <span class="literal">private</span> <span class="literal">static</span> String[] <span class="ST1">nevek</span> = <span class="literal">new</span> String[<span class="ST1">N</span>];
+    <span class="literal">private</span> <span class="literal">static</span> RandomAccessFile <span class="ST1">f</span>;
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f0</span>(String inputfile) {
+        <span class="literal">try</span> {
+            <span class="ST1">f</span> = <span class="literal">new</span> RandomAccessFile(inputfile, <span class="string">&quot;</span><span class="string">r</span><span class="string">&quot;</span>);
+            <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST1">N</span>; ii++) {
+                <span class="ST1">nevek</span>[ii] = <span class="ST1">f</span>.readLine();
+            }
+            <span class="ST1">f</span>.close();
+        } <span class="literal">catch</span> (IOException e) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">HIBA: </span><span class="string">&quot;</span> + e.getMessage());
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f1</span>() {
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST1">N</span>; ii++) {
+            System.<span class="ST1">out</span>.println(<span class="ST1">nevek</span>[ii]);
+        }
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">main</span>(String[] args) {
+        <span class="ST3">f0</span>(<span class="string">&quot;</span><span class="string">adatokIO1.txt</span><span class="string">&quot;</span>);
+        <span class="ST3">f1</span>();
+    }
+
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+Ug Imre
+Tóbiás Félix
+Kozma Alfonz
+Csabai Kázmér
+Pác János
+Csonka Elemér
+Örvös Eduárd
+Csõsz Béla
+Haragos Csaba
+Albert Gyula
+Bacsó Gabriella
+Bán Béla
+Birkás Lajos
+Csángó Pál
+Csontos Károly
+Dénes László
+Dobó Ernõ
+Érsek Márta
+Farádi Anikó
+Gál Ádám
+Hegedûs Zoltán
+Illés Miklós
+Jakab Ágnes
+Káli Lajos
+Kocsis Judit
+Kósa Gyula
+Kovács Rita
+Kozma Kálmán<font color="#009933">BUILD SUCCESSFUL (total time: 0 seconds)</font>
+
+</pre></body>
+</html>

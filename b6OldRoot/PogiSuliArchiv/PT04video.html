@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Packet Tracer Video 04</title>
+	<style>
+		body {
+		text-align: center;
+		}
+        nav {
+            height: 6.5em;
+            width: 800px;
+            margin: 0 auto;
+            padding:  .5em;
+            overflow: auto;
+		    text-align: justify;
+        }
+	</style>
+</head>
+<body>
+<h1> Video 04 <br /> A Packet Tracer felhasználói kezelőfelülete </h1>
+<section>
+<nav>
+Hello mindenkinek, ez itt a Cisco Packer Tracer felhasználói felületét bemutató videónk.
+Ez egy általam összeállított előre felépített hálózat (labor), melynek az áttekintése során közelebbről megismerhetik a Cisco Packer Tracer menüit és lehetőségeit.
+<br />
+Tehát először, ott van maga a felület. A hálózat ott van rajta. Használjuk a képernyőn felül látható nagyítót, és kattintsunk rá kétszer vagy háromszor a nagyításhoz. Miközben ezt tesszük, a labor képe a képernyő látható részén kívül eshet, ekkor használjuk az alsó görgető sávot a központosításhoz. Miután újra a laborra koncentrálhatunk, egy kicsit mélyebbre is tekinthetünk.
+<br />
+Nézzük meg, mit csinálhatunk a Cisco Packer Tracer belsejében ezzel a hálózattal. Itt vannak a kábeleink. A vezeték nélküli routert a kábelmodemhez kötő kábel. A kábelmodemet az internethez kötő kábel és így tovább. Szeretnénk látni, hogy melyik portokhoz vannak csatlakoztatva. Jó lenne ezt tudni.
+Most amit tehetünk, az az, hogy felül a lehetőségek (Options) menüpontra kattintunk, majd kiválasztjuk beállításokat (Preferences). A preferenciák egy nagy ablakban nyílnak meg. Ezt átméretezhetjük. Az ablak oldalaira illesztett egérmutatóval megfelelő méretűre igazíthatjuk és át is helyezhetjük azt. Ezen belül sok különböző lehetőség közül választhatunk. Nem mindet mutatjuk be, de az alapvetőeket áttekintjük.
+A Packer Tracer általános baállításaival megegyező módon a jelölőnégyzet bejelölésével használjuk a "Mindig mutasd a portcímkéket a logikai munkaterületen" lehetőséget. 
+Egyedül a logikai munkaterület az a hely, ahol megmutathatjuk ezeket az eszközöket.
+Ellenőrizzük ezt.
+Ezen kívül itt, ha akarod, ki tudod kapcsolni az úgynevezett link fényeket. Link fények azok a zöld és vörös villogó kis fénygömbök, amelyek megmondják, hogy a port értéke magasra vagy alacsonyra van állítva. Ha letisztultabb felületet szeretnénk, és nem látszik jól, hogy a port magasra vagy alacsonyra van állítva, kikapcsolhatjuk azt. Átmenetileg is megtehetjük ezt, hogy tisztább képet kapjunk. A "mindig mutassa a portcímkéket" bejelőlése, és a "mutassa a kapcsolók fényeit" törlése után egyszerűen zárjuk be az ablakot, nincs "Alkalmaz" nyomógomb. Újra itt van hálózatunk, egy kicsit tisztább kinézettel. Láthatjuk a kábelek csatlakozásainál a portok számozását. Most már nem világítanak a zöld fénygolyók, amik megmutatták nekünk, hogy a portok magas vagy alacsony szinten vannak. Szóval folytassuk.
+<br />
+Látjuk, hogy a számítógép a vezeték nélküli útválasztó 01-es portjához van csatlakoztatva. A vezeték nélküli útválasztó 00-ás portja a kábelmodemhez. A kábelmodem az internettel koaxiális csatlakozóval van összekötve. Ugyanakkor az internetnek van egy FA5 portja, amely a cisco.com webszerverünk FA0 portjához csatlakozik. Ezt nagyszerűen látni.
+<br />
+Vessünk egy pillantást néhány eszközre. Haladjunk egyenesen előre, és kattintsunk a vezeték nélküli routerre. Ahogy a vezeték nélküli routerre kattintunk, megnyílik a fizikai nézetnek nevezett lap. Felül füleket látunk és ezek közül a fizikai nézet lapon vagyunk. A fizikai nézet lap valósághű ábrázolást nyújt a vezeték nélküli router megjelenéséről. Megint nagyíthatunk és kicsinyíthetünk a gombra történő kattintással. Így közelebbről is megnézhetjük ezt a vezeték nélküli routert. Látjuk, hogy négy portja van hátul, mellettük pedig egy kék internet port. Ez kellemes látvány, de gyerünk csináljunk is vele valamit.
+Nos, van egy másik lap. Nyissuk meg a config fülre történő kattintással. Ezen a lapon a vezeték nélküli router néhány alapvető beállítását és konfigurálását végezhetjük el. Kattintsunk a különböző lehetőségekre, és nézzük meg őket. Ezek a LAN interfészek működésével kapcsolatosak. Továbbá az internet csatlakozó működésével és a vezeték nélküli eszköz konfigurálásával és az alapbeállításaival is. De ez lényegében nem egy túlságosan valós világ. Ez csak egy egyszerű felület, hogy belépve ezekbe a konfigurációs lapokba a beállításokat módosíthassuk.
+<br />
+Ami sokkal realisztikusabb, az a GUI lap. Azt imádom. Amikor a GUI lapra lépünk, jól nézzük meg. Teljesen úgy néz ki, mint egy routeré, amelyet otthon vagy az irodában már használhatott. Benne vannak a különböző beállítások fülei, melyekt konfigurálhatunk. A hálózatok és a DHCP alapbeállításai. Egy a vezeték nélküli hálózat nevét meghatározó lap. Még alárendelt lapok is a vezeték nélküli hálózat biztonságával, a vezeték nélküli hálózat mac szűrésével kapcsolatosan. Magának a vezeték nélküli routernek az adminisztrációját is felügyelhetjük. Van egy adminisztrációs lap. Kényelmessé teszi az életet. A legfontosabb dolog az, hogy bármilyen változtatást hajt végre, legyen óvatos. Mindig görgessen a képernyő aljára, és nézze meg, van-e beállítások mentése gomb. Ha módosítást hajt végre, és nem kattint a beállítások mentésére, akkor elveszíti az éppen végrehajtott módosítást.
+Hogyha végzett itt a kísérletezgetéssel, bezárhatja az ablakot, és készen is vagyunk a vezeték nélküli routerrel.
+<br />
+Közben csináljunk is valamit. Szórakozzunk egy kicsit.
+Menjünk le a PC-re amely a dig0 porton keresztül csatlakozik a vezeték nélküli router 01-es portjához. Ezen a számítógépen megint a fizikai nézet lapon kezdünk. Itt van a maga a számítógép. Ha lefelé görgetünk, látni fogjuk a PC hálózati (NIC) kártyáját: ez az alsó, szürke port az. Ha szeretné, akkor ténylegesen ki is kapcsolhatja a számítógépet a piros gomb megnyomásával. Ekkor a kártyát az egérrel a bal oldalon lévő listára húzva kiveheti a gépből, és új kártyát választhat. Bármelyik kártyára kattintva, a képernyő alján változnak az adatok, bemutatva a kijelölt kártya részletes leírását. Valósághűen választhatjuk ki és testreszabhatjuk a Packer Tracerben használt eszközeit. Ez elképesztő.
+<br />
+Emellett van egy konfigurációs fülünk is, ahol beállíthatjuk a gépünk alapvető konfigurációját. Még valósághűbb képet kapunk, ha a desktop lapra kattintunk. A Packer Tracer gépen futtatható különböző alkalmazások teljes listáját láthatjuk. Például rákattinthatok az IP-konfigurációra, és beállíthatom a DHCP-t, az automatikus IP cím lekéréshez, vagy kézzel is hozzárendelhetek egy statikus IP címet. Ugyanezt az IPV6 esetén is megtehetem.
+<br />
+Bezárhatom az IP konfigurációs ablakomat, és megnyithatok egy másikat, például a webböngészőt. A webböngészőben ténylegesen beírhatom a cisco.com-ot, ekkor csatlakoznia kell a Packer Tracer topológiájában futó cisco.com kiszolgálóhoz. Kattintsunk, és meglátjuk, csatlakozik-e. És ott van. Ez valóban a Packer Tracer PC, ami a vezeték nélküli routeren keresztül a kábelmodemhez csatlakozik, majd az interneten keresztül a cisco.com webszerverét éri el, és vissza. A Cisco Packer Tracer-ben időt kell fordítani a kísérletezésre és gyakorlásra. Ez a nagyszerű eszköz rengeteg lehetőséget tartalmaz. Itt a gyakorlás ideje: hozd létre a saját hálózatodat.
+</nav>
+<article>
+<iframe width="800" height="450" frameborder="0" src="https://mega.nz/embed#!rEshhCAT!PSKUv-Cfm0hz8O7f0OphV5lk_YhT3uQTJCYgd1qat7E" allowfullscreen></iframe>
+</article>
+<nav>
+Hello everyone, this is our Cisco Packer Tracer user interface walkthrough video. This is a pre-built network that I've put together and we're going to go through and get comfortable with the options and the menus inside of Cisco Packer Tracer.<br />
+So first off, we have the topology. The network is here. Let's zoom in a little bit. We're going to use the magnifying glass at the top of the screen and click it two or three times and we're going to zoom in. Now as you do that, your lab might fall off the screen, so you can use your scroll bars on the right and on the bottom to get you re-centered. After you're re-centered with your lab, we want to go a little bit deeper.<br />
+Let's take a look at what we can do inside of Cisco Packer Tracer with this network. Now, we have these cables that are here. The wireless router's cable to the cable modem. The cable modem is cabled to the internet and so forth. I'd like to see what ports they're plugged into. That would be nice to know. So what we can do is click on options at the top, followed by preferences. Inside of preferences, we get a large window. You can resize it. Just scroll your cursor over to the corner of the window and you can actually drag and resize this window. Inside of here, we see many different options that exist. We're not covering them all, but we're going to go through the basics. With the Packer Tracer preferences here, the common one we like to check mark is Always Show Port Labels in Logical Workspace. Logical workspace is just the place that we're in right now showing off those devices. We're going to check mark that one. We want to see the port labels. Also, inside of here, if you want to, you could turn off what are called link lights. Link lights are those green and red flashing little balls of light that tell you if the port is up or if it's down. If you want to have a cleaner interface and not see live if the port is up or down, you can turn that off. We'll do that temporarily, just to have cleaner picture. So with always show port labels checked, with show link lights unchecked, there's no apply button, just close the window. And here we have our network now, a little bit cleaner. We can see the port numbers for how things are cabled. And also, we actually do not have the green balls of light anymore, which was showing us that the ports were up versus being down. So let's continue.<br />
+We see that the PC is connected on the port 01 of the wireless router. Port 00 of the wireless router goes to the cable modem. The cable modem is connected to the coax connection to the internet. And then the internet has an FA5 port that connects to FA0 on our cisco.com web server. That's great to see.<br />
+Let's actually take a look at some of the devices. You can go ahead and actually click on the wireless router. When you click on the wireless router, it opens it up to what's called a physical view. We see these tabs at the top and we're in the physical tab. The physical tab gives you a physical representation of what this wireless router looks like. Again, there's some zoom in and zoom out features where you can zoom in by clicking the button, and we can take a closer look at this wireless router. We see there's four ports on the back, followed by an internet port in blue. Now that's nice to see, but let's do something with it. Well, there's another tab. Go to the config tab, and inside of here we can do some basic setting and configuration of the wireless router. You can click through the different options and take a look at them. They have to deal with how the LAN interfaces work, how the internet interface works, how the wireless is configured and set up on it. But that's really not too real world. That's just an easy area to go in and change settings with this config tab.<br />
+What's more realistic is the GUI tab. I love it. When you go to the GUI tab, check it out. This looks like a very similar wireless router that you may have used yourself at home or a small office. Inside of here, we have tabs of the different settings you can configure, from basic setup for networks and DHCP, a tab for wireless to deploy a wireless network name. Even sub tabs for wireless security, wireless mac filtering. Also, you can even control the administration of this wireless router itself. It's got an administration tab. You'll be able to get comfy. The key thing is, as you make any changes, be careful. Always scroll down to the bottom of whatever screen you're on and see if there is a save settings button. If you make changes and you don't click save settings, you will lose what you just changed. When you're done playing around in that section, you can close off that window and be done with the wireless router.<br />
+In the meantime, let's actually do something. Let's have some fun. We'll go under the PC, which is on port dig0 connected to 01 of the wireless router. On this PC, again, we start with the physical tab. Here's the physical PC. If I scroll down, we'll actually see the NIC card on the PC, that's it at the bottom, that gray port. If you want to, you can actually turn off the PC by clicking on the red button. You can drag that card and drop it on the list on the left, and you can pick a new card. You can click on any one of those cards and it will change on the bottom of the screen and show you details about the card that you clicked on. You can actually pick and choose and customize
+your own Packer Tracer devices. This is amazing.<br />
+Besides that, again, we have a config tab, where we can do basic configuration of our machine. But for more realistic, you can click on the desktop tab. We will see a full display here of different applications you can run on your Packer Tracer machine. For example, I can click on IP configuration, and I can sit up here in DHCP, pull an address, or I can manually assign an address with static. Same with IPV6.<br />
+I can close out my IP config window and I can open another one, like web browser. In web browser here, I can actually type in cisco.com and it should connect to the cisco.com server that's running on this Packer Tracer topology. I'll click go and we'll see if it connects. There it is. This is actually the Packer Tracer PC, going through the wireless router, out to the cable modem, all the way across the internet, and going to the cisco.com web server, and back. You need to spend time playing and practicing in Cisco Packer Tracer. This great tool has so many features. It's time to practice and make your own network.
+</nav>
+</section>
+<h1> The Packet Tracer User Interface <br /> Video 04 </h1>
+
+</body>
+</html>
+

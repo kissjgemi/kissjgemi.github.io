@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CCNA1 - 02</title>
+	<style>
+		body {
+		text-align: justify;
+		}
+	</style>
+</head>
+<body>
+<h1 style="text-align: center;">CCNA1 V5 2016 Chapter 2</h1>
+
+<p><b>1.</b></p>
+<p><img class="alignnone" src="https://lh4.googleusercontent.com/-smRQ-FrMILY/Uvqur1VthBI/AAAAAAAAAFc/2Om6UU4JmY8/w696-h346-no/p1-exa2-ccna1.png" alt="" width="696" height="346" /></p>
+<p><b>Refer to the exhibit. A switch was configured as shown. A ping to the default gateway was issued, but the ping was not successful. Other switches in the same network can ping this gateway. What is a possible reason for this?</b></p>
+<p>The default gateway address must be 192.168.10.1.<br />
+The ip default-gateway command has to be issued in the VLAN interface configuration mode.<br />
+The VLAN IP address and the default gateway IP address are not in the same network.<br />
+<span style="color: #3366ff;"><strong>The no shutdown command was not issued for VLAN 1.</strong></span><br />
+The local DNS server is not functioning correctly.</p>
+<p><b>2.<br />
+While trying to solve a network issue, a technician made multiple changes to the current router configuration file. The changes did not solve the problem and were not saved. What action can the technician take to discard the changes and work with the file in NVRAM?</b></p>
+<p><span style="color: #3366ff;"><strong>Issue the reload command without saving the running configuration.</strong></span><br />
+Close and reopen the terminal emulation software.<br />
+Delete the vlan.dat file and reboot the device.<br />
+Issue the copy startup-config running-config command.</p>
+<p><b>3.<br />
+Why is it important to configure a hostname on a device?</b></p>
+<p>to allow local access to the device through the console port<br />
+a Cisco router or switch only begins to operate when its hostname is set<br />
+<span style="color: #3366ff;"><strong>to identify the device during remote access (SSH or telnet)</strong></span><br />
+a hostname must be configured before any other parameters</p>
+<p><b>4.<br />
+Which procedure is used to access a Cisco 2960 switch when performing an initial configuration in a secure environment?</b></p>
+<p><span style="color: #3366ff;"><strong>Use the console port to locally access the switch from a serial or USB interface of the PC.</strong></span><br />
+Use Secure Shell to remotely access the switch through the network​.<br />
+Use Telnet to remotely access the switch through the network.<br />
+Use the AUX port to locally access the switch from a serial or USB interface of the PC.</p>
+<p><b>5.<br />
+What criterion must be followed in the design of an IPv4 addressing scheme for end devices?</b></p>
+<p>Each local host should be assigned an IP address with a unique network component.<br />
+Each IP address must match the address that is assigned to the host by DNS.<br />
+<span style="color: #3366ff;"><strong>Each IP address must be unique within the local network.</strong></span><br />
+Each IP address needs to be compatible with the MAC address.</p>
+<p><b>6.<br />
+A network administrator needs to keep the user ID, password, and session contents private when establishing remote CLI connectivity with a switch to manage it. Which access method should be chosen?</b></p>
+<p>AUX<br />
+<span style="color: #3366ff;"><strong>SSH</strong></span><br />
+Console<br />
+Telnet</p>
+<p><b>7.<br />
+Which interface allows remote management of a Layer 2 switch?</b></p>
+<p><span style="color: #3366ff;"><strong>the switch virtual interface</strong></span><br />
+the console port interface<br />
+the AUX interface<br />
+the first Ethernet port interface</p>
+<p><b>8.<br />
+What is a result of using the service password-encryption command on a Cisco network device?</b></p>
+<p><span style="color: #3366ff;"><strong>All passwords in the configuration are not shown in clear text when viewing the configuration.</strong></span><br />
+The command encrypts the banner message.<br />
+The command encrypts the enable mode password.<br />
+A network administrator who later logs into the device will be required to enter an administrator password in order to gain access to the Cisco device.</p>
+<p><b>9.<br />
+Match the difinitions to their respective CLI hot keys and shortcuts.</b></p>
+<p><img class="alignnone" src="https://lh6.googleusercontent.com/-BNF5WPrJdns/UvqurzZxY-I/AAAAAAAAAFg/dK4nGLNNp2w/w1018-h419-no/p9-exa2-ccna1.png" alt="" width="1018" height="419" /></p>
+<p>Tab -&gt; <span style="color: #3366ff;"><strong>Completes abbreviated commands and parameters</strong></span></p>
+<p>Ctrl-R -&gt;<span style="color: #3366ff;"><strong> returns directly to the privileged EXEC mode</strong></span><br />
+Up Arrow -&gt; <span style="color: #3366ff;"><strong>scrolls backwards through previously entered commands</strong></span><br />
+Ctrl-Z -&gt; <span style="color: #3366ff;"><strong>cancels any command currently being entered and returns directly to privileged EXEC mode</strong></span><br />
+Ctrl-C -&gt; <span style="color: #3366ff;"><strong>Redisplays, on a new line, the command currently being typed</strong></span></p>
+<p><b>10.<br />
+A network administrator is planning an IOS upgrade on several of the head office routers and switches. Which three questions must be answered before continuing with the IOS selection and upgrade? (Choose three.)</b></p>
+<p><span style="color: #3366ff;"><strong>What models of routers and switches require upgrades?</strong></span><br />
+<span style="color: #3366ff;"> <strong>Do the routers and switches have enough RAM and flash memory for the proposed IOS versions?</strong></span><br />
+What ports are installed on the routers and switches?<br />
+Are the devices on the same LAN?<br />
+<span style="color: #3366ff;"><strong>What features are required for the devices?</strong></span><br />
+Do the devices have enough NVRAM to store the IOS image?</p>
+<p><b>11. What benefit does DHCP provide to a network?</b></p>
+<p><span style="color: #3366ff;"><strong>Hosts can connect to the network and get an IP address without manual configuration.</strong></span><br />
+Duplicate addresses cannot occur on a network that issues dynamic addresses using DHCP and has static assignments.<br />
+DHCP allows users to refer to locations by a name rather than an IP address.<br />
+Hosts always have the same IP address and are therefore always reachable.</p>
+<p><b>12.<br />
+Which two functions are provided to users by the context-sensitive help feature of the Cisco IOS CLI? (Choose two.)</b></p>
+<p>providing an error message when a wrong command is submitted<br />
+allowing the user to complete the remainder of an abbreviated command with the TAB key<br />
+<span style="color: #3366ff;"><strong>displaying a list of all available commands within the current mode</strong></span><br />
+selecting the best command to accomplish a task<br />
+<span style="color: #3366ff;"><strong>determining which option, keyword, or argument is available for the entered command </strong></span></p>
+<p><b>13.<br />
+A router has a valid operating system and a configuration stored in NVRAM. When the router boots up, which mode will display?</b></p>
+<p>global configuration mode<br />
+<span style="color: #3366ff;"><strong>user EXEC mode</strong></span><br />
+setup mode<br />
+ROM monitor mode</p>
+<p><b>14.<br />
+Which two features are characteristics of flash memory? (Choose two.)</b></p>
+<p>Flash receives a copy of the IOS from RAM when a device is powered on.<br />
+<span style="color: #3366ff;"><strong>Flash provides nonvolatile storage.</strong></span><br />
+<span style="color: #3366ff;"> <strong>The contents of flash may be overwritten.</strong></span><br />
+Flash is a component in Cisco switches but not in Cisco routers.<br />
+The contents of flash may be lost during a power cycle.</p>
+<p><b>15.<br />
+Passwords can be used to restrict access to all or parts of the Cisco IOS. Select the modes and interfaces that can be protected with passwords. (Choose three.)</b></p>
+<p>boot IOS mode<br />
+Ethernet interface<br />
+<span style="color: #3366ff;"><strong>privileged EXEC mode</strong></span><br />
+<span style="color: #3366ff;"> <strong>VTY interface</strong></span><br />
+<span style="color: #3366ff;"> <strong>console interface</strong></span><br />
+router configuration mode</p>
+<p><b>16.<br />
+Why would a Layer 2 switch need an IP address?</b></p>
+<p>to enable the switch to send broadcast frames to attached PCs<br />
+to enable the switch to function as a default gateway<br />
+to enable the switch to receive frames from attached PCs<br />
+<span style="color: #3366ff;"><strong>to enable the switch to be managed remotely </strong></span></p>
+<p><b>17.<br />
+What is a user trying to determine when issuing a ping 10.1.1.1 command on a PC?</b><br />
+<span style="color: #3366ff;"><strong>if there is connectivity with the destination device</strong></span><br />
+what type of device is at the destination<br />
+if the TCP/IP stack is functioning on the PC without putting traffic on the wire<br />
+the path that traffic will take to reach the destination</p>
+<p><b>18.<br />
+What command can be used on a Windows PC to see the IP configuration of that computer?</b><br />
+ping<br />
+show interfaces<br />
+show ip interface brief<br />
+<span style="color: #3366ff;"><strong>ipconfig </strong></span></p>
+<p><b>19.<br />
+Which statement is true about the running configuration file in a Cisco IOS device?</b><br />
+It should be deleted using the erase running-config command.<br />
+It is automatically saved when the router reboots.<br />
+<span style="color: #3366ff;"><strong>It affects the operation of the device immediately when modified.</strong></span><br />
+It is stored in NVRAM.</p>
+<p><b>20.<br />
+Match the description to the common IOS CLI access method.</b></p>
+<p><img class="alignnone" src="https://lh3.googleusercontent.com/-K1wb08PRWyo/Uvqur8xV9II/AAAAAAAAAFk/O_bY2JiKr8E/w759-h415-no/p20-exa2-ccna1.png" alt="" width="759" height="415" /></p>
+<p><strong>Console port</strong><br />
+<span style="color: #3366ff;"><strong>It displays startup, debugging, and error messages by default.</strong></span><br />
+<span style="color: #3366ff;"><strong>It can be used to restore an out-of-box configuration on a switch or router.</strong></span><br />
+<strong>Virtual interface</strong><br />
+<span style="color: #3366ff;"><strong>It allows access throught use of Telnet or SSH protocols.</strong></span><br />
+<span style="color: #3366ff;"><strong>It requires an active network connection.</strong></span><br />
+<strong>AUX port</strong><br />
+<span style="color: #3366ff;"><strong>It connects throught dialup connections</strong></span><br />
+<span style="color: #3366ff;"><strong>It is not supported on Catalyst switch devices</strong></span></p>
+<p><b>21.<br />
+Which two characters are allowed as part of the hostname of a Cisco device? (Choose two.)</b><br />
+tab<br />
+space<br />
+question mark<br />
+<span style="color: #3366ff;"><strong>numbers</strong></span><br />
+<span style="color: #3366ff;"> <strong>underline</strong></span></p>
+<p><strong>22. The shortcuts with their functions are as follows:</strong><br />
+Tab –&gt; <span style="color: #3366ff;"><strong>Completes the remainder of a partially typed command or keyword</strong></span><br />
+Space bar –&gt; <span style="color: #3366ff;"><strong>displays the next screen</strong></span><br />
+? –&gt; <span style="color: #3366ff;"><strong>provides context-sensitive help</strong></span><br />
+Up Arrow –&gt; <span style="color: #3366ff;"><strong>Allows user to scroll backward through former commands</strong></span><br />
+Ctrl-C –&gt; <strong><span style="color: #3366ff;">cancels any command currently being entered and returns directly to privileged EXEC</span> mode</strong><br />
+Ctrl-Shift-6 –&gt; <span style="color: #3366ff;"><strong>Allows the user to interrupt an IOS process such as ping or traceroute</strong></span><br />
+<strong>23. A new network administrator has been asked to enter a banner message on a Cisco device. What is the fastest way a network administrator could test whether the banner is properly configured?</strong></p>
+<p><span style="color: #3366ff;"><strong>Exit privileged EXEC mode and press Enter. *TRUE*</strong></span></p>
+<p>Exit global configuration mode.</p>
+<p>Enter CTRL-Z at the privileged mode prompt.</p>
+<p>Reboot the device.</p>
+<p>Power cycle the device.</p>
+<p><strong>24.Which two characters are allowed as part of the hostname of a Cisco device? (Choose two.)</strong></p>
+<p>tab</p>
+<p>space</p>
+<p><strong><span style="color: #3366ff;">dash *</span></strong></p>
+<p><strong><span style="color: #3366ff;">numbers *</span></strong></p>
+<p>question mark</p>
+<p><span style="color: #ff0000;"><strong>UPDATE WITH QUESTIONS CCNA v5.1</strong></span></p>
+<p><strong>25. What is the function of the kernel of an operating software?</strong><br />
+It provides a user interface that allows users to request a specific task.<br />
+The kernel links the hardware drivers with the underlying electronics of a computer.<br />
+It is an application that allows the initial configuration of a Cisco device.<br />
+<span style="color: #3366ff;"><strong>The kernel provisions hardware resources to meet software requirements.*</strong></span></p>
+<p><strong>26. Which command or key combination allows a user to return to the previous level in the command hierarchy?</strong></p>
+<p>end<br />
+<span style="color: #3366ff;"><strong>exit*</strong></span><br />
+Ctrl-Z<br />
+Ctrl-C</p>
+<p><strong>27. A router has a valid operating system and a configuration file stored in NVRAM. The configuration file contains an enable secret password but no console password. When the router boots up, which mode will display?</strong></p>
+<p>global configuration mode<br />
+setup mode<br />
+privileged EXEC mode<br />
+<span style="color: #3366ff;"><strong>user EXEC mode*</strong></span></p>
+<p><strong>28. Which information does the show startup-config command display?​</strong></p>
+<p>the IOS image copied into RAM<br />
+the bootstrap program in the ROM<br />
+the contents of the current running configuration file in the RAM<br />
+<span style="color: #3366ff;"><strong>the contents of the saved configuration file in the NVRAM*</strong></span></p>
+<p><strong>29. Which two host names follow the guidelines for naming conventions on Cisco IOS devices? (Choose two.)</strong></p>
+<p>Branch2!<br />
+<span style="color: #3366ff;"><strong>RM-3-Switch-2A4*</strong></span><br />
+Floor(15)<br />
+HO Floor 17<br />
+<span style="color: #3366ff;"><strong>SwBranch799*</strong></span></p>
+<p><strong>30. How does the service password-encryption command enhance password security on Cisco routers and switches?</strong></p>
+<p>It encrypts passwords as they are sent across the network.<br />
+<span style="color: #3366ff;"><strong>It encrypts passwords that are stored in router or switch configuration files.*</strong></span><br />
+It requires that a user type encrypted passwords to gain console access to a router or switch.<br />
+It requires encrypted passwords to be used when connecting remotely to a router or switch with Telnet.</p>
+<p><strong>31. Refer to the exhibit. </strong></p>
+<p><img src="https://lh3.googleusercontent.com/zFvUw-665B23Mb6S5jc9tkM6KTzNsU5dfqwkzlmOZqpksEE0pe2LbjpxnhKrGgeDuRIdeu1W3OmGbQQNZCWGeUhnSNhoy_gOAaVgBsH-bzbjF3xL8ZJFwpUVLePoO3sAbx-BxLrtzY82xNXmHQ_3vTbDqhnknLhcT_SZf77IqcvKZ-DP0uZQ-nvqhje3wZAuVR0jEFdcV4JnC47ZVJKfsmlWlaCTasAUjCsqT8exPVRUZD69CTrX2abjqcTpGH2blihqp8K0LMmyyKovjYPkj0fFZi8qjy0SPuR2vDzXFWT697SJxk8fl3I15LIf1-WU3sff6kX4AvHDChb23H5WgH9yiElnchrym226jYcK18ONisoMRD1zqcupFUCa5ELiJUYsI8gvXrITZFeXFFhkaxSa4dculSncOxam0iBA_OF2FXI8rTvJq1Il3sxWg-oKVvTE8XUZiaqKrwrGkwOHEUr65KHgoduCIWdhgZYW-a7bs0OgWP_fHv2PN69jn4pDk4m0Ip_lxDsmzqDsA3VUKlYD_5-4kbz6KQwYRrLREEej6lTYZs2xQL-C0_njOBsAF7Qd=w528-h132-no" alt="" /></p>
+<p><strong>A network administrator is configuring the MOTD on switch SW1. What is the purpose of this command?</strong></p>
+<p><span style="color: #3366ff;"><strong>to display a message when a user accesses the switch*</strong></span><br />
+to configure switch SW1 so that only the users in the Admin group can telnet into SW1<br />
+to force users of the Admin group to enter a password for authentication<br />
+to configure switch SW1 so that the message will display when a user enters the enable command</p>
+<p><strong>32. What are two characteristics of RAM on a Cisco device? (Choose two.)</strong></p>
+<p>RAM provides nonvolatile storage.<br />
+<span style="color: #3366ff;"><strong>The configuration that is actively running on the device is stored in RAM.*</strong></span><br />
+<span style="color: #3366ff;"><strong>The contents of RAM are lost during a power cycle.*</strong></span><br />
+RAM is a component in Cisco switches but not in Cisco routers.<br />
+RAM is able to store multiple versions of IOS and configuration files.</p>
+<p><strong>33. Which interface is the default SVI on a Cisco switch?</strong></p>
+<p>FastEthernet 0/1<br />
+GigabitEthernet 0/1<br />
+<span style="color: #3366ff;"><strong>VLAN 1*</strong></span><br />
+VLAN 99</p>
+<p><strong>34. A technician is adding a new PC to a LAN. After unpacking the components and making all the connections, the technician starts the PC. After the OS loads, the technician opens a browser, and verifies that the PC can reach the Internet. Why was the PC able to connect to the network with no additional configuration?</strong></p>
+<p>The PC does not require any additional information to function on the network.<br />
+The PC came preconfigured with IP addressing information from the factory.<br />
+<span style="color: #3366ff;"><strong>The PC was preconfigured to use DHCP.*</strong></span><br />
+The PC used DNS to automatically receive IP addressing information from a server.<br />
+The PC virtual interface is compatible with any network.</p>
+<p><strong>35. Refer to the exhibit. </strong></p>
+<p><img src="https://lh3.googleusercontent.com/MyYx-FU0aMseNUibGMR2JyB2hslY0urVkqt-ADKTC9vwDmTiEgPyrz82_3w_WxF7n2Zx-iOMAXWWKCInoQo1o13K3aFDhc6YxRSv1paOTk-IUTGbOdBtGowT2E6Fsir6uJaKm-EIa7SdwkwL3puxXg15E_B4PgTebE3KBGgbSy0aud6X12UaIEXcf1g1qjIVi8EXL0TMk_oR0Px7Kald88VEKnZuaraFUiUuJIUUpsjSzVqtIVl_WqODN0YVQ3-mlF0UTBLzqptp4cXbm9iSTP4OGah0K9ppQAcVidJzrUCcwe0XqcLR2H0gbSetFMmS_X-ibvkqkGRpvJMBNQ0rKFfgPbqCJWB55JjXNxzNIh8rhzIdcWbfFgN6YeldpKC_--jZ4m8odlw-hsjhaHsOeKGBRHiMJ4b8caL30_Tcf2CPEv_CE-lB279tgEuYDbXxHpqSwfr3V1FbgybXpRlRwbyo3TMFjE6EjTeDT9_9kcVJVQwjqttFdgQlVSyW3ODlqtfljX31fZQbGEQ-oFTYXzHPENov9_qU0qyawEFbtrIL1pWan3WYcTGUnDft78m1K8-d=w647-h390-no" alt="" /></p>
+<p><strong>A network technician is testing connectivity in a new network. Based on the test results shown in the exhibit, which device does the technician have connectivity with and which device does the technician not have connectivity with? (Choose two.)</strong></p>
+<p><span style="color: #3366ff;"><strong>connectivity: switch 2*</strong></span><br />
+connectivity: PC-D<br />
+connectivity: PC-B<br />
+no connectivity: switch 1<br />
+no connectivity: switch 2<br />
+<span style="color: #3366ff;"><strong>no connectivity: PC-C*</strong></span></p>
+<p><strong>36. Refer to the exhibit. </strong></p>
+<p><img src="https://lh3.googleusercontent.com/6EBRH4BN8wby-Q7MUA9LTEBIkWSC91_uUMaK-x-t3MXruZaz-oeYF_jGkz9St5SulkTDb0wJDM-KVTv6hxJp0AoR7KMp7cePmk_7clvuRWcXQ_tp1OwgDGgaN8g3kREmmm3N83JCRxCuoPcGVn43NBflg9dLgQGj20VGaRq7SbtBT_7OW4btirCSfd7ZZOiiObLD67v4l21BkSz6JHqOp6Wbk70lS3IlPF4jQ0AwvXWYNcHpajy07fR0wlLJB1KBwl-A3CwWS6ygpXfs1QLWYHbCgU9HBFIt0zNghsffzXrdIz5ZRc5NYq3VX1LnvuzWbaSRj0i5rxDbIRm-jLyScXwDJu4xlpiDBPrKFFpKeUAQmXBGCtDd0OEQgSMSbAXHwP11MLU5n4WSPtfSnqLjR5M0xcYdY5HVK27leU8_LTUNuV32NLFwiJc9Mb-699Yoht94PFsHUNxfcZPjUbo_-hAriK149_7AJ041XZMfxkU5VLOWGVkNjPg0ER9aZdorJpIJQAblD7yn7J2rjQ0PUSRjg1bJ8ienxFOw7LmereP7BQCHsVlNT5ycBozFcnyKAWNd=w580-h332-no" alt="" /></p>
+<p><strong>What three facts can be determined from the viewable output of the show ip interface brief command? (Choose three.)</strong></p>
+<p>Two physical interfaces have been configured.<br />
+<span style="color: #3366ff;"><strong>The switch can be remotely managed.*</strong></span><br />
+<span style="color: #3366ff;"><strong>One device is attached to a physical interface.*</strong></span><br />
+Passwords have been configured on the switch.<br />
+Two devices are attached to the switch.<br />
+<span style="color: #3366ff;"><strong>The default SVI has been configured.*</strong></span></p>
+<p><strong>37. An administrator is configuring a switch console port with a password. In what order will the administrator travel through the IOS modes of operation in order to reach the mode in which the configuration commands will be entered? (Not all options are used.)</strong></p>
+<p><img src="https://lh3.googleusercontent.com/bMr521-LYLk6yj7E8Fn-yfXF5G6H2tkpGcQosz6LRBrSNsrEMAGtadYoCh6gbO3uPPUldpEnsSQ0CG8XKSWBto1LNKOEOEOVdmQlcS0ynDRxx_msa-m2DNbQ7iT6c35AJCFanYwDPRms_G7BaEhqioQxO0Zl3_JjGwemITQ5xWjO-5OP2r-LbHU8sx9u6tYdP2Cg5zZH_2IQEEnjynMORgOmSS7v5AjCx95MGkRfzNqJEKRM6DR8jyclgYjawlA2IsRviSkEdt6Xf5Hl1x3HjMwj4v4m4kVQhmTD_zwughYlm6B1IFUjkgcVw7FJ5TJfQ_r8ozS_W1TnGJJwF3D100inc4RSL7sAdWp9Bi9nVm-S0SMAxlYY_maMjQLWe3fcfBsiNRs3aOjB2mBDeqRVRiitD_VVD0-hKk53MCx8QZr0kzf753oHls0AT5KQyu7mHZhIuNlGVgcBc4y2QjDzZCHxl342BJzigRQjA7dqQyam0AtsWrpN8jPJ-xxLIAw60kZJGQV8eLHRz8l11q5qU6DKnJKoQ_ppvihfT9VN8ilpMF_-TaOwpM0H0m7qgUkmbHDr=w1018-h600-no" alt="" /></p>
+<p><strong>38. Match the definitions to their respective CLI hot keys and shortcuts. (Not all options are used.)</strong></p>
+<p><img src="https://lh3.googleusercontent.com/qKB6r5LNZY4o8tMkwPPaLmL6HHEJ4yUJd3HD3_Mts8asqPPjZfYvLDtuF7iUlOY3FVxP9FtNSlMYrFvpOBUr7d2XcpwdN_UjRAzhwZs1K0ZvD34TDNIlP-AnOyXnvj-H_sKdZnNRiYFTyoFoFwuMjnZ4zCzm6k7003jogH5vk690XfvNKHRkXQKMysQcP1JbalnyndZaaXob-ta1w0DnJSZ_4tDvzlFcOO4saWxmjUMn_4Iyiryzk_z5TrFtWbNa9OwUGaknqTqSaVuJ9p3VCOH_RrFGI6V5SpceDlPxNv6L8570b4jl3qNSoYUc6q1-MlVu98XWa9PQlIVOjTRAV3-pG8rsBL1MRaiucwsCIVlWO8PEYlFu6YcrldXqXkcYHWbOd3h3y-7tKfI9lgCds-DeKn9BK_xXt-X_yrbW1lGbOAMifRV4ntyW7da0O2N0DxCZdyqmci8SmPjLemh7hBOeaE5KD_3HZ7nYt-d-QufYm-C43XCJcKURnKc3fFvX8TTp9nLqA74O53LWTmE4CjpEAZh3_ldSCvOwHlibA0ZA6_Pb8gUExcYJ8q0FNjCxkO5v=w1018-h600-no" alt="" /></p>
+<br />
+<br />
+<h1 style="text-align: center;">CCNA1 V5 2018 Chapter 2</h1>
+
+<h3>1. What is the function of the kernel of an operating software?</h3>
+<p>It provides a user interface that allows users to request a specific task.</p>
+<p>The kernel links the hardware drivers with the underlying electronics of a computer.</p>
+<p>It is an application that allows the initial configuration of a Cisco device.</p>
+<p><span style="color: #3366ff;"><strong>The kernel provisions hardware resources to meet software requirements.*</strong></span></p>
+<h3>2. A network administrator needs to keep the user ID, password, and session contents private when establishing remote CLI connectivity with a switch to manage it. Which access method should be chosen?</h3>
+<p>Telnet</p>
+<p>Console</p>
+<p>AUX</p>
+<p><span style="color: #3366ff;"><strong>SSH*</strong></span></p>
+<p>&nbsp;</p>
+<h3>3. Which procedure is used to access a Cisco 2960 switch when performing an initial configuration in a secure environment?</h3>
+<p>Use Telnet to remotely access the switch through the network.</p>
+<p><span style="color: #3366ff;"><strong>Use the console port to locally access the switch from a serial or USB interface of the PC.*</strong></span></p>
+<p>Use Secure Shell to remotely access the switch through the network​.</p>
+<p>Use the AUX port to locally access the switch from a serial or USB interface of the PC.</p>
+<p>&nbsp;</p>
+<h3>4. Which command or key combination allows a user to return to the previous level in the command hierarchy?</h3>
+<p>end</p>
+<p><span style="color: #3366ff;"><strong>exit*</strong></span></p>
+<p>Ctrl-Z</p>
+<p>Ctrl-C</p>
+<p>&nbsp;</p>
+<h3>5. A router has a valid operating system and a configuration file stored in NVRAM. The configuration file contains an enable secret password but no console password. When the router boots up, which mode will display?</h3>
+<p>global configuration mode</p>
+<p>setup mode</p>
+<p>privileged EXEC mode</p>
+<p><span style="color: #3366ff;"><strong>user EXEC mode*</strong></span></p>
+<p>&nbsp;</p>
+<h3>6. Which two functions are provided to users by the context-sensitive help feature of the Cisco IOS CLI? (Choose two.)</h3>
+<p>providing an error message when a wrong command is submitted</p>
+<p><strong><span style="color: #3366ff;">displaying a list of all available commands within the current mode*</span></strong></p>
+<p>allowing the user to complete the remainder of an abbreviated command with the TAB key</p>
+<p><span style="color: #3366ff;"><strong>determining which option, keyword, or argument is available for the entered command*</strong></span></p>
+<p>selecting the best command to accomplish a task</p>
+<p>&nbsp;</p>
+<h3>7. Which information does the show startup-config command display?​</h3>
+<p>the IOS image copied into RAM</p>
+<p>the bootstrap program in the ROM</p>
+<p>the contents of the current running configuration file in the RAM</p>
+<p><strong><span style="color: #3366ff;">the contents of the saved configuration file in the NVRAM*</span></strong></p>
+<p>&nbsp;</p>
+<h3>8. Why is it important to configure a hostname on a device?</h3>
+<p>a Cisco router or switch only begins to operate when its hostname is set</p>
+<p>a hostname must be configured before any other parameters</p>
+<p><span style="color: #3366ff;"><strong>to identify the device during remote access (SSH or telnet)*</strong></span></p>
+<p>to allow local access to the device through the console port</p>
+<p>&nbsp;</p>
+<h3>9. Which two host names follow the guidelines for naming conventions on Cisco IOS devices? (Choose two.)</h3>
+<p>Branch2!</p>
+<p><span style="color: #3366ff;"><strong>RM-3-Switch-2A4*</strong></span></p>
+<p>Floor(15)</p>
+<p>HO Floor 17</p>
+<p><span style="color: #3366ff;"><strong>SwBranch799*</strong></span></p>
+<p>&nbsp;</p>
+<h3>10. How does the service password-encryption command enhance password security on Cisco routers and switches?</h3>
+<p>It encrypts passwords as they are sent across the network.</p>
+<p><span style="color: #3366ff;"><strong>It encrypts passwords that are stored in router or switch configuration files.*</strong></span></p>
+<p>It requires that a user type encrypted passwords to gain console access to a router or switch.</p>
+<p>It requires encrypted passwords to be used when connecting remotely to a router or switch with Telnet.</p>
+<p>&nbsp;</p>
+<h3>11. Refer to the exhibit. A network administrator is configuring the MOTD on switch SW1. What is the purpose of this command?</h3>
+<p><img src="https://lh3.googleusercontent.com/zFvUw-665B23Mb6S5jc9tkM6KTzNsU5dfqwkzlmOZqpksEE0pe2LbjpxnhKrGgeDuRIdeu1W3OmGbQQNZCWGeUhnSNhoy_gOAaVgBsH-bzbjF3xL8ZJFwpUVLePoO3sAbx-BxLrtzY82xNXmHQ_3vTbDqhnknLhcT_SZf77IqcvKZ-DP0uZQ-nvqhje3wZAuVR0jEFdcV4JnC47ZVJKfsmlWlaCTasAUjCsqT8exPVRUZD69CTrX2abjqcTpGH2blihqp8K0LMmyyKovjYPkj0fFZi8qjy0SPuR2vDzXFWT697SJxk8fl3I15LIf1-WU3sff6kX4AvHDChb23H5WgH9yiElnchrym226jYcK18ONisoMRD1zqcupFUCa5ELiJUYsI8gvXrITZFeXFFhkaxSa4dculSncOxam0iBA_OF2FXI8rTvJq1Il3sxWg-oKVvTE8XUZiaqKrwrGkwOHEUr65KHgoduCIWdhgZYW-a7bs0OgWP_fHv2PN69jn4pDk4m0Ip_lxDsmzqDsA3VUKlYD_5-4kbz6KQwYRrLREEej6lTYZs2xQL-C0_njOBsAF7Qd=w528-h132-no" alt="" /></p>
+<p><span style="color: #3366ff;"><strong>to display a message when a user accesses the switch*</strong></span></p>
+<p>to configure switch SW1 so that only the users in the Admin group can telnet into SW1</p>
+<p>to force users of the Admin group to enter a password for authentication</p>
+<p>to configure switch SW1 so that the message will display when a user enters the enable command</p>
+<p>&nbsp;</p>
+<h3>12. While trying to solve a network issue, a technician made multiple changes to the current router configuration file. The changes did not solve the problem and were not saved. What action can the technician take to discard the changes and work with the file in NVRAM?</h3>
+<p><span style="color: #3366ff;"><strong> Issue the reload command without saving the running configuration.*</strong></span></p>
+<p>Delete the vlan.dat file and reboot the device.</p>
+<p>Close and reopen the terminal emulation software.</p>
+<p>Issue the copy startup-config running-config command.</p>
+<p>&nbsp;</p>
+<h3>13. Which statement is true about the running configuration file in a Cisco IOS device?</h3>
+<p><span style="color: #3366ff;"><strong>It affects the operation of the device immediately when modified.*</strong></span></p>
+<p>It is stored in NVRAM.</p>
+<p>It should be deleted using the erase running-config command.</p>
+<p>It is automatically saved when the router reboots.</p>
+<p>&nbsp;</p>
+<h3>14. What are two characteristics of RAM on a Cisco device? (Choose two.)</h3>
+<p>RAM provides nonvolatile storage.</p>
+<p><span style="color: #3366ff;"><strong>The configuration that is actively running on the device is stored in RAM.*</strong></span></p>
+<p><span style="color: #3366ff;"><strong>The contents of RAM are lost during a power cycle.*</strong></span></p>
+<p>RAM is a component in Cisco switches but not in Cisco routers.</p>
+<p>RAM is able to store multiple versions of IOS and configuration files.</p>
+<p>&nbsp;</p>
+<h3>15. Which interface allows remote management of a Layer 2 switch?</h3>
+<p>the AUX interface</p>
+<p>the console port interface</p>
+<p><span style="color: #3366ff;"><strong>the switch virtual interface*</strong></span></p>
+<p>the first Ethernet port interface</p>
+<p>&nbsp;</p>
+<h3>16. Which interface is the default SVI on a Cisco switch?</h3>
+<p>FastEthernet 0/1</p>
+<p>GigabitEthernet 0/1</p>
+<p><span style="color: #3366ff;"><strong>VLAN 1*</strong></span></p>
+<p>VLAN 99</p>
+<p>&nbsp;</p>
+<h3>17. Why would a Layer 2 switch need an IP address?</h3>
+<p>to enable the switch to send broadcast frames to attached PCs</p>
+<p>to enable the switch to function as a default gateway</p>
+<p><span style="color: #3366ff;"><strong>to enable the switch to be managed remotely*</strong></span></p>
+<p>to enable the switch to receive frames from attached PCs</p>
+<p>&nbsp;</p>
+<h3>18. What command can be used on a Windows PC to see the IP configuration of that computer?</h3>
+<p>ping</p>
+<p><span style="color: #3366ff;"><strong>ipconfig*</strong></span></p>
+<p>show interfaces</p>
+<p>show ip interface brief</p>
+<p>&nbsp;</p>
+<h3>19. A technician is adding a new PC to a LAN. After unpacking the components and making all the connections, the technician starts the PC. After the OS loads, the technician opens a browser, and verifies that the PC can reach the Internet. Why was the PC able to connect to the network with no additional configuration?</h3>
+<p>The PC does not require any additional information to function on the network.</p>
+<p>The PC came preconfigured with IP addressing information from the factory.</p>
+<p><span style="color: #3366ff;"><strong>The PC was preconfigured to use DHCP.*</strong></span></p>
+<p>The PC used DNS to automatically receive IP addressing information from a server.</p>
+<p>The PC virtual interface is compatible with any network.</p>
+<p>&nbsp;</p>
+<h3>20. What is a user trying to determine when issuing a ping 10.1.1.1 command on a PC?</h3>
+<p>if the TCP/IP stack is functioning on the PC without putting traffic on the wire</p>
+<p><span style="color: #3366ff;"><strong>if there is connectivity with the destination device*</strong></span></p>
+<p>the path that traffic will take to reach the destination</p>
+<p>what type of device is at the destination</p>
+<p>&nbsp;</p>
+<h3>21. Refer to the exhibit. A network technician is testing connectivity in a new network. Based on the test results shown in the exhibit, which device does the technician have connectivity with and which device does the technician not have connectivity with? (Choose two.)</h3>
+<p><img src="https://lh3.googleusercontent.com/MyYx-FU0aMseNUibGMR2JyB2hslY0urVkqt-ADKTC9vwDmTiEgPyrz82_3w_WxF7n2Zx-iOMAXWWKCInoQo1o13K3aFDhc6YxRSv1paOTk-IUTGbOdBtGowT2E6Fsir6uJaKm-EIa7SdwkwL3puxXg15E_B4PgTebE3KBGgbSy0aud6X12UaIEXcf1g1qjIVi8EXL0TMk_oR0Px7Kald88VEKnZuaraFUiUuJIUUpsjSzVqtIVl_WqODN0YVQ3-mlF0UTBLzqptp4cXbm9iSTP4OGah0K9ppQAcVidJzrUCcwe0XqcLR2H0gbSetFMmS_X-ibvkqkGRpvJMBNQ0rKFfgPbqCJWB55JjXNxzNIh8rhzIdcWbfFgN6YeldpKC_--jZ4m8odlw-hsjhaHsOeKGBRHiMJ4b8caL30_Tcf2CPEv_CE-lB279tgEuYDbXxHpqSwfr3V1FbgybXpRlRwbyo3TMFjE6EjTeDT9_9kcVJVQwjqttFdgQlVSyW3ODlqtfljX31fZQbGEQ-oFTYXzHPENov9_qU0qyawEFbtrIL1pWan3WYcTGUnDft78m1K8-d=w647-h390-no" alt="" /></p>
+<p><span style="color: #3366ff;"><strong>connectivity: switch 2*</strong></span></p>
+<p>connectivity: PC-D</p>
+<p>connectivity: PC-B</p>
+<p>no connectivity: switch 1</p>
+<p>no connectivity: switch 2</p>
+<p><span style="color: #3366ff;"><strong>no connectivity: PC-C*</strong></span></p>
+<p>&nbsp;</p>
+<h3>22. Refer to the exhibit. What three facts can be determined from the viewable output of the show ip interface brief command? (Choose three.)</h3>
+<p><img src="https://lh3.googleusercontent.com/6EBRH4BN8wby-Q7MUA9LTEBIkWSC91_uUMaK-x-t3MXruZaz-oeYF_jGkz9St5SulkTDb0wJDM-KVTv6hxJp0AoR7KMp7cePmk_7clvuRWcXQ_tp1OwgDGgaN8g3kREmmm3N83JCRxCuoPcGVn43NBflg9dLgQGj20VGaRq7SbtBT_7OW4btirCSfd7ZZOiiObLD67v4l21BkSz6JHqOp6Wbk70lS3IlPF4jQ0AwvXWYNcHpajy07fR0wlLJB1KBwl-A3CwWS6ygpXfs1QLWYHbCgU9HBFIt0zNghsffzXrdIz5ZRc5NYq3VX1LnvuzWbaSRj0i5rxDbIRm-jLyScXwDJu4xlpiDBPrKFFpKeUAQmXBGCtDd0OEQgSMSbAXHwP11MLU5n4WSPtfSnqLjR5M0xcYdY5HVK27leU8_LTUNuV32NLFwiJc9Mb-699Yoht94PFsHUNxfcZPjUbo_-hAriK149_7AJ041XZMfxkU5VLOWGVkNjPg0ER9aZdorJpIJQAblD7yn7J2rjQ0PUSRjg1bJ8ienxFOw7LmereP7BQCHsVlNT5ycBozFcnyKAWNd=w580-h332-no" alt="" /></p>
+<p>Two physical interfaces have been configured.</p>
+<p><span style="color: #3366ff;"><strong>The switch can be remotely managed.*</strong></span></p>
+<p><span style="color: #3366ff;"><strong>One device is attached to a physical interface.*</strong></span></p>
+<p>Passwords have been configured on the switch.</p>
+<p>Two devices are attached to the switch.</p>
+<p><span style="color: #3366ff;"><strong>The default SVI has been configured.*</strong></span></p>
+<p>&nbsp;</p>
+<h3>23. An administrator is configuring a switch console port with a password. In what order will the administrator travel through the IOS modes of operation in order to reach the mode in which the configuration commands will be entered? (Not all options are used.)</h3>
+<p><img src="https://lh3.googleusercontent.com/bMr521-LYLk6yj7E8Fn-yfXF5G6H2tkpGcQosz6LRBrSNsrEMAGtadYoCh6gbO3uPPUldpEnsSQ0CG8XKSWBto1LNKOEOEOVdmQlcS0ynDRxx_msa-m2DNbQ7iT6c35AJCFanYwDPRms_G7BaEhqioQxO0Zl3_JjGwemITQ5xWjO-5OP2r-LbHU8sx9u6tYdP2Cg5zZH_2IQEEnjynMORgOmSS7v5AjCx95MGkRfzNqJEKRM6DR8jyclgYjawlA2IsRviSkEdt6Xf5Hl1x3HjMwj4v4m4kVQhmTD_zwughYlm6B1IFUjkgcVw7FJ5TJfQ_r8ozS_W1TnGJJwF3D100inc4RSL7sAdWp9Bi9nVm-S0SMAxlYY_maMjQLWe3fcfBsiNRs3aOjB2mBDeqRVRiitD_VVD0-hKk53MCx8QZr0kzf753oHls0AT5KQyu7mHZhIuNlGVgcBc4y2QjDzZCHxl342BJzigRQjA7dqQyam0AtsWrpN8jPJ-xxLIAw60kZJGQV8eLHRz8l11q5qU6DKnJKoQ_ppvihfT9VN8ilpMF_-TaOwpM0H0m7qgUkmbHDr=w1018-h600-no" alt="" /></p>
+<p><strong>Place the options in the following order.</strong></p>
+<p><strong>&#8212; not scored &#8212;</strong><br />
+<strong>privileged EXEC mode -&gt; <span style="color: #3366ff;">second mode</span></strong><br />
+<strong>line configuration mode -&gt; <span style="color: #3366ff;">final mode</span></strong><br />
+<strong>global configuration mode -&gt; <span style="color: #3366ff;">third mode</span></strong><br />
+<strong>user EXEC mode -&gt; <span style="color: #3366ff;">first mode</span></strong></p>
+<h3>24. Match the definitions to their respective CLI hot keys and shortcuts. (Not all options are used.)</h3>
+<p><img src="https://lh3.googleusercontent.com/qKB6r5LNZY4o8tMkwPPaLmL6HHEJ4yUJd3HD3_Mts8asqPPjZfYvLDtuF7iUlOY3FVxP9FtNSlMYrFvpOBUr7d2XcpwdN_UjRAzhwZs1K0ZvD34TDNIlP-AnOyXnvj-H_sKdZnNRiYFTyoFoFwuMjnZ4zCzm6k7003jogH5vk690XfvNKHRkXQKMysQcP1JbalnyndZaaXob-ta1w0DnJSZ_4tDvzlFcOO4saWxmjUMn_4Iyiryzk_z5TrFtWbNa9OwUGaknqTqSaVuJ9p3VCOH_RrFGI6V5SpceDlPxNv6L8570b4jl3qNSoYUc6q1-MlVu98XWa9PQlIVOjTRAV3-pG8rsBL1MRaiucwsCIVlWO8PEYlFu6YcrldXqXkcYHWbOd3h3y-7tKfI9lgCds-DeKn9BK_xXt-X_yrbW1lGbOAMifRV4ntyW7da0O2N0DxCZdyqmci8SmPjLemh7hBOeaE5KD_3HZ7nYt-d-QufYm-C43XCJcKURnKc3fFvX8TTp9nLqA74O53LWTmE4CjpEAZh3_ldSCvOwHlibA0ZA6_Pb8gUExcYJ8q0FNjCxkO5v=w1018-h600-no" alt="" /></p>
+<p><strong>Place the options in the following order.</strong></p>
+<p><strong>Tab -&gt; <span style="color: #3366ff;">completes abbreviated commands and parameters</span></strong><br />
+<strong>space bar -&gt; <span style="color: #3366ff;">displays the next screen</span></strong><br />
+<strong>Up Arrow -&gt; <span style="color: #3366ff;">scrolls backwards through previously entered commands</span></strong><br />
+<strong>&#8212; not scored &#8212;</strong><br />
+<strong>? -&gt; <span style="color: #3366ff;">provides context-sensitive help</span></strong><br />
+<strong>Ctrl-Shift-6 aborts -&gt; <span style="color: #3366ff;">commands such as trace and ping</span></strong></p>
+<br />
+<br />
+<h1 style="text-align: center;">CCNA1 V6 Chapter 2</h1>
+
+<h3>1. What is the function of the kernel of an operating software?</h3>
+<p>It provides a user interface that allows users to request a specific task.</p>
+<p>The kernel links the hardware drivers with the underlying electronics of a computer.</p>
+<p>It is an application that allows the initial configuration of a Cisco device.</p>
+<p><span style="color: #0000ff;"><strong>The kernel provisions hardware resources to meet software requirements.*</strong></span></p>
+<div class="message_box announce"><p><strong>Explain:</strong><br />
+Operating systems function with a shell, a kernel, and the hardware. The shell interfaces with the users, allowing them to request specific tasks from the device. The kernel provisions resources from the hardware to meet software requirements. The hardware functions by using drivers and their underlying electronics. The hardware represents the physical components of the device.</p></div>
+<h3>2. A network administrator needs to keep the user ID, password, and session contents private when establishing remote CLI connectivity with a switch to manage it. Which access method should be chosen?</h3>
+<p>Telnet</p>
+<p>Console</p>
+<p>AUX</p>
+<p><span style="color: #0000ff;"><strong>SSH*</strong></span></p>
+<div class="message_box announce"><p><strong>Explain:</strong><br />
+To be truly private a technician would use a Console connection however if remote management is required SSH provides a secure method.</p></div>
+<h3>3. Which procedure is used to access a Cisco 2960 switch when performing an initial configuration in a secure environment?</h3>
+<p>Use Telnet to remotely access the switch through the network.</p>
+<p><span style="color: #0000ff;"><strong>Use the console port to locally access the switch from a serial or USB interface of the PC.*</strong></span></p>
+<p>Use Secure Shell to remotely access the switch through the network.</p>
+<p>Use the AUX port to locally access the switch from a serial or USB interface of the PC.</p>
+<div class="message_box announce"><p><strong>Explain:</strong><br />
+Telnet and SSH require active networking services to be configured on a Cisco device before they become functional. Cisco switches do not contain AUX ports.</p></div>
+<h3>4. Which command or key combination allows a user to return to the previous level in the command hierarchy?</h3>
+<p>end</p>
+<p><span style="color: #0000ff;"><strong>exit*</strong></span></p>
+<p>Ctrl-Z</p>
+<p>Ctrl-C</p>
+<div class="message_box announce"><p><strong>Explain:</strong><br />
+End and CTRL-Z return the user to the privileged EXEC mode. Ctrl-C ends a command in process. The exit command returns the user to the previous level.</p></div>
+<h3>5. A router has a valid operating system and a configuration file stored in NVRAM. The configuration file contains an enable secret password but no console password. When the router boots up, which mode will display?</h3>
+<p>global configuration mode</p>
+<p>setup mode</p>
+<p>privileged EXEC mode</p>
+<p><span style="color: #0000ff;"><strong>user EXEC mode*</strong></span></p>
+<div class="message_box announce"><p><strong>Explain:</strong><br />
+If a Cisco IOS device has a valid IOS and a valid configuration file, it will boot into user EXEC mode. A password will be required to enter privileged EXEC mode.</p></div>
+<h3>6. Which two functions are provided to users by the context-sensitive help feature of the Cisco IOS CLI? (Choose two.)</h3>
+<p>providing an error message when a wrong command is submitted</p>
+<p><span style="color: #0000ff;"><strong>displaying a list of all available commands within the current mode*</strong></span></p>
+<p>allowing the user to complete the remainder of an abbreviated command with the TAB key</p>
+<p><span style="color: #0000ff;"><strong>determining which option, keyword, or argument is available for the entered command*</strong></span></p>
+<p>selecting the best command to accomplish a task</p>
+<div class="message_box announce"><p><strong>Explain:</strong><br />
+Context-sensitive help provides the user with a list of commands and the arguments associated with those commands within the current mode of a networking device. A syntax checker provides error checks on submitted commands and the TAB key can be used for command completion if a partial command is entered.</p></div>
+<h3>7. Which information does the show startup-config command display?</h3>
+<p>the IOS image copied into RAM</p>
+<p>the bootstrap program in the ROM</p>
+<p>the contents of the current running configuration file in the RAM</p>
+<p><span style="color: #0000ff;"><strong>the contents of the saved configuration file in the NVRAM*</strong></span></p>
+<div class="message_box announce"><p><strong>Explain:</strong><br />
+The show startup-config command displays the saved configuration located in NVRAM. The show running-config command displays the contents of the currently running configuration file located in RAM.​</p></div>
+<h3>8. Why is it important to configure a hostname on a device?</h3>
+<p>a Cisco router or switch only begins to operate when its hostname is set</p>
+<p>a hostname must be configured before any other parameters</p>
+<p><span style="color: #0000ff;"><strong>to identify the device during remote access (SSH or telnet)*</strong></span></p>
+<p>to allow local access to the device through the console port</p>
+<div class="message_box announce"><p><strong>Explain:</strong><br />
+It is important to configure a hostname because various authentication processes use the device hostname. Hostnames are helpful for documentation, and they identify the device during remote access.</p></div>
+<h3>9. Which two host names follow the guidelines for naming conventions on Cisco IOS devices? (Choose two.)</h3>
+<p>Branch2!</p>
+<p><span style="color: #0000ff;"><strong>RM-3-Switch-2A4*</strong></span></p>
+<p>Floor(15)</p>
+<p>HO Floor 17</p>
+<p><span style="color: #0000ff;"><strong>SwBranch799*</strong></span></p>
+<div class="message_box announce"><p><strong>Explain:</strong><br />
+Some guidelines for naming conventions are that names should:<br />
+Start with a letter<br />
+Contain no spaces<br />
+End with a letter or digit<br />
+Use only letters, digits, and dashes<br />
+Be less than 64 characters in length</p></div>
+<h3>10. How does the service password-encryption command enhance password security on Cisco routers and switches?</h3>
+<p>It encrypts passwords as they are sent across the network.</p>
+<p><span style="color: #0000ff;"><strong>It encrypts passwords that are stored in router or switch configuration files.*</strong></span></p>
+<p>It requires that a user type encrypted passwords to gain console access to a router or switch.</p>
+<p>It requires encrypted passwords to be used when connecting remotely to a router or switch with Telnet.</p>
+<div class="message_box announce"><p><strong>Explain:</strong><br />
+The service password-encryption command encrypts plaintext passwords in the configuration file so that they cannot be viewed by unauthorized users.</p></div>
+<h3>11. Refer to the exhibit. A network administrator is configuring the MOTD on switch SW1. What is the purpose of this command?</h3>
+<p><img src="https://lh3.googleusercontent.com/zFvUw-665B23Mb6S5jc9tkM6KTzNsU5dfqwkzlmOZqpksEE0pe2LbjpxnhKrGgeDuRIdeu1W3OmGbQQNZCWGeUhnSNhoy_gOAaVgBsH-bzbjF3xL8ZJFwpUVLePoO3sAbx-BxLrtzY82xNXmHQ_3vTbDqhnknLhcT_SZf77IqcvKZ-DP0uZQ-nvqhje3wZAuVR0jEFdcV4JnC47ZVJKfsmlWlaCTasAUjCsqT8exPVRUZD69CTrX2abjqcTpGH2blihqp8K0LMmyyKovjYPkj0fFZi8qjy0SPuR2vDzXFWT697SJxk8fl3I15LIf1-WU3sff6kX4AvHDChb23H5WgH9yiElnchrym226jYcK18ONisoMRD1zqcupFUCa5ELiJUYsI8gvXrITZFeXFFhkaxSa4dculSncOxam0iBA_OF2FXI8rTvJq1Il3sxWg-oKVvTE8XUZiaqKrwrGkwOHEUr65KHgoduCIWdhgZYW-a7bs0OgWP_fHv2PN69jn4pDk4m0Ip_lxDsmzqDsA3VUKlYD_5-4kbz6KQwYRrLREEej6lTYZs2xQL-C0_njOBsAF7Qd=w528-h132-no" /></p>
+<p><span style="color: #0000ff;"><strong>to display a message when a user accesses the switch*</strong></span></p>
+<p>to configure switch SW1 so that only the users in the Admin group can telnet into SW1</p>
+<p>to force users of the Admin group to enter a password for authentication</p>
+<p>to configure switch SW1 so that the message will display when a user enters the enable command</p>
+<div class="message_box announce"><p><strong>Explanation:</strong><br />
+A banner message can be an important part of the legal process in the event that someone is prosecuted for breaking into a device. A banner message should make it clear that only authorized personnel should attempt to access the device. However, the <b>banner</b> command does not prevent unauthorized entry.</p></div>
+<h3>12. While trying to solve a network issue, a technician made multiple changes to the current router configuration file. The changes did not solve the problem and were not saved. What action can the technician take to discard the changes and work with the file in NVRAM?</h3>
+<p><span style="color: #0000ff;"><strong>Issue the reload command without saving the running configuration.*</strong></span></p>
+<p>Delete the vlan.dat file and reboot the device.</p>
+<p>Close and reopen the terminal emulation software.</p>
+<p>Issue the copy startup-config running-config command.</p>
+<div class="message_box announce"><p><strong>Explanation:</strong><br />
+The technician does not want to make any mistakes trying to remove all the changes that were done to the running configuration file. The solution is to reboot the router without saving the running configuration. The <b>copy startup-config running-config</b> command does not overwrite the running configuration file with the configuration file stored in NVRAM, but rather it just has an additive effect.</p></div>
+<h3>13. Which statement is true about the running configuration file in a Cisco IOS device?</h3>
+<p><span style="color: #0000ff;"><strong>It affects the operation of the device immediately when modified.*</strong></span></p>
+<p>It is stored in NVRAM.</p>
+<p>It should be deleted using the erase running-config command.</p>
+<p>It is automatically saved when the router reboots.</p>
+<div class="message_box announce"><p><strong>Explanation:</strong><br />
+As soon as configuration commands are entered into a router, they modify the device immediately. Running configuration files can not be deleted nor are they saved automatically.</p></div>
+<h3>14. What are two characteristics of RAM on a Cisco device? (Choose two.)</h3>
+<p>RAM provides nonvolatile storage.</p>
+<p><span style="color: #0000ff;"><strong>The configuration that is actively running on the device is stored in RAM.*</strong></span></p>
+<p><span style="color: #0000ff;"><strong>The contents of RAM are lost during a power cycle.*</strong></span></p>
+<p>RAM is a component in Cisco switches but not in Cisco routers.</p>
+<p>RAM is able to store multiple versions of IOS and configuration files.</p>
+<div class="message_box announce"><p><strong>Explanation:</strong><br />
+RAM stores data that is used by the device to support network operations. The running configuration is stored in RAM. This type of memory is considered volatile memory because data is lost during a power cycle. Flash memory stores the IOS and delivers a copy of the IOS into RAM when a device is powered on. Flash memory is nonvolatile since it retains stored contents during a loss of power.</p></div>
+<h3>15. Which interface allows remote management of a Layer 2 switch?</h3>
+<p>the AUX interface</p>
+<p>the console port interface</p>
+<p><span style="color: #0000ff;"><strong>the switch virtual interface*</strong></span></p>
+<p>the first Ethernet port interface</p>
+<div class="message_box announce"><p><strong>Explanation:</strong><br />
+In a Layer 2 switch, there is a switch virtual interface (SVI) that provides a means for remotely managing the device.</p></div>
+<h3>16. Which interface is the default SVI on a Cisco switch?</h3>
+<p>FastEthernet 0/1</p>
+<p>GigabitEthernet 0/1</p>
+<p><span style="color: #0000ff;"><strong>VLAN 1*</strong></span></p>
+<p>VLAN 99</p>
+<div class="message_box announce"><p><strong>Explanation:</strong><br />
+An SVI is a virtual interface and VLAN 1 is enabled by default on Cisco switches. VLAN 99 must be configured to be used. FastEthernet 0/1 and GigabitEthernet 0/1 are physical interfaces.</p></div>
+<h3>17. Why would a Layer 2 switch need an IP address?</h3>
+<p>to enable the switch to send broadcast frames to attached PCs</p>
+<p>to enable the switch to function as a default gateway</p>
+<p><span style="color: #0000ff;"><strong>to enable the switch to be managed remotely*</strong></span></p>
+<p>to enable the switch to receive frames from attached PCs</p>
+<div class="message_box announce"><p><strong>Explanation:</strong><br />
+A switch, as a Layer 2 device, does not need an IP address to transmit frames to attached devices. However, when a switch is accessed remotely through the network, it must have a Layer 3 address. The IP address must be applied to a virtual interface rather than to a physical interface. Routers, not switches, function as default gateways.</p></div>
+<h3>18. What command can be used on a Windows PC to see the IP configuration of that computer?</h3>
+<p>ping</p>
+<p><span style="color: #0000ff;"><strong>ipconfig*</strong></span></p>
+<p>show interfaces</p>
+<p>show ip interface brief</p>
+<div class="message_box announce"><p><strong>Explanation:</strong><br />
+On a Windows PC, the <b>ipconfig</b> command can be used to verify the current IP configuration. The <b>ping</b> command can be used to verify connectivity to other network devices. The <b>show interfaces </b>and <b>show ip interface brief </b>commands are both Cisco IOS commands that are used to see the status of router and switch interfaces.</p></div>
+<h3>19. A technician is adding a new PC to a LAN. After unpacking the components and making all the connections, the technician starts the PC. After the OS loads, the technician opens a browser, and verifies that the PC can reach the Internet. Why was the PC able to connect to the network with no additional configuration?</h3>
+<p>The PC does not require any additional information to function on the network.</p>
+<p>The PC came preconfigured with IP addressing information from the factory.</p>
+<p><span style="color: #0000ff;"><strong>The PC was preconfigured to use DHCP.*</strong></span></p>
+<p>The PC used DNS to automatically receive IP addressing information from a server.</p>
+<p>The PC virtual interface is compatible with any network.</p>
+<div class="message_box announce"><p><strong>Explanation:</strong><br />
+The new PC was preconfigured to use DHCP. When the PC is connected to a network that uses DHCP, it gets the IP address settings from the DHCP server that will allow it to function on the network. All devices require at least an IP address and subnet mask to function on a LAN. DNS does not automatically configure addresses on hosts. PC virtual interfaces are not universally compatible with LANs and do not necessarily provide a host with an IP address. At this place in the course, virtual interfaces are used on network switches.</p></div>
+<h3>20. What is a user trying to determine when issuing a ping 10.1.1.1 command on a PC?</h3>
+<p>if the TCP/IP stack is functioning on the PC without putting traffic on the wire</p>
+<p><span style="color: #0000ff;"><strong>if there is connectivity with the destination device*</strong></span></p>
+<p>the path that traffic will take to reach the destination</p>
+<p>what type of device is at the destination</p>
+<div class="message_box announce"><p><strong>Explanation:</strong><br />
+The ping destination command can be used to test connectivity.</p></div>
+<h3>21. Refer to the exhibit. A network technician is testing connectivity in a new network. Based on the test results shown in the exhibit, which device does the technician have connectivity with and which device does the technician not have connectivity with? (Choose two.)</h3>
+<p><img src="https://lh3.googleusercontent.com/MyYx-FU0aMseNUibGMR2JyB2hslY0urVkqt-ADKTC9vwDmTiEgPyrz82_3w_WxF7n2Zx-iOMAXWWKCInoQo1o13K3aFDhc6YxRSv1paOTk-IUTGbOdBtGowT2E6Fsir6uJaKm-EIa7SdwkwL3puxXg15E_B4PgTebE3KBGgbSy0aud6X12UaIEXcf1g1qjIVi8EXL0TMk_oR0Px7Kald88VEKnZuaraFUiUuJIUUpsjSzVqtIVl_WqODN0YVQ3-mlF0UTBLzqptp4cXbm9iSTP4OGah0K9ppQAcVidJzrUCcwe0XqcLR2H0gbSetFMmS_X-ibvkqkGRpvJMBNQ0rKFfgPbqCJWB55JjXNxzNIh8rhzIdcWbfFgN6YeldpKC_--jZ4m8odlw-hsjhaHsOeKGBRHiMJ4b8caL30_Tcf2CPEv_CE-lB279tgEuYDbXxHpqSwfr3V1FbgybXpRlRwbyo3TMFjE6EjTeDT9_9kcVJVQwjqttFdgQlVSyW3ODlqtfljX31fZQbGEQ-oFTYXzHPENov9_qU0qyawEFbtrIL1pWan3WYcTGUnDft78m1K8-d=w647-h390-no" /></p>
+<p><span style="color: #0000ff;"><strong>connectivity: switch 2*</strong></span></p>
+<p>connectivity: PC-D</p>
+<p>connectivity: PC-B</p>
+<p>no connectivity: switch 1</p>
+<p>no connectivity: switch 2</p>
+<p><span style="color: #0000ff;"><strong>no connectivity: PC-C*</strong></span></p>
+<div class="message_box announce"><p><strong>Explanation:</strong><br />
+The exhibit shows ping tests to two devices. One device has the IP address of 192.168.1.2, which is switch 2. The other test is to the IP address of 192.168.1.21, which is host PC-C. For the first test, to switch 2, the results are successful, with four reply messages received. This means that connectivity exists to switch 2. For the second test, all four messages timed out. This indicates that connectivity does not exist to PC-C.</p></div>
+<h3>22. Refer to the exhibit. What three facts can be determined from the viewable output of the show ip interface brief command? (Choose three.)</h3>
+<p><img src="https://lh3.googleusercontent.com/6EBRH4BN8wby-Q7MUA9LTEBIkWSC91_uUMaK-x-t3MXruZaz-oeYF_jGkz9St5SulkTDb0wJDM-KVTv6hxJp0AoR7KMp7cePmk_7clvuRWcXQ_tp1OwgDGgaN8g3kREmmm3N83JCRxCuoPcGVn43NBflg9dLgQGj20VGaRq7SbtBT_7OW4btirCSfd7ZZOiiObLD67v4l21BkSz6JHqOp6Wbk70lS3IlPF4jQ0AwvXWYNcHpajy07fR0wlLJB1KBwl-A3CwWS6ygpXfs1QLWYHbCgU9HBFIt0zNghsffzXrdIz5ZRc5NYq3VX1LnvuzWbaSRj0i5rxDbIRm-jLyScXwDJu4xlpiDBPrKFFpKeUAQmXBGCtDd0OEQgSMSbAXHwP11MLU5n4WSPtfSnqLjR5M0xcYdY5HVK27leU8_LTUNuV32NLFwiJc9Mb-699Yoht94PFsHUNxfcZPjUbo_-hAriK149_7AJ041XZMfxkU5VLOWGVkNjPg0ER9aZdorJpIJQAblD7yn7J2rjQ0PUSRjg1bJ8ienxFOw7LmereP7BQCHsVlNT5ycBozFcnyKAWNd=w580-h332-no" /></p>
+<p>Two physical interfaces have been configured.</p>
+<p><span style="color: #0000ff;"><strong>The switch can be remotely managed.*</strong></span></p>
+<p><span style="color: #0000ff;"><strong>One device is attached to a physical interface.*</strong></span></p>
+<p>Passwords have been configured on the switch.</p>
+<p>Two devices are attached to the switch.</p>
+<p><span style="color: #0000ff;"><strong>The default SVI has been configured.*</strong></span></p>
+<div class="message_box announce"><p><strong>Explanation:</strong><br />
+Vlan1 is the default SVI. Because an SVI has been configured, the switch can be configured and managed remotely. FastEthernet0/0 is showing up and up, so a device is connected.</p></div>
+<h3>23. An administrator is configuring a switch console port with a password. In what order will the administrator travel through the IOS modes of operation in order to reach the mode in which the configuration commands will be entered? (Not all options are used.)</h3>
+<p><img src="https://lh3.googleusercontent.com/bMr521-LYLk6yj7E8Fn-yfXF5G6H2tkpGcQosz6LRBrSNsrEMAGtadYoCh6gbO3uPPUldpEnsSQ0CG8XKSWBto1LNKOEOEOVdmQlcS0ynDRxx_msa-m2DNbQ7iT6c35AJCFanYwDPRms_G7BaEhqioQxO0Zl3_JjGwemITQ5xWjO-5OP2r-LbHU8sx9u6tYdP2Cg5zZH_2IQEEnjynMORgOmSS7v5AjCx95MGkRfzNqJEKRM6DR8jyclgYjawlA2IsRviSkEdt6Xf5Hl1x3HjMwj4v4m4kVQhmTD_zwughYlm6B1IFUjkgcVw7FJ5TJfQ_r8ozS_W1TnGJJwF3D100inc4RSL7sAdWp9Bi9nVm-S0SMAxlYY_maMjQLWe3fcfBsiNRs3aOjB2mBDeqRVRiitD_VVD0-hKk53MCx8QZr0kzf753oHls0AT5KQyu7mHZhIuNlGVgcBc4y2QjDzZCHxl342BJzigRQjA7dqQyam0AtsWrpN8jPJ-xxLIAw60kZJGQV8eLHRz8l11q5qU6DKnJKoQ_ppvihfT9VN8ilpMF_-TaOwpM0H0m7qgUkmbHDr=w1018-h600-no" /></p>
+<div class="message_box announce"><p><strong>Explanation:</strong><br />
+The configuration mode that the administrator first encounters is user EXEC mode. After the enable command is entered, the next mode is privileged EXEC mode. From there, the configure terminal command is entered to move to global configuration mode. Finally, the administrator enters the line console 0 command to enter the mode in which the configuration will be entered.</p></div>
+<h3>24. Match the definitions to their respective CLI hot keys and shortcuts. (Not all options are used.)</h3>
+<p><img src="https://lh3.googleusercontent.com/qKB6r5LNZY4o8tMkwPPaLmL6HHEJ4yUJd3HD3_Mts8asqPPjZfYvLDtuF7iUlOY3FVxP9FtNSlMYrFvpOBUr7d2XcpwdN_UjRAzhwZs1K0ZvD34TDNIlP-AnOyXnvj-H_sKdZnNRiYFTyoFoFwuMjnZ4zCzm6k7003jogH5vk690XfvNKHRkXQKMysQcP1JbalnyndZaaXob-ta1w0DnJSZ_4tDvzlFcOO4saWxmjUMn_4Iyiryzk_z5TrFtWbNa9OwUGaknqTqSaVuJ9p3VCOH_RrFGI6V5SpceDlPxNv6L8570b4jl3qNSoYUc6q1-MlVu98XWa9PQlIVOjTRAV3-pG8rsBL1MRaiucwsCIVlWO8PEYlFu6YcrldXqXkcYHWbOd3h3y-7tKfI9lgCds-DeKn9BK_xXt-X_yrbW1lGbOAMifRV4ntyW7da0O2N0DxCZdyqmci8SmPjLemh7hBOeaE5KD_3HZ7nYt-d-QufYm-C43XCJcKURnKc3fFvX8TTp9nLqA74O53LWTmE4CjpEAZh3_ldSCvOwHlibA0ZA6_Pb8gUExcYJ8q0FNjCxkO5v=w1018-h600-no" /></p>
+<div class="message_box announce"><p><strong>Explanation:</strong><br />
+The shortcuts with their functions are as follows:<br />
+– Tab – Completes the remainder of a partially typed command or keyword<br />
+– Space bar – displays the next screen<br />
+– ? – provides context-sensitive help<br />
+– Up Arrow – Allows user to scroll backward through former commands<br />
+– Ctrl-C – cancels any command currently being entered and returns directly to privileged EXEC mode<br />
+– Ctrl-Shift-6 – Allows the user to interrupt an IOS process such as ping or traceroute</p>
+<br />
+<br />
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- aktualtimestamp: 1538766418
+2018 október 04. IT alapok
+  -->
+<div class="parabellum">
+<p class="main">
+Kettes számrendszer ismétlés.<br />
+<br />
+Személyi számítógépek<br />
+Személyi számítógépek belső összetevői<br />
+RAM-ok és ROM-ok<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1538766418"><a onclick="show('less-article1538766418'); hide('more-article1538766418')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1538766418" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1538766418'); show('more-article1538766418')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+A memória chipek bájtok formájában tárolják az adatokat. A bájtok betűket, számokat és szimbólumokat kódolnak. A bájt egy 8 bitből álló csoport. Minden bit 0 vagy 1 értékkel tárolódik a memória lapkán.<br />
+<br />
+A csak olvasható memória (ROM) az alaplapon vagy más áramköri lapon található. A ROM chipek a CPU által közvetlenül elérhető utasításokat tartalmaznak, itt találhatók a számítógép elindításához és az operációs rendszer betöltéséhez (boot) szükséges alapvető információk. A ROM-ban tárolt információk akkor sem vesznek el, ha a számítógépet kikapcsoljuk. Egyszerű módon a ROM tartalmát sem törölni, sem módosítani nem tudjuk.<br />
+<br />
+MEGJEGYZÉS: A ROM-ot néha firmware-nek hívják. Ez azonban félrevezető, mert a firmware az a program, amit a ROM tárol.<br />
+<br />
+ROM tipusok:<br />
+ROM (csak olvasható memória): Gyártó által beégetett adatot tartalmaz, amely nem módosítható.<br />
+PROM (programozható ROM): Olyan memória, amely egyszer írható, de később nem módosítható.<br />
+EPROM (törölhető PROM): Törölhető és többször újraírható; a memória törlését általában ibolyántúli fénnyel (UV), vagy röntgen–sugárral (RTG) végzik.<br />
+EEPROM (elektronikusan törölhető PROM): Elektromos feszültséggel törölhető és újraírható. Ilyenek például a Flash memóriák is.<br />
+A közvetlen elérésű memória (Random Access Memory, RAM !!! a RANDOM itt arra utal, hogy a memória bármely random módon kiválasztott eleme ugyanannyi idő alatt érhető el, ellentétben a szalagos tárolású memóriával !!!) a CPU által éppen használt adatok és programok ideiglenes tárolója. A RAM „felejtő” memória, ami azt jelenti, hogy tartalma a számítógép kikapcsolásakor törlődik. Minél több memória van a számítógépben, annál nagyobb programok vagy fájlok tárolására és feldolgozására képes. A nagyobb RAM növeli a rendszer teljesítményét. A behelyezhető memória mennyiségét az alaplap és az operációs rendszer határozza meg.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

@@ -1,0 +1,99 @@
+<!-- aktualtimestamp: 1538763258
+2018 október 01. Szakmai angol jegyzet
+  -->
+<div class="parabellum">
+<p class="main">
+Fordítási gyakorlat:<br />
+<br />
+The mutineers<br />
+The document to be prepared is about an adventure story that was adapted both in books<br />
+and in films. Your task is to create the document based on the description and the example<br />
+using files zendulok.txt and hajo.jpg .<br />
+1. Open the source text zendulok.txt (its coding is ISO8859-2) and save it as sziget in<br />
+the default format of the word processor.<br />
+2. The source text contains text input errors: redundant spaces, tabs and paragraph marks.<br />
+Correct and delete these.<br />
+3. The page layout should be landscape.<br />
+4. The text should be arranged on the page using a table.<br />
+a. The table has three columns but merge or split the cells where it is necessary.<br />
+b. Determine the number of rows based on the example.<br />
+c. The external border of the table should be a thin line.<br />
+d. Place the text parts into the cells according to the example.<br />
+e. The font type of the text is Times New Roman or Nimbus Roman and the font<br />
+size is 12 points.<br />
+5. The title, “The secret island of the mutineers” should appear in the middle. Its font size is<br />
+26 points, its style is bold, the spacing before and after it is 12 points (0.42 cm).<br />
+6. Add a footnote mark at the end of the title with symbol “*”. Type in the text of the foot-<br />
+note.<br />
+7. The format of the text in the first and third columns is<br />
+a. the left and right indents are 0.2 cm;<br />
+b. the indent of the first line is 0.5 cm;<br />
+c. the paragraphs are justified.<br />
+8. Insert picture hajo.jpg into the second column; align it centered horizontally. Display a<br />
+border of width 4 to 5 points above and below it for the whole width of the column. The<br />
+distance between the lines and the picture should be exactly 0.2 cm. Do not use excess<br />
+paragraph marks for the arrangement.<br />
+9. The caption should be 12 points below the bottom border; it should be aligned centered<br />
+and its font style should be italics.<br />
+10. Use hyphenation in the document where it is required.<br />
+11. Create the header according to the example. Type in the text and align it right. Insert a thin<br />
+line above and below it for the whole width of the page.<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1538763258"><a onclick="show('less-article1538763258'); hide('more-article1538763258')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1538763258" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1538763258'); show('more-article1538763258')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+A lázadók<br />
+<br />
+Az elkészítendő dokumentum egy olyan kalandos történetről szól, amelyet könyvben és filmben is feldolgoztak. Az Ön feladata, hogy létrehozzon egy dokumentumot a leírás és a példa alapján a zendulok.txt és a hajo.jpg fájlok felhasználásával.<br />
+<br />
+1. Nyissa meg a zendulok.txt forrásszövegét (kódolása ISO8859-2), és mentse el sziget néven a szövegszerkesztő alapértelmezett formátumában.<br />
+<br />
+2. A forrásszöveg szövegbeviteli hibákat tartalmaz: felesleges térközöket, tabulátorokat és soremeléseket. Javítsa és törölje ezeket!<br />
+<br />
+3. A lap elrendezése legyen fekvő tájolású.<br />
+<br />
+4. A szöveg elrendezését az oldalon táblázattal oldjuk meg.<br />
+<br />
+a. A tábázat három oszlopból áll, de szükség szerint egyesítsük vagy osszuk tovább a cellákat.<br />
+<br />
+b. A sorok számát a minta alapján határozzuk meg.<br />
+<br />
+c. A táblázatot kívül vékony vonallal határoljuk.<br />
+<br />
+d. A szöveg részleteket a minta alapján helyezze el a táblázatban.<br />
+<br />
+e. A szöveg betűtípusa Times New Roman vagy Nimbus Roman legyen 12 pontos betűmérettel.<br />
+<br />
+5. A cím, "A lázadók titkos szigete", középen jelenjen meg. A betűmérete 26 pont, stílusa félkövér, a térköz előtte és utána 12 pont (0,42 cm) méretű legyen.<br />
+<br />
+6. Tegyen a cím végére egy lábjegyzet szimbólumot "*". Írja be a lábjegyzetbe a szöveget.<br />
+<br />
+7. A szöveg formátuma az első és a harmadik oszlopban:<br />
+<br />
+a. a bal és a jobb oldali behúzás 0,2 cm;<br />
+<br />
+b. az első sor behúzása 0,5 cm;<br />
+<br />
+c. a bekezdések sorkizártak.<br />
+<br />
+8. Helyezze be a képet - hajo.jpg - a második oszlopba; igazítsa vízszintesen középre. Az oszlop teljes szélességében 4-5 pixel vastagságú alsó és felső szegélyt rajzoljon. A szegély vonalak és a kép közötti távolság pontosan 0,2 cm legyen. Ne használjon soremelést az elrendezéshez.<br />
+<br />
+9. A képfelirat 12 pixellel legyen lejjebb az alsó szegélynél; középre legyen igazítva és stílusa dőlt betűs legyen.<br />
+<br />
+10. Használjon elválasztást a dokumentumban, ahol szükséges.<br />
+<br />
+11. Hozzon létre egy fejlécet a minta alapján. Írja be a szöveget, és rendezze jobbra. Helyezzen el egy vékony vonalat felette és alatta az oldal teljes szélességében.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

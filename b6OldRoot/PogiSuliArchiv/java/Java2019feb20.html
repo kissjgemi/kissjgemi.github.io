@@ -1,0 +1,276 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Java2019feb20.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.ST4 {color: #ce7b00; font-family: Courier; font-weight: bold}
+.ST5 {color: #009900}
+.ST6 {color: #ce7b00; font-family: Courier; font-weight: bold}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+.comment {color: #969696}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">Java2019feb20.java</td></tr></table>
+<hr>
+<pre>
+<span class="literal">package</span> java2019feb20;
+
+<span class="literal">import</span> java.util.Random;
+<span class="literal">import</span> java.util.Scanner;
+
+<span class="comment">/**</span>
+<span class="comment"> *</span>
+<span class="comment"> * </span><span class="ST0">@author</span> <span class="comment">KjG</span>
+ <span class="comment">*/</span>
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST1">Java2019feb20</span> {
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">final</span> Scanner <span class="ST2">SC</span> = <span class="literal">new</span> Scanner(System.<span class="ST2">in</span>, (<span class="string">&quot;</span><span class="string">Cp1250</span><span class="string">&quot;</span>));
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f00</span>(<span class="literal">int</span> hossz, <span class="literal">char</span> jel, String name) {
+        <span class="literal">int</span> start = 0;
+        <span class="literal">if</span> (name.length() != 0) {
+            start = name.length() + 5;
+            System.<span class="ST2">out</span>.print(jel + <span class="string">&quot;</span><span class="string">| </span><span class="string">&quot;</span>);
+            System.<span class="ST2">out</span>.print(name + <span class="string">&quot;</span><span class="string"> |</span><span class="string">&quot;</span>);
+        }
+        <span class="literal">for</span> (<span class="literal">int</span> ii = start; ii &lt; hossz; ii++) {
+            System.<span class="ST2">out</span>.print(jel);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+    <span class="comment">// --- textdekoráció metódus vége</span>
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">vonal</span>(<span class="literal">int</span> db, <span class="literal">char</span> jel) {
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; db; ii++) {
+            System.<span class="ST2">out</span>.print(jel);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">double</span> <span class="ST3">kob</span>(<span class="literal">double</span> x) {
+        <span class="literal">return</span> Math.<span class="ST4">pow</span>(x, 3);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f01</span>(String label, <span class="literal">int</span> db, <span class="literal">char</span> jel) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, label);
+        <span class="ST4">vonal</span>(db, jel);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f02</span>(String label, <span class="literal">int</span> first, <span class="literal">int</span> last) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">.</span><span class="string">&#39;</span>, label);
+
+        <span class="literal">for</span> (<span class="literal">int</span> ii = first; ii &lt;= last; ii++) {
+            System.<span class="ST2">out</span>.println(ii + <span class="string">&quot;</span><span class="ST5">\t</span><span class="string">&quot;</span> + String.<span class="ST4">format</span>(<span class="string">&quot;</span><span class="string">%10.2f</span><span class="string">&quot;</span>, <span class="ST4">kob</span>(ii)));
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">int</span> <span class="ST3">dobas</span>(<span class="literal">int</span> db) {
+        Random kocka = <span class="literal">new</span> Random();
+        <span class="literal">int</span> osszeg = 0;
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; db; ii++) {
+            osszeg += kocka.nextInt(6) + 1;
+        }
+        <span class="literal">return</span> osszeg;
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f03</span>(String label, <span class="literal">int</span> db) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, label);
+
+        <span class="literal">int</span> jatekos, gep;
+        String valasz;
+        <span class="literal">do</span> {
+            jatekos = <span class="ST4">dobas</span>(db);
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">A játékos dobása: </span><span class="string">&quot;</span> + jatekos);
+            gep = <span class="ST4">dobas</span>(db);
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">A gép dobása: </span><span class="string">&quot;</span> + gep);
+            <span class="literal">if</span> (jatekos &gt; gep) {
+                System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">A játékos nyert!</span><span class="string">&quot;</span>);
+            } <span class="literal">else</span> <span class="literal">if</span> (jatekos &lt; gep) {
+                System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">A gép nyert!</span><span class="string">&quot;</span>);
+            } <span class="literal">else</span> {
+                System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Döntetlen!</span><span class="string">&quot;</span>);
+            }
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Még egy játék (i/n)? </span><span class="string">&quot;</span>);
+            valasz = <span class="ST2">SC</span>.nextLine();
+            <span class="literal">if</span> (valasz.length() == 0) {  <span class="comment">// Ha csak Entert üt</span>
+                valasz = <span class="string">&quot;</span><span class="string">i</span><span class="string">&quot;</span>;
+            }
+        } <span class="literal">while</span> (valasz.charAt(0) != <span class="string">&#39;</span><span class="string">n</span><span class="string">&#39;</span>);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span> <span class="string">&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">double</span> <span class="ST3">reciprok</span>(<span class="literal">double</span> x) {
+        <span class="literal">double</span> reciprok = 0;
+        <span class="literal">if</span> (x != 0) {
+            reciprok = 1 / x;
+        }
+        <span class="literal">return</span> reciprok;
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f04</span>(String label, <span class="literal">int</span> first, <span class="literal">int</span> last) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, label);
+
+        <span class="literal">for</span> (<span class="literal">int</span> ii = first; ii &lt;= last; ii++) {
+            String str = ii + <span class="string">&quot;</span><span class="ST5">\t</span><span class="string">&quot;</span>;
+            str += String.<span class="ST4">format</span>(<span class="string">&quot;</span><span class="string">%10.8f</span><span class="string">&quot;</span>, <span class="ST4">reciprok</span>(ii));
+            System.<span class="ST2">out</span>.println(str);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">int</span> <span class="ST3">atszamol</span>(<span class="literal">int</span> ora, <span class="literal">int</span> perc, <span class="literal">int</span> mp) {
+        <span class="literal">return</span> ora * 3600 + perc * 60 + mp;
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">int</span> <span class="ST3">beolvas</span>(String s) {
+        System.<span class="ST2">out</span>.print(s + <span class="string">&quot;</span><span class="string"> (ó p mp): </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> o = <span class="ST2">SC</span>.nextInt();
+        <span class="literal">int</span> p = <span class="ST2">SC</span>.nextInt();
+        <span class="literal">int</span> mp = <span class="ST2">SC</span>.nextInt();
+        <span class="literal">return</span> <span class="ST4">atszamol</span>(o, p, mp);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">final</span> <span class="literal">int</span> <span class="ST2">CSUCSDIJ</span> = 30;
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">final</span> <span class="literal">int</span> <span class="ST2">DIJ</span> = 15;
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f05</span>(String label) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, label);
+
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Percdíj számítása</span><span class="string">&quot;</span>);
+        <span class="literal">int</span> ido1 = <span class="ST4">beolvas</span>(<span class="string">&quot;</span><span class="string">A hívás eleje</span><span class="string">&quot;</span>);
+        <span class="literal">int</span> ido2 = <span class="ST4">beolvas</span>(<span class="string">&quot;</span><span class="string">A hívás vége</span><span class="string">&quot;</span>);
+        <span class="literal">int</span> hossz = (<span class="literal">int</span>) Math.<span class="ST4">ceil</span>((ido2 - ido1) / 60.0);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Számlázott percek: </span><span class="string">&quot;</span> + hossz);
+        <span class="literal">if</span> (ido1 &gt; <span class="ST4">atszamol</span>(7, 0, 0) &amp;&amp; ido1 &lt; <span class="ST4">atszamol</span>(19, 0, 0)) {
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Fizetendő: </span><span class="string">&quot;</span> + hossz * <span class="ST2">CSUCSDIJ</span> + <span class="string">&quot;</span><span class="string"> Ft</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> {
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Fizetendő: </span><span class="string">&quot;</span> + hossz * <span class="ST2">DIJ</span> + <span class="string">&quot;</span><span class="string"> Ft</span><span class="string">&quot;</span>);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">int</span> <span class="ST3">atvalt</span>(<span class="literal">int</span> m, <span class="literal">int</span> cm) {
+        <span class="literal">return</span> m * 1000 + cm * 10;
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f06</span>(String label) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, label);
+
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Hossz: </span><span class="string">&quot;</span>);
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string"> m: </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> m = <span class="ST2">SC</span>.nextInt();
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">cm: </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> cm = <span class="ST2">SC</span>.nextInt();
+        System.<span class="ST2">out</span>.println(<span class="ST4">atvalt</span>(m, cm) + <span class="string">&quot;</span><span class="string"> mm</span><span class="string">&quot;</span>);
+
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">main</span>(String[] args) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">STARTofJAVA 2019feb20 Metódusok</span><span class="string">&quot;</span>);
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, <span class="string">&quot;&quot;</span>);
+        <span class="ST4">f01</span>(<span class="string">&quot;</span><span class="string">22 Vonal készítés</span><span class="string">&quot;</span>, 60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>);
+        <span class="ST4">vonal</span>(40, <span class="string">&#39;</span><span class="string">=</span><span class="string">&#39;</span>);
+        <span class="ST4">vonal</span>(50, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>);
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, <span class="string">&quot;&quot;</span>);
+        <span class="ST4">f02</span>(<span class="string">&quot;</span><span class="string">22 Visszaadott érték - számok köbei</span><span class="string">&quot;</span>, 0, 9);
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, <span class="string">&quot;&quot;</span>);
+        <span class="ST4">f03</span>(<span class="string">&quot;</span><span class="string">23 Kocka</span><span class="string">&quot;</span>, 5);
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, <span class="string">&quot;&quot;</span>);
+        <span class="ST4">f04</span>(<span class="string">&quot;</span><span class="string">23 Reciprok</span><span class="string">&quot;</span>, 0, 10);
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, <span class="string">&quot;&quot;</span>);
+        <span class="ST4">f05</span>(<span class="string">&quot;</span><span class="string">24 Percdíj</span><span class="string">&quot;</span>);
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, <span class="string">&quot;&quot;</span>);
+        <span class="ST4">f06</span>(<span class="string">&quot;</span><span class="string">24 Hossz</span><span class="string">&quot;</span>);
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, <span class="string">&quot;&quot;</span>);
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">ENDofJAVA   2019feb20</span><span class="string">&quot;</span>);
+    }
+
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+*| STARTofJAVA 2019feb20 Metódusok |************************
+------------------------------------------------------------
+-| 22 Vonal készítés |--------------------------------------
+------------------------------------------------------------
+========================================
+**************************************************
+------------------------------------------------------------
+.| 22 Visszaadott érték - számok köbei |....................
+0	      0,00
+1	      1,00
+2	      8,00
+3	     27,00
+4	     64,00
+5	    125,00
+6	    216,00
+7	    343,00
+8	    512,00
+9	    729,00
+
+------------------------------------------------------------
+*| 23 Kocka |***********************************************
+A játékos dobása: 17
+A gép dobása: 15
+A játékos nyert!
+Még egy játék (i/n)? 
+i
+A játékos dobása: 15
+A gép dobása: 22
+A gép nyert!
+Még egy játék (i/n)? 
+n
+ 
+------------------------------------------------------------
+-| 23 Reciprok |--------------------------------------------
+0	0,00000000
+1	1,00000000
+2	0,50000000
+3	0,33333333
+4	0,25000000
+5	0,20000000
+6	0,16666667
+7	0,14285714
+8	0,12500000
+9	0,11111111
+10	0,10000000
+
+------------------------------------------------------------
+-| 24 Percdíj |---------------------------------------------
+Percdíj számítása
+A hívás eleje (ó p mp): 9 58 15
+A hívás vége (ó p mp): 10 3 53
+Számlázott percek: 6
+Fizetendő: 180 Ft
+
+------------------------------------------------------------
+-| 24 Hossz |-----------------------------------------------
+Hossz: 
+ m: 1
+cm: 72
+1720 mm
+
+------------------------------------------------------------
+*| ENDofJAVA   2019feb20 |**********************************
+<font color="#009933">BUILD SUCCESSFUL (total time: 1 minute 13 seconds)</font>
+
+</pre></body>
+</html>
+

@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>KissJGabi20190206.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">KissJGabi20190206.java</td></tr></table>
+<pre>
+<span class="comment">/**</span>
+<span class="comment"> *</span>
+<span class="comment"> * </span><span class="comment">KjG</span>
+ <span class="comment">*/</span>
+<span class="literal">package</span> kissjgabi20190206;
+
+<span class="literal">import</span> java.util.Scanner;
+
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST0">KissJGabi20190206</span> {
+
+    <span class="literal">private</span> <span class="literal">static</span> Scanner <span class="ST1">sc</span> = <span class="literal">new</span> Scanner(System.<span class="ST1">in</span>, (<span class="string">&quot;</span><span class="string">Cp1250</span><span class="string">&quot;</span>));
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f00</span>(<span class="literal">int</span> hossz, <span class="literal">char</span> jel, String name) {
+        System.<span class="ST1">out</span>.print(jel + <span class="string">&quot;</span><span class="string"> |</span><span class="string">&quot;</span>);
+        System.<span class="ST1">out</span>.print(name + <span class="string">&quot;</span><span class="string">| </span><span class="string">&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> ii = name.length() - 5; ii &lt; hossz; ii++) {
+            System.<span class="ST1">out</span>.print(jel);
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f01</span>(String cimke) {
+        <span class="ST3">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, cimke);
+
+        System.<span class="ST1">out</span>.print(<span class="string">&quot;</span><span class="string">Kérem az első számot: </span><span class="string">&quot;</span>);
+        <span class="literal">double</span> a = <span class="ST1">sc</span>.nextDouble();
+        System.<span class="ST1">out</span>.print(<span class="string">&quot;</span><span class="string">Kérem a második számot: </span><span class="string">&quot;</span>);
+        <span class="literal">double</span> b = <span class="ST1">sc</span>.nextDouble();
+
+        <span class="literal">if</span> (a == b) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">A két szám egyenlő!</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> <span class="literal">if</span> (a &gt; b) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Az első szám a nagyobb!</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">A második szám a nagyobb!</span><span class="string">&quot;</span>);
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span> <span class="string">&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f02</span>(String cimke) {
+        <span class="ST3">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, cimke);
+
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string"> Az 5-tel, de 25-tel nem ostható számok 1-200-ig</span><span class="string">&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt;= 200; ii++) {
+            <span class="literal">if</span> (ii % 5 == 0 &amp;&amp; ii % 25 != 0) {
+                System.<span class="ST1">out</span>.print(ii + <span class="string">&quot;</span><span class="string">, </span><span class="string">&quot;</span>);
+            }
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="ST4">\n</span><span class="string">&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f03</span>(String cimke) {
+        <span class="ST3">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, cimke);
+
+        String jegy;
+        System.<span class="ST1">out</span>.print(<span class="string">&quot;</span><span class="string">A dolgozat pontszáma: </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> pont = <span class="ST1">sc</span>.nextInt();
+
+        <span class="literal">if</span> (pont &lt; 0) {
+            jegy = <span class="string">&quot;</span><span class="string"> Hibás pontszámot adott meg! </span><span class="string">&quot;</span>;
+        } <span class="literal">else</span> <span class="literal">if</span> (pont &lt; 51) {
+            jegy = <span class="string">&quot;</span><span class="string"> ez nem elég.</span><span class="string">&quot;</span>;
+        } <span class="literal">else</span> <span class="literal">if</span> (pont &lt; 61) {
+            jegy = <span class="string">&quot;</span><span class="string"> elérted az elégségest.</span><span class="string">&quot;</span>;
+        } <span class="literal">else</span> <span class="literal">if</span> (pont &lt; 71) {
+            jegy = <span class="string">&quot;</span><span class="string"> ez egy jó közepes szint.</span><span class="string">&quot;</span>;
+        } <span class="literal">else</span> <span class="literal">if</span> (pont &lt; 81) {
+            jegy = <span class="string">&quot;</span><span class="string"> jónak illik be.</span><span class="string">&quot;</span>;
+        } <span class="literal">else</span> <span class="literal">if</span> (pont &lt; 91) {
+            jegy = <span class="string">&quot;</span><span class="string"> szuper Vagy.</span><span class="string">&quot;</span>;
+        } <span class="literal">else</span> {
+            jegy = <span class="string">&quot;</span><span class="string"> Hibás pontszámot adott meg! </span><span class="string">&quot;</span>;
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Értékelés:</span><span class="string">&quot;</span> + jegy);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span> <span class="string">&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f04</span>(String cimke) {
+        <span class="ST3">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, cimke);
+
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Egész számok osztása Jávában: </span><span class="string">&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Osszuk el a 157-et 17-tel!</span><span class="string">&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">A 15 / 17 eredménye: </span><span class="string">&quot;</span> + 157 / 17 + <span class="string">&quot;</span><span class="string">, </span><span class="string">&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Ami az osztás egész részét adja.</span><span class="string">&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">A 157 % 17 eredménye: </span><span class="string">&quot;</span> + 157 % 17 + <span class="string">&quot;</span><span class="string">, </span><span class="string">&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Ami az osztás maradékát adja adja.</span><span class="string">&quot;</span>);
+        System.<span class="ST1">out</span>.print(<span class="string">&quot;</span><span class="string">Az osztás eredménye tizedes törtként </span><span class="string">&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">kasztolás után jeleníthető meg:</span><span class="string">&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">(double) 157 / 17 = </span><span class="string">&quot;</span> + (<span class="literal">double</span>) 157 / 17);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span> <span class="string">&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f05</span>(String cimke) {
+        <span class="ST3">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, cimke);
+
+        <span class="literal">double</span> szum = 0;
+        <span class="literal">int</span> darab = 0;
+
+        System.<span class="ST1">out</span>.print(<span class="string">&quot;</span><span class="string">Kérem az első számot: </span><span class="string">&quot;</span>);
+        <span class="literal">double</span> a = <span class="ST1">sc</span>.nextDouble();
+
+        <span class="literal">if</span> (a == 0) {
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">Nem adtál meg számot! </span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> {
+            <span class="literal">while</span> (a != 0) {
+                szum += a;
+                darab++;
+                System.<span class="ST1">out</span>.print(<span class="string">&quot;</span><span class="string">Kérem a </span><span class="string">&quot;</span> + (darab + 1) + <span class="string">&quot;</span><span class="string">. számot: </span><span class="string">&quot;</span>);
+                a = <span class="ST1">sc</span>.nextDouble();
+            }
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">A számok összege: </span><span class="string">&quot;</span> + szum);
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">A számok átlaga: </span><span class="string">&quot;</span> + szum / darab);
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span> <span class="string">&quot;</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">main</span>(String[] args) {
+        <span class="ST3">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">START JAVA 2019feb06 dolgozat</span><span class="string">&quot;</span>);
+        <span class="ST3">f01</span>(<span class="string">&quot;</span><span class="string">1. feladat</span><span class="string">&quot;</span>);
+        <span class="ST3">f02</span>(<span class="string">&quot;</span><span class="string">2. feladat</span><span class="string">&quot;</span>);
+        <span class="ST3">f03</span>(<span class="string">&quot;</span><span class="string">3. feladat</span><span class="string">&quot;</span>);
+        <span class="ST3">f04</span>(<span class="string">&quot;</span><span class="string">4. feladat</span><span class="string">&quot;</span>);
+        <span class="ST3">f05</span>(<span class="string">&quot;</span><span class="string">5. feladat</span><span class="string">&quot;</span>);
+        <span class="ST3">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">END JAVA 2019feb06 dolgozat</span><span class="string">&quot;</span>);
+    }
+
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+* |START JAVA 2019feb06 dolgozat| ************************************
+* |1. feladat| *******************************************************
+Kérem az első számot: 9
+Kérem a második számot: 6
+Az első szám a nagyobb!
+ 
+* |2. feladat| *******************************************************
+ Az 5-tel, de 25-tel nem ostható számok 1-200-ig
+5, 10, 15, 20, 30, 35, 40, 45, 55, 60, 65, 70, 80, 85, 90, 95, 105, 110, 115, 120, 130, 135, 140, 145, 155, 160, 165, 170, 180, 185, 190, 195, 
+
+* |3. feladat| *******************************************************
+A dolgozat pontszáma: 73
+Értékelés: jónak illik be.
+ 
+* |4. feladat| *******************************************************
+Egész számok osztása Jávában: 
+Osszuk el a 157-et 17-tel!
+A 15 / 17 eredménye: 9, 
+Ami az osztás egész részét adja.
+A 157 % 17 eredménye: 4, 
+Ami az osztás maradékát adja adja.
+Az osztás eredménye tizedes törtként kasztolás után jeleníthető meg:
+(double) 157 / 17 = 9.235294117647058
+ 
+* |5. feladat| *******************************************************
+Kérem az első számot: 6
+Kérem a 2. számot: 5
+Kérem a 3. számot: 9,7
+Kérem a 4. számot: 4,3
+Kérem a 5. számot: 0
+A számok összege: 25.0
+A számok átlaga: 6.25
+ 
+* |END JAVA 2019feb06 dolgozat| **************************************
+<font color="#009933">BUILD SUCCESSFUL (total time: 5 seconds)</font>
+
+</pre></body>
+</html>

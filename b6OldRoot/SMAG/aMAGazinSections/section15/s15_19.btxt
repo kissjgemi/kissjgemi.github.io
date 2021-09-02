@@ -1,0 +1,37 @@
+<!-- aktualtimestamp: 1540821435
+2018 október 25. IT alapok
+  -->
+<div class="parabellimage">
+<div id="thumb1540821435" class="thumbframe"><a onclick="show('wide1540821435'); hide('thumb1540821435')" >
+<img src="_uploaded_images/2018-10/computer.jpg
+" alt="computer.jpg" title="computer.jpg"></a>
+</div>
+<div id="wide1540821435" class="wideframe"><a onclick="show('thumb1540821435'); hide('wide1540821435')" >
+<img src="_uploaded_images/2018-10/computer.jpg
+" alt="computer.jpg" title="computer.jpg"></a>
+</div>
+<p class="main">
+&nbsp;<br />
+<h4>Gyakorlat</h4><br />
+Egy számítógépes szakember munkájának nagy részét, a számítógépek összeszerelése teszi ki. szakemberként a számítógépekkel való munka során logikusan és tervszerűen kell eljárnunk. Időnként előfordulhat, hogy nekünk kell eldöntenünk, vajon az ügyfél számítógépének alkatrészeit frissíteni vagy cserélni kell. Fontos, hogy fejlett készségeket alakítsunk ki a telepítési eljárások, hibaelhárítási technikák és diagnosztikai módszerek terén. Ez a fejezet a hardver- és szoftverösszetevők közötti kompatibilitás fontosságával foglalkozik. Emellett hangsúlyozza a megfelelő rendszererőforrások szükségességét, amellyel biztosítható az ügyfél eszközeinek és szoftvereinek hatékony működtetése.<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1540821435"><a onclick="show('less-article1540821435'); hide('more-article1540821435')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1540821435" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1540821435'); show('more-article1540821435')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+&nbsp;<br />
+Dolgozat:<br />
+<a href="https://drive.google.com/drive/folders/1tcG63k2pOZh1liJdwe3GUsMxzGM-JTMH?usp=sharing">Kérdések</a><br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+Cisco tanfolyam és KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

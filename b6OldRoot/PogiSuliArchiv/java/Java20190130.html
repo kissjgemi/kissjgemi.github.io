@@ -1,0 +1,246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Java20190130.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">Java20190130.java</td></tr></table>
+<hr>
+<pre>
+<span class="literal">package</span> java20190130;
+
+<span class="literal">import</span> java.util.Scanner;
+
+<span class="comment">/**</span>
+<span class="comment"> *</span>
+<span class="comment"> * </span><span class="ST0">@author</span> <span class="comment">KjG</span>
+ <span class="comment">*/</span>
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST1">Java20190130</span> {
+
+    <span class="literal">private</span> <span class="literal">static</span> Scanner <span class="ST2">sc</span> = <span class="literal">new</span> Scanner(System.<span class="ST2">in</span>, (<span class="string">&quot;</span><span class="string">Cp1250</span><span class="string">&quot;</span>));
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f00</span>(<span class="literal">int</span> hossz, <span class="literal">char</span> jel, String name) {
+        System.<span class="ST2">out</span>.print(name);
+        <span class="literal">for</span> (<span class="literal">int</span> ii = name.length(); ii &lt; hossz; ii++) {
+            System.<span class="ST2">out</span>.print(jel);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f01</span>(String cimke) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, cimke);   <span class="comment">// Fejléc </span>
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">A nap sorszáma: </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> nap = <span class="ST2">sc</span>.nextInt();
+
+        <span class="literal">switch</span> (nap) {
+            <span class="literal">case</span> 1:
+                System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">hétfő</span><span class="string">&quot;</span>);
+                <span class="literal">break</span>;
+            <span class="literal">case</span> 2:
+                System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">kedd</span><span class="string">&quot;</span>);
+                <span class="literal">break</span>;
+            <span class="literal">case</span> 3:
+                System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">szerda</span><span class="string">&quot;</span>);
+                <span class="literal">break</span>;
+            <span class="literal">case</span> 4:
+                System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">csütörtök</span><span class="string">&quot;</span>);
+                <span class="literal">break</span>;
+            <span class="literal">case</span> 5:
+                System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">péntek</span><span class="string">&quot;</span>);
+                <span class="literal">break</span>;
+            <span class="literal">case</span> 6:
+                System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">szombat</span><span class="string">&quot;</span>);
+                <span class="literal">break</span>;
+            <span class="literal">case</span> 7:
+                System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">vasárnap</span><span class="string">&quot;</span>);
+                <span class="literal">break</span>;
+            <span class="literal">default</span>:
+                System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">nincs ilyen nap</span><span class="string">&quot;</span>);
+                <span class="literal">break</span>;
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f02</span>(String cimke) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, cimke);   <span class="comment">// Fejléc </span>
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">Hány Ft 1 Euro </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> arfolyam = <span class="ST2">sc</span>.nextInt();
+        <span class="literal">int</span> osszeg;
+
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">1. Euro-&gt;Ft 2. Ft-&gt;Euro </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> valasz = <span class="ST2">sc</span>.nextInt();
+
+        <span class="literal">switch</span> (valasz) {
+            <span class="literal">case</span> 1:
+                System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Átváltandó összeg (EUR): </span><span class="string">&quot;</span>);
+                osszeg = <span class="ST2">sc</span>.nextInt();
+                System.<span class="ST2">out</span>.println(Math.<span class="ST4">round</span>(osszeg * arfolyam) + <span class="string">&quot;</span><span class="string"> Ft</span><span class="string">&quot;</span>);
+                <span class="literal">break</span>;
+            <span class="literal">case</span> 2:
+                System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Átváltandó összeg (HUF): </span><span class="string">&quot;</span>);
+                osszeg = <span class="ST2">sc</span>.nextInt();
+                System.<span class="ST2">out</span>.println(Math.<span class="ST4">round</span>(osszeg / arfolyam) + <span class="string">&quot;</span><span class="string"> EUR</span><span class="string">&quot;</span>);
+                <span class="literal">break</span>;
+            <span class="literal">default</span>:
+                System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">nincs ilyen nap</span><span class="string">&quot;</span>);
+                <span class="literal">break</span>;
+        }
+
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f03</span>(String cimke) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, cimke);   <span class="comment">// Fejléc </span>
+
+        <span class="literal">int</span> i = 1;
+        <span class="literal">while</span> (i &lt;= 10) {
+            System.<span class="ST2">out</span>.print(i + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+            i++;
+        }
+        System.<span class="ST2">out</span>.println();
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f04</span>(String cimke) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, cimke);   <span class="comment">// Fejléc </span>
+
+        <span class="literal">int</span> i = 10;
+        <span class="literal">while</span> (i &lt;= 50) {
+            System.<span class="ST2">out</span>.print(i + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+            i += 2;
+        }
+        System.<span class="ST2">out</span>.println();
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f05</span>(String cimke) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, cimke);   <span class="comment">// Fejléc </span>
+
+        <span class="literal">int</span> i = 500;
+        <span class="literal">while</span> (i &gt;= 400) {
+            System.<span class="ST2">out</span>.print(i + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+            i -= 7;
+        }
+        System.<span class="ST2">out</span>.println();
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f06</span>(String cimke) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, cimke);   <span class="comment">// Fejléc </span>
+
+        <span class="literal">int</span> i = 200;
+        <span class="literal">while</span> (i &lt;= 300) {
+            <span class="literal">if</span> (i % 3 == 0 &amp;&amp; i % 7 == 0) {
+                System.<span class="ST2">out</span>.print(i + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+            }
+            i++;
+        }
+        System.<span class="ST2">out</span>.println();
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f07</span>(String cimke) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, cimke);   <span class="comment">// Fejléc </span>
+
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">Az első szám: </span><span class="string">&quot;</span>);
+        <span class="literal">double</span> x = <span class="ST2">sc</span>.nextDouble();
+        <span class="literal">while</span> (x != 0) {
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">A szám négyzete: </span><span class="string">&quot;</span> + Math.<span class="ST4">pow</span>(x, 2));
+            System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">A következő szám: </span><span class="string">&quot;</span>);
+            x = <span class="ST2">sc</span>.nextDouble();
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f08</span>(String cimke) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, cimke);   <span class="comment">// Fejléc </span>
+
+        <span class="literal">int</span> jegy;
+        <span class="literal">do</span> {
+            System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">Az osztályzat: </span><span class="string">&quot;</span>);
+            jegy = <span class="ST2">sc</span>.nextInt();
+
+            <span class="literal">switch</span> (jegy) {
+                <span class="literal">case</span> 1:
+                    System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">1: elégtelen</span><span class="string">&quot;</span>);
+                    <span class="literal">break</span>;
+                <span class="literal">case</span> 2:
+                    System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">2: elégséges</span><span class="string">&quot;</span>);
+                    <span class="literal">break</span>;
+                <span class="literal">case</span> 3:
+                    System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">3: közepes</span><span class="string">&quot;</span>);
+                    <span class="literal">break</span>;
+                <span class="literal">case</span> 4:
+                    System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">4: jó</span><span class="string">&quot;</span>);
+                    <span class="literal">break</span>;
+                <span class="literal">case</span> 5:
+                    System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">5: jeles</span><span class="string">&quot;</span>);
+                    <span class="literal">break</span>;
+            }
+
+        } <span class="literal">while</span> (jegy &lt; 1 || jegy &gt; 5);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">main</span>(String[] args) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">ELÁGAZÁS 6 </span><span class="string">&quot;</span>);
+        <span class="ST4">f01</span>(<span class="string">&quot;</span><span class="string">A hét napjai </span><span class="string">&quot;</span>);
+        <span class="ST4">f02</span>(<span class="string">&quot;</span><span class="string">Pénzváltás </span><span class="string">&quot;</span>);
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">CIKLUSOK 1 - WHILE </span><span class="string">&quot;</span>);
+        <span class="ST4">f03</span>(<span class="string">&quot;</span><span class="string">Szamsorozat 1-től 10-ig </span><span class="string">&quot;</span>);
+        <span class="ST4">f04</span>(<span class="string">&quot;</span><span class="string">10-től 50-ig kettesével </span><span class="string">&quot;</span>);
+        <span class="ST4">f05</span>(<span class="string">&quot;</span><span class="string">500-től 400-ig hetesével </span><span class="string">&quot;</span>);
+        <span class="ST4">f06</span>(<span class="string">&quot;</span><span class="string">200-től 300-ig 2-vel és 7-el osztható </span><span class="string">&quot;</span>);
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">CIKLUSOK 2 </span><span class="string">&quot;</span>);
+        <span class="ST4">f07</span>(<span class="string">&quot;</span><span class="string">Számok négyzete - ha 0, akkor EXIT </span><span class="string">&quot;</span>);
+        <span class="ST4">f08</span>(<span class="string">&quot;</span><span class="string">Hátul tesztelő ciklus - DO WHILE </span><span class="string">&quot;</span>);
+    }
+
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+ELÁGAZÁS 6 -------------------------------------------------
+A hét napjai ***********************************************
+A nap sorszáma: 4
+csütörtök
+Pénzváltás *************************************************
+Hány Ft 1 Euro 315
+1. Euro->Ft 2. Ft->Euro 2
+Átváltandó összeg (HUF): 
+1500
+4 EUR
+CIKLUSOK 1 - WHILE -----------------------------------------
+Szamsorozat 1-től 10-ig ************************************
+1 2 3 4 5 6 7 8 9 10 
+10-től 50-ig kettesével ************************************
+10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 
+500-től 400-ig hetesével ***********************************
+500 493 486 479 472 465 458 451 444 437 430 423 416 409 402 
+200-től 300-ig 2-vel és 7-el osztható **********************
+210 231 252 273 294 
+CIKLUSOK 2 -------------------------------------------------
+Számok négyzete - ha 0, akkor EXIT *************************
+Az első szám: 15
+A szám négyzete: 225.0
+A következő szám: 26,3
+A szám négyzete: 691.69
+A következő szám: 0
+Hátul tesztelő ciklus - DO WHILE ***************************
+Az osztályzat: 6
+Az osztályzat: 0
+Az osztályzat: 5
+5: jeles
+<font color="#009933">BUILD SUCCESSFUL (total time: 1 minute 15 seconds)</font>
+</pre></body>
+</html>
+

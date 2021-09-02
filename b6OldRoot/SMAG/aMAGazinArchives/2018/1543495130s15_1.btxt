@@ -1,0 +1,130 @@
+<!-- aktualtimestamp: 1537259294
+2018 szeptember 17. Programozás
+  -->
+<div class="parabellum">
+<p class="main">
+Programozási nyelvek<br />
+<br />
+Természetes <-> Mesterséges:<br />
+------------<br />
+<br />
+Mesterséges nyelvek:<br />
+<br />
+A.)lekérdező:<br />
+SQL; JPQL; MYSQL; ...<br />
+<br />
+B.)dokumentum leíró nyelv:<br />
+HTML; XML; ...<br />
+<br />
+C.)programozási:<br />
+- alacsony szintű: gépi kód; assembly; ...<br />
+- magas szintű: basic; pascal; c, c++; java; ...<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1537259294"><a onclick="show('less-article1537259294'); hide('more-article1537259294')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1537259294" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1537259294'); show('more-article1537259294')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+A programozás szakaszai:<br />
+<br />
+- a feladat kitűzése, első megfogalmazása<br />
+- a feladat specifikációja, pontos megfogalmazása<br />
+- a program megtervezése, a feladatot megoldó algoritmus elkészítése<br />
+- kódolás, a forrásnyelvű program elkészítése<br />
+- tesztelés, hibakeresés, javítás<br />
+- hatékonyság vizsgálat<br />
+- dokumentáció készítés<br />
+<br />
+<br />
+- a feladat kitűzése, első megfogalmazása<br />
+A program legfontosabb funkcióinak és képességeinek pontos és szabatos leírását jelenti. A megfogalmazás "hétköznapi nyelven" történik.<br />
+<br />
+- a feladat specifikációja, pontos megfogalmazása<br />
+A program tervezője a saját szemszögéből fogalmazza meg a feladatot, ami gyökeresen különbözik a hétköznapi nyelven történő megfogalmazástól.<br />
+A feladatspecifikáció történhet szövegesen, illetve matematikai és logikai szimbólumok alkalmazásával. A maximális pontosságra és egyértelműségre kell törekednünk.<br />
+Bemenő adatok: valós számok<br />
+Kimenő adatok: valós számok<br />
+Előfeltételek: relációk<br />
+Utófeltétel: Az ismert tényleges képlet/tétel<br />
+<br />
+Az algoritmus egyértelműen előírt módon és sorrendben végrehajtandó tevékenységek véges sorozata.<br />
+Az algoritmusok tulajdonképpen matematikai minták.<br />
+<br />
+- a program megtervezése, a feladatot megoldó algoritmus elkészítése<br />
+A tervezési szakaszban fokozatosan elemeire bontjuk a problémát, meghatározzuk a megoldás algoritmusát.<br />
+<br />
+Egy feladatot több kisebb egységre osztunk fel. Maximálisan annyi részre osztjuk fel, amit még képesek vagyunk átlátni.<br />
+Van, aki 7 egységben adja meg a felosztási számot, van, aki 10-ben.<br />
+<br />
+Az algoritmusok egyes lépéseit tevékenységként szoktuk emlegetni.<br />
+<br />
+Alaptevékenységek:<br />
+kivitel; bevitel; feldolgozás<br />
+<br />
+Vezérlőtevékenységek:<br />
+szekvenciális; szelekciós IF; iterációs CIKLUSOK; /ugró utasítás/<br />
+<br />
+<br />
+Algoritmizálás<br />
+- mondatszerű leírás<br />
+- pszeudokód<br />
+- folyamatábra(nem)<br />
+- struktogram (nem)<br />
+- OOP rendszertervező eszköz: UML(Egyesített Modellező Nyelv)<br />
+<br />
+<br />
+Szövegesen leírom az algoritmust, nincs megkötés<br />
+A tevékenységrészek egymástól jól elkülöníthezők, és egyértelműek<br />
+<br />
+Mindíg meg kell határoznunk, milyen utasításokat használunk.<br />
+Létre kell hoznunk egy alap utasítás-, operátorlistát, ahol leírjuk, hogyan nézhetnek ki az egyes utasítások.<br />
+<br />
+FELADAT 1:<br />
+<br />
+Ird ki 2 különböző input szám közül a nagyobbat és az összegüket.<br />
+<br />
+eljárás f1()<br />
+be (a, b: egész); // a<>b<br />
+ki: ( a + "+" + b + "=" + (a+b) );<br />
+Ha a>b<br />
+ki: a;<br />
+Egyébként<br />
+ki: b;<br />
+Ha vége<br />
+eljárás vége<br />
+<br />
+A feladat megoldása jáva nyelven:<br />
+<br />
+package matek2;<br />
+import java.util.*;// IO műveletek<br />
+<br />
+public class Matek2 {<br />
+<br />
+&nbsp;&nbsp; private static void f1(){<br />
+&nbsp;&nbsp;&nbsp; Scanner sc = new Scanner(System.in);<br />
+&nbsp;&nbsp;&nbsp; System.out.print("a= "); int a= sc.nextInt();<br />
+&nbsp;&nbsp;&nbsp; System.out.print("b= "); int b= sc.nextInt();<br />
+&nbsp;&nbsp;&nbsp; System.out.println(a+" + "+b+" = "+(a+b));<br />
+&nbsp;&nbsp;&nbsp; if (a>b){<br />
+&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("A nagyobb szám: " + a );<br />
+&nbsp;&nbsp;&nbsp; }else{<br />
+&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("A nagyobb szám: " + b );<br />
+&nbsp;&nbsp;&nbsp; }<br />
+&nbsp;&nbsp; }<br />
+<br />
+&nbsp;&nbsp; public static void main(String[] args) {<br />
+&nbsp;&nbsp;&nbsp; f1();<br />
+&nbsp;&nbsp; }<br />
+}<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

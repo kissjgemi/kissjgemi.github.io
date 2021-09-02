@@ -1,0 +1,31 @@
+
+<a name="s00">&nbsp;</a>
+
+	<div id="section0">
+		<div id="iconmenu">
+	<a href="#s01"><img src="aMAGazinImages/buttons/forecast.png" alt="időjárás" title="időjárás"></a><br />
+	<a href="#s02"><img src="aMAGazinImages/buttons/streetinfo.png" alt="közlekedés" title="közlekedés"></a><br />
+	<a href="#s03"><img src="aMAGazinImages/buttons/luck.png" alt="totó-lottó" title="totó-lottó"></a><br />
+	&nbsp;<br />
+	&nbsp;<br />
+	<a href="prgphp/builder4index.php">
+	<img src="aMAGazinImages/buttons/yin_goo.png" alt="Közzététel" title="Közzététel">
+	</a>
+	</div> 
+	<div class="front-header">
+	<img src="aMAGazinImages/header/yinguInTheSky2.gif" alt="MAGazin" title="MAGazin"><br />
+	<font color="#FFFFFF"> 
+	<div align="center" style="background-color:black; float:right;">
+	<h2>&nbsp; Administrator-view &nbsp;</h2>
+	<hr />&nbsp; Válassz másik képet! &nbsp;<br />
+	&nbsp;<br />
+	<form name="input" action="prgphp/add_new_image2sectionhead.php" method="post" enctype="multipart/form-data">
+	<input type="file" name="image" />
+	<input type="hidden" name="section" value= "0" />
+	<input type="submit" value=" Beküld " name="send2datadir" />
+	</form>
+	<br />
+	</div>
+
+	</font> 
+ </div></div>

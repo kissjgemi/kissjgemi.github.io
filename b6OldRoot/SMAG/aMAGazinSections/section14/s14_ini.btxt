@@ -1,0 +1,12 @@
+http_source
+
+target_file
+entertainment.btxt
+number_of_templates
+1
+filenames_of_templates
+s14_t0
+number_of_topics
+1
+filenames_of_topics
+s14_1.btxt

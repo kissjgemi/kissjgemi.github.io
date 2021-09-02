@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pizza rendelés</title>
+</head>
+<body>
+
+<form action="http://poganysuli.hu/js/cel.html">
+    <fieldset>
+        <legend>
+            Vevő adatai
+        </legend>
+        <p>
+            <label>
+                Név: <input type="text" size="30" maxlength="30" name="nev" 
+                placeholder="írd be a neved" /><br />
+            </label>
+            <label>
+                Telefon: <input type="tel" name="tel" 
+                placeholder="add meg a telefonszámod" />    
+            </label>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Pizza méretei
+        </legend>
+            <label>
+                <input type="radio" name="meret" value="kicsi" />kicsi
+            </label><br />
+            <label>
+                    <input type="radio" name="meret" value="nagy" />nagy
+            </label>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Feltétek:
+        </legend>
+        <label>
+            <input type="checkbox" name="feltet1" value="sonka" />sonka
+        </label><br />
+        <label>
+            <input type="checkbox" name="feltet2" value="sajt" />sajt
+        </label><br />
+        <label>
+            <input type="checkbox" name="feltet3" value="gomba" />gomba
+        </label>
+    </fieldset>
+    <p>
+        <label>Mennyiség: 
+            <input type="number" name="mennyiseg" min="1" max="10">
+        </label>
+    </p>
+    <p>
+        <label>A szállítás napja: 
+            <input type="date" name="datum">
+        </label>
+    </p>
+    <p>
+        <label>A szállítás időpontja: 
+            <input type="time" name="ido">
+        </label>
+    </p>
+    <fieldset>
+                    <p>
+            <input type="submit" value="Elküld" />
+            <input type="reset" value="Töröl" />
+        </p>
+    </fieldset>
+</form>
+
+</body>
+</html>

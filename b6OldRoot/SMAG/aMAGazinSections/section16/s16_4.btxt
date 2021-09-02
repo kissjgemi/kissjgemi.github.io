@@ -1,0 +1,33 @@
+<!-- aktualtimestamp: 1537477293
+Amit ma megtehetsz
+  -->
+<div class="parabellimage">
+<div id="thumb1537477293" class="thumbframe"><a onclick="show('wide1537477293'); hide('thumb1537477293')" >
+<img src="_uploaded_images/2018-09/FesusEva.jpg
+" alt="FesusEva.jpg" title="FesusEva.jpg"></a>
+</div>
+<div id="wide1537477293" class="wideframe"><a onclick="show('thumb1537477293'); hide('wide1537477293')" >
+<img src="_uploaded_images/2018-09/FesusEva.jpg
+" alt="FesusEva.jpg" title="FesusEva.jpg"></a>
+</div>
+<p class="main">
+<br /><br />
+"Amit ma megtehetsz, kevés, mégse halaszd el holnapig.<br />
+<br />
+Részekből teljesül az egész, nagy szívvel tedd meg a kicsit!<br />
+<br />
+Amit ma eltehetsz se sok, nincsenek garasos csodák,<br />
+<br />
+de valaki örülni fog még ennek is, hát add tovább!<br />
+<br />
+Ezer szóból csak egy igaz, és sok beszéd elrejtheti,<br />
+<br />
+ha rábukkannál, melyik az, ne tétovázz kiejteni."<br /></p>
+</div>
+<div class="parabellum">
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+Fésűs Éva
+ &nbsp;</span> </font></p>
+</div>

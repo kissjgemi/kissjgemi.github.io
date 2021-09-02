@@ -1,0 +1,212 @@
+<!-- aktualtimestamp: 1542286464
+2018 november 12. Szakmai angol jegyzet
+  -->
+<div class="parabellum">
+<p class="main">
+<h3>feltételes módok - conditionals</h3><br />
+<br />
+if = ha<br />
+<br />
+0. zero conditonal - mindig minden teljesül<br />
+-> közmondások ide tartoznak<br />
+alapigazságok<br />
+az élet hobbikhoz vagy élethelyzetekhez köthető szokásai<br />
+<br />
+Közmondás:<br />
+If the postman comes, he rings twice.<br />
+(Ha a postás jön kétszer csenget.)<br />
+<br />
+végig az összetett mondatban - sima jelen idő van<br />
+<br />
+Alapigazság:<br />
+If the sun shines, than it is daytime.<br />
+(Ha a nap süt, akkor nappal van.)<br />
+<br />
+Az élet szituációi:<br />
+If I have money, I buy food at the school buffet.<br />
+(Ha van pénzem, akkor a suli büféjében veszek ételt.)<br />
+<br />
+If you don't love me, don't come!<br />
+(Ha nem szeretsz, ne gyere!)<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1542286464"><a onclick="show('less-article1542286464'); hide('more-article1542286464')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1542286464" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1542286464'); show('more-article1542286464')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+&nbsp;<br />
+1. first conditional - ha valami történik, egy másik dolog is történni fog!!!!<br />
+<br />
+will biztosan szerepelni fog :)<br />
+<br />
+If the weather is nice tomorrow, we will go out to play.<br />
+(Ha az idő jó lesz holnap, ki fogunk menni játszani.)<br />
+<br />
+Az if és a megfelelő módbeli segédige (will) nem lehet sosem ugyanazon oldalon, mindig egy gondolathatár választja el őket.<br />
+<br />
+--------------------------------------------------------<br />
+<br />
+2. second conditonal<br />
+<br />
+Ha az angol olyan dologról beszél ami vágy vagy már nem teljesülhet, akkor annál inkább múlt idő van a feltételes mondatban.<br />
+<br />
+Vágyak, sóhajok és álmok kifejezésére - Bárcsak!<br />
+<br />
+A mondat szerkezete:<br />
+If + sima múlt idő, would + sima jelen.<br />
+Itt is a az if és a would segédige a gondolathatár két oldalán kell, hogy álljon.<br />
+<br />
+If I had money, I would buy a car.<br />
+Ha lenne pénzem, vennék egy kocsit. - > ha az if után múlt idő van az csak feltételes mondat lehet<br />
+<br />
+If you loved me, I would be happy.<br />
+(Ha szeretnél, boldog lennék.)<br />
+<br />
+Hogy az if és a would azért nem állhat egymás mellett közbetlenül, mert van egy áthallás a Would you be so kind? (Ha) Lennél olyan kedves? Kérdéssel - > ami IF WOU WOULD BE SO KIND lenne logikailag...<br />
+<br />
+Bárcsak! - I wish és utána múlt idő!<br />
+- If only, ami szószerint Bárcsak!<br />
+<br />
+I wish you were here! - Bárcsak itt lennél!<br />
+If only you were here! - -<br />
+<br />
+-------------------------------------------------------<br />
+<br />
+3. third conditional a befejezett múlt és a befejezett jelen van a gondolathatár két oldalán<br />
+<br />
+Annyira lehetetlen már teljesíteni a feltételt, hogy a mondatba a befejezett igeidők kerülnek!!!<br />
+<br />
+If + bef. múlt, would + bef. jelen.<br />
+<br />
+If I had seen the film, I would have been happy.<br />
+(Ha láttam volna a filmet, boldog lettem volna.)<br />
+<br />
+If I had had money, I would have bought a car.<br />
+mert az első had a befejezett jelen, a második had az ige 3. alakja > to have money összetett igealakból<br />
+(Ha lett volna pénzem, vettem volna egy kocsit.)<br />
+<br />
+------------------------------------------------------<br />
+<br />
+Passive Voice - Szenvedő szerkezet<br />
+<br />
+Magyarban az a helytelen fordítása, hogy a 'könyv nekem lett adva'. Ha valaki a régi iratokat olvassa, akkor a 'könyv nekem adatott' is ugyanez. Viszont az angol nagyon sokszr használja, főleg ha hírműsorról van szó és a cselekvés fontosabb, mint hogy ki követte el.<br />
+<br />
+A rendes mondatrendhez képest az alany és a tárgy helyet cserélnek.<br />
+Péter egy könyvet adott nekem.<br />
+Egy könyvet adott nekem Péter.<br />
+<br />
+Peter gave me a book.<br />
+A book was given to me (és ha ki akarom emelni, hogy kitől) by Peter.<br />
+<br />
+by - által<br />
+<br />
+Hírműsorban:<br />
+The patients were taken to hospital.<br />
+A betegeket kórházba vitték.<br />
+(tudjuk, hogy a mentők, ha nincs külön kiemelve)<br />
+<br />
+The contract was signed by the politicians.<br />
+A szerződést a politikusok írták alá (nem mások).<br />
+<br />
+Képzése: létige + 3. alak és a létige dönti el, hogy a mondat milyen idő szerint értelmezhető<br />
+<br />
+Elvis is liked by his fans. - Elvis-t szeretik a rajongói.<br />
+<br />
+példa a take szóval: vinni<br />
+sima jelen<br />
+is/are taken - általában viszik<br />
+<br />
+folyamatos jelen<br />
+is/are being taken - most viszik<br />
+<br />
+sima múlt<br />
+was/were taken - vitték<br />
+<br />
+folyamatos múlt<br />
+was/were being taken - sokáig vitték<br />
+<br />
+befejezett jelen<br />
+have/has been taken - vitték<br />
+<br />
+befejezett múlt<br />
+had been taken - vitték mielőtt más is történt<br />
+<br />
+folyamatos befejezett jelen<br />
+have/has been being taken - elkezdték vinni és most is viszik<br />
+<br />
+----------------------------<br />
+<br />
+példamondatok sima múlttal:<br />
+was/were taken - vitték<br />
+<br />
+A szemetet Jancsi vitte ki.<br />
+The trash was taken out by Jancsi.<br />
+<br />
+A hibát kijavították a mérnökök.<br />
+The bug was repaired by the engineers.<br />
+<br />
+A vázát Jancsi és Juliska törték el.<br />
+The vase was broken by Jancsi and Juliska.<br />
+<br />
+A betegeket nem a mentősök szállították kórházba.<br />
+The patients were not taken to hospital by ambulances.<br />
+<br />
+A betegeket a mentősök vitték el?<br />
+Were the patients taken to hospital by ambulances?<br />
+<br />
+A pácienseket kik vitték el?<br />
+Who were the patients taken (away) by?<br />
+<br />
+----------------------------------------<br />
+<br />
+Reported Speech - Függőbeszéd<br />
+<br />
+A függőbeszéd egy ember mondanivalójának idézése de nem szó szerint. - Ha szószerint lenne, akkor 'verbatim'-nak hívnánk.<br />
+<br />
+Az idézett mondanivaló egy igeidővel mindig hátrébb kerül az új mondatban. - > ezt hívjuk backshiftingnek az angolban - visszaváltás<br />
+<br />
+Azért van visszaváltás, mert az idézés pillanata előtt már elhangzottak a mondatok, így logikailag követjük a befejezett múltra vonatkozó szabályokat.<br />
+<br />
+Sima jelen idejű mondat:<br />
+Peter: I like steaks. -> Peter said he liked steaks.<br />
+sima jelenből -> sima múlt lesz***<br />
+Péter azt mondta, hogy szereti a bélszínt.<br />
+<br />
+Folyamatos jelen:<br />
+Peter: I am reading. -> Peter said he was reading.<br />
+folyamatos jelen -> folyamatos múlt<br />
+Péter azt mondta, hogy éppen akkor olvasta a könyvet.<br />
+<br />
+Sima múlt: - minden múlt idő a befejezett múlt-ba vált vissza<br />
+Peter: I saw Kate yesterday. -> Peter said he had seen Kate yesterday.<br />
+<br />
+Befejezett jelen:<br />
+Peter: I have been to France -> Peter said he had been to France.<br />
+<br />
+Sima jövő:<br />
+will -> would (a willnek nincs múlt ideje, szükségkifejezés)<br />
+Peter: I will go to the market tomorrow. -> Peter said he would go to the market the next day.<br />
+az időhatározók is változnak<br />
+- tomorrow - next day, following day<br />
+- yesterday - the previous day, the day before<br />
+- this day (today) - that day<br />
+Péter azt mondta, hogy másnap el fog menni a piacra.<br />
+<br />
+going to -> was/were going to (olyan mintha a folyamatos múlt alakjával képeznénk (was/were+ing)<br />
+Peter: I am going to visit my mother tomorrow. - Peter said he was going to visit his mother the next day.<br />
+Péter azt mondta, hogy másnap majd meglátogatja az anyját.<br />
+<br />
+folyt.köv.<br />
+--------------<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

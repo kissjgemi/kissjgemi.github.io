@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Java20190225Students.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.ST4 {color: #ce7b00; font-family: Courier; font-weight: bold}
+.ST5 {color: #009900}
+.ST6 {color: #ce7b00; font-family: Courier; font-weight: bold}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+.comment {color: #969696}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">Java20190225Students.java</td></tr></table>
+<hr>
+<pre>
+<span class="literal">package</span> java20190225students;
+
+<span class="literal">import</span> java.io.*;
+<span class="literal">import</span> java.util.*;
+
+<span class="comment">/**</span>
+<span class="comment"> *</span>
+<span class="comment"> * </span><span class="ST0">@KjG</span>
+ <span class="comment">*/</span>
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST1">Java20190225Students</span> {
+
+    <span class="literal">private</span> <span class="literal">static</span> RandomAccessFile <span class="ST2">f</span>;
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">final</span> ArrayList&lt;Student&gt; <span class="ST2">STUDENTS</span> = <span class="literal">new</span> ArrayList&lt;&gt;();
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f00</span>(<span class="literal">int</span> hossz, <span class="literal">char</span> jel, String name) {
+        <span class="literal">int</span> start = 0;
+        <span class="literal">if</span> (name.length() != 0) {
+            start = name.length() + 5;
+            System.<span class="ST2">out</span>.print(jel + <span class="string">&quot;</span><span class="string">| </span><span class="string">&quot;</span>);
+            System.<span class="ST2">out</span>.print(name + <span class="string">&quot;</span><span class="string"> |</span><span class="string">&quot;</span>);
+        }
+        <span class="literal">for</span> (<span class="literal">int</span> ii = start; ii &lt; hossz; ii++) {
+            System.<span class="ST2">out</span>.print(jel);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+    <span class="comment">// --- textdekoráció metódus vége</span>
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">inputFile</span>(String fileName, String mode) {
+        <span class="literal">try</span> {
+            <span class="ST2">f</span> = <span class="literal">new</span> RandomAccessFile(fileName, mode);
+            String sor;
+            <span class="literal">while</span> ((sor = <span class="ST2">f</span>.readLine()) != <span class="literal">null</span>) {
+                <span class="ST2">STUDENTS</span>.add(<span class="literal">new</span> Student(sor));
+            }
+            <span class="ST2">f</span>.close();
+        } <span class="literal">catch</span> (IOException e) {
+            System.<span class="ST2">err</span>.println(e.getMessage());
+            System.<span class="ST4">exit</span>(1);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">A </span><span class="string">&quot;</span> + fileName + <span class="string">&quot;</span><span class="string">... beolvasva</span><span class="string">&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">appendFile</span>(String fileName, String mode, String str) {
+        <span class="literal">try</span> {
+            <span class="ST2">f</span> = <span class="literal">new</span> RandomAccessFile(fileName, mode);
+            <span class="ST2">f</span>.seek(<span class="ST2">f</span>.length());<span class="comment">//a fájlmutatót a fájl végére mozgatja</span>
+            <span class="ST2">f</span>.writeBytes(str + <span class="string">&quot;</span><span class="ST5">\n</span><span class="string">&quot;</span>);
+            <span class="ST2">f</span>.close();
+        } <span class="literal">catch</span> (IOException e) {
+            System.<span class="ST2">err</span>.println(e.getMessage());
+            System.<span class="ST4">exit</span>(1);
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">deleteFile</span>(String fileName) {
+        File file = <span class="literal">new</span> File(fileName);
+        <span class="literal">if</span> (file.exists()) {
+            file.delete();
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f1</span>(String label, String fileName, String mode) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, label);
+        <span class="ST4">inputFile</span>(fileName, mode);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f2</span>(String label, String fileName, String mode) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, label);
+        <span class="ST4">deleteFile</span>(fileName);
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST2">STUDENTS</span>.size(); ii++) {
+            <span class="literal">if</span> (<span class="ST2">STUDENTS</span>.get(ii).getGender().equals(<span class="string">&quot;</span><span class="string">L</span><span class="string">&quot;</span>)) {
+                String str = String.<span class="ST4">format</span>(<span class="string">&quot;</span><span class="string">%20s</span><span class="string">&quot;</span>, <span class="ST2">STUDENTS</span>.get(ii).getName());
+                System.<span class="ST2">out</span>.println(str);
+                <span class="ST4">appendFile</span>(fileName, mode, str);
+            }
+        }
+
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f3</span>(String label) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, label);
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST2">STUDENTS</span>.size(); ii++) {
+            <span class="literal">if</span> (<span class="ST2">STUDENTS</span>.get(ii).getHeight() &gt; 1.7) {
+                String str = String.<span class="ST4">format</span>(<span class="string">&quot;</span><span class="string">%20s</span><span class="string">&quot;</span>, <span class="ST2">STUDENTS</span>.get(ii).getName());
+                str += String.<span class="ST4">format</span>(<span class="string">&quot;</span><span class="string">: %5.2f m</span><span class="string">&quot;</span>, <span class="ST2">STUDENTS</span>.get(ii).getHeight());
+                System.<span class="ST2">out</span>.println(str);
+            }
+        }
+
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f4</span>(String label) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, label);
+        <span class="literal">double</span> szum = 0;
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST2">STUDENTS</span>.size(); ii++) {
+            szum += <span class="ST2">STUDENTS</span>.get(ii).getHeight();
+        }
+        String str = String.<span class="ST4">format</span>(<span class="string">&quot;</span><span class="string">%5.2f</span><span class="string">&quot;</span>, szum / <span class="ST2">STUDENTS</span>.size());
+
+        System.<span class="ST2">out</span>.print(str + <span class="string">&quot;</span><span class="string"> m.</span><span class="ST5">\n</span><span class="string">&quot;</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">main</span>(String[] args) {
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">STARTofJAVA 2019feb25 StudentsTTI</span><span class="string">&quot;</span>);
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, <span class="string">&quot;&quot;</span>);
+
+        <span class="ST4">f1</span>(<span class="string">&quot;</span><span class="string">1. </span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">txt/adatok.txt</span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">r</span><span class="string">&quot;</span>); <span class="comment">//közösen;</span>
+        <span class="ST4">f2</span>(<span class="string">&quot;</span><span class="string">2. </span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">txt/girls.txt</span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">rw</span><span class="string">&quot;</span>); <span class="comment">//közösen;</span>
+        <span class="ST4">f3</span>(<span class="string">&quot;</span><span class="string">3. A 1,70 m-nél magasabbak</span><span class="string">&quot;</span>); <span class="comment">//egyéni;</span>
+        <span class="ST4">f4</span>(<span class="string">&quot;</span><span class="string">4. Az osztály átlagmagassága</span><span class="string">&quot;</span>); <span class="comment">//egyéni;</span>
+
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>, <span class="string">&quot;&quot;</span>);
+        <span class="ST4">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">ENDofJAVA   2019feb25</span><span class="string">&quot;</span>);
+    }
+
+}
+</pre>
+<hr>
+<table width="100%"><tr><td align="center">Student.java</td></tr></table>
+<hr>
+<pre>
+<span class="literal">package</span> java20190225students;
+
+<span class="comment">/**</span>
+<span class="comment"> *</span>
+<span class="comment"> * </span><span class="ST0">@KjG</span>
+ <span class="comment">*/</span>
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST1">Student</span> {
+
+    <span class="literal">public</span> String <span class="ST1">getName</span>() {
+        <span class="literal">return</span> <span class="ST2">name</span>;
+    }
+
+    <span class="literal">public</span> String <span class="ST1">getGender</span>() {
+        <span class="literal">return</span> <span class="ST2">gender</span>;
+    }
+
+    <span class="literal">public</span> <span class="literal">double</span> <span class="ST1">getHeight</span>() {
+        <span class="literal">return</span> <span class="ST2">height</span>;
+    }
+
+    <span class="literal">public</span> <span class="literal">double</span> <span class="ST1">getTti</span>() {
+        <span class="literal">return</span> <span class="ST2">tti</span>;
+    }
+
+    <span class="literal">public</span> <span class="literal">int</span> <span class="ST1">getKg</span>() {
+        <span class="literal">return</span> <span class="ST2">kg</span>;
+    }
+
+    <span class="literal">private</span> String <span class="ST2">name</span>, <span class="ST2">gender</span>;
+    <span class="literal">private</span> <span class="literal">double</span> <span class="ST2">height</span>, <span class="ST2">tti</span>;
+    <span class="literal">private</span> <span class="literal">int</span> <span class="ST2">kg</span>;
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">double</span> <span class="ST3">tti</span>(<span class="literal">int</span> kg, <span class="literal">double</span> m) {
+        <span class="literal">return</span> Math.<span class="ST4">round</span>(100 * (1.3 * kg / (Math.<span class="ST4">pow</span>(m, 2.5)))) / 100.0;
+    }
+
+    <span class="literal">public</span> <span class="ST1">Student</span>(String sor) {
+        String[] t = sor.split(<span class="string">&quot;</span><span class="ST5">\\</span><span class="string">s*</span><span class="ST5">\t</span><span class="ST5">\\</span><span class="string">s*</span><span class="string">&quot;</span>);
+        <span class="literal">this</span>.<span class="ST2">name</span> = t[0];
+        <span class="literal">this</span>.<span class="ST2">gender</span> = t[1];
+        <span class="literal">this</span>.<span class="ST2">height</span> = Integer.<span class="ST4">parseInt</span>(t[2]) / 100.0;
+        <span class="literal">this</span>.<span class="ST2">kg</span> = Integer.<span class="ST4">parseInt</span>(t[3]);
+        <span class="literal">this</span>.<span class="ST2">tti</span> = <span class="ST4">tti</span>(<span class="literal">this</span>.<span class="ST2">kg</span>, <span class="literal">this</span>.<span class="ST2">height</span>);
+    }
+
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+*| STARTofJAVA 2019feb25 StudentsTTI |**********************
+------------------------------------------------------------
+-| 1.  |----------------------------------------------------
+A txt/adatok.txt... beolvasva
+-| 2.  |----------------------------------------------------
+           Orosz Éva
+        Ördög Eszter
+         István Joli
+         Endrei Kata
+          Csaba Anna
+            Nagy Zoé
+           Arany Ági
+        Gyulai Panna
+          Jakab Irma
+        Balogh Emese
+           Hence Éva
+        Albert Kitti
+          Cilei Sára
+          Ázsok Ildi
+        Kajtos Eniko
+        Kaszás Panni
+          Ujvári Éva
+          Zsobó Lili
+-| 3. A 1,70 m-nél magasabbak |-----------------------------
+        Ördög Eszter:  1,72 m
+         Fejes Adolf:  1,79 m
+         Endrei Kata:  1,76 m
+        Vidák Róbert:  1,72 m
+          Csaba Anna:  1,72 m
+            Nagy Zoé:  1,71 m
+          Sebes Feri:  1,71 m
+          Jakab Irma:  1,72 m
+           Rajna Pál:  1,78 m
+          Tisza Jeno:  1,73 m
+          Cilei Sára:  1,76 m
+        Makács Nátán:  1,73 m
+           Ötvös Pál:  1,74 m
+        Kaszás Panni:  1,75 m
+           Zala Pali:  1,77 m
+-| 4. Az osztály átlagmagassága |---------------------------
+ 1,66 m.
+------------------------------------------------------------
+*| ENDofJAVA   2019feb25 |**********************************
+BUILD SUCCESSFUL (total time: 0 seconds)
+</pre></body>
+</html>
+

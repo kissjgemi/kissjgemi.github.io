@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Ciklusok02.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">Ciklusok02.java</td></tr></table>
+<hr>
+<pre>
+<span class="literal">package</span> ciklusok02;
+
+<span class="literal">import</span> java.util.*;
+
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST0">Ciklusok02</span> {
+
+    <span class="literal">static</span> Scanner <span class="ST1">sc</span> = <span class="literal">new</span> Scanner(System.<span class="ST1">in</span>);
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f1</span>() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">1. Az [1, 10] számai</span><span class="string">&quot;</span>);
+
+        <span class="literal">int</span> quantity = 10;
+
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 1; ii &lt;= quantity; ii++) {
+            System.<span class="ST1">out</span>.print(ii);
+            <span class="literal">if</span> (ii &lt; quantity) {
+                System.<span class="ST1">out</span>.print(<span class="string">&quot;</span><span class="string">, </span><span class="string">&quot;</span>);
+            } <span class="literal">else</span> {
+                <span class="comment">//System.out.print(&quot;.&quot;);</span>
+            }
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f2</span>() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">2. Az rnd [1, 50] számai</span><span class="string">&quot;</span>);
+
+        <span class="literal">int</span> quantity = 10;
+        <span class="literal">int</span> max = 50;
+        <span class="literal">int</span> min = 1;
+
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; quantity; ii++) {
+            <span class="literal">double</span> rnd = Math.<span class="ST3">random</span>() * max + min;
+            System.<span class="ST1">out</span>.print((<span class="literal">int</span>) (rnd));
+            <span class="literal">if</span> (ii &lt; quantity - 1) {
+                System.<span class="ST1">out</span>.print(<span class="string">&quot;</span><span class="string">, </span><span class="string">&quot;</span>);
+            } <span class="literal">else</span> {
+                <span class="comment">//System.out.print(&quot;.&quot;);</span>
+            }
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f3</span>() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">3. Négyzetszámok</span><span class="string">&quot;</span>);
+
+        String ask = <span class="string">&quot;</span><span class="string">N (&lt;30)= </span><span class="string">&quot;</span>;
+        System.<span class="ST1">out</span>.print(ask);
+        <span class="literal">int</span> N = <span class="ST1">sc</span>.nextInt();
+
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 1; ii &lt;= N; ii++) {
+            System.<span class="ST1">out</span>.print(ii * ii);
+            <span class="literal">if</span> (ii &lt; N) {
+                System.<span class="ST1">out</span>.print(<span class="string">&quot;</span><span class="string">, </span><span class="string">&quot;</span>);
+            } <span class="literal">else</span> {
+                <span class="comment">//System.out.print(&quot;.&quot;);</span>
+            }
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f4</span>() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">4. Páratlan számok</span><span class="string">&quot;</span>);
+
+        String ask = <span class="string">&quot;</span><span class="string">N (&lt;30)= </span><span class="string">&quot;</span>;
+        System.<span class="ST1">out</span>.print(ask);
+        <span class="literal">int</span> N = <span class="ST1">sc</span>.nextInt();
+
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 1; ii &lt;= N; ii = ii + 2) {
+            System.<span class="ST1">out</span>.print(ii);
+            <span class="literal">if</span> (ii &lt; N) {
+                System.<span class="ST1">out</span>.print(<span class="string">&quot;</span><span class="string">, </span><span class="string">&quot;</span>);
+            } <span class="literal">else</span> {
+                <span class="comment">//System.out.print(&quot;.&quot;);</span>
+            }
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f5</span>() {
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">5. [a,b] elemek</span><span class="string">&quot;</span>);
+
+        String ask1 = <span class="string">&quot;</span><span class="string">A= </span><span class="string">&quot;</span>;
+        String ask2 = <span class="string">&quot;</span><span class="string">B= </span><span class="string">&quot;</span>;
+        System.<span class="ST1">out</span>.print(ask1);
+        <span class="literal">int</span> a = <span class="ST1">sc</span>.nextInt();
+        System.<span class="ST1">out</span>.print(ask2);
+        <span class="literal">int</span> b = <span class="ST1">sc</span>.nextInt();
+
+        <span class="literal">if</span> (a &gt; b) {
+            <span class="literal">int</span> dummy = a;
+            a = b;
+            b = dummy;
+        }
+
+        <span class="literal">for</span> (<span class="literal">int</span> ii = a; ii &lt; b; ii++) {
+            System.<span class="ST1">out</span>.print(ii + <span class="string">&quot;</span><span class="string">, </span><span class="string">&quot;</span>);
+        }
+        System.<span class="ST1">out</span>.print(b);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">main</span>(String[] args) {
+        <span class="ST3">f1</span>();
+        <span class="ST3">f2</span>();
+        <span class="ST3">f3</span>();
+        <span class="ST3">f4</span>();
+        <span class="ST3">f5</span>();
+    }
+
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+1. Az [1, 10] számai
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+2. Az rnd [1, 50] számai
+37, 6, 18, 23, 12, 18, 8, 31, 46, 9
+
+3. Négyzetszámok
+N (<30)= 19
+1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361
+
+4. Páratlan számok
+N (<30)= 17
+1, 3, 5, 7, 9, 11, 13, 15, 17
+
+5. [a,b] elemek
+A= 60
+B= 42
+42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60
+<font color="#009933">BUILD SUCCESSFUL (total time: 20 seconds)</font>
+
+</pre></body>
+</html>

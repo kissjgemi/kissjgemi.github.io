@@ -1,0 +1,33 @@
+<!-- aktualtimestamp: 1537441831
+2018 szeptember 19. Programozás
+  -->
+<div class="parabellum">
+<p class="main">
+Tananyag:<br />
+<br />
+HTML programozás Visual Studio Code programmal:<br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VT1FFcGxHSlRDXzQ?usp=sharing">04 Listák 2</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90Vc04yUlBZaWRqVzg?usp=sharing">05 Hivatkozások</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VWXBWTWRRaHlhWHM?usp=sharing">06 Képek</a><br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1537441831"><a onclick="show('less-article1537441831'); hide('more-article1537441831')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1537441831" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1537441831'); show('more-article1537441831')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+Java programozás Greenfoot fejlesztői környezetben:<br />
+<br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VRDg3MmZMQXBiSjA?usp=sharing">03 Elágazás</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VWE1LSEdLc19uV2c?usp=sharing">04 Billentyűzet</a><br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+poganysuli.hu tananyag
+ &nbsp;</span> </font></p>
+</div>

@@ -1,0 +1,33 @@
+<!-- aktualtimestamp: 1578588811
+Bootstrap
+  -->
+<div class="parabellimage">
+<div id="thumb1578588811" class="thumbframe"><a onclick="show('wide1578588811'); hide('thumb1578588811')" >
+<img src="_uploaded_images/2020-01/barany.jpg
+" alt="barany.jpg" title="barany.jpg"></a>
+</div>
+<div id="wide1578588811" class="wideframe"><a onclick="show('thumb1578588811'); hide('wide1578588811')" >
+<img src="_uploaded_images/2020-01/barany.jpg
+" alt="barany.jpg" title="barany.jpg"></a>
+</div>
+<p class="main">
+Marha jó<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1578588811"><a onclick="show('less-article1578588811'); hide('more-article1578588811')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1578588811" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1578588811'); show('more-article1578588811')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+vagy nem<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+pogisuli
+ &nbsp;</span> </font></p>
+</div>

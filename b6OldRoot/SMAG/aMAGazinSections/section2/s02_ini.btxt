@@ -1,0 +1,13 @@
+http_source
+http://www.police.hu/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet
+target_file
+trafic.btxt
+number_of_templates
+2
+filenames_of_templates
+s02_t0
+s02_t1
+number_of_topics
+1
+filenames_of_topics
+s02_1.btxt

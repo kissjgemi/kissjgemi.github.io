@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CCNA1 - 06</title>
+	<style>
+		body {
+		text-align: justify;
+		}
+	</style>
+</head>
+<body>
+<h1 style="text-align: center;">CCNA1 V5 2016 Chapter 6</h1>
+
+<p><strong>1 </strong><br />
+<strong>After troubleshooting a router, the network administrator wants to save the router configuration so that it will be used automatically the next time that the router reboots. What command should be issued?</strong><br />
+copy startup-config flash<br />
+copy running-config flash<br />
+reload<br />
+copy startup-config running-config<br />
+<span style="color: #3366ff;"><strong>copy running-config startup-config*</strong></span></p>
+<p><strong>2 </strong><br />
+<strong>Which IPv4 header field is responsible for defining the priority of the packet?​</strong><br />
+traffic class<br />
+flow label<br />
+flags<br />
+<span style="color: #3366ff;"><strong>differentiated services*</strong></span><br />
+<strong>3 </strong><br />
+<strong>When connectionless protocols are implemented at the lower layers of the OSI model, what are usually used to acknowledge the data receipt and request the retransmission of missing data?</strong><br />
+Transport layer UDP protocols<br />
+<span style="color: #3366ff;"><strong>upper-layer connection-oriented protocols*</strong></span><br />
+connectionless acknowledgements<br />
+Network layer IP protocols<br />
+<strong>4 </strong><br />
+<strong>Why is NAT not needed in IPv6?​</strong><br />
+<span style="color: #3366ff;"><strong>Any host or user can get a public IPv6 network address because the number of available IPv6 addresses is extremely large.​*</strong></span><br />
+The end-to-end connectivity problems that are caused by NAT are solved because the number of routes increases with the number of nodes that are connected to the Internet.<br />
+Because IPv6 has integrated security, there is no need to hide the IPv6 addresses of internal networks.​<br />
+The problems that are induced by NAT applications are solved because the IPv6 header improves packet handling by intermediate routers.​</p>
+<p><strong>5</strong></p>
+<p><img class="alignnone" src="https://lh6.googleusercontent.com/-SDL8ZCcWpms/Uvq8h3s4b_I/AAAAAAAAAJ0/MRBcJDMjHBE/w831-h311-no/p5-exa6-ccna1.png" alt="" width="831" height="311" /><br />
+<strong>Refer to the exhibit. Fill in the blank.</strong><br />
+A packet leaving PC-1 has to traverse &#8220;<span style="color: #3366ff;"><strong>three</strong></span>&#8221; hops to reach PC-4.​</p>
+<p><strong>6 </strong><br />
+<strong>Which two interfaces will allow access via the VTY lines to configure the router? (Choose two.)</strong><br />
+console interfaces<br />
+USB interfaces<br />
+<span style="color: #3366ff;"><strong>WAN interfaces*</strong></span><br />
+<span style="color: #3366ff;"><strong> LAN interfaces*</strong></span><br />
+aux interfaces</p>
+<p><strong>7 </strong><br />
+<strong>A technician is manually configuring a computer with the necessary IP parameters to communicate over the corporate network. The computer already has an IP address, a subnet mask, and a DNS server. What else has to be configured for Internet access?</strong><br />
+<span style="color: #3366ff;"><strong>the default gateway address*</strong></span><br />
+the MAC address<br />
+the domain name of the organization<br />
+the WINS server address</p>
+<p><strong>8 </strong><br />
+<strong>Which three commands are used to set up a password for a person who attaches a cable to a new router so that an initial configuration can be performed? (Choose three.)</strong><br />
+<strong><span style="color: #3366ff;">password cisco *</span></strong><br />
+line vty 0 4<br />
+<span style="color: #3366ff;"><strong>line console 0 *</strong></span><br />
+interface fastethernet 0/0<br />
+enable secret cisco<br />
+<span style="color: #3366ff;"><strong>login * </strong></span></p>
+<p><strong>9. Match the configuration mode with the command that is available in that mode. (Not all options are used.)</strong></p>
+<p><img class="alignnone" src="https://lh4.googleusercontent.com/-MPtpm7c3tV8/Uvq8inwOMfI/AAAAAAAAAJ4/OWXRiPXDVe4/w1028-h490-no/p9-exa6-ccna1.png" alt="" width="1028" height="490" /></p>
+<p><strong>Sort elements</strong><br />
+<strong>enable -&gt; <span style="color: #3366ff;">R1&gt;</span></strong><br />
+<strong>copy running-config startup-config -&gt; <span style="color: #3366ff;">R1#</span></strong><br />
+<strong>login -&gt; <span style="color: #3366ff;">R1(config-line)#</span></strong><br />
+<strong>interface fastethernet 0/0 -&gt; <span style="color: #3366ff;">R1(config)#</span></strong></p>
+<p><strong>10. Refer to the exhibit. Match the packets with their destination IP address to the exiting interfaces on the router. (Not all options are used.)</strong></p>
+<p><img class="alignnone" src="https://lh4.googleusercontent.com/-Yu7Gpcgt0N0/Uvq8hUhfqOI/AAAAAAAAAJg/Jl509tus_ys/w639-h574-no/p10-exa6-ccna1.png" alt="" width="639" height="574" /></p>
+<p><strong>Sort elements</strong><br />
+<strong>FastEthernet0/0 -&gt; <span style="color: #3366ff;">packets with destination of 172.17.6.15</span></strong><br />
+<strong>FastEthernet0/1 -&gt; <span style="color: #3366ff;">packets with destination of 172.17.14.8</span></strong><br />
+<strong>FastEthernet1/0 -&gt; <span style="color: #3366ff;">packets with destination of 172.17.12.10</span></strong><br />
+<strong>FastEthernet1/1 -&gt; <span style="color: #3366ff;">packets with destination of 172.17.10.5</span></strong><br />
+<strong>Serial0/0/0 -&gt; <span style="color: #3366ff;">packets with destination of 172.17.8.20</span></strong></p>
+<p><strong>11 </strong><br />
+<strong>Which statement about router interfaces is true?</strong><br />
+Commands that apply an IP address and subnet mask to an interface are entered in global configuration mode.<br />
+Once the no shutdown command is given, a router interface is active and operational.<br />
+Router LAN interfaces are not activated by default, but router WAN interfaces are.<br />
+<span style="color: #3366ff;"><strong>A configured and activated router interface must be connected to another device in order to operate.*</strong></span></p>
+<p><strong>12 </strong><br />
+<strong>A technician is configuring a router that is actively running on the network. Suddenly, power to the router is lost. If the technician has not saved the configuration, which two types of information will be lost? (Choose two.)</strong><br />
+<span style="color: #3366ff;"><strong>routing table*</strong></span><br />
+<span style="color: #3366ff;"><strong> ARP cache*</strong></span><br />
+Cisco IOS image file<br />
+startup configuration<br />
+bootstrap file</p>
+<p><strong>13. Match field names to the IP header where they would be found. (Not all options are used)</strong></p>
+<p><img class="alignnone" src="https://lh4.googleusercontent.com/-_PxyYq9CgkY/Uvq8hUg48QI/AAAAAAAAAJo/xCCZ6VIJ8Z8/w948-h574-no/p13-exa6-ccna1.png" alt="" width="948" height="574" /></p>
+<p><strong>Sort elements</strong><br />
+<strong>IP v4 Header (A) -&gt; <span style="color: #3366ff;">Flags (A)</span></strong><br />
+<strong>IP v4 Header (B) -&gt; <span style="color: #3366ff;">Total Length (B)</span></strong><br />
+<strong>IP v6 Header (C) -&gt;<span style="color: #3366ff;">Traffic Class (C)</span></strong><br />
+<strong>IP v6 Header (D) -&gt; <span style="color: #3366ff;">Flow Label (D)</span></strong></p>
+<p><strong>14 </strong><br />
+<strong>How do hosts ensure that their packets are directed to the correct network destination?</strong><br />
+They always direct their packets to the default gateway, which will be responsible for the packet delivery.<br />
+They send a query packet to the default gateway asking for the best route.<br />
+They search in their own local routing table for a route to the network destination address and pass this information to the default gateway.<br />
+<strong><span style="color: #3366ff;">They have to keep their own local routing table that contains a route to the loopback interface, a local network route, and a remote default route.​* </span></strong></p>
+<p><strong>15 </strong><br />
+<strong>What is a service provided by the Flow Label field of the IPv6 header?</strong><br />
+It identifies the total length of the IPv6 packet.<br />
+It limits the lifetime of a packet.<br />
+<span style="color: #3366ff;"><strong>It informs network devices to maintain the same path for real-time application packets.*</strong></span><br />
+It classifies packets for traffic congestion control.</p>
+<p><strong>16 </strong><br />
+<strong>During the process of forwarding traffic, what will the router do immediately after matching the destination IP address to a network on a directly connected routing table entry?</strong><br />
+look up the next-hop address for the packet<br />
+discard the traffic after consulting the route table<br />
+<span style="color: #3366ff;"><strong>switch the packet to the directly connected interface*</strong></span><br />
+analyze the destination IP address</p>
+<p><strong>17 </strong><br />
+<strong>Fill in the blank. </strong></p>
+<p>In a router, &#8220;<span style="color: #3366ff;"><strong>ROM</strong></span> &#8221; is the nonvolatile memory where the diagnostic software, the bootup instructions, and a limited IOS are stored.</p>
+<p><strong>18 </strong><br />
+<strong>Which two commands can be used on a Windows host to display the routing table? (Choose two.)</strong><br />
+netstat -s<br />
+<span style="color: #3366ff;"><strong>route print*</strong></span><br />
+<span style="color: #3366ff;"><strong> netstat -r*</strong></span><br />
+tracert<br />
+show ip route</p>
+<p><strong>19 </strong><br />
+<strong>A computer has to send a packet to a destination host in the same LAN. How will the packet be sent?</strong><br />
+<span style="color: #3366ff;"><strong> The packet will be sent directly to the destination host.*</strong></span><br />
+The packet will be sent only to the default gateway.<br />
+The packet will be sent to the default gateway first, and then, depending on the response from the gateway, it may be sent to the destination host.<br />
+The packet will first be sent to the default gateway, and then from the default gateway it will be sent directly to the destination host.</p>
+<p><strong>20 </strong><br />
+<strong>Which command displays a summary chart of all router interfaces, their IP addresses, and their current operational status?</strong><br />
+show interfaces<br />
+show version<br />
+show ip route<br />
+<span style="color: #3366ff;"><strong>show ip interface brief *</strong></span></p>
+<p><strong>21 </strong><br />
+<strong>Which two files, if found, are copied into RAM as a router with the default configuration register setting boots up? (Choose two.)</strong><br />
+POST diagnostics<br />
+running configuration<br />
+<span style="color: #3366ff;"><strong>startup configuration*</strong></span><br />
+<span style="color: #3366ff;"><strong> IOS image file*</strong></span></p>
+<p><strong>22 </strong></p>
+<p><img class="alignnone" src="https://lh3.googleusercontent.com/-Nbd7zeDDcE4/Uvq8hXLAv7I/AAAAAAAAAJk/cfOgoXtu5rY/w1038-h446-no/p22-exa6-ccna1.png" alt="" width="1038" height="446" /><br />
+<strong>Open the PT Activity. Perform the tasks in the activity instructions and then answer the question or complete the task.</strong></p>
+<p><strong>Does the router have enough RAM and flash memory to support the new IOS?</strong><br />
+The router needs more RAM and more flash memory for the IOS upgrade.<br />
+The router has enough RAM, but needs more flash memory for the IOS upgrade.<br />
+<span style="color: #3366ff;"><strong>The router has enough RAM and flash memory for the IOS upgrade.*</strong></span><br />
+The router has enough flash memory, but needs more RAM for the IOS upgrade.</p>
+<p><strong>23 </strong><br />
+<strong>When would the Cisco IOS image held in ROM be used to boot the router?</strong><br />
+when the running configuration directs the router to do this<br />
+during a normal boot process<br />
+<span style="color: #3366ff;"><strong>when the full IOS cannot be found*</strong></span><br />
+during a file transfer operation</p>
+<p><strong>24 Which type of static route that is configured on a router uses only the exit interface?</strong></p>
+<p>fully specified static route</p>
+<p>default static route</p>
+<p><span style="color: #3366ff;"><strong>directly connected static route*</strong></span></p>
+<p>recursive static route</p>
+<p><span style="color: #ff0000;"><strong>UPDATE WITH QUESTIONS CCNA v5.1</strong></span></p>
+<p><strong>25. Which characteristic of the network layer in the OSI model allows carrying packets for multiple types of communications among many hosts?</strong></p>
+<p>the de-encapsulation of headers from lower layers<br />
+the selection of paths for and direct packets toward the destination<br />
+<span style="color: #3366ff;"><strong>the ability to operate without regard to the data that is carried in each packet*</strong></span><br />
+the ability to manage the data transport between processes running on hosts</p>
+<p><strong>26. What are two characteristics of IP? (Choose two.)</strong></p>
+<p><span style="color: #3366ff;"><strong>does not require a dedicated end-to-end connection*</strong></span><br />
+<span style="color: #3366ff;"><strong>operates independently of the network media*</strong></span><br />
+retransmits packets if errors occur<br />
+re-assembles out of order packets into the correct order at the receiver end<br />
+guarantees delivery of packets<br />
+<strong>27. When a connectionless protocol is in use at a lower layer of the OSI model, how is missing data detected and retransmitted if necessary?</strong></p>
+<p>Connectionless acknowledgements are used to request retransmission.<br />
+<span style="color: #3366ff;"><strong>Upper-layer connection-oriented protocols keep track of the data received and can request retransmission from the upper-level protocols on the sending host.*</strong></span><br />
+Network layer IP protocols manage the communication sessions if connection-oriented transport services are not available.<br />
+The best-effort delivery process guarantees that all packets that are sent are received.</p>
+<p><strong>28. Which field in the IPv4 header is used to prevent a packet from traversing a network endlessly?</strong></p>
+<p><span style="color: #3366ff;"><strong>Time-to-Live*</strong></span><br />
+Sequence Number<br />
+Acknowledgment Number<br />
+Differentiated Services</p>
+<p><strong>29. What IPv4 header field identifies the upper layer protocol carried in the packet?</strong></p>
+<p><span style="color: #3366ff;"><strong>Protocol*</strong></span><br />
+Identification<br />
+Version<br />
+Differentiated Services</p>
+<p><strong>30. What is one advantage that the IPv6 simplified header offers over IPv4?</strong></p>
+<p>smaller-sized header<br />
+little requirement for processing checksums<br />
+smaller-sized source and destination IP addresses<br />
+<span style="color: #3366ff;"><strong>efficient packet handling*</strong></span></p>
+<p><strong>31. Refer to the exhibit. </strong><strong>Which route from the PC1 routing table will be used to reach PC2?</strong></p>
+<p><img src="https://lh3.googleusercontent.com/F1Isrmw7ltUABFERlwpbZpjPdPYzRvC2UnlSozeWnT58NChSiejoLz0ydBb39VZ80DeIPphRZ6eDHPVfFWtUp9t_tbbZB8lI503IQ1TcVGduqCzddal2Y_m0nCH5wAy4VfuzTJt0K2rp2ESn6EqEb493D3UO_Haq8G6FATRep11J_dUv26e9iyiDxbE-PRDIo9yynrmEIzLnLeSkVBQBEb-xkLFvNCYuX8w-CcIqPlZVJQI_mP1gIzMRI-QNR9DSrEOtqbhiIlwWIArqUiLcnJXMUDmEMZSc0DNVhzPRrWxh4K1QeVsQ25S_oByqcEcmm2Mkr1t_cW9W3fCR7bkehjWPnu7NKWe3LrfObEjMy8eF_0MaWZIFmh_SH9vOBehl0Ao81V-ElibzXPdgDbbsOpsrxgMSlXSXwCI5NfJTCCgz4D2fbdLO6y9wt9Lw4PpMIl23W20F3HzK8BB1fFFQU-_oBzjb4Y4ercl7cRZF14W6MTLudKlmI3u6aaJxXU8YNpsgdIU4xBYW9dac6Zi8yLxYgHgUlLgcAnUPF1PfxHaNwwJxGdYAVo3lvRJ5K6yoDwhb=w683-h394-no" alt="" /></p>
+<p><img src="https://lh3.googleusercontent.com/G_6UeXQpxXEoCvEB4lyK7DJaBdMea4WxMnJKsSnBkWHc4K1lQz3QFjs249ZaXYIdb4xGz0-ovJlX0ouoai2xcL5ZkrqbMlhFB-Zz9kX-mn-LVC03U7-EL3njzaXv4DyZ_LnYV2zSY3wextAEytC5G8lOyQ6-qKVyR2ZT80KKg3l_7cgyYFxPL_i8jYkMurwAzqKp2kMl1nMyMHq7ygrBqjco2YCtDvwupraA6qyda4kcUr1YQGrWiYcwMBSyOoypsHFSVS3s56g2jFax2ZtPUz5O2HgklViPlumOPuFzUNA_RY9ajxBgaruxYdTEo8QrklZoC44XEZ6JfDnOtth0d_4oyBzJBwKtyWDwX2eAW82DWT-bPhhgmOMJQMyOH9WhC-m1zsbwRLPVRQ025qxrhK6uZDAvMgwYruuOy7W7alpT-gq6GY63gKKIOMEPtOcu5EnOfhXj9U_7WYy7afZhkAIkvDM6hb8R_NVJSEfVJos7H9o706fIFn763F3LhJQUYpE_fh0UiFbWhszw9pwfgBz32eqDXDa1zO41RwRYjQknGVpGlki3Ugd_XJqFvp7eUBfs=w614-h64-no" alt="" /></p>
+<p><img src="https://lh3.googleusercontent.com/hjKcxj0RZ8DV9xGhg6MyxJe2wgAWei1ix6pOpNaIM5hBqCjxuFrVIqIkloGVkS2QSC02YLvxN407PJvkIKzeEa369Lctk3ow5kqOc2PMWFovLDDs8YgsxD3M1CXv8jJSr0pi7hAHLWhtgVOcMYJfwjPcZoZ0mGK5-TzCMoHPZj63qRAZ_83qW6Kkx0n8uenzhwjy27oMXnnmKgX3vixyTUV6_Ql1FxVRyO5D_kcQPLwOd8h8bqhU2_pGjCaeZ4-JLYUk3KnIN-Cb12aJpJp4wQ2YpMHxlY4dDj2QkSpf_n7jw78ABguz0v8x11CHZl45rb9-Bnvxo6OMFXivUYYX4hpbbz0USrqo3a2xrgy9OoKg6BpI9fK8JqeSi2Iq2a4F9YCr_x3z8j6-X431ujapx1XBm0XZwtJlzf-JfbH5FL9BXyRZueUMdEJBxBYaZitrD4sOV4BXYd-eShQkoD1qOSqRmxJ9T6gLsEMaUncrEcoW37vdNyds68eRb8mpROr_sOd1fOt7G5KqF5EuzIRaI4aAmMjTYuZ1_uNsVz_rqBzfNg_Vq4kJ8Ux9bC_1bZOoUNs0=w616-h64-no" alt="" /></p>
+<p><img src="https://lh3.googleusercontent.com/8yMy4avTNRfApDXhelQu8qPRc3YprUzDRLe0ALvcbaDrdCmpYj5L_l0UBBPUwy2ZSJFITmE_1ygQiNPQt14Ipcz8HtRrnpYdyjuwr6RUsUibJDY3rxhbgAIiX1KEUN63bYcMu0ANuqzSGJBQNo7TXQOFEVplvsw6Hdtr7SbSNITd7W126O9nL3yVE7nKzO_2DpAz6K_EDjn6yo4-nrIBy2ZR-oKcChq-yKD0ImJtJehu7cW5MUm--7USpXrb0vMtGLlW74twzrG39lmE9rsQ_ZA0Bbbw_UdwDkFK0GXtEJbhNELk-hliy_vFYQAHXjX4vyxD5IOdcRmcFzjpfCJ5Qq7cvzrV4boS1CASmHAWYl4gkI3m86WyjDVeSfOz_rGok9iZUbfrYk5JA0JgP9e0z93hbPx6HfLGLOu9fnikd9AZfh_AL7qjr_jpC_yS_YY8OCr43X0MCdm-_JsVPBboF_2YAp8Bv9eC4eH3JCeX1h8hwCsd94fPvC0Xmo9n1weHWtjp09_ybmgcO3E-6zphOLWlv3rF_gfCWqXNmROAe3ZE1SuX6PocF7i6PvCmUF7dmt0_=w615-h65-no" alt="" /><span style="color: #3366ff;"><strong>*</strong></span></p>
+<p><img src="https://lh3.googleusercontent.com/QsFtLA5TX3eJayN_jVMD7JOfo2NES0PVOQsiPW2h2pLDVgn60gyrRm7pxMvo0oYt3m8QcZZSYJ6wGOAGrPntABh9CwSzLYCbkIYGGJHUBHa6SEuEkpDw-akMpIuXaAtSyUGUlYyc4trH7xIIBzgrMUtpOmc_szGDZzz72gao2w0QwjL3FdlGbRvyXhLrx9KBtMXwJ5-_fNKItSc_9AXJQPR1z9Y5ONWVUjeiMacWvKPQX1V4CmJ1i6Clu3nC3sCMTWdDGSu8hRKiNRdrtmnH3ADUMuApNMDXTDODcJSEqCrytHi7M-v54RPxm1Dlo03hZhw6Z6K485S-37rAr1jjrfut1z6NPH-F6daxZxaN1RDitVeVjHd9DLjRgM9az4OGXta-NrD-2APSK7iEGzM3NG5n63UdtxSpxOlEkAgEXzvDmjTOfUR1mnw2BNdZI1IMIW0ZwrxxHNAJ2Ehs8ODkpUjekTVPc5OJX9IyN8bpHREYhY2qTkDivIzJ9UaUftWMGauYrz9F2ccsbRwO_t_gFzPtG2Spm3zJCuJG_ZQpLwY6BuihQSBXo08luGwGhPt_w_oQ=w617-h64-no" alt="" /><br />
+<strong>32. Refer to the exhibit. R1 receives a packet destined for the IP address 192.168.2.10. Out which interface will R1 forward the packet?</strong></p>
+<p><img src="https://lh3.googleusercontent.com/FAj3FuxNeEjPbd4sBa7jLx8TE5yQhVQAKQ7N0rT_UaYRK8Ksa18I9OL3aTHSZ864heIyLuOIXJpv2HaghJuE-bKL3EhzAAyFOF47ZAKh1ST5zRE7WSpmrca_IYZVdaZo7k89tRhKaUDsNdpPwt6wbwb0SzK70cGKID1zBBLrs9XOIR75-j2AwIVyP85jyCkiIQ2-7KmcwoMdhaQCGKfQKhF3CEXX7tB1YhGjRe6bPJlfaKvBWBSdPXS0_IYFtdxwGBAdMQ9KDbU7X115dLVcLeWQA-hmC82NI71lr48cUsH54ro1Xs7qVGSOPyQsNl9upTTuMxr26UrneGD7u9DlE5HO0wEWsZCXWShvqjFQtjvk41q0fcMuSRBNoeaJIWeat9GC0SK9g9wcO55nMpr1f0bl5gPYGKrqxagQeYcmBtkojr_daDBktdVvETMDaGcAywMj_EvsB4MAuyGnTf9mOC8PLIgkE4eJZ7-ODLlZ5p52tMtro-MI18pXjNKGzQVbD18LaC3S-4CHeMWAvpAtxZs_dHF3dm5bI2C43Ngr0a5VTY_BaAJh_UP_JiJ30DtPe1GI=w658-h268-no" alt="" /></p>
+<p>FastEthernet0/0<br />
+FastEthernet0/1<br />
+Serial0/0/0<br />
+<strong>Serial0/0/1*</strong></p>
+<p><strong>33. What type of route is indicated by the code C in an IPv4 routing table on a Cisco router?</strong></p>
+<p>static route<br />
+default route<br />
+<span style="color: #3366ff;"><strong>directly connected route*</strong></span><br />
+dynamic route that is learned through EIGRP</p>
+<p><strong>34. What routing table entry has a next hop address associated with a destination network?</strong></p>
+<p>directly-connected routes<br />
+local routes<br />
+<span style="color: #3366ff;"><strong>remote routes*</strong></span><br />
+C and L source routes</p>
+<p><strong>35. Which statement describes a hardware feature of a Cisco 1941 router that has the default hardware configuration?</strong></p>
+<p>It does not have an AUX port.<br />
+It has three FastEthernet interfaces for LAN access.<br />
+<span style="color: #3366ff;"><strong>It has two types of ports that can be used to access the console.*</strong></span><br />
+It does not require a CPU because it relies on Compact Flash to run the IOS.</p>
+<p><strong>36. Following default settings, what is the next step in the router boot sequence after the IOS loads from flash?</strong></p>
+<p>Perform the POST routine.<br />
+<span style="color: #3366ff;"><strong>Locate and load the startup-config file from NVRAM.*</strong></span><br />
+Load the bootstrap program from ROM.<br />
+Load the running-config file from RAM.</p>
+<p><strong>37. What are two types of router interfaces? (Choose two.)</strong></p>
+<p>SVI<br />
+<span style="color: #3366ff;"><strong>LAN*</strong></span><br />
+DHCP<br />
+Telnet<br />
+<span style="color: #3366ff;"><strong>WAN*</strong></span></p>
+<p><strong>38. Which two pieces of information are in the RAM of a Cisco router during normal operation? (Choose two.)</strong></p>
+<p><span style="color: #3366ff;"><strong>Cisco IOS*</strong></span><br />
+backup IOS file<br />
+<span style="color: #3366ff;"><strong>IP routing table*</strong></span><br />
+basic diagnostic software<br />
+startup configuration file<br />
+<strong>39. A router boots and enters setup mode. What is the reason for this?</strong></p>
+<p>The IOS image is corrupt.<br />
+Cisco IOS is missing from flash memory.<br />
+<span style="color: #3366ff;"><strong>The configuration file is missing from NVRAM.*</strong></span><br />
+The POST process has detected hardware failure.</p>
+<p><strong>40. What is the purpose of the startup configuration file on a Cisco router?</strong></p>
+<p>to facilitate the basic operation of the hardware components of a device<br />
+<span style="color: #3366ff;"><strong>to contain the commands that are used to initially configure a router on startup*</strong></span><br />
+to contain the configuration commands that the router IOS is currently using<br />
+to provide a limited backup version of the IOS, in case the router cannot load the full featured IOS</p>
+<p><strong>41. Which three commands are used to set up secure access to a router through a connection to the console interface? (Choose three.)</strong></p>
+<p>interface fastethernet 0/0<br />
+line vty 0 4<br />
+<span style="color: #3366ff;"><strong>line console 0*</strong></span><br />
+enable secret cisco<br />
+<span style="color: #3366ff;"><strong>login*</strong></span><br />
+<span style="color: #3366ff;"><strong>password cisco*</strong></span><br />
+<strong>42.Which characteristic describes an IPv6 enhancement over IPv4?​</strong></p>
+<p>IPv6 addresses are based on 128-bit flat addressing as opposed to IPv4 which is based on 32-bit hierarchical addressing.<br />
+<span style="color: #3366ff;"><strong>The IPv6 header is simpler than the IPv4 header is, which improves packet handling.*</strong></span><br />
+Both IPv4 and IPv6 support authentication, but only IPv6 supports privacy capabilities.<br />
+The IPv6 address space is four times bigger than the IPv4 address space.​</p>
+<p><strong>43. Open the PT Activity. The enable password on all devices is cisco.</strong><br />
+<strong>Perform the tasks in the activity instructions and then answer the question.</strong><br />
+<strong>For what reason is the failure occurring?​</strong></p>
+<p>PC1 has an incorrect default gateway configured.<br />
+<span style="color: #3366ff;"><strong>SW1 does not have a default gateway configured.*</strong></span><br />
+The IP address of SW1 is configured in a wrong subnet.​<br />
+PC2 has an incorrect default gateway configured.</p>
+<p><strong>44. Match the command with the device mode at which the command is entered. (Not all options are used.)</strong></p>
+<p><img src="https://lh3.googleusercontent.com/Z085FRUm7XpB3wnVcLrXTGkkDP1Qv7LRzf5bPJ3E8Qdf8CGDFa1msuIhquSfGbDfLzAMpDvghUUNT6Vzol2L016vczjNHfiZrXl3AmYJStY6etBztg0FsOenu_xY_2KFzk8ZpbHcIXTgIVZvsZRwJTK2A3TI9nbNbZw1qwsh7A5nvEsdiSnpu3NeZHopnDXvNBRNVOjG0TWOANuWlYh-goXXivk3MTamqqbN4mi5wZhZbRqaT75woeJxJucyeVizUFlTfMQpUn_M57wsPCv4X0vbLchsMYC-UphO1CdO7p8Eq5QNotXKnWF7S81T205csAn3rPs96SvSy1cgPoJTKIeuGSf9Cm2h1PQDQOytB7cHxxx-Ybd5L-evby1MzLuN3LW8fgaFK9v-uU4Q--mXVQxk9LoObej6FuawP1PBenGNgFY2j_KlNLfkkbi4mx3pA9qieaIZqxS2emccKH9KZFj8LzHkjYTVRLI-2drpeYSVOE_uxCqpArR4mktqL0HQeXij3zjm7CLFA4PwiGJMTOda217pNizerA8OOoEC76OmoqckZ69YixYY7ir5PyJhuBBu=w1015-h365-no" alt="" /></p>
+<p style="text-align: left;"><strong>Place de options in the following order.</strong></p>
+<p style="text-align: left;"><strong>R1(config)# -&gt; <span style="color: #3366ff;">service password-encrytion</span></strong><br />
+<strong>R1&gt; -&gt; <span style="color: #3366ff;">enable</span></strong><br />
+<strong>&#8211; not scored &#8211;</strong><br />
+<strong>R1# -&gt; <span style="color: #3366ff;">copy running-config startup-config</span></strong><br />
+<strong>R1(config-line)# -&gt; <span style="color: #3366ff;">login</span></strong><br />
+<strong>R1(config-if)# -&gt; <span style="color: #3366ff;">ip address 192.168.4.4 255.255.255.0</span></strong></p>
+
+<br />
+<br />
+<h1 style="text-align: center;">CCNA1 V5 2018 Chapter 6</h1>
+
+            <h3>1. Which characteristic of the network layer in the OSI model allows carrying packets for multiple types of communications among many hosts?</h3>
+<p>the de-encapsulation of headers from lower layers</p>
+<p>the selection of paths for and direct packets toward the destination</p>
+<p><strong><span style="color: #3366ff;">the ability to operate without regard to the data that is carried in each packet*</span></strong></p>
+<p>the ability to manage the data transport between processes running on hosts</p>
+<p>&nbsp;</p>
+<h3>2. What are two characteristics of IP? (Choose two.)</h3>
+<p><strong><span style="color: #3366ff;">does not require a dedicated end-to-end connection*</span></strong></p>
+<p><strong><span style="color: #3366ff;">operates independently of the network media*</span></strong></p>
+<p>retransmits packets if errors occur</p>
+<p>re-assembles out of order packets into the correct order at the receiver end</p>
+<p>guarantees delivery of packets</p>
+<p>&nbsp;</p>
+<h3>3. When a connectionless protocol is in use at a lower layer of the OSI model, how is missing data detected and retransmitted if necessary?</h3>
+<p>Connectionless acknowledgements are used to request retransmission.</p>
+<p><span style="color: #3366ff;"><strong>Upper-layer connection-oriented protocols keep track of the data received and can request retransmission from the upper-level protocols on the sending host.*</strong></span></p>
+<p>Network layer IP protocols manage the communication sessions if connection-oriented transport services are not available.</p>
+<p>The best-effort delivery process guarantees that all packets that are sent are received.</p>
+<p>&nbsp;</p>
+<h3>4. Which field in the IPv4 header is used to prevent a packet from traversing a network endlessly?</h3>
+<p><span style="color: #3366ff;"><strong>Time-to-Live*</strong></span></p>
+<p>Sequence Number</p>
+<p>Acknowledgment Number</p>
+<p>Differentiated Services</p>
+<p>&nbsp;</p>
+<h3>5. What IPv4 header field identifies the upper layer protocol carried in the packet?</h3>
+<p><span style="color: #3366ff;"><strong>Protocol*</strong></span></p>
+<p>Identification</p>
+<p>Version</p>
+<p>Differentiated Services</p>
+<p>&nbsp;</p>
+<h3>6. What is one advantage that the IPv6 simplified header offers over IPv4?</h3>
+<p>smaller-sized header</p>
+<p>little requirement for processing checksums</p>
+<p>smaller-sized source and destination IP addresses</p>
+<p><span style="color: #3366ff;"><strong>efficient packet handling*</strong></span></p>
+<p>&nbsp;</p>
+<h3>7. Refer to the exhibit. Which route from the PC1 routing table will be used to reach PC2?</h3>
+<p><img src="https://lh3.googleusercontent.com/F1Isrmw7ltUABFERlwpbZpjPdPYzRvC2UnlSozeWnT58NChSiejoLz0ydBb39VZ80DeIPphRZ6eDHPVfFWtUp9t_tbbZB8lI503IQ1TcVGduqCzddal2Y_m0nCH5wAy4VfuzTJt0K2rp2ESn6EqEb493D3UO_Haq8G6FATRep11J_dUv26e9iyiDxbE-PRDIo9yynrmEIzLnLeSkVBQBEb-xkLFvNCYuX8w-CcIqPlZVJQI_mP1gIzMRI-QNR9DSrEOtqbhiIlwWIArqUiLcnJXMUDmEMZSc0DNVhzPRrWxh4K1QeVsQ25S_oByqcEcmm2Mkr1t_cW9W3fCR7bkehjWPnu7NKWe3LrfObEjMy8eF_0MaWZIFmh_SH9vOBehl0Ao81V-ElibzXPdgDbbsOpsrxgMSlXSXwCI5NfJTCCgz4D2fbdLO6y9wt9Lw4PpMIl23W20F3HzK8BB1fFFQU-_oBzjb4Y4ercl7cRZF14W6MTLudKlmI3u6aaJxXU8YNpsgdIU4xBYW9dac6Zi8yLxYgHgUlLgcAnUPF1PfxHaNwwJxGdYAVo3lvRJ5K6yoDwhb=w683-h394-no" alt="" /></p>
+<p><img src="https://lh3.googleusercontent.com/G_6UeXQpxXEoCvEB4lyK7DJaBdMea4WxMnJKsSnBkWHc4K1lQz3QFjs249ZaXYIdb4xGz0-ovJlX0ouoai2xcL5ZkrqbMlhFB-Zz9kX-mn-LVC03U7-EL3njzaXv4DyZ_LnYV2zSY3wextAEytC5G8lOyQ6-qKVyR2ZT80KKg3l_7cgyYFxPL_i8jYkMurwAzqKp2kMl1nMyMHq7ygrBqjco2YCtDvwupraA6qyda4kcUr1YQGrWiYcwMBSyOoypsHFSVS3s56g2jFax2ZtPUz5O2HgklViPlumOPuFzUNA_RY9ajxBgaruxYdTEo8QrklZoC44XEZ6JfDnOtth0d_4oyBzJBwKtyWDwX2eAW82DWT-bPhhgmOMJQMyOH9WhC-m1zsbwRLPVRQ025qxrhK6uZDAvMgwYruuOy7W7alpT-gq6GY63gKKIOMEPtOcu5EnOfhXj9U_7WYy7afZhkAIkvDM6hb8R_NVJSEfVJos7H9o706fIFn763F3LhJQUYpE_fh0UiFbWhszw9pwfgBz32eqDXDa1zO41RwRYjQknGVpGlki3Ugd_XJqFvp7eUBfs=w614-h64-no" alt="" /></p>
+<p><img src="https://lh3.googleusercontent.com/hjKcxj0RZ8DV9xGhg6MyxJe2wgAWei1ix6pOpNaIM5hBqCjxuFrVIqIkloGVkS2QSC02YLvxN407PJvkIKzeEa369Lctk3ow5kqOc2PMWFovLDDs8YgsxD3M1CXv8jJSr0pi7hAHLWhtgVOcMYJfwjPcZoZ0mGK5-TzCMoHPZj63qRAZ_83qW6Kkx0n8uenzhwjy27oMXnnmKgX3vixyTUV6_Ql1FxVRyO5D_kcQPLwOd8h8bqhU2_pGjCaeZ4-JLYUk3KnIN-Cb12aJpJp4wQ2YpMHxlY4dDj2QkSpf_n7jw78ABguz0v8x11CHZl45rb9-Bnvxo6OMFXivUYYX4hpbbz0USrqo3a2xrgy9OoKg6BpI9fK8JqeSi2Iq2a4F9YCr_x3z8j6-X431ujapx1XBm0XZwtJlzf-JfbH5FL9BXyRZueUMdEJBxBYaZitrD4sOV4BXYd-eShQkoD1qOSqRmxJ9T6gLsEMaUncrEcoW37vdNyds68eRb8mpROr_sOd1fOt7G5KqF5EuzIRaI4aAmMjTYuZ1_uNsVz_rqBzfNg_Vq4kJ8Ux9bC_1bZOoUNs0=w616-h64-no" alt="" /></p>
+<p><img src="https://lh3.googleusercontent.com/8yMy4avTNRfApDXhelQu8qPRc3YprUzDRLe0ALvcbaDrdCmpYj5L_l0UBBPUwy2ZSJFITmE_1ygQiNPQt14Ipcz8HtRrnpYdyjuwr6RUsUibJDY3rxhbgAIiX1KEUN63bYcMu0ANuqzSGJBQNo7TXQOFEVplvsw6Hdtr7SbSNITd7W126O9nL3yVE7nKzO_2DpAz6K_EDjn6yo4-nrIBy2ZR-oKcChq-yKD0ImJtJehu7cW5MUm--7USpXrb0vMtGLlW74twzrG39lmE9rsQ_ZA0Bbbw_UdwDkFK0GXtEJbhNELk-hliy_vFYQAHXjX4vyxD5IOdcRmcFzjpfCJ5Qq7cvzrV4boS1CASmHAWYl4gkI3m86WyjDVeSfOz_rGok9iZUbfrYk5JA0JgP9e0z93hbPx6HfLGLOu9fnikd9AZfh_AL7qjr_jpC_yS_YY8OCr43X0MCdm-_JsVPBboF_2YAp8Bv9eC4eH3JCeX1h8hwCsd94fPvC0Xmo9n1weHWtjp09_ybmgcO3E-6zphOLWlv3rF_gfCWqXNmROAe3ZE1SuX6PocF7i6PvCmUF7dmt0_=w615-h65-no" alt="" /><span style="color: #3366ff;"><strong>*</strong></span></p>
+<p><img src="https://lh3.googleusercontent.com/QsFtLA5TX3eJayN_jVMD7JOfo2NES0PVOQsiPW2h2pLDVgn60gyrRm7pxMvo0oYt3m8QcZZSYJ6wGOAGrPntABh9CwSzLYCbkIYGGJHUBHa6SEuEkpDw-akMpIuXaAtSyUGUlYyc4trH7xIIBzgrMUtpOmc_szGDZzz72gao2w0QwjL3FdlGbRvyXhLrx9KBtMXwJ5-_fNKItSc_9AXJQPR1z9Y5ONWVUjeiMacWvKPQX1V4CmJ1i6Clu3nC3sCMTWdDGSu8hRKiNRdrtmnH3ADUMuApNMDXTDODcJSEqCrytHi7M-v54RPxm1Dlo03hZhw6Z6K485S-37rAr1jjrfut1z6NPH-F6daxZxaN1RDitVeVjHd9DLjRgM9az4OGXta-NrD-2APSK7iEGzM3NG5n63UdtxSpxOlEkAgEXzvDmjTOfUR1mnw2BNdZI1IMIW0ZwrxxHNAJ2Ehs8ODkpUjekTVPc5OJX9IyN8bpHREYhY2qTkDivIzJ9UaUftWMGauYrz9F2ccsbRwO_t_gFzPtG2Spm3zJCuJG_ZQpLwY6BuihQSBXo08luGwGhPt_w_oQ=w617-h64-no" alt="" /></p>
+<h3>8. Refer to the exhibit. R1 receives a packet destined for the IP address 192.168.2.10. Out which interface will R1 forward the packet?</h3>
+<p><img src="https://lh3.googleusercontent.com/FAj3FuxNeEjPbd4sBa7jLx8TE5yQhVQAKQ7N0rT_UaYRK8Ksa18I9OL3aTHSZ864heIyLuOIXJpv2HaghJuE-bKL3EhzAAyFOF47ZAKh1ST5zRE7WSpmrca_IYZVdaZo7k89tRhKaUDsNdpPwt6wbwb0SzK70cGKID1zBBLrs9XOIR75-j2AwIVyP85jyCkiIQ2-7KmcwoMdhaQCGKfQKhF3CEXX7tB1YhGjRe6bPJlfaKvBWBSdPXS0_IYFtdxwGBAdMQ9KDbU7X115dLVcLeWQA-hmC82NI71lr48cUsH54ro1Xs7qVGSOPyQsNl9upTTuMxr26UrneGD7u9DlE5HO0wEWsZCXWShvqjFQtjvk41q0fcMuSRBNoeaJIWeat9GC0SK9g9wcO55nMpr1f0bl5gPYGKrqxagQeYcmBtkojr_daDBktdVvETMDaGcAywMj_EvsB4MAuyGnTf9mOC8PLIgkE4eJZ7-ODLlZ5p52tMtro-MI18pXjNKGzQVbD18LaC3S-4CHeMWAvpAtxZs_dHF3dm5bI2C43Ngr0a5VTY_BaAJh_UP_JiJ30DtPe1GI=w658-h268-no" alt="" /></p>
+<p>FastEthernet0/0</p>
+<p>FastEthernet0/1</p>
+<p>Serial0/0/0</p>
+<p><span style="color: #3366ff;"><strong>Serial0/0/1*</strong></span></p>
+<p>&nbsp;</p>
+<h3>9. What type of route is indicated by the code C in an IPv4 routing table on a Cisco router?</h3>
+<p>static route</p>
+<p>default route</p>
+<p><span style="color: #3366ff;"><strong>directly connected route*</strong></span></p>
+<p>dynamic route that is learned through EIGRP</p>
+<p>&nbsp;</p>
+<h3>10. What routing table entry has a next hop address associated with a destination network?</h3>
+<p>directly-connected routes</p>
+<p>local routes</p>
+<p><span style="color: #3366ff;"><strong>remote routes*</strong></span></p>
+<p>C and L source routes</p>
+<p>&nbsp;</p>
+<h3>11. Which statement describes a hardware feature of a Cisco 1941 router that has the default hardware configuration?</h3>
+<p>It does not have an AUX port.</p>
+<p>It has three FastEthernet interfaces for LAN access.</p>
+<p><span style="color: #3366ff;"><strong>It has two types of ports that can be used to access the console.*</strong></span></p>
+<p>It does not require a CPU because it relies on Compact Flash to run the IOS.</p>
+<p>&nbsp;</p>
+<h3>12. Following default settings, what is the next step in the router boot sequence after the IOS loads from flash?</h3>
+<p>Perform the POST routine.</p>
+<p><span style="color: #3366ff;"><strong>Locate and load the startup-config file from NVRAM.*</strong></span></p>
+<p>Load the bootstrap program from ROM.</p>
+<p>Load the running-config file from RAM.</p>
+<p>&nbsp;</p>
+<h3>13. What are two types of router interfaces? (Choose two.)</h3>
+<p>SVI</p>
+<p><span style="color: #3366ff;"><strong>LAN*</strong></span></p>
+<p>DHCP</p>
+<p>Telnet</p>
+<p><span style="color: #3366ff;"><strong>WAN*</strong></span></p>
+<p>&nbsp;</p>
+<h3>14. Which two pieces of information are in the RAM of a Cisco router during normal operation? (Choose two.)</h3>
+<p><span style="color: #3366ff;"><strong>Cisco IOS*</strong></span></p>
+<p>backup IOS file</p>
+<p><span style="color: #3366ff;"><strong>IP routing table*</strong></span></p>
+<p>basic diagnostic software</p>
+<p>startup configuration file</p>
+<p>&nbsp;</p>
+<h3><strong>15. A router boots and enters setup mode. What is the reason for this?</strong></h3>
+<p>The IOS image is corrupt.</p>
+<p>Cisco IOS is missing from flash memory.</p>
+<p><span style="color: #3366ff;"><strong>The configuration file is missing from NVRAM.*</strong></span></p>
+<p>The POST process has detected hardware failure.</p>
+<p>&nbsp;</p>
+<h3>16. What is the purpose of the startup configuration file on a Cisco router?</h3>
+<p>to facilitate the basic operation of the hardware components of a device</p>
+<p><span style="color: #3366ff;"><strong>to contain the commands that are used to initially configure a router on startup*</strong></span></p>
+<p>to contain the configuration commands that the router IOS is currently using</p>
+<p>to provide a limited backup version of the IOS, in case the router cannot load the full featured IOS</p>
+<p>&nbsp;</p>
+<h3>17. Which three commands are used to set up secure access to a router through a connection to the console interface? (Choose three.)</h3>
+<p>interface fastethernet 0/0</p>
+<p>line vty 0 4</p>
+<p><span style="color: #3366ff;"><strong>line console 0*</strong></span></p>
+<p>enable secret cisco</p>
+<p><span style="color: #3366ff;"><strong>login*</strong></span></p>
+<p><span style="color: #3366ff;"><strong>password cisco*</strong></span></p>
+<p>&nbsp;</p>
+<h3>18. Which characteristic describes an IPv6 enhancement over IPv4?​</h3>
+<p>IPv6 addresses are based on 128-bit flat addressing as opposed to IPv4 which is based on 32-bit hierarchical addressing.</p>
+<p><span style="color: #3366ff;"><strong>The IPv6 header is simpler than the IPv4 header is, which improves packet handling.*</strong></span></p>
+<p>Both IPv4 and IPv6 support authentication, but only IPv6 supports privacy capabilities.</p>
+<p>The IPv6 address space is four times bigger than the IPv4 address space.​</p>
+<p>&nbsp;</p>
+<h3>19. Open the PT Activity. The enable password on all devices is cisco.<br />
+Perform the tasks in the activity instructions and then answer the question.</h3>
+<h3>For what reason is the failure occurring?​</h3>
+<p>PC1 has an incorrect default gateway configured.</p>
+<p><span style="color: #3366ff;"><strong>SW1 does not have a default gateway configured.*</strong></span></p>
+<p>The IP address of SW1 is configured in a wrong subnet.​</p>
+<p>PC2 has an incorrect default gateway configured.</p>
+<h3>20. Match the command with the device mode at which the command is entered. (Not all options are used.)</h3>
+<p><img src="https://lh3.googleusercontent.com/Z085FRUm7XpB3wnVcLrXTGkkDP1Qv7LRzf5bPJ3E8Qdf8CGDFa1msuIhquSfGbDfLzAMpDvghUUNT6Vzol2L016vczjNHfiZrXl3AmYJStY6etBztg0FsOenu_xY_2KFzk8ZpbHcIXTgIVZvsZRwJTK2A3TI9nbNbZw1qwsh7A5nvEsdiSnpu3NeZHopnDXvNBRNVOjG0TWOANuWlYh-goXXivk3MTamqqbN4mi5wZhZbRqaT75woeJxJucyeVizUFlTfMQpUn_M57wsPCv4X0vbLchsMYC-UphO1CdO7p8Eq5QNotXKnWF7S81T205csAn3rPs96SvSy1cgPoJTKIeuGSf9Cm2h1PQDQOytB7cHxxx-Ybd5L-evby1MzLuN3LW8fgaFK9v-uU4Q--mXVQxk9LoObej6FuawP1PBenGNgFY2j_KlNLfkkbi4mx3pA9qieaIZqxS2emccKH9KZFj8LzHkjYTVRLI-2drpeYSVOE_uxCqpArR4mktqL0HQeXij3zjm7CLFA4PwiGJMTOda217pNizerA8OOoEC76OmoqckZ69YixYY7ir5PyJhuBBu=w1015-h365-no" alt="" /></p>
+<p><strong>Place de options in the following order.</strong></p>
+<p><strong>R1(config)# -&gt; <span style="color: #3366ff;">service password-encrytion</span></strong><br />
+<strong>R1&gt; -&gt; <span style="color: #3366ff;">enable</span></strong><br />
+<strong>– not scored –</strong><br />
+<strong>R1# -&gt; <span style="color: #3366ff;">copy running-config startup-config</span></strong><br />
+<strong>R1(config-line)# -&gt; <span style="color: #3366ff;">login</span></strong><br />
+<strong>R1(config-if)# -&gt; <span style="color: #3366ff;">ip address 192.168.4.4 255.255.255.0</span></strong></p>
+
+<br />
+<br />
+
+<h1 style="text-align: center;">CCNA1 V6 Chapter 6</h1>
+
+<h3>1. Which characteristic of the network layer in the OSI model allows carrying packets for multiple types of communications among many hosts?</h3>
+<p>the de-encapsulation of headers from lower layers</p>
+<p>the selection of paths for and direct packets toward the destination</p>
+<p><span style="color: #0000ff;"><strong>the ability to operate without regard to the data that is carried in each packet*</strong></span></p>
+<p>the ability to manage the data transport between processes running on hosts</p>
+<p>&nbsp;</p>
+<h3>2. What are two characteristics of IP? (Choose two.)</h3>
+<p><strong><span style="color: #0000ff;">does not require a dedicated end-to-end connection*</span></strong></p>
+<p><strong><span style="color: #0000ff;">operates independently of the network media*</span></strong></p>
+<p>retransmits packets if errors occur</p>
+<p>re-assembles out of order packets into the correct order at the receiver end</p>
+<p>guarantees delivery of packets</p>
+<p>&nbsp;</p>
+<h3>3. When a connectionless protocol is in use at a lower layer of the OSI model, how is missing data detected and retransmitted if necessary?</h3>
+<p>Connectionless acknowledgements are used to request retransmission.</p>
+<p><span style="color: #0000ff;"><strong>Upper-layer connection-oriented protocols keep track of the data received and can request retransmission from the upper-level protocols on the sending host.*</strong></span></p>
+<p>Network layer IP protocols manage the communication sessions if connection-oriented transport services are not available.</p>
+<p>The best-effort delivery process guarantees that all packets that are sent are received.</p>
+<p>&nbsp;</p>
+<h3>4. Which field in the IPv4 header is used to prevent a packet from traversing a network endlessly?</h3>
+<p><span style="color: #0000ff;"><strong>Time-to-Live*</strong></span></p>
+<p>Sequence Number</p>
+<p>Acknowledgment Number</p>
+<p>Differentiated Services</p>
+<p>&nbsp;</p>
+<h3>5. What IPv4 header field identifies the upper layer protocol carried in the packet?</h3>
+<p><span style="color: #0000ff;"><strong>Protocol*</strong></span></p>
+<p>Identification</p>
+<p>Version</p>
+<p>Differentiated Services</p>
+<p>&nbsp;</p>
+<h3>6. What is one advantage that the IPv6 simplified header offers over IPv4?</h3>
+<p>smaller-sized header</p>
+<p>little requirement for processing checksums</p>
+<p>smaller-sized source and destination IP addresses</p>
+<p><span style="color: #0000ff;"><strong>efficient packet handling*</strong></span></p>
+<p>&nbsp;</p>
+<h3>7. Refer to the exhibit. Which route from the PC1 routing table will be used to reach PC2?</h3>
+<p><img src="https://lh3.googleusercontent.com/F1Isrmw7ltUABFERlwpbZpjPdPYzRvC2UnlSozeWnT58NChSiejoLz0ydBb39VZ80DeIPphRZ6eDHPVfFWtUp9t_tbbZB8lI503IQ1TcVGduqCzddal2Y_m0nCH5wAy4VfuzTJt0K2rp2ESn6EqEb493D3UO_Haq8G6FATRep11J_dUv26e9iyiDxbE-PRDIo9yynrmEIzLnLeSkVBQBEb-xkLFvNCYuX8w-CcIqPlZVJQI_mP1gIzMRI-QNR9DSrEOtqbhiIlwWIArqUiLcnJXMUDmEMZSc0DNVhzPRrWxh4K1QeVsQ25S_oByqcEcmm2Mkr1t_cW9W3fCR7bkehjWPnu7NKWe3LrfObEjMy8eF_0MaWZIFmh_SH9vOBehl0Ao81V-ElibzXPdgDbbsOpsrxgMSlXSXwCI5NfJTCCgz4D2fbdLO6y9wt9Lw4PpMIl23W20F3HzK8BB1fFFQU-_oBzjb4Y4ercl7cRZF14W6MTLudKlmI3u6aaJxXU8YNpsgdIU4xBYW9dac6Zi8yLxYgHgUlLgcAnUPF1PfxHaNwwJxGdYAVo3lvRJ5K6yoDwhb=w683-h394-no" /></p>
+<p><img src="https://lh3.googleusercontent.com/G_6UeXQpxXEoCvEB4lyK7DJaBdMea4WxMnJKsSnBkWHc4K1lQz3QFjs249ZaXYIdb4xGz0-ovJlX0ouoai2xcL5ZkrqbMlhFB-Zz9kX-mn-LVC03U7-EL3njzaXv4DyZ_LnYV2zSY3wextAEytC5G8lOyQ6-qKVyR2ZT80KKg3l_7cgyYFxPL_i8jYkMurwAzqKp2kMl1nMyMHq7ygrBqjco2YCtDvwupraA6qyda4kcUr1YQGrWiYcwMBSyOoypsHFSVS3s56g2jFax2ZtPUz5O2HgklViPlumOPuFzUNA_RY9ajxBgaruxYdTEo8QrklZoC44XEZ6JfDnOtth0d_4oyBzJBwKtyWDwX2eAW82DWT-bPhhgmOMJQMyOH9WhC-m1zsbwRLPVRQ025qxrhK6uZDAvMgwYruuOy7W7alpT-gq6GY63gKKIOMEPtOcu5EnOfhXj9U_7WYy7afZhkAIkvDM6hb8R_NVJSEfVJos7H9o706fIFn763F3LhJQUYpE_fh0UiFbWhszw9pwfgBz32eqDXDa1zO41RwRYjQknGVpGlki3Ugd_XJqFvp7eUBfs=w614-h64-no" alt="" /></p>
+<p><img src="https://lh3.googleusercontent.com/hjKcxj0RZ8DV9xGhg6MyxJe2wgAWei1ix6pOpNaIM5hBqCjxuFrVIqIkloGVkS2QSC02YLvxN407PJvkIKzeEa369Lctk3ow5kqOc2PMWFovLDDs8YgsxD3M1CXv8jJSr0pi7hAHLWhtgVOcMYJfwjPcZoZ0mGK5-TzCMoHPZj63qRAZ_83qW6Kkx0n8uenzhwjy27oMXnnmKgX3vixyTUV6_Ql1FxVRyO5D_kcQPLwOd8h8bqhU2_pGjCaeZ4-JLYUk3KnIN-Cb12aJpJp4wQ2YpMHxlY4dDj2QkSpf_n7jw78ABguz0v8x11CHZl45rb9-Bnvxo6OMFXivUYYX4hpbbz0USrqo3a2xrgy9OoKg6BpI9fK8JqeSi2Iq2a4F9YCr_x3z8j6-X431ujapx1XBm0XZwtJlzf-JfbH5FL9BXyRZueUMdEJBxBYaZitrD4sOV4BXYd-eShQkoD1qOSqRmxJ9T6gLsEMaUncrEcoW37vdNyds68eRb8mpROr_sOd1fOt7G5KqF5EuzIRaI4aAmMjTYuZ1_uNsVz_rqBzfNg_Vq4kJ8Ux9bC_1bZOoUNs0=w616-h64-no" alt="" /></p>
+<h1><img src="https://lh3.googleusercontent.com/8yMy4avTNRfApDXhelQu8qPRc3YprUzDRLe0ALvcbaDrdCmpYj5L_l0UBBPUwy2ZSJFITmE_1ygQiNPQt14Ipcz8HtRrnpYdyjuwr6RUsUibJDY3rxhbgAIiX1KEUN63bYcMu0ANuqzSGJBQNo7TXQOFEVplvsw6Hdtr7SbSNITd7W126O9nL3yVE7nKzO_2DpAz6K_EDjn6yo4-nrIBy2ZR-oKcChq-yKD0ImJtJehu7cW5MUm--7USpXrb0vMtGLlW74twzrG39lmE9rsQ_ZA0Bbbw_UdwDkFK0GXtEJbhNELk-hliy_vFYQAHXjX4vyxD5IOdcRmcFzjpfCJ5Qq7cvzrV4boS1CASmHAWYl4gkI3m86WyjDVeSfOz_rGok9iZUbfrYk5JA0JgP9e0z93hbPx6HfLGLOu9fnikd9AZfh_AL7qjr_jpC_yS_YY8OCr43X0MCdm-_JsVPBboF_2YAp8Bv9eC4eH3JCeX1h8hwCsd94fPvC0Xmo9n1weHWtjp09_ybmgcO3E-6zphOLWlv3rF_gfCWqXNmROAe3ZE1SuX6PocF7i6PvCmUF7dmt0_=w615-h65-no" alt="" /><span style="color: #0000ff;"><strong>*</strong></span></h1>
+<p><img src="https://lh3.googleusercontent.com/QsFtLA5TX3eJayN_jVMD7JOfo2NES0PVOQsiPW2h2pLDVgn60gyrRm7pxMvo0oYt3m8QcZZSYJ6wGOAGrPntABh9CwSzLYCbkIYGGJHUBHa6SEuEkpDw-akMpIuXaAtSyUGUlYyc4trH7xIIBzgrMUtpOmc_szGDZzz72gao2w0QwjL3FdlGbRvyXhLrx9KBtMXwJ5-_fNKItSc_9AXJQPR1z9Y5ONWVUjeiMacWvKPQX1V4CmJ1i6Clu3nC3sCMTWdDGSu8hRKiNRdrtmnH3ADUMuApNMDXTDODcJSEqCrytHi7M-v54RPxm1Dlo03hZhw6Z6K485S-37rAr1jjrfut1z6NPH-F6daxZxaN1RDitVeVjHd9DLjRgM9az4OGXta-NrD-2APSK7iEGzM3NG5n63UdtxSpxOlEkAgEXzvDmjTOfUR1mnw2BNdZI1IMIW0ZwrxxHNAJ2Ehs8ODkpUjekTVPc5OJX9IyN8bpHREYhY2qTkDivIzJ9UaUftWMGauYrz9F2ccsbRwO_t_gFzPtG2Spm3zJCuJG_ZQpLwY6BuihQSBXo08luGwGhPt_w_oQ=w617-h64-no" alt="" /></p>
+<h3>8. Refer to the exhibit. R1 receives a packet destined for the IP address 192.168.2.10. Out which interface will R1 forward the packet?</h3>
+<p>&nbsp;</p>
+<p><img src="https://lh3.googleusercontent.com/FAj3FuxNeEjPbd4sBa7jLx8TE5yQhVQAKQ7N0rT_UaYRK8Ksa18I9OL3aTHSZ864heIyLuOIXJpv2HaghJuE-bKL3EhzAAyFOF47ZAKh1ST5zRE7WSpmrca_IYZVdaZo7k89tRhKaUDsNdpPwt6wbwb0SzK70cGKID1zBBLrs9XOIR75-j2AwIVyP85jyCkiIQ2-7KmcwoMdhaQCGKfQKhF3CEXX7tB1YhGjRe6bPJlfaKvBWBSdPXS0_IYFtdxwGBAdMQ9KDbU7X115dLVcLeWQA-hmC82NI71lr48cUsH54ro1Xs7qVGSOPyQsNl9upTTuMxr26UrneGD7u9DlE5HO0wEWsZCXWShvqjFQtjvk41q0fcMuSRBNoeaJIWeat9GC0SK9g9wcO55nMpr1f0bl5gPYGKrqxagQeYcmBtkojr_daDBktdVvETMDaGcAywMj_EvsB4MAuyGnTf9mOC8PLIgkE4eJZ7-ODLlZ5p52tMtro-MI18pXjNKGzQVbD18LaC3S-4CHeMWAvpAtxZs_dHF3dm5bI2C43Ngr0a5VTY_BaAJh_UP_JiJ30DtPe1GI=w658-h268-no" /></p>
+<p>FastEthernet0/0</p>
+<p>FastEthernet0/1</p>
+<p>Serial0/0/0</p>
+<p><span style="color: #0000ff;"><strong>Serial0/0/1*</strong></span></p>
+<p>&nbsp;</p>
+<h3>9. What type of route is indicated by the code C in an IPv4 routing table on a Cisco router?</h3>
+<p>static route</p>
+<p>default route</p>
+<p><span style="color: #0000ff;"><strong>directly connected route*</strong></span></p>
+<p>dynamic route that is learned through EIGRP</p>
+<p>&nbsp;</p>
+<h3>10. What routing table entry has a next hop address associated with a destination network?</h3>
+<p>directly-connected routes</p>
+<p>local routes</p>
+<p><span style="color: #0000ff;"><strong>remote routes*</strong></span></p>
+<p>C and L source routes</p>
+<p>&nbsp;</p>
+<h3>11. Which statement describes a hardware feature of a Cisco 1941 router that has the default hardware configuration?</h3>
+<p>It does not have an AUX port.</p>
+<p>It has three FastEthernet interfaces for LAN access.</p>
+<p><span style="color: #0000ff;"><strong>It has two types of ports that can be used to access the console.*</strong></span></p>
+<p>It does not require a CPU because it relies on Compact Flash to run the IOS.</p>
+<p>&nbsp;</p>
+<h3>12. Following default settings, what is the next step in the router boot sequence after the IOS loads from flash?</h3>
+<p>Perform the POST routine.</p>
+<p><span style="color: #0000ff;"><strong>Locate and load the startup-config file from NVRAM.*</strong></span></p>
+<p>Load the bootstrap program from ROM.</p>
+<p>Load the running-config file from RAM.</p>
+<p>&nbsp;</p>
+<h3>13. What are two types of router interfaces? (Choose two.)</h3>
+<p>SVI</p>
+<p><span style="color: #0000ff;"><strong>LAN*</strong></span></p>
+<p>DHCP</p>
+<p>Telnet</p>
+<p><span style="color: #0000ff;"><strong>WAN*</strong></span></p>
+<p>&nbsp;</p>
+<h3>14. Which two pieces of information are in the RAM of a Cisco router during normal operation? (Choose two.)</h3>
+<p><span style="color: #0000ff;"><strong>Cisco IOS*</strong></span></p>
+<p>backup IOS file</p>
+<p><span style="color: #0000ff;"><strong>IP routing table*</strong></span></p>
+<p>basic diagnostic software</p>
+<p>startup configuration file</p>
+<p>&nbsp;</p>
+<h3><strong>15. A router boots and enters setup mode. What is the reason for this?</strong></h3>
+<p>The IOS image is corrupt.</p>
+<p>Cisco IOS is missing from flash memory.</p>
+<p><span style="color: #0000ff;"><strong>The configuration file is missing from NVRAM.*</strong></span></p>
+<p>The POST process has detected hardware failure.</p>
+<p>&nbsp;</p>
+<h3>16. What is the purpose of the startup configuration file on a Cisco router?</h3>
+<p>to facilitate the basic operation of the hardware components of a device</p>
+<p><span style="color: #0000ff;"><strong>to contain the commands that are used to initially configure a router on startup*</strong></span></p>
+<p>to contain the configuration commands that the router IOS is currently using</p>
+<p>to provide a limited backup version of the IOS, in case the router cannot load the full featured IOS</p>
+<p>&nbsp;</p>
+<h3>17. Which three commands are used to set up secure access to a router through a connection to the console interface? (Choose three.)</h3>
+<p>interface fastethernet 0/0</p>
+<p>line vty 0 4</p>
+<p><span style="color: #0000ff;"><strong>line console 0*</strong></span></p>
+<p>enable secret cisco</p>
+<p><span style="color: #0000ff;"><strong>login*</strong></span></p>
+<p><span style="color: #0000ff;"><strong>password cisco*</strong></span></p>
+<p>&nbsp;</p>
+<h3>18. Which characteristic describes an IPv6 enhancement over IPv4?</h3>
+<p>IPv6 addresses are based on 128-bit flat addressing as opposed to IPv4 which is based on 32-bit hierarchical addressing.</p>
+<p><span style="color: #0000ff;"><strong>The IPv6 header is simpler than the IPv4 header is, which improves packet handling.*</strong></span></p>
+<p>Both IPv4 and IPv6 support authentication, but only IPv6 supports privacy capabilities.</p>
+<p>The IPv6 address space is four times bigger than the IPv4 address space.</p>
+<p>&nbsp;</p>
+<h3>19. Open the PT Activity. The enable password on all devices is cisco.<br />
+Perform the tasks in the activity instructions and then answer the question.</h3>
+<h3>For what reason is the failure occurring?</h3>
+<p>PC1 has an incorrect default gateway configured.</p>
+<p><span style="color: #0000ff;"><strong>SW1 does not have a default gateway configured.*</strong></span></p>
+<p>The IP address of SW1 is configured in a wrong subnet.</p>
+<p>PC2 has an incorrect default gateway configured.</p>
+<h3>20. Match the command with the device mode at which the command is entered. (Not all options are used.)</h3>
+<p><img src="https://lh3.googleusercontent.com/Z085FRUm7XpB3wnVcLrXTGkkDP1Qv7LRzf5bPJ3E8Qdf8CGDFa1msuIhquSfGbDfLzAMpDvghUUNT6Vzol2L016vczjNHfiZrXl3AmYJStY6etBztg0FsOenu_xY_2KFzk8ZpbHcIXTgIVZvsZRwJTK2A3TI9nbNbZw1qwsh7A5nvEsdiSnpu3NeZHopnDXvNBRNVOjG0TWOANuWlYh-goXXivk3MTamqqbN4mi5wZhZbRqaT75woeJxJucyeVizUFlTfMQpUn_M57wsPCv4X0vbLchsMYC-UphO1CdO7p8Eq5QNotXKnWF7S81T205csAn3rPs96SvSy1cgPoJTKIeuGSf9Cm2h1PQDQOytB7cHxxx-Ybd5L-evby1MzLuN3LW8fgaFK9v-uU4Q--mXVQxk9LoObej6FuawP1PBenGNgFY2j_KlNLfkkbi4mx3pA9qieaIZqxS2emccKH9KZFj8LzHkjYTVRLI-2drpeYSVOE_uxCqpArR4mktqL0HQeXij3zjm7CLFA4PwiGJMTOda217pNizerA8OOoEC76OmoqckZ69YixYY7ir5PyJhuBBu=w1015-h365-no" alt="" /></p>
+<p><strong>Place de options in the following order.</strong></p>
+<p><strong>R1(config)# -&gt; <span style="color: #0000ff;">service password-encrytion</span></strong><br />
+<strong>R1&gt; -&gt; <span style="color: #0000ff;">enable</span></strong><br />
+<strong>– not scored –</strong><br />
+<strong>R1# -&gt; <span style="color: #0000ff;">copy running-config startup-config</span></strong><br />
+<strong>R1(config-line)# -&gt; <span style="color: #0000ff;">login</span></strong><br />
+<strong>R1(config-if)# -&gt; <span style="color: #0000ff;">ip address 192.168.4.4 255.255.255.0</span></strong></p>
+
+<br />
+<br />
+
+</body>
+</html>

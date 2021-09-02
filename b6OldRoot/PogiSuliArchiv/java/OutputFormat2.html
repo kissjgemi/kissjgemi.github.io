@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>OutputFormat2.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">OutputFormat2.java</td></tr></table>
+<hr>
+<pre>
+<span class="literal">package</span> outputformat2;
+
+<span class="literal">import</span> java.util.*;
+
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST0">OutputFormat2</span> {
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST1">vonalathuz</span>(<span class="literal">int</span> n, <span class="literal">char</span> c) {
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; n; i++) {
+            System.<span class="ST2">out</span>.print(c);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">int</span> <span class="ST1">rnd</span>(<span class="literal">int</span> ah, <span class="literal">int</span> fh) {
+        <span class="literal">int</span> range = (fh - ah) + 1;
+        <span class="literal">return</span> (<span class="literal">int</span>) (Math.<span class="ST3">random</span>() * range) + ah;
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST1">csere</span>(<span class="literal">int</span> a, <span class="literal">int</span> b) {
+        <span class="literal">int</span> c;
+        <span class="literal">if</span> (a &gt; b) {
+            c = a;
+            a = b;
+            b = c;
+        }
+        System.<span class="ST2">out</span>.println(a + <span class="string">&quot;</span> <span class="string">&quot;</span> + b);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST1">rendezesABC</span>() {
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; 10; i++) {
+            <span class="ST3">csere</span>(<span class="ST3">rnd</span>(1, 10), <span class="ST3">rnd</span>(1, 10));
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">double</span> <span class="ST1">t</span>(<span class="literal">int</span> a, <span class="literal">int</span> ma) {
+        <span class="literal">return</span> ((<span class="literal">double</span>) a) * ma / 2;
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST1">triangle</span>(<span class="literal">int</span> a, <span class="literal">int</span> ma) {
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">A háromszög</span><span class="string">&quot;</span>);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">             alapja   : </span><span class="string">&quot;</span> + a);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">             magassága: </span><span class="string">&quot;</span> + ma);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">             területe : </span><span class="string">&quot;</span> + <span class="ST3">t</span>(a, ma));
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST1">main</span>(String[] args) {
+        <span class="ST3">vonalathuz</span>(8, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>);
+        <span class="ST3">rendezesABC</span>();
+        <span class="ST3">vonalathuz</span>(8, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>);
+        <span class="ST3">triangle</span>(2, 3);
+        <span class="ST3">vonalathuz</span>(20, <span class="string">&#39;</span><span class="string">-</span><span class="string">&#39;</span>);
+    }
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+********
+7 7
+7 9
+2 9
+2 6
+3 9
+5 8
+1 5
+5 8
+2 4
+8 9
+********
+A háromszög
+             alapja   : 2
+             magassága: 3
+             területe : 3.0
+--------------------
+<font color="#009933">BUILD SUCCESSFUL (total time: 0 seconds)</font>
+
+</pre></body>
+</html>

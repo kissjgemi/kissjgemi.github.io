@@ -1,0 +1,42 @@
+<!-- aktualtimestamp: 1541622230
+2018 november 07. Programozás
+  -->
+<div class="parabellum">
+<p class="main">
+<h4>WEB programozás</h4><br />
+<h5>Formázás</h5><br />
+A feladatok:<br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VS1pmWUlHWDVta00?usp=sharing">14 Karakterformázás</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VYlR2RzZ5NklvTFE?usp=sharing">15 Bekezdésformázás</a><br />
+<h5>Dobozmodell</h5><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VN3R2NGhFdzlSUXc?usp=sharing">16 Dobozmodell 1</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VNk9oR1RUQmwtSHc?usp=sharing">17 Dobozmodell 2</a><br />
+A megoldások:<br />
+<a href="https://drive.google.com/drive/folders/1Bzep636oIVRdhNrHVFQJDBsYar9TBmhQ?usp=sharing">WEB fejlesztés 14,15,16,17</a><br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1541622230"><a onclick="show('less-article1541622230'); hide('more-article1541622230')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1541622230" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1541622230'); show('more-article1541622230')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+<h4>Java programozás Greenfoot fejlesztői környezetben:</h4><br />
+<h5>Kígyó (NOKIA-klón) program készítése</h5><br />
+A feladat:<br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VMk1GRV9tQ3hWVU0?usp=sharing">19 Kígyó 1</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VY2NDMnhPeEhKRms?usp=sharing">20 Kígyó 2</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VZy1TMktTMEdnS3M?usp=sharing">21 Kígyó 3</a><br />
+<h5>Kígyó (NOKIA-klón) program készítése</h5><br />
+A megoldás:<br />
+<a href="https://drive.google.com/drive/folders/14DiJvlYgV20Z5Xk_YVJOeGLQlsaDgKsa?usp=sharing">Kígyó</a><br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+poganysuli.hu tananyag KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

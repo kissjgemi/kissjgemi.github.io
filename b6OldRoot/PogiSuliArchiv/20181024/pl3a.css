@@ -1,0 +1,43 @@
+h1 {
+    color: #111CE3;
+    text-align: center;
+}
+
+h2 {
+    color: #0033FF;
+}
+
+ul {
+    list-style: square;
+}
+
+p, table, li {
+    font-family: verdana, arial, 'sans serif';
+}
+
+table {
+    font-style: italic;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid red;
+}
+
+th:hover, td:hover {
+    background-color: #00CCCC;
+}
+
+p.fontos {
+    border: dotted medium black;
+}
+
+body {
+    background-color: #F1D8B6;
+}
+
+hr {
+    height: 5px;
+    width: 50%;
+    background-color: #0000FF;
+}

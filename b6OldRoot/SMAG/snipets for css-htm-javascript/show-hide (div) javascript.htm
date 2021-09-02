@@ -1,0 +1,32 @@
+<!-- -------------------------- -->
+<!-- show-hide <div> javascript -->
+<!-- -------------------------- -->
+
+<html>
+<head>
+<script>
+function show(target){
+document.getElementById(target).style.display = 'block';
+}
+function hide(target){
+document.getElementById(target).style.display = 'none';
+}
+ 
+ 
+</script>
+</head>
+<body><div style="position:absolute">
+<a href="#" onclick="show('lastest')">show one div</a><br />
+<a href="#" onclick="show('lastest'); show('monitor_overlay')">show 2 divs</a><br />
+<a href="#" onclick="hide('lastest'); hide('monitor_overlay')">hide 2 divs</a><br />
+</div> 
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+ 
+<div id="lastest">1</div>
+<div id="monitor_overlay">2</div>
+ 
+</body>
+</html>
+
+

@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Java20190109.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">Java20190109.java</td></tr></table>
+<hr>
+<pre>
+<span class="literal">package</span> java20190109;
+
+<span class="comment">/**</span>
+<span class="comment"> * </span><span class="ST0">@author</span> <span class="comment">kissjgabi</span>
+ <span class="comment">*/</span>
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST1">Java20190109</span> {
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f00</span>(<span class="literal">int</span> n) {
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; n; ii++) {
+            System.<span class="ST3">out</span>.print(<span class="string">&quot;</span><span class="string">*</span><span class="string">&quot;</span>);
+        }
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f01</span>() {
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">01 Bevezetés</span><span class="string">&quot;</span>);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">Helló világ</span><span class="string">&quot;</span>);
+        <span class="ST5">f00</span>(25);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f02</span>() {
+        <span class="literal">int</span> fokozat;
+        <span class="literal">double</span> sebesseg;
+        <span class="literal">char</span> szinkod;
+        <span class="literal">boolean</span> metal;
+
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">02 Változók</span><span class="string">&quot;</span>);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">Ez egy virtuális autó</span><span class="string">&quot;</span>);
+
+        fokozat = 4;
+        sebesseg = 58.6;
+        szinkod = <span class="string">&#39;</span><span class="string">R</span><span class="string">&#39;</span>;
+        metal = <span class="literal">true</span>;
+
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">Az autó sebességfokozata: </span><span class="string">&quot;</span> + fokozat);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">Az autó pillanatnyi sebessége: </span><span class="string">&quot;</span> + sebesseg);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">Az autó színkódja: </span><span class="string">&quot;</span> + szinkod);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">Az autó metalfényű: </span><span class="string">&quot;</span> + metal);
+
+        <span class="ST5">f00</span>(25);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f03</span>() {
+
+        <span class="literal">int</span> szam1 = 10;
+        <span class="literal">int</span> szam2 = 20;
+        <span class="literal">int</span> osszeg, kulonbseg;
+
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">03 Műveletek 1</span><span class="string">&quot;</span>);
+
+        osszeg = szam1 + szam2;
+        kulonbseg = szam1 - szam2;
+
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">A számok összege: </span><span class="string">&quot;</span>);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">&quot;</span> + osszeg);
+
+        System.<span class="ST3">out</span>.print(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">A számok összege: </span><span class="string">&quot;</span>);
+        System.<span class="ST3">out</span>.println(osszeg);
+
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">A számok összege: </span><span class="string">&quot;</span> + osszeg);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">A számok különbsége: </span><span class="string">&quot;</span> + kulonbseg);
+
+        <span class="ST5">f00</span>(25);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f04</span>() {
+        <span class="literal">int</span> a = 10;
+
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">03 Műveletek 2</span><span class="string">&quot;</span>);
+
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">a  : </span><span class="string">&quot;</span> + a);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">a++: </span><span class="string">&quot;</span> + a++);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">a  : </span><span class="string">&quot;</span> + a);
+
+        a = 10;
+
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">a  : </span><span class="string">&quot;</span> + a);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">++a: </span><span class="string">&quot;</span> + ++a);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">a  : </span><span class="string">&quot;</span> + a);
+
+        <span class="ST5">f00</span>(25);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f05</span>() {
+        <span class="literal">int</span> szam1 = 10;
+        <span class="literal">int</span> szam2 = 20;
+
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">03 Műveletek 3</span><span class="string">&quot;</span>);
+
+        <span class="comment">// kasztolás</span>
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">A számok hányadosa: </span><span class="string">&quot;</span> + (szam1 / (<span class="literal">double</span>) szam2));
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">A maradék: </span><span class="string">&quot;</span> + (szam1 % szam2));
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">A számok szorzata: </span><span class="string">&quot;</span> + (szam1 * szam2));
+
+        <span class="ST5">f00</span>(25);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f06</span>() {
+        <span class="literal">int</span> szam1 = 10;
+        <span class="literal">int</span> szam2 = 20;
+
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">04 Metódusok</span><span class="string">&quot;</span>);
+
+        <span class="comment">// kasztolás</span>
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">Math.min: </span><span class="string">&quot;</span> + Math.<span class="ST5">min</span>(szam1, szam2));
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">Math.sqrt: </span><span class="string">&quot;</span> + Math.<span class="ST5">sqrt</span>((<span class="literal">double</span>) szam1));
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">Math.PI: </span><span class="string">&quot;</span> + Math.<span class="ST3">PI</span>);
+
+        <span class="literal">double</span> r = 2.54;
+        <span class="literal">double</span> ker = 2 * r * Math.<span class="ST3">PI</span>;
+        <span class="literal">double</span> ter = Math.<span class="ST5">pow</span>(r, 2) * Math.<span class="ST3">PI</span>;
+
+        <span class="ST5">f00</span>(25);
+
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">Kör </span><span class="string">&quot;</span>);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">A kör sugara: </span><span class="string">&quot;</span> + r);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">A kör kerülete: </span><span class="string">&quot;</span> + Math.<span class="ST5">round</span>(ker * 100) / 100.0);
+        System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="ST4">\t</span><span class="string">A kör területe: </span><span class="string">&quot;</span> + Math.<span class="ST5">round</span>(ter * 100) / 100.0);
+
+        <span class="ST5">f00</span>(25);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">main</span>(String[] args) {
+        <span class="ST5">f00</span>(25);    <span class="comment">// 25db &#39;*&#39; egy sorban </span>
+        <span class="ST5">f01</span>();      <span class="comment">// &quot;Hello Világ!&quot;</span>
+        <span class="ST5">f02</span>();      <span class="comment">// 02 Változók - virtuális autó</span>
+        <span class="ST5">f03</span>();      <span class="comment">// 03 Műveletek 1 - összeg/lülönbség</span>
+        <span class="ST5">f04</span>();      <span class="comment">// 03 Műveletek 2 - szorzat/hányados</span>
+        <span class="ST5">f05</span>();      <span class="comment">// 03 Műveletek 3 - kasztolás</span>
+        <span class="ST5">f06</span>();      <span class="comment">// 04 Metódusok - kör</span>
+    }
+
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+
+*************************
+01 Bevezetés
+	Helló világ
+
+*************************
+02 Változók
+	Ez egy virtuális autó
+	Az autó sebességfokozata: 4
+	Az autó pillanatnyi sebessége: 58.6
+	Az autó színkódja: R
+	Az autó metalfényű: true
+
+*************************
+03 Műveletek 1
+	A számok összege: 
+	30
+	A számok összege: 30
+	A számok összege: 30
+	A számok különbsége: -10
+
+*************************
+03 Műveletek 2
+	a  : 10
+	a++: 10
+	a  : 11
+	a  : 10
+	++a: 11
+	a  : 11
+
+*************************
+03 Műveletek 3
+	A számok hányadosa: 0.5
+	A maradék: 10
+	A számok szorzata: 200
+
+*************************
+04 Metódusok
+	Math.min: 10
+	Math.sqrt: 3.1622776601683795
+	Math.PI: 3.141592653589793
+
+*************************
+Kör 
+	A kör sugara: 2.54
+	A kör kerülete: 15.96
+	A kör területe: 20.27
+
+*************************
+<font color="#009933">BUILD SUCCESSFUL (total time: 0 seconds)</font>
+
+</pre></body>
+</html>
+

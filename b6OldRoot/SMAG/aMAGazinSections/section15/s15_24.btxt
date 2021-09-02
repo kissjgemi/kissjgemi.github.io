@@ -1,0 +1,99 @@
+<!-- aktualtimestamp: 1542282974
+2018 november 08. IT alapok
+  -->
+<div class="parabellimage">
+<div id="thumb1542282974" class="thumbframe"><a onclick="show('wide1542282974'); hide('thumb1542282974')" >
+<img src="_uploaded_images/2018-11/CiscoConfig.jpg
+" alt="CiscoConfig.jpg" title="CiscoConfig.jpg"></a>
+</div>
+<div id="wide1542282974" class="wideframe"><a onclick="show('thumb1542282974'); hide('wide1542282974')" >
+<img src="_uploaded_images/2018-11/CiscoConfig.jpg
+" alt="CiscoConfig.jpg" title="CiscoConfig.jpg"></a>
+</div>
+<p class="main">
+&nbsp;<br />
+<h4>IT essentials 3.fejezet:</h4><br />
+<a href="https://drive.google.com/drive/folders/1mDTjRUUj0E_TA3O09rM_F6ylGpaxCrjC?usp=sharing" target="_béank">Dolgozat</a><br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1542282974"><a onclick="show('less-article1542282974'); hide('more-article1542282974')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1542282974" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1542282974'); show('more-article1542282974')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+<h3>Labor gyakorlat</h3><br />
+<h4>Konfiguráció mentése</h4><br />
+<br />
+Az aktív konfiguráció a Cisco IOS aktuális beállításait tükrözi, tartalmazza a hálózati működéshez szükséges parancsokat, amint az 1. ábrán is látható. Az aktív konfiguráció módosítása azonnali hatással van a Cisco eszköz működésére.<br />
+Az aktív konfiguráció a berendezés operatív memóriájában (Random Access Memory, RAM) található, ami azt jelenti, hogy csak a berendezés bekapcsolt állapotában aktív. Következésképpen, áramszünet vagy az eszköz újraindulása esetén a nem mentett konfigurációs módosítások elvesznek.<br />
+<br />
+Az aktív konfigurációs fájlban történt változtatások után tekintsük át a következő lehetőségeket:<br />
+- Az eszköz eredeti konfigurációjának visszaállítása.<br />
+- Az összes konfiguráció eltávolítása az eszközről.<br />
+- A módosított konfiguráció mentése az új indító konfigurációba.<br />
+<br />
+Az indító konfiguráció az eszköz bekapcsolásakor vagy újraindulásakor használt beállításokat tartalmazza. Az indító konfigurációt tartalmazó állomány az NVRAM-ban található. A hálózati eszköz beállítása és az aktív konfiguráció módosítása esetén, nagyon fontos a változtatások mentése az indító konfigurációs állományba. Ez a művelet megakadályozza a beállítások elvesztését áramkimaradás vagy szándékos újraindítás során.<br />
+<br />
+A változtatások mentése előtt használjuk a megfelelő show parancsokat az eszköz működésének ellenőrzéséhez. Amint az ábrán is látható, a show running-config parancs az aktív konfigurációs állományt jeleníti meg. A módosítások helyességének ellenőrzése után használjuk a copy running-config startup-config parancsot a privilegizált EXEC módban. Az aktív konfiguráció indító konfigurációs állományba mentéséhez alkalmazott parancs:<br />
+<br />
+<em>Switch# copy running-config startup-config</em><br />
+<br />
+Végrehajtás után az aktív konfiguráció frissíti az indító konfigurációt.<br />
+<br />
+Ha az aktív konfiguráció módosítása nem vezet a kívánt eredményre, szükség lehet az eszköz korábbi beállításainak visszaállítására. Feltéve, hogy az indító konfiguráció nem került felülírásra, kicserélhetjük az aktív konfigurációt az indító konfigurációval. Ennek legegyszerűbb módja az eszköz újraindítása, melyhez használjuk a reload parancsot a privilegizált EXEC módban.<br />
+<br />
+Az újraindulás megkezdésekor az IOS érzékeli, hogy az aktív konfiguráció nem került elmentésre az indító konfigurációs állományba, és egy kérdéssel jelzi ezt. A változtatások mentésének elvetéséhez írjuk be: n vagy no.<br />
+<br />
+Egy következő üzenet az újraindítás megerősítését kéri. Ennek megtételéhez üssük le az Enter-t, bármely más billentyű lenyomása megszakítja a folyamatot.<br />
+<br />
+Például:<br />
+<em>Switch# reload<br />
+System configuration has been modified Save? [yes/no]: n<br />
+Proceed with reload? [confirm]<br />
+*Apr 13 01:34:15.758: %SYS-5-RELOAD: Reload requested by console. Reload Reason:<br />
+Reload Command.<br />
+System Bootstrap, Version 12.3(8r)T8, RELEASE SOFTWARE (fc1)<br />
+Technical Support: http://www.cisco.com/techsupport<br />
+Copyright (c) 2004 by cisco Systems, Inc.<br />
+PLD version 0x10<br />
+GIO ASIC version 0x127<br />
+c1841 processor with 131072 Kbytes of main memory<br />
+Main memory is configured to 64 bit mode with parity disabled</em><br />
+<br />
+Ha a nem kívánt beállítások mentésre kerültek az indító konfigurációba, szükséges lehet az összes konfiguráció törlése. Ehhez az indító konfiguráció törlése és az eszköz újraindítása kell.<br />
+Az indító konfiguráció eltávolításához használjuk az erase startup-config parancsot.<br />
+Az indító állomány törléséhez privilegizált EXEC módban gépeljük be az erase NVRAM:startup-config vagy erase startup-config parancsot:<br />
+<em>Switch# erase startup-config</em><br />
+Az utasítás kiadása után a kapcsoló megerősítést kér:<br />
+<em>Erasing the nvram filesystem will remove all configuration files! Continue? [confirm]</em><br />
+<br />
+Az alapértelmezés szerinti válasz az elfogadás. Az indító konfigurációs állomány törléséhez nyomjunk Enter-t, bármely más billentyű leütése megszakítja a folyamatot.<br />
+Figyelmeztetés:<br />
+Elővigyázatosan használjuk az erase parancsot! Az utasítás téves használata alkalmas az eszközön lévő összes fájl törlésére, beleértve magát az IOS-t és egyéb fontos állományokat is.<br />
+Kapcsolók esetében még ki kell adnunk a delete vlan.dat parancsot is az erase startup-config utasításon kívül, az eszköz gyári alapértelmezett beállításainak visszaállításához:<br />
+<br />
+<em>Switch# delete vlan.dat<br />
+Delete filename [vlan.dat]?<br />
+Delete flash:vlan.dat? [confirm]<br />
+Switch# erase startup-config<br />
+Erasing the nvram filesystem will remove all configuration files! Continue? [confirm]<br />
+<br />
+[OK]<br />
+<br />
+Erase of nvram: complete<br />
+<br />
+Switch#</em><br />
+<br />
+Az indító konfiguráció (és kapcsolók esetében a vlan.dat fájl) NVRAM-ból való törlése után indítsuk újra az eszközt az aktív konfigurációs fájl RAM-ból való eltávolítása érdekében. Indítás után az eszköz a gyári alapértelmezett beállításokat fogja betölteni.<br />
+A 2. ábrán lévő parancsszimulátorban gyakorolhatjuk az aktív konfiguráció mentését a RAM-ból az NVRAM-ba.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+Cisco tanfolyam és KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

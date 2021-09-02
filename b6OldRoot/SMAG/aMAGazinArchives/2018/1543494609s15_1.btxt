@@ -1,0 +1,114 @@
+<!-- aktualtimestamp: 1536065446
+2018 szeptember 3. Programozás
+  -->
+<div class="parabellum">
+<p class="main">
+Előadó: Babos Gábor<br />
+<br />
+Bevezetés a programozásba<br />
+a számítógép olyan gép, ami alkalmas arra, hogy a bevitt adatokon egyszerű műveleteket hajtson végre. Ezek lehetnek aritmetikai (+, -, *, /), logikai (<, >, =, !=) és input/output műveletek.<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1536065446"><a onclick="show('less-article1536065446'); hide('more-article1536065446')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1536065446" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1536065446'); show('more-article1536065446')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+A programozás fogalma:<br />
+<br />
+Ahhoz, hogy megoldjunk egy problémát több utasítást megfelelő sorrendben kell végrehajtani.<br />
+Ezen utasításokat programnak nevezzük.<br />
+Egy számítógép sem tud program nélkül működni!<br />
+boot program, operációs rendszer, eszközillesztők ...<br />
+<br />
+Minden programot el kell készíteni, ez a programozás.<br />
+Azok a személyek, akik a programokat készítik, a programozók.<br />
+A programozás egy kreatív tevékenység.<br />
+<br />
+Algoritmusok:<br />
+<br />
+Lehetnek a programozási nyelvektől függetlenek és lehetnek a gyakorlati szempontok szemszögéből, folyamatábrák, leírónyelvek.<br />
+<br />
+A programozás folyamata:<br />
+<br />
+Tervezés<br />
+Milyen lépések sorozatával oldható meg a feladat<br />
+- algoritmizálás -<br />
+<br />
+Program írása<br />
+- az algoritmust egy adott programozási nyelvre kell fordítani -<br />
+<br />
+Tesztelés<br />
+- nincs hibátlan program :),<br />
+- csak még nem találtuk meg a hibáját,<br />
+- kis lépésekben, folyamatosan tesztelni kell -<br />
+<br />
+Az adat<br />
+<br />
+Az adat informatikai, számítástechnikai szempontból leírható dolgok fogalma, melyek:<br />
+- rögzíthetők,<br />
+- feldolgozhatók,<br />
+- megjeleníthetők.<br />
+<br />
+Adat: 37<br />
+akkor lesz belőle információ, ha tudjuk mire vonatkozik:<br />
+- hőmérséklet: 37 °C. ;<br />
+- születésnap: 37. ;<br />
+- távolság: 37 km ...<br />
+<br />
+Az adat, egy "objektum" változójának értéke.<br />
+Objektum: autó;<br />
+változó: szín;<br />
+érték: #008000 (zöld).<br />
+<br />
+Egy konkrét adat akkor tekinthető definiáltnak, ha meghatározzuk, hogy milyen objektum melyik változója milyen értéket vesz fel.<br />
+<br />
+Az adatokon való műveletek végrehajtását adatfeldolgozásnak nevezzük, mely hatására az adatok:<br />
+- változnak;<br />
+- átalakulnak;<br />
+- újak születnek (információ...)<br />
+<br />
+<br />
+Az adatfeldolgozásnak 4 fázisa van:<br />
+1) bemenetel - ezeken az adatokon akarunk dolgozni;<br />
+2) feldolgozás - az adatok transzformációja;<br />
+3) kimenetel - új adatok, eredmény;<br />
+4) tárolás - kell az eredmény, vagy további feldolgozás miatt.<br />
+<br />
+----------------<br />
+Algoritmizálási feladat 1<br />
+Számoljon el aprogram 0-tól 10-ig [0,10] az egész számok halmazán [0,1,2,3,...,10}<br />
+----------------<br />
+a = 0<br />
+ciklus amíg a<11<br />
+ki: a<br />
+a=a+1<br />
+ciklus vége<br />
+----------------<br />
+<br />
+----------------<br />
+Algoritmizálási feladat 2<br />
+az első húsz páros szám kiiratása<br />
+----------------<br />
+a=2<br />
+ciklus amíg a<41<br />
+ki: a<br />
+a=a+2<br />
+ciklus vége<br />
+----------------<br />
+<br />
+<br />
+Java nyelv bemutatása<br />
+<br />
+A NetBeans 8.2 fejlesztőkörnyezetben "Hello World!" program írása.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

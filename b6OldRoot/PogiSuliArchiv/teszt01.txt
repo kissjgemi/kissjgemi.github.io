@@ -1,0 +1,177 @@
+1 Mi lesz az eredménye az alábbi kódnak?
+var a;
+var b=null;
+var c='2';
+var d='3';
+alert(a+b+c+d);
+
+Rendben le fog futni
+Nem fog lefutni, mert b null
+Hibát látunk, mert a nincs inicializálva*
+Hibát látunk, mert a C és a D nem összeadható ebben a formában
+
+__
+2 Igaz az alábbi állítás? - Változó inicializálásakor az értékét adjuk meg egy előzőleg deklarált változónak.
+
+Igen*
+Nem
+
+__
+3 Mit csinál a referencia?
+
+Rámutat egy objektumra*
+Nem tudom
+Nagy mennyiségű adatot tárol
+Rámutat egy függvényre
+
+__
+4 Igaz az alábbi állítás? - Változó deklarálásakor kötelező az inicializálás
+
+Igen
+Nem*
+
+__
+5 Mit jelent az IDE?
+
+Integrated Development Environment*
+Integrated Developer Edition
+Intercontinental Development Entity
+Intolerant Development Eternity
+
+__
+6 Melyik nem számít primitívnek a JavaScriptben?
+
+date*
+boolean
+undefined
+null
+number
+string
+
+__
+7 
+Mi igaz az agilis szoftverfejlesztésre?
+
+Ez a vízesés modell másik neve
+Gondos tervezéssel kezdett, hosszú ideig tartó kódolási folyamat
+Ciklusokra osztott implementálása egy szoftvernek, amelyben időről-időre tesztelhető, új verzió készül.*
+A legügyesebb programozó munkájának másolása
+
+__
+8 Mi lesz az eredménye az alábbi kódnak?
+var a = [1,2,3,4,5,6];
+for (i=0; i < a.length; i++) if (i > 3) alert(a[i]);
+
+Nem fog lefutni
+Az eredmény: 4, 5, 6
+Az eredmény: 5, 6*
+Az eredmény: 1, 2, 3, 4, 5, 6
+
+__
+9 Mely állítás igaz az alábbiak közül?
+
+A függvénynek nincs visszatérési értéke
+A metódus csak egyetlen dologgal térhet vissza
+A primitívek és a referenciák is változók*
+A paraméterek és objektumok megnevezések ugyanarra a dologra utalnak, két különböző nézőpontból
+
+__
+10 Igaz az alábbi állítás? - A primitív adattípusok mérete egy adott programozási nyelvben előre meghatározott.
+
+Igen*
+Nem
+
+__
+11 Igaz az alábbi állítás? - A tömb egy speciális változó
+
+Igen*
+Nem
+
+__
+12 Mit használnál az IF helyett, ha sok konkrét adattal kéne egy adott stringet összehasonlítani?
+
+For loop
+While loop
+Switch*
+Do While
+Maradnék az IF-nél
+
+__
+13 Igaz az alábbi állítás? - A tömb egy speciális primitív
+
+Igen
+Nem*
+
+__
+14 Mely állítás(ok) igazak az alábbiak közül?
+
+Ékezeteket változó nevekben nem ajánlott, de azoknak értékeiben lehet használni*
+Az escape karakter elveszi az előtte álló karakter speciális jellegét, így egyszerű szövegként használható a feloldott karakter
+Az escape karakter elveszi a mögötte álló karakter speciális jellegét, így egyszerű szövegként használható a feloldott karakter*
+A Javascript és a Java ugyanannak a programozási nyelvnek két különböző megjelenési formája
+
+__
+15 Mit nem ajánlott csinálni egy változóval?
+
+Értéket adni neki
+Üresen hagyni
+Törölni
+Ékezetes nevet adni neki*
+
+__
+16 Az alábbiak közül melyik a helyes módja egy üres tömb létrehozásának?
+
+var myArray = [];*
+var myArray = [null];
+var myArray = null;
+var myArray = [''];
+
+__
+17 Mi lesz az eredménye az alábbi kódnak?
+var a = 1;
+var b = 2;
+var c = '2';
+alert(a+b+c+a);
+
+123
+321*
+Nem fog lefutni
+1221
+
+__
+18 Mi igaz a stringre a JavaScriptben?
+
+Karakterek összessége*
+Nem tárolhat számot
+Egyik sem igaz
+
+__
+19 Mi lesz az eredménye az alábbi kódnak?
+var a = 10;
+for (i = 0; i < a; i++)
+alert(a-i);
+
+Nem fog lefutni
+10-től 1-ig ki fogja listázni a számokat*
+1-től 10-ig ki fogja listázni a számokat
+Üres számokat fog kiírni 10 alkalommal
+
+__
+20 Mik tartoznak a programozó feladatai közé?
+
+A lehetőségekhez mérten kevés memóriát használni*
+A lehető leggyorsabban dolgozni, akkor is ha a kód kicsit hibás
+A lehető legjobb minőségű kódot elkészíteni, akkor is ha kicsit több időbe kerül*
+Figyelni a program felhasználói élményre azáltal, hogy beleképzeljük magunkat a felhasználó helyébe*
+
+__
+21 Melyik kifejezéssel hozható összefüggésbe a stack overflow kifejezés?
+
+Null érték
+Processzor hiba
+Memória túlcsordulás*
+Függvény
+
+
+
+

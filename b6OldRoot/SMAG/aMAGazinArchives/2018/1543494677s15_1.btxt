@@ -1,0 +1,208 @@
+<!-- aktualtimestamp: 1536207871
+2018 szeptember 5. Programozás
+  -->
+<div class="parabellum">
+<p class="main">
+Előadó: Fülöp Katalin<br />
+<br />
+A GreenFoot IDE (Integrated Development Environment) telepítése és használata.<br />
+A Flappy bird program video YouTube-on.<br />
+A WombatWorld program elemzése és futtatása.<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1536207871"><a onclick="show('less-article1536207871'); hide('more-article1536207871')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1536207871" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1536207871'); show('more-article1536207871')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+________________________________________________________________________<br />
+WombatWorld.java<br />
+<br />
+import greenfoot.*;  // imports Actor, World, Greenfoot, GreenfootImage<br />
+<br />
+/**<br />
+* A world where wombats live.<br />
+*<br />
+* @author Michael Kölling<br />
+* @version 2.0<br />
+*/<br />
+public class WombatWorld extends World<br />
+{<br />
+/**<br />
+* Create a new world with 10x10 cells and<br />
+* with a cell size of 60x60 pixels.<br />
+*/<br />
+public WombatWorld()<br />
+{<br />
+super(10, 10, 60);<br />
+setBackground("cell.jpg");<br />
+setPaintOrder(Wombat.class, Leaf.class);  // draw wombat on top of leaf<br />
+}<br />
+<br />
+/**<br />
+* Populate the world with a fixed scenario of wombats and leaves.<br />
+*/<br />
+public void populate()<br />
+{<br />
+addObject(new Wombat(), 7, 1);<br />
+addObject(new Wombat(), 6, 6);<br />
+addObject(new Wombat(), 1, 7);<br />
+randomLeaves(20);<br />
+}<br />
+<br />
+/**<br />
+* Place a number of leaves into the world at random places.<br />
+* The number of leaves can be specified.<br />
+*/<br />
+public void randomLeaves(int howMany)<br />
+{<br />
+for (int i=0; i<howMany; i++) {<br />
+int x = Greenfoot.getRandomNumber(getWidth());<br />
+int y = Greenfoot.getRandomNumber(getHeight());<br />
+addObject(new Leaf(), x, y);<br />
+}<br />
+}<br />
+}<br />
+________________________________________________________________________<br />
+Wombat.java<br />
+import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)<br />
+<br />
+/**<br />
+* Wombat. If a wombat finds a leaf, it eats it.<br />
+*<br />
+* @author Michael Kölling<br />
+* @version 2.0<br />
+*/<br />
+public class Wombat extends Actor<br />
+{<br />
+private int leavesEaten;<br />
+<br />
+public Wombat()<br />
+{<br />
+leavesEaten = 0;<br />
+}<br />
+<br />
+/**<br />
+* Do whatever the wombat likes to to just now.<br />
+*/<br />
+public void act()<br />
+{<br />
+if (foundLeaf()) {<br />
+eatLeaf();<br />
+}<br />
+else if (canMove()) {<br />
+move(1);<br />
+if (Greenfoot.getRandomNumber(6)<1)<br />
+turnLeft();<br />
+}<br />
+else {<br />
+turnLeft();<br />
+}<br />
+}<br />
+<br />
+/**<br />
+* Turn left by 90 degrees.<br />
+*/<br />
+public void turnLeft()<br />
+{<br />
+turn(-90);<br />
+}<br />
+<br />
+/**<br />
+* Check whether there is a leaf in the same cell as we are.<br />
+* Return true, if there is, false otherwise.<br />
+*/<br />
+public boolean foundLeaf()<br />
+{<br />
+Actor leaf = getOneObjectAtOffset(0, 0, Leaf.class);<br />
+return leaf != null;<br />
+}<br />
+<br />
+/**<br />
+* Eat a leaf (if there is one in our cell).<br />
+*/<br />
+public void eatLeaf()<br />
+{<br />
+Actor leaf = getOneObjectAtOffset(0, 0, Leaf.class);<br />
+if (leaf != null) {<br />
+// eat the leaf...<br />
+getWorld().removeObject(leaf);<br />
+leavesEaten = leavesEaten + 1;<br />
+}<br />
+}<br />
+<br />
+/**<br />
+* Set the direction we're facing. The 'direction' parameter must<br />
+* be in the range [0..3].<br />
+*/<br />
+public void setDirection(int direction)<br />
+{<br />
+if ((direction >= 0) && (direction <= 3)) {<br />
+setRotation(direction * 90);<br />
+}<br />
+}<br />
+<br />
+/**<br />
+* Test if we can move forward. Return true if we can, false otherwise.<br />
+*/<br />
+public boolean canMove()<br />
+{<br />
+int rotation = getRotation();<br />
+int x = getX();<br />
+int y = getY();<br />
+boolean facingEdge = false;<br />
+<br />
+switch (rotation) {<br />
+case 0:<br />
+facingEdge = (x == getWorld().getWidth() - 1);<br />
+break;<br />
+case 90:<br />
+facingEdge = (y == getWorld().getHeight() - 1);<br />
+break;<br />
+case 180:<br />
+facingEdge = (x == 0);<br />
+break;<br />
+case 270:<br />
+facingEdge = (y == 0);<br />
+break;<br />
+}<br />
+<br />
+return !facingEdge;<br />
+}<br />
+<br />
+/**<br />
+* Tell how many leaves we have eaten.<br />
+*/<br />
+public int getLeavesEaten()<br />
+{<br />
+return leavesEaten;<br />
+}<br />
+}<br />
+________________________________________________________________________<br />
+Leaf.java<br />
+import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)<br />
+<br />
+/**<br />
+* Leaf - a class for representing leaves.<br />
+*<br />
+* @author Michael Kölling<br />
+* @version 2.0<br />
+*/<br />
+public class Leaf extends Actor<br />
+{<br />
+public Leaf()<br />
+{<br />
+}<br />
+}<br />
+________________________________________________________________________<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

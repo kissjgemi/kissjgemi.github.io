@@ -1,0 +1,109 @@
+<!-- aktualtimestamp: 1536651495
+2018 szeptember 10. Szakmai angol jegyzet
+  -->
+<div class="parabellum">
+<p class="main">
+the four basic functions of mathematics<br />
+<br />
+addition  +<br />
+subtraction  -<br />
+multiplication *<br />
+division /<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1536651495"><a onclick="show('less-article1536651495'); hide('more-article1536651495')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1536651495" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1536651495'); show('more-article1536651495')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+_<br />
+add 1 to 1 -><br />
+1 plus 1 equals 2<br />
+__________________<br />
+subrtact 1 from 2 -><br />
+2 minus 1 equals 1<br />
+__________________<br />
+multiply 2 by 2 -><br />
+2 times 2 equals 4<br />
+__________________<br />
+divide 4 by 2 -><br />
+4 divided by 2 equals 2<br />
+__________________<br />
+<br />
+exponentiation - hatványozás<br />
+root(ing) - gyökvonás<br />
+<br />
+raise 2 to power of 2 -><br />
+3 on the power of 2^2<br />
+__________________<br />
+<br />
+tak the 5th root of 25 -><br />
+the 5th root of 25 is...<br />
+__________________<br />
+<br />
+<br />
+square root - négyzetgyök<br />
+cube root - köbgyök<br />
+<br />
+<br />
+formula - képlet<br />
+auto-update -<br />
+charts - diagram<br />
+<br />
+grid - rács<br />
+cell - cella (sejt)<br />
+intersection - kereszteződés, áthatás<br />
+<br />
+average - átlag<br />
+weighted average - súlyozott átlag<br />
+<br />
+pie chart - torta diagram<br />
+block chart - oszlop diagram<br />
+<br />
+equation - egyenlet<br />
+function - művelet<br />
+fraction - tört<br />
+<br />
+inventory - leltár<br />
+membership roster - tagsági névjegyzék<br />
+<br />
+owe dues - tartozik tartozás<br />
+<br />
+database -> files -> records -> fields<br />
+query - lekérdezés<br />
+<br />
+ICQ - i seek you<br />
+<br />
+GRAPHIC<br />
+<br />
+flood tool - kitöltő eszköz<br />
+border - körvonal, határoló vonal<br />
+<br />
+cel (Single image in an animation sequence)<br />
+<br />
+pencil - ceruza<br />
+paint brush - ecset<br />
+airbrush spray - festékszóró<br />
+chalk - kréta<br />
+crayon - zsírkréta<br />
+charcoal - grafikus szén<br />
+felt-tip marker - filctoll<br />
+<br />
+polygon - sokszög<br />
+texture mapping - textúra képzés<br />
+bump mapping - anyag képzés<br />
+face shading - a modellt alkotó sokszögek árnyékolása<br />
+antialiasing - élek elsimítása, hogy ne legyenek pixelesek<br />
+<br />
+red-spotted - piros pöttyös<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

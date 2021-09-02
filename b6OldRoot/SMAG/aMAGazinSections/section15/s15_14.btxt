@@ -1,0 +1,40 @@
+<!-- aktualtimestamp: 1539515011
+Android alkalmazásfejlesztés 04.-05.
+  -->
+<div class="parabellum">
+<p class="main">
+<h4>Az Android alkalmazáskomponensek használata</h4><br />
+<h5>1.rész</h5>
+Android futtatókörnyezet<br />
+Android alkalmazás komponensek<br />
+Activity, Service, ContentProvider, BroadcastReceiver<br />
+Activity életciklus és környezet<br />
+Activity Back Stack modell<br />
+Több Activity-ből álló alkalmazások fejlesztése<br /><br />
+<h5>2.rész</h5>
+Android erőforrás állományok kezelése<br />
+Erőforrás minősítők bemutatása<br />
+Különböző méretű és felbontású kijelzők kezelése<br />
+Lokalizáció támogatása<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1539515011"><a onclick="show('less-article1539515011'); hide('more-article1539515011')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1539515011" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1539515011'); show('more-article1539515011')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+&nbsp;<br />
+<iframe width="800" height="450" frameborder="0" src="https://mega.nz/embed#!FTJX3YgJ!Kl3w840HDjvtWOiQ5ziWDU38w5kCbLRFuKHEptzcTqk" allowfullscreen></iframe><br />
+&nbsp;<br />
+<iframe width="800" height="450" frameborder="0" src="https://mega.nz/embed#!cfRxnaQA!tJNI8b9GD1FeHa5DhfIA_yT4AtFXhs-YH5gzBrAYKmw" allowfullscreen></iframe><br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+<a href="https://www.youtube.com/watch?v=wbPcz76rkQs" target="_blank">U2be 1</a>---<a href="https://www.youtube.com/watch?v=q4354asdie8" target="_blank">U2be 2</a>
+ &nbsp;</span> </font></p>
+</div>

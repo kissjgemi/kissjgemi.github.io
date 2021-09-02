@@ -1,0 +1,144 @@
+<!-- aktualtimestamp: 1541532557
+2018 november 05. IT alapok
+  -->
+<div class="parabellum">
+<p class="main">
+&nbsp<br />
+I. előkészület<br />
+<br />
+Hozzon létre új virtuális gép-munkamenetet 13EDWIN7 vagy 13EEWIN7 néven. 32bites architektúrájú Windows 7-et válassza operációs rendszernek<br />
+<br />
+A gyári beállításokon ne változtasson, kivéve a fájl mérete tekintetében, mely 20 GB legyen.<br />
+<br />
+A boot sorrendnél tiltsa a Floppy-meghajtót, a mutatóeszköz pedig a PS/2-es egér legyen.<br />
+<br />
+Mountolja be a telepítő ISO-ját.<br />
+<br />
+A tárolóknál SATA vezérlővel vegyen még fel 2 db egyaránt 5-5 GB-s virtuális merevlemezt VOL1 és VOL2 néven.<br />
+<br />
+A hálókártya NAT-on működjön.<br />
+<br />
+A megosztott mappájának vegye fel a saját osztálya nevét viselő ESTI mappában található almappát.<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1541532557"><a onclick="show('less-article1541532557'); hide('more-article1541532557')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1541532557" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1541532557'); show('more-article1541532557')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+&nbsp<br />
+II. telepítés<br />
+<br />
+<br />
+A telepítés során hozzon létre a 20 GB-s tárolón két logikai partíciót, egy 15 GB-set és egy 5 GB-set. Az operációs rendszert a nagyobbra telepítse.<br />
+<br />
+A számítógép neve 13EDg1 vagy 13EEg1 legyen, a felhasználónév pedig u1. A jelszó Minad123 legyen.<br />
+<br />
+A számítógép munkahelyi LAN-ra csatlakozzon.<br />
+<br />
+<br />
+III. személyre szabás - alap<br />
+<br />
+<br />
+Az asztalon jelenítse meg a Sajátgép, a Hálózat és a Vezérlőpult ikonját, valamint hozzon létre parancsikont a parancssornak.<br />
+<br />
+Telepítse a VB integrációs szolgáltatását.<br />
+<br />
+Telepítse a chrome webböngészőt, a bandizip és a sumatra programokat. A telepítő állományokat a gazdagép megosztásából érje el.<br />
+<br />
+Társítsa a html formátumú fájlokat a chrome böngészőhöz, a pdf-kiterjesztésűeket pedig a sumatrához.<br />
+<br />
+Jelenítse meg az ismert fájltípusok esetében is a kiterjesztést.<br />
+vezérlőpult - Mappa beállításai<br />
+<br />
+------------------- 1. jegy<br />
+<br />
+Telepítse a windows-szolgáltatásokban a játékokat<br />
+<br />
+Állítsa le a gép frissítésekhez való hozzáférését.<br />
+Vezérlőpult -> Windows Update -> Beállítások módosítása<br />
+<br />
+Vezérlőpult -> Windows Update -> Felügyeleti eszközök -> Szolgáltatások<br />
+Windows Update<br />
+LMB -> Tulajdonságok<br />
+Indítás tipusa == letiltva(, kézi)<br />
+<br />
+Léptesse a T21 nevű munkacsoportba a gépét.<br />
+Vezérlőpult -> Rendszer -> Beállítások módosítása<br />
+<br />
+<br />
+IV. személyre szabás - extended<br />
+<br />
+<br />
+A két 5 GB-s fizikai kötetből csináljon 1 tükrözött kötetet.<br />
+Vezérlőpult<br />
+-> Felügyeleti eszközök<br />
+-> Számítógép kezelés<br />
+-> Lemezkezelés<br />
+<br />
+A lemezkezelőben formázza, és lássa el kötetcímkével mind a fizikai, mind pedig a logikai köteteket (X és Y meghajtó).<br />
+-> Új tükrözött kötet<br />
+-> "X"<br />
+-> Új egyszerű kötet<br />
+-> "Y"<br />
+<br />
+A logikai köteten hozzon létre egy 100 MB nagyságú virtuális lemezképet (Z meghajtó)<br />
+Menü = Művelet<br />
+-> Virtuális merevlemez létrehozása<br />
+Z.vhdi<br />
+Lemez 3 -ra jobb gombbal<br />
+Lemez inicializálása ...-...<br />
+<br />
+A helyi házirendben módosítsa a jelszóra vonatkozó szabályokat a következőképpen: a jelszó minimális hossza legyen 5 karakter!<br />
+Helyi biztonsági Házirend<br />
+Legrövidebb jelszó<br />
+Házirend frissítése...<br />
+cmd >>  C:WindowsSystem32>gpupdate /force<br />
+<br />
+Vezérlőpult<br />
+-> Felügyeleti eszközök<br />
+-> Helyi biztonsági házirend<br />
+-> Fiókházirend<br />
+-> Jelszóházirend<br />
+-> Legrövidebb jelszó = 5<br />
+Házirend frissítése...<br />
+cmd >>  C:WindowsSystem32>gpupdate /force<br />
+<br />
+<br />
+Hozzon létre új vendégfelhasználókat w1, w2, w3 néven, akik legyenek tagjai a wgroup nevű csoportnak. A jelszavuk egyezzen meg a nevükkel, soha ne járjon le, és ne legyen módosítható. A jelszó nem fog működni. Miért? Adjon olyan jelszót, ami megfelel az új jelszó bonyolultsági házirendnek. (w1pass; w2pass; w3pass)<br />
+<br />
+Hozzon létre helpdesk néven egy rendszergazdai jogosultsággal rendelkező felhasználót. A jelszava egyezzen meg a nevével, és meg kelljen változtatni legelső belépéskor (Minad123-ra).<br />
+<br />
+<br />
+Számítógép-kezelés<br />
+Helyi felhasználók és csoportok<br />
+Felhasználók : Új felhasználó<br />
+Csoportok : Új csoport<br />
+<br />
+helpdesk - tulajdonságok<br />
+- tagságok = Rendszergazdák<br />
+<br />
+A tükrözött kötethez csak olvasási joga a wgroup vendégeknek, de törlési joguk legyen letiltva, a kis logikai partícióhoz pedig egyáltalán ne tudjanak hozzáférni.<br />
+<br />
+"X meghajtó" - Tulajdonságok - Biztonság<br />
+-> Szerkesztés<br />
+-> Hozzáadás : csoport / felhasználó<br />
+-> Engedélyek : írás megtagadás<br />
+"Z meghajtó" - Tulajdonságok - Biztonság<br />
+-> Szerkesztés<br />
+Állítson be a virtuális köteten kvótakezelést. A lemezhasználatot korlátozza 50 MB-re, és a figyelmeztetési érték legyen 40 MB.<br />
+<br />
+"Z meghajtó" - Tulajdonságok - Kvóta<br />
+-> Kvótakezelés engedélyezése<br />
+-> Lemezhasználat korlátozása = 50 MB<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

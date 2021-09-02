@@ -1,0 +1,59 @@
+<!-- aktualtimestamp: 1542356722
+2018 november 15. IT alapok
+  -->
+<div class="parabellimage">
+<div id="thumb1542356722" class="thumbframe"><a onclick="show('wide1542356722'); hide('thumb1542356722')" >
+<img src="_uploaded_images/2018-11/switch.jpg
+" alt="switch.jpg" title="switch.jpg"></a>
+</div>
+<div id="wide1542356722" class="wideframe"><a onclick="show('thumb1542356722'); hide('wide1542356722')" >
+<img src="_uploaded_images/2018-11/switch.jpg
+" alt="switch.jpg" title="switch.jpg"></a>
+</div>
+<p class="main">
+<h4>IT essentials 4.fejezet:</h4><br />
+<a href="https://drive.google.com/drive/folders/1sJpC--AKbp4FgsNyTklZlUSe0VxMwaws?usp=sharing" target="_béank">Dolgozat</a><br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1542356722"><a onclick="show('less-article1542356722'); hide('more-article1542356722')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1542356722" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1542356722'); show('more-article1542356722')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+<h4>LAN-kapcsolók</h4><br />
+<h5>Kapcsolás</h5><br />
+<br />
+A kapcsolók a MAC-címeket használják ahhoz, hogy mindig a megfelelő porton kerüljenek továbbításra a keretek a célállomás felé. A kapcsoló szerkezete az integrált áramkörökből, valamint a hozzá társuló gépi programból áll, amelyek lehetővé teszik, hogy az adatútvonalakat a kapcsolón keresztül szabályozni lehessen. Ahhoz, hogy egy kapcsoló megtudja, hogy melyik portot használja egy egyedi címzésű keret továbbításához, először meg kell tanulnia, mely állomások vannak az egyes portokon.<br />
+<br />
+Egy kapcsoló a MAC-címtáblája segítségével határozza meg, hogyan kell kezelnie a beérkező adatkereteket. A kapcsoló úgy építi fel a MAC-címtábláját, hogy rögzíti a portjaihoz kapcsolódó állomások MAC-címeit. Miután a kapcsoló egyszer már egy adott porton lévő állomás MAC-címét rögzítette a címtáblájában, egy későbbi átvitel során már tudni fogja, hogy az adott állomásnak szánt forgalmat a hozzá társított porton keresztül kell továbbítania.<br />
+<br />
+Amikor a kapcsoló egy bejövő adatkeretet kap, és a cél MAC-címe nem szerepel a táblázatban, a kapcsoló a keretet az összes portján keresztül kiküldi, kivéve azt a portot, amelyen a keret beérkezett. Amikor a címzett csomópont visszaválaszol, a kapcsoló rögzíti a keret forráscímét a MAC-címtáblájába. A több összekötött kapcsolót tartalmazó hálózatokban a MAC-címtáblák több MAC-címet is rögzíthetnek a kapcsolókhoz csatlakozó portokhoz, ami azt tükrözi, hogy azon a porton keresztül több állomás is elérhető. A két kapcsolót összekötő portokhoz általában több MAC-címet rögzítenek a címtáblában.<br />
+<br />
+Hogy lássuk, hogyan is működik ez, tekintsük meg az egyes lépéseket az 1-6. ábrákon!<br />
+<br />
+A következők írják le a folyamatot:<br />
+<br />
+1. lépés: A kapcsoló kap egy szórásos keretet a PC1-től az 1-es porton.<br />
+<br />
+2. lépés: A kapcsoló beírja a címtáblába a forrás MAC-címet és a portot, amelyen keresztül megkapta a keretet.<br />
+<br />
+3. lépés: Mivel a cél cím szórásos, a kapcsoló elárasztja a kerettel az összes portot, kivéve azt, amelyen megkapta a keretet.<br />
+<br />
+4. lépés: A cél eszköz egy egyedi címzésű kerettel válaszol, melynek címzettje a PC1.<br />
+<br />
+5. lépés: A kapcsoló beírja a címtáblájába a PC2 forrás MAC-címét és annak a portnak a számát, amelyen át megkapta a keretet. A keret célcíme és a hozzá kapcsolódó port már megtalálhatók a MAC-címtáblában.<br />
+<br />
+6. lépés: A kapcsoló most már elárasztás nélkül képes továbbítani a kereteket a forrás és a cél között, mert már megvannak a kapcsolóportokat beazonosító címtála bejegyzések.<br />
+<br />
+Megjegyzés: A MAC-címtáblát gyakran nevezik tartalom szerint címezhető memória (Content Addressable Memory, CAM) táblázatnak is. Bár a CAM-tábla kifejezés meglehetősen gyakori, ebben a kurzusban MAC-címtáblaként hivatkozunk rá.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+cisco tanfolyam és KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

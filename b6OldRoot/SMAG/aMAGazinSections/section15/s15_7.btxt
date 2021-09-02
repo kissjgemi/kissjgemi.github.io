@@ -1,0 +1,33 @@
+<!-- aktualtimestamp: 1538765124
+2018 október 03. Programozás
+  -->
+<div class="parabellum">
+<p class="main">
+Tananyag:<br />
+<br />
+HTML programozás Visual Studio Code programmal:<br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VVnlmelFRTVBOdVE?usp=sharing">09 Táblázatok</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VQUhrdm1DeF9QWlk?usp=sharing">10 Gyakorlás</a><br />
+<a href="http://archiv.b6.hu" target="_blank">Megoldások</a><br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1538765124"><a onclick="show('less-article1538765124'); hide('more-article1538765124')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1538765124" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1538765124'); show('more-article1538765124')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+Java programozás Greenfoot fejlesztői környezetben:<br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VS2JXc3FtTjBSOGM?usp=sharing">08 Képek</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VcjU0WjNTLXFaREE?usp=sharing">09 Megosztás</a><br />
+<a href="http://archiv.b6.hu/LastScenario.gfar">Little-crab-xl</a><br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+poganysuli.hu tananyag
+ &nbsp;</span> </font></p>
+</div>

@@ -1,0 +1,37 @@
+<!-- aktualtimestamp: 1542474030
+2018 november 14. Programozás
+  -->
+<div class="parabellum">
+<p class="main">
+<h4>WEB programozás</h4><br />
+<h5>18 Listák formázása</h5><br />
+<h5>19 Űrlapok formázása</h5><br />
+<h5>20 Táblázat formázása</h5><br />
+<h5>21 Körbefuttatás</h5><br />
+<h4>A megoldások</h4><br />
+<a href="https://drive.google.com/file/d/1O21t0kHkN7yA3RmU80v6Gg4d8Hh9q91V/view?usp=sharing" target="_blank" >WEB fejlesztés 18,19,20,21</a><br />
+<br />
+Az összes eddigi html gyakorló feladat megtalálható: <a href="http://archiv.b6.hu" target="_blank" >itt</a><br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1542474030"><a onclick="show('less-article1542474030'); hide('more-article1542474030')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1542474030" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1542474030'); show('more-article1542474030')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+<h4>Java programozás Greenfoot fejlesztői környezetben:</h4><br />
+<h5>22-23 Labirintus</h5><br />
+<a href="https://drive.google.com/file/d/1c5ENEGH7TnRnX-21_utGpwJ1K3VBHhX0/view?usp=sharing" target="_blank">Greenfoot Labirintus source és jar</a><br />
+<h5>24-25-25 Galaxian</h5><br />
+<a href="https://drive.google.com/file/d/15DCBdcSqyhmPmy7PN8yq_zfhgwaHPKvi/view?usp=sharing target="_blank"">Greenfoot Galaxian source és jar</a><br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+poganysuli.hu tananyag KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

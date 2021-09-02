@@ -1,0 +1,273 @@
+
+h1 {
+    font-family: "Comic Sans MS";
+    font-size: 50px;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+h2 {
+    color: rgb(70,70,70);
+}
+
+section, article {
+    text-shadow: 1px 1px 5px white, -1px -1px 5px white,
+  			     1px -1px 5px white, -1px 1px 5px white;
+}
+
+article {
+    background-attachment: scroll;
+    width: 300px;
+    height: 200px;
+}
+
+#elso {
+    background-color: black;
+    background-image: url('css-feladat/virag.jpg');
+    border-style: groove;
+    border-width: thick;
+    border-color: coral;
+    margin: 10px;
+    padding: 5px;
+    text-align: justify;
+    text-indent: 5px;
+}
+
+#masodik {
+    background-color: gray;
+    background-image: url('css-feladat/suni.jpg');
+	background-position: 100% 100%;
+    border-style: ridge;
+    border-width: thick;
+    border-color: aqua;
+    margin: 20px;
+    padding: 2pc;
+    text-decoration: underline;
+	text-transform: capitalize;
+}
+
+#harmadik {
+    background-color: white;
+    background-image: url('css-feladat/roka.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+    border-style: inset;
+    border-width: thick;
+    border-color: lime;
+    margin: 30mm;
+    padding: 0.3cm;
+    text-decoration: overline;
+	text-transform: uppercase;
+}
+
+#negyedik {
+    background-color: red;
+    background-image: url('css-feladat/maci.jpg');
+	background-repeat: repeat-x;
+	background-position: center;
+    border-style: outset;
+    border-width: thick;
+    border-color: violet;
+    margin: 4cm;
+    padding: 4mm;
+    text-decoration: line-through;
+	text-transform: lowercase;
+}
+
+#otodik {
+    background-color: blue;
+    background-image: url('css-feladat/hal.jpg');
+	background-repeat: repeat-y;
+	background-position: center;
+    border-top: thin solid tomato;
+    border-bottom: thin solid tomato;
+	border-left: medium double #5F9EA0;
+	border-right: medium double #5F9EA0;
+    margin: 2in;
+    padding: 3px;
+    font: italic small-caps 800 12pt Arial;
+	text-align: right;
+}
+
+#hatodik {
+    background-color: green;
+    background-image: url('css-feladat/mokus.jpg');
+	background-repeat: repeat-x;
+	background-position: left;
+    border-top: 0.5cm dotted rgb(255,165,0);
+    border-bottom: 0.5cm dotted rgb(255,165,0);
+	border-left: 0.1in dashed hsl(136, 24%, 85%);
+	border-right: 0.1in dashed hsl(136, 24%, 85%);
+    margin: 40px 50pt;
+    padding: 0.03cm 6mm;
+    letter-spacing: 0.1pc;
+}
+
+#hetedik {
+    background-color: purple;
+    background-image: url('css-feladat/pok.png');
+	background-repeat: repeat-y;
+	background-position: top;
+    border-top: 20px none #DCF5F6;
+    border-bottom: 1pc double hsl(180, 100%, 25%);
+	border-left: 10pt solid rgb(64, 224, 208);
+	border-right: 10pt solid rgb(64, 224, 208);
+    margin: 60mm 7cm;
+    padding: 0.4pc 5pt;
+	word-spacing: 6px;
+}
+
+#nyolcadik {
+    background: url('css-feladat/teknos.png') top center repeat-x,
+				url('css-feladat/teknos.png') bottom center repeat-x;
+    background-color: brown;
+    border-style: groove ridge inset outset;
+    border-width: 0.3cm 0.15in 15pt 30px;
+    border-color: #8FBC8E rgb(11, 86, 184) #66CDAA rgb(184, 222, 87);
+    margin: 3in 8mm 9cm;
+    padding-top: 0.2in;
+	padding-right: 3mm;
+	padding-bottom: 1.1pc;
+	padding-left: 4px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#kilencedik {
+    background: url('css-feladat/beka.jpg') right center repeat-y,
+				url('css-feladat/beka.jpg') left center repeat-y;
+    background-color: pink;
+    border-top: 12px solid navy;
+	border-right: 10pt double #9ACD32;
+    border-bottom: 0.1in dotted rgb(221, 160, 110);
+	border-left: 0.2cm dashed hsl(249, 80%, 67%);
+    margin-top: 30mm;
+	margin-right: 2.5in;
+	margin-bottom: 8.7cm;
+	margin-left: 6.3pc;
+    padding: 10px 9pt 4mm 0.1cm;
+	line-height: 170%;
+	overflow: scroll;
+}
+
+#tizedik {
+    background-image: url('css-feladat/farkas.png');
+	background-repeat: no-repeat;
+	background-position: 1cm 0.4in;
+    background-color: yellow;
+    border-top-style: outset;
+	border-top-width: 0.15cm;
+	border-top-color: hsl(270, 40%, 50%);
+    border-right-style: inset;
+	border-right-width: 0.08in;
+	border-right-color: rgb(139, 69, 19);
+    border-bottom-style: ridge;
+	border-bottom-width: 9pt;
+	border-bottom-color: #FFDEAB;
+    border-left-style: groove;
+	border-left-width: 11px;
+	border-left-color: salmon;
+    margin: 55mm 4.5cm 75px 85pt;
+    padding: 0.2cm 0.3in 2pc;
+	line-height: 1.5em;
+	overflow: auto;
+}
+
+#tigris {
+	width: auto;
+	height: auto;
+	background-color: yellow;
+	position: absolute;
+	top: 4500px;
+	right: 100px;
+	clip: rect(40px,580px,320px,30px);
+}
+
+#tigris:hover {
+	z-index: 999;
+}
+
+#gepard {
+	position: relative;
+	top: 670px;
+	left: 180px;
+	z-index: 2;
+}
+
+#gepard:hover {
+	z-index: 999;
+}
+
+#parduc {
+	position: fixed;
+	bottom: 220px;
+	left: 300px;
+	z-index: 2;
+	clip: rect(5px,406px,280px,50px);
+}
+
+#parduc:hover {
+	z-index: 999;
+}
+
+img:hover {
+		opacity: 0.7;
+		cursor: pointer;
+		border: 5px dotted blue;
+		z-index: 999;
+}
+
+#tigris:active {
+	cursor: crosshair;
+}
+
+#gepard:active {
+	cursor: progress;
+	border-color: red;
+	border-style: dashed;
+	border-width: 0.1in;
+}
+
+#parduc:active {
+	cursor: move;
+}
+
+ol#evszakok {
+	list-style-type: katakana;
+	list-style-position: outside;
+}
+
+ul#techies {
+	list-style-image: url('css-feladat/computer.png');
+	list-style-position: inside;
+}
+
+
+dl dd {
+	display: none;
+}
+
+dl dt:hover {
+	font-weight: bold;
+}
+
+
+dl dt:hover + dd {
+	display: block;
+	color: red;
+}
+
+#leopard {
+	float: left;
+}
+
+#jaguar {
+	float: right;
+}
+
+#hiuz {
+	clear: both;
+	float: right;
+}
+

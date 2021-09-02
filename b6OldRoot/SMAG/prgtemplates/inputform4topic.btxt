@@ -1,0 +1,31 @@
+
+<form name="input" action="prgphp/comodo.php" method="post">
+<p>
+ <input type="text" style="width: 80%; margin-left: 10%;" name="article_title" ><br />
+ <br/>
+ <textarea name="article_head" rows="5"  style="text-align: justify; width: 80%; margin-left: 10%;" >
+ </textarea><br />
+ <br/>
+<div id="more-article"><a onclick="show('less-article'); hide('more-article')" >
+<p class="showline">Mutass többet!</p></a>
+</div>
+<div id="less-article" style="display: none; background-color: lightgray">
+<a onclick="show('more-article'); hide('less-article')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br/>
+ <textarea name="article_body" rows="10"  style="text-align: justify; width: 80%; margin-left: 10%;" >
+ </textarea><br />
+<br/>
+</div>
+<br />
+ <input type="text" style="text-align: right ; width: 80%; margin-left: 10%;" name="article_footer" ><br />
+ <br/>
+<br />
+</p><p align="center">
+<input type="submit" value=" Beküld " name="send2datadir">
+
+</p>
+</form> 
+<br />
+<hr />
+<br />

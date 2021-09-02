@@ -1,0 +1,34 @@
+<!-- aktualtimestamp: 1537880530
+Cisco - Intro to the Packet Tracer 01
+  -->
+<div class="parabellimage">
+<div id="thumb1537880530" class="thumbframe"><a onclick="show('wide1537880530'); hide('thumb1537880530')" >
+<img src="_uploaded_images/2018-09/PT-Chapter1.png
+" alt="PT-Chapter1.png" title="PT-Chapter1.png"></a>
+</div>
+<div id="wide1537880530" class="wideframe"><a onclick="show('thumb1537880530'); hide('wide1537880530')" >
+<img src="_uploaded_images/2018-09/PT-Chapter1.png
+" alt="PT-Chapter1.png" title="PT-Chapter1.png"></a>
+</div>
+<p class="main">
+Download and Install Packet Tracer<br />
+A Packet Tracer letöltése és telepítése<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1537880530"><a onclick="show('less-article1537880530'); hide('more-article1537880530')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1537880530" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1537880530'); show('more-article1537880530')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+<iframe width="800" height="450" frameborder="0" src="https://mega.nz/embed#!wHwnxTgT!BTPDdEMyBB0i3_3itgjSUcMlRjjbgVduTdow0hqAWO0" allowfullscreen></iframe><br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+Cisco  Networking Academy
+ &nbsp;</span> </font></p>
+</div>

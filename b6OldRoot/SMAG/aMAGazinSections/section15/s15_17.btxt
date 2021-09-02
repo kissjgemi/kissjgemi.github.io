@@ -1,0 +1,35 @@
+<!-- aktualtimestamp: 1539841543
+2018 október 17. Programozás
+  -->
+<div class="parabellum">
+<p class="main">
+<h4>Java programozás Greenfoot fejlesztői környezetben:</h4><br />
+<h5>Autós program készítése</h5><br />
+A feladatok:<br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VbTB6VlI3ajRvZ3c?usp=sharing">11 Autók 1</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VX2dxSjhzV19ialU?usp=sharing">12 Autók 2</a><br />
+A megoldás:<br />
+<a href="https://drive.google.com/drive/folders/1myhX2kFq0R5pEaM-CUiyfJQH5YHuoQGs?usp=sharing">Autók</a><br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1539841543"><a onclick="show('less-article1539841543'); hide('more-article1539841543')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1539841543" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1539841543'); show('more-article1539841543')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+<h5>Halloween-i szellemvadászat</h5><br />
+A feladatok:<br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VX3llTFRDREZNU0k?usp=sharing">13 Halloween 1</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VOS0xa2dXS0YzeVE?usp=sharing">14 Halloween 2</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VcjZ5UUJVS1BHUUE?usp=sharing">15 Halloween 3</a><br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+poganysuli.hu tananyag
+ &nbsp;</span> </font></p>
+</div>

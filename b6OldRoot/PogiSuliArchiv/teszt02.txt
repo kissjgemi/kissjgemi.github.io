@@ -1,0 +1,137 @@
+__
+1 Miért jók a programozási tételek?
+
+Mert bár nem biztos, hogy fogom őket használni, mégis segít megérteni a különböző algoritmikai műveletek elvégzését az alapoktól*
+Mert könnyed, és biztos beszélgetési témát ad egy jól sikerült randin
+Nem jók
+Mert az ismeretük nélkül lehetetlenség programozni
+
+
+__
+2 Milyen számot fogunk látni a felugró ablakban, ha lefuttatjuk ezt a kódot?
+var numbers = [1,3,5,7,9,11];
+for (i=0;i < numbers.length;i++) if (i==5) alert(i);
+
+1
+3
+5*
+11
+
+
+__
+3 A kiválogatás tételekor milyen vezérlő elemek (most nevezhetjük függvényeknek - de igazából nem függvények) használatával a leggyorsabb a válogatás?
+
+If és While
+For és If*
+Két egymásba ágyazott for ciklus
+Egy for és egy while
+
+
+__
+4 Adott az alábbi kód:
+var cars = ["Honda", "Volvo", "BMW" ];
+var auto = ["BMW" , "Toyota", "Mercedes"];
+Alkalmazva az unió tételét, készítek egy harmadik tömböt. Mekkora lesz az újonnan létrehozott tömb mérete feltöltés után?
+
+3
+4
+5*
+6
+
+
+__
+5 Adott az alábbi kód:
+var tomb = [10, 9, 2, 4, 5, 1, 6];
+Megvizsgálod a tömböt az Eldöntés tételével, a tanult módon. A vizsgált feltétel: Van-e kisebb szám, mint 5.
+Mekkora lesz i értéke, amikor a ciklus megszakad?
+
+Kilépéskor i értéke 0, mert onnan indítom i értékét.
+Kilépéskor i értéke 1 lesz.
+Nem lesz i egyáltalán, mert while ciklust fogok használni.
+Nem lesz i egyáltalán, mert switch-et fogok használni.
+Kilépéskor i értéke 2 lesz.*
+
+
+__
+6 ?Mire kell figyelned, amikor egy tömbben a legkisebb számot keresed?
+
+Hogy a fő segédváltozó kezdeti értéke biztosan kisebb legyen, mint a tömb elemeinek értékei
+Hogy a fő segédváltozó kezdeti értéke biztosan nagyobb legyen, mint a tömb elemeinek értékei*
+Hogy a segédváltozót minden lefutásnál lenullázzam
+Hogy a legkisebb szám ne szerepeljen többször a tömbben
+
+
+__
+7 Hogyan határozod meg JavaSciptben a 'fruits' nevű tömb méretét?
+
+fruits.size;
+fruits.length();
+fruits.length;*
+fruits.hossz;
+
+
+__
+8 ?Mi(k) az előnye(i) a while ciklusnak a for ciklussal szemben?
+
+Van rá esély, hogy kevesebb erőforrást használ*
+Mind a kettőnek ugyanazok az előnyei.
+Nem biztos, hogy mindegyik elemen végig fog futni*
+Vizsgálhatunk vele egy feltételt.*
+
+
+__
+9 Végig megyek egy tömb összes elemén, majd összehasonlítom egy másik tömb elemeivel egy belső ciklus segítségével. Ha egy bizonyos feltétel igaz, a második ciklust megszakítom, az adott elemet pedig egy harmadik tömbbe mentem. Melyik programozási tételt használtam a feladat elvégzéséhez?
+
+Eldöntés
+Metszet*
+Szétválogatás
+Maximum kiválasztás
+
+
+__
+10 Össze kell hasonlítanod két tömb tartalmát. Melyik hangzik a legésszerűbb megoldásnak?
+
+Switch-el tudom ellenőrizni őket
+Egy Do While ciklussal összehasonlítom őket
+Két egymásba ágyazott ciklussal tudom összehasonlítani őket*
+Egy While ciklussal végig megyek egyszerre mind a kettőn
+
+
+__
+11 Mi az a pszeudo-kód?
+
+Az kizárt dolog, mert nem tudom
+Egy nagyon régi programozási nyelv
+Konkrét programozási nyelvtől független algoritmikai leírás*
+Az a kód, amit a processzor képes értelmezni, az ember viszont nem
+
+
+__
+12 Mire hivatott leginkább az összegzés tétele?
+
+Egy adott tömbön végigfutva megszámolja az elemek összesített számát
+Egy adott tömbön végigfutva megszámolja az elemek összesített értékét*
+Egy adott tömbön végigfutva megszámolja egy adott feltételeknek megfelelő elemek számát
+Egy adott tömbön végigfutva megszámolja egy adott feltételeknek megfelelő elemek értékét
+
+
+__
+13 Mi a neve annak a tételnek, amivel meg tudod állapítani, mely számok találhatóak meg A és B tömbben egyaránt?
+
+Unió Tétele
+Összeadás Tétele
+Metszet Tétele*
+Thalész-Tétele
+Kiválogatás Tétele
+
+
+__
+14 Mit nem ajánlott csinálni egy változóval?
+
+Értéket adni neki
+Üresen hagyni
+Törölni
+Ékezetes nevet adni neki*
+
+
+

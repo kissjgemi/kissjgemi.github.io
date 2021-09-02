@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Java20190116.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">Java20190116.java</td></tr></table>
+<hr>
+<pre>
+<span class="comment">/**</span>
+<span class="comment"> * </span><span class="ST0">@author</span> <span class="comment">kissjgabi</span>
+ <span class="comment">*/</span>
+<span class="literal">package</span> java20190116;
+
+<span class="literal">import</span> java.util.Scanner;
+
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST1">Java20190116</span> {
+
+    <span class="literal">private</span> <span class="literal">static</span> Scanner <span class="ST2">sc</span> = <span class="literal">new</span> Scanner(System.<span class="ST2">in</span>, (<span class="string">&quot;</span><span class="string">Cp1250</span><span class="string">&quot;</span>));
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f00</span>(<span class="literal">int</span> n, <span class="literal">char</span> c, String name) {
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+        System.<span class="ST2">out</span>.print(name + <span class="string">&quot;</span> <span class="string">&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> ii = name.length(); ii &lt; n; ii++) {
+            System.<span class="ST2">out</span>.print(c);
+        }
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f01</span>() {
+        <span class="ST4">f00</span>(40, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">05 ÜDVÖZLET</span><span class="string">&quot;</span>);   <span class="comment">// Fejléc </span>
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">Mi a neved? </span><span class="string">&quot;</span>);
+        String nev = <span class="ST2">sc</span>.nextLine();
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Üdvözöllek </span><span class="string">&quot;</span> + nev + <span class="string">&quot;</span><span class="string">!</span><span class="string">&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f02</span>() {
+        <span class="ST4">f00</span>(40, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">05 KÖR</span><span class="string">&quot;</span>);   <span class="comment">// Fejléc </span>
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">A kör sugara: </span><span class="string">&quot;</span>);
+        <span class="literal">double</span> r = <span class="ST2">sc</span>.nextDouble();
+
+        <span class="literal">double</span> ker = 2 * r * Math.<span class="ST2">PI</span>;
+        <span class="literal">double</span> ter = Math.<span class="ST4">pow</span>(r, 2) * Math.<span class="ST2">PI</span>;
+
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Kör </span><span class="string">&quot;</span>);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string">A kör sugara: </span><span class="string">&quot;</span> + r);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string">A kör kerülete: </span><span class="string">&quot;</span> + Math.<span class="ST4">round</span>(ker * 100) / 100.0);
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string">A kör területe: </span><span class="string">&quot;</span> + Math.<span class="ST4">round</span>(ter * 100) / 100.0);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f03</span>() {
+        <span class="ST4">f00</span>(40, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">05 PITAGORASZ</span><span class="string">&quot;</span>);   <span class="comment">// Fejléc </span>
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">a oldal: </span><span class="string">&quot;</span>);
+        <span class="literal">double</span> a = <span class="ST2">sc</span>.nextDouble();
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">b oldal: </span><span class="string">&quot;</span>);
+        <span class="literal">double</span> b = <span class="ST2">sc</span>.nextDouble();
+
+        <span class="literal">double</span> c = Math.<span class="ST4">sqrt</span>(Math.<span class="ST4">pow</span>(a, 2) + Math.<span class="ST4">pow</span>(b, 2));
+
+        System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string">A c oldal: </span><span class="string">&quot;</span> + Math.<span class="ST4">round</span>(c * 100) / 100.0);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f04</span>() {
+        <span class="ST4">f00</span>(40, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">06 MEDENCE</span><span class="string">&quot;</span>);   <span class="comment">// Fejléc </span>
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">A medence sugara: </span><span class="string">&quot;</span>);
+        <span class="literal">double</span> r = <span class="ST2">sc</span>.nextDouble();
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">A medence mélysége: </span><span class="string">&quot;</span>);
+        <span class="literal">double</span> h = <span class="ST2">sc</span>.nextDouble();
+
+        <span class="literal">double</span> felszin = Math.<span class="ST4">pow</span>(r, 2) * Math.<span class="ST2">PI</span>;
+        <span class="literal">double</span> terfogat = felszin * h;
+        System.<span class="ST2">out</span>.printf(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string">A vízfelszin:  %.2f m2</span><span class="ST5">\n</span><span class="string">&quot;</span>, felszin);
+        System.<span class="ST2">out</span>.printf(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string">A medence térfogata: %.2f m3</span><span class="ST5">\n</span><span class="string">&quot;</span>, terfogat);
+
+        <span class="literal">final</span> <span class="literal">int</span> AR = 500;
+
+        System.<span class="ST2">out</span>.printf(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string">A feltöltés ára: %,.2f Ft2</span><span class="string">&quot;</span>
+                + <span class="string">&quot;</span><span class="ST5">\n</span><span class="string">&quot;</span>, terfogat * AR);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f05</span>() {
+        <span class="ST4">f00</span>(40, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">06 FAHRENHEIT/CELSIUS</span><span class="string">&quot;</span>);   <span class="comment">// Fejléc </span>
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">Hőmérséklet (USA) °F: </span><span class="string">&quot;</span>);
+        <span class="literal">double</span> f = <span class="ST2">sc</span>.nextDouble();
+
+        <span class="literal">double</span> c = (f - 32) * 5 / 9;
+
+        System.<span class="ST2">out</span>.printf(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string">Hőmérséklet (EU):  %.2f °C</span><span class="ST5">\n</span><span class="string">&quot;</span>, c);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f06</span>() {
+        <span class="ST4">f00</span>(40, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">07 PIAC</span><span class="string">&quot;</span>);   <span class="comment">// Fejléc </span>
+        <span class="literal">final</span> <span class="literal">int</span> ALMA_AR = 49;
+        <span class="literal">final</span> <span class="literal">int</span> KORTE_AR = 69;
+
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">Almák száma: </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> alma_db = <span class="ST2">sc</span>.nextInt();
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">Körték száma: </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> korte_db = <span class="ST2">sc</span>.nextInt();
+
+        <span class="literal">int</span> ar = alma_db * ALMA_AR + korte_db * KORTE_AR;
+        System.<span class="ST2">out</span>.printf(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string">Fizetendő:  %,8d</span><span class="string">&quot;</span>
+                + <span class="string">&quot;</span><span class="string"> Ft</span><span class="ST5">\n</span><span class="string">&quot;</span>, Math.<span class="ST4">round</span>(ar / 5f) * 5);
+
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">Kapott összeg: </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> kapott = <span class="ST2">sc</span>.nextInt();
+        <span class="literal">int</span> vissza = Math.<span class="ST4">round</span>((kapott - ar) / 5f) * 5;
+
+        System.<span class="ST2">out</span>.printf(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string">Visszajáró:  %,8d</span><span class="string">&quot;</span>
+                + <span class="string">&quot;</span><span class="string"> Ft</span><span class="ST5">\n</span><span class="ST5">\n</span><span class="string">&quot;</span>, vissza);
+
+        System.<span class="ST2">out</span>.printf(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string">100 Ft-os:  %,3d</span><span class="string">&quot;</span>
+                + <span class="string">&quot;</span><span class="string"> db</span><span class="ST5">\n</span><span class="string">&quot;</span>, vissza / 100);
+        vissza = vissza % 100;
+        System.<span class="ST2">out</span>.printf(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string"> 50 Ft-os:  %,3d</span><span class="string">&quot;</span>
+                + <span class="string">&quot;</span><span class="string"> db</span><span class="ST5">\n</span><span class="string">&quot;</span>, vissza / 50);
+        vissza = vissza % 50;
+        System.<span class="ST2">out</span>.printf(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string"> 20 Ft-os:  %,3d</span><span class="string">&quot;</span>
+                + <span class="string">&quot;</span><span class="string"> db</span><span class="ST5">\n</span><span class="string">&quot;</span>, vissza / 20);
+        vissza = vissza % 20;
+        System.<span class="ST2">out</span>.printf(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string"> 10 Ft-os:  %,3d</span><span class="string">&quot;</span>
+                + <span class="string">&quot;</span><span class="string"> db</span><span class="ST5">\n</span><span class="string">&quot;</span>, vissza / 10);
+        vissza = vissza % 10;
+        System.<span class="ST2">out</span>.printf(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string">  5 Ft-os:  %,3d</span><span class="string">&quot;</span>
+                + <span class="string">&quot;</span><span class="string"> db</span><span class="ST5">\n</span><span class="string">&quot;</span>, vissza / 5);
+        vissza = vissza % 5;
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f07</span>() {
+        <span class="ST4">f00</span>(40, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">07 CELSIUS/FAHRENHEIT</span><span class="string">&quot;</span>);   <span class="comment">// Fejléc </span>
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">Hőmérséklet (EU) °C: </span><span class="string">&quot;</span>);
+        <span class="literal">double</span> c = <span class="ST2">sc</span>.nextDouble();
+
+        <span class="literal">double</span> f = c * 9 / 5 + 32;
+
+        System.<span class="ST2">out</span>.printf(<span class="string">&quot;</span><span class="ST5">\t</span><span class="string">Hőmérséklet (EU):  %.2f °F</span><span class="ST5">\n</span><span class="string">&quot;</span>, f);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f08</span>() {
+        <span class="ST4">f00</span>(40, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">08 ELÁGAZÁS 1</span><span class="string">&quot;</span>);   <span class="comment">// Fejléc </span>
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">Hány fok van: </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> t = <span class="ST2">sc</span>.nextInt();
+
+        <span class="literal">if</span> (t &gt; 25) {
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Meleg van!</span><span class="string">&quot;</span>);
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Nyisd ki az ablakot!</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> {
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Nincs meleg</span><span class="string">&quot;</span>);
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Ne nyisd ki az ablakot!</span><span class="string">&quot;</span>);
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f09</span>() {
+        <span class="ST4">f00</span>(40, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">08 PÁROS/PÁRATLAN</span><span class="string">&quot;</span>);   <span class="comment">// Fejléc </span>
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">Irj be egy számot: </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> szam = <span class="ST2">sc</span>.nextInt();
+
+        <span class="literal">if</span> (szam % 2 == 0) {
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Páros</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> {
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Páratlan</span><span class="string">&quot;</span>);
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f10</span>() {
+        <span class="ST4">f00</span>(40, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">09 ELÁGAZÁS 2 - RUHA</span><span class="string">&quot;</span>);   <span class="comment">// Fejléc </span>
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">Hány fok van: </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> t = <span class="ST2">sc</span>.nextInt();
+
+        <span class="literal">if</span> (t &lt; 10) {
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Kabátot vegyél fel!</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> <span class="literal">if</span> (t &lt; 20) {
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Pulóvert vegyél fel!</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> <span class="literal">if</span> (t &lt; 30) {
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Pólót vegyél fel!</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> {
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">Fürdőruhát vegyél fel!</span><span class="string">&quot;</span>);
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">f11</span>() {
+        <span class="ST4">f00</span>(40, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">09 ELETKOR</span><span class="string">&quot;</span>);   <span class="comment">// Fejléc </span>
+        System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">Hány éves? </span><span class="string">&quot;</span>);
+        <span class="literal">int</span> t = <span class="ST2">sc</span>.nextInt();
+
+        <span class="literal">if</span> (t &lt; 18) {
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">tanuló</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> <span class="literal">if</span> (t &lt; 65) {
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">dolgozó</span><span class="string">&quot;</span>);
+        } <span class="literal">else</span> {
+            System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">nyugdíjas</span><span class="string">&quot;</span>);
+        }
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST3">main</span>(String[] args) {
+        <span class="ST4">f01</span>();
+        <span class="ST4">f02</span>();
+        <span class="ST4">f03</span>();
+        <span class="ST4">f04</span>();
+        <span class="ST4">f05</span>();
+        <span class="ST4">f06</span>();
+        <span class="ST4">f07</span>();
+        <span class="ST4">f08</span>();
+        <span class="ST4">f09</span>();
+        <span class="ST4">f10</span>();
+        <span class="ST4">f11</span>();
+    }
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+
+05 ÜDVÖZLET *****************************
+Mi a neved? Juli
+Üdvözöllek Juli!
+
+05 KÖR **********************************
+A kör sugara: 2,3
+Kör 
+	A kör sugara: 2.3
+	A kör kerülete: 14.45
+	A kör területe: 16.62
+
+05 PITAGORASZ ***************************
+a oldal: 3
+b oldal: 4
+	A c oldal: 5.0
+
+06 MEDENCE ******************************
+A medence sugara: 3,2
+A medence mélysége: 1,2
+	A vízfelszin:  32,17 m2
+	A medence térfogata: 38,60 m3
+	A feltöltés ára: 19 301,95 Ft2
+
+06 FAHRENHEIT/CELSIUS *******************
+Hőmérséklet (USA) °F: 60
+	Hőmérséklet (EU):  15,56 °C
+
+07 PIAC *********************************
+Almák száma: 165
+Körték száma: 123
+	Fizetendő:    16 570 Ft
+Kapott összeg: 20000
+	Visszajáró:     3 430 Ft
+
+	100 Ft-os:   34 db
+	 50 Ft-os:    0 db
+	 20 Ft-os:    1 db
+	 10 Ft-os:    1 db
+	  5 Ft-os:    0 db
+
+07 CELSIUS/FAHRENHEIT *******************
+Hőmérséklet (EU) °C: 15,56
+	Hőmérséklet (EU):  60,01 °F
+
+08 ELÁGAZÁS 1 ***************************
+Hány fok van: 25
+Nincs meleg
+Ne nyisd ki az ablakot!
+
+08 PÁROS/PÁRATLAN ***********************
+Irj be egy számot: 56
+Páros
+
+09 RUHA *********************************
+Hány fok van: 27
+Pólót vegyél fel!
+
+09 ELETKOR ******************************
+Hány éves? 27
+dolgozó
+<font color="#009933">BUILD SUCCESSFUL (total time: 5 seconds)</font>
+
+</pre></body>
+</html>
+

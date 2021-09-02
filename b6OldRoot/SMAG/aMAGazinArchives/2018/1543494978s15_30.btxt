@@ -1,0 +1,43 @@
+<!-- aktualtimestamp: 1540820822
+2018 október 24. Programozás
+  -->
+<div class="parabellum">
+<p class="main">
+<h4>Java programozás Greenfoot fejlesztői környezetben:</h4><br />
+<h5>Halloween program készítése</h5><br />
+A megoldás:<br />
+<a href="https://drive.google.com/open?id=1xT8hL1woPYCsba_qGortPgEHZlBXydHh">Halloween</a><br />
+<h5>Lufik program készítése</h5><br />
+A feladat:<br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VeTFqWDMza2RlMHc?usp=sharing">17 Lufik 1</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VdjdaSktxa0xJVW8?usp=sharing">18 Lufik 2</a><br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1540820822"><a onclick="show('less-article1540820822'); hide('more-article1540820822')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1540820822" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1540820822'); show('more-article1540820822')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+&nbsp;<br />
+A megoldás:<br />
+<a href="https://drive.google.com/drive/folders/1v4rP4ZcKkTcpq0zyUFNYdQJhJtKBIncd?usp=sharing">Lufik</a><br />
+<br /><br />
+<h4>WEB programozás</h4><br />
+<h5>Stílusok</h5><br />
+A feladatok:<br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90Vc016azctajJ6SmM?usp=sharing">11 Stílusok 1</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VY3NYaXMyZDdLT1U?usp=sharing">12 Stílusok 2</a><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VNjNaa3d2bmlCVjg?usp=sharing">12 Stílusok 3</a><br />
+A megoldás:<br />
+<a href="https://drive.google.com/drive/folders/1oO3Y3FF5PH9NnxdRZkSdsX-4LSBc7ARP?usp=sharing">Stílusok</a><br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+poganysuli.hu tananyag KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

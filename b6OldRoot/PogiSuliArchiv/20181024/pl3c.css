@@ -1,0 +1,56 @@
+h1 {
+    color: #FF0099;
+    text-align: left;
+}
+
+h2 {
+    color: #CC33FF;
+}
+
+h1:before, h2:before {
+    content: "[";
+    color: orange;
+}
+
+h1:after, h2:after {
+    content: "]";
+    color: orange;
+}
+
+ul {
+    list-style: square;
+}
+
+th {
+    color: white;
+    background-color: black;
+}
+
+p.fontos:hover {
+    font-size: xx-large;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+p:first-line {
+    background-color: #33CC33;
+}
+
+body {
+    background-color: #98E0E4;
+}
+
+ul {
+    list-style: none;
+    width: 17em;
+}
+
+li {
+    border: 10px outset silver;
+    background-color: silver;
+    margin-bottom: 5px;
+}
+
+li:hover {
+    border: 10px inset silver;
+}

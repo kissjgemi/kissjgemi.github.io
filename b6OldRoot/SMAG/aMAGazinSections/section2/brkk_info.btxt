@@ -1,0 +1,597 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu" version="XHTML+RDFa 1.0" dir="ltr">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://www.police.hu/sites/default/files/logo.png" type="image/png" />
+<link rel="canonical" href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet" />
+<link rel="shortlink" href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet" />
+  <title>Közlekedésrendészet | A Magyar Rendőrség hivatalos honlapja</title>
+  <link type="text/css" rel="stylesheet" href="http://www.police.hu/sites/default/files/css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.police.hu/sites/default/files/css/css_Cd8UvtOhf2DSk3gNHCqbKPuXiHvisEUTJ-8daQb1tO0.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.police.hu/sites/default/files/css/css_MslBqrt5fUR4qJI6OfSvsZ5eSYlsER1ttYuXtiwE3Cg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.police.hu/sites/default/files/css/css_6jsZ62GV1VqyO6IVf1VwzyGzs4hgdPc0n3iWuC2oT54.css" media="all" />
+  <script type="text/javascript" src="http://www.police.hu/sites/default/files/js/js_0gj6QcpfRH2jzTbCQqf7kEkm4MXY0UA_sRhwPc8jC1o.js"></script>
+<script type="text/javascript" src="http://www.police.hu/sites/default/files/js/js_KgCNQm_jdlbuilvxNQyCuzPIxbaHFd56Yhs0Gn31sJo.js"></script>
+<script type="text/javascript" src="http://www.police.hu/sites/default/files/js/js_Nw1zITssM7-wmZAALeMkCOm0ypDt61JPzK303xPaAhM.js"></script>
+<script type="text/javascript" src="http://www.police.hu/sites/default/files/js/js_22mo5XDkPyxBcbnzBzDLwawiRazck_6IqfCrIxXp7e0.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;language=hu&amp;sensor=false&amp;libraries=geometry"></script>
+<script type="text/javascript" src="http://www.police.hu/sites/default/files/js/js_R7Ep7GybqLyS6NfeAhwOsL69jFx4bI84VYVoLA1RRAA.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/gmap_markers.js"></script>
+<script type="text/javascript" src="http://www.police.hu/sites/default/files/js/js_iegm75XKZXoF4vkGjsvOTWY7e2LS3BTAvevrGe12-90.js"></script>
+<script type="text/javascript" src="http://www.police.hu/sites/default/files/js/js_V5x05rfPJNpM6XdAtUOmTzcf8iy5Ip8YKAV2f3stBEc.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"policehu","theme_token":"fgCdzIKDRF5zYbUhzw3dyZefGAukYumwyJ_36z0rb-4","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/page_load_progress1\/js\/page_load_progress1.js":1,"public:\/\/languages\/hu_1cOfMYjE-ODWeIPy3WC17jRtf5lr11tk3W8pnZD6Vp0.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_inline.js":1,"sites\/all\/modules\/panels\/js\/panels.js":1,"sites\/all\/modules\/views_slideshow\/js\/views_slideshow.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/ctools\/js\/auto-submit.js":1,"sites\/all\/modules\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/views\/js\/ajax_view.js":1,"sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.js":1,"sites\/all\/libraries\/json2\/json2.js":1,"sites\/all\/modules\/views_slideshow\/contrib\/views_slideshow_cycle\/js\/views_slideshow_cycle.js":1,"sites\/all\/modules\/jcarousel\/js\/jquery.jcarousel.min.js":1,"sites\/all\/modules\/jcarousel\/js\/jcarousel.js":1,"sites\/all\/modules\/gmap\/js\/gmap.js":1,"http:\/\/maps.googleapis.com\/maps\/api\/js?v=3\u0026language=hu\u0026sensor=false\u0026libraries=geometry":1,"sites\/all\/modules\/gmap\/js\/marker.js":1,"sites\/all\/modules\/gmap\/js\/icon.js":1,"sites\/all\/modules\/gmap\/js\/highlight.js":1,"sites\/all\/modules\/gmap\/js\/poly.js":1,"\/sites\/default\/files\/js\/gmap_markers.js":1,"sites\/all\/modules\/gmap\/js\/gmap_marker.js":1,"sites\/all\/modules\/gmap\/js\/markerloader_static.js":1,"sites\/all\/themes\/policehu\/policehu.js":1,"sites\/all\/themes\/policehu\/google.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/page_load_progress1\/css\/page_load_progress1.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/workflow\/workflow_admin_ui\/workflow_admin_ui.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/better_messages\/better_messages_admin.css":1,"sites\/all\/modules\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/views_slideshow\/views_slideshow.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/modules\/views_slideshow\/contrib\/views_slideshow_cycle\/views_slideshow_cycle.css":1,"sites\/all\/modules\/gmap\/gmap.css":1,"sites\/all\/modules\/jcarousel\/skins\/default\/jcarousel-default.css":1,"sites\/all\/themes\/policehu\/policehu.css":1}},"colorbox":{"transition":"fade","speed":"600","opacity":"0.85","slideshow":false,"slideshowAuto":true,"slideshowSpeed":"2500","slideshowStart":"start slideshow","slideshowStop":"stop slideshow","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","overlayClose":true,"maxWidth":"98%","maxHeight":"98%","initialWidth":"300","initialHeight":"250","fixed":true,"scrolling":true,"mobiledetect":true,"mobiledevicewidth":"480px","colorbox_original_image":1},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views","carousels":{"jcarousel-dom-1":{"view_options":{"view_args":"","view_path":"taxonomy\/term\/230","view_base_path":null,"view_display_id":"block","view_name":"pub__n_ll_oldalak","jcarousel_dom_id":1},"skin":"default","visible":8,"scroll":1,"animation":"fast","start":1,"easing":"linear","selector":".jcarousel-dom-1"}}},"page_load_progress1":{"delay":"10","elements":".page-node  .form-submit"},"extlink":{"extTarget":"_blank","extClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extAlert":0,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":0},"gmap":{"auto1map":{"width":"617px","height":"400px","zoom":7,"maxzoom":"14","controltype":"Large","pancontrol":1,"streetviewcontrol":0,"align":"None","maptype":"Map","mtc":"standard","baselayers":{"Map":1,"Satellite":1,"Hybrid":1},"styles":{"line_default":["0000ff","5","45","",""],"poly_default":["000000","3","25","ff0000","45"],"highlight_color":"ff0000"},"line_colors":["#00cc00","#ff0000","#0000ff"],"behavior":{"locpick":false,"nodrag":0,"nokeyboard":1,"nomousezoom":0,"nocontzoom":0,"autozoom":true,"dynmarkers":0,"overview":0,"collapsehack":0,"scale":0,"extramarkerevents":false,"clickableshapes":false,"googlebar":0,"highlight":0,"views_autocenter":true},"markermode":"0","longitude":"19.3743896484375","latitude":"47.1710465448019","id":"auto1map","markers":[{"latitude":47.866912750063,"longitude":22.620899165082,"markername":"blue","offset":0,"text":null,"autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}}]},"auto2map":{"width":"617px","height":"400px","zoom":7,"maxzoom":"14","controltype":"Large","pancontrol":1,"streetviewcontrol":0,"align":"None","maptype":"Map","mtc":"standard","baselayers":{"Map":1,"Satellite":1,"Hybrid":1},"styles":{"line_default":["0000ff","5","45","",""],"poly_default":["000000","3","25","ff0000","45"],"highlight_color":"ff0000"},"line_colors":["#00cc00","#ff0000","#0000ff"],"behavior":{"locpick":false,"nodrag":0,"nokeyboard":1,"nomousezoom":0,"nocontzoom":0,"autozoom":true,"dynmarkers":0,"overview":0,"collapsehack":0,"scale":0,"extramarkerevents":false,"clickableshapes":false,"googlebar":0,"highlight":0,"views_autocenter":true},"markermode":"0","longitude":"19.3743896484375","latitude":"47.1710465448019","id":"auto2map","markers":[{"latitude":47.867128674408,"longitude":22.620684588361,"markername":"blue","offset":0,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003ETeljes \u00fatlez\u00e1r\u00e1s.\u003C\/div\u003E","autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}}]},"auto3map":{"width":"617px","height":"400px","zoom":7,"maxzoom":"14","controltype":"Large","pancontrol":1,"streetviewcontrol":0,"align":"None","maptype":"Map","mtc":"standard","baselayers":{"Map":1,"Satellite":1,"Hybrid":1},"styles":{"line_default":["0000ff","5","45","",""],"poly_default":["000000","3","25","ff0000","45"],"highlight_color":"ff0000"},"line_colors":["#00cc00","#ff0000","#0000ff"],"behavior":{"locpick":false,"nodrag":0,"nokeyboard":1,"nomousezoom":0,"nocontzoom":0,"autozoom":true,"dynmarkers":0,"overview":0,"collapsehack":0,"scale":0,"extramarkerevents":false,"clickableshapes":false,"googlebar":0,"highlight":0,"views_autocenter":true},"markermode":"0","longitude":"19.3743896484375","latitude":"47.1710465448019","id":"auto3map","markers":[{"latitude":46.994880764951,"longitude":20.67986727085,"markername":"blue","offset":0,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003Eteljes \u00fatlez\u00e1r\u00e1s, \u003C\/div\u003E","autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}}]},"auto4map":{"width":"617px","height":"400px","zoom":7,"maxzoom":"14","controltype":"Large","pancontrol":1,"streetviewcontrol":0,"align":"None","maptype":"Map","mtc":"standard","baselayers":{"Map":1,"Satellite":1,"Hybrid":1},"styles":{"line_default":["0000ff","5","45","",""],"poly_default":["000000","3","25","ff0000","45"],"highlight_color":"ff0000"},"line_colors":["#00cc00","#ff0000","#0000ff"],"behavior":{"locpick":false,"nodrag":0,"nokeyboard":1,"nomousezoom":0,"nocontzoom":0,"autozoom":true,"dynmarkers":0,"overview":0,"collapsehack":0,"scale":0,"extramarkerevents":false,"clickableshapes":false,"googlebar":0,"highlight":0,"views_autocenter":true},"markermode":"0","longitude":"19.3743896484375","latitude":"47.1710465448019","id":"auto4map","markers":[{"latitude":47.790416863253,"longitude":21.695476262549,"markername":"blue","offset":0,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003EV\u00e9get \u00e9rt a helysz\u00ednel\u00e9s\u003C\/div\u003E","autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}}]},"auto5map":{"width":"617px","height":"400px","zoom":7,"maxzoom":"14","controltype":"Large","pancontrol":1,"streetviewcontrol":0,"align":"None","maptype":"Map","mtc":"standard","baselayers":{"Map":1,"Satellite":1,"Hybrid":1},"styles":{"line_default":["0000ff","5","45","",""],"poly_default":["000000","3","25","ff0000","45"],"highlight_color":"ff0000"},"line_colors":["#00cc00","#ff0000","#0000ff"],"behavior":{"locpick":false,"nodrag":0,"nokeyboard":1,"nomousezoom":0,"nocontzoom":0,"autozoom":true,"dynmarkers":0,"overview":0,"collapsehack":0,"scale":0,"extramarkerevents":false,"clickableshapes":false,"googlebar":0,"highlight":0,"views_autocenter":true},"markermode":"0","longitude":"19.3743896484375","latitude":"47.1710465448019","id":"auto5map","markers":[{"latitude":46.662260849281,"longitude":18.880239365112,"markername":"blue","offset":0,"text":null,"autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}}]},"auto6map":{"width":"617px","height":"400px","zoom":7,"maxzoom":"14","controltype":"Large","pancontrol":1,"streetviewcontrol":0,"align":"None","maptype":"Map","mtc":"standard","baselayers":{"Map":1,"Satellite":1,"Hybrid":1},"styles":{"line_default":["0000ff","5","45","",""],"poly_default":["000000","3","25","ff0000","45"],"highlight_color":"ff0000"},"line_colors":["#00cc00","#ff0000","#0000ff"],"behavior":{"locpick":false,"nodrag":0,"nokeyboard":1,"nomousezoom":0,"nocontzoom":0,"autozoom":true,"dynmarkers":0,"overview":0,"collapsehack":0,"scale":0,"extramarkerevents":false,"clickableshapes":false,"googlebar":0,"highlight":0,"views_autocenter":true},"markermode":"0","longitude":"19.3743896484375","latitude":"47.1710465448019","id":"auto6map","markers":[{"latitude":46.7264845,"longitude":17.776805244922,"markername":"blue","offset":0,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003EA baleset helysz\u00edne\u003C\/div\u003E","autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}},{"latitude":46.7082431,"longitude":17.7649236,"markername":"blue","offset":1,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003EKer\u00fcl\u0151\u00fat\u003C\/div\u003E","autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}},{"latitude":46.7842192,"longitude":17.6967856,"markername":"blue","offset":2,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003EKer\u00fcl\u0151\u00fat\u003C\/div\u003E","autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}}]},"auto7map":{"width":"617px","height":"400px","zoom":7,"maxzoom":"14","controltype":"Large","pancontrol":1,"streetviewcontrol":0,"align":"None","maptype":"Map","mtc":"standard","baselayers":{"Map":1,"Satellite":1,"Hybrid":1},"styles":{"line_default":["0000ff","5","45","",""],"poly_default":["000000","3","25","ff0000","45"],"highlight_color":"ff0000"},"line_colors":["#00cc00","#ff0000","#0000ff"],"behavior":{"locpick":false,"nodrag":0,"nokeyboard":1,"nomousezoom":0,"nocontzoom":0,"autozoom":true,"dynmarkers":0,"overview":0,"collapsehack":0,"scale":0,"extramarkerevents":false,"clickableshapes":false,"googlebar":0,"highlight":0,"views_autocenter":true},"markermode":"0","longitude":"19.3743896484375","latitude":"47.1710465448019","id":"auto7map","markers":[{"latitude":47.790402447033,"longitude":21.695476262549,"markername":"blue","offset":0,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003EF\u00e9lp\u00e1ly\u00e1s forgalomkorl\u00e1toz\u00e1s.\u003C\/div\u003E","autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}}]},"auto8map":{"width":"617px","height":"400px","zoom":7,"maxzoom":"14","controltype":"Large","pancontrol":1,"streetviewcontrol":0,"align":"None","maptype":"Map","mtc":"standard","baselayers":{"Map":1,"Satellite":1,"Hybrid":1},"styles":{"line_default":["0000ff","5","45","",""],"poly_default":["000000","3","25","ff0000","45"],"highlight_color":"ff0000"},"line_colors":["#00cc00","#ff0000","#0000ff"],"behavior":{"locpick":false,"nodrag":0,"nokeyboard":1,"nomousezoom":0,"nocontzoom":0,"autozoom":true,"dynmarkers":0,"overview":0,"collapsehack":0,"scale":0,"extramarkerevents":false,"clickableshapes":false,"googlebar":0,"highlight":0,"views_autocenter":true},"markermode":"0","longitude":"19.3743896484375","latitude":"47.1710465448019","id":"auto8map","markers":[{"latitude":46.2517527,"longitude":20.3800163,"markername":"blue","offset":0,"text":null,"autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}}]},"auto9map":{"width":"617px","height":"400px","zoom":7,"maxzoom":"14","controltype":"Large","pancontrol":1,"streetviewcontrol":0,"align":"None","maptype":"Map","mtc":"standard","baselayers":{"Map":1,"Satellite":1,"Hybrid":1},"styles":{"line_default":["0000ff","5","45","",""],"poly_default":["000000","3","25","ff0000","45"],"highlight_color":"ff0000"},"line_colors":["#00cc00","#ff0000","#0000ff"],"behavior":{"locpick":false,"nodrag":0,"nokeyboard":1,"nomousezoom":0,"nocontzoom":0,"autozoom":true,"dynmarkers":0,"overview":0,"collapsehack":0,"scale":0,"extramarkerevents":false,"clickableshapes":false,"googlebar":0,"highlight":0,"views_autocenter":true},"markermode":"0","longitude":"19.3743896484375","latitude":"47.1710465448019","id":"auto9map","markers":[{"latitude":46.841455402131,"longitude":19.449043571949,"markername":"blue","offset":0,"text":null,"autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}}]},"auto10map":{"width":"617px","height":"400px","zoom":7,"maxzoom":"14","controltype":"Large","pancontrol":1,"streetviewcontrol":0,"align":"None","maptype":"Map","mtc":"standard","baselayers":{"Map":1,"Satellite":1,"Hybrid":1},"styles":{"line_default":["0000ff","5","45","",""],"poly_default":["000000","3","25","ff0000","45"],"highlight_color":"ff0000"},"line_colors":["#00cc00","#ff0000","#0000ff"],"behavior":{"locpick":false,"nodrag":0,"nokeyboard":1,"nomousezoom":0,"nocontzoom":0,"autozoom":true,"dynmarkers":0,"overview":0,"collapsehack":0,"scale":0,"extramarkerevents":false,"clickableshapes":false,"googlebar":0,"highlight":0,"views_autocenter":true},"markermode":"0","longitude":"19.3743896484375","latitude":"47.1710465448019","id":"auto10map","markers":[{"latitude":47.248474748282,"longitude":19.646095273783,"markername":"blue","offset":0,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003EK\u00e9t baleset ugyanazon az \u00fatszakaszon.\u003C\/div\u003E","autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}},{"latitude":47.228791528419,"longitude":19.677028636523,"markername":"blue","offset":1,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003EK\u00e9t szem\u00e9lyg\u00e9pkocsi \u00e9s egy teherg\u00e9pkocsi \u00fctk\u00f6z\u00f6tt \u00f6ssze.\u003C\/div\u003E","autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}}]},"auto11map":{"width":"617px","height":"400px","zoom":7,"maxzoom":"14","controltype":"Large","pancontrol":1,"streetviewcontrol":0,"align":"None","maptype":"Map","mtc":"standard","baselayers":{"Map":1,"Satellite":1,"Hybrid":1},"styles":{"line_default":["0000ff","5","45","",""],"poly_default":["000000","3","25","ff0000","45"],"highlight_color":"ff0000"},"line_colors":["#00cc00","#ff0000","#0000ff"],"behavior":{"locpick":false,"nodrag":0,"nokeyboard":1,"nomousezoom":0,"nocontzoom":0,"autozoom":true,"dynmarkers":0,"overview":0,"collapsehack":0,"scale":0,"extramarkerevents":false,"clickableshapes":false,"googlebar":0,"highlight":0,"views_autocenter":true},"markermode":"0","longitude":"19.3743896484375","latitude":"47.1710465448019","id":"auto11map","markers":[{"latitude":46.737978301552,"longitude":17.22752379952,"markername":"blue","offset":0,"text":null,"autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}}]},"auto12map":{"width":"617px","height":"400px","zoom":7,"maxzoom":"14","controltype":"Large","pancontrol":1,"streetviewcontrol":0,"align":"None","maptype":"Map","mtc":"standard","baselayers":{"Map":1,"Satellite":1,"Hybrid":1},"styles":{"line_default":["0000ff","5","45","",""],"poly_default":["000000","3","25","ff0000","45"],"highlight_color":"ff0000"},"line_colors":["#00cc00","#ff0000","#0000ff"],"behavior":{"locpick":false,"nodrag":0,"nokeyboard":1,"nomousezoom":0,"nocontzoom":0,"autozoom":true,"dynmarkers":0,"overview":0,"collapsehack":0,"scale":0,"extramarkerevents":false,"clickableshapes":false,"googlebar":0,"highlight":0,"views_autocenter":true},"markermode":"0","longitude":"19.3743896484375","latitude":"47.1710465448019","id":"auto12map","markers":[{"latitude":46.704795261309,"longitude":17.560520691016,"markername":"blue","offset":0,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003EA k\u00f6zleked\u00e9si esem\u00e9ny helysz\u00edne\u003C\/div\u003E","autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}},{"latitude":46.724568274015,"longitude":17.589359802344,"markername":"blue","offset":1,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003ELeterel\u00e9s\u003C\/div\u003E","autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}},{"latitude":46.702451567259,"longitude":17.472121326953,"markername":"blue","offset":2,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003EVisszat\u00e9r\u00e9si lehet\u0151s\u00e9g\u003C\/div\u003E","autoclick":0,"opts":{"title":"","highlight":0,"highlightcolor":"#FF0000","animation":"0"}}]}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:5d4d8d1c354a3ae9157949c334b5415d":{"view_name":"lista_n_zet_cikkek","view_display_id":"page_1","view_args":"230","view_path":"taxonomy\/term\/230","view_base_path":"hirek-es-informaciok\/legfrissebb-hireink\/lista","view_dom_id":"5d4d8d1c354a3ae9157949c334b5415d","pager_element":"0"}}},"viewsSlideshow":{"pub_banner-block":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"pause":["viewsSlideshowControls","viewsSlideshowCycle"],"play":["viewsSlideshowControls","viewsSlideshowCycle"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0}},"viewsSlideshowCycle":{"#views_slideshow_cycle_main_pub_banner-block":{"num_divs":3,"id_prefix":"#views_slideshow_cycle_main_","div_prefix":"#views_slideshow_cycle_div_","vss_id":"pub_banner-block","effect":"fade","transition_advanced":0,"timeout":5000,"speed":700,"delay":0,"sync":1,"random":0,"pause":1,"pause_on_click":0,"action_advanced":0,"start_paused":0,"remember_slide":0,"remember_slide_days":1,"pause_when_hidden":0,"pause_when_hidden_type":"full","amount_allowed_visible":"","nowrap":0,"fixed_height":1,"items_per_slide":1,"wait_for_image_load":1,"wait_for_image_load_timeout":3000,"cleartype":0,"cleartypenobg":0,"advanced_options":"{\u0022pager\u0022:\u0022#slideshow-nav\u0022}","advanced_options_choices":"pager","advanced_options_entry":"#slideshow-nav"}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-taxonomy page-taxonomy-term page-taxonomy-term- page-taxonomy-term-230 domain-police-hu www-police-hu" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Ugrás a tartalomra</a>
+  </div>
+    
+
+
+<div id="page">
+	<div id="header">
+		  <div class="region region-header">
+    <div id="block-views-pub-banner-block" class="block block-views clearfix">
+
+    
+  <div class="content">
+    <div class="view view-pub-banner view-id-pub_banner view-display-id-block view-dom-id-2207097f23544b63921d75b166c66c80">
+            <div class="view-header">
+      <div id="slideshow-nav"></div>    </div>
+  
+  
+  
+      <div class="view-content">
+      
+<div class="skin-default">
+  
+  <div id="views_slideshow_cycle_main_pub_banner-block" class="views_slideshow_cycle_main views_slideshow_main"><div id="views_slideshow_cycle_teaser_section_pub_banner-block" class="views-slideshow-cycle-main-frame views_slideshow_cycle_teaser_section">
+  <div id="views_slideshow_cycle_div_pub_banner-block_0" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-1 views-row-odd">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-first views-row-odd">
+    
+          <a href="http://www.police.hu/hirek-es-informaciok/legfrissebb-hireink"><img src="http://www.police.hu/sites/default/files/banner_2015_osz_02.jpg" width="977" height="137" alt="" /></a>  </div>
+</div>
+<div id="views_slideshow_cycle_div_pub_banner-block_1" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-2 views_slideshow_cycle_hidden views-row-even">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-first views-row-odd">
+    
+          <a href="http://www.police.hu/hirek-es-informaciok/utinfo/rutin"><img src="http://www.police.hu/sites/default/files/banner.jpg" width="977" height="137" alt="" /></a>  </div>
+</div>
+<div id="views_slideshow_cycle_div_pub_banner-block_2" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-3 views_slideshow_cycle_hidden views-row-odd">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-first views-row-odd">
+    
+          <a href="http://www.police.hu/hirek-es-informaciok/legfrissebb-hireink"><img src="http://www.police.hu/sites/default/files/banner_2015_osz_01.jpg" width="977" height="137" alt="" /></a>  </div>
+</div>
+</div>
+</div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-blockify-blockify-logo" class="block block-blockify clearfix">
+
+    
+  <div class="content">
+    <a href="/" id="logo" rel="home" title="A Magyar Rendőrség hivatalos honlapja"><img src="http://www.police.hu/sites/default/files/szolgalunk_vedunk_logo1.png" alt="A Magyar Rendőrség hivatalos honlapja logo" /></a>  </div>
+</div>
+<div id="block-block-4" class="block block-block clearfix">
+
+    
+  <div class="content">
+    		<div id="ul_left">
+			<div><a href="/english/change-in-border-control-procedure">EN</a></div>
+			<div><a href="/deutsch/derung-im-kontrollverfahren">DE</a></div>
+                         <div style="visibility:hidden;"><a href="#">FR</a></div>
+		</div>
+		<div id="ul_right">
+			<div id="rsslink"><a href="/rss" class="rss-feed">RSS hírcsatorna</a></div>
+                        <div id="youtubelink"><a href="http://www.youtube.com/user/PoliceHungary" class="youtube_icon">Youtube</a></div>
+
+
+		</div>
+
+<div id="segelykeres"></div>  </div>
+</div>
+<div id="block-block-5" class="block block-block clearfix">
+
+    
+  <div class="content">
+    <div id="content_top">
+			<div class="right"></div>
+			<p class="left">
+				2015. december 25, péntek                        </p>
+</div>  </div>
+</div>
+<div id="block-views-pub-hirmorzsa-block" class="block block-views clearfix">
+
+    
+  <div class="content">
+    <div class="view view-pub-hirmorzsa view-id-pub_hirmorzsa view-display-id-block view-dom-id-284503e9601d23accada34898f0b948f">
+        
+  
+  
+      <div class="view-content">
+        <div>
+      
+  <div>        <span>BRFK SMS-vonal hallássérülteknek: +36 (20) 9000-107</span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+<div id="block-block-131" class="block block-block clearfix">
+
+    
+  <div class="content">
+    <div class="block block-search contextual-links-region clearfix" id="block-search-form">
+	<div class="content">
+		<div id="search-block-form">
+			<div class="container-inline">
+				<h2 class="element-invisible">Keresés űrlap</h2>
+				<div class="form-item form-type-textfield form-item-search-block-form">
+					<label for="edit-search-block-form--2" class="element-invisible">Keresés </label>
+					<input type="text" class="form-text" maxlength="128" size="15" value="" name="search_block_form" id="edit-search-block-form--2" title="A keresendő kifejezések megadása.">
+				</div>
+				<div id="edit-actions" class="form-actions form-wrapper">
+					<div class="form-submit" alt="Keresés" id="edit-submit"></div>
+				</div>
+			</div>
+		</div>  
+	</div>
+	<div class="aslink">
+		 <a href="/kereses">Részletes kereső</a> 
+	</div>
+</div>
+  </div>
+</div>
+<div id="block-system-main-menu" class="block block-system block-menu clearfix">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/hirek-es-informaciok/legfrissebb-hireink" title="">Hírek és információk</a></li>
+<li class="leaf"><a href="/ugyintezes">Ügyintézés</a></li>
+<li class="last leaf"><a href="/a-rendorsegrol/testulet" title="">A Rendőrségről</a></li>
+</ul>  </div>
+</div>
+<div id="block-block-7" class="block block-block clearfix">
+
+    
+  <div class="content">
+    
+ 
+ <div id="akadalymentes-valtozat"  style="height:20px; width:21px;">
+	<a style="display:block;height:100%;width:100%;" href="http://akadalymentes.police.hu/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet"></a>
+	</div>
+ 
+ 
+ 
+
+
+  </div>
+</div>
+  </div>
+	</div>
+	<div id="middle">	
+					<div id="sidebar">
+				  <div class="region region-sidebar">
+    <div id="block-menu-menu-h-rek-s-inform-ci-k" class="block block-menu clearfix">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first expanded active-trail"><a href="/hirek-es-informaciok/legfrissebb-hireink" class="active-trail">Legfrissebb híreink</a><ul class="menu"><li class="first leaf"><a href="/hirek-es-informaciok/legfrissebb-hireink/ev-vegi-unnepek">Év végi ünnepek</a></li>
+<li class="leaf"><a href="/hirek-es-informaciok/legfrissebb-hireink/szervezeti-hirek">Szervezeti hírek</a></li>
+<li class="leaf"><a href="/hirek-es-informaciok/legfrissebb-hireink/helyi-hirek">Helyi hírek</a></li>
+<li class="leaf"><a href="/hirek-es-informaciok/legfrissebb-hireink/bunugyek">Bűnügyek</a></li>
+<li class="leaf"><a href="/hirek-es-informaciok/legfrissebb-hireink/felhivasok">Felhívások</a></li>
+<li class="leaf"><a href="/hirek-es-informaciok/legfrissebb-hireink/dijkituzesek">Díjkitűzések</a></li>
+<li class="leaf"><a href="/hirek-es-informaciok/legfrissebb-hireink/kozrendvedelem">Közrendvédelem</a></li>
+<li class="leaf active-trail"><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet" class="active-trail active">Közlekedésrendészet</a></li>
+<li class="leaf"><a href="/hirek-es-informaciok/legfrissebb-hireink/hatarvadasz">Határvadász</a></li>
+<li class="leaf"><a href="/hirek-es-informaciok/legfrissebb-hireink/hatarrendeszet">Határrendészet</a></li>
+<li class="leaf"><a href="/hirek-es-informaciok/legfrissebb-hireink/igazgatasrendeszet">Igazgatásrendészet</a></li>
+<li class="last leaf"><a href="/hirek-es-informaciok/legfrissebb-hireink/zsaru-magazin">Zsaru Magazin</a></li>
+</ul></li>
+<li class="leaf"><a href="/hirek-es-informaciok/nyilvanos-korozesek">Nyilvános körözések</a></li>
+<li class="collapsed"><a href="/hirek-es-informaciok/hatarinfo">Határinfo</a></li>
+<li class="collapsed"><a href="/hirek-es-informaciok/utinfo/forgalmirend-valtozasok" title="" class="menu-firstchild">Útinfo</a></li>
+<li class="collapsed"><a href="/hirek-es-informaciok/baleset-megelozes/aktualis" title="" class="menu-firstchild">Baleset-megelőzés</a></li>
+<li class="collapsed"><a href="/hirek-es-informaciok/bunmegelozes/aktualis" title="" class="menu-firstchild">Bűnmegelőzés</a></li>
+<li class="leaf"><a href="http://bbterkep.police.hu/mapdisplay/bal.html" title="">Baleseti térkép</a></li>
+<li class="leaf"><a href="http://bbterkep.police.hu/mapdisplay/bu.html" title="">Bűnügyi térkép</a></li>
+<li class="collapsed"><a href="/hirek-es-informaciok/bkkb">BKKB</a></li>
+<li class="last collapsed"><a href="/hirek-es-informaciok/tkkb/aktualis" title="" class="menu-firstchild">TKKB</a></li>
+</ul>  </div>
+</div>
+  </div>
+			</div>
+				<div id="content" >
+						  <div class="region region-content">
+    <div id="block-system-main" class="block block-system clearfix">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-views pane-lista-n-zet-cikkek" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="view view-lista-n-zet-cikkek view-id-lista_n_zet_cikkek view-display-id-page_1 view-dom-id-5d4d8d1c354a3ae9157949c334b5415d">
+        
+      <div class="view-filters">
+      <form class="ctools-auto-submit-full-form" action="/hirek-es-informaciok/legfrissebb-hireink/lista/230" method="get" id="views-exposed-form-lista-n-zet-cikkek-page-1" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-field-feltolto-szerv-tid-wrapper" class="views-exposed-widget views-widget-filter-field_feltolto_szerv_tid">
+                  <label for="edit-field-feltolto-szerv-tid">
+            Hírforrás          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-select form-item-field-feltolto-szerv-tid">
+ <select id="edit-field-feltolto-szerv-tid" name="field_feltolto_szerv_tid" class="form-select"><option value="All" selected="selected">- Választás -</option><option value="131">ORFK Kommunikációs Szolgálat</option><option value="104">Bács-Kiskun Megyei Rendőr-főkapitányság</option><option value="105">Baranya Megyei Rendőr-főkapitányság</option><option value="106">Békés Megyei Rendőr-főkapitányság</option><option value="107">Borsod-Abaúj-Zemplén Megyei Rendőr-főkapitányság</option><option value="108">Budapesti Rendőr-főkapitányság</option><option value="109">Csongrád Megyei Rendőr-főkapitányság</option><option value="110">Fejér Megyei Rendőr-főkapitányság</option><option value="111">Győr-Moson-Sopron Megyei Rendőr-főkapitányság</option><option value="112">Hajdú-Bihar Megyei Rendőr-főkapitányság</option><option value="113">Heves Megyei Rendőr-főkapitányság</option><option value="114">Jász-Nagykun-Szolnok Megyei Rendőr-főkapitányság</option><option value="115">Komárom-Esztergom Megyei Rendőr-főkapitányság</option><option value="116">Nógrád Megyei Rendőr-főkapitányság</option><option value="117">Pest Megyei Rendőr-főkapitányság</option><option value="118">Somogy Megyei Rendőr-főkapitányság</option><option value="119">Szabolcs-Szatmár-Bereg Megyei Rendőr-főkapitányság</option><option value="120">Tolna Megyei Rendőr-főkapitányság</option><option value="121">Vas Megyei Rendőr-főkapitányság</option><option value="122">Veszprém Megyei Rendőr-főkapitányság</option><option value="123">Zala Megyei Rendőr-főkapitányság</option><option value="24761">Zsaru Magazin</option></select>
+</div>
+        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input class="ctools-use-ajax ctools-auto-submit-click js-hide form-submit" type="submit" id="edit-submit-lista-n-zet-cikkek" name="" value="Alkalmazás" />    </div>
+      </div>
+</div>
+</div></form>    </div>
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/megszunt-az-utlezaras-a-49-es-fouton-0">Megszűnt az útlezárás a 49-es főúton</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 24. 16:37</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Befejezték a műszaki mentést Pátyodon.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/kozlekedesi-baleset-patyodon">Közlekedési baleset Pátyodon</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 24. 15:11</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Elterelik a 49-es főút forgalmát.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/megszunt-az-utlezaras-a-46-os-fouton-0">Megszűnt az útlezárás a 46-os főúton</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 24. 12:29</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Befejeződött a baleset helyszínelése Mezőtúr külterületén, a 46-os számú főúton.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-4 views-row-even">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/halalos-kozuti-kozlekedesi-baleset-a-67">Halálos közúti közlekedési baleset a 67-es számú főútvonalon</a></h2></div></div></div><div class="field field-name-field-lead-kep field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/halalos-kozuti-kozlekedesi-baleset-a-67"><img src="http://www.police.hu/sites/default/files/styles/296x196/public/n3233710_l.jpg?itok=ZTc4ENJT" width="296" height="196" alt="" /></a></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 24. 10:58</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">A viszi elágazásnál történt balesetben az egyik járművezető a kórházba szállítását követően elhunyt.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-5 views-row-odd">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/teljes-utlezaras-a-46-os-fouton">Teljes útlezárás a 46-os főúton</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 24. 10:57</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">A közlekedők teljes útlezárásra számíthatnak Mezőtúr külterületén.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-6 views-row-even">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/frontalisan-utkoztek-4">Frontálisan ütköztek</a></h2></div></div></div><div class="field field-name-field-lead-kep field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/frontalisan-utkoztek-4"><img src="http://www.police.hu/sites/default/files/styles/296x196/public/n3409375_l.jpg?itok=pczvrZSc" width="296" height="196" alt="" /></a></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 24. 8:30</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Segítségnyújtás nélkül elhajtott a helyszínről a dombóvári sofőr. </div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-7 views-row-odd">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/unnepi-kozlekedesi-prognozis">Ünnepi közlekedési prognózis	</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 24. 7:29</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">A 2015. december 24. és 2015. december 27. közötti időszakban jellemzően az alábbi, a közúti közlekedést befolyásoló körülményekkel találkozhatnak a közúti forgalomban résztvevők.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-8 views-row-even">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/feloldottak-a-felpalyas-utlezarast-a--0">Feloldották a félpályás útlezárást a 2-es számú főúton</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 24. 1:48</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Újra zavartalanul halad a forgalom.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-9 views-row-odd">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/zavartalan-a-forgalom-a-6-os-szamu-0">Zavartalan a forgalom a 6-os számú főúton</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 20:15</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">A helyszíni szemle, valamint a műszaki mentés befejeződött.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-10 views-row-even">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/befejeztek-a-helyszinelest-az-m5-os-7">Befejezték a helyszínelést az M5-ös autópályán </a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 19:45</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">A forgalom zavartalanul halad. </div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-11 views-row-odd">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/zavartalan-a-forgalom-a-67-es-szamu-2">Zavartalan a forgalom a 67-es számú főútvonalon</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 19:36</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Befejezték a helyszínelést és a műszaki mentést a viszi elágazásnál.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-12 views-row-even">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/felpalyas-utlezaras-a-6-os-szamu-fout-4">Félpályás útlezárás a 6-os számú főúton</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 19:16</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">A teljes útlezárás véget ért, a forgalom rendőri irányítás mellett haladhat.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-13 views-row-odd">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/befejeztek-a-helyszinelest-ujfehertonal">Befejezték a helyszínelést Újfehértónál</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 18:30</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Véget ért a félpályás forgalomkorlátozás a 4-es főúton.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-14 views-row-even">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/teljes-utlezaras-a-6-os-szamu-fouton-8">Teljes útlezárás a 6-os számú főúton</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 18:20</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Két személygépkocsi összeütközött Dunakömlődnél.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-15 views-row-odd">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/teljes-palyas-utlezaras-a-67-es-szamu">Teljes pályás útlezárás a 67-es számú főútvonalon</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 17:58</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Személyi sérüléssel járó közúti közlekedési baleset történt Visz külterületén.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-16 views-row-even">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/balesetek-miatt-torlodik-a-forgalom">Balesetek miatt torlódik a forgalom </a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 17:52</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Több anyagi káros baleset történt az M5-ös autópályán. </div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-17 views-row-odd">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/ujra-zavartalan-a-forgalom-az-m1-es-21">Újra zavartalan a forgalom az M1-es autópályán</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 17:42</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">A rendőrök befejezték a helyszínelést Győrszentiván térségében.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-18 views-row-even">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/befejeztek-a-helyszinelest-a-4-es-7">Befejezték a helyszínelést a 4-es főúton </a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 17:37</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">A forgalom ismét zavartalanul halad. </div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-19 views-row-odd">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/megindult-a-forgalom-a-maroslelei-uton">Megindult a forgalom a Maroslelei úton</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 17:29</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Fának ütközött egy személyautó a Maroslelei úton, egy ember sérült meg. Őt a mentők kórházba vitték.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-20 views-row-even">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/kozlekedesi-baleset-a-4-es-fouton-1">Közlekedési baleset a 4-es főúton</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 17:03</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Félpályás forgalomkorlátozás Újfehértó közelében.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-21 views-row-odd">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/baleset-miatt-teljes-utlezaras-van-a">Baleset miatt teljes útlezárás van a Maroslelei úton</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 17:01</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Fának ütközött egy személyautó a Maroslelei úton Makó közelében. Kerülni a Földeáki út felé lehet.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-22 views-row-even">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/baleset-az-m1-es-autopalyan-96">Baleset az M1-es autópályán</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 16:40</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Győrszentiván térségében két személygépkocsi ütközött.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-23 views-row-odd">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/megszunt-az-utlezaras-a-71-es-fouton">Megszűnt az útlezárás a 71-es főúton</a></h2></div></div></div><div class="field field-name-field-lead-kep field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/megszunt-az-utlezaras-a-71-es-fouton"><img src="http://www.police.hu/sites/default/files/styles/296x196/public/dscf4074.jpg?itok=QT517F6-" width="296" height="196" alt="" /></a></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 14:38</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Zavartalanul halad a forgalom Keszthelynél.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-24 views-row-even">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/zavartalan-a-forgalom-az-m7-es-21">Zavartalan a forgalom az M7-es autópálya somogyi szakaszán</a></h2></div></div></div><div class="field field-name-field-lead-kep field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/zavartalan-a-forgalom-az-m7-es-21"><img src="http://www.police.hu/sites/default/files/styles/296x196/public/image-ddbe7841bd634d6d0c08f7f967c65a172c0acec4f5b7ead1a840420c07469b8d-v.jpg?itok=lkphcExc" width="296" height="196" alt="" /></a></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 14:34</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Befejeződött a műszaki mentés Fonyód térségében. </div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-25 views-row-odd">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/halalos-baleset-agasegyhazan">Halálos baleset Ágasegyházán</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 14:27</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">A helyszínen életét vesztette a kerékpáros.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-26 views-row-even">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/tobb-baleset-neheziti-a-kozlekedest">Több baleset nehezíti a közlekedést</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 13:57</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">A 4-es számú főút Pest megyei szakaszán három közúti közlekedési baleset történt. </div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-27 views-row-odd">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/megszunt-a-torlodas-az-m5-os-autopalyan">Megszűnt a torlódás az M5-ös autópályán</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 11:36</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Befejeződött a helyszínelés az M5-ös autópálya Szeged felé vezető oldalán a 126+800 kilométerszelvénynél.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-28 views-row-even">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/torlodas-az-m5-os-autopalyan-csongrad">Torlódás az M5-ös autópályán Csongrád megye határánál</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 10:42</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Szalagkorlátnak ütközött egy személyautó a Szeged felé vezető oldalon.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-29 views-row-odd">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/teljes-utlezaras-8">Teljes útlezárás </a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 9:55</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Egy kamion és egy személygépkocsi ütközött össze Keszthelynél.</div></div></div></div>
+
+  </div>
+  <div class="views-row views-row-30 views-row-even views-row-last">
+    <div  class="ds-1col node node-cikk view-mode-lista_forma  clearfix">
+
+  
+  <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even"><h2><a href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet/utlezaras-az-m7-es-autopalyan-8">Útlezárás az M7-es autópályán</a></h2></div></div></div><div class="field field-name-post-date field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even">2015. december 23. 5:42</div></div></div><div class="field field-name-field-lead field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">A somogyi rendőrök Fonyódnál lezárták az autópályát Nagykanizsa irányába. </div></div></div></div>
+
+  </div>
+    </div>
+  
+      <h2 class="element-invisible">Oldalak</h2><div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a title="2. oldalra ugrás" href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet?field_feltolto_szerv_tid=All&amp;page=1">2</a></li>
+<li class="pager-item"><a title="3. oldalra ugrás" href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet?field_feltolto_szerv_tid=All&amp;page=2">3</a></li>
+<li class="pager-item"><a title="4. oldalra ugrás" href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet?field_feltolto_szerv_tid=All&amp;page=3">4</a></li>
+<li class="pager-item"><a title="5. oldalra ugrás" href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet?field_feltolto_szerv_tid=All&amp;page=4">5</a></li>
+<li class="pager-item"><a title="6. oldalra ugrás" href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet?field_feltolto_szerv_tid=All&amp;page=5">6</a></li>
+<li class="pager-item"><a title="7. oldalra ugrás" href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet?field_feltolto_szerv_tid=All&amp;page=6">7</a></li>
+<li class="pager-item"><a title="8. oldalra ugrás" href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet?field_feltolto_szerv_tid=All&amp;page=7">8</a></li>
+<li class="pager-item"><a title="9. oldalra ugrás" href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet?field_feltolto_szerv_tid=All&amp;page=8">9</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a title="Ugrás a következő oldalra" href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet?field_feltolto_szerv_tid=All&amp;page=1">következő ›</a></li>
+<li class="pager-last last"><a title="Ugrás az utolsó oldalra" href="/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet?field_feltolto_szerv_tid=All&amp;page=371">utolsó »</a></li>
+</ul></div>  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+		</div>
+		<div class="clear"></div>
+		<div class="clearfix cfie"></div>
+	</div>
+	<div id="footer">
+			  <div class="region region-footer">
+    <div id="block-menu-menu-footer-menu-1" class="block block-menu clearfix">
+
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="/info/technikai-informaciok">Technikai információk</a></li>
+<li class="leaf"><a href="/oldalterkep">Oldaltérkép</a></li>
+<li class="leaf"><a href="/info/szerzoi-jogok">Szerzői jogok</a></li>
+<li class="leaf"><a href="/info/jogi-nyilatkozat">Jogi nyilatkozat</a></li>
+<li class="leaf"><a href="/info/sajto">Sajtó</a></li>
+<li class="leaf"><a href="/info/impresszum">Impresszum</a></li>
+<li class="last leaf"><a href="/kozerdeku_adatok">Közérdekű adatok</a></li>
+</ul>  </div>
+</div>
+<div id="block-views-pub-n-ll-oldalak-block" class="block block-views clearfix">
+
+    <h2>Önálló oldalak</h2>
+  
+  <div class="content">
+    <div class="view view-pub--n-ll-oldalak view-id-pub__n_ll_oldalak view-display-id-block view-dom-id-bdc21afa7a77bb2a15f8a1955eecd605">
+        
+  
+  
+      <div class="view-content">
+      <ul class="jcarousel jcarousel-view--pub--n-ll-oldalak--block jcarousel-dom-1 jcarousel-skin-default">
+      <li class="jcarousel-item-1 odd">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.rvki.hu/"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/kszfcimer_ok_k.png?itok=Rn7wv_Yr" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.rvki.hu/">KSZF</a></span>  </div></li>
+      <li class="jcarousel-item-2 even">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.nvsz.hu"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/nvsz.png?itok=_vfLmJpr" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.nvsz.hu">Nemzeti Védelmi Szolgálat</a></span>  </div></li>
+      <li class="jcarousel-item-3 odd">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.repate.hu"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/frp_logo.jpg?itok=aanUBr4q" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.repate.hu">FRP</a></span>  </div></li>
+      <li class="jcarousel-item-4 even">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://bszki.hu/index.php"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/23_bszki_netre.jpg?itok=_F2T9YyV" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://bszki.hu/index.php">BSZKI</a></span>  </div></li>
+      <li class="jcarousel-item-5 odd">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.baleset-megelozes.eu/"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/balesetmegelozes.png?itok=39bsEH5c" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.baleset-megelozes.eu/">Balesetmegelőzés</a></span>  </div></li>
+      <li class="jcarousel-item-6 even">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.zsaru.hu/"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/zsaru_negyzet_0.jpg?itok=fedIPf7l" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.zsaru.hu/">Zsaru magazin</a></span>  </div></li>
+      <li class="jcarousel-item-7 odd">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.bm-tt.hu/rtt/index.html"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/logo_1.png?itok=zsf-EbF2" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.bm-tt.hu/rtt/index.html">RTT</a></span>  </div></li>
+      <li class="jcarousel-item-8 even">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.baleset-megelozes.eu/charta_csatlakozas.php"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/ajozankozlekedesert.png?itok=uN3_esly" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.baleset-megelozes.eu/charta_csatlakozas.php">A józan közlekedésért Charta</a></span>  </div></li>
+      <li class="jcarousel-item-9 odd">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.solidalapok.hu/"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/kha.png?itok=DPpsdIf3" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.solidalapok.hu/">Külső Határok Alap</a></span>  </div></li>
+      <li class="jcarousel-item-10 even">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://palyazat.gov.hu/"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/szechenyi_2020_logo_allo_color_nogradient_cmyk.jpg?itok=BxGNfYen" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://palyazat.gov.hu/">Széchenyi 2020</a></span>  </div></li>
+      <li class="jcarousel-item-11 odd">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.swiss-contribution.admin.ch/hungary/hu/Home/Swiss_contribution_to_Hungary"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/swisscontribution.png?itok=171lnrJX" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.swiss-contribution.admin.ch/hungary/hu/Home/Swiss_contribution_to_Hungary">Swiss Contribution</a></span>  </div></li>
+      <li class="jcarousel-item-12 even">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.biaproject.ro/?lang=en"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/llp.png?itok=Ww4rKGvH" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.biaproject.ro/?lang=en">Lifelong Learning Programme</a></span>  </div></li>
+      <li class="jcarousel-item-13 odd">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.opsz.hu/esemenyek-rendezvenyek/100x100-biztonsag-a-polgarorseg-kiemelt-bunmegelozesi-mintaprogramot-indit"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/100x100logo.jpg?itok=Dpylj3O2" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.opsz.hu/esemenyek-rendezvenyek/100x100-biztonsag-a-polgarorseg-kiemelt-bunmegelozesi-mintaprogramot-indit">100x100</a></span>  </div></li>
+      <li class="jcarousel-item-14 even">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.cepol.europa.eu"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/4_transp_for_light_background_kis_j2.jpg?itok=hhwBM6Sh" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.cepol.europa.eu">CEPOL</a></span>  </div></li>
+      <li class="jcarousel-item-15 odd">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.rendvedelmikar.hu"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/mrk.jpg?itok=e3gxMZnL" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.rendvedelmikar.hu">Magyar Rendvédelmi Kar</a></span>  </div></li>
+      <li class="jcarousel-item-16 even">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.rendorpenztar.hu"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/rendoripenztar.jpg?itok=9rjl2kRy" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.rendorpenztar.hu">Rendőri Nyugdíjpénztár</a></span>  </div></li>
+      <li class="jcarousel-item-17 odd">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.nokitc.hu"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/bmnok_logo.png?itok=4jMUF8ob" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.nokitc.hu">BM Nemzetközi Oktatási Kp.</a></span>  </div></li>
+      <li class="jcarousel-item-18 even">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.bpaldozatsegites.hu"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/bpaldozatsegites.jpg?itok=yRlVzTjv" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.bpaldozatsegites.hu">Budapesti áldozatsegítés</a></span>  </div></li>
+      <li class="jcarousel-item-19 odd">  
+  <div class="views-field views-field-field-logo">        <div class="field-content"><a href="http://www.belugyialapok.hu/"><img src="http://www.police.hu/sites/default/files/styles/75x75/public/bekugyia2.png?itok=jWrRrTf9" width="75" height="75" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.belugyialapok.hu/">Belügyialapok</a></span>  </div></li>
+  </ul>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+  </div>
+	</div>
+</div>
+  </body>
+</html>

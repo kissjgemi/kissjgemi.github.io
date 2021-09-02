@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Nosifer');
+
+body {
+    background-color: limegreen;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 100%
+}
+#tarolo {
+    width: 960px;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+#fejlec, #lablec {
+    background-image: url('fejlec_bg.jpg');
+    padding: 10px;
+    font-family: 'Nosifer', cursive;
+    color: white;
+    text-align: center;
+}
+#fejlec h1 {
+    font-size: 1.5em;
+}
+#fejlec ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#fejlec li{
+    display: inline;
+    padding: 10px 20px;
+}
+a {
+    color: yellow;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#tartalom {
+    padding: 10px;
+}
+img {
+    float: right;
+}
+table {
+    background-color: #EEE;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+th, td {
+    border: 1px dotted black;
+    padding: 5px;
+}
+fieldset {
+    width: 300px;
+    margin: 0 auto;
+}
+input[type=text], input[type=email] {
+    width: 300px;
+}
+input[type=number] {
+    text-align: right;
+}
+textarea {
+    resize: none;
+}

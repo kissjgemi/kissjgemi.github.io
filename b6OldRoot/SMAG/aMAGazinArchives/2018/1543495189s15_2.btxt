@@ -1,0 +1,116 @@
+<!-- aktualtimestamp: 1537850641
+2018 szeptember 24. Szakmai angol jegyzet
+  -->
+<div class="parabellum">
+<p class="main">
+Érettségi vizsga feladatsorok:<br />
+<br />
+<a href="https://www.oktatas.hu/kozneveles/erettsegi/feladatsorok_vizsgatargyankent" target="_blank">oktatas.hu</a><br />
+Kiválasztás:<br />
+-informatika<br />
+-Bármely érettségi vizsgaidőszakból<br />
+-angol nyelven<br />
+</p>
+</div>
+<div class="parabellum">
+<div id="more-article1537850641"><a onclick="show('less-article1537850641'); hide('more-article1537850641')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1537850641" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1537850641'); show('more-article1537850641')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+1. Begonia<br />
+Many people like nicely flowering indoor plants. Taking care of these is a rewarding task and many books help with it. The two pages shown in the example were created based on a book describing indoor plants. Create these two pages using a word processing program according to the example and the description. The text of the document can be found in file szoveg.txt (UTF-8 encoding). You should insert pictures kep1.jpg and kep2.jpg into the document.<br />
+<br />
+Sok ember szeret szépen virágzó beltéri növényeket. Ezek ápolása remek feladat, és sok könyv segít. A példában bemutatott két oldal egy beltéri növényeket leíró könyv alapján készült. Ezt a két oldalt szöveges feldolgozó program segítségével hozzuk létre a példa és a leírás szerint. A dokumentum szövege megtalálható a szoveg.txt fájlban (UTF-8 kódolás). Helyezzen el a kep1.jpg és kep2.jpg képeket a dokumentumba.<br />
+<br />
+1. Open file szoveg.txt in the word processor and save it as begonia in the default format of the word processor.<br />
+<br />
+Nyissa meg a szoveg.txt fájlt a szövegszerkesztőben, és mentse el begonia-ként a szövegszerkesztő alapértelmezett formátumában.<br />
+<br />
+2. In the attached text some occurrences of the name of the begonia flower were misspelled as begoni. With the exception of the four Latin names, which were spelt correctly, replace each occurrence of the word begoni in such a way that instead of it the word begonia appears. (The plural of the word also appears in the text.)<br />
+<br />
+A mellékelt szövegben a begónia virágának nevét több helyen begónként, hibásan írták le. A helyesen írott négy latin név kivételével a "begoni" szó minden előfordulását helyettesítse oly módon, hogy helyettük a "begonia" szó jelenjen meg. (A szó többesszáma is megjelenik a szövegben.)<br />
+<br />
+3. The page size is A4, its orientation is portrait, the top and bottom margins are 2.3 cm, the left and right margins are 1.8 cm.<br />
+<br />
+Az oldal mérete A4, álló tájolású, felső és alsó margó 2,3 cm, bal és jobb margó 1,8 cm.<br />
+<br />
+4. The default font type of the document should be Times New Roman (Nimbus Roman). The font sizes used in the main body of the text are 48, 16, 12 and 8 points (this latter is the size of the Roman numbers), in the header the font size is 10 points. The paragraphs should be aligned justified with the exception of the headings.<br />
+<br />
+5. Format the header of the document (which contains the words Indoor plants and the page number) according to the example.<br />
+<br />
+A dokumentum alapértelmezett betűtípusa a Times New Roman (Nimbus Roman). A szöveg fő részében használt betűméretek 48, 16, 12 és 8 pont (ez utóbbi a római számok mérete), a fejlécben a betűméret 10 pont. A bekezdéseket igazítani kell a címsorok kivételével.<br />
+<br />
+6. The main title is aligned centered, leave a spacing of 24 points (0.85 cm) before and 36 points (1.27 cm) after it.<br />
+<br />
+A főcím középre igazított, a sorköz 24 pont (0,85 cm) előtte és 36 pont (1,27 cm) utána.<br />
+<br />
+7. On the first page, both the left and right indents of the text in the box should be 3 cm. The text should have a line spacing of 1.5 lines, the background should be light green and the text should be dark green. The part of the text shown in the example should be placed into the box and should be surrounded by a double-line frame of width 2 points. Leave a spacing of 48 points (1.69 cm) after the paragraph.<br />
+<br />
+Az első oldalon a dobozban lévő szöveg bal és jobb oldali behúzásának 3 cm-nek kell lennie. A szövegnek 1,5 vonal sortávolsággal kell rendelkeznie, a háttér világos zöld, és a szöveg sötétzöld legyen. A példában feltüntetett szövegrészt a dobozban kell elhelyezni, és egy dupla, 2 pont vastagságú kerettel kell körbevenni. Hagyjon 48 pontos távolságot (1,69 cm) a bekezdés után.<br />
+<br />
+8. Below the text in the box, create the table of the legend, which should be aligned centered. It should be a table that contains 2 columns and 5 rows and has no borders; the 2nd and 4th rows should be empty. The column widths should be 2 cm and 4 cm, respectively. Set the background of the cells in the first column as follows: in the 1st row it is grey, in the 3rd row it is green, in the 5th row it is yellow. Type texts Dormant period, Growth period, Flowering period into the 1st, 3rd and 5th cells of the second column, respectively.<br />
+<br />
+A dobozban lévő szöveg alatt hozzon létre egy táblázatot a jelmagyarázatnak, amelyet középre kell igazítani. Táblázatnak 2 oszlopot és 5 sort kell tartalmaznia, és ne legyen kerete; a 2. és a 4. sorban üresnek kell lennie. Az oszlopszélességnek 2 cm és 4 cm-nek kell lennie. Állítsa be a cellák hátterét az első oszlopba az alábbi sorrendben: az 1. sorban szürke, a 3. sorban zöld, az 5. sorban sárga. Írja be a "Nyugtalan időszak", a "Növekedési idő", a "Virágzó periódus" szövegeket a második oszlop 1., 3. és 5. celláiba.<br />
+<br />
+9. The second page contains the description of two begonia species in one table each. The characteristics of the upper table are:<br />
+<br />
+A második oldalon két begóniafaj leírása található egy táblázatban. A felső táblázat jellemzői:<br />
+<br />
+a. Contains 2 columns and 3 rows<br />
+a. 2 oszlopot és 3 sort tartalmazzon<br />
+<br />
+b. The table ranges from margin to margin; the width of its first column is 7 cm.<br />
+b. A táblázat méretei margótól margóig tartsanak, az első oszlop 7 cm széles legyen.<br />
+<br />
+c. The cells should be merged vertically in the first column.<br />
+c. Az első oszlop celláit össze kell olvasztani.<br />
+<br />
+d. The second row of the second column should be divided into 12 parts.<br />
+d. A második oszlop második sorát 12 részre kell osztani.<br />
+<br />
+e. The table has no borders.<br />
+e. A táblázatnak nincs kerete.<br />
+<br />
+10. Insert picture kep1.jpg into the first column of the upper table. Reduce it proportionally to change its width to 6.5 cm; align it centered both horizontally and vertically.<br />
+<br />
+Helyezze a képet (kep1.jpg) a felső táblázat első oszlopába. Csökkentse méreteit arányosan állítsa a szélességét 6,5 cm-re; igazítsa középre vízszintesen és függőlegesen.<br />
+<br />
+11. The Latin name of the begonia species (BEGONIA SEMPERFLORENS) should be placed into the first cell of the second column with a font whose style is small caps, size is 12 points; it should be aligned centered horizontally. Leave a spacing of 12 points (0.42 cm) before and after it.<br />
+<br />
+A begóniai fajok latin nevét (BEGONIA SEMPERFLORENS) a második oszlop első cellájába kell helyezni egy betűtípussal, amelynek stílusa kis kapitális, a méret 12 pont; vízszintesen középre kell igazítani. Hagyjon 12 pontos távolságot (0,42 cm) előtte és utána.<br />
+<br />
+12. Type the numbers of the months with Roman numbers (I, II, III, IV, V, VI, VII, VIII, IX, X, XI, XII) into the 12 cells of equal width of the second row using a font size of 8 points. As this begonia species flowers throughout the year, colour the background of all 12 cells with the yellow colour used in the legend.<br />
+<br />
+Írja be a hónapok számát római számokkal(I, II, III, IV, V, VI, VII, VIII, IX, X, XI, XII) a második sor egyforma szélességű 12 cellájába 8 pontos betűmérettel. Mivel ez a begónia faj virágzik egész évben, színezze a háttérben mind a 12 cellák az útmutatóban használt sárga színnel.<br />
+<br />
+13. The 3rd cell should contain the short description of the flower. Format it according to the example. The spacing used should be 12 points (0.42 cm). At the temperature set the notation for degrees Celsius in the standard way (oC).<br />
+<br />
+A harmadik cellának tartalmaznia kell a virág rövid leírását. Formázza meg a példának megfelelően. A sortávnak 12 pontnak (0,42 cm) kell lennie. Állítsa be a hőmérséklet jelzést Celsius fokban a standard módon (oC).<br />
+<br />
+14. Create the lower table so that it differs from the upper one in only that the position of the two columns are swapped.<br />
+<br />
+Az alsó táblázatot úgy hozza létre, hogy a felsőtől csak abban különbözzön, hogy a két oszlop fel legyen cserélve.<br />
+<br />
+15. Place picture kep2.jpg into the right-side cell of the lower table, the left-side cells should contain the description of the species BEGONIA ELATIOR. The format of the picture and the text parts is completely identical with the format used in the upper table. The colouring of the cells containing the months is:<br />
+<br />
+Helyezze a képet (kep2.jpg) az alsó táblázat jobb oldali cellájába, a bal oldali cellák tartalmazzák a BEGONIA ELATIOR fajta leírását. A kép és a szövegrészek formátuma teljesen azonos a felső táblában használt formátummal. A hónapokat tartalmazó cellák színezése:<br />
+<br />
+ I, XII: dormant period (grey); alvó periódus (szürke)<br />
+ II, III, IV, V, X, XI: growth period (green); növekvő periódus (zöld)<br />
+ VI, VII, VIII, IX: flowering period (yellow). virágzó periódus (sárga)<br />
+<br />
+16. Use hyphenation in the required places of the document.<br />
+<br />
+Használjon elválasztást a dokumentum szükséges helyein.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

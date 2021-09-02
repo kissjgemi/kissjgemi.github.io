@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content=" width=device-width, 
+                                    height=device-height, 
+                                    initial-scale=1.0, 
+                                    minimum-scale=1.0, 
+                                    maximum-scale=1.0, 
+                                    user-scalable=no, 
+			                        minimal-ui" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<title>Linux Mint 19 telepítése Oracle VM 5.2 Virtualboxban</title>
+    <meta name="author" content="Kiss J. Gábor" />
+    <meta name="designer" content="Kiss J. Gábor" >
+    <meta name="copyright" content="Copyright @ 2018 b6.hu & DoubleKiss Studio" />
+    <meta name="keywords" content="Drag&Drop" />
+    <meta name="description" content="Stuff, you should know about LINUX B6 Basics." />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow"/>
+    <meta name="MSNBOT" content="index, follow" /> 
+    <meta name="revisit" content="3 day" />
+
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">		
+    <meta name="apple-mobile-web-app-title" content="LINUX B6 Basics">
+    <meta name="application-name" content="LINUX B6 Basics" />
+
+<link rel="stylesheet" type="text/css" href="B6Packages4Linux.css/b6ground.css">
+<script type="text/javascript" src="B6Packages4Linux.js/b6ground.js"> </script>
+</head>
+<body>
+<button onclick="topFunction()" id="button2top" title="Lap tetejére">Fel</button>
+<p class="header">
+<a>&lt;Előző &nbsp; </a>
+<a href="index.html">B6</a> &nbsp;  
+<a href="01StartUpHu.html">Következő &gt;</a>
+</p>
+<h1>Linux Mint 19 telepítése Oracle VM 5.2 Virtualboxban</h1>
+<p class="content">
+Mendenek előtt szerezzük be a Linux Mint 19 Tara Cinnamon változatának linuxmint-19-cinnamon-64bit.iso telepítő csomagját a linux mint hivatalos oldaláról: <br />
+</p>
+<p class="center">
+<a href="https://www.linuxmint.com/edition.php?id=254" target="_blank">Linux Mint 19 "Tara" - Cinnamon (64-bit) - Linux Mint</a><br />
+</p>
+<p class="content">
+Indítsuk el az Oracle VM 5.2 virtuális dobozát, 
+és hozzunk benne létre egy a linux telepítésére alkalmas virtuális gépet a következőkben felsoroltak szerint.
+Első lépésben az <span class="button">&nbsp;<i>Új</i>&nbsp;</span> ikonra kattintva kezdjük el az új virtuális gép adatait megadni.
+</p>
+<p class="center">
+<img class="gallery" alt="lm19install01" src="B6Packages4Linux.img/lm19install01.jpg" />
+<img class="gallery" alt="lm19install02" src="B6Packages4Linux.img/lm19install02.jpg" />
+</p>
+<p class="content">
+Adjuk a virtuális gépünknek a "LinuxMint19Tara" nevet. 
+A virtuális gép operációs rendszerének a tipusa "Linux" lesz, aminek a verziója "Ububtu (64 bit)".
+A <span class="button">&nbsp;<i>Következő</i>&nbsp;</span> képernyőn a virtuális gép számára fentartott memória méretét állítjuk be. 
+Ez esetünkben 4096 MB = 4 GB legyen.
+Ezt persze gépünk saját memórtájából vesszük el. Windows10 esetén, ha a rendszermemória 8 GB, már szűknek bizonyulhat a maradék.
+</p>
+<p class="center">
+<img class="gallery" alt="lm19instaövetkezőll03" src="B6Packages4Linux.img/lm19install03.jpg" />
+<img class="gallery" alt="lm19install04" src="B6Packages4Linux.img/lm19install04.jpg" />
+</p>
+<p class="content">
+A <span class="button">&nbsp;<i>Következő</i>&nbsp;</span> lapokon a virtuális géphez háttértárolót (azaz merevlemezt) rendelünk hozzá. 
+Új virtuális lemezt készítünk, aminek a lemezképét a fizikai merevlemezen a Virtualbox munka könyvtárában fogjuk tárolni. 
+</p>
+<p class="center">
+<img class="gallery" alt="lm19install05" src="B6Packages4Linux.img/lm19install05.jpg" />
+<img class="gallery" alt="lm19install06" src="B6Packages4Linux.img/lm19install06.jpg" />
+</p>
+<p class="content">
+A virtuális merevlemez mérete szükség esetén dinamikusan növekedhet a 16 GB-ben meghatározott kezdő méretéhez képest.
+Nevét a virtuális géppel megegyezőre választjuk, ami "LinuxMint19Tara". 
+Itt nyilván lehetünk nagylelkűbbek is a leírásban megadott 16 GB méretnél, 
+de a hordozhatóság, ami ezeknek a virtuális képeknek az előnye, erősen romlik.
+USB2-n keresztül 15-20 percig is tarthat egy 20 GB-os virtuális kép lemásolása, vagy visszaírása.
+</p>
+<p class="center">
+<img class="gallery" alt="lm19install07" src="B6Packages4Linux.img/lm19install07.jpg" />
+<img class="gallery" alt="lm19install08" src="B6Packages4Linux.img/lm19install08.jpg" />
+</p>
+<p class="content">
+A <span class="button">&nbsp;<i>Létrehozás</i>&nbsp;</span> után a Virtuálbox felsorolt gépei közé kerül a "LinuxMint19Tara".
+Ez egyelőre még csak egy operációs rendszer nélküli, de a Linux telepítésére alkalmas gép. 
+Készítsük fel a rendszer telepítésére a linuxmint-19-cinnamon-64bit.iso telepítő lemez virtuális behelyezésével.
+</p>
+<p class="center">
+<img class="gallery" alt="lm19install09" src="B6Packages4Linux.img/lm19install09.jpg" />
+<img class="gallery" alt="lm19install10" src="B6Packages4Linux.img/lm19install10.jpg" />
+</p>
+<p class="content">
+A <span class="button">&nbsp;<i>Konfigurálás</i>&nbsp;</span> ikonra kattintva megnyitjuk a Beállítások ablakot.
+Ebben válasszuk ki a 'Tároló' beállítást. 
+A "Storage Devices" CD/DVD ikonja mellett az "üres" felirat látható.
+</p>
+<p class="center">
+<img class="gallery" alt="lm19install11" src="B6Packages4Linux.img/lm19install11.jpg" />
+<img class="gallery" alt="lm19install12" src="B6Packages4Linux.img/lm19install12.jpg" />
+</p>
+<p class="content">
+A "Paraméterek" között az "Optikai meghajó - IDE Secondary" melletti CD/DVD ikonra kattintva jelöljük ki a linuxmint-19-cinnamon-64bit.iso fájlt!
+A "Storage Devices" CD/DVD ikonja mellett az "linuxmint-19-cinnamon-6..." cimke jelzi, hogy a telepítő lemez a "helyén van".
+</p>
+<p class="center">
+<img class="gallery" alt="lm19install13" src="B6Packages4Linux.img/lm19install13.jpg" />
+<img class="gallery" alt="lm19install14" src="B6Packages4Linux.img/lm19install14.jpg" />
+</p>
+<p class="content">
+Készen is állunk a telepítésre.
+A <span class="button">&nbsp;<i>Start</i>&nbsp;</span> ikonra kattintva indítsuk el a most elkészített "LinuxMint19Tara" nevű virtuális gépet.
+</p>
+<p class="center">
+<img class="gallery" alt="lm19install15" src="B6Packages4Linux.img/lm19install15.jpg" />
+<img class="gallery" alt="lm19install16" src="B6Packages4Linux.img/lm19install16.jpg" />
+</p>
+<p class="content">
+Egy új ablakban megjelenik a virtuális gép kijelzője.
+Az indító lemezről elkezdi betölteni a Linux rendszert.
+Rövd idő elteltével megjelenik a Linux Mint 19 Cinnamon Live változatának a grafikus kezelőfelülete.
+</p>
+<p class="center">
+<img class="gallery" alt="lm19install17" src="B6Packages4Linux.img/lm19install17.jpg" />
+<img class="gallery" alt="lm19install18" src="B6Packages4Linux.img/lm19install18.jpg" />
+</p>
+<p class="content">
+Az asztalon található "Install Linux Mint" parancsikonnal indítsuk el a telepítés folyamatát! Állítsuk be a telepítés nyelvét 
+és a <span class="button">&nbsp;<i>Folytatás</i>b</span>an a billentyűzetkiosztást.
+</p>
+<p class="center">
+<img class="gallery" alt="lm19install19" src="B6Packages4Linux.img/lm19install19.jpg" />
+<img class="gallery" alt="lm19install20" src="B6Packages4Linux.img/lm19install20.jpg" />
+</p>
+<p class="content">
+A <span class="button">&nbsp;<i>Folytatás</i>b</span>an kihagyjuk a harmadik féltől származó szoftverek telepítését.
+Majd elfogadjuk, hogy új Linux rendszerünket a merevlemez törlésével, az összes rajta található adat elvesztésével telepítjük.
+</p>
+<p class="center">
+<img class="gallery" alt="lm19install21" src="B6Packages4Linux.img/lm19install21.jpg" />
+<img class="gallery" alt="lm19install22" src="B6Packages4Linux.img/lm19install22.jpg" />
+</p>
+<p class="content">
+Még jó, hogy ez csak a virtuális gép virtuális adathordozójára igaz. A gazdagépet nem kell féltenünk az ármánytól.
+A <span class="button">&nbsp;<i>Telepítés most</i>&nbsp;</span> után ezért nyugodtan engedélyezzük a lemez partícionálását és törlését 
+az esetleg felbukkanó figyelmeztetésben.
+</p>
+<p class="center">
+<img class="gallery" alt="lm19install23" src="B6Packages4Linux.img/lm19install23.jpg" />
+<img class="gallery" alt="lm19install24" src="B6Packages4Linux.img/lm19install24.jpg" />
+</p>
+<p class="content">
+Fogadjuk el a felajánlott időzónát, ami Budapest kell, hogy legyen.
+Adjuk meg a rendszer felhasználójának a nevét és válasszunk a számítógépnek is egy kifejező nevet.
+Irjuk be használni kívánt felhasználónevünket és egy jelszót, mely egyben rendszergazda jelszavunk is lesz.
+Amennyiben a jelszóval védeni kívánjuk virtuális gépünket, akkor ne válasszuk az 'Automatikus bejelentkezés'-t,
+hanem jelöljük meg a 'Jelszó megkövetelése a bejelentkezéshez'-t.
+A 'Saját mappa titkosítása' tovább növeli a biztonságot, de rendszerhiba után a mappánk még számunkra is elérhetetlenné válhat.
+</p>
+<p class="center">
+<img class="gallery" alt="lm19install25" src="B6Packages4Linux.img/lm19install25.jpg" />
+<img class="gallery" alt="lm19install26" src="B6Packages4Linux.img/lm19install26.jpg" />
+</p>
+<p class="content">
+A <span class="button">&nbsp;<i>Folytatás</i>b</span>an első lépésben a telepítő fájlokat másol a meghajtóra,
+majd telepíti az eszközöket és programokat. Végül törli az ideiglenes mappákat és fájlokat.
+A telepítés elkészülte után felajánlja a választás lehetőségét 'A tesztelés folytatása' és az
+'Újraindítás most' között.
+</p>
+<p class="center">
+<img class="gallery" alt="lm19install27" src="B6Packages4Linux.img/lm19install27.jpg" />
+<img class="gallery" alt="lm19install28" src="B6Packages4Linux.img/lm19install28.jpg" />
+</p>
+<p class="content">
+Az újraindítást választva a rendszer kéri az indítólemez eltávolítását a virtuális cd/dvd meghajtóból. 
+Az Enter lenyomásával folytassuk az újraindítást. 
+A leválasztás szükség esetén a virtuálbox állapotsorában található cd ikonra történő jobb klikkel megnyíló menüben is kiválasztható. 
+"Üres" meghajtó esetén az ikon kiszürkül (egyébként szines).
+</p>
+<p class="center">
+<img class="gallery" alt="lm19install29" src="B6Packages4Linux.img/lm19install29.jpg" />
+<img class="gallery" alt="lm19install30" src="B6Packages4Linux.img/lm19install30.jpg" />
+</p>
+<p class="content">
+Hosszabb szünetek (hosszúnak tűnő ideig tartó fekete monitorkép) után megtörténik a Linux első betöltése és megjelenik az Üdvözlő képernyő. 
+Amennyiben a bejelentkezést választottuk, akkor természetesen meg kell adnunk felhasználónevünket és jelszavunkat előtte.<br />
+A gép kikapcsolásakor célszerű az "Elmenteni a gép állapotát" opciót választani.
+Ez olyan, mint egy tuningolt hibernálás: tényleg ott folytatjuk újraindításkor a munkát, ahol a virtuális gép kikapcsolásakor abbahagytuk.
+</p>
+
+<p class="content">
+</p>
+
+<p class="footer">
+Linux GG: <a href="http://linux.gamma-square.com">Reviews</a>
+</p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- aktualtimestamp: 1537258583
+2018 szeptember 17. IT alapok
+  -->
+<div class="parabellum">
+<p class="main">
+A Windows 7 telepítése és beállításai Oracle VM Virtualboxban 1<br />
+<br />
+A telepítéshez a Virtualbox 5.2.18-as, vagy újabb verzióját használjuk:<br />
+<a href="https://www.virtualbox.org/wiki/Downloads">Letöltés</a><br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1537258583"><a onclick="show('less-article1537258583'); hide('more-article1537258583')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1537258583" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1537258583'); show('more-article1537258583')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+&nbsp;<br /><br />
+I. előkészület<br />
+<br />
+Hozzon létre új virtuális gép-munkamenetet 13EDWIN7 vagy 13EEWIN7 néven. 32bites architektúrájú Windows 7-et válassza operációs rendszernek<br />
+<br />
+A gyári beállításokon ne változtasson, kivéve a fájl mérete tekintetében, mely 20 GB legyen.<br />
+A boot sorrendnél tiltsa a Floppy-meghajtót, a mutatóeszköz pedig a PS/2-es egér legyen.<br />
+Mountolja be a telepítő ISO-ját.<br />
+A tárolóknál SATA vezérlővel vegyen még fel 2 db egyaránt 5-5 GB-s virtuális merevlemezt VOL1 és VOL2 néven.<br />
+A hálókártya NAT-on működjön.<br />
+A megosztott mappájának vegye fel a saját osztálya nevét viselő ESTI mappában található almappát.<br />
+<br />
+II. telepítés<br />
+<br />
+A telepítés során hozzon létre a 20 GB-s tárolón két logikai partíciót, egy 15 GB-set és egy 5 GB-set. Az operációs rendszert a nagyobbra telepítse.<br />
+A számítógép neve 13EDg1 vagy 13EEg1 legyen, a felhasználónév pedig u1. A jelszó Minad123 legyen.<br />
+A számítógép munkahelyi LAN-ra csatlakozzon.<br />
+<br />
+III. személyre szabás<br />
+Az asztalon jelenítse meg a Sajátgép, a Hálózat és a Vezérlőpult ikonját, valamint hozzon létre parancsikont a parancssornak.<br />
+Telepítse a VB integrációs szolgáltatását.<br />
+Telepítse a chrome webböngészőt, a bandizip és a sumatra programokat. A telepítő állományokat a gazdagép megosztásából érje el.<br />
+Társítsa a html formátumú fájlokat a chrome böngészőhöz, a pdf-kiterjesztésűeket pedig a sumatrához.<br />
+Jelenítse meg az ismert fájltípusok esetében is a kiterjesztést.<br />
+Telepítse a windows-szolgáltatásokban a játékokat<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

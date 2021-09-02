@@ -1,0 +1,41 @@
+h1 {
+    color: #66FF00;
+    text-align: right;
+}
+
+h2 {
+    color: #66FFCC;
+}
+
+ul {
+    list-style: disc;
+}
+
+p, table, li {
+    font-family: monospace;
+}
+
+table {
+    font-weight: bold;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid #33FF99;
+}
+
+td:hover {
+    text-decoration: line-through;
+}
+
+th {
+    background-color: green;
+}
+
+p.fontos {
+    border: dashed medium #66FF00;
+}
+
+body {
+    background-color: #C0C0C0;
+}

@@ -1,0 +1,63 @@
+<!-- aktualtimestamp: 1539342493
+2018 október 08.  IT alapok
+  -->
+<div class="parabellum">
+<p class="main">
+A Windows 7 telepítése és beállításai Oracle VM Virtualboxban (folytatás)<br />
+<a href="https://www.pctips3000.com/category/windows-7/" target="_blank">Adalék</a><br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1539342493"><a onclick="show('less-article1539342493'); hide('more-article1539342493')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1539342493" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1539342493'); show('more-article1539342493')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+<a href="https://www.howtogeek.com/howto/6317/block-users-from-using-certain-applications-with-applocker/" target="_blank">Legyen letiltva az mspaint és a passziánsz program a wgroup számára.</a><br />
+<br />
+gpedit.msc<br />
+számítógép konfigurációja<br />
+A windows beállításai<br />
+Biztonsági beállítások<br />
+Alkalmazásvezérlési házirend<br />
+Applocker<br />
+Végrehajtható fájlok szabályai<br />
+->RMB új szabály<br />
+<br />
+Házirend frissítése...<br />
+cmd >>  C:WindowsSystem32>gpupdate /force<br />
+<br />
+szolgáltatások<br />
+Alkalmazásidentitás<br />
+RMB -> Tulajdonságok<br />
+indítás típusa == Automatikus<br />
+----------------------------------------------<br />
+!!!! Hát ez nem működött :((<br />
+!!!! lehetséges ok:<br />
+!!!! a Windows példány aktiválás hiányzik<br />
+További linkek:<br />
+<a href="https://social.technet.microsoft.com/wiki/contents/articles/5211.how-to-configure-applocker-group-policy-to-prevent-software-from-running.aspx" target="_blank">1</a><br />
+<a href="https://www.grouppolicy.biz/2010/04/how-to-configure-applocker-group-policy-in-windows-7-to-block-third-party-browsers/" target="_blank">2</a><br />
+----------------------------------------------<br />
+<br />
+<a href="https://www.pctips3000.com/how-to-restrict-users-or-groups-from-shutting-down-a-windows-7-computer/" target="_blank">A számítógépet a wgroup tagjai ne állíthassák le!</a><br />
+<br />
+<a href="https://www.thewindowsclub.com/how-to-restrict-the-number-of-login-attempts-in-windows-7" target="_blank">A wgroup tagjainak fiókjai 3 elvetélt bejelentkezési kísérletet követően legyenek zárolva.</a> (Feloldás: netplwiz)<br />
+<br />
+<a href="https://www.sevenforums.com/tutorials/107536-shut-down-enable-disable-shut-down-without-logging.html" target="_blank">A rendszer ne legyen leállítható bejelentkezés nélkül!</a><br />
+<br />
+<a href="https://support.microsoft.com/en-us/help/240791/how-to-run-programs-automatically-when-a-user-logs-on" target="_blank">A rendszergazda fiókba való bejelentkezéskor automatikusan induljon el a notepad.exe!</a><br />
+<br />
+<a href="https://www.howtogeek.com/123393/how-to-automatically-run-programs-and-set-reminders-with-the-windows-task-scheduler/" target="_blank">A helpdesk fióknak minden nap 18:40 perckor érkezzen egy figyelmeztetés arról, hogy 5 perc múlva lejár a munkaideje!</a><br />
+<br />
+<a href="https://helpdeskgeek.com/how-to/add-a-message-to-the-logon-screen-for-users-in-windows/" target="_blank">Belépés ablak üzenet</a><br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

@@ -1,0 +1,33 @@
+<!-- aktualtimestamp: 1538115422
+2018 szeptember 26. Programozás
+  -->
+<div class="parabellum">
+<p class="main">
+Tananyag:<br />
+<br />
+HTML programozás Visual Studio Code programmal:<br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VUldDdlpJR1dYcHM?usp=sharing">07 Űrlapok 1</a><br /><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VS1g5cWRwa215b1U?usp=sharing">08 Űrlapok 2</a><br /><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VVnlmelFRTVBOdVE?usp=sharing">09 Táblázatok</a><br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1538115422"><a onclick="show('less-article1538115422'); hide('more-article1538115422')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1538115422" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1538115422'); show('more-article1538115422')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+Java programozás Greenfoot fejlesztői környezetben:<br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VUWRRb1R5aVE2NU0?usp=sharing">05 Hangok</a><br /><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VdVFETndzN2liYjA?usp=sharing">06 Véletlen</a><br /><br />
+<a href="https://drive.google.com/drive/folders/0ByPawM4np90VNDU0dmQ4LXpjN2M?usp=sharing">07 Konstruktor</a><br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+poganysuli.hu tananyag
+ &nbsp;</span> </font></p>
+</div>

@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Java2019feb04LongJump.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">Java2019feb04LongJump.java</td></tr></table>
+<hr>
+<pre>
+<span class="literal">package</span> java2019feb04longjump;
+
+<span class="literal">import</span> java.io.*;
+
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST0">Java2019feb04LongJump</span> {
+
+    <span class="literal">private</span> <span class="literal">static</span> RandomAccessFile <span class="ST1">f</span>;
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">final</span> <span class="literal">int</span> <span class="ST1">N</span> = 9;
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">final</span> <span class="literal">int</span> <span class="ST1">L</span> = 9;
+    <span class="literal">private</span> <span class="literal">static</span> String <span class="ST1">m</span>[][] = <span class="literal">new</span> String[<span class="ST1">N</span>][<span class="ST1">L</span>];
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f00</span>(<span class="literal">int</span> hossz, <span class="literal">char</span> jel, String name) {
+        System.<span class="ST1">out</span>.print(jel + <span class="string">&quot;</span><span class="string"> |</span><span class="string">&quot;</span>);
+        System.<span class="ST1">out</span>.print(name + <span class="string">&quot;</span><span class="string">| </span><span class="string">&quot;</span>);
+        <span class="literal">for</span> (<span class="literal">int</span> ii = name.length() - 5; ii &lt; hossz; ii++) {
+            System.<span class="ST1">out</span>.print(jel);
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">inputFile</span>(String fileName, String mode) {
+        <span class="literal">try</span> {
+            <span class="ST1">f</span> = <span class="literal">new</span> RandomAccessFile(fileName, mode);
+            <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST1">N</span>; ii++) {
+                String sor = <span class="ST1">f</span>.readLine();
+                <span class="ST1">m</span>[ii] = sor.split(<span class="string">&quot;</span><span class="string">, </span><span class="string">&quot;</span>); <span class="comment">//             </span>
+            }
+            <span class="ST1">f</span>.close();
+            System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">1. </span><span class="string">&quot;</span> + fileName + <span class="string">&quot;</span><span class="string">.... beolvasva!</span><span class="string">&quot;</span>);
+        } <span class="literal">catch</span> (IOException e) {
+            System.<span class="ST1">err</span>.println(<span class="string">&quot;</span><span class="string">Fájl olvasási hiba: </span><span class="string">&quot;</span> + e.getMessage());
+            System.<span class="ST3">exit</span>(1);
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">deleteFile</span>(String fileName) {
+        File file = <span class="literal">new</span> File(fileName);
+        <span class="literal">if</span> (file.exists()) {
+            file.delete();
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">appendFile</span>(String fileName, String mode, String str) {
+        File file = <span class="literal">new</span> File(fileName);
+        <span class="literal">long</span> fileLength = file.length();
+        <span class="literal">try</span> {
+            <span class="ST1">f</span> = <span class="literal">new</span> RandomAccessFile(fileName, mode);
+            <span class="ST1">f</span>.seek(fileLength);
+            <span class="ST1">f</span>.writeBytes(str + <span class="string">&quot;</span><span class="ST4">\n</span><span class="string">&quot;</span>);
+            <span class="ST1">f</span>.close();
+        } <span class="literal">catch</span> (IOException e) {
+            System.<span class="ST1">err</span>.println(<span class="string">&quot;</span><span class="string">Fájl íráási hiba: : </span><span class="string">&quot;</span> + e.getMessage());
+            System.<span class="ST3">exit</span>(1);
+        }
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">int</span> <span class="ST2">legnagyobb</span>(String t[]) {
+        <span class="literal">int</span> jj = 3;
+        <span class="literal">while</span> (t[jj].equals(<span class="string">&quot;</span><span class="string">x</span><span class="string">&quot;</span>)) {
+            jj++;
+        }
+        <span class="literal">int</span> maxIndex = jj;
+        <span class="literal">for</span> (<span class="literal">int</span> ii = jj; ii &lt; <span class="ST1">L</span>; ii++) {
+            <span class="literal">if</span> (!t[ii].equals(<span class="string">&quot;</span><span class="string">x</span><span class="string">&quot;</span>)) {
+                <span class="literal">if</span> (Integer.<span class="ST3">parseInt</span>(t[ii]) &gt; Integer.<span class="ST3">parseInt</span>(t[maxIndex])) {
+                    maxIndex = ii;
+                }
+            }
+        }
+        <span class="literal">return</span> Integer.<span class="ST3">parseInt</span>(t[maxIndex]); <span class="comment">// a legnagyobb ugrás helye</span>
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f2</span>(String label, String fileName, String mode) {
+        System.<span class="ST1">out</span>.print(label);
+        <span class="ST3">deleteFile</span>(fileName);
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; <span class="ST1">N</span>; i++) {
+            String str = String.<span class="ST3">format</span>(<span class="string">&quot;</span><span class="string">%15s%6s cm</span><span class="string">&quot;</span>, <span class="ST1">m</span>[i][0], <span class="ST1">m</span>[i][2]);
+            <span class="ST3">appendFile</span>(fileName, mode, str);
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">A </span><span class="string">&quot;</span> + fileName + <span class="string">&quot;</span><span class="string">.... kész!</span><span class="ST4">\n</span><span class="string">&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f3</span>(String label) {
+        System.<span class="ST1">out</span>.println(label);
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; <span class="ST1">N</span>; i++) {
+            String str = String.<span class="ST3">format</span>(<span class="string">&quot;</span><span class="string">%15s%6d cm</span><span class="string">&quot;</span>, <span class="ST1">m</span>[i][0], <span class="ST3">legnagyobb</span>(<span class="ST1">m</span>[i]));
+            System.<span class="ST1">out</span>.println(str);
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f4</span>(String label, String fileName, String mode) {
+        <span class="ST3">deleteFile</span>(fileName);
+        System.<span class="ST1">out</span>.println(label);
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST1">N</span> - 1; ii++) {
+            <span class="literal">for</span> (<span class="literal">int</span> jj = ii + 1; jj &lt; <span class="ST1">N</span>; jj++) {
+                <span class="literal">if</span> (<span class="ST3">legnagyobb</span>(<span class="ST1">m</span>[ii]) &lt; <span class="ST3">legnagyobb</span>(<span class="ST1">m</span>[jj])) {<span class="comment">// a győztes megy előre</span>
+                    String[] t = <span class="ST1">m</span>[ii];
+                    <span class="ST1">m</span>[ii] = <span class="ST1">m</span>[jj];
+                    <span class="ST1">m</span>[jj] = t;
+                }
+            }
+        }
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST1">N</span>; ii++) {
+            String str = String.<span class="ST3">format</span>(<span class="string">&quot;</span><span class="string">%15s%6s cm</span><span class="string">&quot;</span>, <span class="ST1">m</span>[ii][0], <span class="ST3">legnagyobb</span>(<span class="ST1">m</span>[ii]));
+            System.<span class="ST1">out</span>.println(str);
+            <span class="ST3">appendFile</span>(fileName, mode, str);
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">  A </span><span class="string">&quot;</span> + fileName + <span class="string">&quot;</span><span class="string">.... kész!</span><span class="ST4">\n</span><span class="string">&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f5</span>(String label) {
+        System.<span class="ST1">out</span>.print(label);
+        <span class="literal">int</span> szum = 0;
+        <span class="literal">for</span> (<span class="literal">int</span> i = 0; i &lt; <span class="ST1">N</span> - 1; i++) {
+            <span class="literal">if</span> (<span class="ST1">m</span>[i][1].equals(<span class="string">&quot;</span><span class="string">Pécsi Kenguruk</span><span class="string">&quot;</span>)) {
+                szum += <span class="ST3">legnagyobb</span>(<span class="ST1">m</span>[i]);
+            }
+        }
+        String str = szum + <span class="string">&quot;</span><span class="string"> pont</span><span class="string">&quot;</span>;
+        System.<span class="ST1">out</span>.println(str);
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;&quot;</span>);
+    }
+
+    <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">f6</span>(String label, String fileName, String mode) {
+        System.<span class="ST1">out</span>.println(label);
+        <span class="literal">for</span> (<span class="literal">int</span> ii = 0; ii &lt; <span class="ST1">N</span> - 1; ii++) {
+            <span class="literal">int</span> hozott = Integer.<span class="ST3">parseInt</span>(<span class="ST1">m</span>[ii][2]);
+            <span class="literal">int</span> szerzett = <span class="ST3">legnagyobb</span>(<span class="ST1">m</span>[ii]);
+            <span class="literal">if</span> (hozott &lt; szerzett) {
+                String str = String.<span class="ST3">format</span>(<span class="string">&quot;</span><span class="string">%15s</span><span class="string">&quot;</span>, <span class="ST1">m</span>[ii][0]);
+                <span class="comment">//System.out.println(str); //képernyőre</span>
+                <span class="ST3">appendFile</span>(fileName, mode, str);
+            }
+        }
+        System.<span class="ST1">out</span>.println(<span class="string">&quot;</span><span class="string">  A </span><span class="string">&quot;</span> + fileName + <span class="string">&quot;</span><span class="string">... kész</span><span class="ST4">\n</span><span class="string">&quot;</span>);
+    }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">main</span>(String[] args) {
+        <span class="ST3">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">START JAVA 2019feb04 Long jump</span><span class="string">&quot;</span>);
+        <span class="ST3">inputFile</span>(<span class="string">&quot;</span><span class="string">txt/longjump.txt</span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">r</span><span class="string">&quot;</span>);
+        <span class="ST3">f2</span>(<span class="string">&quot;</span><span class="string">2. </span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">txt/csucsok.txt</span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">rw</span><span class="string">&quot;</span>);
+        <span class="ST3">f3</span>(<span class="string">&quot;</span><span class="string">3. A veresnyző neve és legnagyobb ugrása</span><span class="string">&quot;</span>);
+        <span class="ST3">f4</span>(<span class="string">&quot;</span><span class="string">4. Az elért legjobb eredmény szerinti csökkenő sorrend</span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">txt/rangsor.txt</span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">rw</span><span class="string">&quot;</span>);
+        <span class="comment">//HF</span>
+        <span class="ST3">f5</span>(<span class="string">&quot;</span><span class="string">5. A Pécsi Kenguruk pontszáma: </span><span class="string">&quot;</span>);
+        <span class="ST3">f6</span>(<span class="string">&quot;</span><span class="string">6. Egyéni csúcsot ugrottak</span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">txt/ujCsucs.txt</span><span class="string">&quot;</span>, <span class="string">&quot;</span><span class="string">rw</span><span class="string">&quot;</span>);
+        <span class="ST3">f00</span>(60, <span class="string">&#39;</span><span class="string">*</span><span class="string">&#39;</span>, <span class="string">&quot;</span><span class="string">END JAVA 2019feb04 Long Jump</span><span class="string">&quot;</span>);
+    }
+
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+* |START JAVA 2019feb04 Long jump| ***********************************
+
+1. txt/longjump.txt.... beolvasva!
+2. A txt/csucsok.txt.... kész!
+
+3. A veresnyző neve és legnagyobb ugrása
+      Pác János   648 cm
+   Kozma Alfonz   661 cm
+  Haragos Csaba   622 cm
+   Tóbiás Félix   662 cm
+  Csonka Elemér   647 cm
+        Ug Imre   698 cm
+   Örvös Eduárd   644 cm
+     Csõsz Béla   641 cm
+  Csabai Kázmér   659 cm
+
+4. Az elért legjobb eredmény szerinti csökkenő sorrend
+        Ug Imre   698 cm
+   Tóbiás Félix   662 cm
+   Kozma Alfonz   661 cm
+  Csabai Kázmér   659 cm
+      Pác János   648 cm
+  Csonka Elemér   647 cm
+   Örvös Eduárd   644 cm
+     Csõsz Béla   641 cm
+  Haragos Csaba   622 cm
+  A txt/rangsor.txt.... kész!
+
+5. A Pécsi Kenguruk pontszáma: 1967 pont
+
+6. Egyéni csúcsot ugrottak
+  A txt/ujCsucs.txt... kész
+
+* |END JAVA 2019feb04 Long Jump| *************************************
+<font color="#009933">BUILD SUCCESSFUL (total time: 0 seconds)</font>
+
+</pre></body>
+</html>

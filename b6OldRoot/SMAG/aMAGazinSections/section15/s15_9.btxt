@@ -1,0 +1,26 @@
+<!-- aktualtimestamp: 1538767131
+Android alkalmazásfejlesztés 03.
+  -->
+<div class="parabellum">
+<p class="main">
+A fejlesztőkörnyezet kialakítása<br />
+<a href="http://www.eclipse.org/downloads/" target="_blank">Eclipse download</a><br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1538767131"><a onclick="show('less-article1538767131'); hide('more-article1538767131')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1538767131" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1538767131'); show('more-article1538767131')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+<iframe width="800" height="450" frameborder="0" src="https://mega.nz/embed#!5WxWSYSQ!HiXnN6k1UFBviLUzn5zqlstQJu2XMLsJmqtSgqfv4pM" allowfullscreen></iframe><br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+<a href="https://www.youtube.com/watch?v=jSSnfUAzMcM" target="_blank">Youtube</a>
+ &nbsp;</span> </font></p>
+</div>

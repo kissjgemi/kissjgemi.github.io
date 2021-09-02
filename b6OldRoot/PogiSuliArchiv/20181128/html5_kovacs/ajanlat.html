@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kovács és Fiai Kft.</title>
+    <link rel="stylesheet" href="stilusok.css">
+</head>
+
+<body>
+    <div id="tarolo">
+        <div id="fejlec">
+            <h1>Kovács & Fiai Szobafestő és Mázoló Kft.</h1>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="referenciak.html">Referenciák</a></li>
+                <li><a href="arak.html">Árak</a></li>
+                <li><a href="ajanlat.html">Ajánlatkérés</a></li>
+            </ul>
+        </div>
+        <div id="tartalom">
+            <h2>Ajánlatkérés</h2>
+            <form action="http://poganysuli.hu/js/cel.html">
+                <fieldset>
+                    <legend>Ajánlatkéréshez töltse ki az űrlapot!</legend>
+                    <p><label>Név:<br><input type="text" name="nev"></label></p>
+                    <p><label>Email cím:<br><input type="email" name="email"><label></p>
+            <p>Munka:<br>
+                <label><input type="radio" name="munka" value="festes" checked>Festés</label><br>
+                        <label><input type="radio" name="munka" value="mazolas">Mázolás</label><br>
+                        <label><input type="radio" name="munka" value="tapetazas">Tapétázás</label><br></p>
+                    <p>Falfelület mérete:<br>
+                        <input type="number" min="10" max="1000" value="50" name="meret"></p>
+                    <p>Egyéb megjegyzés:<br>
+                        <textarea name="megjegyzes" rows="5" cols="40"></textarea></p>
+                    <p><input type="submit" value="Ajánlat kérése"></p>
+                </fieldset>
+            </form>
+        </div>
+        <div id="lablec">
+            <p>&copy; Minden jog fenntartva.</p>
+        </div>
+    </div>
+</body>
+
+</html>

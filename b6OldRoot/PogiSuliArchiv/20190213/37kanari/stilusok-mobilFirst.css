@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 100%;
+}
+#tarolo {
+    max-width: 960px;
+    background-color: #E5BA8D;
+    margin: 0 auto;
+    padding: 10px;
+}
+nav {
+    background-color: #824620;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    padding: 0 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+header, footer {
+    background-color: #19518E;
+    color: white;
+    padding: 5px;
+    margin-top: 29px;
+}
+main {
+    float: none;
+    padding: 5px;
+    margin: 0;
+    width: calc(100% - 10px);
+}
+aside {
+    float: none;
+    padding: 0;
+    text-align: center;
+    width: calc(100% - 10px);
+}
+figure {
+    margin: 10px 0;
+}
+img {
+    max-width: 100%;
+}
+#keret {
+    text-align: center;
+}
+footer {
+    clear: both;
+    text-align: center;
+}
+
+iframe {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-image: url('kepek/hatter.jpg');
+        background-attachment: fixed;
+    }
+    main {
+        float: left;
+        width: calc(65% - 10px);
+    }
+    aside {
+        float: right;
+        width: calc(35% - 10px);
+    }
+    aside, footer {
+        text-align: left;
+    }
+}

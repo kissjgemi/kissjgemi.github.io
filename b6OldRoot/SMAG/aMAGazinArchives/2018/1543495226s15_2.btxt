@@ -1,0 +1,95 @@
+<!-- aktualtimestamp: 1537851708
+2018 szeptember 24. Programozás
+  -->
+<div class="parabellum">
+<p class="main">
+Programozás elmélet<br />
+Bevezetés a programozásba<br />
+<br />
+Változó<br />
+• A programok adatokon végeznek különféle manipulációkat, ezek az adatok a program futása alatt változtatják értéküket.<br />
+• A kezdeti adatokat a program eltárolja a változókba, az értékek az algoritmusnak megfelelően módosulnak a program futása folyamán.<br />
+• Az algoritmus végén a változó a végeredmény értékével rendelkezik.<br />
+• A változókat használat előtt deklarálni kell, meg kell adni a típusát, nevét, esetleg értékét is ekkor inicializáljuk.<br />
+• Egy változót a program tetszőleges részén deklarálhatunk.<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1537851708"><a onclick="show('less-article1537851708'); hide('more-article1537851708')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1537851708" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1537851708'); show('more-article1537851708')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+Változó érvényességi tartománya<br />
+• A programnak az a része, ahol a változó használható.<br />
+• A változódeklaráció helye határozza meg az érvényességi tartományt.<br />
+A változó lehet (a deklarálás helyétől függően):<br />
+tagváltozó: az osztály vagy objektum része, az osztály egészében látható (alkalmazható).<br />
+Az osztály változók deklarálásánál a static kulcsszót kell használni<br />
+lokális változó: egy kódblokkon belül alkalmazzuk. A láthatósága a deklaráció helyétől az őt körülvevő blokk végéig tart<br />
+Metódusok formális paraméterei az egész metóduson belül láthatók.<br />
+<br />
+Változó<br />
+Olyan karaktersorozat, amely betűvel kezdődik, és betűvel vagy számjeggyel folytatódhat. Arra használjuk, hogy bárhol a program szövegében hivatkozhassunk rá. Betűnként nem csak a nemzeti<br />
+karaktereket, hanem az _ és $ jelet is használhatjuk. Azonosító képzési szabályok:<br />
+• bármilyen hosszú karaktersorozat lehet<br />
+• nem kezdődhet számjeggyel, nem lehet kulcsszó , és nem lehet a nyelv egy előre definiált konstansa (true, false vagy null)<br />
+• két azonosító csak akkor egyezik meg, ha a karaktereik rendre megegyeznek.<br />
+<br />
+Változó gyakorlati tanácsok ☺<br />
+• próbáljunk meg jól olvasható, beszédes azonosítókat választani! (minSebesseg, karakterekSzama)<br />
+• az osztályok azonosítóját nagybetűvel kezdjük (Emberek, Diákok, Vitaminok)<br />
+• a változók és metódusok azonosítóját kisbetűvel kezdjük. (szám, darab)<br />
+• a konstansokat csupa nagybetűvel írjuk. (ALAPAR)<br />
+• az azonosítókat úgy tagoljuk, hogy az összetett szavak kezdőbetűit nagybetűvel, a többit kisbetűvel írjuk (púposteve) (maxSebessegHatar)<br />
+<br />
+Kulcsszó<br />
+Olyan karaktersorozat, amelynek az adott nyelv tulajdonít jelentést, és ez a jelentés a programozó által nem megváltoztatható.<br />
+Egy-két java kulcsszó:<br />
+default, if, package, boolean, do, private, try, double, import, void, byte, else, public, case<br />
+<br />
+Megjegyzések<br />
+A megjegyzések nem a fordítónak vagy az interpreternek szólnak, hanem a programozónak.<br />
+A megjegyzést a forrásszövegben háromféle módon helyezhetjük el:<br />
+// -től sorvégig megjegyzés<br />
+/*<br />
+/**<br />
+*/ zárójelek között tetszőleges hosszan<br />
+*/ dokumentációs megjegyzés.<br />
+A fejlesztőkörnyezet segítségével automatikusan lehet generálni<br />
+HTML dokumentációt, ami felhasználja a dokumentációs megjegyzéseket is<br />
+<br />
+Kifejezések - operandusok és operátorok<br />
+A kifejezések, arra valók, hogy a program egy adott pontjánismert értékekből új értékeket határozzunk meg.<br />
+Alapvetően kétféle feladata van:<br />
+• végrehajtani a számításokat<br />
+• visszaadni a számítás végeredményét<br />
+Az operandus az értéket képviseli lehet literál, nevesített konstans, változó vagy függvényhívás<br />
+Az operátorok műveleti jelek (pl. *, /, +, -)<br />
+Kerek zárójelek a műveletek végrehajtási sorrendjét befolyásolják.<br />
+<br />
+Aritmetikai operátorok<br />
+Alapvető matematikai műveletek végzésére használjuk őket.<br />
++ , -, *, /, % (mod)<br />
+Implicit konverzió:<br />
+Amikor egy aritmetikai operátor egyik operandusa egész a másik pedig lebegőpontos, akkor az eredmény is lebegőpontos lesz.<br />
+Explicit konverzió:<br />
+A konverziót ki is "kényszeríthetjük". A programozó ebben az esetben a kifejezés értékére ráerőltet" egy típust.<br />
+<br />
+Feladat:<br />
+Háromszög területe egy oldalból és a hozzátartozó magasságból.<br />
+<br />
+eljárás terület()<br />
+be (a>0, ma>0: egész); // oldal, oldalhoz tartozó magasság<br />
+ki: ("t " + "=" + ( valós ) (a*ma)/2 ); //<br />
+eljárás vége<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

@@ -1,0 +1,87 @@
+<!-- aktualtimestamp: 1541533286
+2018 november 05. Programozás
+  -->
+<div class="parabellum">
+<p class="main">
+<h3>Programozás elmélet</h5><br />
+<h4>eljárások függvények</h4><br />
+<br />
+A programot célszerű kisebb egységekre (alprogram) bontani, melyeket a program bizonyos pontjairól aktivizálhatunk, így áttekinthetőbbé, olvashatóbbá válik a forrásprogram, valamint a többször előforduló tevékenységeket elegendő egyszer megírni.<br />
+A Javaban metódusnak nevezzük az alprogramot.<br />
+A metódus utasítások összessége, melyet meghívhatunk a metódus nevére való hivatkozással.<br />
+Egy metódus lehet eljárás vagy függvény aszerint, hogy van-e visszatérési értéke.<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1541533286"><a onclick="show('less-article1541533286'); hide('more-article1541533286')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1541533286" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1541533286'); show('more-article1541533286')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+&nbsp;<h4>Példák</h4><br />
+public static void main(String[] args) {<br />
+f1();<br />
+f2();<br />
+...<br />
+}<br />
+private static void f1() {<br />
+}<br />
+private static void f2() {<br />
+}<br />
+Függvény – private static típus<br />
+<br />
+public static void main(String[] args) {<br />
+terület();<br />
+}<br />
+<br />
+private static void terület () {<br />
+System.out.println("T= " + t(2,3));<br />
+}<br />
+<br />
+private static double t(int a, int ma) {<br />
+return (a*ma)/2;<br />
+}<br />
+<br />
+<h4>A feladat</h4><br />
+1. Írjon ki a minta szerint 20 db „-„ karaktert a vonalathuz eljárást használva.<br />
+private static void vonalathuz(int n, char c){<br />
+...<br />
+}<br />
+<br />
+2. Készítsen eljárást rendezésABC amely ciklussal (10) véletlenszám párt állít elő az [1, 10] intervallumban, minden ciklusban (körben) kettőt az rnd függvény segítségével<br />
+private static void rendezésABC(){<br />
+...<br />
+}<br />
+private static int rnd(int ah, int fh){<br />
+...<br />
+}<br />
+<br />
+• a csere eljárással rendezi az elempárokat, majd kiírja a rendezett elempárokat<br />
+private static void csere(){<br />
+...<br />
+}<br />
+<br />
+3. Írjon ki a minta szerint 8 db „*„ karaktert a vonalathuz eljárást használva<br />
+private static void vonalathuz(int n, char c){<br />
+...<br />
+}<br />
+<br />
+4. Készítsen eljárást a kiszámítja az a=2 cm m a =3 cm háromszög területét a t=(a*m a )/2 képlettel, amelyet a t függvényben programozunk le.<br />
+private static double t(int a, int ma){<br />
+...<br />
+}<br />
+<br />
+5. Írjon ki a minta szerint 20 db „-„ karaktert a vonalathuz eljárást használva.<br />
+private static void vonalathuz(int n, char c){<br />
+...<br />
+}<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

@@ -1,0 +1,45 @@
+<!-- aktualtimestamp: 1536066311
+2018 szeptember 3. IT alapok
+  -->
+<div class="parabellum">
+<p class="main">
+Előadó: Frankó Kálmán<br />
+<br />
+Munkavédelmi alapismeretek<br />
+<br />
+Számrendszerek: a 2-es számrendszer.<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1536066311"><a onclick="show('less-article1536066311'); hide('more-article1536066311')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1536066311" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1536066311'); show('more-article1536066311')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+Átváltás a 2-es és 10-es számrendszerek között:<br />
+<br />
+<br />
+(BIN) 1010111 === 87 (DEC);<br />
+<br />
+Átalakítás 2-vel való sorozatos osztással:<br />
+(DEC) 192  | 0<br />
+_______ 96  | 0<br />
+_______ 48  | 0<br />
+_______ 24  | 0<br />
+_______ 12  | 0<br />
+________ 6  | 0<br />
+________ 3  | 1<br />
+________ 1  | 1  --------> 00000011 (BIN)<br />
+<br />
+Ajánlott weboldal:<br />
+https://informatika.gtportal.eu/index.php?f0=szamrendszerek_13<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>

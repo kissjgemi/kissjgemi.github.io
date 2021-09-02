@@ -1,0 +1,84 @@
+h1 {
+    color: #EC0D0D;
+    text-align: center;
+}
+
+h2 {
+    color: #660000;
+}
+
+h1:hover:after, h2:hover:after, p:hover:after, li:hover:after {
+    content: " #CSS";
+    color: black;
+    font-style: italic;
+    font-size: smaller;
+    border: 3px outset #E8B962;
+    background-color: #E8B962;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    border-left: 12px solid green;
+    background-color: #00CCCC;
+    width: 15em;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+li:hover {
+    border-left: 12px solid red;
+}
+
+p.fontos {
+    background-color: #CAF7CE;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table:hover {
+    border-left: 2px dashed;
+    border-right: 2px dashed;
+}
+
+th {
+    background-color: white;
+    color: olive;
+    text-align: right;
+}
+
+th:hover:before {
+    content: "*";
+}
+
+td {
+    background-color: black;
+    color: white;
+}
+
+td:hover {
+    background-color: white;
+    color: black;
+}
+
+p:first-letter {
+    font-size: xx-large;
+}
+
+p {
+    font-family: monospace;
+}
+
+body {
+    background-color: #FFCCFF;
+}
+
+hr {
+    height: 15px;
+    background-color: red;
+}

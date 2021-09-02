@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Matek2.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Courier}
+pre {color: #000000; background-color: #ffffff; font-family: Courier}
+table {color: #000000; background-color: #e9e8e2; font-family: Courier}
+.ST0 {font-family: Courier; font-weight: bold}
+.ST2 {font-family: Courier; font-weight: bold; font-style: italic}
+.ST1 {color: #009900; font-family: Courier; font-style: italic}
+.ST3 {font-family: Courier; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<hr>
+<table width="100%"><tr><td align="center">Matek2.java</td></tr></table>
+<hr>
+<pre>
+
+<span class="literal">package</span> matek2;
+<span class="literal">import</span> java.util.*;<span class="comment">// IO műveletek</span>
+        
+<span class="literal">public</span> <span class="literal">class</span> <span class="ST0">Matek2</span> {
+
+        <span class="literal">private</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST1">f1</span>(){
+            Scanner sc = <span class="literal">new</span> Scanner(System.<span class="ST2">in</span>);
+            System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">a= </span><span class="string">&quot;</span>); <span class="literal">int</span> a= sc.nextInt();
+            System.<span class="ST2">out</span>.print(<span class="string">&quot;</span><span class="string">b= </span><span class="string">&quot;</span>); <span class="literal">int</span> b= sc.nextInt();
+            System.<span class="ST2">out</span>.println(a+<span class="string">&quot;</span><span class="string"> + </span><span class="string">&quot;</span>+b+<span class="string">&quot;</span><span class="string"> = </span><span class="string">&quot;</span>+(a+b));
+            <span class="literal">if</span> (a&gt;b){
+              System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">A nagyobb szám: </span><span class="string">&quot;</span> + a );  
+            }<span class="literal">else</span>{
+              System.<span class="ST2">out</span>.println(<span class="string">&quot;</span><span class="string">A nagyobb szám: </span><span class="string">&quot;</span> + b );  
+            }
+        }
+
+    <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST1">main</span>(String[] args) {
+            <span class="ST3">f1</span>();
+        }
+}
+
+<hr> 
+<p align="center">AZ EREDMÉNY</p>  
+<hr>  
+<font color="#800080">run:</font>
+a= 32
+b= 14
+32 + 14 = 46
+A nagyobb szám: 32
+<font color="#009933">BUILD SUCCESSFUL (total time: 7 seconds)</font>
+
+</pre></body>
+</html>

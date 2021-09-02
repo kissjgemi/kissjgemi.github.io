@@ -1,0 +1,13 @@
+http_source
+
+target_file
+news.btxt
+number_of_templates
+1
+filenames_of_templates
+s06_t0
+number_of_topics
+2
+filenames_of_topics
+s06_1.btxt
+s06_2.btxt

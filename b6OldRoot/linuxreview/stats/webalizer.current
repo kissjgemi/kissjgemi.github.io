@@ -1,0 +1,134 @@
+# Webalizer V2.23-08 Incremental Data - 10/14/2019 09:22:33
+2019 10 14 9 22 33
+4 4 1 4 2 1 8814 1 1 0
+1 43 43 14 14
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+4 4 8814 1 1 1
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+4 4 8814 1
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0
+0
+0
+4
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/B6Reviews4Linux.css/b6ground.css
+0 1 0 1683 0 0
+/favicon.ico
+0 1 0 4286 0 0
+/
+0 1 0 2258 1 0
+/B6Reviews4Linux.js/b6ground.js
+0 1 0 587 0 0
+# End Of Table - urls
+# -sites- (monthly)
+catv-176-63-1-223.catv.broadband.hu
+0 4 4 8814 1 1571044953
+/
+# End Of Table - sites (monthly)
+# -sites- (daily)
+catv-176-63-1-223.catv.broadband.hu
+0 4 4 8814 1 1571044953
+/
+# End Of Table - sites (daily)
+# -referrers- 
+- (Direct Request)
+1 2
+http://linux.gamma-square.com/
+0 2
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:69.0) Gecko/20100101 Firefox/69.0
+0 4
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames

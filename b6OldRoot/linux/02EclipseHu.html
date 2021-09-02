@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content=" width=device-width, 
+                                    height=device-height, 
+                                    initial-scale=1.0, 
+                                    minimum-scale=1.0, 
+                                    maximum-scale=1.0, 
+                                    user-scalable=no, 
+			                        minimal-ui" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<title>2. Az Eclipse IDE telepítése</title>
+    <meta name="author" content="Kiss J. Gábor" />
+    <meta name="designer" content="Kiss J. Gábor" >
+    <meta name="copyright" content="Copyright @ 2018 b6.hu & DoubleKiss Studio" />
+    <meta name="keywords" content="Drag&Drop" />
+    <meta name="description" content="Stuff, you should know about LINUX B6 Basics." />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow"/>
+    <meta name="MSNBOT" content="index, follow" /> 
+    <meta name="revisit" content="3 day" />
+
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">		
+    <meta name="apple-mobile-web-app-title" content="LINUX B6 Basics">
+    <meta name="application-name" content="LINUX B6 Basics" />
+
+<link rel="stylesheet" type="text/css" href="B6Packages4Linux.css/b6ground.css">
+<script type="text/javascript" src="B6Packages4Linux.js/b6ground.js"> </script>
+</head>
+<body>
+<button onclick="topFunction()" id="button2top" title="Lap tetejére">Fel</button>
+<p class="header">
+<a href="01StartUpHu.html">&lt;Előző &nbsp; </a>
+<a href="index.html">B6</a> &nbsp; 
+<a href="03EditMainMenu.html">Következő &gt;</a>
+</p>
+<h1>2. Az Eclipse IDE telepítése</h1>
+<p class="content">
+Ha letöltöttél vagy egyéb módon beszereztél egy szoftvercsomagot, akkor azt archivált (azaz tarred) és tömörített (azaz gzipped) formátumban
+ .tar.gz vagy .tgz kiterjesztéssel* <small>(* .tar == tömörítetlen archívum fájl ; .gz == gzip használatával tömörített fájl )</small> kaptad meg.
+Példánkban <a href="http://www.eclipse.org/downloads/packages/eclipse-ide-javascript-and-web-developers/photonr">
+a JavaScript és Web Fejlesztők részére készített Eclipse IDE</a>-t telepítjük.
+Először másoljuk át a <span class="dir">Saját mappa</span> könyvtárba, majd csomagoljuk ki.<br />
+</p>
+<p class="content">
+<b>I.</b> Használhatjuk a <i><b>Parancssor</b></i> eszközt (<i><b>Terminál</b></i>t)!<br />
+A <i><b>Terminál</b></i> fókuszában megnyitásakor a <span class="dir">Saját mappa</span> könyvtár van. Ellenőrizük a könyvtár tartalmát:
+</p>
+<pre> user@host ~ $ <mark> ls </mark></pre>
+<p>
+A listában szerepelnie kell a telepítő csomagnak:
+</p>
+<pre class="zip"> eclipse-javascript-photon-R-linux-gtk-x86_64.tar.gz </pre>
+<p>
+Ha a csomag elérhető a könyvtárban, akkor utasítást adhatunk a kibontásra. A kibontásra utasító parancsok értelmezése a következő:<br />
+<b>-z</b> az archívum kezelése a gzip paranccsal történik<br />
+<b>-x</b> az archívumot kibontani kell<br />
+<b>-v</b> a folyamat során képernyőre kerül a feldolgozás menete a fájlok listázásával<br />
+<b>-f data.tar.gz</b> a fájlok a data.tar.gz nevű archívumból kerülnek kiolvaásra<br />
+Ez az <b>eclipse-javascript-photon-R-linux-gtk-x86_64.tar.gz</b> archívum esetén a következőképpen néz ki:
+</p>
+<pre> user@host ~ $ <mark> tar -xvzf eclipse-javascript-photon-R-linux-gtk-x86_64.tar.gz </mark></pre>
+<p>
+Újabb listázás után láthatjuk a kitömörített mappát a <i><b>Terminál</b></i>ban:
+</p>
+<pre> user@host ~ $ <mark> ls </mark></pre>
+<pre><span class="dir"> eclipse </span>&#09;<span class="zip"> eclipse-javascript-photon-R-linux-gtk-x86_64.tar.gz</span> </pre>
+<p class="content">
+<b>II.</b> Használhatjuk a <i><b>Fájlkezelő</b></i> eszközt!<br />
+<b>A.</b> Jelöljük ki a telepítő csomagot, majd válasszuk <i>Szerkesztés</i> menü <i>Kibontás ide</i> alpontját<br />
+</p>
+<p class="center">
+<img class="gallery" alt="unzip01" src="B6Packages4Linux.img/unzipLinux01.jpg" />
+<img class="gallery" alt="unzip02" src="B6Packages4Linux.img/unzipLinux02.jpg" /><br />
+<img class="gallery" alt="unzip03" src="B6Packages4Linux.img/unzipLinux03.jpg" />
+<img class="gallery" alt="unzip04" src="B6Packages4Linux.img/unzipLinux04.jpg" /><br />
+<img class="gallery" alt="unzip05" src="B6Packages4Linux.img/unzipLinux05.jpg" />
+<img class="gallery" alt="unzip06" src="B6Packages4Linux.img/unzipLinux06.jpg" /><br />
+</p>
+<p class="content">
+<b>B.</b> Jobb klikk a <i><b>Fájlkezelő</b></i>ben a telepítő csomagra, majd a felbukkanó menü panelben rákattintunk a <i>Kibontás ide</i> pontra.<br />
+<br />
+<br />
+A kibontás után helyezzük át az eclipse mappát a <span class="dir">Saját mappa</span> könyvtárba 
+és a telepítés befejezéseként készítsünk az Eclipse futtatásához parancsikont a főmenüben!
+</p>
+
+<p class="content">
+</p>
+
+<p class="footer">
+Linux GG: <a href="http://linux.gamma-square.com">Reviews</a>
+</p>
+</body>
+</html>

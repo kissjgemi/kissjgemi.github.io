@@ -1,0 +1,15 @@
+<a name="s98">&nbsp;</a>
+
+	<div id="section98" style="background-position: 50%;">
+	<div class="section-header"><h2>&nbsp;<font color="#FFFFFF"> <span style="background-color: #000000;">            
+	&nbsp; Section 98 &nbsp;</span>             
+	</font> </h2></div>			
+	</div>       
+
+	<div class="parabellux">
+	<p class="main"></p>            
+
+	<p align="center"><img border="0" src="mti/mti_hirfelhasznalo.jpg" width="200" height="141"></p>           
+
+	<br /><hr><hr><br />
+	</div>

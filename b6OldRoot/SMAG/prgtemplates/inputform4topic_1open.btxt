@@ -1,0 +1,23 @@
+
+<a name="s99+">&nbsp;</a>
+
+<div id="footer-wrap">	
+<div class="article">
+<center>
+<p class="onecolumn">
+	<h2>
+	<font color="#FFFFFF"> 
+	<span style="background-color: #000000;">&nbsp; :) Number 5 need input (: &nbsp;</span>           
+	</font><br />
+	&nbsp;<br />
+    Scienction MAGazin<br />  
+	</h2>
+    új cikk bevitele<br />
+	&nbsp;<br />
+</p>
+</center>
+<hr /><br />
+
+<form name="input" action="prgphp/comodo.php" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+<p>
+<table width="100%"><tr><td><div>

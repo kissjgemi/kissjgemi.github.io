@@ -1,0 +1,40 @@
+	</div><div style="background-color: lightgray">
+		<h4>Képfeltöltés</h4>
+         <input type="file" name="image" style="margin-left: 10%;"/>
+	</div></td></tr></table>
+<div style="background-color: lightgray">
+<h4>Cím</h4>
+ <input type="text" style="width: 80%; margin-left: 10%;" name="article_title" />
+ </div>
+<div style="background-color: lightgray">
+ <h4>Bevezető../Rövidcikk../Teljes cikk automatikus feldolgozással (Cím üres)</h4>
+ <textarea name="article_head" rows="5"  style="text-align: justify; width: 80%; margin-left: 10%;" >
+ </textarea>
+ </div>
+ <br/>
+<div style="background-color: lightgray">
+<div id="more-article"><a onclick="show('less-article'); hide('more-article')" >
+<p class="showline">Mutass többet!</p></a>
+</div></div>
+<div id="less-article" style="display: none; background-color: lightgray">
+<a onclick="show('more-article'); hide('less-article')" >
+<p class="showline">Rejtsd el!</p></a> 
+<h4>Törzs</h4>
+ <textarea name="article_body" rows="10"  style="text-align: justify; width: 80%; margin-left: 10%;" >
+ </textarea><br />
+<br />
+</div>
+<div style="background-color: lightgray">
+<h4>Forrás</h4>
+ <input type="text" style="text-align: right ; width: 80%; margin-left: 10%;" name="article_footer" />
+ </div>
+<br />
+<br />
+</p><p align="center">
+<input type="submit" value=" Beküld " name="send2datadir" />
+
+</p>
+</form> 
+<br />
+<hr />
+<br />

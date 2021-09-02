@@ -1,0 +1,9 @@
+Pác János, Miskolci Párducok, 619, 591, 639, 567, 591, 616, 648
+Kozma Alfonz, Pécsi Kenguruk, 622, 556, 594, 592, 661, x, 632
+Haragos Csaba, Kalocsai Rozmárok, 625, 619, 609, 582, 622, 585, 603
+Tóbiás Félix, Pécsi Kenguruk, 678, 656, 608, 662, 622, 552, 605
+Csonka Elemér, Miskolci Párducok, 651, 642, x, 647, 579, x, 611
+Ug Imre, Kalocsai Rozmárok, 634, x, x, x, 698, 599, 661
+Örvös Eduárd, Pécsi Kenguruk, 647, 575, 644, 603, 610, 597, 600
+Csõsz Béla, Kalocsai Rozmárok, 640, 620, 586, 619, 641, x, 556
+Csabai Kázmér, Miskolci Párducok, 660, 659, 653, x, 651, x, 657

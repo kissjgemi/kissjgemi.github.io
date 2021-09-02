@@ -1,0 +1,50 @@
+<!-- aktualtimestamp: 1539423780
+2018 október 11. IT alapok
+  -->
+<div class="parabellimage">
+<div id="thumb1539423780" class="thumbframe"><a onclick="show('wide1539423780'); hide('thumb1539423780')" >
+<img src="_uploaded_images/2018-10/internet.png
+" alt="internet.png" title="internet.png"></a>
+</div>
+<div id="wide1539423780" class="wideframe"><a onclick="show('thumb1539423780'); hide('wide1539423780')" >
+<img src="_uploaded_images/2018-10/internet.png
+" alt="internet.png" title="internet.png"></a>
+</div>
+<p class="main">
+<h4>1. fejezet:</h4>
+<h5>Bevezetés a személyi számítógépek világába</h5><br />
+<a href="https://drive.google.com/drive/folders/1aGP0Eu_Qweeln9bJhMyYnnWpNLCalHOI?usp=sharing" target="_blank">Dolgozat</a><br />
+<br />
+<h4>CCNA R&S - Bevezetés a hálózatok világába<br />1.fejezet</h4>
+<h5>A vállalatok hálózati infrastruktúrájának megismerése</h5><br />
+<a href="https://www.flickr.com/photos/kevinkelly/sets/72157613562011932/" target="_blank">Az internet</a><br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1539423780"><a onclick="show('less-article1539423780'); hide('more-article1539423780')" >
+<p class="showline">...</p></a>
+<br />
+</div>
+<div id="less-article1539423780" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1539423780'); show('more-article1539423780')" >
+<p class="showline">...</p></a> 
+<br />
+<p class="main">
+LAN, WAN és az internet<br />
+A hálózat elemei<br />
+Az út - amelyet egy üzenet megtesz a küldőtől a címzettig - lehet olyan egyszerű is, mint a két számítógépet összekötő egyetlen kábel, vagy lehet olyan bonyolult is, mint a Földet szó szerint körbefonó hálózat. Ez a hálózati infrastruktúra biztosítja a mindennapjaink során használt hálózati kommunikációt. Ez teremti meg azt a stabil és megbízható csatornát, amelyen mindennapjaink kommunikációja folyhat.<br />
+<br />
+A hálózati infrastruktúra három kategóriába sorolható:<br />
+Eszközök<br />
+Információhordozó közeg (vagy média)<br />
+Szolgáltatások<br />
+<br />
+Az eszközök és a média a hálózat fizikai alkotóelemei. A hardvert gyakran a hálózati infrastruktúra látható elemei közé soroljuk, ezek a laptop, a PC, a kapcsoló, a forgalomirányító, a vezeték nélküli hozzáférési pont vagy az összeköttetést biztosító kábelezés. Esetenként a hálózat bizonyos összetevőit nem is láthatjuk. Vezeték nélküli média esetén az üzeneteket láthatatlan rádiófrekvenciás vagy infravörös hullámok formájában továbbítjuk.<br />
+<br />
+A hálózati eszközöket szolgáltatások és folyamatok biztosítására használjuk. Ezek a kommunikációs programok - az úgynevezett szoftverek - hálózatba kötött eszközökön futnak. Egy hálózati szolgáltatás válasz formájában biztosítja az igényelt információt. A szolgáltatások között sok olyan általános hálózati alkalmazás is szerepel, amelyeket az emberek nap mint nap használnak, mint például az e-mail vagy a tárhely biztosító szolgáltatások. Különböző folyamatok biztosítják azokat a tevékenységeket is, amelyek üzeneteinket irányítják és célba juttatják a hálózaton keresztül. Ezek a folyamatok kevésbé nyilvánvalóak számunkra, ugyanakkor a hálózat működése szempontjából igencsak fontosak.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+Cisco tanfolyam és KjG jegyzet
+ &nbsp;</span> </font></p>
+</div>
