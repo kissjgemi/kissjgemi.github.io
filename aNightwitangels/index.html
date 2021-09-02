@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+		  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+		  crossorigin="anonymous" />
+
+    <title>Night with Angels</title>
+	
+    <link href="nw-carousel.css" rel="stylesheet">
+	
+	<style>
+	</style>
+    <script>
+        var actual_content = "en_welcome";
+        var isContentOn = true;
+        function show_content(name) {
+            hide_content();
+            hide_map();
+            hide_alert();
+            hide_carousel();
+            show_bodyBg();
+            document.getElementById(name).style.display = "block";
+            actual_content = name;
+            isContentOn = true;
+        }
+        function hide_content() {
+            document.getElementById(actual_content).style.display = "none";
+            isContentOn = false;
+        }
+        function toggle_content(name) {
+            if( isContentOn ) {
+                hide_all();
+            } else {
+                show_bodyBg();
+            }
+        }
+
+        var isBodyBgOn = true;
+        function show_bodyBg() {
+            document.body.style.backgroundSize = "contain";
+            isBodyBgOn = true;
+        }
+        function hide_bodyBg() {
+            document.body.style.backgroundSize = "0 0";
+            isBodyBgOn = false;
+        }
+        function toggle_bodyBg() {
+            if( isBodyBgOn ) {
+                hide_all();
+            } else {
+                show_bodyBg();
+            }
+        }
+
+        var isAlertOn = false;
+        function show_alert() {
+            hide_map();
+            hide_carousel();
+            hide_content();
+            show_bodyBg();
+            document.getElementById('alert').style.display = "block";
+            isAlertOn = true;
+        }
+        function hide_alert() {
+            document.getElementById('alert').style.display = "none";
+            isAlertOn = false;
+        }
+        function toggle_alert() {
+            if( isAlertOn ) {
+                hide_all();
+            } else {
+                show_alert();
+            }
+        }
+
+        var isMapOn = false;
+        function show_map() {
+            hide_alert();
+            hide_carousel();
+            hide_content();
+            show_bodyBg();
+            document.getElementById('gmap').style.display = "block";
+            isMapOn = true;
+        }
+        function hide_map() {
+            document.getElementById('gmap').style.display = "none";
+            isMapOn = false;
+        }
+        function toggle_map() {
+            if( isMapOn ) {
+                hide_all();
+            } else {
+                show_map();
+            }
+        }
+
+        function hide_all() {
+            hide_alert();
+            hide_map();
+            hide_bodyBg();
+            hide_content();
+            show_carousel();
+        }
+
+        var isCarouselOn;
+        function show_carousel() {
+            hide_alert();
+            document.getElementById('mainCarousel').style.display = "block";
+            isCarouselOn = true;
+        }
+        function hide_carousel() {
+            document.getElementById('mainCarousel').style.display = "none";
+            isCarouselOn = false;
+        }
+        function toggle_carousel() {
+            if( isCarouselOn ) {
+                hide_carousel();
+            } else {
+                show_carousel();
+            }
+        }
+    </script>
+  </head>
+  <body>
+
+
+
+<!-- EndOfHeading / StartOfNav -->
+
+
+
+<!-- https://nightwithangels.hu/ -->
+
+<nav class="navbar transparent navbar-inverse fixed-top ">
+
+  <div class="navbar-header mx-auto ml-md-0">
+    <a class="navbar-brand bg_brand" href="#" title="Booking">
+        Night With Angels
+    </a>
+  </div>
+
+  <div class="navbar pr-0 mx-auto mr-md-0">
+    <div class="nav-item dropdown">
+        <a class="nav-link px-1 px-md-3" href="#"  id="navbarEn"
+           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="gb.png" alt="Night with Angels" title="Night with Angels" />
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarEn">
+            <a class="dropdown-item" href="#" onClick="javascript: show_content('en_main');">
+                Night with Angels
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" onClick="javascript: show_content('en_price');">
+                Prices
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" onClick="javascript: show_content('en_mail');">
+                Send mail
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" onClick="javascript: show_content('en_gdpr');">
+                Privacy Policy
+            </a>
+        </div>
+    </div>
+
+    <div class="nav-item dropdown">
+        <a class="nav-link px-1 px-md-3" href="#"  id="navbarDe"
+           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="de.png" alt="Eine Nacht mit den Engels" title="Eine Nacht mit den Engels" />
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDe">
+            <a class="dropdown-item" href="#" onClick="javascript: show_content('de_main');">
+                Eine nacht mit den Angels
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" onClick="javascript: show_content('de_price');";>
+                Preise
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" onClick="javascript: show_content('de_mail');">
+                E-Mail schreiben
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" onClick="javascript: show_content('de_gdpr');">
+                Datenschutzerklärung
+            </a>
+        </div>
+    </div>
+
+    <div class="nav-item dropdown">
+        <a class="nav-link px-1 px-md-3" href="#"  id="navbarHu"
+           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="hu.png" alt="Egy éjszaka az angyalokkal" title="Egy éjszaka az angyalokkal" />
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarHu">
+            <a class="dropdown-item" href="#" onClick="javascript: show_content('hu_main');">
+                Egy éjszaka az angyalokkal
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" onClick="javascript: show_content('hu_price');">
+                Árak
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" onClick="javascript: show_content('hu_mail');">
+                Küldjön e-mailt
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" onClick="javascript: show_content('hu_gdpr');">
+                Adatkezelési tájékoztató
+            </a>
+        </div>
+    </div>
+
+    <a class="nav-item nav-link px-1 px-md-3" href="#">
+        <img src="whatsapp.png" alt="00 36 30 689 3525" title="00 36 30 689 3525" 
+         onClick="javascript: toggle_alert();" />
+    </a>
+
+    <a class="nav-item nav-link px-1 px-md-3" href="#">
+        <img src="locationPointer.png" alt="Google Map" title="Google Map"
+         onClick="javascript: toggle_map();" />
+    </a>
+  </div>
+
+</nav>
+
+
+
+<!-- EndOfNav / StartOfCarousel -->
+
+
+
+    <div id="mainCarousel" class="carousel w-100 slide carousel-fade hidden" data-ride="carousel">
+        
+      <ol class="carousel-indicators">
+        <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mainCarousel" data-slide-to="1"></li>
+        <li data-target="#mainCarousel" data-slide-to="2"></li>
+        <li data-target="#mainCarousel" data-slide-to="3"></li>
+        <li data-target="#mainCarousel" data-slide-to="4"></li>
+        <li data-target="#mainCarousel" data-slide-to="5"></li>
+      </ol>
+
+      <div class="carousel-inner">
+         <div class="carousel-item active" active style="background-image: url('Bajcsy_01.jpg');">
+            <img src="" alt="." />
+            <div class="stitle"><span> Great location </span></div>
+            <div class="scaption"><span> near to the biggest X-mas market in Budapest </span></div>
+        </div>
+         <div class="carousel-item" style="background-image: url('Bajcsy_02.jpg');">
+           <img src="." alt="." />
+	       <div class="stitle"><span> Night with angels apartment </span></div>
+	       <div class="scaption"><span> the magnificent Bazilika from the window by sunset </span></div>
+        </div>
+         <div class="carousel-item" style="background-image: url('Bajcsy_03.jpg');">
+            <img src="." alt="." />
+            <div class="stitle"><span> View from the apartment </span></div>
+            <div class="scaption"><span> the excellent view to the Bazilika from the windows </span></div>
+        </div>
+         <div class="carousel-item" style="background-image: url('Bajcsy_04.jpg');">
+           <img src="." alt="." />
+	       <div class="stitle"><span> Bedroom </span></div>
+	       <div class="scaption"><span> with twin beds </span></div>
+        </div>
+         <div class="carousel-item" style="background-image: url('Bajcsy_05.jpg');">
+            <img src="." alt="." />
+            <div class="stitle"><span> Bedroom </span></div>
+            <div class="scaption"><span> with a double bed </span></div>
+        </div>
+         <div class="carousel-item" style="background-image: url('Bajcsy_06.jpg');">
+            <img src="." alt="." />
+            <div class="stitle"><span> Apartment </span></div>
+            <div class="scaption"><span> with a spacious, comfortable and friendly interior </span></div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+<!-- EndOfCarousel / StartOfArticles -->
+
+
+
+<div id="front" onClick="javascript: hide_all();"><div class="placeholder">
+
+    <div id="alert" class="b8t_alert hidden" onClick="javascript: hide_alert();">
+        00 36 30 689&nbsp;3525
+    </div>
+
+    <div id="gmap" class="b8t_content b8t_map hidden" onClick="javascript: hide_map()">
+        <iframe style="border: 0; margin: 2.5%; border-radius: 30px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.4341474203125!2d19.053138150721615!3d47.50093570316314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc6ae29e6b17%3A0xe6b22a2ae1446817!2zQnVkYXBlc3QsIFLDqXZheSBrw7Z6IDEsIDEwNjU!5e0!3m2!1shu!2shu!4v1481636708373" 
+        allowfullscreen="allowfullscreen" width="95%" height="95%" frameborder="0">
+        </iframe>
+    </div>
+
+
+<div id="de_main" class="b8t_content hidden">
+<h1>Eine Nacht mit den Engels</h1>
+<p>Es konnte nichts näher an das Stadtzentrum sein. Berühmte Weihnachtsmärkte nur wenigen Minuten entfärnt. Alle bekanntesten und wichtigsten Sehenswürdigkeiten sind&nbsp;zu Fuß erreichbar. Viele&nbsp;Restaurants&nbsp;und&nbsp;Pubs warten&nbsp;Sie in der Nähe. Alle berühmte&nbsp;Modeunternehmen haben Geschäfte hier und auch eines der größten Einkaufszentren wartet Sie zu dienen. Budapest öffentlichen Verkehrsmitteln führen Sie zu jedem Punkt, die Sie auswählen. Die Nachtnach der tiefsten Bedeutung des Wortes&nbsp;liegt Ihnen zu Füßen. was sollte&nbsp;man&nbsp;noch mehr?</p>
+<p>Eine 80&nbsp;m2 zwei Zimmer&nbsp;Wohnung steht in Budapest&nbsp;zur Verfügung. Ein Schlafzimmer hat&nbsp;24 Quadratmetern, das andere&nbsp;16 Quadratmetern. Zu zweitem Zimmer gehört noch ein&nbsp; Arbeitszimmer. Beide Zimmer haben eine schöne Anblick&nbsp;auf die Basilika. Die Wohnung hat Internetanscluss (WIFI).</p>
+<p>Wenn während Ihres Aufenthaltes Hilfe brauchen, sind wir immer verfügbar. Natürlich wir können Ihnen&nbsp;immer Tipps und Informationen geben. Fragen Sie einfach!</p>
+</div>
+
+<div id="en_main" class="b8t_content hidden">
+<h1>Night with Angels</h1>
+<p>One of the most fantastic places in the center of Budapest. Everything is reachable on foot. You can enjoy the breathtaking view while you relax after a busy day.&nbsp; In the evening you can enjoy music in the State Opera House which is only a few blocks away. If you are interested in night life, food, pubs and health spas you are in the right spot.&nbsp; Two separate rooms are waiting for you with shared bathroom and shared kitchen with coffee machine.&nbsp;WIFI is free and available in all areas.</p>
+<p>You will have your own lockable room, with shared facilities.&nbsp;There is a separate bathroom and toilet. Towels, bed linen, basic kitchen equipment are provided by the host.</p>
+<p>There are two separate beds in the room, so you can come with your friend. However they can be pulled to be side by side, to make a comfy double bed for you and your spouse as well.</p>
+</div>
+
+<div id="hu_main" class="b8t_content hidden">
+<h1>Egy éjszaka az angyalokkal</h1>
+<p>Nem is lehetne közelebb a város szívéhez. Híres karácsonyi vásárok pár percre gyalogosan elérhetők. Gyalogosan minden híres és fontos látnivalót gyalogosan el tudsz érni.&nbsp; Az éttermek, kocsmák sokasága vár rád. Az összes nagy márkájú divat cégek és az egyik legnagyobb bevásárló központ a közeledben van. Tömegközlekedési eszközökkel Budapest minden pontjára el tudsz innen könnyedén menni. Az éjszakai élet a lábaidnál hever. Kell még ennél több?</p>
+<p>Egy 80 négyzetméteres budapesti nagypolgári lakás áll rendelkezésére. Az egyik szoba &nbsp;24 négyzetméteres, a &nbsp;másik szoba 16 négyzetméteres, melyhez egy dolgozószoba csatlakozik. Mindkét szobából a Bazilikára van kilátás.</p>
+<p>Az itt tartózkodásod alatt, ha segítségre van szükséged telefonon vagy what’s &nbsp;upon &nbsp;mindig elérhetők vagyunk. Természetesen mindig tudunk helyi tippeket és információkat adni a helyi dolgokról. Csak kérdezz és felelek.</p>
+</div>
+
+<div id="de_price" class="b8t_content hidden">
+<h1>Preise</h1>
+<p><span style="font-size: 12pt;"><strong>80 qm Wohnung:<br></strong></span>
+<span style="font-size: 10pt;">– 5 Personen (zwei Schlafzimmer, gemeinsame Küche und Bad)<br></span>
+<span style="font-size: 10pt;">– 5 Personen – Preis 80 Euro / Tag</span></p>
+<p><span style="font-size: 12pt;"><strong>20 qm Kingsize-Bett:<br></strong></span>
+<span style="font-size: 10pt;">2 Personen – Zustellbett ist möglich<br></span>
+<span style="font-size: 10pt;">–&nbsp;Preis 35 Euro / Schlafzimmer / Tag</span></p>
+<p><span style="font-size: 12pt;"><strong>16 qm Zweibett- oder Doppelzimmer:<br></strong></span>
+<span style="font-size: 10pt;">– shared bathroom and kitchen<br></span>
+<span style="font-size: 10pt;">–&nbsp;Preis 35 euro / schlafzimmer / tag</span></p>
+<p><span style="font-size: 14pt;"><em><strong>Rabatte:<br></strong></em></span>
+<span style="font-size: 12pt;">3 Nächte -10%<br></span>
+<span style="font-size: 12pt;">7 Nächte oder mehr -15%<br></span>
+<span style="font-size: 12pt;">Zahlung innerhalb von 2 Tagen: -5%</span></p>
+<p>Diese Preise gelten bis zum 30. April 2021.</p>
+<p>Wir behalten uns das Recht vor, die Preise zu ändern.</p>
+</div>
+
+<div id="en_price" class="b8t_content hidden">
+<h1>Prices</h1>
+<p><span style="font-size: 12pt;"><strong>80 sqm whole flat:<br></strong></span>
+<span style="font-size: 10pt;">– 5 persons (two separate bedrooms, kitchen, bathroom)<br></span>
+<span style="font-size: 10pt;">– 5 persons – price 80 Euro/day</span></p>
+<p><span style="font-size: 12pt;"><strong>20 sqm king size bed:<br></strong></span>
+<span style="font-size: 10pt;">2 persons – extra bed is possible – shared bathroom and kitchen<br></span>
+<span style="font-size: 10pt;">–&nbsp;price 35 euro/bedroom/day</span></p>
+<p><span style="font-size: 12pt;"><strong>16 sqm twin or double bedroom:<br></strong></span>
+<span style="font-size: 10pt;">– shared bathroom and kitchen<br></span>
+<span style="font-size: 10pt;">–&nbsp;price 35 euro/bedroom/day</span></p>
+<p><span style="font-size: 14pt;"><em><strong>Discounts:<br></strong></em></span>
+<span style="font-size: 12pt;">3 nights -10%<br></span>
+<span style="font-size: 12pt;">7 nights or more -15%<br></span>
+<span style="font-size: 12pt;">Payment in advance within 2 days &nbsp;: -5%</span></p>
+<p>These prices are valid until 30 April, 2021.</p>
+<p>We reserve the right to change the prices.</p>
+</div>
+
+<div id="hu_price" class="b8t_content hidden">
+<h1>Árak</h1>
+<p><span style="font-size: 12pt;"><strong>80 nm-es teljes lakás:<br></strong></span>
+<span style="font-size: 10pt;">– 5 fő (két különálló hálószoba, konyha, fürdőszoba)<br></span>
+<span style="font-size: 10pt;">– 5 fő – ár 80 Euro / nap</p></span></p>
+<p><span style="font-size: 12pt;"><strong>20 nm-es francia&nbsp;ággyal:<br></strong></span>
+<span style="font-size: 10pt;">2 fő – pótágyazható – közös fürdőszoba és konyha<br></span>
+<span style="font-size: 10pt;">–&nbsp;Ár 35 € / szoba / nap</span></p>
+<p><span style="font-size: 12pt;"><strong>16 nm-es két- vagy duplaágyas hálószoba:<br></strong></span>
+<span style="font-size: 10pt;">– Közös fürdőszoba és konyha<br></span>
+<span style="font-size: 10pt;">–&nbsp;Ár 35 € / szoba / nap</span></p>
+<p><span style="font-size: 14pt;"><em><strong>Kedvezmények:<br></strong></em></span>
+<span style="font-size: 12pt;">3 éjszaka -10%<br></span>
+<span style="font-size: 12pt;">7 vagy több éjszakás -15%<br></span>
+<span style="font-size: 12pt;">Előrefizetés 2 napon belül: -5%</span></p>
+<p>Ezek az árak2021. április 30-ig érvényesek.</p>
+<p>Az árváltoztatás jogát fenntartjuk.</p>
+</div>
+
+<div id="de_mail" class="b8t_content hidden">
+    <h1><a onClick="javascript:window.open('mailto:viewtobazilika@gmail.com', 'mail');event.preventDefault()"
+           href="mailto:viewtobazilika@gmail.com" target="_blank">
+           E-Mail schreiben
+        </a>
+    </h1>
+	<p>Vorschläge&nbsp;betreffend&nbsp;das&nbsp;Apartment.</p>
+    <p style="text-align: center;">Wir sind interessiert an Ihre Meinung:</p>
+    <p style="text-align: center;">
+        <a onClick="javascript:window.open('mailto:viewtobazilika@gmail.com', 'mail');event.preventDefault()"
+           href="mailto:viewtobazilika@gmail.com" target="_blank">
+           Bitte schreiben Sie E-Mail!!
+        </a> <br />mailto: viewtobazilika@gmail.com
+    </p>
+</div>
+
+<div id="en_mail" class="b8t_content hidden">
+    <h1><a onClick="javascript:window.open('mailto:viewtobazilika@gmail.com', 'mail');event.preventDefault()"
+           href="mailto:viewtobazilika@gmail.com" target="_blank">
+           Send Mail
+        </a>
+    </h1>
+	<p>Suggestions regarding the apartment.</p>
+    <p style="text-align: center;">We are interested in your opion:</p>
+    <p style="text-align: center;">
+        <a onClick="javascript:window.open('mailto:viewtobazilika@gmail.com', 'mail');event.preventDefault()"
+           href="mailto:viewtobazilika@gmail.com" target="_blank">
+           Please send Mail!!
+        </a> <br />mailto: viewtobazilika@gmail.com
+    </p>
+</div>
+
+<div id="hu_mail" class="b8t_content hidden">
+    <h1>
+        <a onClick="javascript:window.open('mailto:viewtobazilika@gmail.com', 'mail');event.preventDefault()"
+           href="mailto:viewtobazilika@gmail.com" target="_blank">
+           Küldjön e-mailt
+        </a>
+    </h1>
+	<p>Tegyen javaslatokat az apartmannal kapcsolatosan!</p>
+    <p style="text-align: center;">Minket érdekel a véleménye:</p>
+    <p style="text-align: center;">
+        <a onClick="javascript:window.open('mailto:viewtobazilika@gmail.com', 'mail');event.preventDefault()"
+           href="mailto:viewtobazilika@gmail.com" target="_blank">
+           Kérjük küldjön e-mailt!!
+        </a> <br />mailto: viewtobazilika@gmail.com
+    </p>
+</div>
+
+<div id="de_gdpr" class="b8t_content hidden">
+    <h1>Datenschutzerklärung</h1>
+    <h2>Wer wir sind</h2>
+    <p>Die Adresse unserer Website ist: http://www.revay1.com.</p>
+    <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+    <p><span id="s3-t-firma">Jozsef Kiss</span><span id="s3-t-ansprechpartner"></span><br>
+    <span id="s3-t-strasse">Bercsényi u. 6.</span><br>
+    <span id="s3-t-plz">1111 Budapest<br>
+    </span><span id="s3-t-ort"></span>mail: b6@b6sics.hu</p>
+    <p>Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.).</p>
+    <h2>Welche personenbezogenen Daten wir sammeln und warum wir sie sammeln</h2>
+    <h3>Kommentare</h3>
+    <p>Wenn Besucher Kommentare auf der Website schreiben, sammeln wir die Daten, die im Kommentar-Formular angezeigt werden, außerdem die IP-Adresse des Besuchers und den User-Agent-String (damit wird der Browser identifiziert), um die Erkennung von Spam zu unterstützen.</p>
+    <p>Aus deiner E-Mail-Adresse kann eine anonymisierte Zeichenfolge erstellt (auch Hash genannt) und dem Gravatar-Dienst übergeben werden, um zu prüfen, ob du diesen benutzt. Die Datenschutzerklärung des Gravatar-Dienstes findest du hier: https://automattic.com/privacy/. Nachdem dein Kommentar freigegeben wurde, ist dein Profilbild öffentlich im Kontext deines Kommentars sichtbar.</p>
+    <p>Wir lassen nicht zu Kommentare zu schreiben.</p>
+    <h3>Medien</h3>
+    <p>Wenn du ein registrierter Benutzer bist und Fotos auf diese Website lädst, solltest du vermeiden, Fotos mit einem EXIF-GPS-Standort hochzuladen. Besucher dieser Website könnten Fotos, die auf dieser Website gespeichert sind, herunterladen und deren Standort-Informationen extrahieren.</p>
+    <p>Wir lassen nicht zu Medien auf diese Webseite laden.</p>
+    <h3>Kontaktformulare</h3>
+    <h3>Cookies</h3>
+    <p>Wenn du einen Kommentar auf unserer Website schreibst, kann das eine Einwilligung sein, deinen Namen, E-Mail-Adresse und Website in Cookies zu speichern. Dies ist eine Komfortfunktion, damit du nicht, wenn du einen weiteren Kommentar schreibst, all diese Daten erneut eingeben musst. Diese Cookies werden ein Jahr lang gespeichert.</p>
+    <p>Falls du ein Konto hast und dich auf dieser Website anmeldest, werden wir ein temporäres Cookie setzen, um festzustellen, ob dein Browser Cookies akzeptiert. Dieses Cookie enthält keine personenbezogenen Daten und wird verworfen, wenn du deinen Browser schließt.</p>
+    <p>Wenn du dich anmeldest, werden wir einige Cookies einrichten, um deine Anmeldeinformationen und Anzeigeoptionen zu speichern. Anmelde-Cookies verfallen nach zwei Tagen und Cookies für die Anzeigeoptionen nach einem Jahr. Falls du bei der Anmeldung „Angemeldet bleiben“ auswählst, wird deine Anmeldung zwei Wochen lang aufrechterhalten. Mit der Abmeldung aus deinem Konto werden die Anmelde-Cookies gelöscht.</p>
+    <p>Wenn du einen Artikel bearbeitest oder veröffentlichst, wird ein zusätzlicher Cookie in deinem Browser gespeichert. Dieser Cookie enthält keine personenbezogenen Daten und verweist nur auf die Beitrags-ID des Artikels, den du gerade bearbeitet hast. Der Cookie verfällt nach einem Tag.</p>
+    <p>Wir lassen nicht zu Konten auf unserer Website zu erstellen.</p>
+    <h3>Eingebettete Inhalte von anderen Websites</h3>
+    <p>Beiträge auf dieser Website können eingebettete Inhalte beinhalten (z.&nbsp;B. Videos, Bilder, Beiträge etc.). Eingebettete Inhalte von anderen Websites verhalten sich exakt so, als ob der Besucher die andere Website besucht hätte.</p>
+    <p>Diese Websites können Daten über dich sammeln, Cookies benutzen, zusätzliche Tracking-Dienste von Dritten einbetten und deine Interaktion mit diesem eingebetteten Inhalt aufzeichnen, inklusive deiner Interaktion mit dem eingebetteten Inhalt, falls du ein Konto hast und auf dieser Website angemeldet bist.</p>
+    <h3>Analysedienste</h3>
+    <p>Unsere Webseite benutzt keine Analysedienste.</p>
+    <h2>Mit wem wir deine Daten teilen</h2>
+    <p>Wir sind nicht interessiert an deine Daten. Wir teilen deine Daten mit niemand.</p>
+    <h2>Wie lange wir deine Daten speichern</h2>
+    <p>Wenn du einen Kommentar schreibst, wird dieser inklusive Metadaten zeitlich unbegrenzt gespeichert. Auf diese Art können wir Folgekommentare automatisch erkennen und freigeben, anstelle sie in einer Moderations-Warteschlange festzuhalten.</p>
+    <p>Für Benutzer, die sich auf unserer Website registrieren, speichern wir zusätzlich die persönlichen Informationen, die sie in ihren Benutzerprofilen angeben. Alle Benutzer können jederzeit ihre persönlichen Informationen einsehen, verändern oder löschen (der Benutzername kann nicht verändert werden). Administratoren der Website können diese Informationen ebenfalls einsehen und verändern.</p>
+    <p>Wir sind nicht interessiert an deine Daten. Wir speichern deine Daten nicht.</p>
+    <h2>Welche Rechte du an deinen Daten hast</h2>
+    <p>Wenn du ein Konto auf dieser Website besitzt oder Kommentare geschrieben hast, kannst du einen Export deiner personenbezogenen Daten bei uns anfordern, inklusive aller Daten, die du uns mitgeteilt hast. Darüber hinaus kannst du die Löschung aller personenbezogenen Daten, die wir von dir gespeichert haben, anfordern. Dies umfasst nicht die Daten, die wir aufgrund administrativer, rechtlicher oder sicherheitsrelevanter Notwendigkeiten aufbewahren müssen.</p>
+    <p>Wir haben keine Daten von dir.</p>
+    <h2>Wohin wir deine Daten senden</h2>
+    <p>Besucher-Kommentare könnten von einem automatisierten Dienst zur Spam-Erkennung untersucht werden.</p>
+    <p>Wir haben keine Daten von dir.</p>
+    <h2>Deine Kontakt-Informationen</h2>
+    <h2>Weitere Informationen</h2>
+    <h3>Wie wir deine Daten schützen</h3>
+    <p>Wenn trotz unsere Mühe Kommentare schreiben kannst, dann alle Kommentare werden persönlich von uns überprüft und werden erst nach erfolgreichem Bestehen unserer nachfolgenden Punkte freigegeben:</p>
+    <ul>
+    <li>Themenbezogener Kommentar</li>
+    <li>Keine Schimpfwörter</li>
+    <li>Keine gewalttätigen, diskriminierende oder sexuelle Aussagen</li>
+    <li>Prüfung der eingereichten E-Mail-Adresse</li>
+    <li>Name und Vorname beinhalten keine diskriminierende, gewalttätige oder sexuelle Anspielungen</li>
+    <li>Keine Kommentare werden freigegeben und werden mit den Daten gelöscht</li>
+    </ul>
+    <h3>Welche Maßnahmen wir bei Datenschutzverletzungen anbieten</h3>
+    <p>Wir sind Stolz darauf, keine Daten zu haben von dir.</p>
+    <h3>Von welchen Drittanbietern wir Daten erhalten</h3>
+    <p>Wir sind Stolz darauf, keine Daten zu erhalten.</p>
+    <h3>Welche automatisierte Entscheidungsfindung und/oder Profilerstellung wir mit Benutzerdaten durchführen</h3>
+    <p>Wir führen keine automatisierte Entscheidungsfindungen oder Profilerstellungen durch.</p>
+    <h3>Industrielle aufsichtsrechtliche Regulierungsanforderungen</h3>
+    <p>Keine industrielle aufsichtsrechtliche Regulierungsanforderungen.</p>
+</div>
+
+<div id="en_gdpr" class="b8t_content hidden">
+    <h1>Privacy Policy</h1>
+<h2>Who we are</h2>
+<p>Our website address is: http://www.revay1.com.</p>
+<p><span id="s3-t-firma">Jozsef Kiss</span><span id="s3-t-ansprechpartner"></span><br>
+<span id="s3-t-strasse">Bercsényi u. 6.</span><br>
+<span id="s3-t-plz">1111 Budapest<br>
+</span><span id="s3-t-ort"></span>mail: b6@b6sics.hu</p>
+<h2>What personal data we collect and why we collect it</h2>
+<h3>Comments</h3>
+<p>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor’s IP address and browser user agent string to help spam detection.</p>
+<p>An anonymised string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p>
+<h3>Media</h3>
+<p>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p>
+<h3>Contact forms</h3>
+<p>We don’t use contact forms.</p>
+<h3>Cookies</h3>
+<p>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p>
+<p>If you have an account and you log in to this site, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p>
+<p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select “Remember Me”, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p>
+<p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p>
+<p>Normally we don’t use cookies.</p>
+<h3>Embedded content from other websites</h3>
+<p>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p>
+<p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracing your interaction with the embedded content if you have an account and are logged in to that website.</p>
+<p>Normally we don’t use contents from other websites.</p>
+<h3>Analytics</h3>
+<p>Normally we don’t use analytics.</p>
+<h2>Who we share your data with</h2>
+<p>Normally we don’t share your datas.</p>
+<h2>How long we retain your data</h2>
+<p>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognise and approve any follow-up comments automatically instead of holding them in a moderation queue.</p>
+<p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p>
+<h2>What rights you have over your data</h2>
+<p>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p>
+<p>Normally we don’t collect user datas.</p>
+<h2>Where we send your data</h2>
+<p>Visitor comments may be checked through an automated spam detection service.</p>
+<h2>Your contact information</h2>
+<p>Normally we don’t use your contact information.</p>
+<h2>Additional information</h2>
+<h3>How we protect your data</h3>
+<p>We don’t have datas from you.</p>
+<p><span class="" lang="en"><span class="">If you make a comment despite all our efforts, y</span><span class="">our comment will be subject to strict and lengthy checks before we delete it:</span><br>
+</span></p>
+<ul>
+<li><span id="result_box" class="" lang="en"><span class="">The entry must be relevant</span></span></li>
+<li><span id="result_box" class="" lang="en"><span class="">It can not contain vulgar scripts</span></span></li>
+<li><span id="result_box" class="" lang="en"><span class="">It can not be violence, discrimination, or sex</span></span></li>
+<li><span id="result_box" class="" lang="en"><span class="">We check the specified email address</span></span></li>
+<li><span id="result_box" class="" lang="en"><span class="">The first name and the surename may not be violence, discrimination or sex</span></span></li>
+<li><span id="result_box" class="" lang="en"><span class="">Finally, the entry will be deleted with the data in all cases</span></span></li>
+</ul>
+<h3>What data breach procedures we have in place</h3>
+<p>We don’t have data beach procedures.</p>
+<h3>What third parties we receive data from</h3>
+<p>We don’t receive datas from third parties.</p>
+<h3>What automated decision making and/or profiling we do with user data</h3>
+<p>We don’t have user datas.</p>
+<h3>Industry regulatory disclosure requirements</h3>
+<p>No industry regulatory disclosure requirements.</p></div>
+
+<div id="hu_gdpr" class="b8t_content hidden">
+    <h1>Adatkezelési tájékoztató</h1>
+<h2>Kik vagyunk</h2>
+<p>A weboldalunk címe: http://www.revay1.com.</p>
+<p>Adatkezelő neve: Kiss József<br>
+Adatkezelő címe: 1111 Budapest, Bercsényi u. 6.<br>
+Adatkezelő elérhetősége: b6@b6sics.hu</p>
+<h2>Melyek azok a személyes adatok, amiket gyűjtünk és milyen céllal gyűjtjük ezeket</h2>
+<h3>Hozzászólások</h3>
+<p>Hozzászólás beküldésekor a hozzászólási űrlapban megadottakon kívül begyűjtésre kerül a hozzászóló IP címe és a böngészőazonosító karakterlánc a kéretlen tartalmak kiszűrése céljából.</p>
+<p>Egy személytelenített, az e-mail címből előállított karakterlánc (hashnek szokás nevezni) kerül továbbításra a Gravatar szolgáltatás felé, ha ez az oldalon használatban van. A Gravatar szolgáltatás feltételei az alábbi címen tekinthetőek meg: https://automattic.com/privacy/. A hozzászólás elfogadása után, a hozzászólásunk tartalma és a profil képünk is megjelenik nyilvánosan.</p>
+<h3>Média</h3>
+<p>Amennyiben regisztrált felhasználó által kerül kép feltöltésre a honlapra, kerülni kell az az olyan EXIF-eket, amelyekben GPS pozíció adatok is szerepelnek. A honlap látogatói ezeket letölthetik és kinyerhetik a helyadatokat a honlapon található képekből.</p>
+<h3>Kapcsolatfelvételi űrlapok</h3>
+<h3>Sütik</h3>
+<p>Hozzászólás írása után a honlap a megadott nevet, e-mail és web címet sütiben eltárolja. A tárolás csak kényelmi célokat szolgál, hogy a következő hozzászóláskor ne kelljen automatikusan kitölteni. A sütik lejárati ideje 1 év.</p>
+<p>Ha rendelkezünk felhasználói fiókkal és be is vagyunk jelentkezve erre a honlapra, akkor átmeneti sütiket állítunk be, annak érdekében, hogy megállapítsuk, hogy a böngésző elfogadja-e a sütiket. Ezek a sütik nem tartalmaznak személyes információt, és törlődnek, ahogy bezárjuk a böngészőt.</p>
+<p>A honlapra történő bejelentkezéskor több sütit hozunk létre, amely elmenti a bejelentkezési információt és a szerkesztőfelület megjelenítési opcióit. A bejelentkezési sütik két napig érvényesek, a szerkesztőfelület megjelenítési opcióit tároló süti egy évig. Amennyiben az “Emlékezz rám” opciót bejelöljük, a bejelentkezés két hétig folytatódik. Kijelentkezéskor a bejelentkezési sütik eltávolításra kerülnek.</p>
+<p>Amennyiben bejegyzést vagy oldalt szerkesztünk, egy újabb sütit tárol el a böngészőnk. Ez a süti nem tartalmaz személyes adatot, egyszerűen csak a bejegyzés azonosító számát tárolja, amelyet szerkesztettünk. Egy nap múlva jár le az érvényessége.</p>
+<h3>Más honlapokról származó beágyazott tartalmak</h3>
+<p>A honlapon elérhető bejegyzések külső forrásból származó beágyazott tartalmakat (pl. videók, képek, cikkek stb.) használhatnak. A külső forrásból származó beágyazott tartalmak pontosan úgy viselkednek, mintha meglátogattunk volna egy másik honlapot.</p>
+<p>Ezek a webhelyek lehetséges, hogy adatot gyűjtenek a látogatókról, sütiket vagy harmadik féltől származó követőkódot használnak, figyelik a beágyazott tartalommal kapcsolatos felhasználói viselkedést, ha rendelkezünk felhasználói fiókkal és be vagyunk jelentkezve az oldalra.</p>
+<h3>Analitika</h3>
+<p>Nem használink analítikai szolgáltatást.</p>
+<h2>Kivel osztjuk meg a felhasználói adatokat</h2>
+<p>Nem osztjuk meg a felhasználói adatokat.</p>
+<h2>Mennyi ideig őrizzük a személyes adatot</h2>
+<p>Ha hozzászólunk, a hozzászólás és annak metaadatai nem meghatározható ideig a rendszerben maradnak. Ennek célja, hogy az összes ezt követő bármely hozzászólás általunk megismertté és jóváhagyottá váljon, azaz ne kerüljön fel a moderálandó hozzászólások listájára.</p>
+<p>A honlapon regisztrált felhasználók (ha vannak ilyenek) személyes adatai a saját felhasználói profiljukban is tárolásra kerülnek. Minden felhasználó megtekintheti, szerkesztheti vagy törölheti a személyes adatait bármikor (kivéve, hogy nem változtathatja meg a saját felhasználói nevét). A honlap rendszergazdái ezen információkat szintén megtekinthetik és szerkeszthetik.</p>
+<h2>Milyen jogokkal rendelkezik a felhasználó a saját adatai kapcsán</h2>
+<p>A weboldalon regisztrált fiók vagy hozzászólás írása esetén kérhető a személyes adatok export fájlban történő megküldése, amely bármilyen adatot tartalmaz, amit korábban a felhasználó rendelkezésünkre bocsátott. Kérhető továbbá, hogy bármilyen korábban megadott személyes adatot töröljük. Ez nem vonatkozik azokra az adatokra, amelyeket adminisztrációs, jogi vagy biztonsági okokból kötelező megőriznünk.</p>
+<h2>Hová továbbítjuk az adatokat</h2>
+<p>A látogatók által beküldött hozzászólásokat automatikus spamszűrő szolgáltatás ellenőrizheti.</p>
+<h2>Kapcsolati adatok</h2>
+<p>Oldalunk nem elemzi és használja föl a személyes adatokat kapcsolat elemzés céljából.</p>
+<h2>További információk</h2>
+<h3>Hogyan védjük a felhasználói személyes adatokat</h3>
+<p>Amennyiben minden igyekezetünk ellenére sikerül megjegyzést készítened, az jóváhagyásra fog várni megjelenés helyett. A megjegyzésedet szigorú és hosszas ellenőrzéseknek vetjük alá mielőtt törölnénk:</p>
+<p>&nbsp;</p>
+<ul>
+<li>A bejegyzésnek témába vágónak kell lennie</li>
+<li>Nem tartalmazhat szitokszavakat</li>
+<li>Nem lehet erőszakra, diszkriminációra utaló, vagy szexuális töltetű</li>
+<li>Ellenőrizzük a megadott e-mail címet</li>
+<li>A név és keresztnév sem lehet erőszakra, diszkriminációra utaló, vagy szexuális töltetű</li>
+<li>Végül a bejegyzést minden esetben az adatokkal együtt töröljük</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Érvényben lévő eljárások adatkezelési sérelmek esetén</h3>
+<p>Mi büszkék vagyunk arra, hogy nincsenek adataink rólad.</p>
+<h3>Milyen harmadik féltől származó adatokat kapunk</h3>
+<p>Nem kapunk harmadik féltől adatokat.</p>
+<h3>Milyen automatizált döntéshozatalt és/vagy profilalkotást végzünk a felhasználói adatokkal</h3>
+<p>Nem végzünk sem döntéshozatali, sem profilalkotási tevékenységet.</p>
+<h3>Szabályozott iparág közzétételi követelményei</h3>
+<p>Nincsenek ilyen követelmények</p></div>
+
+<div id="en_welcome" class="b8t_content">
+<h1>Welcome</h1>
+<p style="float:right; text-align: right;"><span style="font-size: 1.2em"><b> APARTMENT </b></span><br>
+	<span> Night with angels </span><br>
+	Call or WhatsApp:<br>
+	<br>
+	00 36 30 689 3525<br>
+	<a href="mailto:viewtobazilika@gmail.com">viewtobazilika@gmail.com<br></a>
+	<br>
+	Révai köz 1<br>
+	HU-1065 Budapest<br>
+	</p>
+<img class="b8t_contact" src="AA.jpg" />
+<p class="b8t_clr" >Mrs. Andrásné Avar</p>
+</div>
+
+
+
+</div></div>
+
+
+
+<!-- EndOfArticles / StartOfFooter -->
+
+
+
+<nav class="navbar transparent navbar-inverse navbar-expand-md fixed-bottom"
+     onClick="javascript: hide_map()">
+    <div class="navbar-nav w-100 justify-content-between">
+        <a class="nav-item nav-link" 
+           onClick="javascript:window.open('mailto:viewtobazilika@gmail.com', 'mail');event.preventDefault()"
+           href="mailto:viewtobazilika@gmail.com" target="_blank">
+           A.D.: MMXX © Night with Angels - apartment&nbsp;in&nbsp;the&nbsp;center&nbsp;of&nbsp;Budapest
+        </a>
+        <a class="nav-item nav-link" 
+           onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
+           href="mailto:b6@b6sics.hu" target="_blank">
+            B8tstrapped&nbsp;by&nbsp;b6@b6sics.hu
+        </a>
+    </div>
+</nav>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+			crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+			crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+			crossorigin="anonymous"></script>
+
+  </body>
+</html>
