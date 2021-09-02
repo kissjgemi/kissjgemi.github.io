@@ -1,0 +1,128 @@
+<!-- $Id: example.html,v 1.4 2006/03/27 02:44:36 pat Exp $ -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Yingu oldala</title>
+
+<script type="text/javascript" src="_inc/swfobject.js"></script>
+<link href="_inc/styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function updategallery() {
+	//<![CDATA[
+	var so = new SWFObject("polaroid.swf", "polaroid", "800px", "600px", "0", "#FFFFFF");
+	so.write("demo");
+	//]]>
+}
+</script>
+<script type="text/javascript" src="tabber.js"></script>
+<link rel="stylesheet" href="example.css" TYPE="text/css" MEDIA="screen">
+<link rel="stylesheet" href="example-print.css" TYPE="text/css" MEDIA="print">
+
+<script type="text/javascript">
+
+/* Optional: Temporarily hide the "tabber" class so it does not "flash"
+   on the page as plain HTML. After tabber runs, the class is changed
+   to "tabberlive" and it will appear. */
+
+document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+</script>
+
+<script type="text/javascript" language="JavaScript" src="nevnap.js"></script>
+
+</head>
+<body>
+
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111">
+    <tr>
+      <td>
+
+<div class="tabber">
+
+     <div class="tabbertab">
+	  <h2 align="left">Yingu</h2>
+	  <div id="demo">
+	  <script type="text/javascript">updategallery();</script>
+	  </div>
+     </div>
+
+     <div class="tabbertab">
+	  <h2 align="left">BlogeT</h2>
+	  <img border="0" src="BackBlogeTheater.png" width="800" height="600">
+     </div>
+
+
+
+     <div class="tabbertab">
+      <h2 align="left">Élatfa</h2>
+	  <img border="0" src="BackGyogynovenyek.png" width="800" height="600">
+     </div>
+
+  <div class="tabbertab">
+    <h2 align="left">Segít</h2>
+    <img border="0" src="BackHelp.png" width="800" height="171">
+
+    <div class="tabber" id="tab1-1">
+
+      <div class="tabbertab">
+        <h3>Tud </h3>
+        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="20%" valign="middle" align="center"></td>
+            <td width="20%" valign="middle" align="center">&nbsp;<a href="http://79.172.252.12:2082"><img border="0" src="Admin.png" width="48" height="120"></a>&nbsp;</td>
+            <td width="20%" valign="middle" align="center">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td width="20%" valign="middle" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://yingu.hu/trezor"><img border="0" src="Trezor.png" width="48" height="120"></a>&nbsp;</td>
+            <td width="20%" valign="middle" align="center">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="tabbertab">
+        <h3>Nem tud</h3>
+        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="20%" valign="middle" align="center"></td>
+            <td width="20%" valign="middle" align="center"><b>K</b>öszöntjük<br>
+              &nbsp; <script language="JavaScript">nevetkiir();</script> &nbsp;<br>
+              nev&#369;<br>
+              látogatóinkat!</td>
+            <td width="20%" valign="middle" align="center">&nbsp;<img border="0" src="gond.gif" width="140" height="120">&nbsp;</td>
+            <td width="20%" valign="middle" align="center"><b>M</b>a,<br>
+              <script language="JavaScript">datumotkiir();</script>napján,<br>
+              <script language="JavaScript">napnevkorkiir();</script>,<br>
+              sajnos nem tudtam segíteni.</td>
+            <td width="20%" valign="middle" align="center"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="tabbertab">
+        <h3>Talán</h3>
+        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="20%" valign="middle" align="center"></td>
+            <td width="20%" valign="middle" align="right">&nbsp;
+        <a href="http://mail.b6.hu"><img border="0" src="WebMailb6.png" width="48" height="120"></a>&nbsp;</td>
+            <td width="20%" valign="middle" align="center">&nbsp;<a href="mailto:b6@b6.hu"><img border="0" src="b6mail.gif" width="140" height="120"></a>&nbsp;</td>
+            <td width="20%" valign="middle" align="left">&nbsp;<a href="http://mail.b6shop.hu"><img border="0" src="WebMailb6s.png" width="48" height="120"></a>&nbsp;</td>
+            <td width="20%" valign="middle" align="center"></td>
+          </tr>
+        </table>
+      </div> 
+    </div>
+    <img border="0" src="BackHelpDown.png" width="800" height="240">
+  </div>
+  
+
+</div>
+
+      <p>&nbsp;&nbsp; </td>
+    </tr>
+  </table>
+  </center>
+
+<p>&nbsp;</p>
+
+</body>
+</html>
