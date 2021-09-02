@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: bold 36px Helvetica;
+}
+
+body {
+    background: white;
+    overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transition: 1s;
+}
+
+h1.question {
+    width: 100%;
+    transform: translate(-50%, -50%) rotateX(0);
+    text-align: center;
+}
+
+h1.answer {
+    transform: rotateX(90deg);
+    text-align: right;
+    margin-right: 10vw;
+}
+
+label {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    z-index: 10;
+}
+
+input {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(white, yellow 10%, blue 80%);
+    transition: 1s ease-in;
+    transform-origin: bottom;
+}
+
+.dinosaurs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dinosaur {
+    position: relative;
+    width: 75vw;
+    height: 40vh;
+    background-image: url('dinosaur.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section:nth-child(1) {
+    transform: translateX(10%);
+}
+
+section:nth-child(2) {
+    transform: translateX(-10%);
+}
+
+#checkbox1:checked~.background {
+    transform: scaleY(0);
+}
+
+#checkbox1:checked~.question {
+    transform: translate(-50%, -50%) rotateX(90deg);
+}
+
+#checkbox1:checked~.answer {
+    transform: rotateX(0);
+}

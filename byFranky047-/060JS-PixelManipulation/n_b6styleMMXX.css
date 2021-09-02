@@ -1,0 +1,33 @@
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    min-height: 100vh;
+    background: gray;
+    font-family: cursive;
+}
+
+canvas {
+    width: 600px;
+    height: 450px;
+    border: 1px solid white;
+}
+
+img,
+#myCanvas {
+    width: 220px;
+    height: 270px;
+    border: 1px solid white;
+}
+
+

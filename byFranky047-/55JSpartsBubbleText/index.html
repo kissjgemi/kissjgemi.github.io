@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, 
+                                   initial-scale=1, 
+                                   shrink-to-fit=no" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>newB6</title>
+
+    <link rel="stylesheet" href="n_b6styleMMXX.css">
+
+</head>
+
+<body>
+
+    <canvas id="canvas49"></canvas>
+
+    <svg>
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation='10' result='name' />
+                <feColorMatrix in='name' mode='matrix' values='1 0 0 0 0
+                             0 1 0 0 0
+                             0 0 1 0 0
+                             0 0 0 22 -9' result='aab' />
+                <feBlend in="SourceGraphic" in2='goo' />
+                <filter>
+        </defs>
+    </svg>
+
+    <script src="n_b6scriptMMXX.js"></script>
+
+</body>
+
+</html>

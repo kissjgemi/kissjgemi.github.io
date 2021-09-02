@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, 
+                                   initial-scale=1, 
+                                   shrink-to-fit=no" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>newB6</title>
+
+    <link rel="stylesheet" href="n_b6styleMMXX.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <button>BUTTON 1</button>
+        <button>BUTTON 2</button>
+        <button>BUTTON 3</button>
+    </div>
+
+    <svg>
+        <defs>
+            <filter id="wave">
+                <feTurbulence type='fractalNoise' baseFrequency='0.001 0.001' numOctaves='1' result='warp' />
+                <feDisplacementMap xChannelSelector='R' yChannelSelector='G' scale='30' in='SourceGraphic' in2='warpOffset' />
+            </filter>
+        </defs>
+    </svg>
+    <script src="n_b6scriptMMXX.js"></script>
+
+</body>
+
+</html>

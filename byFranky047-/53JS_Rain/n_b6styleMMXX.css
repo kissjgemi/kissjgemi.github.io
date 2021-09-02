@@ -1,0 +1,46 @@
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#title1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: blue;
+    font-size: 15vmin;
+    opacity: 0.75;
+    line-height: 15vmin;
+    white-space: nowrap;
+    text-shadow: 0 0 10px black;
+    border-top: 10px ridge blue;
+}
+
+#title1::before {
+    content: "is awesome";
+    position: absolute;
+    left: 4.5vmin;
+    bottom: -8vmin;
+    font-size: 4vmin;
+    text-align: left;
+}
