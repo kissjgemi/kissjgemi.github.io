@@ -1,0 +1,96 @@
+
+/*	LOGO-BANNER DIV-S */
+@media all and (min-width: 640px) {
+
+	logospan{
+		display: inline-block;
+	}
+
+}
+
+.logoDivLeftClass{
+	float: left;
+	border-width: 2px 2px 0 calc(1vmax + 10px);
+}
+
+
+/*	NAVIGATION DIV-S */
+.naviDivClass {
+	clear: both;
+	float: left;
+	width: 21vw;
+	text-align: left;
+}
+
+.navitemHolder{
+	width: 19vw;
+	border-width: 1vmax 2px 1vmax calc(2vmax + 2px);
+}
+
+.navitemHolder:hover{
+	border-width: 1vmax 2px 1vmax 2vmax;
+}
+
+.navitemHolder.selected{
+	border-radius: 10px 0 0 10px;
+}
+
+
+/*	ARTICLE DIV-S */
+
+
+/*	NEWS DIV-S */
+.newsDiv1Class{
+	float: left;
+	width: 21vw;
+	height: 46vh;
+	text-align: left;
+}
+
+.newsitemHolder{
+	width: 19vw;
+	border-width: 1vmax 2px 1vmax calc(2vmax + 2px);
+}
+
+.newsitemHolder:hover{
+	border-width: 1vmax 2px 1vmax 2vmax;
+}
+
+.newsDiv2Class {
+	display: none;
+}
+
+.itemDivClass{
+	min-height: 90vh;
+}
+
+@media all and (max-height: 400px) {
+/*	NEWS DIV-S */
+	.newsDiv1Class{
+		height: 160px;
+	}
+}
+
+@media all and (min-height: 600px) {
+/*	NEWS DIV-S */
+	.newsDiv1Class{
+		height: 256px;
+	}
+
+}
+
+@media all and (min-width: 1281px) {
+	.naviDivClass, .newsDiv1Class {
+		width: 204px;
+	}
+
+	.navitemHolder, .newsitemHolder{
+		width: 204px;
+	}
+
+	article a{
+		width: 868px;
+	}
+
+}
+

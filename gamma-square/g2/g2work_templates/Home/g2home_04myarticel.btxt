@@ -1,0 +1,82 @@
+
+<!-- STARTofARTICLE -->	
+
+	<div id="artiDiv" class="artiDivClass"> 
+		<div id="articleDiv01" class="articleDivClass">
+			<div id="articleitemdiv01" class="articleHolderDouble">
+				<a id="articleitem01" href="g2/g2art_reviews/Review%20-%20Hearthstone%20-%20Heroes%20of%20Warcraft.html">
+					<img id="articleItemImg01v" class="articleDoubleImgClass" 
+					src="g2/g2art_img/2016/Review_Hearthstone_400X800.png" 
+					title="article01" alt="article01" />
+					<img id="articleItemImg01h" class="articleDoubleImgClass" 
+					src="g2/g2art_img/2016/Review_Hearthstone_400X400.png" 
+					title="article01" alt="article01" />
+				<div id="artItemText01" class="artitemTextClass">Hearthstone:<br />Heroes of Warcraft</div>
+				</a>
+			</div>
+			<div id="articleitemdiv02" class="articleHolder">
+				<a id="articleitem02" href="g2/g2art_reviews/Review%20-%20Dark%20Souls.html">
+					<img id="articleItemImg02v" class="articleImgClass" 
+					src="g2/g2art_img/2016/Review_Dark%20Souls_400X400.png" 
+					title="article02" alt="article02" />
+					<img id="articleItemImg02h" class="articleImgClass" 
+					src="g2/g2art_img/2016/Review_Dark%20Souls_400X200.png" 
+					title="article02" alt="article02" />
+				<div id="artItemText02" class="artitemTextClass">Dark Souls</div>
+				</a>
+			</div>
+		</div>
+
+		<div id="articleDiv02" class="articleDivClass">
+			<div id="articleitemdiv03" class="articleHolder">
+				<a id="articleitem03" href="g2/g2art_reviews/Review%20-%20Bioshock.html">
+					<img id="articleItemImg03v" class="articleImgClass" 
+					src="g2/g2art_img/2016/Review_Bioshock_400X400.png" 
+					title="article03" alt="article03" />
+					<img id="articleItemImg03h" class="articleImgClass" 
+					src="g2/g2art_img/2016//Review_Bioshock_400X200.png" 
+					title="article03" alt="article03" />
+				<div id="artItemText03" class="artitemTextClass">Bioshock</div>
+				</a>
+			</div>
+			<div id="articleitemdiv04" class="articleHolderDouble">
+				<a id="articleitem04" href="g2/g2art_reviews/Review%20-%20Half%20Life%202.html">
+					<img id="articleItemImg04v" class="articleDoubleImgClass" 
+					src="g2/g2art_img/2016/Review_Half%20Life%202_400X800.png" 
+					title="article04" alt="article04" />
+					<img id="articleItemImg04h" class="articleDoubleImgClass" 
+					src="g2/g2art_img/2016/Review_Half%20Life%202_400X400.png" 
+					title="article04" alt="article04" />
+				<div id="artItemText04" class="artitemTextClass">Half Life 2</div>
+				</a>
+			</div>
+		</div>
+
+		<div id="articleDiv03" class="articleDivClass">
+			<div id="articleitemdiv05" class="articleHolderDouble">
+				<a id="articleitem05" href="g2/g2art_reviews/Review%20-%20Simcity%202000.html">
+					<img id="articleItemImg05v" class="articleDoubleImgClass" 
+					src="g2/g2art_img/2016/Review_SimCity%202000_400X800.png" 
+					title="article05" alt="article05" />
+					<img id="articleItemImg05h" class="articleDoubleImgClass" 
+					src="g2/g2art_img/2016/Review_SimCity%202000_400X400.png" 
+					title="article05" alt="article05" />
+				<div id="artItemText05" class="artitemTextClass">SimCity 2000</div>
+				</a>
+			</div>
+			<div id="articleitemdiv06" class="articleHolder">
+				<a id="articleitem06" href="g2/g2art_reviews/Review%20-%20Warcraft%202%20-%20Tides%20of%20darkness.html">
+					<img id="articleItemImg06v" class="articleImgClass" 
+					src="g2/g2art_img/2016/Review_Warcraft%202_400X400.png" 
+					title="article06" alt="article06" />
+					<img id="articleItemImg06h" class="articleImgClass" 
+					src="g2/g2art_img/2016//Review_Warcraft%202_400X200.png" 
+					title="article06" alt="article06" />
+				<div id="artItemText06" class="artitemTextClass">Warcraft 2</div>
+				</a>
+			</div>
+		</div>
+	</div>		
+		
+<!-- ENDofARTICLE -->	
+

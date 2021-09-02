@@ -1,0 +1,119 @@
+
+/*	LOGO-BANNER DIV-S */
+
+@media all and (min-width: 1024px) {
+
+	.logoDivRightClass span{
+		display: inline-block;
+	}
+
+}
+
+@media all and (max-height: 600px) {
+
+	.logoDivRightClass span{
+		display: inline-block;
+	}
+
+}
+
+
+/*	NAVIGATION DIV-S */
+.naviDivClass {
+	display: inline-block;
+	margin: 0 12px 0 0;
+	min-height: 620px;
+	width: 198px;
+	text-align: left;
+	vertical-align:top;
+}
+
+.navitemHolder{
+	width: 188px;
+	height: 72px;
+	margin: 8px 0 8px 4px;
+	padding: 0;
+	border-width: 4px 2px 4px 12px;
+}
+
+.navitemHolder:hover{
+	padding: 0 0 0 2px;
+	border-width: 4px 2px 4px 8px;
+}
+
+.navitemHolder.selected{
+	padding: 0 0 0 2px;
+	border-width: 2px 0 2px 2px;
+	border-radius: 10px 0 0 10px;
+}
+
+.navitemHolder.selected:hover{
+	padding: 0 0 0 2px;
+	border-width: 2px 0 2px 2px;
+}
+
+
+/*	NEWS DIV-S */
+.news1Div1Class{
+	display: block;
+	overflow: hidden;
+	margin: 4px 0;
+    text-align: center;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+}
+
+.news1itemHolder{
+	position: relative;
+	display: inline-block;
+	width: 188px;
+	overflow: hidden;
+    text-align: justify;
+	border-style: solid;
+	border-width: 4px 2px 4px 13px;
+	border-color: transparent;
+}
+
+
+/*	ARTICEL DIV-S */
+canvas{
+
+}
+
+.canvasWrapperClass {
+	min-height: 620px;
+	min-width: 564px;
+}
+
+#leftArrow, #rightArrow{
+
+}
+
+#upArrow, #downArrow{
+
+}
+
+@media all and (max-width: 1440px){
+	.canvasWrapperClass{
+		min-width: calc(100vw - 240px);
+	}
+
+}
+
+@media all and (min-width: 1441px){
+	.canvasWrapperClass{
+		min-width: 1140px;
+	}
+
+}
+
+
+/*	NEWS2 DIV-S */
+.news2DivClass {
+	display: none;
+}
+
+
+/*	FOOTER DIV-S */
+

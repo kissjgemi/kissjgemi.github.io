@@ -1,0 +1,67 @@
+<!-- STARTofLOGO -->	
+
+	<div id="logoDiv" class="logoDivClass">
+
+		<div id="logoDivLeft" class="logoDivLeftClass"> 
+			<b id="logo" title="go to Start">
+				<img id="logoImg" class="logoIndex" src="g2/g2work_img/g2.png" title="Gamma-square" alt="Gamma-square" />
+			</b>
+		</div>
+
+		<div id="logoDivRight" class="logoDivRightClass"> 
+			Reviews and Rankings <span>- Because Games are Art -</span>
+		</div>
+		
+	</div>
+	
+	<!-- STARTofMINIHEADER -->	
+	
+		<div id="headerDivMini" class="headerDivMiniClass">
+			<a id="navitemMiniLogin" href="#!" onclick="document.getElementById('ggLogin').style.display='block'">
+				<div id="navitemMinidivLogin" class="navitemMiniHolder">				
+					<img id="navItemImgMiniLogin" class="navitemImgMiniClass" src="g2/g2work_img/navitemLogin.png" title="Login" alt="Login" />
+					<div id="navItemIconMiniLogin" class="navitemIconMiniClass"><i class="fa fa-sign-in"></i></div>
+				</div>
+			</a>
+		</div>			
+			
+	<!-- ENDofMINIHEADER -->	
+
+	<!-- STARTofLOGIN -->	
+
+		<div id="ggLogin" class="modal">
+ 			<form class="modal-content animate" action="index.html">
+				<div class="imgcontainer">
+					<span onclick="document.getElementById('ggLogin').style.display='none'" class="close" title="Close Modal">
+					&times;
+					</span>
+				<img src="g2/g2work_img/login-avatar.png" alt="Avatar" class="avatar">
+				</div>
+				<div class="container">
+					<label><b>Username</b>
+					</label><input type="text" placeholder="Enter Username" name="uname" required>
+					<label><b>Password</b>
+					</label><input type="password" placeholder="Enter Password" name="psw" required>
+					<span class="psw"><a href="#!">Forgot your password?</a></span>
+					<button type="submit">Login</button>
+					<input type="checkbox" checked="checked" name="rememberme"> Remember me
+				</div>
+			</form>
+		</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('ggLogin');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<!-- ENDofLOGIN -->	
+
+<!-- ENDofLOGO -->	
+

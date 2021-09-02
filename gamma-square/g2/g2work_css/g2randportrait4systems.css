@@ -1,0 +1,126 @@
+
+/*	LOGO-BANNER DIV-S */
+
+logospan{
+	display: none;
+}
+
+
+.logoDivClass{
+	text-align: center;
+	margin: 0px auto;
+}
+
+#logoDivRight{
+	display: inline-block;
+}
+
+@media all and (min-width: 640px) {
+
+	logospan{
+		display: inline-block;
+	}
+	
+}
+
+
+/*	NAVIGATION DIV-S */
+#headerDivMini{
+	display: none;
+}
+
+.naviDivClass{
+	text-align: center;
+	width: 100%;
+	padding: 0 1vw;
+}
+
+.navitemHolder{
+	width:  30vw;
+}
+
+.navitemHolder.selected{
+	border-width: 2px 2px 0 2px;
+	border-radius: 10px 10px 0 0;
+}
+
+.navitemHolder.selected:hover{
+	border-width: 2px 2px 0 2px;
+}
+
+
+/*	ARTICLE DIV-S */
+.artiDivClass {
+	clear: both;
+	text-align: center;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.articleDivClass{
+	margin: 0 auto;
+	width: inherit;
+	height: 84vh;
+}
+
+.articleHolderGrand{
+	width: 88vw;
+	height: 40vh;
+	margin: 2vh 1vw;
+	padding: 0;
+}
+
+.articleGrandImgClass{
+	width: 88vmax;
+	height: 88vmax;
+	left: 50%;
+	margin-left: -44vmax;
+    top: 50%;
+    margin-top: -44vmax;
+}
+
+.artitemTextClass{
+    left: 50%;
+}
+
+
+/*	NEWS DIV-S */
+.newsDiv1Class {
+		display: none;
+}
+
+.newsDiv2Class {
+	text-align: center;
+	width: 100%;
+	padding: 0 1vw;
+	height: 46vh;
+}
+
+.newsitemHolder{
+	width: inherit;
+}
+
+.newsitemImgClass{
+	width: 96vw;
+	height: 48vw;
+	left: 50%;
+	margin-left: -48vw;
+    top: 50%;
+    margin-top: -24vw;
+}
+
+@media all and (max-height: 400px) {
+/*	NEWS DIV-S */
+	.newsDiv2Class {
+		height: 160px;
+	}
+}
+
+@media all and (min-height: 600px) {
+/*	NEWS DIV-S */
+	.newsDiv2Class {
+		height: 256px;
+	}
+
+}
+

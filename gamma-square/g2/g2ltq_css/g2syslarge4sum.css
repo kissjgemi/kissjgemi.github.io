@@ -1,0 +1,137 @@
+
+/*	LOGO-BANNER DIV-S */
+
+@media all and (min-width: 1024px) {
+
+	.logoDivRightClass span{
+		display: inline-block;
+	}
+
+}
+
+@media all and (max-height: 600px) {
+
+	.logoDivRightClass span{
+		display: inline-block;
+	}
+
+}
+
+
+/*	NAVIGATION DIV-S */
+.naviDivClass {
+	display: inline-block;
+	margin: 0 12px 0 0;
+	min-height: 620px;
+	width: 198px;
+	text-align: left;
+	vertical-align:top;
+}
+
+.navitemHolder{
+	width: 188px;
+	height: 72px;
+	margin: 8px 0 8px 4px;
+	padding: 0;
+	border-width: 4px 2px 4px 12px;
+}
+
+.navitemHolder:hover{
+	padding: 0 0 0 2px;
+	border-width: 4px 2px 4px 8px;
+}
+
+.navitemHolder.selected{
+	padding: 0 0 0 2px;
+	border-width: 2px 0 2px 2px;
+	border-radius: 10px 0 0 10px;
+}
+
+.navitemHolder.selected:hover{
+	padding: 0 0 0 2px;
+	border-width: 2px 0 2px 2px;
+}
+
+
+/*	NEWS DIV-S */
+.news1Div1Class{
+	display: block;
+	overflow: hidden;
+	margin: 4px 0;
+    text-align: center;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+}
+
+.news1itemHolder{
+	position: relative;
+	display: inline-block;
+	width: 188px;
+	overflow: hidden;
+    text-align: justify;
+	border-style: solid;
+	border-width: 4px 2px 4px 13px;
+	border-color: transparent;
+}
+
+
+/*	ARTICEL DIV-S */
+.artiDivClass {
+	display: inline-block;
+	min-height: 620px;
+	width: 564px;
+	text-align: right;
+	vertical-align:top;
+}
+
+.articleDivClass{
+	margin: 4px 4px;
+	width: 172px;
+}
+
+.articleHolderGrand{
+	height: 42.5vh;
+	margin: 12px 8px;
+	padding: 0 6px;
+}
+
+.articleGrandImgClass{
+	width: 44vmax;
+	height: 44vmax;
+	left: 50%;
+	margin-left: -22vmax;
+    top: 50%;
+    margin-top: -22vmax;
+}
+
+@media all and (max-width: 1440px){
+	.artiDivClass {
+		width: calc(100vw - 240px);
+	}
+
+	.articleDivClass{
+		width: calc(32vw - 80px);
+	}
+
+}
+
+@media all and (min-width: 1441px){
+	.artiDivClass {
+		width: 1140px;
+	}
+
+	.articleDivClass{
+		width: 355px;
+	}
+
+}
+
+
+/*	NEWS2 DIV-S */
+.news2DivClass {
+	display: none;
+}
+
+/*	FOOTER DIV-S */
+

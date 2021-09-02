@@ -1,0 +1,34 @@
+<p>
+ <span class="vcard">
+   <span class="fn org">B6.HU</span> -
+     <span class="adr"> 
+         <span class="country-name">
+		 Hungary <span class="postal-code"> 1111 </span>
+         <span class="locality">Budapest</span>,
+         <span class="region">XI. kerület</span>,
+         <span class="street-address">Bercsényi u. 6</span>.
+     </span>
+ </span>
+	<span class="geo">
+        <span class="latitude">
+           <span class="value-title" title="47.47858022443727"></span>
+        </span>
+        <span class="longitude">
+           <span class="value-title" title="19.051473140716552"></span>
+        </span>
+     </span>
+  Telefon: <span class="tel">+36-30-465-4562</span>  E-mail:  <span class="email">b6@b6.hu</span>
+	<br />
+	<a href="http://b6.hu/" class="url"><i>http://b6.hu</i></a> 
+ </span>
+  
+ <span class="note">
+ <span class="type"> - EMI2014 - </span>
+	<i>
+		<span class="type"> Ki</span>
+		<span class="type"> korán kel</span>,
+		<span class="type"> (hamarabb elfárad)</span>, 
+		<span class="type"> kukorékol</span>. 
+	</i>
+ </span>
+</p>

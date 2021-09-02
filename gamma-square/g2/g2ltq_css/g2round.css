@@ -1,0 +1,139 @@
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+
+ *{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    outline:0;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+}
+
+body{
+	font-family: 'Josefin Sans', Helvetica, sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+.justified{
+	text-align: justify;
+}
+.leftsided{
+	text-align: left;
+}
+.centered{
+	text-align: center;
+}
+.rightsided{
+	text-align: right;
+}
+
+a:link, a:hover, a:active{
+	color: black;
+}
+
+a:visited{
+	color: gray;
+}
+
+a, p{
+	font-family: 'Josefin Slab', Times, serif;
+}
+
+p{
+	margin: 2px 0 2px 0;
+	padding: 4px;
+}
+
+h1, h2, h3, h4, h5, h6, logotitle, logospan, .logoDivRightClass, .navitemTextClass, .artitemTextClass{
+	font-family: 'Josefin Sans', Helvetica, sans-serif;
+}
+
+insideNObreak{
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+}
+
+hr{
+	margin: 2vh 2vw 3vh 2vw;
+}
+
+#wrapper {
+	position: relative;
+	text-align: center;
+	font-family: 'Josefin Sans', Helvetica, sans-serif;
+	min-width: 320px;
+	max-width: 1444px;
+	margin: 0 auto;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+}
+
+
+/*	FOOTER DIV-S */
+.footerDivCenterClass{
+	position: relative;
+	width: 100%;
+    text-align: center;
+	color: white;
+	padding: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+	background-color: black;
+}
+
+.placeHolder{
+	display: inline-block;
+	height: 200px;
+	width: 1px;
+	margin: 0 10px;
+	background-color: white;
+	vertical-align: middle;
+}
+
+.footerDivCenterClass img{
+	display: inline-block;
+	vertical-align: middle;
+	background-color: black;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+}
+
+.footerDivCenterClass span{
+	font-size: 50px; 
+ }
+
+.footerDivTxt{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	margin: 0 90px
+ }
+ 
+ @media all and (max-width: 800px){
+	.footerDivTxt{
+		display: block;
+		text-align: center;
+		margin: 0;
+	}
+		
+	.placeHolder{
+		width: 0px;
+		margin: 0 20px;
+	}
+
+ }
+ 
+ 

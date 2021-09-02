@@ -1,0 +1,683 @@
+ /*	LOGO-BANNER DIV-S */
+.logoDivClass{
+	min-width: 320px;
+}
+
+.logoDivLeftClass {
+	display: inline-block;
+	float: left;
+	height: 72px;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 2px 2px 0 14px;
+	border-color: transparent;
+}
+
+.logoIndex{
+	width: 72px;
+	height: 72px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+}
+
+.logoDivRightClass {
+	height: 72px;
+	overflow: hidden;
+	line-height: 72px;
+    text-align: left;
+	font-weight: bold;
+	color: black;
+	font-size: 36px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+}
+
+.logoDivRightClass span{
+	display: none;
+	font-size: 24px;
+}
+
+/*	NAVIGATION DIV-S */
+.headerDivMiniClass{
+	position: absolute;
+	top: 0;
+	right: 4px;
+	padding: 0 2px;
+	width: 72px;
+	height: 72px;
+}
+
+.navitemMiniHolder{
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	width: 72px;
+	height: 72px;
+	border-style: solid;
+	border-width: 2px 0;
+	border-color: transparent;
+}
+
+.navitemImgMiniClass{
+	position: absolute;
+	width: 72px;
+	height: 72px;
+	left: 50%;
+	margin-left: -36px;
+    top: 50%;
+    margin-top: -36px;
+	border-style: solid;
+	border-width: 1px 2px 0 2px;
+	border-color: transparent; 
+}
+
+.navitemMiniHolder:hover .navitemImgMiniClass{
+	border-width: 0;
+}
+
+.navitemIconMiniClass{
+	position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    margin-top: -18px;
+	font-size: 36px;
+	font-weight: bold;
+	color: black;
+}
+
+@media all and (max-width: 800px){
+	.logoDivRightClass span{
+		font-size: 20px;
+	}
+
+	.logoDivLeftClass {
+		height: 60px;
+	}
+
+
+	.logoDivRightClass{
+		height: 60px;
+		line-height: 60px;
+		font-size: 30px;
+	}
+
+	.logoIndex{
+		width: 60px;
+		height: 60px;
+	}
+
+/*	NAVIGATION DIV-S */
+	.headerDivMiniClass{
+		height: 60px;
+		width: 60px;
+		right: 3px;
+	}
+
+	.navitemMiniHolder{
+		width: 60px;
+		height: 60px;
+	}
+
+	.navitemImgMiniClass{
+		width: 60px;
+		height: 60px;
+		margin-left: -30px;
+		margin-top: -30px;
+	}
+
+	.navitemIconMiniClass{
+		margin-top: -15px;
+		font-size: 30px;
+	}
+
+}
+
+@media all and (max-height: 600px){
+	.logoDivRightClass span{
+		font-size: 20px;
+	}
+
+	.logoDivLeftClass {
+		height: 60px;
+	}
+
+
+	.logoDivRightClass{
+		height: 60px;
+		line-height: 60px;
+		font-size: 30px;
+	}
+
+	.logoIndex{
+		width: 60px;
+		height: 60px;
+	}
+
+/*	NAVIGATION DIV-S */
+	.headerDivMiniClass{
+		height: 60px;
+		width: 60px;
+		right: 3px;
+	}
+
+	.navitemMiniHolder{
+		width: 60px;
+		height: 60px;
+	}
+
+	.navitemImgMiniClass{
+		width: 60px;
+		height: 60px;
+		margin-left: -30px;
+		margin-top: -30px;
+	}
+
+	.navitemIconMiniClass{
+		margin-top: -15px;
+		font-size: 30px;
+	}
+
+}
+
+@media all and (max-width: 500px){
+	.logoDivRightClass span{
+		font-size: 13px;
+	}
+
+	.logoDivLeftClass {
+		height: 40px;
+	}
+
+	.logoDivRightClass{
+		height: 40px;
+		line-height: 40px;
+		font-size: 20px;
+	}
+
+	.logoIndex{
+		width: 40px;
+		height: 40px;
+	}
+
+/*	NAVIGATION DIV-S */
+	.headerDivMiniClass{
+		height: 40px;
+		width: 40px;
+		right: 2px;
+	}
+
+	.navitemMiniHolder{
+		width: 40px;
+		height: 40px;
+	}
+
+	.navitemImgMiniClass{
+		width: 40px;
+		height: 40px;
+		margin-left: -20px;
+		margin-top: -20px;
+	}
+
+	.navitemIconMiniClass{
+		margin-top: -10px;
+		font-size: 20px;
+	}
+
+}
+
+@media all and (max-height: 400px){
+	.logoDivRightClass span{
+		font-size: 13px;
+	}
+
+	.logoDivLeftClass {
+		height: 40px;
+	}
+
+	.logoDivRightClass{
+		height: 40px;
+		line-height: 40px;
+		font-size: 20px;
+	}
+
+	.logoIndex{
+		width: 40px;
+		height: 40px;
+	}
+
+/*	NAVIGATION DIV-S */
+	.headerDivMiniClass{
+		height: 40px;
+		width: 40px;
+		right: 2px;
+	}
+
+	.navitemMiniHolder{
+		width: 40px;
+		height: 40px;
+	}
+
+	.navitemImgMiniClass{
+		width: 40px;
+		height: 40px;
+		margin-left: -20px;
+		margin-top: -20px;
+	}
+
+	.navitemIconMiniClass{
+		margin-top: -10px;
+		font-size: 20px;
+	}
+
+}
+
+/*	LOGIN DIV-S */
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: left;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 100px;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid  lightgray;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: lightgray;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 400px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+/*	NAVIGATION DIV-S */
+.naviDivClass {
+	overflow: hidden;
+	border-style: solid;
+	border-width: 4px;
+	border-color: transparent;
+}
+
+.navitemHolder{
+	position: relative;
+	display: inline-block;
+	width: 188px;
+	height: 72px;
+	overflow: hidden;
+	border-style: solid;
+	border-color: transparent;
+}
+
+.navitemHolder:hover{
+
+}
+
+.navitemImgClass{
+	position: absolute;
+	width: 188px;
+	height: 188px;
+	left: 50%;
+	margin-left: -94px;
+    top: 50%;
+    margin-top: -94px;
+	background-color: black;
+}
+
+.navitemTextClass{
+	position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    margin-top: -15px;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+}
+
+.navitemHolder.selected .navitemTextClass{
+	color: black;
+}
+
+.navitemHolder:hover .navitemTextClass{
+
+}
+
+.navitemHolder.selected:hover .navitemTextClass{
+	color: black;
+}
+
+
+/*	NEWS DIV-S */
+
+
+@media all and (max-width: 800px){
+	.naviDivClass {
+		border-width: 3px;
+	}
+
+	.navitemHolder{
+		width: 148px;
+		height: 80px;
+	}
+
+	.navitemImgClass{
+		width: 148px;
+		height: 148px;
+		margin-left: -74px;
+		margin-top: -74px;
+	}
+
+	.navitemTextClass{
+		margin-top: -15px;
+		font-size: 30px;
+	}
+
+}
+
+@media all and (max-height: 600px){
+	.naviDivClass {
+		border-width: 3px;
+	}
+
+	.navitemHolder{
+		height: 80px;
+	}
+	.navitemHolder{
+		width: 148px;
+		height: 80px;
+	}
+
+	.navitemImgClass{
+		width: 148px;
+		height: 148px;
+		margin-left: -74px;
+		margin-top: -74px;
+	}
+
+	.navitemTextClass{
+		margin-top: -15px;
+		font-size: 30px;
+	}
+
+}
+
+@media all and (max-width: 500px){
+	.naviDivClass {
+		border-width: 2px;
+	}
+
+	.navitemHolder{
+		width: 88px;
+		height: 48px;
+	}
+
+	.navitemImgClass{
+		width: 80px;
+		height: 80px;
+		margin-left: -40px;
+		margin-top: -40px;
+	}
+
+	.navitemTextClass{
+		margin-top: -8px;
+		font-size: 16px;
+	}
+
+}
+
+@media all and (max-height: 400px){
+	.naviDivClass {
+		border-width: 2px;
+	}
+
+	.navitemHolder{
+		width: 88px;
+		height: 48px;
+	}
+
+	.navitemImgClass{
+		width: 80px;
+		height: 80px;
+		margin-left: -40px;
+		margin-top: -40px;
+	}
+
+	.navitemTextClass{
+		margin-top: -8px;
+		font-size: 16px;
+	}
+
+}
+
+}
+
+
+/*	ARTICEL DIV-S */
+.artiDivClass {
+	overflow: hidden;
+	border-style: solid;
+	border-width: 0px;
+	border-color: transparent;
+}
+
+.artiDivClass > div{
+	display: inline-block;
+}
+
+.articleDivClass{
+	overflow: hidden;
+}
+
+.articleHolder{
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 0px;
+	border-color: gray;
+	border-radius: 10px;
+}
+
+.articleHolderDouble{
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 0px;
+	border-color: gray;
+	border-radius: 10px;
+}
+
+.articleHolder:hover, .articleHolderDouble:hover{
+	border-width: 1px;	
+}
+
+.articleImgClass, .articleDoubleImgClass{
+	-webkit-filter: grayscale(70%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(70%);	
+	position: absolute;
+}
+
+.articleHolder:hover .articleImgClass, .articleHolderDouble:hover .articleDoubleImgClass{
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);	
+}
+
+.artitemTextClass{
+	position: absolute;
+    width: 100%;
+    text-align: left;
+    bottom: 15px;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	margin: 0 0 0 1px;
+	padding: 8px 12px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 12px 0 0 12px;
+	background-color: black;
+}
+
+.articleHolder:hover .artitemTextClass, .articleHolderDouble:hover .artitemTextClass{
+	background-color: rgba(244, 244, 244, 1);
+	color: black;
+	margin: 0;
+    bottom: 14px;
+	border-width: 1px;
+	border-color: black;
+}
+
+/*	ARTICEL IMG SRC-S */
+#articleItemImg01v{
+	display: none;
+}
+
+#articleItemImg02v{
+	display: none;	
+}
+
+#articleItemImg03v{
+	display: none;	
+}
+
+#articleItemImg04v{
+	display: none;	
+}
+
+#articleItemImg05v{
+	display: none;	
+}
+
+#articleItemImg06v{
+	display: none;	
+}
+
+#articleItemImg01h{
+	display: none;
+}
+
+#articleItemImg02h{
+	display: none;
+}
+
+#articleItemImg03h{
+	display: none;
+}
+
+#articleItemImg04h{
+	display: none;
+}
+
+#articleItemImg05h{
+	display: none;
+}
+
+#articleItemImg06h{
+	display: none;
+}
+
+
+/*	NEWS2 DIV-S */
+

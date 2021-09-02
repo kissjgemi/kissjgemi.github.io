@@ -1,0 +1,484 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: transparent;
+}
+
+.justified{
+	text-align: justify;
+}
+.leftsided{
+	text-align: left;
+}
+.centered{
+	text-align: center;
+}
+.rightsided{
+	text-align: right;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link, a:hover, a:active{
+	color: black;
+}
+
+a:visited{
+	color: gray;
+}
+
+a, p{
+	font-family: 'Josefin Slab', serif;
+}
+
+h1, h2, h3, h4, h5, h6, logotitle, logospan, .logoDivRightClass, .navitemTextClass, .artitemTextClass{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+li{
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+	list-style-type: none;
+}
+
+logospan{
+	font-size: 2.5vh;
+}
+
+#wrapper {
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	max-width: 1240px;
+	margin: 0 auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+
+/*	LOGO-BANNER DIV-S */
+.logoDivClass{
+	box-sizing: border-box;
+	min-width: 360px;
+}
+
+.logoDivLeftClass {
+	box-sizing: border-box;
+	display: inline-block;
+	height: 10vh;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 2px 2px 0 2px;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.logoIndex{
+	box-sizing: border-box;
+	width: 10vh;
+	height: 10vh;
+	border-style: solid;
+	border-width: 2px 2px 0 2px;
+	border-color: transparent;
+}
+
+.logoIndex:hover{
+	border-width: 0;
+}
+
+.logoImgClass:hover{
+	border-width: 0;
+}
+
+.logoDivRightClass {
+	box-sizing: border-box;
+	height: 10vh;
+	overflow: hidden;
+	line-height: 10vh;
+    text-align: left;
+	font-weight: bold;
+	color: black;
+	font-size: 4vh;
+	border-style: solid;
+	border-width: 2px 2px 0 2px;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+
+/*	NAVIGATION DIV-S */
+.headerDivMiniClass{
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	right: 2vw;
+	padding: 0 2px;
+	width: calc(10vh + 0px);
+	height: 10vh;
+}
+
+.navitemMiniHolder{
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	width: 10vh;
+	height: 10vh;
+	border-style: solid;
+	border-width: 2px 0;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.navitemImgMiniClass{
+	box-sizing: border-box;
+	position: absolute;
+	width: 10vh;
+	height: 10vh;
+	left: 50%;
+	margin-left: -5vh;
+    top: 50%;
+    margin-top: -5vh;
+	border-style: solid;
+	border-width: 1px 2px 0 2px;
+	border-color: transparent; 
+}
+
+.navitemIconMiniClass{
+	position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    margin-top: -2vh;
+	font-size: 4vh;
+	font-weight: bold;
+	color: black;
+	background-color: transparent;
+}
+
+.naviDivClass {
+	box-sizing: border-box;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.navitemHolder{
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	width: 18vw;
+	height: 14vh;
+	overflow: hidden;
+	border-style: solid;
+	border-width: calc(2vmax + 1px) 1vmax 2px 1vmax;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.navitemHolder:hover{
+	border-width: calc(2vmax + 0px) 1vmax 2px 1vmax;
+}
+
+.navitemHolder.selected{
+	border-width: 2px 0 2px 2px;
+	border-color: darkgray;
+}
+
+.navitemHolder.selected:hover{
+	border-width: 2px 0 2px 2px;
+}
+
+.navitemImgClass{
+	position: absolute;
+	width: 30vmax;
+	height: 30vmax;
+	left: 50%;
+	margin-left: -15vmax;
+    top: 50%;
+    margin-top: -15vmax;
+}
+
+.navitemTextClass{
+	position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    margin-top: -2vh;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 4vh;
+	font-weight: bold;
+	color: white;
+	background-color: transparent;
+}
+
+.navitemHolder.selected .navitemTextClass{
+	color: black;
+}
+
+.navitemHolder:hover .navitemTextClass{
+
+}
+
+.navitemHolder.selected:hover .navitemTextClass{
+	color: black;
+}
+
+
+/*	ARTICLE DIV-S */
+article{
+	box-sizing: border-box;
+	overflow: hidden;
+    text-align: center;
+	background-color: transparent;
+}
+
+article a{
+	box-sizing: border-box;
+	display: inline-block;
+	overflow: hidden;
+    text-align: justify;
+	width: 34vw;
+	min-width: 250px;
+	max-width: 480px;
+	height: 160px;
+	padding: 8px;
+	margin: 5px;
+	border-style: solid;
+	border-width: 0px;
+	border-color: black;
+	border-radius: 10px;
+	background-color: rgba(244, 244, 244, 1);
+}
+
+article a:hover{
+	border-width: 1px;
+	padding: 7px;
+}
+
+@media all and (min-width: 1120px) {
+	article a{
+		width: 22vw;
+	}
+
+}
+
+
+/*	NEWS DIV-S */
+.newsDiv1Class, .newsDiv2Class{
+	box-sizing: border-box;
+	display: block;
+	overflow: hidden;
+    text-align: center;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.newsitemHolder{
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	width: 19vw;
+	height: 44vh;
+	overflow: hidden;
+	border-style: solid;
+	border-width: calc(2vmax + 1px) 1vmax 2px 1vmax;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.newsitemHolder:hover{
+	border-width: calc(2vmax + 0px) 1vmax 2px 1vmax;
+}
+
+.newsitemImgClass{
+	position: absolute;
+	width: 44vw;
+	height: 44vw;
+	left: 50%;
+	margin-left: -22vw;
+    top: 50%;
+    margin-top: -22vw;
+}
+
+.newsitemTextClass{
+	position: absolute;
+    width: 100%;
+    text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+    top: 50%;
+    margin-top: -2vh;
+	font-size: 4vh;
+	font-weight: bold;
+	color: white;
+	background-color: transparent; /* #999;*/
+}
+
+.newsitemHolder:hover .newsitemTextClass{
+
+}
+
+
+/*	FOOTER DIV-S */
+.footerDivCenterClass{
+	box-sizing: border-box;
+	position: relative;
+	width: inherit;
+    text-align: center;
+	padding: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+	background-color: black;
+}
+
+.footerDivCenterClass img{
+	box-sizing: border-box;
+	background-color: black;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+}
+
+@media all and (max-height: 400px) {
+
+	logospan{
+		font-size: 10px;
+	}
+
+	.logoDivLeftClass {
+		height: 40px;
+	}
+
+	.logoDivRightClass{
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+	}
+
+	.logoIndex{
+		width: 40px;
+		height: 40px;
+	}
+
+/*	NAVIGATION DIV-S */
+	.headerDivMiniClass{
+		height: 40px;
+	}
+
+	.navitemMiniHolder{
+		width: 40px;
+		height: 40px;
+	}
+
+	.navitemImgMiniClass{
+		width: 40px;
+		height: 40px;
+		margin-left: -20px;
+		margin-top: -20px;
+	}
+
+	.navitemIconMiniClass{
+		margin-top: -8px;
+		font-size: 16px;
+	}
+
+	.navitemHolder{
+		height: 56px;
+	}
+
+	.navitemTextClass{
+		margin-top: -8px;
+		font-size: 16px;
+	}
+
+/*	NEWS DIV-S */
+	.newsitemHolder{
+		height: 160px;
+	}
+
+	.newsitemTextClass{
+		margin-top: -8px;
+		font-size: 16px;
+	}
+
+}
+
+@media all and (min-height: 600px) {
+
+	logospan{
+		font-size: 15px;
+	}
+
+	.logoDivLeftClass {
+		height: 60px;
+	}
+
+
+	.logoDivRightClass{
+		height: 60px;
+		line-height: 60px;
+		font-size: 24px;
+	}
+
+	.logoIndex{
+		width: 60px;
+		height: 60px;
+	}
+
+/*	NAVIGATION DIV-S */
+	.headerDivMiniClass{
+		height: 60px;
+	}
+
+	.navitemMiniHolder{
+		width: 60px;
+		height: 60px;
+	}
+
+	.navitemImgMiniClass{
+		width: 60px;
+		height: 60px;
+		margin-left: -30px;
+		margin-top: -30px;
+	}
+
+	.navitemIconMiniClass{
+		margin-top: -12px;
+		font-size: 24px;
+	}
+
+	.navitemHolder{
+		height: 84px;
+	}
+
+	.navitemTextClass{
+		margin-top: -12px;
+		font-size: 24px;
+	}
+
+/*	NEWS DIV-S */
+	.newsitemHolder{
+		height: 256px;
+	}
+
+	.newsitemTextClass{
+		margin-top: -12px;
+		font-size: 24px;
+	}
+
+}
+

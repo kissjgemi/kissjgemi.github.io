@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: transparent; /* #515151; transparent; */
+}
+
+#wrapper {
+	box-sizing: border-box;
+	width: 320px;
+	height: 480px;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.logoDivLeftClass {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 40px;
+	width: 40px;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.logoDivRightClass {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 40px;
+	height: 40px;
+	width: 280px;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.naviDivCenterClass {
+	box-sizing: border-box;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	height: 40px;
+	width: 320px;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.artiDivRightClass {
+	box-sizing: border-box;
+	position: absolute;
+	top: 80px;
+	left: 60px;
+	height: 360px;
+	width: 260px;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.naviDivLeftClass {
+	box-sizing: border-box;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	height: 150px;
+	width: 60px;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.newsDivLeftClass {
+	box-sizing: border-box;
+	position: absolute;
+	top: 230px;
+	left: 0;
+	height: 210px;
+	width: 60px;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.footerDivCenterClass{
+	box-sizing: border-box;
+	position: absolute;
+	top: 440px;
+	left: 0;
+	height: 40px;
+	width: 320px;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+	background-color: transparent;
+}

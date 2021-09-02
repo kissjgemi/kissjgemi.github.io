@@ -1,0 +1,37 @@
+
+<!-- STARTofMYFOOT -->
+
+<!-- STARTofADVERTISING -->	
+
+		<div id="news2Div" class="news2DivClass"> 
+			<div id="news2itemdiv01" class="news2itemHolder">
+				<p>	<strong>November 21, 2016:</strong><br />
+				Our website was launched.
+				</p><p>
+				The aim of the website is to present short reviews and rankings of the best video games of all time.
+				</p><p>
+				Welcome!
+				</p>
+			</div>
+		</div>
+		
+<!-- ENDofADVERTISING -->	
+
+<!-- STARTofFOOTER -->	
+
+	<div id="footerDivCenter" class="footerDivCenterClass">
+		<div class="placeHolder"></div>
+		<a id="foot" href="index.html" title="go to Start">
+			<img id="footImg" class="footImgClass" src="g2/g2work_img/gg-white.png" title="go to Start" alt="go to Start" />
+		</a>
+		<div class="placeHolder"></div>
+	</div>
+
+<!-- ENDofFOOTER -->	
+
+</div>
+
+
+</body>
+</html>
+

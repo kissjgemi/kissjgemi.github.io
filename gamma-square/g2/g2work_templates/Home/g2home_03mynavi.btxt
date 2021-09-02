@@ -1,0 +1,46 @@
+
+<!-- STARTofNAVIGATION -->	
+
+	<div id="naviDiv" class="naviDivClass"> 
+	
+		<div id="navitemdiv01" class="navitemHolder">
+			<a id="navitem01" href="indexOFreviews.html">
+				<img id="navItemImg01" class="navitemImgClass" src="g2/g2work_img/navitem01.png" title="Articles" alt="Articles" />
+				<div id="navItemText01" class="navitemTextClass">Articles</div>
+			</a>
+		</div>
+			
+		<div id="navitemdiv02" class="navitemHolder">				
+			<a id="navitem02" href="indexOFrankings.html">
+				<img id="navItemImg02" class="navitemImgClass" src="g2/g2work_img/navitem02.png" title="Rankings" alt="Rankings" />
+				<div id="navItemText02" class="navitemTextClass">Rankings</div>
+			</a>
+		</div>
+			
+		<div id="navitemdiv03" class="navitemHolder">
+			<a id="navitem03" href="indexOFsystems.html">
+				<img id="navItemImg03" class="navitemImgClass" src="g2/g2work_img/navitem03.png" title="Systems" alt="Systems" />
+				<div id="navItemText03" class="navitemTextClass">Systems</div>
+			</a>
+		</div>			
+	
+	<!--  STARTofADVERTISING -->
+
+		<div id="news1Div" class="news1DivClass"> 
+			<div id="news1itemdiv01" class="news1itemHolder">
+				<p>	<strong>November 21, 2016:</strong><br />
+				Our website was launched.
+				</p><p>
+				The aim of the website is to present short reviews and rankings of the best video games of all time.
+				</p><p>
+				Welcome!
+				</p>
+			</div>
+		</div>
+		
+	<!-- ENDofADVERTISING -->	
+
+	</div>
+	
+<!-- ENDofNAVIGATION -->	
+

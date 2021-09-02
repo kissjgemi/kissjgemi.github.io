@@ -1,0 +1,135 @@
+
+/*	LOGO-BANNER DIV-S */
+
+.logoDivRightClass span{
+	display: none;
+}
+
+@media all and (min-width: 640px) {
+
+	.logoDivRightClass span{
+		display: inline-block;
+	}
+	
+}
+
+/*	NAVIGATION DIV-S */
+.naviDivClass{
+	text-align: center;
+	width: 100%;
+	padding: 0 1vw;
+}
+
+.navitemHolder{
+	width:  30vw;
+}
+
+
+/*	ARTICEL DIV-S */
+.artiDivClass {
+	clear: both;
+	text-align: center;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.articleDivClass{
+	margin: 0 auto;
+	width: inherit;
+	height: 84vh;
+}
+
+.articleHolder{
+	width: 88vw;
+	height: 40vh;
+	margin: 2vh 1vw;
+	padding: 0;
+}
+
+.articleHolderDouble{
+	width: 88vw;
+	height: 40vh;
+	margin: 2vh 1vw;
+	padding: 0;
+}
+
+.articleImgClass{
+	width: 88vmax;
+	height: 44vmax;
+	left: 50%;
+	margin-left: -44vmax;
+    top: 50%;
+    margin-top: -23vmax;
+}
+
+.articleDoubleImgClass{
+	width: 88vmax;
+	height: 88vmax;
+	left: 50%;
+	margin-left: -44vmax;
+    top: 50%;
+    margin-top: -44vmax;
+}
+
+.artitemTextClass{
+    left: 50%;
+}
+
+/*	ARTICEL IMG SRC-S */
+#articleItemImg01h{
+	display: block;
+}
+
+#articleItemImg02h{
+	display: block;	
+}
+
+#articleItemImg03h{
+	display: block;	
+}
+
+#articleItemImg04h{
+	display: block;	
+}
+
+#articleItemImg05h{
+	display: block;	
+}
+
+#articleItemImg06h{
+	display: block;	
+}
+
+
+/*	NEWS DIV-S */
+.newsDiv1Class {
+		display: none;
+}
+
+.newsDiv2Class {
+	text-align: center;
+	width: 94%;
+	margin: 0 auto;
+	padding: 0 1vw;
+}
+
+.newsitemHolder{
+	width: inherit;
+}
+
+
+@media all and (max-height: 400px) {
+/*	NEWS DIV-S */
+	.newsDiv2Class {
+
+	}
+}
+
+@media all and (min-height: 600px) {
+/*	NEWS DIV-S */
+	.newsDiv2Class {
+
+	}
+
+}
+
