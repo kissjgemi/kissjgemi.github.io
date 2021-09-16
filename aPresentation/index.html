@@ -1,21 +1,21 @@
 <!doctype html>
 <html lang="hu">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-		  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-		  crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 
     <title>B6 KKV</title>
-	
+
     <link href="nw-carousel.css" rel="stylesheet">
-	
-	<style>
-	</style>
+
+    <style>
+    </style>
     <script>
         var actual_content = "en_welcome";
         var isContentOn = true;
@@ -34,7 +34,7 @@
             isContentOn = false;
         }
         function toggle_content(name) {
-            if( isContentOn ) {
+            if (isContentOn) {
                 hide_all();
             } else {
                 show_bodyBg();
@@ -51,7 +51,7 @@
             isBodyBgOn = false;
         }
         function toggle_bodyBg() {
-            if( isBodyBgOn ) {
+            if (isBodyBgOn) {
                 hide_all();
             } else {
                 show_bodyBg();
@@ -72,7 +72,7 @@
             isAlertOn = false;
         }
         function toggle_alert() {
-            if( isAlertOn ) {
+            if (isAlertOn) {
                 hide_all();
             } else {
                 show_alert();
@@ -93,7 +93,7 @@
             isMapOn = false;
         }
         function toggle_map() {
-            if( isMapOn ) {
+            if (isMapOn) {
                 hide_all();
             } else {
                 show_map();
@@ -119,613 +119,726 @@
             isCarouselOn = false;
         }
         function toggle_carousel() {
-            if( isCarouselOn ) {
+            if (isCarouselOn) {
                 hide_carousel();
             } else {
                 show_carousel();
             }
         }
     </script>
-  </head>
-  <body>
+</head>
+
+<body>
 
 
 
-<!-- EndOfHeading / StartOfNav -->
+    <!-- EndOfHeading / StartOfNav -->
 
 
 
-<!-- https://nightwithangels.hu/ -->
+    <!-- https://nightwithangels.hu/ -->
 
-<nav class="navbar transparent navbar-inverse fixed-top ">
+    <nav class="navbar transparent navbar-inverse fixed-top ">
 
-  <div class="navbar-header mx-auto ml-md-0">
-    <a class="navbar-brand bg_brand" href="#" title="B6sicS">
-        B6 | B6sicS
-    </a>
-  </div>
-
-  <div class="navbar pr-0 mx-auto mr-md-0">
-    <div class="nav-item dropdown">
-        <a class="nav-link px-1 px-md-3" href="#"  id="navbarEn"
-           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="gb.png" alt="en" title="en" />
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarEn">
-            <a class="dropdown-item" href="#" onClick="javascript: show_content('en_main');">
-                Company informatics
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#" onClick="javascript: show_content('en_mail');">
-                Send mail
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#" onClick="javascript: show_content('en_gdpr');">
-                Privacy Policy
+        <div class="navbar-header mx-auto ml-md-0">
+            <a class="navbar-brand bg_brand" href="#" title="B6sicS">
+                B6 | B6sicS
             </a>
         </div>
-    </div>
 
-    <div class="nav-item dropdown">
-        <a class="nav-link px-1 px-md-3" href="#"  id="navbarDe"
-           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="de.png" alt="de" title="de" />
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDe">
-            <a class="dropdown-item" href="#" onClick="javascript: show_content('de_main');">
-                Unternehmensinformatik
+        <div class="navbar pr-0 mx-auto mr-md-0">
+            <div class="nav-item dropdown">
+                <a class="nav-link px-1 px-md-3" href="#" id="navbarEn" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="gb.png" alt="en" title="en" />
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarEn">
+                    <a class="dropdown-item" href="#" onClick="javascript: show_content('en_main');">
+                        Company informatics
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" onClick="javascript: show_content('en_mail');">
+                        Send mail
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" onClick="javascript: show_content('en_gdpr');">
+                        Privacy Policy
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-item dropdown">
+                <a class="nav-link px-1 px-md-3" href="#" id="navbarDe" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="de.png" alt="de" title="de" />
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDe">
+                    <a class="dropdown-item" href="#" onClick="javascript: show_content('de_main');">
+                        Unternehmensinformatik
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" onClick="javascript: show_content('de_mail');">
+                        E-Mail schreiben
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" onClick="javascript: show_content('de_gdpr');">
+                        Datenschutzerklärung
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-item dropdown">
+                <a class="nav-link px-1 px-md-3" href="#" id="navbarHu" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="hu.png" alt="hu" title="hu" />
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarHu">
+                    <a class="dropdown-item" href="#" onClick="javascript: show_content('hu_main');">
+                        A céginformatika
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" onClick="javascript: show_content('hu_mail');">
+                        Küldjön e-mailt
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" onClick="javascript: show_content('hu_gdpr');">
+                        Adatkezelési tájékoztató
+                    </a>
+                </div>
+            </div>
+
+            <a class="nav-item nav-link px-1 px-md-3" href="#">
+                <img src="whatsapp.png" alt="00 36 30 465 4562" title="00 36 30 465 4562"
+                    onClick="javascript: toggle_alert();" />
             </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#" onClick="javascript: show_content('de_mail');">
-                E-Mail schreiben
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#" onClick="javascript: show_content('de_gdpr');">
-                Datenschutzerklärung
+
+            <a class="nav-item nav-link px-1 px-md-3" href="#">
+                <img src="locationPointer.png" alt="Google Map" title="Google Map"
+                    onClick="javascript: toggle_map();" />
             </a>
         </div>
-    </div>
 
-    <div class="nav-item dropdown">
-        <a class="nav-link px-1 px-md-3" href="#"  id="navbarHu"
-           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="hu.png" alt="hu" title="hu" />
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarHu">
-            <a class="dropdown-item" href="#" onClick="javascript: show_content('hu_main');">
-                A céginformatika
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#" onClick="javascript: show_content('hu_mail');">
-                Küldjön e-mailt
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#" onClick="javascript: show_content('hu_gdpr');">
-                Adatkezelési tájékoztató
-            </a>
-        </div>
-    </div>
-
-    <a class="nav-item nav-link px-1 px-md-3" href="#">
-        <img src="whatsapp.png" alt="00 36 30 465 4562" title="00 36 30 465 4562" 
-         onClick="javascript: toggle_alert();" />
-    </a>
-
-    <a class="nav-item nav-link px-1 px-md-3" href="#">
-        <img src="locationPointer.png" alt="Google Map" title="Google Map"
-         onClick="javascript: toggle_map();" />
-    </a>
-  </div>
-
-</nav>
+    </nav>
 
 
-<!-- EndOfNav / StartOfCarousel -->
+    <!-- EndOfNav / StartOfCarousel -->
 
 
-    <div id="mainCarousel" class="carousel w-100 slide carousel-fade hidden" data-ride="carousel" data-wrap="false" data-pause="false" data-interval="8000">
-        
-      <ol class="carousel-indicators">
-        <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#mainCarousel" data-slide-to="1"></li>
-        <li data-target="#mainCarousel" data-slide-to="2"></li>
-        <li data-target="#mainCarousel" data-slide-to="3"></li>
-        <li data-target="#mainCarousel" data-slide-to="4"></li>
-        <li data-target="#mainCarousel" data-slide-to="5"></li>
-        <li data-target="#mainCarousel" data-slide-to="6"></li>
-        <li data-target="#mainCarousel" data-slide-to="7"></li>
-        <li data-target="#mainCarousel" data-slide-to="8"></li>
-        <li data-target="#mainCarousel" data-slide-to="9"></li>
-        <li data-target="#mainCarousel" data-slide-to="10"></li>
-        <li data-target="#mainCarousel" data-slide-to="11"></li>
-        <li data-target="#mainCarousel" data-slide-to="12"></li>
-        <li data-target="#mainCarousel" data-slide-to="13"></li>
-      </ol>
+    <div id="mainCarousel" class="carousel w-100 slide carousel-fade hidden" data-ride="carousel" data-wrap="false"
+        data-pause="false" data-interval="8000">
 
-      <div class="carousel-inner">
-         <div class="carousel-item active" active style="background-image: url('aGraphity1.gif');">
-            <img src="" alt="." />
-            <div class="stitle"><span> Vannak, akik </span></div>
-            <div class="scaption"><span> alig várják a prezentációt </span></div>
-        </div>
-         <div class="carousel-item" style="background-image: url('aGraphity2.gif');">
-           <img src="." alt="." />
-	       <div class="stitle"><span> Mások </span></div>
-	       <div class="scaption"><span> kevésbé lelkesednek </span></div>
-        </div>
-         <div class="carousel-item" style="background-image: url('prezentation01.png');">
-            <img src="." alt="." />
-            <div class="stitle"><span> Indítás után </span></div>
-            <div class="scaption"><span> az adatbázishoz csatlakozik a program </span></div>
-        </div>
-         <div class="carousel-item" style="background-image: url('prezentation02.png');">
-            <img src="." alt="." />
-            <div class="stitle"><span> Az adatbázis redben </span></div>
-            <div class="scaption"><span> Lépjünk be superuserként </span></div>
-        </div>
-         <div class="carousel-item" style="background-image: url('prezentation03.png');">
-            <img src="." alt="." />
-            <div class="stitle"><span> Superuser létezik </span></div>
-            <div class="scaption"><span> belépünk a jelszavával </span></div>
-        </div>
-         <div class="carousel-item" style="background-image: url('prezentation04.png');">
-            <img src="." alt="." />
-            <div class="stitle"><span> Minden feljegyzés </span></div>
-            <div class="scaption"><span> az összes adatrekordban böngészhetünk </span></div>
-        </div>
-         <div class="carousel-item" style="background-image: url('prezentation05.png');">
-            <img src="." alt="." />
-            <div class="stitle"><span> Ez így túl sok </span></div>
-            <div class="scaption"><span> szűkítés a partner nevének megadásával </span></div>
-        </div>
-         <div class="carousel-item" style="background-image: url('prezentation06.png');>
-            <img src="." alt="." />
+        <ol class="carousel-indicators">
+            <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mainCarousel" data-slide-to="1"></li>
+            <li data-target="#mainCarousel" data-slide-to="2"></li>
+            <li data-target="#mainCarousel" data-slide-to="3"></li>
+            <li data-target="#mainCarousel" data-slide-to="4"></li>
+            <li data-target="#mainCarousel" data-slide-to="5"></li>
+            <li data-target="#mainCarousel" data-slide-to="6"></li>
+            <li data-target="#mainCarousel" data-slide-to="7"></li>
+            <li data-target="#mainCarousel" data-slide-to="8"></li>
+            <li data-target="#mainCarousel" data-slide-to="9"></li>
+            <li data-target="#mainCarousel" data-slide-to="10"></li>
+            <li data-target="#mainCarousel" data-slide-to="11"></li>
+            <li data-target="#mainCarousel" data-slide-to="12"></li>
+            <li data-target="#mainCarousel" data-slide-to="13"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" active style="background-image: url('aGraphity1.gif');">
+                <img src="" alt="." />
+                <div class="stitle"><span> Vannak, akik </span></div>
+                <div class="scaption"><span> alig várják a prezentációt </span></div>
+            </div>
+            <div class="carousel-item" style="background-image: url('aGraphity2.gif');">
+                <img src="." alt="." />
+                <div class="stitle"><span> Mások </span></div>
+                <div class="scaption"><span> kevésbé lelkesednek </span></div>
+            </div>
+            <div class="carousel-item" style="background-image: url('prezentation01.png');">
+                <img src="." alt="." />
+                <div class="stitle"><span> Indítás után </span></div>
+                <div class="scaption"><span> az adatbázishoz csatlakozik a program </span></div>
+            </div>
+            <div class="carousel-item" style="background-image: url('prezentation02.png');">
+                <img src="." alt="." />
+                <div class="stitle"><span> Az adatbázis redben </span></div>
+                <div class="scaption"><span> Lépjünk be superuserként </span></div>
+            </div>
+            <div class="carousel-item" style="background-image: url('prezentation03.png');">
+                <img src="." alt="." />
+                <div class="stitle"><span> Superuser létezik </span></div>
+                <div class="scaption"><span> belépünk a jelszavával </span></div>
+            </div>
+            <div class="carousel-item" style="background-image: url('prezentation04.png');">
+                <img src="." alt="." />
+                <div class="stitle"><span> Minden feljegyzés </span></div>
+                <div class="scaption"><span> az összes adatrekordban böngészhetünk </span></div>
+            </div>
+            <div class="carousel-item" style="background-image: url('prezentation05.png');">
+                <img src="." alt="." />
+                <div class="stitle"><span> Ez így túl sok </span></div>
+                <div class="scaption"><span> szűkítés a partner nevének megadásával </span></div>
+            </div>
+            <div class="carousel-item" style="background-image: url('prezentation06.png');>
+            <img src=" ." alt="." />
             <div class="stitle"><span> Saját feljegyzések </span></div>
             <div class="scaption"><span> Keressünk a hozzánk kapcsolódó rekordokban </span></div>
         </div>
-         <div class="carousel-item" style="background-image: url('prezentation07.png');">
+        <div class="carousel-item" style="background-image: url('prezentation07.png');">
             <img src="." alt="." />
             <div class="stitle"><span> Új feljegyzés </span></div>
             <div class="scaption"><span> Válasszuk ki, kivel osztjuk meg gondolatainkat </span></div>
         </div>
-         <div class="carousel-item" style="background-image: url('prezentation08.png');">
+        <div class="carousel-item" style="background-image: url('prezentation08.png');">
             <img src="." alt="." />
             <div class="stitle"><span> Az info gomb </span></div>
             <div class="scaption"><span> hasznos információk megjelenítésére </span></div>
         </div>
-         <div class="carousel-item" style="background-image: url('prezentation09.png');">
+        <div class="carousel-item" style="background-image: url('prezentation09.png');">
             <img src="." alt="." />
             <div class="stitle"><span> Szerver info </span></div>
             <div class="scaption"><span> Ez egy elég hasznos információ </span></div>
         </div>
-         <div class="carousel-item" style="background-image: url('prezentation10.png');">
+        <div class="carousel-item" style="background-image: url('prezentation10.png');">
             <img src="." alt="." />
             <div class="stitle"><span> Kijelentkezés </span></div>
             <div class="scaption"><span> Ha kis pihenőt tartunk </span></div>
         </div>
-         <div class="carousel-item" style="background-image: url('prezentation11.png');">
+        <div class="carousel-item" style="background-image: url('prezentation11.png');">
             <img src="." alt="." />
             <div class="stitle"><span> Kilépés menü </span></div>
             <div class="scaption"><span> Ha befejeztük munkánkat </span></div>
         </div>
-         <div class="carousel-item" style="background-image: url('aGraphity3.gif');">
+        <div class="carousel-item" style="background-image: url('aGraphity3.gif');">
             <img src="." alt="." />
             <div class="stitle"><span> Köszönöm </span></div>
             <div class="scaption"><span> a figyelmet! </span></div>
         </div>
-      </div>
+    </div>
 
     </div>
 
 
-<!-- EndOfCarousel / StartOfArticles -->
+    <!-- EndOfCarousel / StartOfArticles -->
 
 
 
-<div id="front" onClick="javascript: hide_all();"><div class="placeholder">
+    <div id="front" onClick="javascript: hide_all();">
+        <div class="placeholder">
 
-    <div id="alert" class="b8t_alert hidden" onClick="javascript: hide_alert();">
-        00 36 30 465&nbsp;4562
+            <div id="alert" class="b8t_alert hidden" onClick="javascript: hide_alert();">
+                00 36 30 465&nbsp;4562
+            </div>
+
+            <div id="gmap" class="b8t_content b8t_map hidden" onClick="javascript: hide_map()">
+                <iframe style="border: 0; margin: 2.5%; border-radius: 30px;"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d674.1453327056089!2d19.0509246!3d47.4785875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741ddb2ac7dce0d%3A0x8e4dce2c8adb4958!2sBudapest%2C%20Bercs%C3%A9nyi%20u.%206%2C%201111!5e0!3m2!1shu!2shu!4v1587988217279!5m2!1shu!2shu"
+                    allowfullscreen="allowfullscreen" width="95%" height="95%" frameborder="0">
+                </iframe>
+            </div>
+
+
+            <div id="de_main" class="b8t_content hidden">
+                <h1>Über Unternehmensinformatik</h1>
+                <p>
+                    Das gute Funktionieren des Informationssystems zwischen den Beteiligten während der Umsetzung einer
+                    Aufgabe oder eines Projekts sichert den Erfolg. Wichtig ist, dass die Datenübertragung reibungslos,
+                    transparent und nachvollziehbar ist. Dafür bietet die elektronische Kommunikation hervorragende
+                    Möglichkeiten, die mittlerweile zu einem elementaren Weg der Informationsübermittlung geworden
+                    ist.<br />
+                    Verschiedene Social-Networking- und E-Mail-Programme bieten viele Möglichkeiten, in Kontakt zu
+                    bleiben. Diese Lösungen sind jedoch in einem engeren Unternehmensumfeld nur schwer anwendbar.<br />
+                    Das Fehlen eines Informationssystems wirkt sich negativ auf die Tätigkeit des Unternehmensleiters
+                    (Projektleiter) aus. Ihre Mitarbeiter sprechen Seite an Seite, obwohl selbst ein kleines
+                    Missverständnis große Fehler in Ihrem Unternehmen machen kann. Mitarbeiter verbringen ihre kostbare
+                    Zeit mit unnötiger Verwaltungsarbeit. Sie suchen gestresst nach Daten, sabbern haufenweise Papier,
+                    weil kein Kollege da ist, der weiß, wo sie sind. Selbst für eine einfache Frage werden Daten aus
+                    Excel-Tabellen stundenlang gejagt. Er weiß nicht, welcher Mitarbeiter was macht, wer effektiv ist
+                    und wen er loswerden sollte. Einen ausscheidenden Mitarbeiter zu ersetzen ist eine enorme Qual, weil
+                    wichtige Informationen nur in seinem Kopf waren.<br />
+                    Das Informationssystem bietet eine Kontaktlösung, die das Geschäft eines Unternehmens erleichtert.
+                    Alle Mitarbeiter haben einfachen Zugriff auf die für sie wichtigen Informationen. Es ist immer klar,
+                    wer das Sagen hat. Die Bedienung ist transparent. Statt Eile und Stress ist die Arbeit aller geplant
+                    und ruhig. Auf Basis aktueller Informationen können Sie schnell die richtigen Entscheidungen
+                    treffen. Jeder Manager weiß genau, was er tut und woran er arbeitet.<br />
+                    Das Grundsystem des Programms kann leicht modifiziert und erweitert werden, um den speziellen
+                    Bedürfnissen des Unternehmens Rechnung zu tragen. Personalisierte Verantwortlichkeiten und
+                    berufsbezogene Zugriffsrechte können eingestellt werden. Die Datenbank des Basisprogramms enthält
+                    die Daten des Unternehmens und der Mitarbeiter sowie deren Arbeit im Zusammenhang mit den
+                    Unternehmensprojekten. Anwender nutzen die Hinweise im Programm, um den Informationsfluss
+                    sicherzustellen und ihre Aktivitäten zu dokumentieren.
+                </p>
+            </div>
+
+            <div id="en_main" class="b8t_content hidden">
+                <h1>About company informatics</h1>
+                <p>
+                    The good functioning of the information system between the participants during the implementation of
+                    a task or a project ensures the success. It is important that the transfer of data is smooth,
+                    transparent and traceable. Electronic communication provides excellent opportunities for this, which
+                    has now become a basic way of transmitting information.<br />
+                    Various social networking and email programs offer many ways to stay in touch. However, these
+                    solutions are difficult to apply in a tighter corporate environment.<br />
+                    The lack of an information system negatively affects the activities of the company manager (project
+                    manager). Your people are talking side by side, though even a little misunderstanding can make huge
+                    mistakes in your business. Employees spend their precious time on unnecessary administrative work.
+                    They look for data stressfully, salivating piles of paper, because there is no colleague there who
+                    knows where they are. Even for a simple question, data from Excel spreadsheets are hunted for hours.
+                    He doesn’t know which employee is doing what, who is effective, and who he should get rid of.
+                    Replacing a departing co-worker is a tremendous ordeal because important information was only in His
+                    mind.<br />
+                    The information system offers a contact solution that facilitates the business of a company. All
+                    employees have easy access to the information that is important to them. It is always clear who is
+                    in charge. Operation is transparent. Instead of haste and stress, everyone’s work is planned and
+                    calm. You can make the right decisions quickly, based on instant, up-to-date information. Every
+                    manager knows exactly what they are doing and what they are working on.<br />
+                    The basic system of the program can be easily modified and expanded to take into account the special
+                    needs of the company. Personalized responsibilities and job-related access rights can be set. The
+                    database of the basic program contains the data of the company and the employees, as well as their
+                    work related to the corporate projects. Users use the notes in the program to ensure the flow of
+                    information and document their activities.
+                </p>
+            </div>
+
+            <div id="hu_main" class="b8t_content hidden">
+                <h1>A céginformatikáról</h1>
+                <p>
+                    Egy feladat, egy projekt megvalósítása során a résztvevők közötti tájékoztatási
+                    rendszer jó működése biztosítja a sikert. Lényeges, hogy az adatok átadása gördülékeny,
+                    áttekinthető és nyomon követhető legyen. Ehhez biztosít kiváló lehetőségeket az
+                    elektronikus kommunikáció, mely napjainkra az információ közvetítésének alapvető
+                    módjává vált.
+                    <br />
+                    A kapcsolattartás sokféle lehetőségét kínálják a különböző közösségi hálózatok
+                    és levelező programok. Ezeket a megoldásokat azonban nehézkes a szűkebb válla-
+                    lati környezetben alkalmazni.
+                    <br />
+                    A tájékoztatási rendszer hiánya negatívan befolyásolja a cégvezető (projektvezető)
+                    tevékenységét. Az emberei elbeszélnek egymás mellett, pedig egy kis félreértés
+                    is hatalmas hibákat okozhat az üzletmenetben. A munkatársak felesleges adminisztratív
+                    munkával töltik drága idejüket. Stresszesen, papírhalmokat átnyálazva keresnek
+                    adatokat, mert nincs ott az a kolléga, aki tudja hol találhatók. Egy egyszerű kérdésre is
+                    órákig vadásszák össze az adatokat az Excel táblázatokból. Nem tudja melyik munkatársa
+                    mit csinál, ki eredményes és kitől kellene megválnia. Óriási kínlódást jelent egy
+                    távozó munkatárs pótlása, mert csak az Ő fejében voltak meg fontos információk.
+                    <br />
+                    Az információs rendszer egy kapcsolattartási megoldást kínál, mely elősegíti
+                    egy vállalat ügymenetét. Minden munkatárs könnyen hozzájut a számára lényeges
+                    információkhoz. Mindig látszik, hogy kinek mi a feladata. Átlátható a működés.
+                    A kapkodás és stressz helyett tervezett és nyugodt mindenki munkája. Azonnali, naprakész
+                    információk alapján gyorsan, helyes döntéseket lehet hozni. A vezető minden munka-
+                    társáról pontosan tudja, hogy éppen mit csinál, min dolgozik.
+                    <br />
+                    A program alaprendszere egyszerűen módosítható és bővíthető a cég speciális
+                    igényinek figyelembevételével. Személyre szabott, a felelősséghez és munkakörhöz
+                    kapcsolódó hozzáférési jogosultságok állíthatók be. Az alapprogram adatbázisa
+                    tartalmazza a cég és a dolgozók adatait, valamint a vállalati projektekkel kapcsolatos
+                    munkájukat. A felhasználók a programban feljegyzéseik segítségével biztosítják az
+                    információ áramlását és dokumentálják tevékenységüket.
+                </p>
+            </div>
+
+
+            <div id="de_mail" class="b8t_content hidden">
+                <h1><a onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
+                        href="mailto:b6@b6sics.hu" target="_blank">
+                        E-Mail schreiben
+                    </a>
+                </h1>
+                <p>Vorschläge&nbsp;betreffend&nbsp;das&nbsp;Project.</p>
+                <p style="text-align: center;">Wir sind interessiert an Ihre Meinung:</p>
+                <p style="text-align: center;">
+                    <a onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
+                        href="mailto:b6@b6sics.hu" target="_blank">
+                        Bitte schreiben Sie E-Mail!!
+                    </a> <br />mailto: b6@b6sics.hu
+                </p>
+            </div>
+
+            <div id="en_mail" class="b8t_content hidden">
+                <h1><a onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
+                        href="mailto:b6@b6sics.hu" target="_blank">
+                        Send Mail
+                    </a>
+                </h1>
+                <p>Suggestions regarding the project.</p>
+                <p style="text-align: center;">We are interested in your opion:</p>
+                <p style="text-align: center;">
+                    <a onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
+                        href="mailto:b6@b6sics.hu" target="_blank">
+                        Please send Mail!!
+                    </a> <br />mailto: b6@b6sics.hu
+                </p>
+            </div>
+
+            <div id="hu_mail" class="b8t_content hidden">
+                <h1>
+                    <a onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
+                        href="mailto:b6@b6sics.hu" target="_blank">
+                        Küldjön e-mailt
+                    </a>
+                </h1>
+                <p>Tegyen javaslatokat a projekttel kapcsolatosan!</p>
+                <p style="text-align: center;">Minket érdekel a véleménye:</p>
+                <p style="text-align: center;">
+                    <a onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
+                        href="mailto:b6@b6sics.hu" target="_blank">
+                        Kérjük küldjön e-mailt!!
+                    </a> <br />mailto: b6@b6sics.hu
+                </p>
+            </div>
+
+            <div id="de_gdpr" class="b8t_content hidden">
+                <h1>Datenschutzerklärung</h1>
+                <h2>Wer wir sind</h2>
+                <p>Die Adresse unserer Website ist: http://www.b6sics.hu.</p>
+                <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+                <p><span id="s3-t-firma">Jozsef Kiss</span><span id="s3-t-ansprechpartner"></span><br>
+                    <span id="s3-t-strasse">Bercsényi u. 6.</span><br>
+                    <span id="s3-t-plz">1111 Budapest<br>
+                    </span><span id="s3-t-ort"></span>mail: b6@b6sics.hu
+                </p>
+                <p>Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel
+                    der Verarbeitung von personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.).</p>
+                <h2>Welche personenbezogenen Daten wir sammeln und warum wir sie sammeln</h2>
+                <h3>Kommentare</h3>
+                <p>Wenn Besucher Kommentare auf der Website schreiben, sammeln wir die Daten, die im Kommentar-Formular
+                    angezeigt werden, außerdem die IP-Adresse des Besuchers und den User-Agent-String (damit wird der
+                    Browser identifiziert), um die Erkennung von Spam zu unterstützen.</p>
+                <p>Aus deiner E-Mail-Adresse kann eine anonymisierte Zeichenfolge erstellt (auch Hash genannt) und dem
+                    Gravatar-Dienst übergeben werden, um zu prüfen, ob du diesen benutzt. Die Datenschutzerklärung des
+                    Gravatar-Dienstes findest du hier: https://automattic.com/privacy/. Nachdem dein Kommentar
+                    freigegeben wurde, ist dein Profilbild öffentlich im Kontext deines Kommentars sichtbar.</p>
+                <p>Wir lassen nicht zu Kommentare zu schreiben.</p>
+                <h3>Medien</h3>
+                <p>Wenn du ein registrierter Benutzer bist und Fotos auf diese Website lädst, solltest du vermeiden,
+                    Fotos mit einem EXIF-GPS-Standort hochzuladen. Besucher dieser Website könnten Fotos, die auf dieser
+                    Website gespeichert sind, herunterladen und deren Standort-Informationen extrahieren.</p>
+                <p>Wir lassen nicht zu Medien auf diese Webseite laden.</p>
+                <h3>Kontaktformulare</h3>
+                <h3>Cookies</h3>
+                <p>Wenn du einen Kommentar auf unserer Website schreibst, kann das eine Einwilligung sein, deinen Namen,
+                    E-Mail-Adresse und Website in Cookies zu speichern. Dies ist eine Komfortfunktion, damit du nicht,
+                    wenn du einen weiteren Kommentar schreibst, all diese Daten erneut eingeben musst. Diese Cookies
+                    werden ein Jahr lang gespeichert.</p>
+                <p>Falls du ein Konto hast und dich auf dieser Website anmeldest, werden wir ein temporäres Cookie
+                    setzen, um festzustellen, ob dein Browser Cookies akzeptiert. Dieses Cookie enthält keine
+                    personenbezogenen Daten und wird verworfen, wenn du deinen Browser schließt.</p>
+                <p>Wenn du dich anmeldest, werden wir einige Cookies einrichten, um deine Anmeldeinformationen und
+                    Anzeigeoptionen zu speichern. Anmelde-Cookies verfallen nach zwei Tagen und Cookies für die
+                    Anzeigeoptionen nach einem Jahr. Falls du bei der Anmeldung „Angemeldet bleiben“ auswählst, wird
+                    deine Anmeldung zwei Wochen lang aufrechterhalten. Mit der Abmeldung aus deinem Konto werden die
+                    Anmelde-Cookies gelöscht.</p>
+                <p>Wenn du einen Artikel bearbeitest oder veröffentlichst, wird ein zusätzlicher Cookie in deinem
+                    Browser gespeichert. Dieser Cookie enthält keine personenbezogenen Daten und verweist nur auf die
+                    Beitrags-ID des Artikels, den du gerade bearbeitet hast. Der Cookie verfällt nach einem Tag.</p>
+                <p>Wir lassen nicht zu Konten auf unserer Website zu erstellen.</p>
+                <h3>Eingebettete Inhalte von anderen Websites</h3>
+                <p>Beiträge auf dieser Website können eingebettete Inhalte beinhalten (z.&nbsp;B. Videos, Bilder,
+                    Beiträge etc.). Eingebettete Inhalte von anderen Websites verhalten sich exakt so, als ob der
+                    Besucher die andere Website besucht hätte.</p>
+                <p>Diese Websites können Daten über dich sammeln, Cookies benutzen, zusätzliche Tracking-Dienste von
+                    Dritten einbetten und deine Interaktion mit diesem eingebetteten Inhalt aufzeichnen, inklusive
+                    deiner Interaktion mit dem eingebetteten Inhalt, falls du ein Konto hast und auf dieser Website
+                    angemeldet bist.</p>
+                <h3>Analysedienste</h3>
+                <p>Unsere Webseite benutzt keine Analysedienste.</p>
+                <h2>Mit wem wir deine Daten teilen</h2>
+                <p>Wir sind nicht interessiert an deine Daten. Wir teilen deine Daten mit niemand.</p>
+                <h2>Wie lange wir deine Daten speichern</h2>
+                <p>Wenn du einen Kommentar schreibst, wird dieser inklusive Metadaten zeitlich unbegrenzt gespeichert.
+                    Auf diese Art können wir Folgekommentare automatisch erkennen und freigeben, anstelle sie in einer
+                    Moderations-Warteschlange festzuhalten.</p>
+                <p>Für Benutzer, die sich auf unserer Website registrieren, speichern wir zusätzlich die persönlichen
+                    Informationen, die sie in ihren Benutzerprofilen angeben. Alle Benutzer können jederzeit ihre
+                    persönlichen Informationen einsehen, verändern oder löschen (der Benutzername kann nicht verändert
+                    werden). Administratoren der Website können diese Informationen ebenfalls einsehen und verändern.
+                </p>
+                <p>Wir sind nicht interessiert an deine Daten. Wir speichern deine Daten nicht.</p>
+                <h2>Welche Rechte du an deinen Daten hast</h2>
+                <p>Wenn du ein Konto auf dieser Website besitzt oder Kommentare geschrieben hast, kannst du einen Export
+                    deiner personenbezogenen Daten bei uns anfordern, inklusive aller Daten, die du uns mitgeteilt hast.
+                    Darüber hinaus kannst du die Löschung aller personenbezogenen Daten, die wir von dir gespeichert
+                    haben, anfordern. Dies umfasst nicht die Daten, die wir aufgrund administrativer, rechtlicher oder
+                    sicherheitsrelevanter Notwendigkeiten aufbewahren müssen.</p>
+                <p>Wir haben keine Daten von dir.</p>
+                <h2>Wohin wir deine Daten senden</h2>
+                <p>Besucher-Kommentare könnten von einem automatisierten Dienst zur Spam-Erkennung untersucht werden.
+                </p>
+                <p>Wir haben keine Daten von dir.</p>
+                <h2>Deine Kontakt-Informationen</h2>
+                <h2>Weitere Informationen</h2>
+                <h3>Wie wir deine Daten schützen</h3>
+                <p>Wenn trotz unsere Mühe Kommentare schreiben kannst, dann alle Kommentare werden persönlich von uns
+                    überprüft und werden erst nach erfolgreichem Bestehen unserer nachfolgenden Punkte freigegeben:</p>
+                <ul>
+                    <li>Themenbezogener Kommentar</li>
+                    <li>Keine Schimpfwörter</li>
+                    <li>Keine gewalttätigen, diskriminierende oder sexuelle Aussagen</li>
+                    <li>Prüfung der eingereichten E-Mail-Adresse</li>
+                    <li>Name und Vorname beinhalten keine diskriminierende, gewalttätige oder sexuelle Anspielungen</li>
+                    <li>Keine Kommentare werden freigegeben und werden mit den Daten gelöscht</li>
+                </ul>
+                <h3>Welche Maßnahmen wir bei Datenschutzverletzungen anbieten</h3>
+                <p>Wir sind Stolz darauf, keine Daten zu haben von dir.</p>
+                <h3>Von welchen Drittanbietern wir Daten erhalten</h3>
+                <p>Wir sind Stolz darauf, keine Daten zu erhalten.</p>
+                <h3>Welche automatisierte Entscheidungsfindung und/oder Profilerstellung wir mit Benutzerdaten
+                    durchführen</h3>
+                <p>Wir führen keine automatisierte Entscheidungsfindungen oder Profilerstellungen durch.</p>
+                <h3>Industrielle aufsichtsrechtliche Regulierungsanforderungen</h3>
+                <p>Keine industrielle aufsichtsrechtliche Regulierungsanforderungen.</p>
+            </div>
+
+            <div id="en_gdpr" class="b8t_content hidden">
+                <h1>Privacy Policy</h1>
+                <h2>Who we are</h2>
+                <p>Our website address is: http://www.b6sics.hu.</p>
+                <p><span id="s3-t-firma">Jozsef Kiss</span><span id="s3-t-ansprechpartner"></span><br>
+                    <span id="s3-t-strasse">Bercsényi u. 6.</span><br>
+                    <span id="s3-t-plz">1111 Budapest<br>
+                    </span><span id="s3-t-ort"></span>mail: b6@b6sics.hu
+                </p>
+                <h2>What personal data we collect and why we collect it</h2>
+                <h3>Comments</h3>
+                <p>When visitors leave comments on the site we collect the data shown in the comments form, and also the
+                    visitor’s IP address and browser user agent string to help spam detection.</p>
+                <p>An anonymised string created from your email address (also called a hash) may be provided to the
+                    Gravatar service to see if you are using it. The Gravatar service privacy policy is available here:
+                    https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to
+                    the public in the context of your comment.</p>
+                <h3>Media</h3>
+                <p>If you upload images to the website, you should avoid uploading images with embedded location data
+                    (EXIF GPS) included. Visitors to the website can download and extract any location data from images
+                    on the website.</p>
+                <h3>Contact forms</h3>
+                <p>We don’t use contact forms.</p>
+                <h3>Cookies</h3>
+                <p>If you leave a comment on our site you may opt-in to saving your name, email address and website in
+                    cookies. These are for your convenience so that you do not have to fill in your details again when
+                    you leave another comment. These cookies will last for one year.</p>
+                <p>If you have an account and you log in to this site, we will set a temporary cookie to determine if
+                    your browser accepts cookies. This cookie contains no personal data and is discarded when you close
+                    your browser.</p>
+                <p>When you log in, we will also set up several cookies to save your login information and your screen
+                    display choices. Login cookies last for two days, and screen options cookies last for a year. If you
+                    select “Remember Me”, your login will persist for two weeks. If you log out of your account, the
+                    login cookies will be removed.</p>
+                <p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie
+                    includes no personal data and simply indicates the post ID of the article you just edited. It
+                    expires after 1 day.</p>
+                <p>Normally we don’t use cookies.</p>
+                <h3>Embedded content from other websites</h3>
+                <p>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded
+                    content from other websites behaves in the exact same way as if the visitor has visited the other
+                    website.</p>
+                <p>These websites may collect data about you, use cookies, embed additional third-party tracking, and
+                    monitor your interaction with that embedded content, including tracing your interaction with the
+                    embedded content if you have an account and are logged in to that website.</p>
+                <p>Normally we don’t use contents from other websites.</p>
+                <h3>Analytics</h3>
+                <p>Normally we don’t use analytics.</p>
+                <h2>Who we share your data with</h2>
+                <p>Normally we don’t share your datas.</p>
+                <h2>How long we retain your data</h2>
+                <p>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can
+                    recognise and approve any follow-up comments automatically instead of holding them in a moderation
+                    queue.</p>
+                <p>For users that register on our website (if any), we also store the personal information they provide
+                    in their user profile. All users can see, edit, or delete their personal information at any time
+                    (except they cannot change their username). Website administrators can also see and edit that
+                    information.</p>
+                <h2>What rights you have over your data</h2>
+                <p>If you have an account on this site, or have left comments, you can request to receive an exported
+                    file of the personal data we hold about you, including any data you have provided to us. You can
+                    also request that we erase any personal data we hold about you. This does not include any data we
+                    are obliged to keep for administrative, legal, or security purposes.</p>
+                <p>Normally we don’t collect user datas.</p>
+                <h2>Where we send your data</h2>
+                <p>Visitor comments may be checked through an automated spam detection service.</p>
+                <h2>Your contact information</h2>
+                <p>Normally we don’t use your contact information.</p>
+                <h2>Additional information</h2>
+                <h3>How we protect your data</h3>
+                <p>We don’t have datas from you.</p>
+                <p><span class="" lang="en"><span class="">If you make a comment despite all our efforts, y</span><span
+                            class="">our comment will be subject to strict and lengthy checks before we delete
+                            it:</span><br>
+                    </span></p>
+                <ul>
+                    <li><span id="result_box" class="" lang="en"><span class="">The entry must be relevant</span></span>
+                    </li>
+                    <li><span id="result_box" class="" lang="en"><span class="">It can not contain vulgar
+                                scripts</span></span></li>
+                    <li><span id="result_box" class="" lang="en"><span class="">It can not be violence, discrimination,
+                                or sex</span></span></li>
+                    <li><span id="result_box" class="" lang="en"><span class="">We check the specified email
+                                address</span></span></li>
+                    <li><span id="result_box" class="" lang="en"><span class="">The first name and the surename may not
+                                be violence, discrimination or sex</span></span></li>
+                    <li><span id="result_box" class="" lang="en"><span class="">Finally, the entry will be deleted with
+                                the data in all cases</span></span></li>
+                </ul>
+                <h3>What data breach procedures we have in place</h3>
+                <p>We don’t have data beach procedures.</p>
+                <h3>What third parties we receive data from</h3>
+                <p>We don’t receive datas from third parties.</p>
+                <h3>What automated decision making and/or profiling we do with user data</h3>
+                <p>We don’t have user datas.</p>
+                <h3>Industry regulatory disclosure requirements</h3>
+                <p>No industry regulatory disclosure requirements.</p>
+            </div>
+
+            <div id="hu_gdpr" class="b8t_content hidden">
+                <h1>Adatkezelési tájékoztató</h1>
+                <h2>Kik vagyunk</h2>
+                <p>A weboldalunk címe: http://www.b6sics.hu.</p>
+                <p>Adatkezelő neve: Kiss József<br>
+                    Adatkezelő címe: 1111 Budapest, Bercsényi u. 6.<br>
+                    Adatkezelő elérhetősége: b6@b6sics.hu</p>
+                <h2>Melyek azok a személyes adatok, amiket gyűjtünk és milyen céllal gyűjtjük ezeket</h2>
+                <h3>Hozzászólások</h3>
+                <p>Hozzászólás beküldésekor a hozzászólási űrlapban megadottakon kívül begyűjtésre kerül a hozzászóló IP
+                    címe és a böngészőazonosító karakterlánc a kéretlen tartalmak kiszűrése céljából.</p>
+                <p>Egy személytelenített, az e-mail címből előállított karakterlánc (hashnek szokás nevezni) kerül
+                    továbbításra a Gravatar szolgáltatás felé, ha ez az oldalon használatban van. A Gravatar
+                    szolgáltatás feltételei az alábbi címen tekinthetőek meg: https://automattic.com/privacy/. A
+                    hozzászólás elfogadása után, a hozzászólásunk tartalma és a profil képünk is megjelenik nyilvánosan.
+                </p>
+                <h3>Média</h3>
+                <p>Amennyiben regisztrált felhasználó által kerül kép feltöltésre a honlapra, kerülni kell az az olyan
+                    EXIF-eket, amelyekben GPS pozíció adatok is szerepelnek. A honlap látogatói ezeket letölthetik és
+                    kinyerhetik a helyadatokat a honlapon található képekből.</p>
+                <h3>Kapcsolatfelvételi űrlapok</h3>
+                <h3>Sütik</h3>
+                <p>Hozzászólás írása után a honlap a megadott nevet, e-mail és web címet sütiben eltárolja. A tárolás
+                    csak kényelmi célokat szolgál, hogy a következő hozzászóláskor ne kelljen automatikusan kitölteni. A
+                    sütik lejárati ideje 1 év.</p>
+                <p>Ha rendelkezünk felhasználói fiókkal és be is vagyunk jelentkezve erre a honlapra, akkor átmeneti
+                    sütiket állítunk be, annak érdekében, hogy megállapítsuk, hogy a böngésző elfogadja-e a sütiket.
+                    Ezek a sütik nem tartalmaznak személyes információt, és törlődnek, ahogy bezárjuk a böngészőt.</p>
+                <p>A honlapra történő bejelentkezéskor több sütit hozunk létre, amely elmenti a bejelentkezési
+                    információt és a szerkesztőfelület megjelenítési opcióit. A bejelentkezési sütik két napig
+                    érvényesek, a szerkesztőfelület megjelenítési opcióit tároló süti egy évig. Amennyiben az “Emlékezz
+                    rám” opciót bejelöljük, a bejelentkezés két hétig folytatódik. Kijelentkezéskor a bejelentkezési
+                    sütik eltávolításra kerülnek.</p>
+                <p>Amennyiben bejegyzést vagy oldalt szerkesztünk, egy újabb sütit tárol el a böngészőnk. Ez a süti nem
+                    tartalmaz személyes adatot, egyszerűen csak a bejegyzés azonosító számát tárolja, amelyet
+                    szerkesztettünk. Egy nap múlva jár le az érvényessége.</p>
+                <h3>Más honlapokról származó beágyazott tartalmak</h3>
+                <p>A honlapon elérhető bejegyzések külső forrásból származó beágyazott tartalmakat (pl. videók, képek,
+                    cikkek stb.) használhatnak. A külső forrásból származó beágyazott tartalmak pontosan úgy
+                    viselkednek, mintha meglátogattunk volna egy másik honlapot.</p>
+                <p>Ezek a webhelyek lehetséges, hogy adatot gyűjtenek a látogatókról, sütiket vagy harmadik féltől
+                    származó követőkódot használnak, figyelik a beágyazott tartalommal kapcsolatos felhasználói
+                    viselkedést, ha rendelkezünk felhasználói fiókkal és be vagyunk jelentkezve az oldalra.</p>
+                <h3>Analitika</h3>
+                <p>Nem használink analítikai szolgáltatást.</p>
+                <h2>Kivel osztjuk meg a felhasználói adatokat</h2>
+                <p>Nem osztjuk meg a felhasználói adatokat.</p>
+                <h2>Mennyi ideig őrizzük a személyes adatot</h2>
+                <p>Ha hozzászólunk, a hozzászólás és annak metaadatai nem meghatározható ideig a rendszerben maradnak.
+                    Ennek célja, hogy az összes ezt követő bármely hozzászólás általunk megismertté és jóváhagyottá
+                    váljon, azaz ne kerüljön fel a moderálandó hozzászólások listájára.</p>
+                <p>A honlapon regisztrált felhasználók (ha vannak ilyenek) személyes adatai a saját felhasználói
+                    profiljukban is tárolásra kerülnek. Minden felhasználó megtekintheti, szerkesztheti vagy törölheti a
+                    személyes adatait bármikor (kivéve, hogy nem változtathatja meg a saját felhasználói nevét). A
+                    honlap rendszergazdái ezen információkat szintén megtekinthetik és szerkeszthetik.</p>
+                <h2>Milyen jogokkal rendelkezik a felhasználó a saját adatai kapcsán</h2>
+                <p>A weboldalon regisztrált fiók vagy hozzászólás írása esetén kérhető a személyes adatok export fájlban
+                    történő megküldése, amely bármilyen adatot tartalmaz, amit korábban a felhasználó rendelkezésünkre
+                    bocsátott. Kérhető továbbá, hogy bármilyen korábban megadott személyes adatot töröljük. Ez nem
+                    vonatkozik azokra az adatokra, amelyeket adminisztrációs, jogi vagy biztonsági okokból kötelező
+                    megőriznünk.</p>
+                <h2>Hová továbbítjuk az adatokat</h2>
+                <p>A látogatók által beküldött hozzászólásokat automatikus spamszűrő szolgáltatás ellenőrizheti.</p>
+                <h2>Kapcsolati adatok</h2>
+                <p>Oldalunk nem elemzi és használja föl a személyes adatokat kapcsolat elemzés céljából.</p>
+                <h2>További információk</h2>
+                <h3>Hogyan védjük a felhasználói személyes adatokat</h3>
+                <p>Amennyiben minden igyekezetünk ellenére sikerül megjegyzést készítened, az jóváhagyásra fog várni
+                    megjelenés helyett. A megjegyzésedet szigorú és hosszas ellenőrzéseknek vetjük alá mielőtt
+                    törölnénk:</p>
+                <p>&nbsp;</p>
+                <ul>
+                    <li>A bejegyzésnek témába vágónak kell lennie</li>
+                    <li>Nem tartalmazhat szitokszavakat</li>
+                    <li>Nem lehet erőszakra, diszkriminációra utaló, vagy szexuális töltetű</li>
+                    <li>Ellenőrizzük a megadott e-mail címet</li>
+                    <li>A név és keresztnév sem lehet erőszakra, diszkriminációra utaló, vagy szexuális töltetű</li>
+                    <li>Végül a bejegyzést minden esetben az adatokkal együtt töröljük</li>
+                </ul>
+                <p>&nbsp;</p>
+                <h3>Érvényben lévő eljárások adatkezelési sérelmek esetén</h3>
+                <p>Mi büszkék vagyunk arra, hogy nincsenek adataink rólad.</p>
+                <h3>Milyen harmadik féltől származó adatokat kapunk</h3>
+                <p>Nem kapunk harmadik féltől adatokat.</p>
+                <h3>Milyen automatizált döntéshozatalt és/vagy profilalkotást végzünk a felhasználói adatokkal</h3>
+                <p>Nem végzünk sem döntéshozatali, sem profilalkotási tevékenységet.</p>
+                <h3>Szabályozott iparág közzétételi követelményei</h3>
+                <p>Nincsenek ilyen követelmények</p>
+            </div>
+
+            <div id="en_welcome" class="b8t_content">
+                <h1>Welcome</h1>
+                <p style="float:right; text-align: right;"><span style="font-size: 1.2em"><b> B6 KKV </b></span><br>
+                    <span> Information system </span><br>
+                    <br>
+                    Phone:<br>
+                    00 36 30 465 4562<br>
+                    <a onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
+                        href="mailto:b6@b6sics.hu" target="_blank">
+                        b6@gb6sics.hu<br>
+                    </a>
+                    <br>
+                    Bercsényi u 6.<br>
+                    HU-1111 Budapest<br>
+                </p>
+                <img class="b8t_contact" src="sprite.png" />
+                <p class="b8t_clr">Mr. Gabor J Kiss</p>
+            </div>
+
+
+
+        </div>
     </div>
 
-    <div id="gmap" class="b8t_content b8t_map hidden" onClick="javascript: hide_map()">
-        <iframe style="border: 0; margin: 2.5%; border-radius: 30px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d674.1453327056089!2d19.0509246!3d47.4785875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741ddb2ac7dce0d%3A0x8e4dce2c8adb4958!2sBudapest%2C%20Bercs%C3%A9nyi%20u.%206%2C%201111!5e0!3m2!1shu!2shu!4v1587988217279!5m2!1shu!2shu" 
-        allowfullscreen="allowfullscreen" width="95%" height="95%" frameborder="0">
-        </iframe>
-    </div>
 
 
-<div id="de_main" class="b8t_content hidden">
-<h1>Über Unternehmensinformatik</h1>
-<p>
-Eine Aufgabe bei der Umsetzung eines Projekts sind Informationen zwischen den Teilnehmern
- Ein guter Betrieb des Systems sichert den Erfolg. Es ist wichtig, dass die Datenübertragung 
-reibungslos verläuft.
-transparent und nachvollziehbar sein. Es bietet dafür hervorragende Möglichkeiten
-elektronische Kommunikation, die heute für die Übermittlung von Informationen unerlässlich ist
-ist ein Weg geworden.<br />
-Es gibt viele Möglichkeiten, mit verschiedenen sozialen Netzwerken in Kontakt zu bleiben
-  und E-Mail-Programme. Diese Lösungen sind jedoch für kleinere Unternehmen schwierig.
-in einer globalen Umgebung verwendet werden.<br />
-Das Fehlen eines Informationssystems wirkt sich negativ auf den Unternehmensleiter (Projektleiter) aus.
-Aktivitäten. Seine Leute erzählen sich gegenseitig, wenn auch ein kleines Missverständnis
-kann auch große Geschäftsfehler verursachen. Das Personal ist unnötig administrativ
-Sie verbringen ihre kostbare Zeit mit Arbeiten. Sie sehen gestresst aus und speicheln durch Papierstapel
-Daten, weil es keinen Kollegen gibt, der weiß, wo sie sind. Eine einfache Frage auch
-Sie suchen stundenlang nach Daten aus Excel-Tabellen. Er weiß nicht, welcher Mitarbeiter
-was er tut, wer erfolgreich ist und von wem er loswerden sollte. Es ist eine große Tortur für einen
-Ersetzen eines scheidenden Mitarbeiters, weil nur wichtige Informationen in seinem Kopf waren.<br />
-Das Informationssystem bietet eine Kontaktlösung, die hilft
-die Angelegenheiten eines Unternehmens. Alle Mitarbeiter haben einfachen Zugang zu dem, was für sie relevant ist
-Informationen. Es ist immer klar, wer verantwortlich ist. Die Bedienung ist transparent.
-Anstelle von Eile und Stress ist die Arbeit aller geplant und ruhig. Sofort auf dem neuesten Stand
-Informationen können verwendet werden, um schnell die richtigen Entscheidungen zu treffen. Der Manager
-Sie wissen genau, was Ihr Partner tut, woran Sie arbeiten.<br />
-Das Basissystem des Programms kann vom Firmenspezial leicht modifiziert und erweitert werden
-unter Berücksichtigung Ihrer Bedürfnisse. Personalisiert, für Verantwortung und Arbeit
-Zugehörige Zugriffsrechte können festgelegt werden. Die Basisprogrammdatenbank
-enthält Unternehmens- und Mitarbeiterinformationen sowie Informationen zu Unternehmensprojekten
-ihre Arbeit. Benutzer im Programm verwenden ihre Notizen, um die bereitzustellen
-Informationsfluss und dokumentieren ihre Aktivitäten.
-</p>
-</div>
-
-<div id="en_main" class="b8t_content hidden">
-<h1>About company informatics</h1>
-<p>A task in the implementation of a project is information between the participants
-  good operation of the system ensures success. It is important that the transfer of data is smooth,
-be transparent and traceable. It provides excellent opportunities for this
-electronic communication, which today is essential for the transmission of information
-has become a way.<br />
-There are many ways to stay in touch with different social networks
-  and email programs. However, these solutions are difficult for smaller companies.
-to be used in a global environment.<br />
-The lack of an information system negatively affects the company manager (project manager)
-activities. His people are telling each other, though a little misunderstanding
-can also cause huge business errors. The staff is unnecessary administrative
-they spend their precious time working. They look stressed, salivating through piles of paper
-data because there is no colleague who knows where they are. A simple question too
-they hunt for data from Excel spreadsheets for hours. He doesn't know which co-worker
-what he does, who is successful and from whom he should get rid. It's a huge ordeal for one
-replacing an outgoing staff member because only important information was in His mind.<br />
-The information system offers a contact solution that helps
-the affairs of a company. All employees have easy access to what is relevant to them
-information. It is always clear who is in charge. Operation is transparent.
-Instead of haste and stress, everyone’s work is planned and calm. Immediate, up to date
-information can be used to make the right decisions quickly. The manager
-you know exactly what your partner is doing, what you are working on.<br />
-The basic system of the program can be easily modified and expanded by the company special
-taking into account your needs. Personalized, for responsibility and job
-related access rights can be set. The basic program database
-contains company and employee information as well as information about corporate projects
-their work. Users in the program use their notes to provide the
-flow of information and document their activities.
-</p>
-</div>
-
-<div id="hu_main" class="b8t_content hidden">
-<h1>A céginformatikáról</h1>
-<p>Egy feladat, egy projekt megvalósítása során a résztvevők közötti tájékoztatási
- rendszer jó működése biztosítja a sikert. Lényeges, hogy az adatok átadása gördülékeny, 
-áttekinthető és nyomon követhető legyen. Ehhez biztosít kiváló lehetőségeket az
-elektronikus kommunikáció, mely napjainkra az információ közvetítésének alapvető
-módjává vált.<br />
-A kapcsolattartás sokféle lehetőségét kínálják a különböző közösségi hálózatok
- és levelező programok. Ezeket a megoldásokat azonban nehézkes a szűkebb válla-
-lati környezetben alkalmazni.<br />
-A tájékoztatási rendszer hiánya negatívan befolyásolja a cégvezető (projektvezető)
-tevékenységét. Az emberei elbeszélnek egymás mellett, pedig egy kis félreértés
-is hatalmas hibákat okozhat az üzletmenetben. A munkatársak felesleges adminisztratív 
-munkával töltik drága idejüket. Stresszesen, papírhalmokat átnyálazva keresnek
-adatokat, mert nincs ott az a kolléga, aki tudja hol találhatók. Egy egyszerű kérdésre is
-órákig vadásszák össze az adatokat az Excel táblázatokból. Nem tudja melyik munkatársa 
-mit csinál, ki eredményes és kitől kellene megválnia. Óriási kínlódást jelent egy
-távozó munkatárs pótlása, mert csak az Ő fejében voltak meg fontos információk.<br />
-Az információs rendszer egy kapcsolattartási megoldást kínál, mely elősegíti
-egy vállalat ügymenetét. Minden munkatárs könnyen hozzájut a számára lényeges 
-információkhoz. Mindig látszik, hogy kinek mi a feladata. Átlátható a működés. 
-A kapkodás és stressz helyett tervezett és nyugodt mindenki munkája. Azonnali, naprakész
-információk alapján gyorsan, helyes döntéseket lehet hozni. A vezető minden munka-
-társáról pontosan tudja, hogy éppen mit csinál, min dolgozik.<br />
-A program alaprendszere egyszerűen módosítható és bővíthető a cég speciális
-igényinek figyelembevételével. Személyre szabott, a felelősséghez és munkakörhöz
-kapcsolódó hozzáférési jogosultságok állíthatók be. Az alapprogram adatbázisa 
-tartalmazza a cég és a dolgozók adatait, valamint a vállalati projektekkel kapcsolatos 
-munkájukat. A felhasználók a programban feljegyzéseik segítségével biztosítják az 
-információ áramlását és dokumentálják tevékenységüket.</p>
-</div>
-
-
-<div id="de_mail" class="b8t_content hidden">
-    <h1><a onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
-           href="mailto:b6@b6sics.hu" target="_blank">
-           E-Mail schreiben
-        </a>
-    </h1>
-	<p>Vorschläge&nbsp;betreffend&nbsp;das&nbsp;Project.</p>
-    <p style="text-align: center;">Wir sind interessiert an Ihre Meinung:</p>
-    <p style="text-align: center;">
-        <a onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
-           href="mailto:b6@b6sics.hu" target="_blank">
-           Bitte schreiben Sie E-Mail!!
-        </a> <br />mailto: b6@b6sics.hu
-    </p>
-</div>
-
-<div id="en_mail" class="b8t_content hidden">
-    <h1><a onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
-           href="mailto:b6@b6sics.hu" target="_blank">
-           Send Mail
-        </a>
-    </h1>
-	<p>Suggestions regarding the project.</p>
-    <p style="text-align: center;">We are interested in your opion:</p>
-    <p style="text-align: center;">
-        <a onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
-           href="mailto:b6@b6sics.hu" target="_blank">
-           Please send Mail!!
-        </a> <br />mailto: b6@b6sics.hu
-    </p>
-</div>
-
-<div id="hu_mail" class="b8t_content hidden">
-    <h1>
-        <a onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
-           href="mailto:b6@b6sics.hu" target="_blank">
-           Küldjön e-mailt
-        </a>
-    </h1>
-	<p>Tegyen javaslatokat a projekttel kapcsolatosan!</p>
-    <p style="text-align: center;">Minket érdekel a véleménye:</p>
-    <p style="text-align: center;">
-        <a onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
-           href="mailto:b6@b6sics.hu" target="_blank">
-           Kérjük küldjön e-mailt!!
-        </a> <br />mailto: b6@b6sics.hu
-    </p>
-</div>
-
-<div id="de_gdpr" class="b8t_content hidden">
-    <h1>Datenschutzerklärung</h1>
-    <h2>Wer wir sind</h2>
-    <p>Die Adresse unserer Website ist: http://www.b6sics.hu.</p>
-    <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
-    <p><span id="s3-t-firma">Jozsef Kiss</span><span id="s3-t-ansprechpartner"></span><br>
-    <span id="s3-t-strasse">Bercsényi u. 6.</span><br>
-    <span id="s3-t-plz">1111 Budapest<br>
-    </span><span id="s3-t-ort"></span>mail: b6@b6sics.hu</p>
-    <p>Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.).</p>
-    <h2>Welche personenbezogenen Daten wir sammeln und warum wir sie sammeln</h2>
-    <h3>Kommentare</h3>
-    <p>Wenn Besucher Kommentare auf der Website schreiben, sammeln wir die Daten, die im Kommentar-Formular angezeigt werden, außerdem die IP-Adresse des Besuchers und den User-Agent-String (damit wird der Browser identifiziert), um die Erkennung von Spam zu unterstützen.</p>
-    <p>Aus deiner E-Mail-Adresse kann eine anonymisierte Zeichenfolge erstellt (auch Hash genannt) und dem Gravatar-Dienst übergeben werden, um zu prüfen, ob du diesen benutzt. Die Datenschutzerklärung des Gravatar-Dienstes findest du hier: https://automattic.com/privacy/. Nachdem dein Kommentar freigegeben wurde, ist dein Profilbild öffentlich im Kontext deines Kommentars sichtbar.</p>
-    <p>Wir lassen nicht zu Kommentare zu schreiben.</p>
-    <h3>Medien</h3>
-    <p>Wenn du ein registrierter Benutzer bist und Fotos auf diese Website lädst, solltest du vermeiden, Fotos mit einem EXIF-GPS-Standort hochzuladen. Besucher dieser Website könnten Fotos, die auf dieser Website gespeichert sind, herunterladen und deren Standort-Informationen extrahieren.</p>
-    <p>Wir lassen nicht zu Medien auf diese Webseite laden.</p>
-    <h3>Kontaktformulare</h3>
-    <h3>Cookies</h3>
-    <p>Wenn du einen Kommentar auf unserer Website schreibst, kann das eine Einwilligung sein, deinen Namen, E-Mail-Adresse und Website in Cookies zu speichern. Dies ist eine Komfortfunktion, damit du nicht, wenn du einen weiteren Kommentar schreibst, all diese Daten erneut eingeben musst. Diese Cookies werden ein Jahr lang gespeichert.</p>
-    <p>Falls du ein Konto hast und dich auf dieser Website anmeldest, werden wir ein temporäres Cookie setzen, um festzustellen, ob dein Browser Cookies akzeptiert. Dieses Cookie enthält keine personenbezogenen Daten und wird verworfen, wenn du deinen Browser schließt.</p>
-    <p>Wenn du dich anmeldest, werden wir einige Cookies einrichten, um deine Anmeldeinformationen und Anzeigeoptionen zu speichern. Anmelde-Cookies verfallen nach zwei Tagen und Cookies für die Anzeigeoptionen nach einem Jahr. Falls du bei der Anmeldung „Angemeldet bleiben“ auswählst, wird deine Anmeldung zwei Wochen lang aufrechterhalten. Mit der Abmeldung aus deinem Konto werden die Anmelde-Cookies gelöscht.</p>
-    <p>Wenn du einen Artikel bearbeitest oder veröffentlichst, wird ein zusätzlicher Cookie in deinem Browser gespeichert. Dieser Cookie enthält keine personenbezogenen Daten und verweist nur auf die Beitrags-ID des Artikels, den du gerade bearbeitet hast. Der Cookie verfällt nach einem Tag.</p>
-    <p>Wir lassen nicht zu Konten auf unserer Website zu erstellen.</p>
-    <h3>Eingebettete Inhalte von anderen Websites</h3>
-    <p>Beiträge auf dieser Website können eingebettete Inhalte beinhalten (z.&nbsp;B. Videos, Bilder, Beiträge etc.). Eingebettete Inhalte von anderen Websites verhalten sich exakt so, als ob der Besucher die andere Website besucht hätte.</p>
-    <p>Diese Websites können Daten über dich sammeln, Cookies benutzen, zusätzliche Tracking-Dienste von Dritten einbetten und deine Interaktion mit diesem eingebetteten Inhalt aufzeichnen, inklusive deiner Interaktion mit dem eingebetteten Inhalt, falls du ein Konto hast und auf dieser Website angemeldet bist.</p>
-    <h3>Analysedienste</h3>
-    <p>Unsere Webseite benutzt keine Analysedienste.</p>
-    <h2>Mit wem wir deine Daten teilen</h2>
-    <p>Wir sind nicht interessiert an deine Daten. Wir teilen deine Daten mit niemand.</p>
-    <h2>Wie lange wir deine Daten speichern</h2>
-    <p>Wenn du einen Kommentar schreibst, wird dieser inklusive Metadaten zeitlich unbegrenzt gespeichert. Auf diese Art können wir Folgekommentare automatisch erkennen und freigeben, anstelle sie in einer Moderations-Warteschlange festzuhalten.</p>
-    <p>Für Benutzer, die sich auf unserer Website registrieren, speichern wir zusätzlich die persönlichen Informationen, die sie in ihren Benutzerprofilen angeben. Alle Benutzer können jederzeit ihre persönlichen Informationen einsehen, verändern oder löschen (der Benutzername kann nicht verändert werden). Administratoren der Website können diese Informationen ebenfalls einsehen und verändern.</p>
-    <p>Wir sind nicht interessiert an deine Daten. Wir speichern deine Daten nicht.</p>
-    <h2>Welche Rechte du an deinen Daten hast</h2>
-    <p>Wenn du ein Konto auf dieser Website besitzt oder Kommentare geschrieben hast, kannst du einen Export deiner personenbezogenen Daten bei uns anfordern, inklusive aller Daten, die du uns mitgeteilt hast. Darüber hinaus kannst du die Löschung aller personenbezogenen Daten, die wir von dir gespeichert haben, anfordern. Dies umfasst nicht die Daten, die wir aufgrund administrativer, rechtlicher oder sicherheitsrelevanter Notwendigkeiten aufbewahren müssen.</p>
-    <p>Wir haben keine Daten von dir.</p>
-    <h2>Wohin wir deine Daten senden</h2>
-    <p>Besucher-Kommentare könnten von einem automatisierten Dienst zur Spam-Erkennung untersucht werden.</p>
-    <p>Wir haben keine Daten von dir.</p>
-    <h2>Deine Kontakt-Informationen</h2>
-    <h2>Weitere Informationen</h2>
-    <h3>Wie wir deine Daten schützen</h3>
-    <p>Wenn trotz unsere Mühe Kommentare schreiben kannst, dann alle Kommentare werden persönlich von uns überprüft und werden erst nach erfolgreichem Bestehen unserer nachfolgenden Punkte freigegeben:</p>
-    <ul>
-    <li>Themenbezogener Kommentar</li>
-    <li>Keine Schimpfwörter</li>
-    <li>Keine gewalttätigen, diskriminierende oder sexuelle Aussagen</li>
-    <li>Prüfung der eingereichten E-Mail-Adresse</li>
-    <li>Name und Vorname beinhalten keine diskriminierende, gewalttätige oder sexuelle Anspielungen</li>
-    <li>Keine Kommentare werden freigegeben und werden mit den Daten gelöscht</li>
-    </ul>
-    <h3>Welche Maßnahmen wir bei Datenschutzverletzungen anbieten</h3>
-    <p>Wir sind Stolz darauf, keine Daten zu haben von dir.</p>
-    <h3>Von welchen Drittanbietern wir Daten erhalten</h3>
-    <p>Wir sind Stolz darauf, keine Daten zu erhalten.</p>
-    <h3>Welche automatisierte Entscheidungsfindung und/oder Profilerstellung wir mit Benutzerdaten durchführen</h3>
-    <p>Wir führen keine automatisierte Entscheidungsfindungen oder Profilerstellungen durch.</p>
-    <h3>Industrielle aufsichtsrechtliche Regulierungsanforderungen</h3>
-    <p>Keine industrielle aufsichtsrechtliche Regulierungsanforderungen.</p>
-</div>
-
-<div id="en_gdpr" class="b8t_content hidden">
-    <h1>Privacy Policy</h1>
-<h2>Who we are</h2>
-<p>Our website address is: http://www.b6sics.hu.</p>
-<p><span id="s3-t-firma">Jozsef Kiss</span><span id="s3-t-ansprechpartner"></span><br>
-<span id="s3-t-strasse">Bercsényi u. 6.</span><br>
-<span id="s3-t-plz">1111 Budapest<br>
-</span><span id="s3-t-ort"></span>mail: b6@b6sics.hu</p>
-<h2>What personal data we collect and why we collect it</h2>
-<h3>Comments</h3>
-<p>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor’s IP address and browser user agent string to help spam detection.</p>
-<p>An anonymised string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p>
-<h3>Media</h3>
-<p>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p>
-<h3>Contact forms</h3>
-<p>We don’t use contact forms.</p>
-<h3>Cookies</h3>
-<p>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p>
-<p>If you have an account and you log in to this site, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p>
-<p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select “Remember Me”, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p>
-<p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p>
-<p>Normally we don’t use cookies.</p>
-<h3>Embedded content from other websites</h3>
-<p>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p>
-<p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracing your interaction with the embedded content if you have an account and are logged in to that website.</p>
-<p>Normally we don’t use contents from other websites.</p>
-<h3>Analytics</h3>
-<p>Normally we don’t use analytics.</p>
-<h2>Who we share your data with</h2>
-<p>Normally we don’t share your datas.</p>
-<h2>How long we retain your data</h2>
-<p>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognise and approve any follow-up comments automatically instead of holding them in a moderation queue.</p>
-<p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p>
-<h2>What rights you have over your data</h2>
-<p>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p>
-<p>Normally we don’t collect user datas.</p>
-<h2>Where we send your data</h2>
-<p>Visitor comments may be checked through an automated spam detection service.</p>
-<h2>Your contact information</h2>
-<p>Normally we don’t use your contact information.</p>
-<h2>Additional information</h2>
-<h3>How we protect your data</h3>
-<p>We don’t have datas from you.</p>
-<p><span class="" lang="en"><span class="">If you make a comment despite all our efforts, y</span><span class="">our comment will be subject to strict and lengthy checks before we delete it:</span><br>
-</span></p>
-<ul>
-<li><span id="result_box" class="" lang="en"><span class="">The entry must be relevant</span></span></li>
-<li><span id="result_box" class="" lang="en"><span class="">It can not contain vulgar scripts</span></span></li>
-<li><span id="result_box" class="" lang="en"><span class="">It can not be violence, discrimination, or sex</span></span></li>
-<li><span id="result_box" class="" lang="en"><span class="">We check the specified email address</span></span></li>
-<li><span id="result_box" class="" lang="en"><span class="">The first name and the surename may not be violence, discrimination or sex</span></span></li>
-<li><span id="result_box" class="" lang="en"><span class="">Finally, the entry will be deleted with the data in all cases</span></span></li>
-</ul>
-<h3>What data breach procedures we have in place</h3>
-<p>We don’t have data beach procedures.</p>
-<h3>What third parties we receive data from</h3>
-<p>We don’t receive datas from third parties.</p>
-<h3>What automated decision making and/or profiling we do with user data</h3>
-<p>We don’t have user datas.</p>
-<h3>Industry regulatory disclosure requirements</h3>
-<p>No industry regulatory disclosure requirements.</p></div>
-
-<div id="hu_gdpr" class="b8t_content hidden">
-    <h1>Adatkezelési tájékoztató</h1>
-<h2>Kik vagyunk</h2>
-<p>A weboldalunk címe: http://www.b6sics.hu.</p>
-<p>Adatkezelő neve: Kiss József<br>
-Adatkezelő címe: 1111 Budapest, Bercsényi u. 6.<br>
-Adatkezelő elérhetősége: b6@b6sics.hu</p>
-<h2>Melyek azok a személyes adatok, amiket gyűjtünk és milyen céllal gyűjtjük ezeket</h2>
-<h3>Hozzászólások</h3>
-<p>Hozzászólás beküldésekor a hozzászólási űrlapban megadottakon kívül begyűjtésre kerül a hozzászóló IP címe és a böngészőazonosító karakterlánc a kéretlen tartalmak kiszűrése céljából.</p>
-<p>Egy személytelenített, az e-mail címből előállított karakterlánc (hashnek szokás nevezni) kerül továbbításra a Gravatar szolgáltatás felé, ha ez az oldalon használatban van. A Gravatar szolgáltatás feltételei az alábbi címen tekinthetőek meg: https://automattic.com/privacy/. A hozzászólás elfogadása után, a hozzászólásunk tartalma és a profil képünk is megjelenik nyilvánosan.</p>
-<h3>Média</h3>
-<p>Amennyiben regisztrált felhasználó által kerül kép feltöltésre a honlapra, kerülni kell az az olyan EXIF-eket, amelyekben GPS pozíció adatok is szerepelnek. A honlap látogatói ezeket letölthetik és kinyerhetik a helyadatokat a honlapon található képekből.</p>
-<h3>Kapcsolatfelvételi űrlapok</h3>
-<h3>Sütik</h3>
-<p>Hozzászólás írása után a honlap a megadott nevet, e-mail és web címet sütiben eltárolja. A tárolás csak kényelmi célokat szolgál, hogy a következő hozzászóláskor ne kelljen automatikusan kitölteni. A sütik lejárati ideje 1 év.</p>
-<p>Ha rendelkezünk felhasználói fiókkal és be is vagyunk jelentkezve erre a honlapra, akkor átmeneti sütiket állítunk be, annak érdekében, hogy megállapítsuk, hogy a böngésző elfogadja-e a sütiket. Ezek a sütik nem tartalmaznak személyes információt, és törlődnek, ahogy bezárjuk a böngészőt.</p>
-<p>A honlapra történő bejelentkezéskor több sütit hozunk létre, amely elmenti a bejelentkezési információt és a szerkesztőfelület megjelenítési opcióit. A bejelentkezési sütik két napig érvényesek, a szerkesztőfelület megjelenítési opcióit tároló süti egy évig. Amennyiben az “Emlékezz rám” opciót bejelöljük, a bejelentkezés két hétig folytatódik. Kijelentkezéskor a bejelentkezési sütik eltávolításra kerülnek.</p>
-<p>Amennyiben bejegyzést vagy oldalt szerkesztünk, egy újabb sütit tárol el a böngészőnk. Ez a süti nem tartalmaz személyes adatot, egyszerűen csak a bejegyzés azonosító számát tárolja, amelyet szerkesztettünk. Egy nap múlva jár le az érvényessége.</p>
-<h3>Más honlapokról származó beágyazott tartalmak</h3>
-<p>A honlapon elérhető bejegyzések külső forrásból származó beágyazott tartalmakat (pl. videók, képek, cikkek stb.) használhatnak. A külső forrásból származó beágyazott tartalmak pontosan úgy viselkednek, mintha meglátogattunk volna egy másik honlapot.</p>
-<p>Ezek a webhelyek lehetséges, hogy adatot gyűjtenek a látogatókról, sütiket vagy harmadik féltől származó követőkódot használnak, figyelik a beágyazott tartalommal kapcsolatos felhasználói viselkedést, ha rendelkezünk felhasználói fiókkal és be vagyunk jelentkezve az oldalra.</p>
-<h3>Analitika</h3>
-<p>Nem használink analítikai szolgáltatást.</p>
-<h2>Kivel osztjuk meg a felhasználói adatokat</h2>
-<p>Nem osztjuk meg a felhasználói adatokat.</p>
-<h2>Mennyi ideig őrizzük a személyes adatot</h2>
-<p>Ha hozzászólunk, a hozzászólás és annak metaadatai nem meghatározható ideig a rendszerben maradnak. Ennek célja, hogy az összes ezt követő bármely hozzászólás általunk megismertté és jóváhagyottá váljon, azaz ne kerüljön fel a moderálandó hozzászólások listájára.</p>
-<p>A honlapon regisztrált felhasználók (ha vannak ilyenek) személyes adatai a saját felhasználói profiljukban is tárolásra kerülnek. Minden felhasználó megtekintheti, szerkesztheti vagy törölheti a személyes adatait bármikor (kivéve, hogy nem változtathatja meg a saját felhasználói nevét). A honlap rendszergazdái ezen információkat szintén megtekinthetik és szerkeszthetik.</p>
-<h2>Milyen jogokkal rendelkezik a felhasználó a saját adatai kapcsán</h2>
-<p>A weboldalon regisztrált fiók vagy hozzászólás írása esetén kérhető a személyes adatok export fájlban történő megküldése, amely bármilyen adatot tartalmaz, amit korábban a felhasználó rendelkezésünkre bocsátott. Kérhető továbbá, hogy bármilyen korábban megadott személyes adatot töröljük. Ez nem vonatkozik azokra az adatokra, amelyeket adminisztrációs, jogi vagy biztonsági okokból kötelező megőriznünk.</p>
-<h2>Hová továbbítjuk az adatokat</h2>
-<p>A látogatók által beküldött hozzászólásokat automatikus spamszűrő szolgáltatás ellenőrizheti.</p>
-<h2>Kapcsolati adatok</h2>
-<p>Oldalunk nem elemzi és használja föl a személyes adatokat kapcsolat elemzés céljából.</p>
-<h2>További információk</h2>
-<h3>Hogyan védjük a felhasználói személyes adatokat</h3>
-<p>Amennyiben minden igyekezetünk ellenére sikerül megjegyzést készítened, az jóváhagyásra fog várni megjelenés helyett. A megjegyzésedet szigorú és hosszas ellenőrzéseknek vetjük alá mielőtt törölnénk:</p>
-<p>&nbsp;</p>
-<ul>
-<li>A bejegyzésnek témába vágónak kell lennie</li>
-<li>Nem tartalmazhat szitokszavakat</li>
-<li>Nem lehet erőszakra, diszkriminációra utaló, vagy szexuális töltetű</li>
-<li>Ellenőrizzük a megadott e-mail címet</li>
-<li>A név és keresztnév sem lehet erőszakra, diszkriminációra utaló, vagy szexuális töltetű</li>
-<li>Végül a bejegyzést minden esetben az adatokkal együtt töröljük</li>
-</ul>
-<p>&nbsp;</p>
-<h3>Érvényben lévő eljárások adatkezelési sérelmek esetén</h3>
-<p>Mi büszkék vagyunk arra, hogy nincsenek adataink rólad.</p>
-<h3>Milyen harmadik féltől származó adatokat kapunk</h3>
-<p>Nem kapunk harmadik féltől adatokat.</p>
-<h3>Milyen automatizált döntéshozatalt és/vagy profilalkotást végzünk a felhasználói adatokkal</h3>
-<p>Nem végzünk sem döntéshozatali, sem profilalkotási tevékenységet.</p>
-<h3>Szabályozott iparág közzétételi követelményei</h3>
-<p>Nincsenek ilyen követelmények</p></div>
-
-<div id="en_welcome" class="b8t_content">
-<h1>Welcome</h1>
-<p style="float:right; text-align: right;"><span style="font-size: 1.2em"><b> B6 KKV </b></span><br>
-	<span> Information system </span><br>
-	<br>
-	Phone:<br>
-	00 36 30 465 4562<br>
-	<a onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
-           href="mailto:b6@b6sics.hu" target="_blank">
-        b6@gb6sics.hu<br>
-    </a>
-	<br>
-	Bercsényi u 6.<br>
-	HU-1111 Budapest<br>
-	</p>
-<img class="b8t_contact" src="sprite.png" />
-<p class="b8t_clr" >Mr. Gabor J Kiss</p>
-</div>
+    <!-- EndOfArticles / StartOfFooter -->
 
 
 
-</div></div>
-
-
-
-<!-- EndOfArticles / StartOfFooter -->
-
-
-
-<nav class="navbar transparent navbar-inverse navbar-expand-md fixed-bottom"
-     onClick="javascript: hide_map()">
-    <div class="navbar-nav w-100 justify-content-between">
-        <a class="nav-item nav-link" 
-           onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
-           href="mailto:b6@b6sics.hu" target="_blank">
-           A.D.: MMXX © B6sics.hu&nbsp;|&nbsp;Budapest
-        </a>
-        <a class="nav-item nav-link" 
-           onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
-           href="mailto:b6@b6sics.hu" target="_blank">
-            B8tstrapped&nbsp;by&nbsp;b6@b6sics.hu
-        </a>
-    </div>
-</nav>
+    <nav class="navbar transparent navbar-inverse navbar-expand-md fixed-bottom" onClick="javascript: hide_map()">
+        <div class="navbar-nav w-100 justify-content-between">
+            <a class="nav-item nav-link"
+                onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
+                href="mailto:b6@b6sics.hu" target="_blank">
+                A.D.: MMXX © B6sics.hu&nbsp;|&nbsp;Budapest
+            </a>
+            <a class="nav-item nav-link"
+                onClick="javascript:window.open('mailto:b6@b6sics.hu', 'mail');event.preventDefault()"
+                href="mailto:b6@b6sics.hu" target="_blank">
+                B8tstrapped&nbsp;by&nbsp;b6@b6sics.hu
+            </a>
+        </div>
+    </nav>
 
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
-			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
-			crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
-			crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
-			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
-			crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
-  </body>
+</body>
+
 </html>
