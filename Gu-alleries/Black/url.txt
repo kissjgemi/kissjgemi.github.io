@@ -1,0 +1,5 @@
+http://base6.bplaced.net/A_Gu-alleries/
+
+
+
+<a href="a.html" target="frameLeft" onclick="window.open('b.html', 'frameRight');">Click Me!</a>
