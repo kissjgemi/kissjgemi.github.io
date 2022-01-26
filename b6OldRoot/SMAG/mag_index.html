@@ -1,0 +1,2446 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+<head>
+<title>MAGazin 2016.08.23</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="content-language" content="hu" /> 
+  <meta name="author" content="Kiss J. Gábor" />
+  <meta name="designer" content="Kiss J. Gábor"/>
+  <meta name="copyright" content="Copyright @ 2015 sryer.com"/>
+  <meta name="keywords" content="magazin, napilap, újság, média, mti, szórakozás, életmód, tájékoztatás" />
+  <meta name="description" content="tudományosan szórakoztató magazin" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow"/>
+  <meta name="MSNBOT" content="INDEX,FOLLOW" /> 
+  <meta name="ROBOTS" content="ALL" /> 
+  <meta http-equiv="date" content="Fri, 11 Dec 2015 09:40:18 GMT" />
+  <meta http-equiv="last-modified" content="Tue, 23 Aug 2016 09:43:40 GMT" />
+  <meta name="revisit" content="3 day" />
+  <link rel="icon" type="image/x-icon" href="http://magazin.sryer.com/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="http://magazin.sryer.com/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="aMAGazinStyles/styles.css" />
+  <script type="text/javascript" src="prgjs/jscript.js">
+  </script>
+  <link rel="made" title="e-Mail" href="sry@sryer.com" />
+</head> 
+ <body> 
+ <div id="mygazin"> 
+<div id="buttoncontainer">
+<div id="homebutton">
+<a href="#s00" onclick="hide('main_menu'); show('menubutton'); hide('menuclosebutton')"><img src="aMAGazinImages/buttons/home_y.png"></a>
+</div>
+<div id="menubutton">
+<a onclick="show('main_menu'); hide('menubutton'); show('menuclosebutton')"><img src="aMAGazinImages/buttons/menu_y.png"></a>
+</div>
+<div id="menuclosebutton">
+<a onclick="hide('main_menu'); show('menubutton'); hide('menuclosebutton')"><img src="aMAGazinImages/buttons/menu_y_close.png"></a>
+</div>
+</div>
+ <div id="main_menu" class="menu">
+ <table border="0" cellpadding="5" cellspacing="0" width="100%">
+   <tr>
+     <td onclick="window.location='#s01'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left">
+   <div id="menu_section1" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Időjárás &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s01_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Az Országos Meteorológiai Szolgálat előrejelzése &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s01_2'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Az ember általi szén-dioxid-kibocsátás is késlelteti a következő jégkorszakot &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s01_3'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Fagy Miskolcon &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s02'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left">
+   <div id="menu_section2" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Közlekedés &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s02_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Uber: nyolcszorosára nőtt a mobilalkalmazás felhasználóinak száma tavaly &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s02_2'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Életbe lépett a budai fonódó villamoshálózat menetrendje &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s03'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left">
+   <div id="menu_section3" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Szerencsejáték &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s03_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Nyerőszámok - az utolsó öt hét húzásai és a nyeremények &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s04'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left">
+   <div id="menu_section4" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Sport &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s04_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Vízilabda Eb - Tizenegy gólos spanyol siker &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s04_2'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Asztalitenisz csapat-vb - A címvédő kínaiakkal egy csoportban a magyar női válogatott &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s05'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left">
+   <div id="menu_section5" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Film, színház, muzsika &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s05_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Oscar-díj - A Saul fia a legjobb idegen nyelvű film kategória jelöltjei között &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s05_2'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> A Lajtha-csoport működése és az 1950-es évek népénekkutatása a Magyarság Háza kiállításán &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s05_3'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Oscar-díj - A visszatérő 12 jelöléssel vezeti a jelöltek listáját &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s05_4'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Az élet és a halál közti lebegés állapotát ragadja meg a Feledi Project új előadása &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s05_5'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> A magyar kultúra napja Zentán &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s06'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left">
+   <div id="menu_section6" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Hírek, tudósítások &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s06_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Iráni atomprogram - Az Európai Unió két héttel meghosszabbította a szankciók felfüggesztését &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s06_2'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Jobbik: Orbán Viktor megfutamodott a vizsgálóbizottságok ügyében &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s06_3'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Németországi molesztálás - Bocsánatot kért az áldozatoktól az észak-rajna-vesztfáliai miniszterelnök &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s07'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left">
+   <div id="menu_section7" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Gazdaság &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s07_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Csok - Az elemző szerint nem várható az ingatlanpiac hirtelen növekedése &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s07_2'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Devizapiac - Erősödött a forint árfolyama &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s07_3'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> BÉT - Szakértők: hullámzó volt a tőzsdéken a kereskedés - FRISSÍTETT (új: áruszekció) &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s08'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left">
+   <div id="menu_section8" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Technika &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s08_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Kína merülőkabint tesztelt az Indiai-óceánban &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s08_2'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Forradalmasíthatja a személyre szabott gyógyászatot a rendszermikroszkópia &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s08_3'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Az űrrepülés történetét bemutató interaktív tárlat nyílt Budapesten &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s08_4'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> A léghajók tündöklése és bukása &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s10'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left">
+   <div id="menu_section10" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Ajánló &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s10_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Munkaerőt toboroz az Oracle Európában, a Közel-Keleten és Afrikában &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s12'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left">
+   <div id="menu_section12" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Tallózó &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s12_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Esterházy Pétert Nobel-díjra javasolta Konrád György &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s12_2'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Az Árpád-házi uralkodók leszármazási táblája &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s13'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left">
+   <div id="menu_section13" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Nagyvilág &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s13_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Egyiptomban megnyitották az ősmaradványok és a klímaváltozás múzeumát &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s13_2'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> A Párizsban aláírt klímamegállapodás lesz a holland EU-elnökség célkeresztjében &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s13_3'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Terrorizmus - Az Iszlám Állam fegyvereseit keresik Olaszországban &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s13_4'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Iszlám Állam - Szakértő: kirekesztettség és naivitás miatt csatlakoznak nők a terrorszervezethez &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s16'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left">
+   <div id="menu_section16" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Esti mesélő &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s16_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> A borbély és a szegény ember (népmese) &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s16_2'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Erős Matyi meg az ördög barázdája &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s16_3'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> A szerencsepróbáló királyfi (népmese) &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s99'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="center" height="40" valign="middle" width="50%">
+   <h5>&nbsp;  Impresszum &nbsp;</h5></td>
+   </tr>
+   </table>
+   </div>
+<div id="page-wrap">
+   <br />
+   <hr />
+
+
+<a name="s00">&nbsp;</a>
+
+	<div id="section0">
+		<div id="iconmenu">
+	&nbsp;<a href="#s01"><img src="aMAGazinImages/buttons/forecast.png" alt="időjárás" title="időjárás"></a><br />
+	&nbsp;<a href="#s02"><img src="aMAGazinImages/buttons/streetinfo.png" alt="közlekedés" title="közlekedés"></a><br />
+	&nbsp;<a href="#s03"><img src="aMAGazinImages/buttons/luck.png" alt="totó-lottó" title="totó-lottó"></a><br />
+	&nbsp;<br />
+	&nbsp;<a href="#s01"><img src="aMAGazinImages/buttons/new_article01.png" alt="új" title="új"></a><br />
+	&nbsp;<a href="#s01"><img src="aMAGazinImages/buttons/new_article03.png" alt="új" title="új"></a><br />
+	&nbsp;<a href="#s01"><img src="aMAGazinImages/buttons/new_article05.png" alt="új" title="új"></a><br />
+	</div> 
+	<div class="front-header">
+	<img src="aMAGazinImages/header/yinguInTheSky2.gif" alt="MAGazin" title="MAGazin">
+	</div></div>
+    <br />
+   <hr />
+
+<a name="s01">&nbsp;</a>
+
+   <div id="section1" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Időjárás &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s01_1">&nbsp;</a>
+   <div class="article">
+   	<h3>Az Országos Meteorológiai Szolgálat előrejelzése</h3>
+
+<div class="parabellum"><p class="onecolumn">
+<b><i>2016.08.23.</i> (kedd) </b><br />
+ A délelőtt során a déli megyék kivételével sokfelé kisüt a nap, de délutánra délen is várható napsütés. A déli órákig az Alföldön néhol még előfordulhat zápor, később mindenütt csapadékmentes lesz az idő. Az élénk északi szelet a Dunántúlon, valamint a Tiszántúlon többfelé kísérik erős széllökések. A csúcshőmérséklet 23 és 28 fok között valószínű, a magasabb értékekkel északnyugaton, az alacsonyabbakkal pedig délen. Késő estére 14 és 19 fok közé hűl le a levegő.
+</p>
+<div id="more-weather"><a onclick="show('less-weather'); hide('more-weather')" >
+<p class="showline">Mutass többet!</p></a>
+</div>
+<div id="less-weather" style="display: none; background-color: lightgray"><a onclick="show('more-weather'); hide('less-weather')" >
+<p class="showline">Rejtsd el!</p></a>
+<p class="onecolumn">
+<b><i>2016.08.24.</i> (szerda) </b><br />
+ Napos időre számíthatunk gomolyfelhőkkel (délkeleten jobbára derült lesz az ég). Csapadék nem valószínű. Az északkeleti, északi az Alföldön erős marad. A legalacsonyabb éjszakai hőmérséklet 12 és 17, a legmagasabb nappali hőmérséklet 25 és 30 fok között alakul.
+</p>
+<p class="onecolumn">
+<b><i>2016.08.25.</i> (csütörtök) </b><br />
+ Derült vagy gyengén gomolyfelhős időre számíthatunk. Csapadék nem lesz. Az északkeleti szelet többfelé élénk lökések kísérik. A legalacsonyabb éjszakai hőmérséklet 12 és 17, a legmagasabb nappali hőmérséklet 26 és 30 fok között alakul.
+</p>
+<p class="onecolumn">
+<b><i>2016.08.26.</i> (péntek) </b><br />
+ Derült, száraz idő lesz. A keleties szelet helyenként élénk lökések kísérik. A legalacsonyabb éjszakai hőmérséklet 11 és 16, a legmagasabb nappali hőmérséklet 27 és 31 fok között várható.
+</p>
+<p class="onecolumn">
+<b><i>2016.08.27.</i> (szombat) </b><br />
+ Többnyire felhőtlen, száraz idő lesz. Mérsékelt marad a légmozgás. A legalacsonyabb éjszakai hőmérséklet 11 és 16, a legmagasabb nappali hőmérséklet 29 és 32 fok között várható.
+</p>
+<p class="onecolumn">
+<b><i>2016.08.28.</i> (vasárnap) </b><br />
+ Többnyire felhőtlen, száraz idő lesz. Mérsékelt marad a légmozgás. A legalacsonyabb éjszakai hőmérséklet 13 és 18, a legmagasabb nappali hőmérséklet 29 és 33 fok között várható.
+</p>
+<p class="onecolumn">
+<b><i>2016.08.29.</i> (hétfő) </b><br />
+ Derült, száraz idő várható. Mérsékelt marad a légmozgás. A legalacsonyabb éjszakai hőmérséklet 14 és 19, a legmagasabb nappali hőmérséklet 30 és 34 fok között valószínű.
+</p>
+</div>
+<p class="onecolumn">
+<br /></p><p class="headfoot" align="right">Országos Meteorológiai Szolgálat 2016.08.23.</p></div>
+   <hr /><hr />
+
+   </div>
+   <a name="s01_2">&nbsp;</a>
+   <div class="article">
+   	<h3>Az ember általi szén-dioxid-kibocsátás is késlelteti a következő jégkorszakot</h3>
+
+<div class="parabellum">
+<p class="main">
+London, 2016. január 14., csütörtök (MTI) - Az üvegházhatású gázok ember általi kibocsátása legkevesebb 50 ezer évvel késlelteti a következő jégkorszak beköszöntét - állapították meg németországi kutatók.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452799345"><a onclick="show('less-article1452799345'); hide('more-article1452799345')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452799345" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452799345'); show('more-article1452799345')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+A Potsdami Klímakutató Intézet szakemberei az eljegesedést kiváltó tényezőket vizsgálták. A Föld Nap körüli pályájának módosulásától függ, hogy mennyi napsugárzás éri a bolygó felszínét, és ha ez elér egy bizonyos küszöbértéket az északi félteke közepes földrajzi szélességein, akkor beindulhat az eljegesedés.<br />
+A Nature című folyóiratban közölt eredmények szerint bolygónk Nap körüli pályájának alakja ugyan most "ideális" lenne egy jégkorszak beköszöntéhez, ám jelenleg túlságosan sok szén-dioxid van a levegőben, így az üvegházhatás ellensúlyozza a pályaeltolódásból eredő lehűlést. A bolygó meghosszabbodott meleg periódus elé néz - írta a BBC.<br />
+"Olyan periódusban vagyunk, amikor az északi féltekén a nyarak a legtávolabb vannak a Naptól" - magyarázta Andrey Ganopolski, a tanulmány vezető szerzője. "Normális körülmények között az interglaciális időszak véget érne, és új jégkorszak kezdődne. Vagyis csillagászati szempontból nézve tökéletesen adottak a feltételek. Ha 200 évvel ezelőtt 240 ppm (milliomod térfogatrész) értéken állt volna a szén-dioxid légköri koncentrációja, akkor elkezdődhetne egy jégkorszak, de szerencsére 280 ppm volt a koncentráció. Az iparosodott társadalom pedig mára 400 ppm fölé vitte az értéket" - fejtette ki Ganopolski.<br />
+A kutatók szerint ugyanakkor a jégkorszakközi éghajlat feltehetőleg így is, úgy is meghosszabbodott volna legkevesebb 20 ezer évvel, illetve nagy valószínűség szerint akár 50 ezer évvel is, még akkor is, ha a szén-dioxid koncentráció a 18. századi szinten maradt volna.<br />
+Az ipari forradalom óta a légkörbe engedett csaknem 500 gigatonnányi szén miatt az emberiség valószínűleg "lecsúszik" a következő eljegesedésről, és további 500 gigatonnányi szén-dioxid kibocsátásával újabb 50 ezer évvel tolódik el a következő jégkorszak beköszönte.<br />
+Az elmúlt 2,5 millió évben a Föld több hosszan tartó hideg időszakon is átesett. A 12 ezer évvel ezelőtt véget ért legutóbbi jégkorszak során jégtakaró borította a mai Kanada, Észak-Európa és Szibéria területét.<br />
+Ganopolski szerint fölösleges arról vitatkozni, hogy a következő jégkorszak 50 ezer vagy 100 ezer év múlva köszönt-e be. A lényeg annak felismerése, hogy az emberiség immár képes arra, hogy geológiai mércével mérve is érezhető változást idézzen elő az éghajlatban.<br />
+<br />
+http://www.bbc.com/news/science-environment-35307800<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 17:34
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s01_3">&nbsp;</a>
+   <div class="article">
+   	<h3>Fagy Miskolcon</h3>
+
+<div class="parabellimage">
+<div id="thumb1452955127" class="thumbframe"><a onclick="show('wide1452955127'); hide('thumb1452955127')" >
+<img src="_uploaded_images/2016-01/FagyMiskolc.jpg
+" alt="FagyMiskolc.jpg" title="FagyMiskolc.jpg"></a>
+</div>
+<div id="wide1452955127" class="wideframe"><a onclick="show('thumb1452955127'); hide('wide1452955127')" >
+<img src="_uploaded_images/2016-01/FagyMiskolc.jpg
+" alt="FagyMiskolc.jpg" title="FagyMiskolc.jpg"></a>
+</div>
+<p class="main">
+Miskolc, 2016. január 16. Borostyán leveleire fagyott jégkristályok Miskolcon 2016. január 16-án. MTI Fotó: Vajda János<br />
+<br />
+Borsod-Abaúj-Zemplén megyében délelőttől már nem esik a hó, az enyhébb időjárásnak köszönhetően mindenhol olvad, az esti, éjszakai órákban inkább a lefagyások okozhatnak gondot az autósoknak.<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1452955127"><a onclick="show('less-article1452955127'); hide('more-article1452955127')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452955127" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452955127'); show('more-article1452955127')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+A megyében péntekre virradóra, illetve a reggeli órákra helyenként öt-nyolc centiméter vastagságú hó esett, de az edelényi, putnoki térségben nyolc-tíz centimétert is mértek. Több baleset is történt, ezek közül a legsúlyosabb a 3-as számú főúton, Garadna település közelében, ahol öten sérültek meg, amikor két kamion és egy kisbusz ütközött össze.<br />
+A bükki síparadicsomnak is nevezett Bánkút síklubjának honlapja arról adott hírt, hogy szombaton elindítják a szánkópályán található E és L jelű felvonókat, illetve a D jelű felvonót is. Bánkúton 13 centiméternyi hó esett pénteken.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 16., szombat - D_VAJ20160116005
+ &nbsp;</span> </font></p>
+</div>
+   <hr /><hr />
+
+   </div>
+<a name="s02">&nbsp;</a>
+
+   <div id="section2" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Közlekedés &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s02_1">&nbsp;</a>
+   <div class="article">
+   	<h3>Uber: nyolcszorosára nőtt a mobilalkalmazás felhasználóinak száma tavaly</h3>
+
+<div class="parabellum">
+<p class="main">
+Budapest, 2016. január 14., csütörtök (MTI) - Az utazásmegosztó szolgáltatás, az Uber felhasználók száma Budapesten 2015-ben folyamatosan nőtt és már 80 ezernél tart, ami nyolcszorosa a tavaly év elején mértnek - közölte az Uber az MTI-vel csütörtökön.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452850618"><a onclick="show('less-article1452850618'); hide('more-article1452850618')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452850618" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452850618'); show('more-article1452850618')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+Tájékoztatásuk szerint az autós partnerek száma a 2015. év eleji 200-ról év végére 1200-ra emelkedett. Az utasok többsége budapesti, de a külföldi felhasználók száma is jelentős.<br />
+Tavaly év elején még nagyjából 7 perc alatt érkezett az Uber alkalmazáson keresztül rendelhető autó, ám az átlagos érkezési idő decemberre 4 perc 40 másodpercre csökkent Budapesten. A legfrissebb statisztikák szerint ez 2016 év elején már mindössze 4 perc.<br />
+A budapestiek munkanapokon este 6 és 11 óra között használják leggyakrabban az Ubert, a legforgalmasabb időszak a hétvége: péntek és szombat 7 órától hajnal 1-ig kimagasló az utasok száma, különösen a szombatról vasárnapra virradó éjjel.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 11:08
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s02_2">&nbsp;</a>
+   <div class="article">
+   	<h3>Életbe lépett a budai fonódó villamoshálózat menetrendje</h3>
+
+<div class="parabellimage">
+<div id="thumb1452955412" class="thumbframe"><a onclick="show('wide1452955412'); hide('thumb1452955412')" >
+<img src="_uploaded_images/2016-01/FonódóVillamos.jpg
+" alt="FonódóVillamos.jpg" title="FonódóVillamos.jpg"></a>
+</div>
+<div id="wide1452955412" class="wideframe"><a onclick="show('thumb1452955412'); hide('wide1452955412')" >
+<img src="_uploaded_images/2016-01/FonódóVillamos.jpg
+" alt="FonódóVillamos.jpg" title="FonódóVillamos.jpg"></a>
+</div>
+<p class="main">
+Budapest, 2016. január 16. Drónnal készült felvételen 19-es villamosok a Margit híd budai hídfőjénél a budai fonódó villamoshálózat első üzemnapján, 2016. január 16-án. MTI Fotó: Ruzsa István<br /></p>
+</div>
+<div class="parabellum">
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 16., szombat - D_MTI20160116005
+ &nbsp;</span> </font></p>
+</div>
+   <hr /><hr />
+
+   </div>
+<a name="s03">&nbsp;</a>
+
+   <div id="section3" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Szerencsejáték &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s03_1">&nbsp;</a>
+   <div class="article">
+   	<h3>Nyerőszámok - az utolsó öt hét húzásai és a nyeremények</h3>
+
+<div class="parabellum">
+<p class="onecolumn"><b> Ötös lottó : </b><br />
+39,
+41,
+46,
+47,
+60</p>
+<div id="more-lotto5"><a onclick="show('less-lotto5'); hide('more-lotto5')" >
+<p class="showline">Mutass többet!</p></a>
+</div>
+<div id="less-lotto5" style="display: none; background-color: lightgray"><a onclick="show('more-lotto5'); hide('less-lotto5')" >
+<p class="showline">Rejtsd el!</p></a>
+<p class="onecolumn">
+<u>A 2016.év 33.hét ( 2016.08.20. )</u><br />
+<i>- eredményei: 
+39|
+41|
+46|
+47|
+60<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 7880110 Ft ( 
+6 db );</span> 
+<span style=" white-space: nowrap;">3 találat 44265 Ft ( 
+1131 db );</span> 
+<span style=" white-space: nowrap;">2 találat 2115 Ft ( 
+46062 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 32.hét ( 2016.08.13. )</u><br />
+<i>- eredményei: 
+13|
+14|
+21|
+34|
+84<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">5 találat 573765355 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1407460 Ft ( 
+40 db );</span> 
+<span style=" white-space: nowrap;">3 találat 13680 Ft ( 
+4358 db );</span> 
+<span style=" white-space: nowrap;">2 találat 990 Ft ( 
+116994 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 31.hét ( 2016.08.06. )</u><br />
+<i>- eredményei: 
+15|
+24|
+27|
+29|
+40<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 2413885 Ft ( 
+22 db );</span> 
+<span style=" white-space: nowrap;">3 találat 23000 Ft ( 
+2445 db );</span> 
+<span style=" white-space: nowrap;">2 találat 1360 Ft ( 
+80415 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 30.hét ( 2016.07.30. )</u><br />
+<i>- eredményei: 
+16|
+55|
+60|
+67|
+76<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 2489370 Ft ( 
+21 db );</span> 
+<span style=" white-space: nowrap;">3 találat 27855 Ft ( 
+1987 db );</span> 
+<span style=" white-space: nowrap;">2 találat 1670 Ft ( 
+64433 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 29.hét ( 2016.07.23. )</u><br />
+<i>- eredményei: 
+32|
+43|
+60|
+74|
+79<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 4631210 Ft ( 
+11 db );</span> 
+<span style=" white-space: nowrap;">3 találat 33605 Ft ( 
+1605 db );</span> 
+<span style=" white-space: nowrap;">2 találat 1935 Ft ( 
+54209 db ).</span> 
+</i></p>
+</p></div>
+<p class="onecolumn"><b> Hatos lottó : </b><br />
+2,
+4,
+10,
+12,
+18,
+36</p>
+<div id="more-lotto6"><a onclick="show('less-lotto6'); hide('more-lotto6')" >
+<p class="showline">Mutass többet!</p></a>
+</div>
+<div id="less-lotto6" style="display: none; background-color: lightgray"><a onclick="show('more-lotto6'); hide('less-lotto6')" >
+<p class="showline">Rejtsd el!</p></a>
+<p class="onecolumn">
+<u>A 2016.év 33.hét ( 2016.08.21. )</u><br />
+<i>- eredményei: 
+2|
+4|
+10|
+12|
+18|
+36<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 59005565 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 273175 Ft ( 
+48 db );</span> 
+<span style=" white-space: nowrap;">4 találat 6455 Ft ( 
+2031 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1410 Ft ( 
+32533 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 32.hét ( 2016.08.14. )</u><br />
+<i>- eredményei: 
+1|
+13|
+18|
+28|
+29|
+43<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 63816235 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 383280 Ft ( 
+37 db );</span> 
+<span style=" white-space: nowrap;">4 találat 7765 Ft ( 
+1826 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1585 Ft ( 
+31338 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 31.hét ( 2016.08.07. )</u><br />
+<i>- eredményei: 
+2|
+24|
+34|
+36|
+42|
+43<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 398788285 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 430210 Ft ( 
+35 db );</span> 
+<span style=" white-space: nowrap;">4 találat 8530 Ft ( 
+1765 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1660 Ft ( 
+31771 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 30.hét ( 2016.07.31. )</u><br />
+<i>- eredményei: 
+1|
+7|
+9|
+10|
+23|
+30<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 229955 Ft ( 
+63 db );</span> 
+<span style=" white-space: nowrap;">4 találat 6280 Ft ( 
+2306 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1255 Ft ( 
+40444 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 29.hét ( 2016.07.24. )</u><br />
+<i>- eredményei: 
+6|
+10|
+13|
+23|
+30|
+39<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 313125 Ft ( 
+47 db );</span> 
+<span style=" white-space: nowrap;">4 találat 5290 Ft ( 
+2782 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1195 Ft ( 
+43032 db ).</span> 
+</i></p>
+</p></div>
+<p class="onecolumn"><b> Skandináv lottó : </b><br />
+<i>- gépi húzás: 
+6,
+11,
+24,
+30,
+32,
+33,
+34<br />
+<i>- kézi húzás: 
+1,
+7,
+14,
+21,
+22,
+30,
+32</p>
+<div id="more-lotto7"><a onclick="show('less-lotto7'); hide('more-lotto7')" >
+<p class="showline">Mutass többet!</p></a>
+</div>
+<div id="less-lotto7" style="display: none; background-color: lightgray"><a onclick="show('more-lotto7'); hide('less-lotto7')" >
+<p class="showline">Rejtsd el!</p></a>
+<p class="onecolumn">
+<u>A 2016.év 33.hét ( 2016.08.17. )</u><br />
+<i>- gépi húzás: 
+6|
+11|
+24|
+30|
+32|
+33|
+34<br />
+<i>- kézi húzás: 
+1|
+7|
+14|
+21|
+22|
+30|
+32<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">7 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">6 találat 188880 Ft ( 
+107 db );</span> 
+<span style=" white-space: nowrap;">5 találat 6410 Ft ( 
+3153 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1265 Ft ( 
+46747 db );</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 32.hét ( 2016.08.10. )</u><br />
+<i>- gépi húzás: 
+5|
+7|
+10|
+18|
+19|
+21|
+23<br />
+<i>- kézi húzás: 
+2|
+4|
+5|
+7|
+29|
+31|
+32<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">7 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">6 találat 292845 Ft ( 
+67 db );</span> 
+<span style=" white-space: nowrap;">5 találat 5945 Ft ( 
+3301 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1050 Ft ( 
+54599 db );</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 31.hét ( 2016.08.03. )</u><br />
+<i>- gépi húzás: 
+6|
+8|
+14|
+20|
+21|
+24|
+35<br />
+<i>- kézi húzás: 
+2|
+3|
+5|
+19|
+29|
+30|
+33<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">7 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">6 találat 368070 Ft ( 
+49 db );</span> 
+<span style=" white-space: nowrap;">5 találat 6835 Ft ( 
+2638 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1190 Ft ( 
+44303 db );</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 30.hét ( 2016.07.27. )</u><br />
+<i>- gépi húzás: 
+13|
+16|
+18|
+25|
+26|
+32|
+35<br />
+<i>- kézi húzás: 
+5|
+7|
+11|
+13|
+18|
+23|
+27<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">7 találat 165458130 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">6 találat 162540 Ft ( 
+116 db );</span> 
+<span style=" white-space: nowrap;">5 találat 3970 Ft ( 
+4750 db );</span> 
+<span style=" white-space: nowrap;">4 találat 930 Ft ( 
+59307 db );</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 29.hét ( 2016.07.20. )</u><br />
+<i>- gépi húzás: 
+6|
+8|
+10|
+18|
+31|
+32|
+34<br />
+<i>- kézi húzás: 
+2|
+8|
+16|
+24|
+26|
+33|
+35<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">7 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">6 találat 212135 Ft ( 
+90 db );</span> 
+<span style=" white-space: nowrap;">5 találat 5940 Ft ( 
+3214 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1240 Ft ( 
+45016 db );</span> 
+</i></p>
+</p></div>
+<p class="onecolumn"><b> Totó 13+1 : </b><br />
+1,
+2,
+2,
+1,
+2,
+X,
+1,
+1,
+1,
+1,
+1,
+2,
+X,
++1,
+</p>
+<div id="more-toto"><a onclick="show('less-toto'); hide('more-toto')" >
+<p class="showline">Mutass többet!</p></a>
+</div>
+<div id="less-toto" style="display: none; background-color: lightgray"><a onclick="show('more-toto'); hide('less-toto')" >
+<p class="showline">Rejtsd el!</p></a>
+<p class="onecolumn">
+<u>A 2016.év 33.hét 2.forduló</u><br />
+<i>- eredményei: 
+1|
+2|
+2|
+1|
+2|
+X|
+1|
+1|
+1|
+1|
+1|
+2|
+X|
++1|
+<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">13+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">13 találat 1203000 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">12 találat 128895 Ft ( 
+7 db );</span> 
+<span style=" white-space: nowrap;">11 találat 13670 Ft ( 
+66 db );</span> 
+<span style=" white-space: nowrap;">10 találat 1785 Ft ( 
+970 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 33.hét 1.forduló</u><br />
+<i>- eredményei: 
+2|
+X|
+1|
+X|
+2|
+1|
+2|
+2|
+1|
+X|
+1|
+2|
+1|
++1|
+<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">13+1 találat 5791915 Ft ( 
+9 db );</span> 
+<span style=" white-space: nowrap;">13 találat 1337295 Ft ( 
+2 db );</span> 
+<span style=" white-space: nowrap;">12 találat 6215 Ft ( 
+308 db );</span> 
+<span style=" white-space: nowrap;">11 találat 670 Ft ( 
+2852 db );</span> 
+<span style=" white-space: nowrap;">10 találat 255 Ft ( 
+14501 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 32.hét 2.forduló</u><br />
+<i>- eredményei: 
+2|
+1|
+X|
+1|
+1|
+1|
+X|
+2|
+2|
+X|
+X|
+1|
+2|
++2|
+<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">13+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">13 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">12 találat 132145 Ft ( 
+18 db );</span> 
+<span style=" white-space: nowrap;">11 találat 6410 Ft ( 
+371 db );</span> 
+<span style=" white-space: nowrap;">10 találat 1340 Ft ( 
+3403 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 32.hét 1.forduló</u><br />
+<i>- eredményei: 
+X|
+2|
+1|
+X|
+X|
+X|
+1|
+X|
+X|
+X|
+1|
+1|
+1|
++2|
+<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">13+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">13 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">12 találat 349495 Ft ( 
+3 db );</span> 
+<span style=" white-space: nowrap;">11 találat 65530 Ft ( 
+16 db );</span> 
+<span style=" white-space: nowrap;">10 találat 23925 Ft ( 
+84 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 31.hét 2.forduló</u><br />
+<i>- eredményei: 
+X|
+2|
+2|
+2|
+2|
+2|
+1|
+1|
+2|
+X|
+2|
+1|
+X|
++2|
+<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">13+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">13 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">12 találat 142740 Ft ( 
+11 db );</span> 
+<span style=" white-space: nowrap;">11 találat 9750 Ft ( 
+161 db );</span> 
+<span style=" white-space: nowrap;">10 találat 2110 Ft ( 
+1426 db ).</span> 
+</i></p>
+</p></div>
+<p class="onecolumn"><b> Góltotó : </b><br />
+2:0,
+0:2,
+1:2,
+1:0,
+1:2,
+0:0,
++:0,
+2:1,
++:2,
+1:0,
+2:0,
++:+,
+2:2,
+++:1</p>
+<div id="more-goltoto"><a onclick="show('less-goltoto'); hide('more-goltoto')" >
+<p class="showline">Mutass többet!</p></a>
+</div>
+<div id="less-goltoto" style="display: none; background-color: lightgray"><a onclick="show('more-goltoto'); hide('less-goltoto')" >
+<p class="showline">Rejtsd el!</p></a>
+<p class="onecolumn">
+<u>A 2016.év 33.hét 2.forduló</u><br />
+<i>- eredményei: 
+2:0|
+0:2|
+1:2|
+1:0|
+1:2|
+0:0|
++:0|
+2:1|
++:2|
+1:0|
+2:0|
++:+|
+2:2|
+++:1<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 0 Ft ( 
+0 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 33.hét 1.forduló</u><br />
+<i>- eredményei: 
+0:+|
+1:1|
+1:0|
+1:1|
+1:+|
++:2|
+1:2|
+0:2|
+2:0|
+1:1|
++:0|
+0:2|
+2:0|
+++:0<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 12250 Ft ( 
+3 db );</span> 
+<span style=" white-space: nowrap;">4 találat 3070 Ft ( 
+19 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 32.hét 2.forduló</u><br />
+<i>- eredményei: 
+1:2|
++:1|
+1:1|
++:1|
++:1|
+2:0|
+1:1|
+0:1|
+0:1|
+1:1|
+1:1|
+2:1|
+1:+|
+++:+<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 241300 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">4 találat 3005 Ft ( 
+25 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 32.hét 1.forduló</u><br />
+<i>- eredményei: 
+2:2|
+2:+|
+2:1|
+0:0|
+1:1|
+1:1|
++:1|
+1:1|
+1:1|
+1:1|
+1:0|
+2:0|
+1:0|
++0:+<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 8080 Ft ( 
+5 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2016.év 31.hét 2.forduló</u><br />
+<i>- eredményei: 
+0:0|
+0:+|
+0:1|
+0:+|
+0:1|
+0:2|
++:1|
++:0|
+1:2|
++:+|
+0:1|
+1:0|
+2:2|
++1:2<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 14185 Ft ( 
+4 db ).</span> 
+</i></p>
+</p></div>
+<br />
+<br /></p><p class="headfoot" align="right">A Szerencsejáték Zrt. tájékoztatása alapján 2016.08.23., kedd  09:43 </p></div>
+   <hr /><hr />
+
+   </div>
+<a name="s04">&nbsp;</a>
+
+   <div id="section4" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Sport &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s04_1">&nbsp;</a>
+   <div class="article">
+   	<h3>Vízilabda Eb - Tizenegy gólos spanyol siker</h3>
+
+<div class="parabellum">
+<p class="main">
+Belgrád, 2016. január 14., csütörtök (MTI/dpa) - A spanyol férfi vízilabda-válogatott tizenegy góllal nyert a holland ellen a belgrádi olimpiai kvalifikációs Európa-bajnokság csütörtöki játéknapján.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452799000"><a onclick="show('less-article1452799000'); hide('more-article1452799000')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452799000" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452799000'); show('more-article1452799000')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+<br />
+Eredmények:<br />
+férfiak, 3. forduló:<br />
+-------------------<br />
+A csoport:<br />
+Spanyolország-Hollandia 15-4 (5-0, 2-1, 3-2, 5-1)<br />
+később:<br />
+Montenegró-Szlovákia 18.45<br />
+<br />
+B csoport:<br />
+korábban:<br />
+Horvátország-Málta 22-2 (7-1, 5-1, 5-0, 5-0)<br />
+később:<br />
+Franciaország-Szerbia 20.15<br />
+<br />
+Korábban:<br />
+nők, 3. forduló:<br />
+----------------<br />
+A csoport:<br />
+Magyarország-Törökország 27-1 (7-0, 6-1, 9-0, 5-0)<br />
+Oroszország-Görögország 16-6 (3-2, 5-1, 1-1, 7-2)<br />
+Hollandia-Portugália 28-2 (6-0, 7-2, 9-0, 6-0)<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 19:16
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s04_2">&nbsp;</a>
+   <div class="article">
+   	<h3>Asztalitenisz csapat-vb - A címvédő kínaiakkal egy csoportban a magyar női válogatott</h3>
+
+<div class="parabellum">
+<p class="main">
+Budapest/Kuala Lumpur, 2016. január 16., szombat (MTI) - Nehéz csoportba került a magyar női válogatott a február 28. és március 6. között Kuala Lumpurban sorra kerülő asztalitenisz csapat-világbajnokság szombati sorsolásán: Téglás Péter együttese a címvédő kínaiakkal, valamint a tajvaniakkal, a románokkal, a spanyolokkal és a házigazda malajziaiakkal játszik majd.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452941848"><a onclick="show('less-article1452941848'); hide('more-article1452941848')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452941848" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452941848'); show('more-article1452941848')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+A magyar válogatott a 16. kiemelt a 24 csapatos első divízióban, azaz a legjobbak között. A kiemelést a 2014-es csapat-vb végeredménye és a legfrissebb csapat-világranglista alapján készítették el.<br />
+"Ezen a szinten már nincs jó sorsolás, könnyű csoport - mondta az MTI-nek Téglás Péter. - Kicsit még örülök is, hogy néhány nem kívánt ellenfelet, így a németeket, a koreaiakat elkerültük. Kína verhetetlen, de a többi ellenfelünk szerintem nem, egyedül a malajziaiakat nem ismerem igazán. Most azt gondolom, hogy a másodiktól az ötödik helyig bárhol végezhetünk a csoportban."<br />
+A nőknél 84, a férfiaknál pedig 94 válogatott nevezett a malajziai viadalra.<br />
+A 27. helyre rangsorolt magyar férfiválogatott a második divízióban küzd majd. Aranyosi Péter együttese az egyiptomiakat, a szlovénokat, az argentinokat, a mexikóiakat és a norvégokat kapta ellenfélül - derül ki a nemzetközi szövetség honlapjáról.<br />
+Mindkét nem képviselői négy divízióban küzdenek meg egymással, minden osztályban négy darab hatos csoportban kezdődik a verseny, amelyek ezután egyenes kieséses rendszerben folytatódik. A csoportgyőztesek egyből a negyeddöntőbe jutnak, a másodikok pedig a harmadikokkal játszanak a negyeddöntőbe kerülésért. Ugyanezt a szisztémát alkalmazzák az alsóági rájátszás során is, azaz a csoportnegyedikek az egyenes kieséses szakasz első körében kiemeltek lesznek, abban csak a csoportötödikek és a -hatodikok játszanak.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 16., szombat 11:32
+ &nbsp;</span> </font></p>
+</div>
+   <hr /><hr />
+
+   </div>
+<a name="s05">&nbsp;</a>
+
+   <div id="section5" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Film, színház, muzsika &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s05_1">&nbsp;</a>
+   <div class="article">
+   	<h3>Oscar-díj - A Saul fia a legjobb idegen nyelvű film kategória jelöltjei között</h3>
+
+<div class="parabellimage">
+<div id="thumb1452798615" class="thumbframe"><a onclick="show('wide1452798615'); hide('thumb1452798615')" >
+<img src="_uploaded_images/MTI-Saul-fia.jpg
+" alt="MTI-Saul-fia.jpg" title="MTI-Saul-fia.jpg"></a>
+</div>
+<div id="wide1452798615" class="wideframe"><a onclick="show('thumb1452798615'); hide('wide1452798615')" >
+<img src="_uploaded_images/MTI-Saul-fia.jpg
+" alt="MTI-Saul-fia.jpg" title="MTI-Saul-fia.jpg"></a>
+</div>
+<p class="main">
+Budapest, 2016. január 14. Nemes Jeles László, a legjobb idegen nyelvű alkotások kategóriájában Oscar-díjra jelölt Saul fia című film rendezője (b5), Erdély Mátyás operatőr (b3), Sipos Gábor (b6) és Rajna Gábor (j6) producerek, Melis László zeneszerző (b), Matthieu Taponier vágó (b2), Vági Zoltán történész-szakértő (j5), Zabezsinszkij Éva casting director (j4), Rajk László látványtervező (j2), Zányi Tamás hangmérnök (j), Böszörményi Gábor, a filmet Magyarországon forgalmazó Mozinet Kft. ügyvezetője (j3), valamint Havas Ágnes, a Magyar Nemzeti Filmalap vezérigazgatója (b4). MTI Fotó: Marjai János<br /></p>
+</div>
+<div class="parabellum">
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök - D_MAR20160114018
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s05_2">&nbsp;</a>
+   <div class="article">
+   	<h3>A Lajtha-csoport működése és az 1950-es évek népénekkutatása a Magyarság Háza kiállításán</h3>
+
+<div class="parabellum">
+<p class="main">
+Budapest, 2016. január 14., csütörtök (MTI) - A "Noé bárkájaként" is emlegetett Lajtha-csoport működését és az 1950-es évek népénekkutatását mutatja be egy pénteken nyíló kamarakiállítás a Magyarság Házában.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452799308"><a onclick="show('less-article1452799308'); hide('more-article1452799308')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452799308" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452799308'); show('more-article1452799308')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+Mint Pálóczy Krisztina kurátor, a Néprajzi Múzeum népzenei gyűjteményének munkatársa az MTI-nek felidézte, Lajtha László 1947-48 után - sikeres filmzeneszerzői pályát hátrahagyva - tért haza Londonból, de mivel nem volt hajlandó aláírni a Mindszenty József hercegprímás, érsek elleni vádakat, minden állásából elbocsátották.<br />
+"1949 és 1951 között abból élt, hogy értékes tárgyait eladogatta - szóval nagyon méltatlan körülmények között. 1951-ben a kormánytól emigráló útlevelet kért, ezt azonban, tekintettel külföldi hírnevére, nem adhatta ki az akkori kulturális vezetés, nem engedhették, hogy emigráljon. Felajánlották neki, hogy azzal foglalkozhat, amivel akar - így alakult meg az úgynevezett Lajtha-csoport, melynek tevékenységét a kiállítás bemutatja" - ismertette Pálóczy Krisztina.<br />
+A csoportot azért emlegették "Noé bárkájaként" is, mert Lajtha olyan embereket vett maga mellé, akiket az akkori rendszer üldözött, és máshol nem alkalmaztak. Közéjük tartozott a nemrég elhunyt legendás néprajztudós, Erdélyi Zsuzsanna, Rajeczky Benjámin ciszterci szerzetes, zenetörténész, valamint Tóth Margit népzenekutató, aki később, Lajtha halála után a Néprajzi Múzeum népzenei gyűjteményének vezetője lett - ő is apáca volt.<br />
+A Lajtha-csoport, melynek munkája gyűjtésből, feldolgozásból és kiadásból állt, 1951-től 1963-ig, Lajtha haláláig működött ebben a formában, de tagjai ezután is még majdnem egy évtizedig együtt maradtak és folytatták a munkát a Néprajzi Múzeumon belül, munkásságuk a múzeum népzenei gyűjteményének legtermékenyebb időszaka volt.<br />
+A pénteken nyíló kiállítás a Lajtha-csoport által Sopron és Vas megyékben gyűjtött anyagot, főként egyházi népénekeket és hangszeres zenét mutat be - Lajtha az egész országra ki akarta terjeszteni a gyűjtést, de haláláig csak ezt a két megyét tudta áttekinteni.<br />
+A tárlat felvonultatja a mindig írott anyagra támaszkodó népénekek nyomtatott forrásait, a felekezetek legjellemzőbb énekeskönyveit, és a kézzel írott, hol másolt, hol saját szerzeményeket tartalmazó lejegyzéseket. A fonográfhengereken és más eszközökön rögzített népénekeket meg is lehet hallgatni. A kiállításban láthatók bútorok, melyeket Lajtha Erdélyből, Udvarhelyről hozott magával. Egy filmrészleten Erdélyi Zsuzsanna idézi fel a csoport megalakulását és működését. Térképeken tekinthető át a gyűjtések földrajzi hálózata; felsorakoznak az 1960-as években gyűjtött szakrális tárgyak, például madonna-szobrok; végül a látogatók néhány népi hangszert is láthatnak a Lajtha halála után együtt maradt csoport gyűjtéséből - részletezte a kurátor.<br />
+Pálóczy Krisztina megjegyezte, hogy a Néprajzi Múzeum tulajdonában lévő anyagból a 2012-es Ars Sacra-fesztiválon már rendeztek egy sikeres kiállítást, ez látható most a Magyarság Házában március 20-ig.<br />
+"Az igaz hitben végig megmaradjunk..." mottójú tárlatot péntek délután Solymosi-Tari Emőke zenetörténész nyitja meg, köszöntőt mond Csibi Krisztina, a Magyarság Háza igazgatója.<br />
+Pálóczy Krisztina felhívta a figyelmet egy Lajtha Lászlónak szentelt átfogó honlapra, amely - Solymosi-Tari Emőke szerkesztésében - igyekszik naprakész információkat nyújtani a Lajthával kapcsolatos megmozdulásokról, kiállításokról, emlékkoncertekről és más programokról.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 17:41
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s05_3">&nbsp;</a>
+   <div class="article">
+   	<h3>Oscar-díj - A visszatérő 12 jelöléssel vezeti a jelöltek listáját</h3>
+
+<div class="parabellum">
+<p class="main">
+Los Angeles/Budapest, 2016. január 14., csütörtök - Alejandro González Inárritu A visszatérő című túlélőfilmjét jelölte a legtöbb kategóriában díjára az amerikai filmakadémia, a Saul fia című magyar dráma pedig esélyes a legjobb idegen nyelvű film Oscarjára. A listát, amelyen a színészi kategóriákban a tavalyihoz hasonlóan megint csak fehérbőrű művészek szerepelnek, csütörtökön Los Angelesben hozták nyilvánosságra.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452799505"><a onclick="show('less-article1452799505'); hide('more-article1452799505')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452799505" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452799505'); show('more-article1452799505')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+A 88. Oscar-gálán, február 28-án 24 kategóriában nyújtják át a filmvilág legtekintélyesebb elismerésének tartott díjakat. A kategóriák jelöltjeit két felvonásban ismertette Guillermo del Toro és Ang Lee rendező, valamint Cheryl Boone Isaacs, az Amerikai Filmművészeti és -Tudományi Akadémia (AMPAS) elnöke és John Krasinski színész-forgatókönyvíró.<br />
+A legjobb idegen nyelvű film kategóriában Nemes Jeles László Saul fia című holokausztdrámája is jelölt lett. A mezőnyben A War (Háború) című dán, A kígyó ölelése című kolumbiai, a Theeb (Farkas) című jordániai és a Mustang című francia film szerepel még.<br />
+A legtöbb, 12 jelölést Alejadro González Inárritu A visszatérő című filmje szerezte. Főszereplője, Leonardo DiCaprio a vasárnap elnyert Golden Globe-díj után már az Oscarra is esélyes. A mexikói származású rendező pedig Birdman című filmje tavalyi Oscarjai után ismét megkaphatja a legjobb rendező és film díját is.<br />
+George Miller Mad Max - A harag útja című posztapokaliptikus akciófilmje tíz kategóriában szerzett jelölést, Ridley Scott Marson játszódó című sci-fije pedig hét díjra esélyes. A világszerte taroló Star Wars - Az ébredő Erő csak technikai kategóriákban jutott a jelöltek közé.<br />
+A legjobb film mezőnyébe nyolc filmet válogatott be a filmakadémia: A visszatérő mellett a Mad Max - A harag útja, a Mentőexpedíció, A nagy dobás című Wall Street-i vígjáték, Steven Spielberg Kémek hídja című hidegháborús mozija, az ötvenes években játszódó Brooklyn, a fogságban tartott anya és fia történetét ábrázoló, A szoba című dráma és a Boston Globe tényfeltáró újságíróinak munkáját bemutató Spotlight - Egy nyomozás részletei című dráma is Oscar-közelbe jutott.<br />
+A legjobb rendező Oscarját Inárritu, Tom McCarthy (Spotlight), George Miller (Mad Max - A harag útja), Lenny Abrahamson (A szoba) és A nagy dobást jegyző Adam McKay kaphatja.<br />
+A színészi kategóriákban a tavalyihoz hasonlóan csak fehérbőrű művészek lettek jelöltek. A legjobb öt színésznő közé Brie Larson (A szoba), Jennifer Lawrence (Joy), Cate Blanchett (Carol), Soarise Ronan (Brooklyn) és Charlotte Rampling (45 év) került be. A színészek közül Leonardo DiCaprio (A visszatérő), Matt Damon (Mentőexpedíció), Michael Fassbender (Steve Jobs), Eddie Redmayne (A dán lány) és Bryan Cranston (Trumbo) kaphat díjat.<br />
+Legjobb női mellékszereplőként Jennifer Jason Leigh (Aljas nyolcas), Rooney Mara (Carol), Rachel McAdams (Spotlight), Alicia Vikander (Ex Machina) és Kate Winslet (Steve Jobs), férfi mellékszereplőként pedig Christian Bale (A nagy dobás), Mark Ruffalo (Spotlight), Mark Rylance (Kémek hídja), Sylvester Stallone (Creed - Apollo fia) és Tom Hardy (A visszatérő) nyerheti el az Oscart.<br />
+A legjobb eredeti forgatókönyv kategória jelöltjei között a Kémek hídja, az Ex Machina, az Agymanók című rajzfilm, a Spotlight és a Straight Outta Compton című zenés életrajzi dráma kapott helyet. Az adaptált forgatókönyvek között a Carol, a Mentőexpedíció, A szoba, A nagy dobás és a Brooklyn írója reménykedhet Oscar-díjban. Az utóbbi alapjául szolgáló könyvet egyébiránt Nick Hornby alkalmazta filmvászonra.<br />
+A legjobb filmzene díjára a Kémek hídja, a Carol, az Aljas nyolcas, a Sicario és a Star Wars - Az ébredő Erő esélyes. A jelöltek között van Ennio Morricone, aki évtizedek után komponált újra westernfilmhez, Quentin Tarantino Aljas nyolcas című alkotásához. A 87 éves olasz zeneszerzőt bár többször jelölték, soha nem nyerte el a díjat, 2007-ben viszont életmű-Oscart vehetett át.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 16:38
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s05_4">&nbsp;</a>
+   <div class="article">
+   	<h3>Az élet és a halál közti lebegés állapotát ragadja meg a Feledi Project új előadása</h3>
+
+<div class="parabellum">
+<p class="main">
+Budapest, 2016. január 16., szombat (MTI) - Az élet és a halál közti lebegés állapotát ragadja meg a Feledi Project Rekviem című új előadása, amelyhez magyar származású, hollywoodi zeneszerző komponált zenét. A produkció január 20-án, szerdán mutatkozik be a MOM Kulturális Központban.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452932193"><a onclick="show('less-article1452932193'); hide('more-article1452932193')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452932193" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452932193'); show('more-article1452932193')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+A Rekviem című darab sajátos zenei világú, leginkább filmes, szimfonikus hatású táncelőadás, megfűszerezve kortárs elektronikai effektekkel - olvasható az előadást szervező Nemzeti Táncszínház MTI-hez eljuttatott közleményében.<br />
+Az előadás az élet és a halál közti lebegés állapotát ragadja meg, letisztultan, áhítatosan, felvillantva az élet körforgását és megújulását. A közönség egy halál küszöbén álló ember szemszögéből látja az előadást, aki a halálra mint egy új korszak kezdetére való felkészülésként visszatekint az életére: minden szép és keserű pillanata lepereg a szeme előtt.<br />
+A korábban magyar és amerikai filmekhez, valamint sorozatokhoz zenét készítő Balázs Ádám először szerzett zenét magyar tánctársulatnak. A magyar származású hollywoodi zeneszerző Hősök útja című munkáját 2006-ban a New York-i Carnegie Hallban is bemutatták.<br />
+A Rekviem című előadásban színpadra lép Horváth Zita (Badora Társulat), Nagy Emese, Wéninger Dalma, Csizmadia Tamás (Badora Társulat), Darabont Áron és Frigy Ádám. A darab rendezője és koreográfusa a társulatot alapító Feledi János táncművész.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 16., szombat 8:27
+ &nbsp;</span> </font></p>
+</div>
+   <hr /><hr />
+
+   </div>
+   <a name="s05_5">&nbsp;</a>
+   <div class="article">
+   	<h3>A magyar kultúra napja Zentán</h3>
+
+<div class="parabellimage">
+<div id="thumb1452933441" class="thumbframe"><a onclick="show('wide1452933441'); hide('thumb1452933441')" >
+<img src="_uploaded_images/2016-01/Zenta-kultura_napja.jpg
+" alt="Zenta-kultura_napja.jpg" title="Zenta-kultura_napja.jpg"></a>
+</div>
+<div id="wide1452933441" class="wideframe"><a onclick="show('thumb1452933441'); hide('wide1452933441')" >
+<img src="_uploaded_images/2016-01/Zenta-kultura_napja.jpg
+" alt="Zenta-kultura_napja.jpg" title="Zenta-kultura_napja.jpg"></a>
+</div>
+<p class="main">
+Zenta, 2016. január 15. A Vajdasági Magyar Művelődési Szövetség plakettjével kitüntetett topolyai Cirkalom táncegyüttes előadása a vajdasági Zentán a magyar kultúra napjának délvidéki központi ünnepségén 2016. január 15-én. MTI Fotó: Molnár Edvárd<br /></p>
+</div>
+<div class="parabellum">
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 15., D_EDY20160115015
+ &nbsp;</span> </font></p>
+</div>
+   <hr /><hr />
+
+   </div>
+<a name="s06">&nbsp;</a>
+
+   <div id="section6" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Hírek, tudósítások &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s06_1">&nbsp;</a>
+   <div class="article">
+   	<h3>Iráni atomprogram - Az Európai Unió két héttel meghosszabbította a szankciók felfüggesztését</h3>
+
+<div class="parabellum">
+<p class="main">
+Bajnok Artúr, az MTI tudósítója jelenti:    Brüsszel, 2016. január 14., csütörtök (MTI) - Az Európai Unió csütörtökön további két héttel meghosszabbította az Iránnal szemben korábban elrendelt szankciók felfüggesztését, hogy Teheránnak legyen ideje teljesíteni a nagyhatalmakkal tavaly kötött nukleáris megállapodás feltételeit - jelentette be az Európai Unió Tanácsa.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452799161"><a onclick="show('less-article1452799161'); hide('more-article1452799161')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452799161" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452799161'); show('more-article1452799161')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+Az EU a Teherán és a hatok (az ENSZ BT öt állandó tagja és Németország) közötti megállapodás megkötése után, július 14-én újabb hat hónappal meghosszabbította az Irán elleni büntetőintézkedések korábban elrendelt felfüggesztését, s ennek a határideje járt volna le csütörtökön.<br />
+A gazdasági korlátozások felfüggesztését január 28-ig hosszabbították meg az EU-tagországok. Névtelenséget kérő uniós diplomaták azonban arra számítanak, hogy már jóval ezen határidő előtt el fogják törölni a perzsa államot sújtó szankciókat.<br />
+A tanács közleményében kiemelték, a büntetőintézkedések teljes eltörlése azután várható, hogy a Nemzetközi Atomenergia-ügynökség (NAÜ) meggyőződik arról, hogy a teheráni vezetés maradéktalanul teljesítette a megállapodásból fakadó kötelezettségeit.<br />
+Diplomáciai források szerint erre akár már pénteken sor kerülhet. "Minden készen áll a szankciók hatályon kívül helyezésére, ha egyszer úgy ítélik, hogy Irán az egyezménynek megfelelően teljesítette a kötelezettségeit" - mondta egy EU-diplomata.<br />
+Az iráni atomprogramról szóló átfogó megállapodás célja annak szavatolása, hogy az iráni nukleáris programot nem használják katonai célokra. E kötelezettségért cserébe a nemzetközi közösség fokozatosan feloldja a Teherán ellen hozott gazdasági és pénzügyi szankciókat.<br />
+Az Európai Unió 2014 januárjában függesztette fel az Irán elleni gazdasági szankciók egy részét. A korlátozások feloldására az iszlám köztársasággal 2013 őszén kötött, Teherán atomprogramjának megfékezését célzó ideiglenes nemzetközi megállapodás értelmében került sor.<br />
+A nyugati hatalmak és Irán között több mint tíz évvel ezelőtt robbant ki diplomáciai konfliktus, amikor kiderült, hogy Teherán titokban atomprogramba kezdett. A Nyugat attól tartott, hogy az iszlám köztársaság atomfegyverre akar szert tenni, amit Teherán következetesen tagadott, s váltig állította: atomprogramja csakis békés jellegű, energiatermelési és tudományos célokat szolgál.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 18:41
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s06_2">&nbsp;</a>
+   <div class="article">
+   	<h3>Jobbik: Orbán Viktor megfutamodott a vizsgálóbizottságok ügyében</h3>
+
+<div class="parabellum">
+<p class="main">
+Budapest, 2016. január 14., csütörtök (MTI) - A Jobbik szerint Orbán Viktor "megfutamodott", amikor nem fogadta el Vona Gábor javaslatát, hogy hozzanak létre bizottságokat a Jobbik "állítólagos orosz kapcsolatainak" és a miniszterelnök környezete meggazdagodásának vizsgálatára.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452799216"><a onclick="show('less-article1452799216'); hide('more-article1452799216')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452799216" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452799216'); show('more-article1452799216')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+A Jobbik parlamenti frakciója csütörtöki, az MTI-hez eljuttatott közleményében arra reagált, hogy a Fidesz-frakció ugyancsak közleményben azt írta: Európa legsúlyosabb korrupciós botrányában továbbra is várják Vona Gábor "vallomását" arról, hogy "a Kovács Bélákat foglalkoztató Jobbik milyen idegen hatalmakat szolgál, és mennyi pénzért teszi ezt".<br />
+A Jobbik közleménye szerint pártelnökük, Vona Gábor a parlament nyilvánossága előtt felajánlotta, hogy egy Fidesz vezette vizsgálóbizottság vizsgálja ki a Jobbik "állítólagos orosz kapcsolatait", és ezzel párhuzamosan Orbán Viktor egy másik bizottság előtt adjon számot közvetlen környezete, barátai, családtagjai "korrupciógyanús meggazdagodásáról".<br />
+Az ellenzéki párt szerint Orbán Viktor "elszabotálta" az elszámoltatást, miközben a vizsgálóbizottságok javaslata elől "gyáván megfutamodott".<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 17:52
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s06_3">&nbsp;</a>
+   <div class="article">
+   	<h3>Németországi molesztálás - Bocsánatot kért az áldozatoktól az észak-rajna-vesztfáliai miniszterelnök</h3>
+
+<div class="parabellum">
+<p class="main">
+Berlin, 2016. január 14., csütörtök (MTI) - Bocsánatot kért a németországi Kölnben szilveszterkor nők ellen elkövetett szexuális zaklatásokért és rablásokért Észak-Rajna-Vesztfália miniszterelnöke a düsseldorfi tartományi gyűlésben (Landtag) csütörtökön tartott rendkívüli ülésen, és intézkedéscsomagot jelentett be az esetek feltárására és a közbiztonság erősítésére.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452799638"><a onclick="show('less-article1452799638'); hide('more-article1452799638')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452799638" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452799638'); show('more-article1452799638')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+Hannelore Kraft beszédében kiemelte, hogy "végtelenül sajnálja" a szilveszter éjjel történteket. A szociáldemokrata párt (SPD) politikusa közölte, hogy nagy összegű jutalmat tűznek ki az elkövetők nyomravezetőinek, 500 fővel megemelik a rendőrség létszámát, kiterjesztik a közterületi térfigyelő rendszert, felgyorsítják a büntetőeljárásokat és bevezetnek egy sor további intézkedést, hogy helyreálljon a lakosság biztonságérzete.<br />
+A Landtag ellenzéki oldalán élesen bírálták az SPD és Zöldek tartományi kormányát.<br />
+A jobboldali CDU frakcióvezetője, Armin Laschet lemondásra szólította fel a tartomány szociáldemokrata belügyminiszterét, Ralf Jägert és hangsúlyozta, hogy a tartományi legnagyobb városának központjában szilveszter éjjel lezajlott "rettenetes erőszakorgia" a kormány csődjét jelenti.<br />
+A liberális FDP részéről a pártelnök-frakcióvezető Christian Lindner hangsúlyozta, hogy a tartomány az SPD és a Zöldek vezetése alatt a "szalafisták eldorádója és a tolvajok édenkertje" lett, szilveszter éjjel pedig végképp megrendült az állami erőszak-monopóliumba vetett bizalom. Ezt jelzi, hogy ugrásszerűen emelkedik a paprikaspray és a kézi lőfegyverek iránti kereslet. A "polgárok elkezdtek felfegyverkezni", ennek eredménye azonban nem a közbiztonság erősödése, hanem további gyengülése lesz - mondta Christian Lindner.<br />
+A vitában valamennyi vezérszónok kitért a menekültválságra, illetve a támadások elkövetőinek nemzetiségére.<br />
+Hannelore Kraft hangsúlyozta, hogy a törvényekkel való szembeszegülést nem lehet származásra vagy vallási hovatartozásra visszavezetni. A külföldieknek, bevándorlóknak, menekülteknek azonban nemcsak a jogszabályokat kell betartaniuk, hanem a német értékeket is tisztelniük kell - tette hozzá.<br />
+Aláhúzta, hogy a "befogadás kultúrája" erős és az is marad Észak-Rajna-Vesztfáliában, a menekültek, menedékkérők többsége pedig "békésen akar élni és dolgozni".<br />
+Ugyanakkor azt is elmondta, hogy a szexuális zaklatások, rablások elkövetői között sok marokkói és algériai állampolgár van, és ezzel összefüggésben sürgette a szövetségi kormánytól a menekültügyi rendszer hatékonyságának növelését. Rámutatott, hogy a tartományban elhelyezett menedékkérők átlagosan 14,3 hónapot kénytelenek várni, mire egyáltalán beadhatják menedékjogi kérelmüket. Elfogadhatatlannak nevezte, hogy a menekültügyi rendszer rossz működése miatt évekig maradhatnak az országban a menekült státus megszerzésére esélytelen,  bűnözővé váló személyek.<br />
+Armin Laschet egyebek mellett bírálta, hogy a rendőrségnél bizonytalanság alakult ki azzal kapcsolatban, hogy meg kell-e nevezni a bűnelkövetők nemzetiségét. Ez a tartományi kormány tevékenysége miatt alakult ki, ezért a düsseldorfi vezetésben senki sem csodálkozhat azon, hogy a rendőrség munkatársai "nem tudják, hogy mit kellene mondaniuk".<br />
+Christian Lindner kiemelte: a kölni események sora "fordulópontot" jelent a menekültválságban, mert veszélybe sodorta a jogállam iránti bizalmat, és mivel az európai uniós színtéren nem várható fordulat, Németországnak saját hatáskörben kell cselekednie. Korlátozni kell a menekülteket "szívó hatást", vissza kell szerezni az ellenőrzést a felett, hogy ki lép be az országba, és a háborús menekülteknek csak erősen korlátozott időre szabad védelmet nyújtani. Amennyiben ez az irányváltás nem történik meg, elindul a német "jogállam eróziója" - mondta a liberális politikus.<br />
+Szilveszter éjjel egy nagyjából ezerfős csoport gyűlt össze a kölni főpályaudvar előtti téren, majd petárdázni kezdtek. Mikor a rendőrség közbelépett, kisebb csoportok alakultak, amelyek elkezdtek nőket körbevenni, szexuálisan zaklatni és kirabolni. Kettőt megerőszakoltak. Más városokban is történtek hasonló támadások. Áldozatok és tanúk arab vagy észak-afrikai származású támadókról számoltak be.<br />
+A kölni ügyészség csütörtöki összesítése szerint 652 feljelentést tettek a szilveszteri támadásokkal kapcsolatban, 331-et szexuális bűncselekmények miatt. Eddig összesen 739 áldozat jelentkezett. A feljelentések száma azért alacsonyabb, mert vannak esetek, amelyekben több áldozat közösen tett feljelentést.<br />
+Az aacheni ügyészség tájékoztatása szerint feljelentették Köln időközben nyugállományba helyezett rendőrfőnökét, Wolfgang Alberst és több más kölni rendőrt is segítségnyújtás elmulasztása miatt.<br />
+Közben a Spiegel Online hírportál a kölni rendőrség egy szóvivőjét idézve azt írta, hogy szilveszter óta szokatlanul magas a kis méretű maroklőfegyver tartása iránti kérelmek száma.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 16:05
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+<a name="s07">&nbsp;</a>
+
+   <div id="section7" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Gazdaság &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s07_1">&nbsp;</a>
+   <div class="article">
+   	<h3>Csok - Az elemző szerint nem várható az ingatlanpiac hirtelen növekedése</h3>
+
+<div class="parabellum">
+<p class="main">
+Budapest, 2016. január 14., csütörtök (MTI) - Nem várható hirtelen növekedés az ingatlanpiacon a családi otthonteremtési kedvezmény (csok) miatt az MKB Bank vezető elemzője szerint.  Kuti Ákos csütörtökön, az M1 aktuális csatorna műsorában ezt azzal magyarázta, hogy a csok igénybevételéhez kötött feltételek miatt nem egyszerű a támogatási összegeket megszerezni.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452798703"><a onclick="show('less-article1452798703'); hide('more-article1452798703')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452798703" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452798703'); show('more-article1452798703')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+Az érdeklődés azonban jelentős, az elemző beszámolt arról, hogy a csok iránt az MKB Bankban eddig már több tízezren érdeklődtek. Erre tekintettel szombaton MKB Bank két, fővárosi üzletközpontokban működő fiókja is rendkívüli nyitva tartás mellett várja a további érdeklődőket - tette hozzá.<br />
+Kuti Ákos tájékoztatott arról, hogy már van olyan csok-igénylés, amelyet a bank befogadott.<br />
+Az elemző szerint a csok nagy lendületet adott az építőipari terveknek, azonban csupán a második fél évben várható, hogy valóban megjelennek a projektek, akár lakóingatlan, akár kereskedelmi ingatlan formájában a piacon.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 20:05
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s07_2">&nbsp;</a>
+   <div class="article">
+   	<h3>Devizapiac - Erősödött a forint árfolyama</h3>
+
+<div class="parabellum">
+<p class="main">
+Budapest, 2016. január 14., csütörtök (MTI) - Erősödött a forint árfolyama a főbb nemzetközi devizákkal szemben a bankközi piacon csütörtökön.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452798793"><a onclick="show('less-article1452798793'); hide('more-article1452798793')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452798793" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452798793'); show('more-article1452798793')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+Este nyolc óra körül az euró 314,73 forinton, a dollár 289,99 forinton, a svájci frank 288,12 forinton, a japán jen pedig 2,4535 forinton forgott.<br />
+Nyitó jegyzéséhez képest az euró 0,38 százalékkal, a dollár 0,09 százalékkal, a frank 0,17 százalékkal, a jen pedig 0,60 százalékkal gyengült.<br />
+Az euró árfolyama 314,59 és 316,61 forint között alakult napközben. A dollár jegyzése 288,95 és 291,07 forint között mozgott. A svájci frankkal a 287,51 és 289,22 forint közötti tartományban kereskedtek. A japán jen legalacsonyabb árfolyama 2,4530 forint, a legmagasabb 2,47134 forint volt.<br />
+Az euró 0,24 százalékkal 1,0855 dollárra gyengült nyolc órára. Napi legalacsonyabb jegyzése 1,0835 a legmagasabb pedig 1,0944 dollár volt.<br />
+A svájci frankhoz képest 0,12 százalékkal gyengült a közös európai fizetőeszköz, 1,0929 frankon forgott. Egy dollárért 1,0067 frankot kértek, 0,11 százalékkal erősödött az amerikai deviza.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 20:07
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s07_3">&nbsp;</a>
+   <div class="article">
+   	<h3>BÉT - Szakértők: hullámzó volt a tőzsdéken a kereskedés - FRISSÍTETT (új: áruszekció)</h3>
+
+<div class="parabellum">
+<p class="main">
+Budapest, 2016. január 14., csütörtök (MTI) - A Budapesti Értéktőzsde részvényindexe, a BUX 46,03 pontos, 0,19 százalékos csökkenéssel, 24 284,31 ponton zárt csütörtökön.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452799043"><a onclick="show('less-article1452799043'); hide('more-article1452799043')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452799043" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452799043'); show('more-article1452799043')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+A részvénypiac forgalma 14,7 milliárd forint volt, a vezető részvények ára vegyesen változott az előző napi záráshoz képest.<br />
+Ballai Zoltán, a Raiffeisen Bank üzletkötője elmondta, a nap negatívan indult, de a végére megjött a jó hangulat, a záró szakaszban erős forgalom volt, ennek köszönhetően végül közepesen erős lett a forgalom. Az éjszakai ázsiai kereskedés eléggé determinálta a kilátásokat, egészen fél egyig negatív volt a hangulat, azt követően kezdtek erősödni a nemzetközi részvényindexek. A BÉT a nemzetközi hangulatnak megfelelően mozgott, ennek megfelelően a nap végére erősödtek a vezető magyar részvények is. A magyar tőzsde jól teljesített, bár a BUX enyhe mínuszban zárt - mondta az üzletkötő.<br />
+Horváth István, a Raiffeisen Bank kereskedője az M1 aktuális csatornán elmondta, az európai tőzsdéken és a BÉT-en is hullámzó volt a kereskedés, a BUX apró mínuszban zárt, a főbb részvények vegyes képet mutattak. Az OTP napi csúcsán zárt, a Mol viszavett valamennyit az elmúlt napok veszteségeiből, a Magyar Telekom gyengült, a Richternél pedig a korábbi időszak nagy menetelése után profitrealizálás zajlik. Az európai tőzsdéken nagy hullámzás volt, a DAX járt a mínusz 3 százalékos tartományban is.<br />
+Mindkét szakértő kiemelte a Renault-ügyet. Az autógyárnál francia médiajelentések szerint házkutatást tartottak a francia hatóságok. Az autógyár részvényének árfolyama húsz százalékos mínuszban is volt, végül valamennyit korrigált, és mínusz 9 százalékon fejezte be a napot.<br />
+A Mol 85 forinttal, 0,62 százalékkal 13 880 forintra erősödött, 908,6 millió forintos forgalomban.<br />
+Az OTP-részvények ára 32 forinttal, 0,52 százalékkal 6220 forintra nőtt, forgalmuk 8,8 milliárd forintot tett ki.<br />
+A Magyar Telekom árfolyama 5 forinttal, 1,23 százalékkal 401 forintra csökkent, forgalma 679 millió forint volt.<br />
+A Richter-papírok árfolyama 81 forinttal, 1,40 százalékkal 5709 forintra esett, forgalmuk 4,1 milliárd forintot ért el.<br />
+A kis és közepes részvények indexe, a BUMIX 1652,45 ponton zárt csütörtökön, ez 6,39 pontos, 0,39 százalékos emelkedés a szerdai záráshoz viszonyítva.<br />
+A BÉT áruszekciójában a takarmányárpa kivételével valamennyi termék ára csökkent egyes határidőkre.<br />
+A malmi búza ára márciusra 400 forinttal, 49 500 forintra, augusztusra pedig 600 forinttal, 49 900 forintra, míg a takarmánybúza ára márciusra 200 forinttal, 47 300 forintra mérséklődött.<br />
+Olcsóbb lett a takarmánykukorica is júliusra 1000 forinttal, így 49 500 forint, míg a takarmányárpa márciusi ára 45 500 forint maradt.<br />
+Márciusra mindkét olajosmag ára 1000 forinttal csökkent, így a napraforgó 124 000, a repce 112 000 forintba kerül.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 18:43
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+<a name="s08">&nbsp;</a>
+
+   <div id="section8" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Technika &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s08_1">&nbsp;</a>
+   <div class="article">
+   	<h3>Kína merülőkabint tesztelt az Indiai-óceánban</h3>
+
+<div class="parabellum">
+<p class="main">
+Peking, 2016. január 14., csütörtök (MTI) - Befejezte első víz alatti küldetését a kínai fejlesztésű Csianlung 2 merülőkabin, amely 4500 méter mélységben járt az Indiai-óceánban.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452798949"><a onclick="show('less-article1452798949'); hide('more-article1452798949')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452798949" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452798949'); show('more-article1452798949')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+Erről a tengeri ásványi anyagokat kutató kínai szövetség számolt be csütörtökön.<br />
+Az ember nélküli víz alatti robotot olyan területen vetették be, amely gazdag ásványi anyagokban; hétfőn körülbelül 9 órát töltött a víz alatt. A hivatalos közlés szerint a Csianlung 2-vel a pontosabban meg nem nevezett területen a felszíni formákat, a hidrotermális szulfidokat és a mágnesességet vizsgálták.<br />
+A merülés része volt a kabin végső tesztjének, amelyet követően megkezdődik rendszeres gyakorlati használata.<br />
+A merülőkabint a Hszianjanghung-10 tudományos kutatóhajó szállította, amely szintén első útján járt mélytengeri területeken, és a tervek szerint június elejéig marad a térségben.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 19:22
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s08_2">&nbsp;</a>
+   <div class="article">
+   	<h3>Forradalmasíthatja a személyre szabott gyógyászatot a rendszermikroszkópia</h3>
+
+<div class="parabellum">
+<p class="main">
+Szeged, 2016. január 14., csütörtök (MTI) - A precíziós gyógyszerkutatásban, a betegségek genetikai hátterének felderítésében és a gének felfedezésében nyithatnak új utakat azok az eredmények, amelyeket a sejtek nagyfelbontású térbeli vizsgálatára alkalmas rendszermikroszkópia területén ért el Horváth Péter bioinformatikus, a Magyar Tudományos Akadémia (MTA) Szegedi Biológiai Kutatóközpontjának tudományos főmunkatársa és nemzetközi kutatócsoportja - tájékoztatta az Akadémia csütörtökön az MTI-t.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452799597"><a onclick="show('less-article1452799597'); hide('more-article1452799597')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452799597" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452799597'); show('more-article1452799597')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+A Magyarországon és Finnországban is kutató szakember kollégáival olyan számítógépes módszereket fejleszt, amelyek sok millió mikroszkópos kép automatikus feldolgozását teszik lehetővé rövid idő alatt. Ennek köszönhetően akár az összes emberi gén működését és funkcióját vizsgálni lehet egy adott betegség vagy adott biológiai folyamat minél pontosabb megismeréséhez.<br />
+"Akár az is megoldható, hogy a terápiában alkalmazott gyógyszerek - így például az onkológiai szerek - vagy a még klinikai tesztfázisban lévő gyógyszerjelöltek szervezetbeli hatásait elemezzük nagyszámú beteg esetében" - idézte a közlemény a kutatót, aki a közelmúltban három, áttörést jelentő eredményről számolt be rangos nemzetközi folyóiratokban.<br />
+Ezek egyike egy új képkorrekciós eljárás, amely mintegy húsz százalékkal pontosabb a hasonló módszereknél, így jelentősen előmozdíthatja a képfeldolgozásra és -elemzésre épülő tudományterületeket a mikroszkópos felvételek értékelésétől az orvosi diagnosztikáig.<br />
+Az élő sejtek vizsgálata mellett a kutatócsoport a humán genom működésének megismerésére koncentrál. Svájci kutatókkal együttműködve elsők között hajtottak végre teljes emberi genomszűrést. Ennek során az összes gént egyesével kikapcsolva térképezték fel azok hatásait. Nemcsak a már ismert gének működésének pontos mechanizmusát írták le, hanem több új gént is felfedeztek: olyanokat például, amelyek a daganatos betegségek kialakulásában és előrehaladásában meghatározó szerepet játszó riboszómák képződésében vesznek részt.<br />
+Kutatásaik egyik fő iránya egyes sejtek szerepének felderítése, amely olyan kérdésekre is magyarázattal szolgálhat, hogy miért válnak rezisztenssé a tumorsejtek a terápiára, és ez miként vezet a daganat kiújulásához.<br />
+A csoport másik fő kutatási területe a személyre szabott gyógyászathoz kapcsolódik: a szegedivel párhuzamosan Helsinkiben működő laboratóriumában Horváth Péter és munkatársai precíziós gyógyszervizsgálatokkal segítik a daganatos betegek ellátását. Az általuk végzett mikroszkópos elemzés pontos képet ad a tumorsejtek szaporodásáról. Ez alapján megítélhető, hogy a választott kezelés valóban képes-e a daganatos sejtosztódás megállítására. A vizsgálatok arra is lehetőséget nyújthatnak, hogy egyénenként határozzák meg az alkalmazandó gyógyszerek pontos adagolását, és így az egészséges sejtek lehető legteljesebb védelme mellett érjék el a daganatos sejtek minél teljesebb körű elpusztítását.<br />
+Távlati célként a kutatócsoport adatbank létrehozását tervezi. Az "1000 Genom Projekt" mintájára elképzelt "One Million Phenome" program a lakosság egymillió tagjának mikroszkópos mintaelemzésével kíván pontos térképet adni a sejtek tulajdonságairól és azoknak a szervezet egészségi állapotával való összefüggéseiről. Első lépésben a mintákat antitestekkel és különféle gyógyszerekkel kezelnék. Ez alapján megállapítható, hogyan reagálnak az egyes emberek az adott beavatkozásokra. Az így kapott információk összekapcsolhatók az egyén meghatározó jellemzőivel - például a genetikai adottságokkal, a családi jellemzőkkel, a kórtörténettel.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 16:07
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s08_3">&nbsp;</a>
+   <div class="article">
+   	<h3>Az űrrepülés történetét bemutató interaktív tárlat nyílt Budapesten</h3>
+
+<div class="parabellimage">
+<div id="thumb1452805531" class="thumbframe"><a onclick="show('wide1452805531'); hide('thumb1452805531')" >
+<img src="_uploaded_images/MTI-Urkiallitas.jpg
+" alt="MTI-Urkiallitas.jpg" title="MTI-Urkiallitas.jpg"></a>
+</div>
+<div id="wide1452805531" class="wideframe"><a onclick="show('thumb1452805531'); hide('wide1452805531')" >
+<img src="_uploaded_images/MTI-Urkiallitas.jpg
+" alt="MTI-Urkiallitas.jpg" title="MTI-Urkiallitas.jpg"></a>
+</div>
+<p class="main">
+Budapest, 2016. január 14. Űrállomás részletének életnagyságú makettje a Gateway to Space című kiállításon a fővárosi Millenáris parkban 2016. január 14-én. Az űrrepülés technikáját és történetének legfontosabb fejezeteit bemutató interaktív tárlatot január 15-től március 15-ig tekinthetik meg az érdeklődők. MTI Fotó: Máthé Zoltán<br /></p>
+</div>
+<div class="parabellum">
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök - D_MTZ20160114015
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s08_4">&nbsp;</a>
+   <div class="article">
+   	<h3>A léghajók tündöklése és bukása</h3>
+
+<div class="parabellimage">
+<div id="thumb1453751160" class="thumbframe"><a onclick="show('wide1453751160'); hide('thumb1453751160')" >
+<img src="_uploaded_images/2016-01/Zeppelin-kiv-modern.jpg
+" alt="Zeppelin-kiv-modern.jpg" title="Zeppelin-kiv-modern.jpg"></a>
+</div>
+<div id="wide1453751160" class="wideframe"><a onclick="show('thumb1453751160'); hide('wide1453751160')" >
+<img src="_uploaded_images/2016-01/Zeppelin-kiv-modern.jpg
+" alt="Zeppelin-kiv-modern.jpg" title="Zeppelin-kiv-modern.jpg"></a>
+</div>
+<p class="main">
+Amióta léteznek léghajók, a "repülő szivarok" minden időben lenyűgözték az embert. Valaha szinte egyedüli urai voltak a légtérnek, mígnem a "Hindenburg" tragédiája véget vetett a léghajók fénykorának. Talán kevesen tudják, hogy ha egy magyar fakereskedő, Schwarz Dávid nem veszi kezébe Arisztotelész műszaki kérdéseket taglaló könyvét, nem születnek, vagy nem az általunk ismert formában születnek meg a léghajók.<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1453751160"><a onclick="show('less-article1453751160'); hide('more-article1453751160')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1453751160" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1453751160'); show('more-article1453751160')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+Schwarcz Dávid a görög bölcselő művének hatására kezdett el foglalkozni a merev vázas léghajó tervével. Schwarcz terveinek legnagyobb újdonsága a léghajó szerkezete volt, mely által biztonságosabbá vált a léghajó feltöltése, egyszerűsödött a kormányzás és a motoros meghajtás, a kúp alakú forma csökkentette a légellenállást, a gondola rögzítése pedig számos baleset okát szüntette meg.<br />
+Mivel az Osztrák-Magyar Monarchia nem állt az ötlet mellé, 1892-ben az orosz hadügyminisztérium meghívta Szentpétervárra. A léghajó szerkezetét Schwarcz alumíniumból kívánta megszerkeszteni, ezért szerződést kötött Carl Berg rajnai alumínium gyárossal, ám anyagi okok miatt a terv mégsem valósulhatott meg, viszont a Berggel kialakult jó kapcsolatnak köszönhetően Poroszországban megkezdhették az építkezést. Az első léghajó 1896 őszén készült el, azonban mire megfelelő minőségű gázhoz jutottak, Schwarcz tüdővérzést kapott és meghalt. A munkák irányítását Schwarcz özvegye vette át, így 1897. november 3-án végrehajtották a világ első merev vázú léghajójának próbaútját, a pilóta egy leszerelt porosz tiszthelyettes volt, a tapasztalatlan Ernst Jagels. A léghajó több mint 450 méter magasba emelkedett, és a nagy szélerősség ellenére széllel szemben is képes volt haladni. A földetérés nem ment éppen zökkenőmentesen, miután a hajtószíj lecsúszott a szíjtárcsáról és a léghajó kormányozhatatlanná vált, ennek ellenére a kísérlet sikeresnek volt mondható. A nagyszámú néző között ott volt gróf Ferdinand von Zeppelin is, akit szintén foglalkoztatott az irányítható léghajó gondolata. Zeppelin gróf latba vetve minden társadalmi kapcsolatát, Carl Berg közvetítésével megvette Schwarcz özvegyétől a léghajó terveit. A tervek alapján 1900-ban Friedrichshafenben megkezdték az első Zeppelinek építését. Míg az elkövetkezendő 14 évben mindössze 25 darab léghajót építettek, addig az első világháború négy éve alatt közel száz jármű készült, igaz ezek közül alig néhány élte túl a hadi eseményeket.<br />
+A világháboró befejezését követően már elegendő tapasztalat állt a német mérnökök rendelkezésére ahhoz, hogy megkezdjék a háborús jóvátételként az USA számára átadandó utasszállító léghajók gyártását. Az első ZRIII típusú léghajó 1924. augusztus 27-én indult el Amerikába, és 3 nap 9 órányi repülés után érkezett meg New York-ba. (Ennek ellenére a "Los Angeles" nevet kapta.) 1926-ban érvénytelenítették a békeszerződésben előírt, Németországgal szemben megfogalmazott léghajóépítési tilalmat, így megkezdődhetett a "Graf Zeppelin", az LZ 127-es típusú járművek sorozatgyártása.<br />
+Az LZ 127-esek szédületes kariiert futottak be. 1928-ban többször átszelte az Atlanti-óceánt. 1929. augusztus 15--n Friedrichshafenből indulva körülrepülte a Földet. A 236 méter hosszú, 30 és fél méter széles léghajó fedélzetén 20 utassal, 41 főnyi személyzettel és 400 kilónyi postai küldeménnyel indult, parancsnoki hídján Hugo Eckener állt. Az öt darab, egyenként 530 lóerős MAybach motornak köszönhetően 4 nap alatt tette meg a Friedrichshafen és Tokió közötti tizenegyezer kilométerer szakaszt. Ezt követően Los Angelesben, majd a New York melletti Lakehurst szállt le a "Graf Zeppelin", hogy húsz nappal indulását követően, a Föld megkerülése után leszálljon a Boden-tó partjára. Később az LZ 127-es eljutott az Északi-sarkra, és rövid ideig rendszeres járatként közlekedett Európa és Dél-Amerika között.<br />
+Az LZ 129-es, Hindenburg 245 méter hosszú, 41,2 méter széles, négy, egyenként 1200 lóerős Daimler-motorral ellátott léghajó volt. Maximális sebessége elérte a 135 km/órát is. Fedélzetén 72 utas fért el, 1936-tól rendszeresen közlekedett az USA-ba, két nap alatt repülve át az Atlanti-óceánt. A Minden idők legnagyobb méretű légi járműve volt az első járat, amelyen hálófülkék is voltak, a luxus kabinok párnázott székekkel, hideg-meleg folyóvízzel, zuhannyal voltak ellátva, a 300(!) féle ínyenc ételt hajópincérek szolgálták fel a szobákban. A tágas társalgó, bárhelyiség, széles erkély és sétafedélzet emelte a luxuskényelmet, a sétafedélzet ablakaiból csaknem lefelé is ki lehetett nézni. A Hindenburg utoljára 1937. május 3-án szállt fel Frankfurtból 36 utassal és 61 fős legénységgel. Az óceán felett fújó erős szél miatt tíz órás késésel érkeztek New York fölé. A lakehurst-i légikikötő parancsnoka a közelgő viharra hibatkozva először megtagadta a leszállást, ám a léghajó kapitánya, Eduard Boetius a viharzóna alá navigálta a gépet, így megkezdhették a leszállást, amikor a farok alatti 4-es számú gázcellát - máig ismeretlen okból - robbanás vetette szét. A léghajó hátulja tűzgömbbé változott, a jármű megbillent s a farok rész ereszkedni kezdett. A kapitány és társai kiugrottak a léghajóból, amikor a földbe csapódást követően az orrész visszapattant a talajról, majd azonnal visszafutottak, és kimentettek még három utast. Hatvankét embert sikerült megmenteni, köztük 23 utast. Részben ennek a katasztrófának hatására, részben katonai okokból 1940-ben az összes léghajót roncstelepre szállították, ezzel végetért a "hangtalan repülés" korszaka.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+2016. január 24. Magyar Virtus (Kép: Wikipedia)
+ &nbsp;</span> </font></p>
+</div>
+   <hr /><hr />
+
+   </div>
+<a name="s10">&nbsp;</a>
+
+   <div id="section10" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Ajánló &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s10_1">&nbsp;</a>
+   <div class="article">
+   	<h3>Munkaerőt toboroz az Oracle Európában, a Közel-Keleten és Afrikában</h3>
+
+<div class="parabellum">
+<p class="main">
+Budapest, 2016. január 14., csütörtök (MTI) - Az Oracle amerikai informatikai óriáscég 1400 új, felhő alapú szolgáltatással foglalkozó értékesítési szakembert keres Európában, a Közel- Keleten és Afrikában (EMEA régió) - közölte a cég csütörtökön az MTI-vel.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452799720"><a onclick="show('less-article1452799720'); hide('more-article1452799720')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452799720" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452799720'); show('more-article1452799720')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+Kiemelték, az új szakembereket összesen hat helyszínre keresik: Amszterdam, Dublin, Malaga, Prága, valamint Kairó és Dubai.<br />
+A toborzással az Oracle az iparág teljes cloud computing portfólióját támogatja.<br />
+A toborzás mellett az Oracle új értékesítési központokba is befektet Amszterdamban és Kairóban, valamint még 2016-ban további korszerű irodákat nyit Dubaiban, Dublinban és Prágában - írták.<br />
+A vállalat 600 különböző felhő alkalmazást kínál, amely az átfogó on-premise (helyszíni) hardver és szoftver ajánlatokkal kombinálva a vállalatok informatikai infrastruktúrájának teljes körű kezelhetőségét biztosítja és segíti a zökkenőmentes átállást a felhő alapú megoldásokra.<br />
+Az elmúlt fél évben az Oracle közel 1500 új SaaS (Software-as-a-Service) és több mint 2100 új PaaS (Platform-as-a-Service) ügyfélre tett szert - tették hozzá.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 15:59
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+<a name="s12">&nbsp;</a>
+
+   <div id="section12" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Tallózó &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s12_1">&nbsp;</a>
+   <div class="article">
+   	<h3>Esterházy Pétert Nobel-díjra javasolta Konrád György</h3>
+
+<div class="parabellum">
+<p class="main">
+Budapest, 2016. január 14., csütörtök (MTI) - Per Wästberg, az irodalmi Nobel-bizottság elnökének felkérésére Esterházy Pétert javasolta az irodalmi Nobel-díjra Konrád György író.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452799383"><a onclick="show('less-article1452799383'); hide('more-article1452799383')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452799383" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452799383'); show('more-article1452799383')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+"Szabálytalanul jártam el, ha ugyanis valaki felkérést kap arra, hogy Nobel-díjast javasoljon, az válaszol, és nem beszél róla. Mivel Esterházy Péter hasnyálmirigyrákban szenved, megszegtem ezt a szabályt, gondolván, hogy ő ezt megérdemelné, függetlenül az egészségi állapotától" - mondta az MTI-nek csütörtökön Konrád György.<br />
+Az író hangsúlyozta: Esterházy Péter súlyos betegsége miatt szerette volna, ha írótársa "bármilyen döntés előtt kap hírt" a javaslatról.<br />
+Konrád György elmondása szerint a díj odaítélése előtt a Nobel-bizottság tájékozódás céljából több pályatársat, szakértőt is felkér javaslattételre, ezek a javaslatok azonban a bizottságot nem korlátozzák döntésben.<br />
+A bizottságnak Konrád György egy Esterházy Péterről írt és az Élet és Irodalomban 2004-ben megjelentett laudációjának kibővített változatát küldte el, amely a nyáron Szerencsejáték címmel megjelenő könyvében is olvasható lesz.<br />
+A szövegben Konrád György hangsúlyozza: "Esterházy Péter fejében megvalósul a korlátlan egyidejűség, mesék, képek, bölcseleti ötletek és viccek egyetlen nagy edényben forognak. Bátor ember, meri leírni, ami eszébe jut".<br />
+Az író szerint, ha Esterházy Péter "csak gróf lenne, és kutyabaja sem lett volna, ha az anyja nem úgy dolgozott volna a megélhetésért, a családért, mint más szegény asszony (...), ha valódi apját (aki kedves ember és önfeláldozó apa volt, bármit is állít róla a krónika), nem sanyargatta volna meg a fondorlatos és cudar idő, ha a fiú nem a kitelepített osztályellenség szegénységébe született volna bele, ha nem tanulta volna meg alulról is és felülről is nézni a világot, akkor az írásmű, amely a keze alól kisikeredett volna, alighanem unalmasabb lenne, és az ember is szegényebb".<br />
+"Lévén azonban a tehetség a legravaszabb anyag, az a másik Esterházy Péter is csinált volna valami meglepőt; kár hogy nem tudjuk, mit. Valamit, amire rangos díjak adhatók" - fogalmaz Konrád György a csütörtökön a Népszabadság honlapján közzétett méltatásban; hozzátéve: Esterházy Péter "a mesterség hűséges szolgája, aki megdolgozott a szabadságáért. Megírta a könyveit, táncba viszi a szótárt. A végén minden szó a helyére kerül, és jól érzi magát ott, ahol van. A többi pedig kifürkészhetetlen titok".<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 17:31
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s12_2">&nbsp;</a>
+   <div class="article">
+   	<h3>Az Árpád-házi uralkodók leszármazási táblája</h3>
+
+<div class="parabellimage">
+<div id="thumb1452842566" class="thumbframe"><a onclick="show('wide1452842566'); hide('thumb1452842566')" >
+<img src="_uploaded_images/MTI-Arpadhaz.jpg
+" alt="MTI-Arpadhaz.jpg" title="MTI-Arpadhaz.jpg"></a>
+</div>
+<div id="wide1452842566" class="wideframe"><a onclick="show('thumb1452842566'); hide('wide1452842566')" >
+<img src="_uploaded_images/MTI-Arpadhaz.jpg
+" alt="MTI-Arpadhaz.jpg" title="MTI-Arpadhaz.jpg"></a>
+</div>
+<p class="main">
+Az Árpád-ház (Turul-dinasztia)[1] a honfoglaló magyar törzsszövetség vezéréről elnevezett dinasztia. Árpád leszármazottainak uralkodása idején került sor a magyar királyság megalapítására. A honfoglalást követően, körülbelül 900-tól Árpád eltűnik a forrásokból, a Kárpát-medence valós hatalmi viszonyai, a kialakuló fejedelemségek kiterjedése és jelentősége ismeretlenek. A honfoglalástól Gézáig terjedő időszak források hiányában gyakorlatilag teljesen ismeretlen. Árpád utódai közül Géza által vezetett fejedelemség emelkedett ki a többi közül, amelyet a Géza-kori Tiszavidéki terjeszkedés mutat a Géza-féle német felszerelésű hadsereg tagjainak normann-kardos temetkezéseivel.<br />
+<br />
+Valószínűleg jelentősebb hatalmi központ volt még Somogyban, ahol egy másik Árpád-ág uralkodott. Ennek a családnak két utolsó tagja, Tar Szerénd és Koppány. Koppány és a többi fejedelem (Ajtony, Gyula) legyőzésével István biztosította az Árpád-ház uralmát a Kárpát-medencében, amelyet 1301-ig István nagybátyjának, Mihálynak leszármazottai kormányoztak.<br />
+<br />
+Az uralkodóházak közül az Árpád-ház adta a legtöbb katolikus szentet, valamint egyedüli dinasztiaként, – a pápai privilégiummal szemben – az Árpád-házi királyoknak kinevezési jogköre volt az egyházi tisztségek terén.<br />
+<br />
+Az évszázadok során - a kiterjedt házassági kapcsolatokkal rendelkező dinasztia - az Árpádok vére szinte valamennyi későbbi nagy európai dinasztia uralkodóiban is csörgedezett (Valois, Habsburg, Bourbon, Anjou, Jagello) úgy ahogyan a magyar arisztokrácia (Garayak, Cilleiek) tagjaiban is.<br />
+<br />
+A 972–1301 közötti időszakot a dinasztiáról Árpád-kornak nevezzük.<br /></p>
+</div>
+<div class="parabellum">
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2015 12 14:G0464 és Wikipédia
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+<a name="s13">&nbsp;</a>
+
+   <div id="section13" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Nagyvilág &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s13_1">&nbsp;</a>
+   <div class="article">
+   	<h3>Egyiptomban megnyitották az ősmaradványok és a klímaváltozás múzeumát</h3>
+
+<div class="parabellum">
+<p class="main">
+Kairó, 2015. január 14., csütörtök (MTI) - Az egyiptomi Vádi-el-Hítánban (Bálnák völgye) megnyitották csütörtökön az ősmaradványok és a klímaváltozás múzeumát, amelynek kiállítási tárgyai között található a mai bálnák őse, a Basilosaurus isis egyik példányának 37 millió éves teljes csontváza is.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452798750"><a onclick="show('less-article1452798750'); hide('more-article1452798750')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452798750" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452798750'); show('more-article1452798750')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+A Kairótól mintegy 170 kilométerre délnyugatra található sivatagos völgyet az ókorban tenger borította. A megnyitón felszólalt el-Fajjúm tartomány kormányzója, aki hangsúlyozta, hogy Vádi-el-Hítán egy 400 négyzetkilométernyi területen elterülő nyitott geológiai múzeum, amely több száz kihalt faj maradványait őrzi.<br />
+Vael Makram arra emlékeztette a jelenlevőket, hogy a területet az UNESCO 2005-ben a világörökség részének nyilvánította.<br />
+Az ugyancsak felszólaló környezetvédelmi miniszter azt mondta, a múzeum egyik célja, hogy a térségben fellelt fosszíliák segítsék az évmilliók során végbement klímaváltozás kutatását, valamint az emberi életben ennek következtében történt változások tanulmányozását.<br />
+Az illetékesek szerint a múzeumban látható Basilosaurus isis a világ legnagyobb megkövült bálnacsontváza, de emellett számos más gerinces ősmaradvány is megtekinthető. Most először mutatják be a Basilosaurus isis elcsökevényesedett hátsó lábait, a szárazföldi lényből tengeri állattá válás maradványát.<br />
+A múzeum az ENSZ Fejlesztési Programja (UNDP), az egyiptomi környezetvédelmi minisztérium és az olasz kormány együttműködésében jött létre.<br />
+Ezzel egy időben Kairóban is megnyílt egy kiállítás, amelynek kereteiben az országba legutóbb visszakerült, korábban illegális úton kijuttatott műtárgyakat lehet megtekinteni.<br />
+A híres Egyiptom Múzeum különleges tárlatán az utóbbi két évben visszakerült mintegy 500 kiállítási tárgyból kétszázat lehet megtekinteni, közülük 90 Franciaországból, 55 Németországból, 35 pedig az Egyesült Államokból jutott vissza az észak-afrikai országba.<br />
+A közelmúltban visszaszerzett és most kiállított régiségek között szerepel egy ókori egyiptomi írótábla, egy szarkofág, római kori érmék és egy 15. századi díszes iszlám szószék egy része.<br />
+Az első ilyen jellegű kiállítást 2010-ben rendezték meg a kairói múzeumban, részeként a külföldre hurcolt kulturális örökség visszaszerzésére irányuló erőteljes kampánynak.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 20:00
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s13_2">&nbsp;</a>
+   <div class="article">
+   	<h3>A Párizsban aláírt klímamegállapodás lesz a holland EU-elnökség célkeresztjében</h3>
+
+<div class="parabellum">
+<p class="main">
+Brüsszel, 2016. január 14., csütörtök (MTI) - A klímapolitika is a holland EU-elnökség célkeresztjében lesz - mondta Brüsszelben Sharon Dijksma holland környezetvédelmi miniszter az Európai Parlament Környezetvédelmi Bizottsága tagjainak, az Európai Unió 2016-ban hivatalba lépő holland elnöksége féléves programjának ismertetésekor - tájékoztatott Hölvényi György kereszténydemokrata európai parlamenti képviselő csütörtökön kiadott közleményében.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452799450"><a onclick="show('less-article1452799450'); hide('more-article1452799450')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452799450" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452799450'); show('more-article1452799450')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+A holland környezetvédelmi miniszter az ülésen hangsúlyozta, hogy a 2016 első félévében az Európai Unió soros elnöki tisztségét betöltő Hollandia egyik kiemelt célja a 2015-ös párizsi klímamegállapodás végrehajtása lesz. Ennek első lépéseként a márciusi környezetvédelmi tanácson a párizsi eredmények tagállamokkal való megvitatását tervezik. Az elnökség munkáját az Európai Bizottság most készülő átfogó értékelése is segíteni fogja.<br />
+Az ülésen Hölvényi György felszólalásában rámutatott, hogy a feladat elvégzése komoly kihívás elé állítja az uniót, különösen a 40 százalékos kibocsátás-csökkentésből fakadó terhek tagállamok közti arányos megosztása terén. A képviselő szerint a holland elnökségnek és az Európai Bizottságnak szigorú menetrendet kell tartania ahhoz, hogy a tavaszi félév során valódi előrelépést tudjon elérni a párizsi megállapodás végrehajtásában.<br />
+A tavaly decemberi, Párizsban aláírt klímamegállapodás megerősíti azt a központi célkitűzést, hogy a Föld légkörének felmelegedését a 195 ország 2 Celsius-fok alatt tartja az iparosodás előtti mértékhez képest, és folytatja az erőfeszítéseket arra is, hogy a felmelegedés csak 1,5 fokos legyen.<br />
+Az 1,5 fok megemlítése a megállapodásban a tengerszint emelkedésével létükben fenyegetett szigetállamok kérése volt, amelyet több mint száz ország, köztük az Európai Unió tagállamai, valamint az Egyesült Államok is támogattak.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 17:12
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s13_3">&nbsp;</a>
+   <div class="article">
+   	<h3>Terrorizmus - Az Iszlám Állam fegyvereseit keresik Olaszországban</h3>
+
+<div class="parabellum">
+<p class="main">
+Sárközy Júlia, az MTI tudósítója jelenti:    Róma, 2016. január 14., csütörtök (MTI) - Kiemelt készültség lépett életbe az olasz-francia határnál levő Liguria tartományban, ahol két, Párizsból Szíriába tartó dzsihadista fegyverest keresnek a hatóságok - jelentette az olasz sajtó csütörtökön.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452799563"><a onclick="show('less-article1452799563'); hide('more-article1452799563')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452799563" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452799563'); show('more-article1452799563')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+Az Interpol által kiadott körözés alapján az Iszlám Állam (IÁ) két fegyveresét keresik, akik a sajtóval közölt információk szerint Párizsból indultak el és Szíriába tartanak.<br />
+A két férfi egy szürke színű, belga rendszámú gépjárművel utazik, fel vannak fegyverkezve és veszélyesek. A feltételezések szerint Olaszországon akarnak áthaladni, ezért kiemelt az ellenőrzés a francia-olasz határon levő Ventimigliában, a genovai repülőtéren és a liguriai város kikötőjében is - értesült az IlGiornale.it hírportál. Keresésüket egész Olaszországra kiterjesztették.<br />
+Mint kiderült, a novemberi párizsi merényletek egyik elkövetőjeként ismert Salan Abdeslam, belga állampolgár is Olaszországon keresztül utazott Szíriába még tavaly augusztusban. Belgiumból autóval eljutott a dél-olaszországi Bari kikötőjébe, innen komphajóval Görögországba, majd továbbment Szíriába.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 14., csütörtök 16:17
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s13_4">&nbsp;</a>
+   <div class="article">
+   	<h3>Iszlám Állam - Szakértő: kirekesztettség és naivitás miatt csatlakoznak nők a terrorszervezethez</h3>
+
+<div class="parabellum">
+<p class="main">
+Budapest, 2016. január 16., szombat (MTI) - A kirekesztettség érzése és naivitásuk, romantikus elképzeléseik indítják az Európában felnőtt muzulmán nőket arra, hogy csatlakozzanak az Iszlám Állam (IÁ) nevű terrorszervezethez - mondta a Migrációkutató Intézet vezető kutatója az M1 aktuális csatorna szombat reggeli műsorában.</p>
+</div>
+<div class="parabellum">
+<div id="more-article1452941928"><a onclick="show('less-article1452941928'); hide('more-article1452941928')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452941928" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452941928'); show('more-article1452941928')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+Sántha Hanga - akinek a témában tavaly decemberben jelent meg Speidl Biankával közös tanulmánya - elmondta: az etnikai hovatartozás, életkor és családi háttér szempontjából nagyon különböző nők internetes megnyilatkozásaiból kiderül, hogy az IÁ-hoz való csatlakozást megelőző közös élményük a nyugati társadalomból való kirekesztettség érzése, a viseletük miatt őket érő zaklatások, megaláztatások. Emellett nagy szerepet játszanak naiv, romantikus elképzeléseik arról, hogy miként tudnának nőként hozzájárulni az ideális iszlám társadalom létrejöttéhez - tette hozzá.<br />
+A szíriai és iraki fegyveres harcokban jelenlegi adatok szerint négy-ötezer európai vesz részt terrorszervezetek oldalán, köztük hozzávetőlegesen ötszáz nő - jegyezte meg a kutató.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 16., szombat 9:58
+ &nbsp;</span> </font></p>
+</div>
+   <hr /><hr />
+
+   </div>
+<a name="s16">&nbsp;</a>
+
+   <div id="section16" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Esti mesélő &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s16_1">&nbsp;</a>
+   <div class="article">
+   	<h3>A borbély és a szegény ember (népmese)</h3>
+
+<div class="parabellum">
+<p class="main">
+Sem itt nem volt, sem túl nem volt, hanem azért mégiscsak volt valahol ezen a világon egy szegény ember. Olyan szegény volt ez a szegény ember, hogy egyebe se volt az égvilágon egy szedett-vedett, kopott-rongyos szamárnál, s az is olyan vén, zörgős csontú, hogy csak úgy lígett-lógott, s csak annyit bírt, ni, amennyit. Bevisz egyszer a városba ez a szegény ember egy szamárterhe fát, amit úgy tél-túl összerakosgatott. Odavetődik egy borbélyféle ember, s kérdi:<br />
+- Hogy adod azt a szamárterhe fát, te szegény ember?<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1452797896"><a onclick="show('less-article1452797896'); hide('more-article1452797896')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452797896" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452797896'); show('more-article1452797896')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+A szegény ember mondja, hogy s mint. Jól van, addig alkusznak innen-túl, hogy megcsinálják a vásárt. Elszállítja a borbélyhoz s le is rakja a szegény ember a fát. Hanem akkor rászól a borbély a szegény emberre, hogy csak ízibe rakja le azt az egész szamárterhét, mert ő az egészet megvette, s ki is fizette már. Eleget mondta a szegény ember, hogy ő csak a fát adta el, s nem a nyerget is, hanem a borbély istenesen erőlködött, hogy ő az egész szamárterhére alkudott, hát a nyereg is az övé. A szegény embernek egyebet se volt mit tenni, mint hogy nagy búsan letette a nyerget is a szamárról, s bánatosan hazament.<br />
+Aztán egyszer valahogy észbe kap a szegény ember is. Veszi maga után a szamarát, s be a városba, ott is egyenest a borbélyhoz. A szamarát megköti a kertkapuhoz, bemegy a műhelybe, s azt mondja a borbélynak:<br />
+- Mennyiért beretválna meg az úr engemet meg a társamat?<br />
+Mondja a borbély, hogy mennyiért. A szegény ember nagy szaporán kifizeti, s avval ki egy miccentés alatt, vezetékre veszi a szamarat, s be vele a borbélyhoz, hogy hát itt a társa, beretválja meg. Eleget mondta a borbély, hogy ő aztán egyet se, mert ő nem szokott szamarakat borotválni. Hanem a szegény ember követelte úristenesen, hogy ha megvette még a salláriumot (munkadíjat) is, csak tessék, de még úgy, hogy hiba ne essék, mert ha nem, ő viszi tanácsra a dolgot. Mikor a borbély látta, hogy biz ennek a fele se tréfa, nem restellte könyörgésre fogni a dolgot, hogy így meg úgy, visszaadja a pénzt, de még rá is fizet. Azt mondja akkor a szegény ember.<br />
+- Jól van hát, no! Adja vissza a pénzt s a múltkor elvett nyerget is, s én akkor visszalépek a követeléstől, de másképp soha, tudja meg az Isten is!<br />
+Persze hogy örömmel tette meg a borbély mind a kettőt, adott vissza pénzt, mindent, csak hogy vigye onnan a szamarát, s haladjon tőle.<br />
+Így kapta vissza a nyerget a szegény ember. Ha a borbély a pénzt nem adta volna vissza, s a szegény ember a borbélyt tanács elé vitte volna, az én mesém is tovább tartott volna.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+egyszervolt.hu
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr />
+
+   </div>
+   <a name="s16_2">&nbsp;</a>
+   <div class="article">
+   	<h3>Erős Matyi meg az ördög barázdája</h3>
+
+<div class="parabellum">
+<p class="main">
+Volt egyszer, hol nem volt, csak az biztos, nagyon régen volt, egy öreg asszony. Annak volt családja, volt gyönyörű szép unokája. Egyik fiú volt s a másik leány.<br />
+<br />
+A fiú elment szántani, s azt mondta az anyjának, hogy küldjenek ki nekije ebédet a lánytól.<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1452956054"><a onclick="show('less-article1452956054'); hide('more-article1452956054')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452956054" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452956054'); show('more-article1452956054')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+- Hát, édes fiam - azt mondja -, nem tud kimenni a leány a mezőre, hát honnét tudja, hogy te melyik mezőn szántasz?<br />
+- Hát megjegyzem én - azt mondja. - Itthonról, mikor már elindulok, az ekével egészen oda, ameddig szántok, addig húzok egy barázdát, s azon a barázdán el tud gyünni a leány.<br />
+Gyönyörű szép leány volt.<br />
+Elment a fiú szántani, s nekifogtak az ebédfőzésnek. Kész lett az ebéd, felpakolt az anyja a leánynak, s elindította, menjen, vigye az ebédet.<br />
+Hát amikor kimenyen a kapun, hát nem egy barázda volt, hanem kettő. Hát most melyiken induljon el?<br />
+- Hát, isten neki, egyiken elindulok.<br />
+Ment, ment. Egyszer csak az a barázda, amelyiken ment, bévezetett egy nagy rengeteg erdőbe. Onnét már nem tudta: visszatérjen, mit csináljon, mitévős legyen, de biza már nem is térhetett, mert körülvették.<br />
+- Erre, erre, leány, erre az út.<br />
+Na, elment oda, hát egyszer csak ott teméntelen sok lépcsőn kellett lemenjen, mind lefelé, lefelé. Már tudta, hogy nem jó helyt van a szerencsétlen; há hogy lett volna jó helyt, az ördög birodalmában volt!<br />
+- Hű, már most mit csináljak, ide rossz helyre jöttem!<br />
+- De nem jöttél rossz helyre! Jól vagy te itt - azt mondja. - Itt né meg van főve három kosfej, megeszed, aztán akkor jól érzed magadat.<br />
+- Én osztán biza nem eszem meg!<br />
+- De ezt meg kell egyed, mert ha meg nem eszed, vége az életednek!<br />
+Hej, sír a leány, keservesen sír, de nem volt mit tegyen: meg kellett egye a három kosfejet. S biza ha megette, akkor már úgy érezte magát, hogy jól van ő itt, éppen ördöggé származott ő is.<br />
+Na, a fiú este hazamenyen s kezd otthon veszekedni, hogy hát ő egész nap éhen szántott, s mért nem küldtek ebédet.<br />
+- Jaj, lelkem fiam, hát én elküldtem a leányt! Há nem ment el?<br />
+- Hát nem biza.<br />
+- Jaj, hát mi az oka?<br />
+Akkor látták, hogy két barázda van, nem egy. Hát most már ez elment szegény a másik barázdán! Azt mondja a fiú:<br />
+- Na, menyek én utána, lássuk, merre van.<br />
+Menyen a fiú, menyen, hát éppen odajutott ő is, bé a rengeteg erdőbe. Ott már az ördögök várták.<br />
+- Erre, erre, fiú mer jó helyt jársz!<br />
+Hiába akart visszatérni, már nem volt visszaút, csak béfelé. Le ő is azon a sok lépcsőn. Na, mikor leérkezett, azonnal vele is megétették a három kosfejet. S éppen odalökték a testvérihez, egy szobába.<br />
+Na, ott ültek szegények szomorú rabságban.<br />
+Búsul az anyjuk, búsul a nagyanyjuk, az egész család, hogy volt két szép gyermek s nincsen. Sírnak, gyászolnak, búsulnak erősen, de már mindegy volt.<br />
+Idők elteltével született még egy gyermek, fiú volt. Matyinak hívták. Hát ez növésben erősen kicsi volt, de az olyan erős volt, mint amilyen kicsi. Ezért aztán Erős Matyinak is hítták.<br />
+Hát látta, hogy az anyja örökké sír, a nagyanyja s az egész család.<br />
+<br />
+- Ó, hát minek sírnak? - azt mondja. - Már ki nem állhatom ezt a szomorú házat, hogy itt örökké sírnak s búsulnak.<br />
+- Jaj, édes fiam, hogyne sírnánk! Már elmondjuk neked, már elég nagy vagy ahhoz, megérted, milyen erősen nagy a mi bánatunk. Sze volt neked még két testvérkéd: egy gyönyörűséges szép leány, s egy szép fiú. S úgy elmentek szegények, hogy sose jöttek vissza. Nem tudjuk, mi lett velek, mintha a föld nyelte volna el, egy barázdán valamerre elmentek.<br />
+- Na, nem baj, mert elmenyek én, megkeresem őket, édesanyám, ha addig élek is.<br />
+- De sír az anyja, hogy:<br />
+- Bár te ne menj el, s nekem egy sem lesz akkor, bár te ne menjél el!<br />
+De nem volt marasztása a fiúnak, elment. S béérkezett ő is a barázda útján a rengeteg erdőbe, le a sok lépcsőn, egykettőre odament. De ő nem félt. Mikor leérkezett, azt mondják neki az ördögfiókák:<br />
+- Na tessék, tessék béfáradni az ebédlőbe. Mer itt aki beérkezik, legelébb kell ebédeljen.<br />
+- Má ha éhes, akkor igen, de ha nem, akkor nem!<br />
+- Hát - azt mondja - itt nemet nem lehet mondani! Itt mindenre csak igent. - Vagy - azt mondja - szíjjá leszel korcolva, fel leszel darabolva!<br />
+- Még akkor is úgy csinálok, ahogy én akarok, ha földaraboltok is!<br />
+Hű, reánéz az ördögfióka. - Az apját - mondja -, hogy hát milyen merész keletkezett ide!<br />
+- Nini, né, mit mond! Hogy milyen felvágós!<br />
+- Hohó - azt mondja -, megcsendesül ő mindjárt, csak megegye a három kosfejet!<br />
+Mindjárt erőszakolja az ördög, hogy azonnal fogjon neki az ebédnek. De ő aztán nem, mert ő nem éhes!<br />
+- Meg osztán megvallom, hogy itt nálatok nem is ebédelek soha. Hanem azért jöttem, add vissza a testvéreimet!<br />
+Haj, nagyot kacag az ördög, majd kipukkant, olyan kacagott.<br />
+- Hahó, a testvéreidet? Haj, te is itt maradsz velünk, nemhogy azokat kiadjam!<br />
+- Na, ezt szeretném látni! - azt mondja.<br />
+Akkor aztán erre-arra: birkózzanak meg. Hát Erős Matyi amilyen kicsi volt, éppen olyan erős volt. Felkapta az ördöget, úgy vágta egy vaskerítésbe, hogy az csak nyegett beléje. Akkor kivette hamar az oldalárul a kardot, mert szómat össze ne keverjem, egy karddal indult el. No, alaposan elpáholta vele az ördög irhákát!<br />
+Bezzeg az ördögfióka elfutott. Nem még állott szembe vele, ha már látta, hogy az apjának így ellátta a baját. Aztán felkutatott ott minden világos szobát, sötét szobát, mindent, amíg megkapta a testvéreit.<br />
+Na, hát egymást nem ismerték, de már beszéd által mindjárt megtudták egymást, hogy ők testvérek.<br />
+- Na, gyertek, testvéreim - azt mondja -, vigyelek haza. Ó, be sokat siratott szegény anyám benneteket!<br />
+- Jaj, mit beszélsz, haza? Hát innét haza nem lehet menni! Csak kéne nekünk, hogy kilépjünk a lépcsőn, menten meghalunk. Az ördög véget szakaszt nekünk!<br />
+- Ne félj - azt mondja -, mer vége van nekije!<br />
+Úgy osztán elhozta a két testvérit, s hazavitte. Bántódás nélkül kijutottak az ördög komédiái közül, osztán hazaérkeztek.<br />
+Na, lett nagy öröm, éltek nagy boldogan. Még most is élnek, ha meg nem hóttak.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+egyszervolt.hu
+ &nbsp;</span> </font></p>
+</div>
+   <hr /><hr />
+
+   </div>
+   <a name="s16_3">&nbsp;</a>
+   <div class="article">
+   	<h3>A szerencsepróbáló királyfi (népmese)</h3>
+
+<div class="parabellum">
+<p class="main">
+Volt egyszer egy királyúrfi. Ez a királyúrfi azt mondja az édesapjának:<br />
+- Felséges apámuram! Én elmegyek szerencsepróbálni, de engedje meg, hogy elvigyem magammal az én öreg szolgámat is.<br />
+Azt feleli erre az öreg király:<br />
+- Én nem bánom, édes fiam, menj el, s vidd a hűséges szolgádat is, csak az életedre ügyelj!<br />
+Felkészülődik a királyúrfi, s jó hajnalban elindulnak. Mennek, mendegélnek, s hát egyszer egy nagy rengetegbe érnek. Abban a rengetegben találnak egy forrást, mellé megtelepednek, s eléveszik a tarisznyát, hogy egy kicsit falatozzanak.<br />
+Hát amint az ebédet elköltenék, jő egy kicsi emberke, akinek hétsinges (=nagyon hosszú - 1 sing kb. 60 cm) volt a szakálla, s a vállán egy mázsás botocskát cipelt. Ez a kicsi emberke csak belészökik a forrásba, s eltűnik.<br /></p>
+</div>
+<div class="parabellum">
+<div id="more-article1453764262"><a onclick="show('less-article1453764262'); hide('more-article1453764262')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1453764262" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1453764262'); show('more-article1453764262')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+- No - mondja a királyúrfi -, megyek utána, mert ez bizonyosan Tündérországba ment. Te pedig öreg szolgám, menj vissza, s mondd meg az édesapámnak, hogy hová mentem, s ha egy esztendő múlva vissza nem kerülök, csináltasson nagy temetést az emlékezetemre, mert akkor, tudom istenem, nem leszek az élők között.<br />
+Azzal bészökik a forrásba, nagy hirtelen lemerül, s hát egy szempillantásra egy gyönyörűséges szép réten találja magát. Ezen a réten volt egy aranyvár, de az egész fekete gyásszal volt bévonva. Találkozik egy emberrel, kérdi, hogy miért vonták azt a várat talpig feketébe.<br />
+- Azt bizony azért - feleli az ember -, mert a városon kívül van egy tó, s abban lakik egy hétfejű sárkány, akinek minden áldott nap egy leányt kell adni ebédre, különben az egész várost elpusztítja még a föld színéről is. Most éppen a király leányára került a sor. Senki sem ajánlkozik megmentésére, pedig aki azt megcselekedné, ugyan boldog lenne: neki adná a király a leányát, s melléje fele királyságát.<br />
+Gondolja a királyúrfi, hogy ő bizony szerencsét próbál. Egy élete, egy halála, ha addig él, sem engedi meg, hogy a király leányát a sárkány bekebelezze.<br />
+Hát csakugyan jött a királykisasszony fekete gyászruhában, mellette a porkoláb (= börtönőr ). Sem a várból, sem a városból nem mert senki lélek velük jönni, csak úgy messziről húzta tizenkét banda a szomorú marsot (= induló ) is. Mikor a tóhoz értek, a hétfejű sárkány már ott hümmedezett a tó partján, szörnyű hét száját tátogatta, s úgy várta az ártatlan leányt.<br />
+De csak odaszökik ekkor nagy hirtelenséggel a királyúrfi, felöleli a királykisasszonyt, egy-két lépést odébb teszi, s neki a sárkánynak! Hej, szegény világ - lett itt verekedés! Csurgott a verejték mind a kettőről, mint a patakfolyás. Hanem a királyúrfi nem hagyta magát, s hat fejét le is vágta a sárkánynak. Aj, szegény egy feje, hát könyörgött a sárkány, hogyne ölje meg egészen, hagyja meg ezt az egy fejét. A királyúrfi bizony nem engedett, a hetedik fejét is levágta a sárkánynak.<br />
+Mikor ezzel készen volt, odafordult a leányhoz, s azt mondta neki:<br />
+- Felséges királykisasszony, most menjünk haza apádhoz, hadd örüljön!<br />
+No, lett hét országra szóló vendégség!<br />
+Olyan kedve is volt minden léleknek, hogy csupa gombostűkön táncoltak.<br />
+Aközben eltelt egy esztendő, s a királyúrfinak eszébe jutott, hogy neki haza kéne menni. Hatlovas hintóba ült feleségestül, s úgy kihajtott a forráson, hogy meg se vizesedett senki, semmi. Hát mikor kiérnek, az apja ott várja az egész udvarnéppel. Volt öröm! Szinte megették egymást... Hazamentek, nagy vendégséget csaptak. Azután tojáshéjba kerekedtek, a Küküllőn leereszkedtek. Holnap legyenek a ti vendégeitek!<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+egyszervolt.hu
+ &nbsp;</span> </font></p>
+</div>
+   <hr /><hr />
+
+   </div>
+   </div>
+
+
+<a name="s99">&nbsp;</a>
+
+<div id="footer-wrap">
+<div class="article">	
+<center>
+<p class="onecolumn">
+	<h2>
+	<font color="#FFFFFF"> 
+	<span style="background-color: #000000;">&nbsp; Impresszum &nbsp;</span>           
+	</font><br />
+	&nbsp;<br />
+    Scienction MAGazin<br />  
+	</h2>
+    tudományosan szórakoztató internetes kiadvány<br />
+        2016.01.01.<br />    
+	&nbsp;<br />
+	<img src="aMAGazinImages/stamps/compass.png" width="333px" height="111px">
+	&nbsp;<br />
+	&nbsp;<br />
+Vezérigazgatók: Lévai-Kiss Noémi és Ákos E. Kiss <br />         
+        Főszerkesztő: Kiss József Gábor<br />         
+        Főszerkesztő-helyettesek: Yin Gu & Yan Gu<br />         
+	&nbsp;<br />
+		olvasó szerkesztő: Csőke Ágnes<br />         
+		kép szerkesztő: Lévai-Kiss Noémi<br />         
+		tervező szerkesztő: Lévai István<br />         
+	&nbsp;<br />
+    Rovat vezetők:<br />         
+		Hírek: Kiss József Gábor<br />         
+		Gazdaság: Ákos E. Kiss<br />         
+		Életmód: Lévai-Kiss Noémi<br />         
+		Irodalom: Csőké Ágnes<br />         
+		Szórakozás: Lévai István<br />         
+		Gyermek kuckó: Csőke Ágnes<br />         
+	&nbsp;<br />
+    Technikai munkatársak <br />         
+		korrektor:  Csőke Ágnes, Lévai-Kiss Noémi (design)<br />         
+		fényképész: Lévai István, Ákos E.Kiss, Lévai-Kiss Noémi<br />         
+		jogi szakértő: Dr. Györkő Tünde<br />         
+	&nbsp;<br />
+    A kiadó neve:<br />         
+		Global Scienction Publisher<br />         
+	&nbsp;<br />
+    A szerkesztőség címe és elérhetőségei:<br />         
+		Bercsényi utca 6. <br />         
+		1111 Budapest<br />         
+	&nbsp;<br />
+	E-mail: sry@sryer.com, yingu@yingu.hu, b6@b6.hu <br />         
+	&nbsp;<br />
+    Nyomdai előkészítés: Yin Gu<br />         
+        Nyomdatechnika: Yin & Yan Global Digital Print ( vezérigazgató: Yan Gu )<br />         
+	&nbsp;<br />
+    Index, ISSN-szám: N/A<br />
+	&nbsp;<br />
+</p>
+</center>
+</div>
+<div class="article">	
+<p class="foot">
+	&nbsp;<br />
+    Terjesztési információk: <br />         
+		A tartalom a sryer.com internetes címen kizárólag digitális formában 
+		jelenik meg. A magazin egyes fejezetei jellegüktől és aktualitásuktól függően változó 
+		időközökben frissülnek.<br />         
+	&nbsp;<br />
+	Előfizetési információk:<br />         
+		A kiadvány ingyenes és előfizetéses formában is elérhető. Az ingyenes 
+		újság bármikor hozzáférhető a http://magazin.sryer.com internetes címen. 
+		Az előfizetéses példányok hozzáféréséhez a mindenkori kapcsolattartó 
+		e-mail címre küldünk jelszavas internetes linket.<br />    
+		Az előfizetés díja: 
+		<span style="white-space: nowrap";>50 HUF/hónap (havi előfizetéssel)</span>
+		és 
+		<span style="white-space: nowrap";>500 HUF/év (éves előfizetéssel).</span><br />    
+	&nbsp;<br />
+	Hirdetési információk:<br />         
+		Az oldalainkon a hirdetéseket .gif, .png vagy .jpg formátumú képként 
+		jelentetjük meg. A hirdetés ára a kép méretéből számítható: 
+		<span style="white-space: nowrap";> 1 HUF / 1000 pixel / 1 hét.</span><br />
+	&nbsp;<br />
+    Jogi nyilatkozat:<br />         
+	a./ Szolgáltató törekedik a szolgáltatás folyamatosságának hibamentes fenntartására, 
+	de nem garantálja, hogy a honlap funkcionalitása, 
+	és az általa nyújtott szolgáltatás mentes a hibáktól.<br />
+	b./ A honlap és annak tartalma előzetes bejelentés nélkül bármikor változhat.<br />
+	c./ Szolgáltató mindent megtesz annak érdekében, hogy a honlapon elhelyezett anyagok 
+	vírusmentesek illetve egyéb kártékony programoktól mentesek legyenek.<br />
+	d./ Szolgáltató semmilyen felelősséget nem vállal a honlap használatából 
+	vagy használhatatlanságából eredő, Felhasználót a honlap használata során ért 
+	vélt vagy valós károkért, esetleges számítógép meghibásodásokért. 
+	A Felhasználó saját felelősségére használja a honlapot.<br />
+	e./ Szolgáltató semmilyen felelősséget nem vállal azért, ha a tartalom Felhasználó 
+	rendszerében kompatibilitási, vagy egyéb hibák miatt nem elérhető. 
+	Az ebből eredő, Felhasználót ért vélt, vagy valós károkért, késedelemért 
+	Szolgáltató nem tehető felelőssé.<br />
+	f./ Szolgáltató bármikor jogosult a jelen általános felhasználási feltételek 
+	egyoldalú módosítására azzal, hogy a módosításról rövid felhívás formájában 
+	a Szolgáltatás kezdőoldalán tájékoztatja a Felhasználókat. 
+	Amennyiben a Felhasználó a módosítást követően a Szolgáltatás bármely részét 
+	használni kezdi, az a módosítás elfogadásának minősül.<br />
+	g./ Szolgáltató fenntartja magának a jogot, hogy bármilyen jogsértés, vagy 
+	Felhasználó által a jelen feltételek megszegése, vagy annak gyanúja esetén 
+	Felhasználót a szolgáltatásból felszólítás nélkül véglegesen kizárja.<br />
+	&nbsp;<br />
+	Adatvédelmi nyilatkozat:<br />
+	Szolgáltató vállalja és kötelezi magát, hogy a birtokába jutott valamennyi, 
+	Felhasználóra vonatkozó adatot a mindenkori törvényes előírások betartásával 
+	kezeli, azokat harmadik fél számára nem adja át, és kizárólag a szolgáltatás 
+	működtetéséhez szükséges elengedhetetlen mértékben használja fel.<br />
+	&nbsp;<br />    
+	&nbsp;<br />
+</p>
+<p class="main">
+<center>
+	Támogatóink:<br />
+	<b><i>
+	b6.hu - sryer.com - yingu.hu - b6shop.hu - Plastdurker Kft. - OPL-Handels GmbH.
+	</i></b><br />
+	&nbsp;<br />
+	Az alapítók:<br />
+	<b><i>A finom emberek társasága (Feynman Corporation)</i></b><br />
+	és az <br />
+	<b><i>Egykő-kör (Einstein Circle)</i></b><br />
+	&nbsp;<br />
+	<p align="center">
+	<img border="0" src="dataMti00Main/mti_hirfelhasznalo.jpg" width="200" height="141"></p>           
+	&nbsp;<br />
+	&nbsp;<br />
+	<hr><hr>
+	&nbsp;<br />
+</center>
+</p>
+</div>
+
+</div>
+</div></body> 
+ </html> 
+ 
