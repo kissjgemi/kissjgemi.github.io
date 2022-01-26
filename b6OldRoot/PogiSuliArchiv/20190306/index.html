@@ -1,66 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="doboz.css">
-    <title>Flexbox</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Képgaléria</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <fieldset>
-        <legend>container0: Kiindulási állapot</legend>
-
-        <div id="container0">
-            <div id="box1" class="box">Egy</div>
-            <div id="box2" class="box">Kettő</div>
-            <div id="box3" class="box">Három</div>
-            <div id="box4" class="box">Négy</div>
-            <div id="box5" class="box">Öt</div>
-            <div id="box6" class="box">Hat</div>
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <legend>container1: flex-flow: row wrap;</legend>
-
-        <div id="container1">
-            <div id="box11" class="box">Egy</div>
-            <div id="box12" class="box">Kettő</div>
-            <div id="box13" class="box">Három</div>
-            <div id="box14" class="box">Négy</div>
-            <div id="box15" class="box">Öt</div>
-            <div id="box16" class="box">Hat</div>
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <legend>container2: flex-flow: column wrap;</legend>
-
-        <div id="container2">
-            <div id="box21" class="box">Egy</div>
-            <div id="box22" class="box">Kettő</div>
-            <div id="box23" class="box">Három</div>
-            <div id="box24" class="box">Négy</div>
-            <div id="box25" class="box">Öt</div>
-            <div id="box26" class="box">Hat</div>
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <legend>container3: align-content: space-around;</legend>
-
-        <div id="container3">
-            <div id="box31" class="box">Egy</div>
-            <div id="box32" class="box">Kettő</div>
-            <div id="box33" class="box">Három</div>
-            <div id="box34" class="box">Négy</div>
-            <div id="box35" class="box">Öt</div>
-            <div id="box36" class="box">Hat</div>
-        </div>
-    </fieldset>
+<div id="container">
+  <h1>Képgaléria</h1>
+  <div id="gallery">
+    <figure class="image">
+      <img src="imgs/kep1.jpg">
+      <figcaption>Stefan Ringler</figcaption>
+    </figure>
+    <figure class="image">
+      <img src="imgs/kep2.jpg">
+      <figcaption>Rob Bye</figcaption>
+    </figure>
+    <figure class="image wide">
+      <img src="imgs/kep3.jpg">
+      <figcaption>Rob Bye</figcaption>
+    </figure>
+    <figure class="image">
+      <img src="imgs/kep4.jpg">
+      <figcaption>Dominik Schröder</figcaption>
+    </figure>
+    <figure class="image">
+      <img src="imgs/kep5.jpg">
+      <figcaption>Dominik Schröder</figcaption>
+    </figure>
+    <figure class="image">
+      <img src="imgs/kep6.jpg">
+      <figcaption>Alyssa Smith</figcaption>
+    </figure>
+  </div>
+</div>
 </body>
-
 </html>
