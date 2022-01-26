@@ -38,7 +38,7 @@ for ($row = 1; $row < 17; $row++)
 		echo "- jumpTo - " . $jumpTo . "<br />";		
 		
 fwrite( $targetfile , '   <tr>' . "\n");
-fwrite( $targetfile , '     <td onclick="window.location=\'#'. $jumpTo . '\'; hide(\'main_menu\'); show(\'menubutton\'); hide(\'menuclosebutton\')" align="left">' . "\n");
+fwrite( $targetfile , '     <td onclick="window.location=\'#'. $jumpTo . '\'; hide(\'main_menu\'); show(\'menubutton\'); hide(\'menuclosebutton\')" align="left" colspan="2">' . "\n");
 
 		fwrite( $targetfile , '   <div id="menu_' . $title . '" style="background-position: 50%;">' . "\n");
 		fwrite( $targetfile , '   <h2>&nbsp;<font color="#FFFFFF">' . "\n");

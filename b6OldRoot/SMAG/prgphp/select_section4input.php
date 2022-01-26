@@ -4,6 +4,11 @@ echo '<pre>';
 print_r($menu_titles); 
 echo '</pre>'; 
 	
+
+fwrite( $targetfile , '   <br />' . "\n" );
+fwrite( $targetfile , '   <hr />' . "\n" );
+fwrite( $targetfile , '   <br />' . "\n\n" );
+
 fwrite( $targetfile , '<select name="sectionlist" style="margin-left: 10%;">' . "\n" );
 	for ($row = 1; $row < $menu_titles["number_of_section"] ; $row++) {
 		$dummy = substr ( ('0' . $row) , -2 );

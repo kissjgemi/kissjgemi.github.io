@@ -1,1 +1,1460 @@
+<!DOCTYPE html>
 
+<html lang="hu">
+<head>
+<title>MAGazin 2016.01.09</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="content-language" content="hu" /> 
+  <meta name="author" content="Kiss J. Gábor" />
+  <meta name="designer" content="Kiss J. Gábor"/>
+  <meta name="copyright" content="Copyright @ 2015 sryer.com"/>
+  <meta name="keywords" content="magazin, napilap, újság, média, mti, szórakozás, életmód, tájékoztatás" />
+  <meta name="description" content="tudományosan szórakoztató magazin" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow"/>
+  <meta name="MSNBOT" content="INDEX,FOLLOW" /> 
+  <meta name="ROBOTS" content="ALL" /> 
+  <meta http-equiv="date" content="Fri, 11 Dec 2015 09:40:18 GMT" />
+  <meta http-equiv="last-modified" content="Sat, 09 Jan 2016 10:10:33 GMT" />
+  <meta name="revisit" content="3 day" />
+  <link rel="icon" type="image/x-icon" href="http://magazin.sryer.com/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="http://magazin.sryer.com/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="aMAGazinStyles/styles.css" />
+  <script type="text/javascript" src="prgjs/jscript.js">
+  </script>
+  <link rel="made" title="e-Mail" href="sry@sryer.com" />
+</head> 
+ <body> 
+ <div id="buttoncontainer">
+<div id="homebutton">
+<a href="#s00" onclick="hide('main_menu'); show('menubutton'); hide('menuclosebutton')"><img src="aMAGazinImages/buttons/home_y.png"></a>
+</div>
+<div id="menubutton">
+<a onclick="show('main_menu'); hide('menubutton'); show('menuclosebutton')"><img src="aMAGazinImages/buttons/menu_y.png"></a>
+</div>
+<div id="menuclosebutton">
+<a onclick="hide('main_menu'); show('menubutton'); hide('menuclosebutton')"><img src="aMAGazinImages/buttons/menu_y_close.png"></a>
+</div>
+</div>
+ <div id="main_menu" class="menu">
+ <table border="0" cellpadding="5" cellspacing="0" width="100%">
+   <tr>
+     <td onclick="window.location='#s01'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left" colspan="2">
+   <div id="menu_section1" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Időjárás &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s01_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Az Országos Meteorológiai Szolgálat előrejelzése &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s02'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left" colspan="2">
+   <div id="menu_section2" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Közlekedés &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s02_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Kamionstop a berzencei határátkelőnél  &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s03'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left" colspan="2">
+   <div id="menu_section3" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Szerencsejáték &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s03_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Nyerőszámok - az utolsó öt hét húzásai és a nyeremények &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s04'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left" colspan="2">
+   <div id="menu_section4" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Sport &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s04_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> HÉTVÉGI SPORTMŰSOR  &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s05'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left" colspan="2">
+   <div id="menu_section5" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Film, színház, muzsika &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s05_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Tizenegy versenyző áll színpadra a Fölszállott a páva gyermekdöntőjében pénteken &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s06'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left" colspan="2">
+   <div id="menu_section6" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Hírek, tudósítások &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s06_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Kétszer is járt Magyarországon a támadások egyik szervezője  &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s06_2'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Illegális bevándorlás - Orbán: európai védvonalat kell kiépíteni Görögország északi határánál  &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s07'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left" colspan="2">
+   <div id="menu_section7" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Gazdaság &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s07_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> BMI - Londoni elemzők: már mutatkoznak az olajárzuhanás jelei az orosz gazdaságban  &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s07_2'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> Csökkent a német ipari termelés novemberben  &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s07_3'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> A Synergon kérte részvényeinek törlését a BÉT-ről  &nbsp;</b></td>
+   <tr>
+     <td onclick="window.location='#s16'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left" colspan="2">
+   <div id="menu_section16" style="background-position: 50%;">
+   <h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Esti mesélő &nbsp;</span>
+   </font> </h2>
+   </div>
+     </td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s16_1'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> A sárkány leánya I. rész (népmese) &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s16_2'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="left"">
+   <b>> A sárkány leánya II. rész (népmese) &nbsp;</b></td>
+   </tr>
+   <tr>
+   <td onclick="window.location='#s99'; hide('main_menu'); show('menubutton'); hide('menuclosebutton')" align="center" height="40" valign="middle" width="50%">
+   <h5>&nbsp;  Impresszum &nbsp;</h5></td>
+   </tr>
+   </table>
+   </div>
+<div id="page-wrap">
+   <br />
+   <hr />
+
+
+<a name="s00">&nbsp;</a>
+
+	<div id="section0">
+	<div class="front-header">
+		<div id="iconmenu">
+		<center>
+	<a href="#s01"><img src="aMAGazinImages/buttons/forecast.png" alt="időjárás" title="időjárás"></a>
+	<a href="#s02"><img src="aMAGazinImages/buttons/streetinfo.png" alt="közlekedés" title="közlekedés"></a>
+	<a href="#s03"><img src="aMAGazinImages/buttons/luck.png" alt="totó-lottó" title="totó-lottó"></a>
+		</center> </div> 
+	<img src="aMAGazinImages/header/yinguInTheSky2.gif" alt="MAGazin" title="MAGazin">
+	<h2>&nbsp;<font color="#FFFFFF"> <span style="background-color: #000000;">                  
+ </font></h2> </div></div>
+    <br />
+   <hr />
+
+<a name="s01">&nbsp;</a>
+
+   <div id="section1" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Időjárás &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s01_1">&nbsp;</a>
+   	<h3>Az Országos Meteorológiai Szolgálat előrejelzése</h3>
+
+<div class="parabellum"><p class="onecolumn">
+<b><i>2016.01.08.</i> (péntek) </b><br />
+ Eleinte erősen felhős és derült területek egyaránt lesznek, főként keleten és a Dél-Dunántúlon lehetnek tartósan felhős tájak. Északkeleten néhol hószállingózás előfordulhat. Késő délutántól délnyugat felől erősen megnövekszik, megvastagszik a felhőzet, és egyre többfelé várható eső, délnyugaton esetleg néhol ónos eső, északkeleten havazás, havas eső, ónos eső is lehet. Többnyire mérsékelt marad a légmozgás. Éjszaka főként északon, északkeleten többfelé köd képződik, amely néhol tartósabban megmaradhat. A hőmérséklet kora délután -2 és +7, késő este +1 és -4 fok között alakul.
+</p>
+<div id="more-weather"><a onclick="show('less-weather'); hide('more-weather')" >
+<p class="showline">Mutass többet!</p></a>
+</div>
+<div id="less-weather" style="display: none; background-color: lightgray"><a onclick="show('more-weather'); hide('less-weather')" >
+<p class="showline">Rejtsd el!</p></a>
+<p class="onecolumn">
+<b><i>2016.01.09.</i> (szombat) </b><br />
+ Erősen felhős vagy borult lesz az ég, többfelé valószínű eső, északkeleten havazás, havas eső, ónos eső is lehet. Többnyire mérsékelt marad a légmozgás. A legalacsonyabb éjszakai hőmérséklet általában +1 és -5 fok között várható, de északkeleten néhol hidegebb is lehet. A legmagasabb nappali hőmérséklet -1 és +5 fok között alakul.
+</p>
+<p class="onecolumn">
+<b><i>2016.01.10.</i> (vasárnap) </b><br />
+ Nagyrészt borult lesz az ég, csak az ország déli részén vékonyodhat el átmenetileg a felhőzet. Az északi országrészben többfelé tartósan párás marad a levegő. Országos, kiadós esőre számíthatunk, az Északi-középhegységben hajnalig ónos eső is előfordulhat. Délutántól átmenetileg csökken a csapadék területi kiterjedése. Kezdetben a délkeleti, majd a délnyugati szél időszakosan megélénkül. A legalacsonyabb éjszakai hőmérséklet még szombat este áll be, amikor -1 és +4 fokra számíthatunk, hajnalra egy-két fokot emelkedik a hőmérséklet. A legmagasabb nappali hőmérséklet általában 1 és 6, az ország déli, délkeleti részén néhol 7 és 10 fok között alakul.
+</p>
+<p class="onecolumn">
+<b><i>2016.01.11.</i> (hétfő) </b><br />
+ Erősen felhős, vagy borult ég lesz jellemző, csak rövid időszakokra szakadozhat fel a felhőzet. Délelőttig többfelé párás lesz a levegő, majd a megerősödő szél megszünteti azt. A reggeli csapadék után napközben kevesebb helyen, késő délutántól ismét sokfelé valószínű nagy mennyiségű eső, intenzív beágyazott záporok, sőt ebben az időszakban egy-egy zivatar sem kizárt. A hajnalban még országszerte gyenge lesz a légmozgás, napközben azonban nagy területen megerősödik, sőt este átmenetileg több helyen viharossá fokozódik a déli, délnyugati szél. A legalacsonyabb éjszakai hőmérséklet -2 és +3, a legmagasabb nappali hőmérséklet a Tatabánya-Siófok-Nyíregyháza vonaltól északra 3 és 9, másutt 9 és 14 fok között alakul.
+</p>
+<p class="onecolumn">
+<b><i>2016.01.12.</i> (kedd) </b><br />
+ Eleinte borult lesz az ég, majd egyre nagyobb területen felszakadozik, csökken a felhőzet. Délelőtt fokozatosan délkelet felé húzódik, majd az összefüggő csapadékrendszer elhagyja az országot, később már csak néhol lehet gyenge zápor. Kezdetben még viharos lökésekkel kísért nyugati, délnyugati szél napközben csak kissé mérséklődik. A legalacsonyabb éjszakai hőmérséklet 0 és +7, a legmagasabb nappali hőmérséklet 6 és 12 fok között alakul.
+</p>
+<p class="onecolumn">
+<b><i>2016.01.13.</i> (szerda) </b><br />
+ Változóan felhős lesz az ég, több-kevesebb napsütéssel, a felhősebb körzetek inkább a Dunántúlon lehetnek. Legfeljebb néhol lehet kisebb eső, zápor, a hegyekben hózápor. Az északnyugati szél a főváros környékén sokfelé megerősödik, másutt mérsékeltebb lesz a légmozgás. A legalacsonyabb éjszakai hőmérséklet -6 és 0, a legmagasabb nappali hőmérséklet 3 és 8 fok között alakul.
+</p>
+<p class="onecolumn">
+<b><i>2016.01.14.</i> (csütörtök) </b><br />
+ Kezdetben gyengén felhős lesz az ég, majd nyugat felől megnövekszik a felhőzet. Estig nem valószínű csapadék, estétől már több helyen számíthatunk esőre, havas esőre, északkeleten havazásra.  A déli, délnyugati szél megélénkül.  A legalacsonyabb éjszakai hőmérséklet -9 és -2, a legmagasabb nappali hőmérséklet 1 és 7 fok között alakul.
+</p>
+</div>
+<p class="onecolumn">
+<br /></p><p class="headfoot" align="right">Országos Meteorológiai Szolgálat 2016.01.08.</p></div>
+   <hr /><hr /><br />
+
+<a name="s02">&nbsp;</a>
+
+   <div id="section2" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Közlekedés &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s02_1">&nbsp;</a>
+   	<h3>Kamionstop a berzencei határátkelőnél </h3>
+
+<div class="parabellum">
+<p class="main">
+Kaposvár, 2016. január 6., szerda (MTI) - Havazás miatt a horvát hatóságok lezárták a határt a berzencei átkelőnél a 7,5 tonna megengedett legnagyobb össztömeget meghaladó tehergépjárművek számára - közölte a Somogy Megyei Rendőr-főkapitányság az MTI-vel szerda éjjel. 
+</p>
+<div id="more-article1452144242"><a onclick="show('less-article1452144242'); hide('more-article1452144242')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452144242" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452144242'); show('more-article1452144242')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+ A rendkívüli időjárásra való tekintettel szerda 21 óra 30 perctől nem engedik be Berzencénél Horvátországba a 7,5 tonna megengedett legnagyobb össztömeget meghaladó tehergépjárműveket.<br />A személygépkocsi-forgalom továbbra is zavartalan, azonban minden járművön ellenőrzik a téli gumik használatát.<br /> 
+</p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 6., szerda 23:34 
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr /><br />
+
+<a name="s03">&nbsp;</a>
+
+   <div id="section3" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Szerencsejáték &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s03_1">&nbsp;</a>
+   	<h3>Nyerőszámok - az utolsó öt hét húzásai és a nyeremények</h3>
+
+<div class="parabellum">
+<p class="onecolumn"><b> Ötös lottó : </b><br />
+27,
+30,
+35,
+56,
+68</p>
+<div id="more-lotto5"><a onclick="show('less-lotto5'); hide('more-lotto5')" >
+<p class="showline">Mutass többet!</p></a>
+</div>
+<div id="less-lotto5" style="display: none; background-color: lightgray"><a onclick="show('more-lotto5'); hide('less-lotto5')" >
+<p class="showline">Rejtsd el!</p></a>
+<p class="onecolumn">
+<u>A 2015.év 53.hét ( 2016.01.02. )</u><br />
+<i>- eredményei: 
+27|
+30|
+35|
+56|
+68<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1330075 Ft ( 
+49 db );</span> 
+<span style=" white-space: nowrap;">3 találat 19105 Ft ( 
+3612 db );</span> 
+<span style=" white-space: nowrap;">2 találat 1345 Ft ( 
+99691 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 52.hét ( 2015.12.26. )</u><br />
+<i>- eredményei: 
+3|
+9|
+38|
+42|
+85<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 943155 Ft ( 
+60 db );</span> 
+<span style=" white-space: nowrap;">3 találat 13760 Ft ( 
+4354 db );</span> 
+<span style=" white-space: nowrap;">2 találat 1055 Ft ( 
+110681 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 51.hét ( 2015.12.19. )</u><br />
+<i>- eredményei: 
+15|
+21|
+78|
+87|
+89<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 2873360 Ft ( 
+21 db );</span> 
+<span style=" white-space: nowrap;">3 találat 29580 Ft ( 
+2160 db );</span> 
+<span style=" white-space: nowrap;">2 találat 1945 Ft ( 
+76293 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 50.hét ( 2015.12.12. )</u><br />
+<i>- eredményei: 
+34|
+38|
+45|
+62|
+90<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 2477585 Ft ( 
+24 db );</span> 
+<span style=" white-space: nowrap;">3 találat 26835 Ft ( 
+2346 db );</span> 
+<span style=" white-space: nowrap;">2 találat 1590 Ft ( 
+77042 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 49.hét ( 2015.12.05. )</u><br />
+<i>- eredményei: 
+22|
+24|
+35|
+63|
+68<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1099160 Ft ( 
+53 db );</span> 
+<span style=" white-space: nowrap;">3 találat 16190 Ft ( 
+3810 db );</span> 
+<span style=" white-space: nowrap;">2 találat 1245 Ft ( 
+96456 db ).</span> 
+</i></p>
+</p></div>
+<p class="onecolumn"><b> Hatos lottó : </b><br />
+1,
+2,
+23,
+35,
+39,
+42</p>
+<div id="more-lotto6"><a onclick="show('less-lotto6'); hide('more-lotto6')" >
+<p class="showline">Mutass többet!</p></a>
+</div>
+<div id="less-lotto6" style="display: none; background-color: lightgray"><a onclick="show('more-lotto6'); hide('less-lotto6')" >
+<p class="showline">Rejtsd el!</p></a>
+<p class="onecolumn">
+<u>A 2015.év 53.hét ( 2016.01.03. )</u><br />
+<i>- eredményei: 
+1|
+2|
+23|
+35|
+39|
+42<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 739990 Ft ( 
+22 db );</span> 
+<span style=" white-space: nowrap;">4 találat 9880 Ft ( 
+1648 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1855 Ft ( 
+30703 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 52.hét ( 2015.12.27. )</u><br />
+<i>- eredményei: 
+2|
+3|
+4|
+16|
+17|
+34<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 570245 Ft ( 
+25 db );</span> 
+<span style=" white-space: nowrap;">4 találat 9250 Ft ( 
+1541 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1440 Ft ( 
+34639 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 51.hét ( 2015.12.20. )</u><br />
+<i>- eredményei: 
+5|
+7|
+10|
+11|
+17|
+21<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 150930 Ft ( 
+99 db );</span> 
+<span style=" white-space: nowrap;">4 találat 4240 Ft ( 
+3522 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1000 Ft ( 
+52355 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 50.hét ( 2015.12.13. )</u><br />
+<i>- eredményei: 
+1|
+7|
+9|
+20|
+28|
+37<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 68097805 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 360305 Ft ( 
+42 db );</span> 
+<span style=" white-space: nowrap;">4 találat 6400 Ft ( 
+2364 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1305 Ft ( 
+40514 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 49.hét ( 2015.12.06. )</u><br />
+<i>- eredményei: 
+2|
+10|
+12|
+14|
+22|
+24<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 429254115 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 335410 Ft ( 
+49 db );</span> 
+<span style=" white-space: nowrap;">4 találat 6015 Ft ( 
+2733 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1360 Ft ( 
+42348 db ).</span> 
+</i></p>
+</p></div>
+<p class="onecolumn"><b> Skandináv lottó : </b><br />
+<i>- gépi húzás: 
+6,
+22,
+23,
+24,
+26,
+27,
+35<br />
+<i>- kézi húzás: 
+1,
+9,
+11,
+24,
+29,
+30,
+34</p>
+<div id="more-lotto7"><a onclick="show('less-lotto7'); hide('more-lotto7')" >
+<p class="showline">Mutass többet!</p></a>
+</div>
+<div id="less-lotto7" style="display: none; background-color: lightgray"><a onclick="show('more-lotto7'); hide('less-lotto7')" >
+<p class="showline">Rejtsd el!</p></a>
+<p class="onecolumn">
+<u>A 2016.év 1.hét ( 2016.01.06. )</u><br />
+<i>- gépi húzás: 
+6|
+22|
+23|
+24|
+26|
+27|
+35<br />
+<i>- kézi húzás: 
+1|
+9|
+11|
+24|
+29|
+30|
+34<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">7 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">6 találat 322880 Ft ( 
+56 db );</span> 
+<span style=" white-space: nowrap;">5 találat 8020 Ft ( 
+2255 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1430 Ft ( 
+37093 db );</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 53.hét ( 2015.12.30. )</u><br />
+<i>- gépi húzás: 
+6|
+8|
+11|
+17|
+25|
+29|
+32<br />
+<i>- kézi húzás: 
+2|
+14|
+18|
+26|
+29|
+32|
+34<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">7 találat 43433880 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">6 találat 200155 Ft ( 
+98 db );</span> 
+<span style=" white-space: nowrap;">5 találat 5305 Ft ( 
+3696 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1150 Ft ( 
+49920 db );</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 52.hét ( 2015.12.23. )</u><br />
+<i>- gépi húzás: 
+14|
+19|
+22|
+23|
+24|
+28|
+29<br />
+<i>- kézi húzás: 
+2|
+5|
+11|
+18|
+26|
+28|
+29<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">7 találat 21879820 Ft ( 
+2 db );</span> 
+<span style=" white-space: nowrap;">6 találat 232500 Ft ( 
+85 db );</span> 
+<span style=" white-space: nowrap;">5 találat 5850 Ft ( 
+3379 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1120 Ft ( 
+51650 db );</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 51.hét ( 2015.12.16. )</u><br />
+<i>- gépi húzás: 
+1|
+8|
+9|
+11|
+16|
+17|
+31<br />
+<i>- kézi húzás: 
+6|
+12|
+17|
+19|
+23|
+29|
+30<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">7 találat 366392040 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">6 találat 167310 Ft ( 
+136 db );</span> 
+<span style=" white-space: nowrap;">5 találat 5770 Ft ( 
+3943 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1120 Ft ( 
+59596 db );</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 50.hét ( 2015.12.09. )</u><br />
+<i>- gépi húzás: 
+1|
+6|
+9|
+13|
+21|
+32|
+33<br />
+<i>- kézi húzás: 
+3|
+10|
+12|
+22|
+23|
+32|
+33<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">7 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">6 találat 174745 Ft ( 
+127 db );</span> 
+<span style=" white-space: nowrap;">5 találat 4610 Ft ( 
+4816 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1030 Ft ( 
+63199 db );</span> 
+</i></p>
+</p></div>
+<p class="onecolumn"><b> Totó 13+1 : </b><br />
+2,
+1,
+X,
+1,
+X,
+2,
+2,
+X,
+2,
+1,
+1,
+2,
+2,
++1,
+</p>
+<div id="more-toto"><a onclick="show('less-toto'); hide('more-toto')" >
+<p class="showline">Mutass többet!</p></a>
+</div>
+<div id="less-toto" style="display: none; background-color: lightgray"><a onclick="show('more-toto'); hide('less-toto')" >
+<p class="showline">Rejtsd el!</p></a>
+<p class="onecolumn">
+<u>A 2016.év 1.hét 1.forduló</u><br />
+<i>- eredményei: 
+2|
+1|
+X|
+1|
+X|
+2|
+2|
+X|
+2|
+1|
+1|
+2|
+2|
++1|
+<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">13+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">13 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">12 találat 137160 Ft ( 
+5 db );</span> 
+<span style=" white-space: nowrap;">11 találat 8575 Ft ( 
+80 db );</span> 
+<span style=" white-space: nowrap;">10 találat 1755 Ft ( 
+749 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 53.hét 2.forduló</u><br />
+<i>- eredményei: 
+1|
+X|
+1|
+1|
+1|
+1|
+2|
+2|
+X|
+X|
+1|
+1|
+2|
++X|
+<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">13+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">13 találat 1369835 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">12 találat 68490 Ft ( 
+15 db );</span> 
+<span style=" white-space: nowrap;">11 találat 3680 Ft ( 
+279 db );</span> 
+<span style=" white-space: nowrap;">10 találat 810 Ft ( 
+2426 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 53.hét 1.forduló</u><br />
+<i>- eredményei: 
+X|
+2|
+1|
+X|
+1|
+2|
+1|
+2|
+1|
+X|
+2|
+1|
+1|
++2|
+<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">13+1 találat 5746795 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">13 találat 262705 Ft ( 
+3 db );</span> 
+<span style=" white-space: nowrap;">12 találat 10650 Ft ( 
+74 db );</span> 
+<span style=" white-space: nowrap;">11 találat 820 Ft ( 
+963 db );</span> 
+<span style=" white-space: nowrap;">10 találat 260 Ft ( 
+5772 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 52.hét 1.forduló</u><br />
+<i>- eredményei: 
+1|
+X|
+X|
+X|
+1|
+1|
+1|
+2|
+1|
+1|
+1|
+1|
+1|
++1|
+<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">13+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">13 találat 660335 Ft ( 
+2 db );</span> 
+<span style=" white-space: nowrap;">12 találat 21075 Ft ( 
+47 db );</span> 
+<span style=" white-space: nowrap;">11 találat 1630 Ft ( 
+608 db );</span> 
+<span style=" white-space: nowrap;">10 találat 470 Ft ( 
+4046 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 51.hét 2.forduló</u><br />
+<i>- eredményei: 
+2|
+1|
+2|
+2|
+1|
+1|
+1|
+2|
+1|
+1|
+2|
+2|
+2|
++2|
+<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">13+1 találat 11273435 Ft ( 
+2 db );</span> 
+<span style=" white-space: nowrap;">13 találat 690650 Ft ( 
+10 db );</span> 
+<span style=" white-space: nowrap;">12 találat 5315 Ft ( 
+340 db );</span> 
+<span style=" white-space: nowrap;">11 találat 440 Ft ( 
+4115 db );</span> 
+<span style=" white-space: nowrap;">10 találat 165 Ft ( 
+20886 db ).</span> 
+</i></p>
+</p></div>
+<p class="onecolumn"><b> Góltotó : </b><br />
+2:+,
+2:1,
++:+,
++:0,
+0:0,
+0:1,
+1:+,
+2:2,
+0:1,
+2:1,
++:2,
+0:2,
+0:1,
++2:1</p>
+<div id="more-goltoto"><a onclick="show('less-goltoto'); hide('more-goltoto')" >
+<p class="showline">Mutass többet!</p></a>
+</div>
+<div id="less-goltoto" style="display: none; background-color: lightgray"><a onclick="show('more-goltoto'); hide('less-goltoto')" >
+<p class="showline">Rejtsd el!</p></a>
+<p class="onecolumn">
+<u>A 2016.év 1.hét 1.forduló</u><br />
+<i>- eredményei: 
+2:+|
+2:1|
++:+|
++:0|
+0:0|
+0:1|
+1:+|
+2:2|
+0:1|
+2:1|
++:2|
+0:2|
+0:1|
++2:1<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 13805 Ft ( 
+4 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 53.hét 2.forduló</u><br />
+<i>- eredményei: 
+1:0|
+0:0|
+2:1|
+1:0|
++:1|
+2:1|
+1:2|
+0:+|
+1:1|
+0:0|
+1:0|
+2:0|
+1:2|
++2:2<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 70470 Ft ( 
+1 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 53.hét 1.forduló</u><br />
+<i>- eredményei: 
+0:0|
+0:1|
++:1|
+2:2|
++:1|
+0:1|
+2:0|
+0:2|
+2:0|
+0:0|
+0:1|
++:0|
++:1|
++0:1<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 23665 Ft ( 
+9 db );</span> 
+<span style=" white-space: nowrap;">4 találat 600 Ft ( 
+108 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 52.hét 1.forduló</u><br />
+<i>- eredményei: 
+1:0|
+0:0|
+1:1|
+2:2|
++:1|
+1:0|
++:0|
+0:1|
+2:1|
+2:0|
++:0|
+2:1|
++:0|
+++:0<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 10785 Ft ( 
+6 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A 2015.év 51.hét 2.forduló</u><br />
+<i>- eredményei: 
+0:1|
+2:1|
+0:1|
+0:1|
++:1|
+2:0|
++:2|
+2:+|
+2:0|
+2:0|
+1:+|
+0:1|
+2:+|
++1:2<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 12765 Ft ( 
+6 db ).</span> 
+</i></p>
+</p></div>
+<br />
+<br /></p><p class="headfoot" align="right">A Szerencsejáték Zrt. tájékoztatása alapján 2016.01.07., csütörtök  06:20 </p></div>
+   <hr /><hr /><br />
+
+<a name="s04">&nbsp;</a>
+
+   <div id="section4" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Sport &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s04_1">&nbsp;</a>
+   	<h3>HÉTVÉGI SPORTMŰSOR </h3>
+
+<div class="parabellum">
+<p class="main">
+Budapest, 2016. január 8., péntek (MTI) - A fontosabb hétvégi hazai sportesemények: 
+</p>
+<div id="more-article1452240153"><a onclick="show('less-article1452240153'); hide('more-article1452240153')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452240153" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452240153'); show('more-article1452240153')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+ <br />január 9., szombat:<br />-------------------<br />Jégkorong<br />Osztrák liga (EBEL):<br />Fehérvár AV19-HCB Südtirol (olasz) 19.15<br /><br />Kézilabda<br />Női NB I:<br />Fehérvár KC-Budaörs 17.00<br />Női BL, középdöntő, 1. forduló:<br />2. csoport:<br />Győri Audi ETO KC-Buducnost Podgorica (montenegrói) 16.00<br /><br />Kosárlabda<br />Férfi NB I:<br />Atomerőmű SE-MAFC 18.00<br />MARSO Nyíregyháza-Zalakerámia ZTE KK 18.00<br />PVSK-PANNONPOWER - JP-TOP COP Jászberény 18.00<br />Sopron KC-Kaposvári KK 18.00<br />TLI-Alba Fehérvár - Naturtex-SZTE-Szedeák 19.00<br />Női NB I:<br />ELTE-BEAC Újbuda - UNIQA Sopron 16.00<br />Vasas Akadémia - PEAC-Pécs 17.00<br />CMB CARGO UNI GYŐR-ZTE Női Kosárlabda Klub 18.00<br />PINKK-Pécsi 424 - Atomerőmű KSC Szekszárd 18.00<br /><br />Labdarúgás<br />11. Sípmester Fesztivál, Kaposvár 8.00<br /><br />Röplabda<br />Férfi NB I:<br />PTE-PEAC C-DOKI - DEAC 16.00<br />Dág KSE-Dunaferr SE 16.00<br />MAFC-BME - FINO Kaposvár 16.00<br />Női NB I:<br />UTE - MTK-Budapest 17.00<br />Jászberényi RK-Budaörsi DSE 18.30<br /><br />Sportlövészet<br />Légfegyveres Európa-bajnoki válogató, Száhalombatta 8.00<br /><br />január 10., vasárnap:<br />---------------------<br />Jégkorong<br />MOL Liga:<br />Fehérvár AV19-DVTK Jegesmedvék 14.00<br />Dunaújvárosi Acélbikák-UTE 18.15<br />Osztrák liga (EBEL):<br />Fehérvár AV19-Dornbirn (osztrák) 17.30<br /><br />Kerékpár<br />Terepkerékpár ob, Sportliget (X. Hangár utca 10.) 10.45<br /><br />Kézilabda<br />Női EHF Kupa, nyolcaddöntő, 1. mérkőzés:<br />Dunaújvárosi Kohász KA-Siófok KC 16.00<br />Férfi felkészülési mérkőzés:<br />Magyarország-Szerbia, Kecskemét 17.30 (+FOTÓ)<br /><br />Lacrosse<br />New Year\\\'s Cup, valamint a Magyarországon sorra kerülő nyári Európa-bajnokság sorsolása, Vasas Sporttelep<br /><br />Labdarúgás<br />11. Sípmester Fesztivál, Kaposvár 8.00<br /><br />Röplabda<br />Férfi NB I:<br />Szolnoki Főiskola RKSI-Kecskeméti RC 16.00<br />Sümegi RE-Pénzűgyőr SE 18.00<br />Női NB I:<br />Linamar-Békéscsaba - Albrecht MVSC MVSI 16.00<br />Fatum-Nyíregyháza - Pincelakat RÖPKE SE 16.00<br />TEVA Gödöllői RC-Vasas Óbuda 18.00<br /><br />Sportlövészet<br />Légfegyveres Európa-bajnoki válogató, Száhalombatta 8.00<br /><br />Az MTI 24 órán keresztül hívható központi ügyeleti telefonszáma: (36-1) 441-9350<br /> 
+</p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 8., péntek 8:51 
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr /><br />
+
+<a name="s05">&nbsp;</a>
+
+   <div id="section5" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Film, színház, muzsika &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s05_1">&nbsp;</a>
+   	<h3>Tizenegy versenyző áll színpadra a Fölszállott a páva gyermekdöntőjében pénteken</h3>
+
+
+<div class="parabellum">
+	<p class="onecolumn" > 
+Budapest, 2015. december 18., péntek (MTI) - A zsűrielnök Sebő Ferenc jóvoltából tíz helyett 
+tizenegy versenyző áll színpadra pénteken a Fölszállott a páva gyermekdöntőjében, amelyre 
+különleges fináléval készülnek a szereplők - közölték az MTI-vel a szervezők.<br />
+<br />
+    Az MTVA és a Hagyományok Háza közös népzenei és néptáncos tehetségkutatójában négy kategóriában mutathatták meg tudásukat a gyerekek: énekes szólisták és énekegyüttesek, hangszeres szólisták és zenekarok, szóló és páros táncosok, valamint táncegyüttesek indulhattak a megmérettetésen.<br />
+    A tévénézők körében népszerű műsor múlt pénteki második középdöntőjét egymillióan látták, ezzel a közszolgálati adók 4. legnézettebb programja volt az MTVA szerint. A versenyből csak öt produkció juthatott volna tovább, azonban Sebő Ferenc a magával ragadó előadások magas színvonala miatt úgy döntött, hogy a gyimesi énekstílust megszólaltató kosteleki Vrencsán Anitának és a Haraszti-ikreknek is helye van a döntőben.<br />
+    "Mindkét produkció olyan magas színvonalú, és ugyanakkor a legtermészetesebb, minden sallangtól mentes megnyilatkozás volt, hogy a zsűri nem tehette meg - szaktekintélye megnyirbálása nélkül -, hogy bármelyiküket is elutasítsa. Már csak azért sem, mert a műsor nézői tanúi voltak ennek a kitűnő teljesítménynek" - érvelt Sebő Ferenc. <br />
+    A Duna televízióban látható döntő szereplői lesznek szóló és páros tánc kategóriában: Busai Bori és Mahovics Tamás (Jászberény és Békés), Hoksz Attila (Dombrád), valamint az erdélyi Csíkmadarasból Antal Adorján. A táncegyüttes kategóriában a szekszárdi Bartian Gyermekcsoport, a deszki D. Martin György AMI Borbolya csoport és Székesfehérvárról az Alba Regia AMI Pulutyka csoportja lép fel. Az énekes szólisták és énekegyüttesek kategóriából a ráckevei Gál Tibor, a kosteleki Vrencsán Anita és a bátonyterenyei Haraszti-ikrek versenyeznek. A hangszeres szólisták mezőnyéből pedig Horváth Zalán Levente (Zselickisfalud) és ifj. Ürmös Sándor (Budapest) lép színpadra.<br />
+    A pénteki műsorban kiderül, hogy kit ítél legjobbnak a zsűri az idei versengésben, és a közönség is megszavazza a Felszállott a páva gyermekkiadásának győztesét. <br />
+    A fináléba a szervezők a legemlékezetesebb produkciókat is visszahívták, továbbá a Csík Zenekar is fellép Fitos Dezső társulatával kiegészülve.<br />
+<br /></p>   
+     <p class="headfoot" style="text-align: right">MTI 2015. december 18., péntek 5:00</p>    
+</div>
+   <hr /><hr /><br />
+
+<a name="s06">&nbsp;</a>
+
+   <div id="section6" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Hírek, tudósítások &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s06_1">&nbsp;</a>
+   	<h3>Kétszer is járt Magyarországon a támadások egyik szervezője </h3>
+
+<div class="parabellum">
+<p class="main">
+ Budapest/Párizs, 2016. január 5., kedd (MTI) - Kétszer is megjárta Belgiumból Magyarországot szeptember folyamán Salah Abdeslam, a november 13-i párizsi terrortámadások egyetlen életben maradt feltételezett elkövetője és egyik szervezője - közölte kedden híroldalán a francia BFM TV. 
+</p>
+<div id="more-article1452014709"><a onclick="show('less-article1452014709'); hide('more-article1452014709')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452014709" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452014709'); show('more-article1452014709')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+ Franciaország legnézettebb hírtelevíziójának értesülései szerint Abdeslam 2015. szeptember 8-án Brüsszelben a Rent A Car elnevezésű ügynökségnél bérelt autót, majd Németországon és Ausztrián éjjel áthajtva, másnap 11 óra 39 perckor parkolt le a budapesti Baross utcában (feltehetően inkább a Baross téren), a Keleti pályaudvar közelében.<br />
+    Háromnegyed órányi állás után a Mercedes visszaindult Belgiumba, olykor elérve az óránkénti 196 kilométeres sebességet.<br />
+    Szeptember 17-én egy bérelt Audi A6-ossal tért vissza Budapestre, szintén Németországon és Ausztrián át. Két órát parkolt ugyancsak a pályaudvar közelében, amelyhez szíriai migránsok ezrei érkeztek.<br />
+    A BFM TV felvetette a kérdés, hogy vajon Abdeslam azzal a céllal utazott-e Budapestre, hogy megtalálja a menedékkérők között elvegyült cinkostársait. Válasz gyanánt a televízió emlékeztetett arra, hogy a párizsi terrortámadás ügyében szintén körözött Samir Bouzidot és Soufiane Kayalt az első útja során Abdeslammal együtt igazoltatták Ausztriában. Kitért arra is, hogy Abdelhamid Abaoud (a támadások főszervezője) az unokahúgának azzal dicsekedett el, hogy a migránshullámmal tért vissza titokban Európába. <br />
+    A belga RTL televízió internetes oldalán december 2-án azt írta, hogy Magyarországon találkozhatott Abdeslam két, Szíriából visszatérő férfival, akik öngyilkos merénylőként később felrobbantották magukat a merényletsorozatban.<br />
+      Lázár János, a Miniszterelnökséget vezető miniszter december 3-i sajtótájékoztatóján kijelentette: <br />
+-A terrorizmussal kapcsolatban hírek láttak napvilágot, amelyek arról szólnak, hogy a párizsi merénylet egyik főszervezője járt Budapesten, ezt meg tudom erősíteni. <br />
+A miniszter hozzátette:  <br />
+- Tudomásunk és feltételezésünk szerint a Keleti pályaudvarnál is járt, tudomásunk és feltételezésünk szerint a magyar állami regisztrációt megtagadó bevándorlókból csapatot toborzott és azokkal távozott az országból. 
+</p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 5., kedd 18:10 
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr /><br />
+
+   <a name="s06_2">&nbsp;</a>
+   	<h3>Illegális bevándorlás - Orbán: európai védvonalat kell kiépíteni Görögország északi határánál </h3>
+
+<div class="parabellum">
+<p class="main">
+Budapest, 2016. január 8., péntek (MTI) - Európa új védelmi vonalát Görögország északi határánál kell kiépíteni - sürgette Orbán Viktor miniszterelnök pénteken a Kossuth Rádió 180 perc című műsorában. A kormányfő emellett ismét szót emelt az európai uniós alapszerződés módosításának szükségessége ügyében. 
+</p>
+<div id="more-article1452240419"><a onclick="show('less-article1452240419'); hide('more-article1452240419')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452240419" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452240419'); show('more-article1452240419')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+ A kormányfő 2016 döntő kérdésének nevezte azt, hogy rájönnek-e végre Európában: nem elég lassítani, hanem meg kell állítani a bevándorlást.<br />A miniszterelnök szerint Bulgáriát fel kell venni a schengeni övezetbe, Macedóniát pedig meg kell erősíteni az észak-görög védvonal kiépítéséhez. Megjegyezte, nem bízik abban, hogy a bevándorlás ügyében a törökökkel kötött megállapodás önmagában elégséges lenne.<br />Orbán Viktor a műsorban bírálta a \\\"brüsszelizmust\\\", ami szerinte lopakodó hatáskörelvonást jelent a nemzetállamoktól. Ha ugyanis ma felüti a fejét egy probléma az EU-ban, az első reflex az, hogy \\\"azonnal európai megoldás kell, és vonjuk el a hatásköröket\\\" a tagállamoktól - fogalmazott. Hozzáfűzte: a \\\"brüsszelizmus\\\" kockázatait a migráció ügyében ma már mindenki látja.<br />Szerinte ezt a \\\"brüsszelizmust\\\" nem lehet orvosolni alapszerződés-módosítás nélkül.<br />Megkérdezték a miniszterelnököt a szilveszteri németországi molesztálások ügyéről, amellyel összefüggésben arra hívta fel a figyelmet: \\\"akik bennünket akarnak kioktatni szólásszabadságból\\\", és akik szerint a bevándorlók érkezése jó dolog, azok a liberalizmus nevében \\\"elfojtják\\\" a hozzájuk (a bevándorlókhoz) kapcsolódó negatív híreket. Szerinte a németországi történések ezért arra mutatnak rá, hogy ma Közép-Európában szélesebb és színesebb a sajtószabadság, mint számos nyugat-európai államban.<br />A rádióinterjúban szó volt Orbán Viktor szerdai lengyelországi tárgyalásáról is, amelynek során találkozott Jaroslaw Kaczynskivel, a lengyel kormánypárt, a Jog és Igazságosság (PiS) elnökével. Ezzel kapcsolatban a kormányfő kijelentette: az EU-nak nem érdemes azon törnie a fejét, hogy bármilyen szankciót is alkalmaz Lengyelországgal szemben, mert ahhoz teljes egyetértés kellene, márpedig Magyarország sosem fog támogatni Lengyelország elleni uniós szankciókat.<br />\\\"Több tiszteletet a lengyeleknek, mert megérdemlik\\\" - hangoztatta, megjegyezve: Magyarország már megszenvedte azt, ami most a lengyelekkel történik, és \\\"mi is azt követeltük, hogy adják meg a magyaroknak a tiszteletet\\\". A miniszterelnök igazat adott a lengyeleknek, hogy nem lehet úgy beszélni velük, ahogy azt egyre gyakrabban teszik Brüsszelben.<br />Megjegyezte, hogy hamarosan Magyarországra látogat Beata Szydlo, az új lengyel kormányfő.<br />David Cameron brit miniszterelnök csütörtöki budapesti látogatásáról szólva Orbán Viktor azt mondta: Magyarország osztja azt a brit véleményt, amely szerint meg kell újítani az EU-t. Szerinte az erős nemzetek szövetségéből álló EU-ról alkotott brit elképzelés találkozik a visegrádi tagállamok gondolkodásával, ezért \\\"itt van egy természetes szövetség\\\". Orbán Viktor egyetértéséről biztosította a nemzeti parlamentek megerősítésére és a kettős mérce elutasítására vonatkozó brit javaslatot.<br />A kormányfő egyetért azzal a törekvéssel is, amely a brit szociális ellátásokkal való visszaélések megakadályozására vonatkozik, de hangsúlyozta: nem fogadható el semmilyen diszkrimináció az ügyben, mert a Nagy-Britanniában munkát vállaló magyarok becsületesen dolgoznak, és a befizetéseik a brit költségvetésbe meghaladják az onnan kapott szolgáltatásokat.<br />A magyarországi helyzetet értékelve Orbán Viktor azt mondta, az elmúlt öt év alapján azt látni: egyre inkább abba az irányba haladunk, hogy mindenki úgy érezheti, minden évben léphet egyet előre. Ez idén is így lesz - közölte, az intézkedések közül kiemelve az adócsökkentést, a minimálbér-emelést és az otthonteremtési programot. Utóbbiról szólva jelezte, arra számít, hogy ebből is nemzeti ügy, de hozzátette, az otthonteremtésben még további lépéseket kell tenni például a közfoglalkoztatottak irányában, ezen dolgoznak.<br />Szerinte nem lehet olyan otthonteremtési programot alkotni, amely mindenkinek egyszerre lehetőséget nyújt, mert az emberek nem egyformák, a családok nincsenek azonos helyzetben. \\\"A családtámogatásnál a támogatást hitelekkel kell kombinálni, a hitelekhez feltételeknek kell megfelelni. (...) Lépésről lépésre kell haladni egészen addig, amíg azt nem látjuk, hogy már mindenkinek van lehetősége arra, hogy egyet előre tudjon lépni\\\" - fejtette ki.<br />Az FHB alaptőke-emelésével kapcsolatos csütörtöki hírt kommentálva a kormányfő felidézte: a kormány megújította a szövetkezeti rendszert, amire nagyon sok pénzt áldozott, ezért a szövetkezeteket együttműködő partnernek tekinti. Ám \\\"most azt történt, hogy amikor tőkeemelés zajlott le az FHB-nál, akkor a magyar kormány hozott egy döntést, miszerint fenn kívánjuk tartani a bankban meglévő állami tulajdonrészünket, amit nem fogadtak el. Jogukban van ezt visszautasítani, de ezt együttműködés és szövetség politikájának keretében szerintem nem szabad megtenni, ez így barátságtalan, sőt ellenséges lépés. Ez egy hiba, amit ennek a banknak ki kell javítania\\\" - fejtette ki az álláspontját.<br />Közölte: a kormány továbbra is fenntartja azt az igényét, hogy a magyar állami tulajdon aránya nem csökkenhet a pénzintézetben.<br />Végül szóba kerültek az úszószövetséggel kapcsolatos hírek, amelyekkel kapcsolatban Orbán Viktor azt mondta: az ügy szereplői kiváló sportemberek. Miután olimpiára készülünk, nemzeti ügyről van szó, ezért - jelezte - felajánlotta \\\"jószolgálati\\\" képességeiket, \\\"csak valaki mondja meg, mi az, amiben a kormányzat segíteni tud, hogy sok kiváló ember együttműködése ne lehetetlenüljön el\\\".<br /> 
+</p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 8., péntek 8:58 
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr /><br />
+
+<a name="s07">&nbsp;</a>
+
+   <div id="section7" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Gazdaság &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s07_1">&nbsp;</a>
+   	<h3>BMI - Londoni elemzők: már mutatkoznak az olajárzuhanás jelei az orosz gazdaságban </h3>
+
+<div class="parabellum">
+<p class="main">
+ Kertész Róbert, az MTI tudósítója jelenti:
+    London, 2016. január 4., hétfő (MTI) - Londoni pénzügyi elemzők szerint a hétfőn ismertetett decemberi gyáripari beszerzésimenedzser-indexekben (BMI) már mutatkoznak az első jelei annak a kárnak, amelyet az olajárak zuhanása okoz az orosz gazdaság aktivitásában. 
+</p>
+<div id="more-article1451944432"><a onclick="show('less-article1451944432'); hide('more-article1451944432')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1451944432" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1451944432'); show('more-article1451944432')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+     Az egyik legnagyobb londoni gazdasági-pénzügyi elemzőház, a Capital Economics közgazdászai közölték, hogy a cég által a magyar, a cseh, a lengyel, az orosz és a török gyáriparra kiszámított, súlyozott BMI-átlag a múlt hónapban 51,1 volt, ugyanannyi, mint egy hónappal korábban, vagyis a decemberi BMI térségi átlagban számolva változatlanul az országcsoport feldolgozószektorainak teljesítménybővülését jelzi.<br />
+    Az orosz BMI-mutató azonban 48,7-re zuhant decemberben a novemberi 50,1-ről, vagyis immár az orosz feldolgozóipar kibocsátásának visszaesésére utal.<br />
+    A Capital Economics londoni elemzőinek hétfői értékelése szerint ez az egyik korai jele annak, hogy az alacsony olajárakat már kezdi megszenvedni az orosz ipar.<br />
+    A ház közgazdászai egy másik, az olajárak zuhanásának az orosz gazdaságra gyakorolt várható hatásairól nemrég összeállított külön elemzésükben kidolgoztak egy szélsőséges szimulációt, amelyben az átlagos olajár 2016 egészében 25 dollár lenne hordónként. A cég modellszámításai szerint ez 80 milliárd dolláros exportbevétel-kiesést és 3 százalékos GDP-csökkenést okozna az idén az orosz gazdaságban, a hazai össztermék 8 százalékára duzzadó államháztartási hiány mellett.<br />
+    A Capital Economics elemzői szerint az orosz gazdaság akkor sem jár jól, ha az olaj világpiaci árfolyama a 35 dollár körüli legutóbbi mélypont közelében marad.<br />
+    A ház számításai szerint az orosz exportbevételek ebben az esetben is 55 milliárd dollárral zuhannának a cég 50 dolláros idei olajárfolyam-átlaggal számoló alapeseti előrejelzéséhez képest, az orosz GDP-érték pedig 1,5 százalékkal visszaesne, vagyis az orosz gazdaság a tavalyi recesszió után 2016 egészét is recesszióban töltené.<br />
+    Ezt más nagy londoni házak alapeseti prognózisként jósolják.<br />
+    A JP Morgan globális pénzügyi szolgáltató csoport londoni befektetési részlegének elemzői felülvizsgált előrejelzésükben közölték, hogy várakozásuk szerint a globális alaptípusnak tekintett Brent olajfajta hordónkénti átlagára 2016 első negyedében mindössze 35 dollár lesz, újabb cserearányromlási sokkot okozva az orosz gazdaságban.     A JP Morgan új prognózisa ennek alapján az, hogy az orosz hazai össztermék a cég által 2015-re becsült 3,8 százalékos mínusz után az idén további 0,2 százalékkal visszaesik.<br />
+    Az Európai Újjáépítési és Fejlesztési Bank (EBRD) legutóbbi térségi előrejelzésében ennél is meredekebb, 2015 egészére 4,2 százalékos, 2016-ra 1,2 százalékos visszaesést jósolt az orosz gazdaságban. 
+</p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 4., hétfő 18:09 
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr /><br />
+
+   <a name="s07_2">&nbsp;</a>
+   	<h3>Csökkent a német ipari termelés novemberben </h3>
+
+<div class="parabellum">
+<p class="main">
+Wiesbaden, 2016. január 8., péntek (MTI) - A várt növekedés helyett csökkent az ipari termelés Németországban novemberben az előző hónaphoz képest. 
+</p>
+<div id="more-article1452239917"><a onclick="show('less-article1452239917'); hide('more-article1452239917')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452239917" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452239917'); show('more-article1452239917')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+ A német statisztikai hivatal (Destatis) pénteken arról számolt be, hogy a szezonálisan, az ár- és naptári hatással kiigazított adatok szerint 0,3 százalékkal esett vissza az ipari termelés havi szinten. Októberben 0,5 százalékos növekedést, míg szeptemberben 1,1, augusztusban 1,2 százalékos visszaesést mértek.<br />Elemzők 0,5 százalékos havi növekedésre számítottak novemberben.<br />Éves összevetésben ugyancsak 0,3 százalékkal esett vissza a német ipari termelés novemberben az októberi 0,4 százalékos növekedés után.<br />Az energia- és az építőipari ágazatot nem számolva, az ipari termelés 0,8 százalékkal zsugorodott havi szinten. A termelési eszközök gyártása 3,3 százalékkal mérséklődött. Ugyanakkor az energiatermelés 2,5 százalékkal, a félkész termékek előállítása 1,1 százalékkal, a fogyasztási cikkek termelése 1,9 százalékkal, az építőipari termelés pedig 1,6 százalékkal növekedett.<br /> 
+</p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 8., péntek 8:20 
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr /><br />
+
+   <a name="s07_3">&nbsp;</a>
+   	<h3>A Synergon kérte részvényeinek törlését a BÉT-ről </h3>
+
+<div class="parabellum">
+<p class="main">
+Budapest, 2016. január 8., péntek (MTI) - A Synergon Informatikai Nyrt., a társaság végelszámolására tekintettel, részvényeinek törlését kérte a Budapesti Értéktőzsdéről, a BÉT vezérigazgatója a részvények január 20-i törléséről határozott. 
+</p>
+<div id="more-article1452271900"><a onclick="show('less-article1452271900'); hide('more-article1452271900')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452271900" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452271900'); show('more-article1452271900')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+ A végelszámolás megindításáról a Synergon december 22-én tartott rendkívüli közgyűlése döntött. A végelszámolás kezdő időpontjának 2016. január 1-jét határozták meg.<br />A döntés előzménye, hogy a társaság egyik leányvállalata, a Synergon Integrator Kft. csődeljárás alatt áll. Egyezség hiányában az anyavállalatnak ezt a befektetését le kellett értékelnie, ami a saját tőke csökkenését eredményezte. A rendkívüli közgyűlésen felmerült a jegyzett tőke leszállításának lehetősége is, ám az igazgatóság nem látott esélyt arra, hogy lenne olyan befektető, aki forrást biztosítana a társaságnak egy jelentős tőkeemeléshez. Így végül a közgyűlés nem határozott a jegyzett tőke leszállításáról, hanem a végelszámolás mellett döntött.<br />A Synergon részvényeit 1999. május 5-én vezették be a tőzsdére, a papírok a BÉT standard kategóriájában szerepeltek. A 200 forint névértékű Synergon-részvények pénteken délelőtt 9,30 forintot értek a BÉT-en. Az elmúlt egy év alatt a legmagasabb áruk 143, a legalacsonyabb pedig 7,40 forint volt.<br />A BÉT vezérigazgatója a péntek délután közzétett határozatában tájékoztatott, hogy a kérelemnek eleget téve 2016. január 20-án törli a Synergon elnevezésű, dematerializált, névre szóló törzsrészvényeket a terméklistáról.<br />A részvények utolsó kereskedési napja 2016. január 15-e. A Synergon a határozat kézhezvételétől számított 15 tőzsdenapon belül fellebbezéssel élhet, melyet az igazgatóságnak címezve, a vezérigazgatóhoz kell benyújtania.<br /> 
+</p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+MTI 2016. január 8., péntek 17:01 
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr /><br />
+
+<a name="s16">&nbsp;</a>
+
+   <div id="section16" style="background-position: 50%;">
+   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">
+   <span style="background-color: #000000;">
+   &nbsp; Esti mesélő &nbsp;</span>
+   </font> </h2></div>
+   </div>
+   <a name="s16_1">&nbsp;</a>
+   	<h3>A sárkány leánya I. rész (népmese)</h3>
+
+<div class="parabellum">
+<p class="main">
+Egyszer volt, hol nem volt, hetedhét országon is túl, élt egy nagyon szegény ember. Annyi gyereke volt ennek a szegény embernek, mint égen a csillag, de talán még annál is eggyel több. Így gondolható, hogy nagy volt Hadásziéknál a szegénység. Többször nem ettek, mint ettek. Azért mégiscsak felcseperedtek a gyerekek, mert eső, az elég sok volt feléjük.<br /></p>
+<div id="more-article1452330488"><a onclick="show('less-article1452330488'); hide('more-article1452330488')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452330488" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452330488'); show('more-article1452330488')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+Egyszer a legidősebb fiú - azt is Hadászi Gábornak hívták, mint az apját - így szólt:<br />
+- Édesapám, meguntam én már a szegénységet, kiirtom még a gyökerét is, hogy többé ne akaszkodhasson senki ember nyakába.<br />
+Azt mondja erre az öreg:<br />
+- Megértlek én téged, édes fiam, azt se bánom, ha világgá mész, marad itthon még elég gyerekem, de fogadj el tőlem egy jó tanácsot: maradj mindig szorgalmas és becsületes, és ha egyszer gazdag lennél, ne felejtsd el, hogy valamikor te is szegény ember voltál.<br />
+Megköszönte a fiú a jó tanácsot, és már indult is világgá. Útjában egy szép kastélyt talált.<br />
+,,Itt biztosan akad valami munka számomra" - gondolta a fiú.<br />
+Be is kopogtatott illedelmesen.<br />
+- Mi járatban vagy, szép öcsém? - kérdezte a ház ura, a hatfejű sárkány. Mert bizony az volt a szép kastély gazdája.<br />
+Megbánta már a fiú, hogy bekopogtatott, de hát nem volt mit tenni, bátran odaállt a sárkány elé, és így felelt:<br />
+- Engedelmeddel szolgálatot keresek. Minden munkát szívesen vállalok.<br />
+- Ez szép beszéd - felelte a sárkány. - Nekem éppen ilyen legényre van szükségem, felfogadlak. Egész nap azt csinálsz, amit akarsz. Heverészhetsz, lustálkodhatsz, de éjjel dolgoznod kell. Én jól megfizetem a munkádat: egy véka arany a díjad minden éjjelre. De ha nem végzed el a kiadott munkát, a bőrödet polyvával tömöm ki.<br />
+Gábor nem ijedt meg, így mindjárt meg is kötötték az alkut. A sárkány megmutatta a szobáját, aztán magára hagyta. Nyomban aludni készült, mert ugyancsak elfáradt a hosszú úton. Alig pihent valamit a legény, lassan kinyílt a szoba ajtaja, és egy gyönyörűséges leány lépett be rajta.<br />
+- Én vagyok a sárkány leánya - mondta halkan. Azért jöttem hozzád, hogy megmentselek. Tudd meg, hogy az apám a vesztedre tör. Olyan feladatokat bíz majd rád, amiket nem tudsz elvégezni, az pedig az alku szerint az életedbe kerül. Menekülj, amíg lehet!<br />
+Gábor alig hallotta a leány beszédét, avval sem törődött, hogy az életéről van szó, csak nézte a leányt, akihez hasonló szépet még soha életében nem látott.<br />
+- Ha százszor kell meghalnom, akkor sem megyek innen egy tapodtat sem!<br />
+A leány észrevette, hogy Gábor első szempillantásra megszerette őt. Örült ennek, mert neki is igen tetszett a fiú, azért sietett a megmentésére.<br />
+- Jól van hát! Csak csinálj mindent úgy, ahogy én mondom, akkor túljárunk apám eszén. Itt van egy varázsvessző. Majd elvégez ez helyetted minden munkát. Te nyugodtan feküdj le, és ne is nézd, mit csinál a vessző, csak akkor tekints fel, amikor egy fehér galamb a szárnyával megérint.<br />
+Nagyon megörült Gábor a leány beszédének. Elvette tőle a varázsvesszőt, és nyugodtan aludt másnap estig. Ekkor maga elé hívatta a sárkány.<br />
+- No, te legény, kezdődik a szolgálat! - mondta, és kiadta az első feladatot: - Van énnekem hetven mérföldre egy akácosom. Reggelre vágd ki ennek az akácosnak valamennyi fáját.<br />
+Gábor elment a hetven mérföldnyire lévő akácosba, hasra feküdt, és a többit rábízta a varázsvesszőre. Még el is aludt közben. Arra ébredt fel, hogy egy fehér galamb a szárnyával keltegeti. Hát mit látott, mit nem, egy erdőre való fa hevert ott, mind kivágva.<br />
+- A hetven mérföldnyire fekvő akácosban minden fát levágtam, küldheted a fuvarosokat érte - mondta Gábor reggel a sárkánynak.<br />
+A sárkány nem akarta elhinni, gyorsan elküldött hát egy futárt, nézze meg, igazat mondott-e a legény. A futár nem tehetett mást: jelentette a sárkánynak, hogy az egész akácos ki van vágva. Bosszankodott a sárkány, mert nem tudta, hogyan járt túl az eszén a fiú.<br />
+- A fát neked kell hazahordanod reggelre - adta ki az újabb munkát a sárkány -, s le is kell ágaznod az egészet.<br />
+Gábor egész nap aludt, este aztán megint hasra feküdt, és a varázsvessző végezte a munkáját.<br />
+(folytatjuk)<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+egyszervolt.hu
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr /><br />
+
+   <a name="s16_2">&nbsp;</a>
+   	<h3>A sárkány leánya II. rész (népmese)</h3>
+
+<div class="parabellum">
+<p class="main">
+Reggel a sárkány kíváncsian nézett ki az ablakán. Hát amikor kidugta a fejét, fába verte az orrát. Annyi lett a fa és az ág, hogy nem fért el a kastély udvarán, a tetőre is került belőle. Az ablak is majdnem egészen be volt rakva. Abba verte az orrát.<br /></p>
+<div id="more-article1452330606"><a onclick="show('less-article1452330606'); hide('more-article1452330606')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452330606" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452330606'); show('more-article1452330606')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+Mérgelődött erősen, egyre dühösebb lett a sárkány. Két véka arannyal tartozik már Gábornak, és még a kastélyát is csúffá tette. Elhatározta, hogy harmadik feladatnak olyat ad, amit biztosan nem tud elvégezni, akkor elpusztíthatja, és a sok aranyat sem kell megadni.<br />
+- Harmadik feladatod az lesz, hogy a hetven mérföldre levő akácosom helyét felásod, beülteted szőlővel, és reggel elhozod az első termés borát az asztalomra - mondta haragtól sziszegve.<br />
+Nemigen hitte Gábor, hogy ezt is el tudja végezni a vessző. De hát nem volt mit tenni, elindult a hetven mérföldre levő akácos helyére, hasra feküdt, és a többit rábízta a varázsvesszőre. Hát uramfia! Reggel tele volt szőlővel, de a fürtök nem a tőkén voltak, meg nem is a kádakban, hanem a hordókban: bor gyanánt illatoztak. Gábor gyorsan felkapott egy kisebb hordót, és futott a sárkány elébe.<br />
+- Itt van a termés a hetven mérföldre fekvő akácos helyén termesztett szőlőből - mondta a sárkánynak, és kínálta is a borral.<br />
+A sárkány majdnem megfulladt dühében. Már látta, hogy a legényen nem tud kifogni. Hatalmas haragjában egy szuszra felhajtotta az egész hordó bort. Az italtól jókedve kerekedett, táncolni kezdett, még a palota tetejére is felmászott, és ott kurjongatott. Estére elszállt a sárkány jókedve. Ekkor eszébe jutott, hogy három véka arannyal tartozik már Gábornak, s végleg elhatározta, hogy most aztán elpusztítja.<br />
+- Most kell vigyáznod legjobban, szerelmem! - mondta a leány este a fiúnak. - Apám elhatározta, hogy végez veled. Lóra kell ülnöd, és ez a ló nem lesz más, mint az én apám. De te ne ijedj meg. Vegyél magadhoz két marék paprikát, és amikor a levegőbe emelkedik, szórd az egészet a szemébe, a többinél majd segítek.<br />
+Így is lett. A sárkány kiadta a parancsot, hogy Gábor lovagolja meg a legtüzesebb paripáját. Elővezették a paripát. Rúgott és kapálózott, Gábor alig tudott fennmaradni rajta. Aztán elindult. Egy darabig csak vágtázott, aztán hirtelen felemelkedett a levegőbe. Gábor gyorsan elővette a paprikát, és beleszórta a ló szemébe. Abban a pillanatban a ló elvakult mind a két szemére, és olyan szelíd lett, mint egy bárány. Szép csendesen lépkedett, és azt sem vette észre, hogy lovasa már nincs a hátán, mert egy fehér galamb leemelte onnan. A ló csak ment az erdőben. Nekiütközött a fáknak, beleesett az árokba Az arrajáró farkasok felfalták szőröstül-bőröstül.<br />
+A galamb közben elvezette Gábort egy patak partjára. Itt megrázta magát, és hirtelen átváltozott emberré. Nem volt bizony az más, mint a sárkány leánya. Ölelte, csókolta Gábor a megmentőjét.<br />
+- Édes szerelmem, letelt a szolgálatod - mondta a leány a fiúnak. - Három véka arany a béred. Ez kijár neked. Menj vissza a kastélyba. Hozd el az aranyat, és elmegyünk erről a tájról, ahol apám annyit garázdálkodott.<br />
+Gábor visszament a kastélyba, és elhozta a három véka aranyat. Ekkor összeölelkeztek, és elindultak munkát keresni.<br />
+Mentek, mendegéltek, sok faluba betértek, de munkát sehol sem találtak. Gábor belátta, hogy nincs értelme továbbra is rejtegetni az aranyat, elhatározta, hogy vesz rajta birtokot, majd megélnek azon szépen. Feleségét egy öregasszony gondjaira bízta, maga meg útnak indult, hogy eladó birtokot keressen.<br />
+A tizenharmadik faluban talált egy szép birtokot. Meg is vette. Gazdag ember lett belőle. Lovakat és hintót is szerzett hozzá, úgy indult vissza a feleségéért, mint egy gróf. És ez lett a veszte. A tizenkettedik faluban egy grófnő lakott. Ez a grófnő csak gazdag emberhez akart feleségül menni, de mivel csúnya volt, messze elkerülték faluját a legények. Gábor nem tudta ezt, hát csodálkozott nagyon, amikor fegyveres emberek fogták körül, és lovastul, hintóstul bevitték a grófnő kastélyába. Egy évig tartotta ott fogva a grófnő Gábort, de mikor látta, hogy sehogy sem lehet a felesége, útnak engedte, de a lovakat és a hintót elvette tőle.<br />
+A sárkány leánya közben mindennap az utat leste, és várta szerelmetes férjét. Nem tudta, mi történhetett Gáborral, hogy ilyen sokáig nem jön érte. Egyszer aztán mégiscsak megjelent. Boldogan ölelték, csókolták egymást. Gábor elmondta, mi történt.<br />
+- Ha nem lettem volna gazdag, ez nem történt volna meg velem! - mondta a feleségének. - Nem kell nekem gazdagság, ha nincs boldogság.<br />
+Mikor ezt kimondta, akkor jutott eszébe apjának az intelme: ,,Ha egyszer gazdag ember leszel, ne felejtsd el, hogy te is szegény ember voltál."<br />
+Szorgalmasan és becsületesen dolgoztak mind a ketten, szereztek maguknak egy kis házat, abba olyan boldogság költözött, hogy hetedhét országra szólt. De a szegény ember fia nem is felejtette el soha, honnan jött, mit várnak tőle a szegények.<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+egyszervolt.hu
+ &nbsp;</span> </font></p>
+</div>
+   <br />
+   <hr /><hr /><br />
+
+   </div>
+
+
+<a name="s99">&nbsp;</a>
+
+<div id="footer-wrap">	
+<center>
+<p class="onecolumn">
+	<h2>
+	<font color="#FFFFFF"> 
+	<span style="background-color: #000000;">&nbsp; Impresszum &nbsp;</span>           
+	</font><br />
+	&nbsp;<br />
+    Scienction MAGazin<br />  
+	</h2>
+    internetes újság<br />
+        2016.01.01.<br />    
+	&nbsp;<br />
+	<img src="aMAGazinImages/stamps/compass.png" width="333px" height="111px">
+	&nbsp;<br />
+	&nbsp;<br />
+Lapigazgatók: Lévai-Kiss Noémi és Ákos E. Kiss <br />         
+        Főszerkesztő: Kiss József Gábor<br />         
+        Főszerkesztő-helyettesek: Yin Gu & Yan Gu<br />         
+	&nbsp;<br />
+		olvasó szerkesztő: Csőke Ágnes<br />         
+		kép szerkesztő: Lévai-Kiss Noémi<br />         
+		tervező szerkesztő: Lévai István<br />         
+	&nbsp;<br />
+    Rovat vezetők:<br />         
+		Hírek: Kiss József Gábor<br />         
+		Gazdaság: Ákos E. Kiss<br />         
+		Életmód: Lévai-Kiss Noémi<br />         
+		Irodalom: Csőké Ágnes<br />         
+		Szórakozás: Lévai István<br />         
+		Gyermek kuckó: Csőke Ágnes<br />         
+	&nbsp;<br />
+    Technikai munkatársak <br />         
+		korrektor:  Csőke Ágnes, Lévai-Kiss Noémi (design)<br />         
+		fényképész: Lévai István, Ákos E.Kiss, Lévai-Kiss Noémi<br />         
+		jogi szakértő: Dr. Györkő Tünde<br />         
+	&nbsp;<br />
+    A kiadó neve:<br />         
+		Global Scienction Publisher<br />         
+	&nbsp;<br />
+    A szerkesztőség címe és elérhetőségei:<br />         
+		Bercsényi utca 6. <br />         
+		1111 Budapest<br />         
+	&nbsp;<br />
+	E-mail: sry@sryer.com, yingu@yingu.hu, b6@b6.hu <br />         
+	&nbsp;<br />
+    Nyomdai előkészítés: Yin Gu<br />         
+        Nyomdatechnika: Yin & Yan Global Digital Print ( vezérigazgató: Yan Gu )<br />         
+	&nbsp;<br />
+    Index, ISSN-szám: N/A<br />
+	&nbsp;<br />
+</p>
+</center>
+<p class="foot">
+	&nbsp;<br />
+    Terjesztési információk: <br />         
+		A kiadvány a sryer.com internetes címen kizárólag digitális formában 
+		jelenik meg. A magazin egyes fejezetei jellegüktől függően változó 
+		időközökben frissülnek.<br />         
+	&nbsp;<br />
+	Előfizetési információk:<br />         
+		A kiadvány ingyenes és előfizetéses formában is elérhető. Az ingyenes 
+		újság bármikor hozzáférhető a http://magazin.sryer.com internetes címen. 
+		Az előfizetéses példányok hozzáféréséhez a mindenkori kapcsolattartó 
+		e-mail címre küldünk jelszavas internetes linket.<br />    
+		Az előfizetés díja: 
+		<span style="white-space: nowrap";>50 HUF/hónap (havi előfizetéssel)</span>
+		és 
+		<span style="white-space: nowrap";>500 HUF/év (éves előfizetéssel).</span><br />    
+	&nbsp;<br />
+	Hirdetési információk:<br />         
+		Az oldalainkon a hirdetéseket .gif, .png vagy .jpg formátumú képként 
+		jelentetjük meg. A hirdetés ára a kép méretéből számítható: 
+		<span style="white-space: nowrap";> 1 HUF / 1000 pixel / 1 hét.</span><br />
+	&nbsp;<br />
+    Jogi nyilatkozat:<br />         
+	a./ Szolgáltató törekedik a szolgáltatás folyamatosságának hibamentes fenntartására, 
+	de nem garantálja, hogy a honlap funkcionalitása, 
+	és az általa nyújtott szolgáltatás mentes a hibáktól.<br />
+	b./ A honlap és annak tartalma előzetes bejelentés nélkül bármikor változhat.<br />
+	c./ Szolgáltató mindent megtesz annak érdekében, hogy a honlapon elhelyezett anyagok 
+	vírusmentesek illetve egyéb kártékony programoktól mentesek legyenek.<br />
+	d./ Szolgáltató semmilyen felelősséget nem vállal a honlap használatából 
+	vagy használhatatlanságából eredő, Felhasználót a honlap használata során ért 
+	vélt vagy valós károkért, esetleges számítógép meghibásodásokért. 
+	A Felhasználó saját felelősségére használja a honlapot.<br />
+	e./ Szolgáltató semmilyen felelősséget nem vállal azért, ha a tartalom Felhasználó 
+	rendszerében kompatibilitási, vagy egyéb hibák miatt nem elérhető. 
+	Az ebből eredő, Felhasználót ért vélt, vagy valós károkért, késedelemért 
+	Szolgáltató nem tehető felelőssé.<br />
+	f./ Szolgáltató bármikor jogosult a jelen általános felhasználási feltételek 
+	egyoldalú módosítására azzal, hogy a módosításról rövid felhívás formájában 
+	a Szolgáltatás kezdőoldalán tájékoztatja a Felhasználókat. 
+	Amennyiben a Felhasználó a módosítást követően a Szolgáltatás bármely részét 
+	használni kezdi, az a módosítás elfogadásának minősül.<br />
+	g./ Szolgáltató fenntartja magának a jogot, hogy bármilyen jogsértés, vagy 
+	Felhasználó által a jelen feltételek megszegése, vagy annak gyanúja esetén 
+	Felhasználót a szolgáltatásból felszólítás nélkül véglegesen kizárja.<br />
+	&nbsp;<br />
+	Adatvédelmi nyilatkozat:<br />
+	Szolgáltató vállalja és kötelezi magát, hogy a birtokába jutott valamennyi, 
+	Felhasználóra vonatkozó adatot a mindenkori törvényes előírások betartásával 
+	kezeli, azokat harmadik fél számára nem adja át, és kizárólag a szolgáltatás 
+	működtetéséhez szükséges elengedhetetlen mértékben használja fel.<br />
+	&nbsp;<br />    
+	&nbsp;<br />
+</p>
+<p class="main">
+<center>
+	Támogatóink:<br />
+	b6.hu - sryer.com - yingu.hu - b6shop.hu - Plastdurker Kft. - OPL-Handels GmbH.<br />
+	&nbsp;<br />
+	<p align="center">
+	<img border="0" src="dataMti00Main/mti_hirfelhasznalo.jpg" width="200" height="141"></p>           
+	&nbsp;<br />
+	&nbsp;<br />
+	<hr><hr>
+	&nbsp;<br />
+</center>
+</p>
+
+</div>
+</body> 
+ </html> 
+ 

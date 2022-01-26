@@ -1,0 +1,21 @@
+<div class="parabellum">
+<p class="main">
+Egyszer volt, hol nem volt, hetedhét országon is túl, élt egy nagyon szegény ember. Annyi gyereke volt ennek a szegény embernek, mint égen a csillag, de talán még annál is eggyel több. Így gondolható, hogy nagy volt Hadásziéknál a szegénység. Többször nem ettek, mint ettek. Azért mégiscsak felcseperedtek a gyerekek, mert eső, az elég sok volt feléjük.<br /></p>
+<div id="more-article1452293854"><a onclick="show('less-article1452293854'); hide('more-article1452293854')" >
+<p class="showline">Mutass többet!</p></a>
+<br />
+</div>
+<div id="less-article1452293854" style="display: none; background-color: lightgray">
+<a onclick="hide('less-article1452293854'); show('more-article1452293854')" >
+<p class="showline">Rejtsd el!</p></a> 
+<br />
+<p class="main">
+<br /></p>
+</div>
+<p class="headfoot" align="right">
+	&nbsp; Forrás: &nbsp;
+	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
+egyszervolt.hu
+ &nbsp;</span> </font></p>
+</div>
+   <br />

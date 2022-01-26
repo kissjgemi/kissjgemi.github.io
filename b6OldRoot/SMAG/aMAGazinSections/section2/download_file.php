@@ -1,5 +1,8 @@
 <?php
 
+$datafile = "brkk_info.btxt";
+$remotefile = "http://www.police.hu/hirek-es-informaciok/legfrissebb-hireink/kozlekedesrendeszet";
+
 function download_remote($url , $save_path)
 {
     $f = fopen( $save_path , 'w');
@@ -26,7 +29,7 @@ function popup2browser ( $saved_path )
 	fclose($file_saved);
 }
 
-download_remote('http://www.mti.hu/mti/Default.aspx', "login.btxt");
-popup2browser("login.btxt");
+download_remote( $remotefile , $datafile );
+popup2browser( $datafile );
 
 ?>

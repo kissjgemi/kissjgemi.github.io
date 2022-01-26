@@ -1,5 +1,8 @@
 <?php
 
+$datafile = "weather.btxt";
+$remotefile = "http://www.met.hu/idojaras/elorejelzes/idokep_fulek/main.php";
+
 function download_remote($url , $save_path)
 {
     $f = fopen( $save_path , 'w');
@@ -26,7 +29,7 @@ function popup2browser ( $saved_path )
 	fclose($file_saved);
 }
 
-download_remote('http://www.mti.hu/mti/Default.aspx', "login.btxt");
-popup2browser("login.btxt");
+download_remote( $remotefile , $datafile );
+popup2browser( $datafile );
 
 ?>

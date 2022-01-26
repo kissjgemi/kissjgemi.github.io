@@ -1,25 +1,16 @@
-# Webalizer V2.23-08 Incremental Data - 02/29/2020 14:17:18
-2020 2 29 14 17 18
-51 33 6 44 5 2 2792551 6 5 0
-5 6 89 9 29
+# Webalizer V2.23-05 Incremental Data - 01/09/2016 00:23:56
+2016 1 9 0 23 56
+870 193 9 62 12 7 13526577 108 1 0
+1 93 334 1 9
+3 0 0 3 0 0
 0 0 0 0 0 0
+4 0 0 1 0 0
+2 0 0 2 0 0
 0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-45 32 1846894 1 1 1
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
+2 0 0 2 0 0
+3 0 0 3 0 0
+763 172 12777854 4 86 1
+93 21 748723 1 22 1
 0 0 0 0 0 0
 0 0 0 0 0 0
 0 0 0 0 0 0
@@ -30,55 +21,64 @@
 0 0 0 0 0 0
 0 0 0 0 0 0
 0 0 0 0 0 0
-6 1 945657 5 5 4
 0 0 0 0 0 0
 0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+93 21 748723 22
 0 0 0 0
 0 0 0 0
 0 0 0 0
 0 0 0 0
 0 0 0 0
+3 0 0 0
+1 0 0 0
+0 0 0 0
+0 0 0 0
+4 0 0 0
 0 0 0 0
 0 0 0 0
 0 0 0 0
+3 0 0 0
+1 0 0 0
+1 0 0 0
+2 0 0 0
+1 0 0 0
 0 0 0 0
-0 0 0 0
-0 0 0 0
-0 0 0 0
-0 0 0 0
-0 0 0 0
-6 1 945657 5
-0 0 0 0
-0 0 0 0
-0 0 0 0
-0 0 0 0
-0 0 0 0
-45 32 1846894 1
-0 0 0 0
-0 0 0 0
-0 0 0 0
+1 0 0 0
+236 82 9215117 10
+188 13 458403 13
+336 77 3104334 63
 0
 0
 0
-33
-0
-0
-0
-0
-0
-5
-0
-0
-0
-0
-12
+193
 0
 0
 0
 0
 0
 0
-1
+0
+0
+0
+0
+658
+0
+0
+0
+0
+0
+0
+19
 0
 0
 0
@@ -99,149 +99,206 @@
 0
 0
 # -urls- 
+/aMAGazinImages/buttons/add_new_y.png
+0 12 0 1278 0 0
 /aMAGazinStyles/07_menusections.css
-0 1 0 3546 0 0
+0 24 0 7092 0 0
 /prgjs/jscript.js
-0 1 0 171 0 0
-/_uploaded_images/2018-09/pangea.jpeg
-0 1 0 0 0 0
+0 25 0 342 0 0
+/aMAGazinImages/backgrounds/s10-menu.jpg
+1 3 0 9738 0 0
+/aMAGazinImages/backgrounds/s2.jpg
+1 17 0 699420 0 0
 /aMAGazinStyles/06_iconmenu.css
-0 1 0 313 0 0
-/_uploaded_images/2018-10/computer.jpg
-1 1 0 77835 0 0
+0 24 0 556 0 0
+/aMAGazinImages/backgrounds/s15-menu.jpg
+1 4 0 4213 0 0
+/aMAGazinImages/backgrounds/s14-menu.jpg
+1 3 0 3127 0 0
+/aMAGazinImages/backgrounds/s7-menu.jpg
+1 6 0 7815 0 0
 /aMAGazinImages/backgrounds/s13.jpg
-1 1 0 0 0 0
+1 9 0 319336 0 0
 /aMAGazinImages/buttons/menu_y_close.png
-0 1 0 1031 0 0
+0 17 0 2436 0 0
 /aMAGazinImages/buttons/home_y.png
-0 2 0 2144 0 0
+0 14 0 2670 0 0
+/aMAGazinImages/backgrounds/s12-menu.jpg
+1 3 0 3645 0 0
 /aMAGazinStyles/styles.css
-0 1 0 830 0 0
+0 24 0 538 0 0
+/aMAGazinImages/backgrounds/s1-menu.jpg
+1 6 0 5536 0 0
 /aMAGazinImages/bg.jpg
-1 1 0 0 0 0
+1 23 0 1700036 0 0
+/aMAGazinImages/backgrounds/s3-menu.jpg
+1 6 0 7562 0 0
+/aMAGazinImages/backgrounds/s2-menu.jpg
+1 6 0 13885 0 0
 /aMAGazinStyles/03_wrapper.css
-0 1 0 825 0 0
+0 24 0 1650 0 0
 /aMAGazinImages/backgrounds/s9.jpg
-1 1 0 104463 0 0
+1 12 0 208926 0 0
 /dataMti00Main/mti_hirfelhasznalo.jpg
-1 1 0 8257 0 0
+1 17 0 16514 0 0
+/aMAGazinImages/backgrounds/s11-menu.jpg
+1 3 0 16420 0 0
 /aMAGazinImages/backgrounds/s12.jpg
-1 1 0 107456 0 0
-/_uploaded_images/2020-01/barany.jpg
-1 1 0 0 0 0
+1 9 0 214912 0 0
 /aMAGazinImages/header/yinguInTheSky2.gif
-1 1 0 10865 0 0
+1 17 0 18854 0 0
 /aMAGazinStyles/04_sections.css
-0 1 0 4678 0 0
-/_uploaded_images/2018-09/FesusEva.jpg
-1 1 0 120157 0 0
-/_uploaded_images/2018-09/PT-Chapter1.png
-0 1 0 0 0 0
-/_uploaded_images/MTI-Arpadhaz.jpg
-1 1 0 139651 0 0
+0 24 0 6708 0 0
+/aMAGazinImages/buttons/yin_goo.png
+0 12 0 2064 0 0
+/prgphp/comodo.php
+0 25 0 288471 0 0
+/b6admin
+0 3 0 293932 0 0
 /aMAGazinImages/stamps/compass.png
-0 1 0 212686 0 0
+0 17 0 425372 0 0
+/aMAGazinImages/backgrounds/s5.jpg
+1 17 0 281826 0 0
 /aMAGazinStyles/02_body.css
-0 1 0 1559 0 0
-/_uploaded_images/2018-09/gellert.jpeg
-0 1 0 0 0 0
+0 24 0 2708 0 0
 /aMAGazinStyles/05_dropdownmenu.css
-0 1 0 2283 0 0
+0 24 0 4398 0 0
 /aMAGazinImages/backgrounds/s3.jpg
-1 1 0 123717 0 0
+1 17 0 247434 0 0
+/aMAGazinImages/backgrounds/s11.jpg
+1 12 0 665966 0 0
 /aMAGazinImages/backgrounds/s6.jpg
-1 1 0 0 0 0
-/aMAGazinImages/b6g.jpg
-1 1 0 1213 0 0
+1 17 0 609618 0 0
+/prgphp/article_add2sectionfolder.php
+0 14 0 202412 0 0
+/aMAGazinImages/backgrounds/s6-menu.jpg
+1 6 0 13814 0 0
+/aMAGazinImages/backgrounds/s9-menu.jpg
+1 3 0 10289 0 0
 /aMAGazinImages/buttons/luck.png
-0 1 0 5401 0 0
-/_uploaded_images/2018-09/hadronium.jpeg
-0 1 0 0 0 0
-/_uploaded_images/2018-10/internet.png
-0 1 0 0 0 0
-/_uploaded_images/2018-11/win7VBOX.png
-0 1 0 0 0 0
+0 17 0 10802 0 0
+/aMAGazinImages/backgrounds/s13-menu.jpg
+1 3 0 7750 0 0
+/aMAGazinImages/backgrounds/s5-menu.jpg
+1 6 0 7109 0 0
+/prgphp/delete_article.php
+0 18 0 247711 0 0
 /aMAGazinStyles/00_general.css
-0 1 0 39 0 0
-/_uploaded_images/2018-11/switch.jpg
-1 1 0 201499 0 0
+0 24 0 78 0 0
+/aMAGazinImages/backgrounds/s10.jpg
+1 12 0 997234 0 0
+/aMAGazinImages/backgrounds/s8-menu.jpg
+1 3 0 9201 0 0
+/aMAGazinImages/backgrounds/s4.jpg
+1 17 0 647228 0 0
+/aMAGazinImages/backgrounds/s14.jpg
+1 9 0 305408 0 0
+/aMAGazinImages/backgrounds/s16-menu.jpg
+1 5 0 2491 0 0
 /aMAGazinImages/backgrounds/s8.jpg
-1 1 0 166201 0 0
+1 12 0 332402 0 0
 /
-0 6 0 944585 5 0
+0 6 0 209338 1 0
+/aMAGazinImages/backgrounds/s4-menu.jpg
+1 6 0 11375 0 0
 /aMAGazinImages/backgrounds/s1.jpg
-1 1 0 0 0 0
-/_uploaded_images/2018-11/CiscoConfig.jpg
-1 1 0 154130 0 0
+1 17 0 348436 0 0
+/aMAGazinImages/backgrounds/s7.jpg
+1 17 0 313136 0 0
+/prgphp/topicwriter.php
+0 4 0 28272 0 0
+/b6admin.html
+0 38 0 3318866 0 0
 /aMAGazinStyles/01_parabellux.css
-0 1 0 696 0 0
+0 24 0 964 0 0
 /aMAGazinImages/buttons/menu_y.png
-0 1 0 1137 0 0
+0 17 0 2412 0 0
 /aMAGazinImages/backgrounds/s16.jpg
-1 1 0 206362 0 0
-/_uploaded_images/2018-10/switches-catalyst-2960-24tt-l-switch.jpg
-1 1 0 26642 0 0
+1 11 0 59528 0 0
 /aMAGazinImages/backgrounds/s15.jpg
-1 1 0 154572 0 0
+1 10 0 309144 0 0
 /aMAGazinImages/buttons/forecast.png
-0 1 0 3613 0 0
+0 17 0 7226 0 0
+/aMAGazinImages/header/yinguInTheSky1.gif
+1 18 0 20965 0 0
 /aMAGazinImages/buttons/streetinfo.png
-0 1 0 3994 0 0
+0 17 0 7988 0 0
 # End Of Table - urls
 # -sites- (monthly)
-catv-176-63-1-101.catv.broadband.hu
-0 45 32 1846894 1 1581278782
-/
-fwdproxy-odn-030.fbsv.net
-0 1 1 1072 0 0
+104.209.188.207
+0 1 0 0 0 0
 -
-fwdproxy-odn-007.fbsv.net
-0 1 1 188917 1 1582985838
-/
-fwdproxy-odn-018.fbsv.net
-0 2 2 377834 1 1582985838
-/
-fwdproxy-odn-026.fbsv.net
-0 1 1 188917 1 1582985838
-/
-fwdproxy-odn-023.fbsv.net
-0 1 1 188917 1 1582985838
-/
+catv-5-148-241-9.catv.broadband.hu
+0 4 0 0 0 0
+-
+catv-176-63-6-93.catv.broadband.hu
+0 851 193 13526577 1 1452299036
+/b6admin.html
+google-proxy-66-249-93-119.google.com
+0 5 0 0 0 0
+-
+netacc-gpn-7-131-206.pool.telenor.hu
+0 1 0 0 0 0
+-
+google-proxy-66-249-93-111.google.com
+0 3 0 0 0 0
+-
+google-proxy-66-249-93-115.google.com
+0 3 0 0 0 0
+-
+23.101.61.176
+0 1 0 0 0 0
+-
+mobil-176-63-34-157.business.broadband.hu
+0 1 0 0 0 0
+-
 # End Of Table - sites (monthly)
 # -sites- (daily)
-fwdproxy-odn-030.fbsv.net
-0 1 1 1072 0 0
--
-fwdproxy-odn-007.fbsv.net
-0 1 1 188917 1 1582985838
-/
-fwdproxy-odn-018.fbsv.net
-0 2 2 377834 1 1582985838
-/
-fwdproxy-odn-026.fbsv.net
-0 1 1 188917 1 1582985838
-/
-fwdproxy-odn-023.fbsv.net
-0 1 1 188917 1 1582985838
-/
+catv-176-63-6-93.catv.broadband.hu
+0 93 21 748723 1 1452299036
+/b6admin.html
 # End Of Table - sites (daily)
 # -referrers- 
-http://mag.b6.hu/aMAGazinStyles/styles.css
-0 8
-http://mag.b6.hu/aMAGazinStyles/02_body.css
-0 1
-http://mag.b6.hu/aMAGazinStyles/04_sections.css
-0 10
+http://magazin.sryer.com/aMAGazinStyles/07_menusections.css
+0 20
+http://magazin.sryer.com/aMAGazinStyles/02_body.css
+0 2
 - (Direct Request)
-1 8
-http://mag.b6.hu/
-0 24
+1 23
+http://magazin.sryer.com/prgphp/article_add2sectionfolder.php
+0 16
+http://magazin.sryer.com/b6admin
+0 67
+http://magazin.sryer.com/prgphp/delete_article.php
+0 19
+http://magazin.sryer.com/prgphp/comodo.php
+0 132
+http://b6.hu/SMAG/b6admin.html
+0 7
+http://b6.hu/SMAG/
+0 5
+http://magazin.sryer.com/
+0 144
+http://magazin.sryer.com/b6admin.html
+0 401
+http://magazin.sryer.com/aMAGazinStyles/04_sections.css
+0 34
 # End Of Table - referrers
 # -agents- 
-Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:70.0) Gecko/20100101 Firefox/70.0
-0 45
-facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
-0 6
+Mozilla/5.0 (Linux; Android 4.1.2; LG-P710 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.84 Mobile Sa
+0 1
+Mozilla/5.0 (Linux; Android 4.2.2; GT-S7582 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Sa
+0 2
+Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+0 851
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+0 1
+Mozilla/5.0 (Linux; Android 5.1.1; Nexus 7 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Safari/53
+0 9
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+0 4
+Mozilla/5.0 (Windows NT 6.1; WOW64) SkypeUriPreview Preview/0.5
+0 2
 # End Of Table - agents
 # -search strings- 
 # End Of Table - search strings

@@ -1,77 +1,73 @@
 <?php
 
-include_once ("download_a_remote_file.php");
+function download_remote($url , $save_path)
+{
+    $f = fopen( $save_path , 'w');
+    $handle = fopen($url , "rb");	
+	$x = 0; 
+    while (!feof($handle)) 
+    {        $contents = fread($handle, 8192);
+        fwrite($f , $contents);
+		$x++;
+		if ( $x > 5) break;
+    }
+    fclose($handle);
+    fclose($f);
+}
+
+function popup2browser ( $saved_path )
+{
+	$file_saved = fopen( $saved_path , "r") or exit("Unable to open target file!");
+	while(!feof($file_saved))
+		{
+			echo fgets($file_saved);
+		}
+	fclose($file_saved);
+}
 
 $datafile = "data_totogol.btxt";
-$remotefile = "https://bet.szerencsejatek.hu/cmsfiles/goltoto.html";
-$data = getSslPage($remotefile) ;
-echo ( $data );
-   $f = fopen( $datafile , 'w');
-   fwrite($f , $data);
-   fclose($f);
+$remotefile = "http://www.szerencsejatek.hu/xls/goltoto.html";
+download_remote( $remotefile , $datafile );
+popup2browser( $datafile );
 
 $datafile = "data_toto.btxt";
-$remotefile = "https://bet.szerencsejatek.hu/cmsfiles/toto.html";
-$data = getSslPage($remotefile) ;
-echo ( $data );
-   $f = fopen( $datafile , 'w');
-   fwrite($f , $data);
-   fclose($f);
+$remotefile = "http://www.szerencsejatek.hu/xls/toto.html";
+download_remote( $remotefile , $datafile );
+popup2browser( $datafile );
 
 $datafile = "data_luxor.btxt";
-$remotefile = "https://bet.szerencsejatek.hu/cmsfiles/luxor.html";
-$data = getSslPage($remotefile) ;
-echo ( $data );
-   $f = fopen( $datafile , 'w');
-   fwrite($f , $data);
-   fclose($f);
+$remotefile = "http://www.szerencsejatek.hu/xls/luxor.html";
+download_remote( $remotefile , $datafile );
+popup2browser( $datafile );
 
 $datafile = "data_lotto7.btxt";
-$remotefile = "https://bet.szerencsejatek.hu/cmsfiles/skandi.html";
-$data = getSslPage($remotefile) ;
-echo ( $data );
-   $f = fopen( $datafile , 'w');
-   fwrite($f , $data);
-   fclose($f);
+$remotefile = "http://www.szerencsejatek.hu/xls/skandi.html";
+download_remote( $remotefile , $datafile );
+popup2browser( $datafile );
 
 $datafile = "data_lotto6.btxt";
-$remotefile = "https://bet.szerencsejatek.hu/cmsfiles/hatos.html";
-$data = getSslPage($remotefile) ;
-echo ( $data );
-   $f = fopen( $datafile , 'w');
-   fwrite($f , $data);
-   fclose($f);
+$remotefile = "http://www.szerencsejatek.hu/xls/hatos.html";
+download_remote( $remotefile , $datafile );
+popup2browser( $datafile );
 
 $datafile = "data_lotto5.btxt";
-$remotefile = "https://bet.szerencsejatek.hu/cmsfiles/otos.html";
-$data = getSslPage($remotefile) ;
-echo ( $data );
-   $f = fopen( $datafile , 'w');
-   fwrite($f , $data);
-   fclose($f);
+$remotefile = "http://www.szerencsejatek.hu/xls/otos.html";
+download_remote( $remotefile , $datafile );
+popup2browser( $datafile );
 
 $datafile = "data_keno.btxt";
-$remotefile = "https://bet.szerencsejatek.hu/cmsfiles/keno.html";
-$data = getSslPage($remotefile) ;
-echo ( $data );
-   $f = fopen( $datafile , 'w');
-   fwrite($f , $data);
-   fclose($f);
+$remotefile = "http://www.szerencsejatek.hu/xls/keno.html";
+download_remote( $remotefile , $datafile );
+popup2browser( $datafile );
 
 $datafile = "data_joker.btxt";
-$remotefile = "https://bet.szerencsejatek.hu/cmsfiles/joker.html";
-$data = getSslPage($remotefile) ;
-echo ( $data );
-   $f = fopen( $datafile , 'w');
-   fwrite($f , $data);
-   fclose($f);
+$remotefile = "http://www.szerencsejatek.hu/xls/joker.html";
+download_remote( $remotefile , $datafile );
+popup2browser( $datafile );
 
 $datafile = "data_eurojackpot.btxt";
-$remotefile = "https://bet.szerencsejatek.hu/cmsfiles/eurojackpot.html";
-$data = getSslPage($remotefile) ;
-echo ( $data );
-   $f = fopen( $datafile , 'w');
-   fwrite($f , $data);
-   fclose($f);
+$remotefile = "http://www.szerencsejatek.hu/xls/eurojackpot.html";
+download_remote( $remotefile , $datafile );
+popup2browser( $datafile );
 
 ?>

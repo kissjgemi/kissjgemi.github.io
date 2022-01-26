@@ -25,11 +25,9 @@ if ( $tablerow < 7 ) {
 						if ( $pos !== false )	{
 						$pos = strpos( $newstring , ">");
 						$newstring = substr ($newstring, $pos + 1);
-						$pos = strpos( $newstring , "</td></tr>");
+						$pos = strpos( $newstring , "<");
 						$newstring = substr ($newstring, 0, $pos );
-						//array_push ( $tablecell[$tablerow] , $newstring );
-						$newline = explode("</td><td>", $newstring);
-						$tablecell[$tablerow] = $newline;
+						array_push ( $tablecell[$tablerow] , $newstring );
 					}else{
 						$pos = strpos( $newstring , "<th");
 						if ( $pos !== false )	{

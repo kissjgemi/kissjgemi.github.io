@@ -1,6 +1,6 @@
 <?php
 	include_once ("builder_filenames.php");
-	include_once ("../builder_variable_pathes.php");
+	include_once ("builder_variable_pathes.php");
 
 	$administrator_state = false;
 	
@@ -83,7 +83,6 @@ fwrite( $targetfile , '  <link rel="made" title="e-Mail" href="' . $mail_to01 . 
   echo "- mailTo - " . $mail_to01 . "<br />";
 
 fwrite( $targetfile , "</head> \n <body> \n ");
-fwrite( $targetfile , "<div id=\"mygazin\"> \n");
   echo "- head - ready" . "<br />";
   echo "<br />";
 
@@ -120,7 +119,7 @@ include("builder4topics.php");
 insert_template ( $prg_dirs['templates'] , "impresszum.btxt" , $targetfile );
   echo "- impresszum -" . "<br />";
 
-	fwrite( $targetfile , "</div></body> \n </html> \n ");
+fwrite( $targetfile , "</body> \n </html> \n ");
 fclose($targetfile);
   echo "<br />";
   echo "ready!";

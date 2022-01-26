@@ -9,9 +9,9 @@ $newstring =  fgets ($input_data);
 
 $pos = strpos( $newstring , '$cover_image_path');
 	if ( $pos !== false )	{
-		$pos = strpos( $newstring , "'");
+		$pos = strpos( $newstring , '"');
 		$newstring = substr ($newstring, $pos + 1);
-		$pos = strpos( $newstring , "'");
+		$pos = strpos( $newstring , '"');
 		$newstring = substr ($newstring, 0, $pos );
 		$bg_path = $newstring ;
 		echo 'Background path :<br />';
@@ -22,9 +22,9 @@ $pos = strpos( $newstring , '$menu_titles');
 	if ( $pos !== false )	{
 		
 		echo 'Menü titles :<br />';
-		$pos = strpos( $newstring , "=> '");
+		$pos = strpos( $newstring , '=> "');
 		$newstring = substr ($newstring, $pos + 4);
-		$pos = strpos( $newstring , "'");
+		$pos = strpos( $newstring , '"');
 		$titlestring = substr ($newstring, 0, $pos );
 		array_push ( $section_titles , $titlestring );
 		echo 'Sections : ' . $section_titles[0] . " db.";
@@ -32,9 +32,9 @@ $pos = strpos( $newstring , '$menu_titles');
 		$newstring =  fgets ($input_data);
 		
 		for ($row = 1; $row <= $section_titles[0] ; $row++) {
-		$pos = strpos( $newstring ,  "=> '");
+		$pos = strpos( $newstring , '=> "');
 		$newstring = substr ($newstring, $pos + 4);
-		$pos = strpos( $newstring , "'");
+		$pos = strpos( $newstring , '"');
 		$titlestring = substr ($newstring, 0, $pos );
 		echo $titlestring ;
 		echo '<br />';
@@ -47,9 +47,9 @@ $pos = strpos( $newstring , '$menu_titles');
 $pos = strpos( $newstring , '$articles');
 	if ( $pos !== false )	{
 		echo 'Topic titles :<br />';
-		$pos = strpos( $newstring ,  "=> '");
+		$pos = strpos( $newstring , '=> "');
 		$newstring = substr ($newstring, $pos + 4);
-		$pos = strpos( $newstring , "'");
+		$pos = strpos( $newstring , '"');
 		$titlestring = substr ($newstring, 0, $pos );
 		array_push ( $topic_titles , $titlestring );
 		echo 'Sections : ' . $topic_titles[0] . " db.";
@@ -58,9 +58,9 @@ $pos = strpos( $newstring , '$articles');
 		
 		for ($row = 1; $row <= $topic_titles[0] ; $row++) {
 		echo $section_titles[$row] . ' :<br />';
-		$pos = strpos( $newstring , "array ('");
+		$pos = strpos( $newstring , 'array ("');
 		$newstring = substr ($newstring, $pos + 8);
-		$pos = strpos( $newstring , "'");
+		$pos = strpos( $newstring , '"');
 		$titlestring = substr ($newstring, 0, $pos );
 		$dummyarray = array();
 		array_push ( $dummyarray , $titlestring );
@@ -68,9 +68,9 @@ $pos = strpos( $newstring , '$articles');
 		echo '<br />';
 			for ($topictitle = 1; $topictitle <= $dummyarray[0] ; $topictitle++) {
 				$newstring =  fgets ($input_data);
-				$pos = strpos( $newstring , "'");
+				$pos = strpos( $newstring , '"');
 				$newstring = substr ($newstring, $pos + 1);
-				$pos = strpos( $newstring , "'");
+				$pos = strpos( $newstring , '"');
 				$titlestring = substr ($newstring, 0, $pos );
 				echo $titlestring ;
 				echo '<br />';

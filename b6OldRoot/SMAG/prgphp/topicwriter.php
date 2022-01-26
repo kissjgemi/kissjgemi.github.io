@@ -1,6 +1,6 @@
 <?php
 	include_once ("builder_filenames.php");
-	include_once ("../builder_variable_pathes.php");
+	include_once ("builder_variable_pathes.php");
 
 	$administrator_state = true;
 
@@ -88,7 +88,6 @@ fwrite( $targetfile , '  <link rel="made" title="e-Mail" href="' . $mail_to01 . 
   echo "- mailTo - " . $mail_to01 . "<br />";
 
 fwrite( $targetfile , "</head> \n <body> \n ");
-fwrite( $targetfile , "<div id=\"mygazin\"> \n");
   echo "- head - ready" . "<br />";
   echo "<br />";
 
@@ -134,7 +133,7 @@ insert_template ( $prg_dirs['templates'] , "inputform4topic_2body.btxt" , $targe
 insert_template ( $prg_dirs['templates'] , "inputform4topic_3close.btxt" , $targetfile );
   echo "- input new topic -" . "<br />";
 
-	fwrite( $targetfile , "</div></body> \n </html> \n ");
+  fwrite( $targetfile , "</body> \n </html> \n ");
 fclose($targetfile);
   echo "<br />";
   echo "ready!";

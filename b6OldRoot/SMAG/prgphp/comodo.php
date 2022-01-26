@@ -1,9 +1,3 @@
-<?php
-	include_once ("builder_filenames.php");
-	$administrator_state = true;
-?>
-
-
 <!DOCTYPE html>
 
 <html lang="hu">
@@ -44,7 +38,6 @@
     Scienction MAGazin<br />  
 	</h2>
     új cikk bevitele<br />
-	<hr />
 	&nbsp;<br />
 </p>
 </center>
@@ -52,8 +45,8 @@
 	&nbsp;<br />
 	&nbsp; A témakör jele: &nbsp;
 	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
-<?php   
-   function check_input($data) {
+<?php
+function check_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
@@ -77,51 +70,6 @@ echo "expiration" . $my_expiration;
 	&nbsp;<br />
 	&nbsp;<br />
 
-
-	&nbsp;<br />
-	&nbsp; Kép feltöltés &nbsp;
-	<font color="#FFFFFF"><span style="background-color: #000000;">&nbsp; 
-<?php
-
-   if(isset($_FILES['image'])){
-      $errors= array();
-      $my_image_file = $_FILES['image']['name'];
-      $file_size =$_FILES['image']['size'];
-      $file_tmp =$_FILES['image']['tmp_name'];
-      $file_type=$_FILES['image']['type'];
-      $file_ext=strtolower(end(explode('.',$_FILES['image']['name'])));
-      
-      $expensions= array("jpeg","jpg","png");
-      
-      if(in_array($file_ext,$expensions)=== false){
-         $errors[]="extension not allowed, please choose a JPEG or PNG file.";
-      }
-      
-      if($file_size > 2097152){
-         $errors[]='File size must be excately 2 MB';
-      }
-      
-      if(empty($errors)==true){
-		  if (!file_exists($prg_dirs["images"])){
-						mkdir($prg_dirs["images"]);
-					}
-         move_uploaded_file($file_tmp, $prg_dirs["images"] . $my_image_file) ;
-         echo "sikeres.";
-      }else{
-        // print_r($errors);
-		echo "nem történt.";
-		$my_image_file = $none;
-      }
-}else{
-	echo "nem történt.";
-	$my_image_file = $none;
-}
-?>
- &nbsp;</span> </font>
-	&nbsp;<br />
-	&nbsp;<br />
-
-	
 <fieldset>
 	&nbsp;<br />
 	&nbsp; A cikk címe: &nbsp;
@@ -207,7 +155,6 @@ echo $my_article_footer;
 <form action="article_add2sectionfolder.php" method="post">
 	<input type="hidden" name="section" value= "<?php echo $my_section; ?>" />
 	<input type="hidden" name="expiration" value= "<?php echo $my_expiration; ?>" />
-	<input type="hidden" name="imagefile" value= "<?php echo $my_image_file; ?> " />
 	<input type="hidden" name="title" value= "<?php echo $my_title; ?> " />
 	<input type="hidden" name="head" value= "<?php echo $my_article_head; ?> " />
 	<input type="hidden" name="body" value= "<?php echo $my_article_body; ?> " />

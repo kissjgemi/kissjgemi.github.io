@@ -1,19 +1,40 @@
 <?php
+
+$datafile = "data_lotto5.btxt";
+$remotefile = "http://www.szerencsejatek.hu/xls/otos.html";
+
+function download_remote($url , $save_path)
+{
+    $f = fopen( $save_path , 'w');
+     
+    $handle = fopen($url , "rb");
 	
-include_once ("download_a_remote_file.php");
+	$x = 0;
+     
+    while (!feof($handle)) 
+    {
+        $contents = fread($handle, 8192);
+        fwrite($f , $contents);
+		$x++;
+		if ( $x > 2) break;
+    }
+     
+    fclose($handle);
+    fclose($f);
+}
 
-	$datafile = "data_lotto5.btxt";
-	$remotefile = "https://bet.szerencsejatek.hu/cmsfiles/otos.html";
 
-$data = getSslPage($remotefile) ;
-echo ( $data );
+function popup2browser ( $saved_path )
+{
+	$file_saved = fopen( $saved_path , "r") or exit("Unable to open target file!");
+	while(!feof($file_saved))
+		{
+			echo fgets($file_saved);
+		}
+	fclose($file_saved);
+}
 
-   $f = fopen( $datafile , 'w');
-   fwrite($f , $data);
-   fclose($f);
-
-//file_put_contents( $datafile , fopen( $remotefile , 'r' ));
-//download_remote( $remotefile , $datafile );
-//popup2browser( $datafile );
+download_remote( $remotefile , $datafile );
+popup2browser( $datafile );
 
 ?>

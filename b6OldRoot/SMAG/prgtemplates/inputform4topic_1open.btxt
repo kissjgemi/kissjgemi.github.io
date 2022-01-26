@@ -2,7 +2,6 @@
 <a name="s99+">&nbsp;</a>
 
 <div id="footer-wrap">	
-<div class="article">
 <center>
 <p class="onecolumn">
 	<h2>
@@ -16,8 +15,6 @@
 	&nbsp;<br />
 </p>
 </center>
-<hr /><br />
 
-<form name="input" action="prgphp/comodo.php" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+<form name="input" action="prgphp/comodo.php" method="post"  accept-charset="UTF-8">
 <p>
-<table width="100%"><tr><td><div>

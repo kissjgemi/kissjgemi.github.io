@@ -16,32 +16,11 @@ for ($row = 1; $row < 17; $row++)
 		fwrite( $targetfile , '<a name="' . $jumpTo . '">&nbsp;</a>' . "\n\n");
 
 		fwrite( $targetfile , '   <div id="' . $title . '" style="background-position: 50%;">' . "\n");
-		fwrite( $targetfile , '   <div class="section-header">&nbsp;<font color="#FFFFFF">' . "\n");
-		fwrite( $targetfile , '   <h2><span style="background-color: #000000;">' . "\n");
-		fwrite( $targetfile , '   &nbsp; ' . $menu_titles [$title] . ' &nbsp;</span></h2>' . "\n");
-		
-					if ( $administrator_state ){
-		
-		fwrite( $targetfile , "<fieldset style=\"background-color:black;\">\n");
-		fwrite( $targetfile , "&nbsp; Válassz másik képet &nbsp;<br /><hr /> \n");
-		fwrite( $targetfile , "&nbsp;<br /> \n");
-		fwrite( $targetfile , "<form name=\"input\" action=\"prgphp/add_new_image2sectionhead.php\" ");
-		fwrite( $targetfile , "method=\"post\" accept-charset=\"UTF-8\" ");
-		fwrite( $targetfile , "enctype=\"multipart/form-data\">\n");
-		fwrite( $targetfile , "<p align=\"center\"> \n");
-		fwrite( $targetfile , "<input type=\"file\" name=\"image\" />\n");
-		fwrite( $targetfile , " \n");
-		fwrite( $targetfile , "<input type=\"hidden\" name=\"section\" value= \"");
-		fwrite( $targetfile , $row . "\" /> \n");
-		fwrite( $targetfile , " \n");
-		fwrite( $targetfile , "<input type=\"submit\" value=\" Beküld \" name=\"send2datadir\" /> \n");
-		fwrite( $targetfile , "</p> \n </form> \n <br /> \n");
-		fwrite( $targetfile , "</fieldset>\n");
-					}
-		
-		fwrite( $targetfile , '   </font></div>' . "\n");
-					
-			fwrite( $targetfile , '   </div>' . "\n");
+		fwrite( $targetfile , '   <div class="section-header"><h2>&nbsp;<font color="#FFFFFF">' . "\n");
+		fwrite( $targetfile , '   <span style="background-color: #000000;">' . "\n");
+		fwrite( $targetfile , '   &nbsp; ' . $menu_titles [$title] . ' &nbsp;</span>' . "\n");
+		fwrite( $targetfile , '   </font> </h2></div>' . "\n");
+		fwrite( $targetfile , '   </div>' . "\n");
 		
 		echo "<p><b>" . $menu_titles [$title] . "</b></p>";		
 		echo "<ul>";
@@ -53,7 +32,6 @@ for ($row = 1; $row < 17; $row++)
 		echo "<li>" . $articles [$title][$col] . "</li>";
 		
 			fwrite( $targetfile , '   <a name="' . $jumpToTxt . '">&nbsp;</a>' . "\n");
-			fwrite( $targetfile , '   <div class="article">' . "\n");
 			fwrite( $targetfile , '   	<h3>' . $articles [$title][$col] . '</h3>' . "\n\n");
 
 			if ( $administrator_state ){
@@ -87,8 +65,7 @@ for ($row = 1; $row < 17; $row++)
 			
 			insert_template ( $article_path , $article_name , $targetfile );
 						
-			fwrite( $targetfile , '   <hr /><hr />' . "\n\n");
-			fwrite( $targetfile , '   </div>' . "\n");
+			fwrite( $targetfile , '   <hr /><hr /><br />' . "\n\n");
 		}
 	echo "</ul>";
 	}
