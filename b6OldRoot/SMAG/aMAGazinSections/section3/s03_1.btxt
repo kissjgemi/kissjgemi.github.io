@@ -1,240 +1,240 @@
 <div class="parabellum">
 <p class="onecolumn"><b> Ötös lottó : </b><br />
-27,
-30,
-35,
-56,
-68</p>
+21,
+49,
+53,
+59,
+79</p>
 <div id="more-lotto5"><a onclick="show('less-lotto5'); hide('more-lotto5')" >
 <p class="showline">Mutass többet!</p></a>
 </div>
 <div id="less-lotto5" style="display: none; background-color: lightgray"><a onclick="show('more-lotto5'); hide('less-lotto5')" >
 <p class="showline">Rejtsd el!</p></a>
 <p class="onecolumn">
-<u>A 2015.év 53.hét ( 2016.01.02. )</u><br />
+<u>A <tr><td>2022.év 2.hét ( 2022.01.15. )</u><br />
 <i>- eredményei: 
-27|
-30|
-35|
-56|
-68<br />
+21|
+49|
+53|
+59|
+79<br />
 - nyereményei: 
-<span style=" white-space: nowrap;">5 találat 0 Ft ( 
-0 db );</span> 
-<span style=" white-space: nowrap;">4 találat 1330075 Ft ( 
-49 db );</span> 
-<span style=" white-space: nowrap;">3 találat 19105 Ft ( 
-3612 db );</span> 
-<span style=" white-space: nowrap;">2 találat 1345 Ft ( 
-99691 db ).</span> 
+<span style=" white-space: nowrap;">5 találat 3 348 134 835 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1 410 950 Ft ( 
+43 db );</span> 
+<span style=" white-space: nowrap;">3 találat 18 935 Ft ( 
+3451 db );</span> 
+<span style=" white-space: nowrap;">2 találat 1 985 Ft ( 
+92100 db ).</span> 
 </i></p>
 <p class="onecolumn">
-<u>A 2015.év 52.hét ( 2015.12.26. )</u><br />
+<u>A <td>2022.év 1.hét ( 2022.01.08. )</u><br />
 <i>- eredményei: 
 3|
-9|
-38|
-42|
-85<br />
+17|
+36|
+66|
+80<br />
 - nyereményei: 
 <span style=" white-space: nowrap;">5 találat 0 Ft ( 
 0 db );</span> 
-<span style=" white-space: nowrap;">4 találat 943155 Ft ( 
-60 db );</span> 
-<span style=" white-space: nowrap;">3 találat 13760 Ft ( 
-4354 db );</span> 
-<span style=" white-space: nowrap;">2 találat 1055 Ft ( 
-110681 db ).</span> 
+<span style=" white-space: nowrap;">4 találat 1 634 645 Ft ( 
+34 db );</span> 
+<span style=" white-space: nowrap;">3 találat 18 155 Ft ( 
+3297 db );</span> 
+<span style=" white-space: nowrap;">2 találat 1 670 Ft ( 
+93355 db ).</span> 
 </i></p>
 <p class="onecolumn">
-<u>A 2015.év 51.hét ( 2015.12.19. )</u><br />
+<u>A <td>2021.év 52.hét ( 2022.01.01. )</u><br />
 <i>- eredményei: 
-15|
-21|
-78|
-87|
-89<br />
+6|
+25|
+47|
+55|
+86<br />
 - nyereményei: 
 <span style=" white-space: nowrap;">5 találat 0 Ft ( 
 0 db );</span> 
-<span style=" white-space: nowrap;">4 találat 2873360 Ft ( 
-21 db );</span> 
-<span style=" white-space: nowrap;">3 találat 29580 Ft ( 
-2160 db );</span> 
-<span style=" white-space: nowrap;">2 találat 1945 Ft ( 
-76293 db ).</span> 
+<span style=" white-space: nowrap;">4 találat 1 260 675 Ft ( 
+45 db );</span> 
+<span style=" white-space: nowrap;">3 találat 19 140 Ft ( 
+3192 db );</span> 
+<span style=" white-space: nowrap;">2 találat 1 815 Ft ( 
+87869 db ).</span> 
 </i></p>
 <p class="onecolumn">
-<u>A 2015.év 50.hét ( 2015.12.12. )</u><br />
+<u>A <td>2021.év 51.hét ( 2021.12.25. )</u><br />
 <i>- eredményei: 
+5|
+31|
 34|
-38|
-45|
-62|
-90<br />
+42|
+63<br />
 - nyereményei: 
 <span style=" white-space: nowrap;">5 találat 0 Ft ( 
 0 db );</span> 
-<span style=" white-space: nowrap;">4 találat 2477585 Ft ( 
-24 db );</span> 
-<span style=" white-space: nowrap;">3 találat 26835 Ft ( 
-2346 db );</span> 
-<span style=" white-space: nowrap;">2 találat 1590 Ft ( 
-77042 db ).</span> 
+<span style=" white-space: nowrap;">4 találat 2 054 765 Ft ( 
+25 db );</span> 
+<span style=" white-space: nowrap;">3 találat 18 675 Ft ( 
+2962 db );</span> 
+<span style=" white-space: nowrap;">2 találat 1 735 Ft ( 
+83227 db ).</span> 
 </i></p>
 <p class="onecolumn">
-<u>A 2015.év 49.hét ( 2015.12.05. )</u><br />
+<u>A <td>2021.év 50.hét ( 2021.12.18. )</u><br />
 <i>- eredményei: 
-22|
-24|
-35|
-63|
-68<br />
+2|
+13|
+33|
+60|
+62<br />
 - nyereményei: 
 <span style=" white-space: nowrap;">5 találat 0 Ft ( 
 0 db );</span> 
-<span style=" white-space: nowrap;">4 találat 1099160 Ft ( 
-53 db );</span> 
-<span style=" white-space: nowrap;">3 találat 16190 Ft ( 
-3810 db );</span> 
-<span style=" white-space: nowrap;">2 találat 1245 Ft ( 
-96456 db ).</span> 
+<span style=" white-space: nowrap;">4 találat 1 409 155 Ft ( 
+37 db );</span> 
+<span style=" white-space: nowrap;">3 találat 19 275 Ft ( 
+2913 db );</span> 
+<span style=" white-space: nowrap;">2 találat 1 670 Ft ( 
+87549 db ).</span> 
 </i></p>
 </p></div>
 <p class="onecolumn"><b> Hatos lottó : </b><br />
-1,
 2,
-23,
-35,
-39,
-42</p>
+8,
+11,
+15,
+18,
+44</p>
 <div id="more-lotto6"><a onclick="show('less-lotto6'); hide('more-lotto6')" >
 <p class="showline">Mutass többet!</p></a>
 </div>
 <div id="less-lotto6" style="display: none; background-color: lightgray"><a onclick="show('more-lotto6'); hide('less-lotto6')" >
 <p class="showline">Rejtsd el!</p></a>
 <p class="onecolumn">
-<u>A 2015.év 53.hét ( 2016.01.03. )</u><br />
+<u>A <tr><td>2022.év 2.hét ( 2022.01.16. )</u><br />
+<i>- eredményei: 
+2|
+8|
+11|
+15|
+18|
+44<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 384 806 215 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">5+1 találat 0 ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 446 215 Ft ( 
+33 db );</span> 
+<span style=" white-space: nowrap;">4 találat 7 150 Ft ( 
+2060 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1 950 Ft ( 
+36021 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A <td>2022.év 1.hét ( 2022.01.09. )</u><br />
+<i>- eredményei: 
+2|
+3|
+12|
+16|
+18|
+41<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5+1 találat 0 ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 463 010 Ft ( 
+31 db );</span> 
+<span style=" white-space: nowrap;">4 találat 6 540 Ft ( 
+2194 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1 735 Ft ( 
+38830 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A <td>2021.év 52.hét ( 2022.01.02. )</u><br />
+<i>- eredményei: 
+4|
+11|
+23|
+24|
+27|
+35<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5+1 találat 0 ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 337 495 Ft ( 
+45 db );</span> 
+<span style=" white-space: nowrap;">4 találat 5 840 Ft ( 
+2600 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1 665 Ft ( 
+42079 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A <td>2021.év 51.hét ( 2021.12.26. )</u><br />
 <i>- eredményei: 
 1|
-2|
-23|
-35|
-39|
+3|
+7|
+12|
+16|
+27<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 3 165 377 480 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">5+1 találat 0 ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 167 310 Ft ( 
+133 db );</span> 
+<span style=" white-space: nowrap;">4 találat 4 580 Ft ( 
+4859 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1 550 Ft ( 
+65459 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A <td>2021.év 50.hét ( 2021.12.19. )</u><br />
+<i>- eredményei: 
+7|
+29|
+32|
+37|
+41|
 42<br />
 - nyereményei: 
 <span style=" white-space: nowrap;">6 találat 0 Ft ( 
 0 db );</span> 
-<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
+<span style=" white-space: nowrap;">5+1 találat 0 ( 
 0 db );</span> 
-<span style=" white-space: nowrap;">5 találat 739990 Ft ( 
-22 db );</span> 
-<span style=" white-space: nowrap;">4 találat 9880 Ft ( 
-1648 db );</span> 
-<span style=" white-space: nowrap;">3 találat 1855 Ft ( 
-30703 db ).</span> 
-</i></p>
-<p class="onecolumn">
-<u>A 2015.év 52.hét ( 2015.12.27. )</u><br />
-<i>- eredményei: 
-2|
-3|
-4|
-16|
-17|
-34<br />
-- nyereményei: 
-<span style=" white-space: nowrap;">6 találat 0 Ft ( 
-0 db );</span> 
-<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
-0 db );</span> 
-<span style=" white-space: nowrap;">5 találat 570245 Ft ( 
-25 db );</span> 
-<span style=" white-space: nowrap;">4 találat 9250 Ft ( 
-1541 db );</span> 
-<span style=" white-space: nowrap;">3 találat 1440 Ft ( 
-34639 db ).</span> 
-</i></p>
-<p class="onecolumn">
-<u>A 2015.év 51.hét ( 2015.12.20. )</u><br />
-<i>- eredményei: 
-5|
-7|
-10|
-11|
-17|
-21<br />
-- nyereményei: 
-<span style=" white-space: nowrap;">6 találat 0 Ft ( 
-0 db );</span> 
-<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
-0 db );</span> 
-<span style=" white-space: nowrap;">5 találat 150930 Ft ( 
-99 db );</span> 
-<span style=" white-space: nowrap;">4 találat 4240 Ft ( 
-3522 db );</span> 
-<span style=" white-space: nowrap;">3 találat 1000 Ft ( 
-52355 db ).</span> 
-</i></p>
-<p class="onecolumn">
-<u>A 2015.év 50.hét ( 2015.12.13. )</u><br />
-<i>- eredményei: 
-1|
-7|
-9|
-20|
-28|
-37<br />
-- nyereményei: 
-<span style=" white-space: nowrap;">6 találat 68097805 Ft ( 
-1 db );</span> 
-<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
-0 db );</span> 
-<span style=" white-space: nowrap;">5 találat 360305 Ft ( 
-42 db );</span> 
-<span style=" white-space: nowrap;">4 találat 6400 Ft ( 
-2364 db );</span> 
-<span style=" white-space: nowrap;">3 találat 1305 Ft ( 
-40514 db ).</span> 
-</i></p>
-<p class="onecolumn">
-<u>A 2015.év 49.hét ( 2015.12.06. )</u><br />
-<i>- eredményei: 
-2|
-10|
-12|
-14|
-22|
-24<br />
-- nyereményei: 
-<span style=" white-space: nowrap;">6 találat 429254115 Ft ( 
-1 db );</span> 
-<span style=" white-space: nowrap;">5+1 találat 0 Ft ( 
-0 db );</span> 
-<span style=" white-space: nowrap;">5 találat 335410 Ft ( 
-49 db );</span> 
-<span style=" white-space: nowrap;">4 találat 6015 Ft ( 
-2733 db );</span> 
-<span style=" white-space: nowrap;">3 találat 1360 Ft ( 
-42348 db ).</span> 
+<span style=" white-space: nowrap;">5 találat 541 520 Ft ( 
+44 db );</span> 
+<span style=" white-space: nowrap;">4 találat 7 810 Ft ( 
+3051 db );</span> 
+<span style=" white-space: nowrap;">3 találat 1 960 Ft ( 
+55447 db ).</span> 
 </i></p>
 </p></div>
 <p class="onecolumn"><b> Skandináv lottó : </b><br />
 <i>- gépi húzás: 
-6,
+2,
+7,
+20,
 22,
-23,
-24,
-26,
+25,
 27,
-35<br />
+32<br />
 <i>- kézi húzás: 
-1,
-9,
 11,
-24,
+13,
+19,
+22,
 29,
-30,
+32,
 34</p>
 <div id="more-lotto7"><a onclick="show('less-lotto7'); hide('more-lotto7')" >
 <p class="showline">Mutass többet!</p></a>
@@ -242,161 +242,161 @@
 <div id="less-lotto7" style="display: none; background-color: lightgray"><a onclick="show('more-lotto7'); hide('less-lotto7')" >
 <p class="showline">Rejtsd el!</p></a>
 <p class="onecolumn">
-<u>A 2016.év 1.hét ( 2016.01.06. )</u><br />
+<u>A <tr><td>2022.év 2.hét ( 2022.01.12. )</u><br />
 <i>- gépi húzás: 
-6|
+2|
+7|
+20|
+22|
+25|
+27|
+32<br />
+<i>- kézi húzás: 
+11|
+13|
+19|
+22|
+29|
+32|
+34<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">7 találat 60 712 100 Ft ( 
+2 db );</span> 
+<span style=" white-space: nowrap;">6 találat 123 480 Ft ( 
+156 db );</span> 
+<span style=" white-space: nowrap;">5 találat 4 375 Ft ( 
+4404 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1 390 Ft ( 
+51563 db );</span> 
+</i></p>
+<p class="onecolumn">
+<u>A <td>2022.év 1.hét ( 2022.01.05. )</u><br />
+<i>- gépi húzás: 
+1|
+2|
+16|
+17|
+25|
+27|
+29<br />
+<i>- kézi húzás: 
+1|
+5|
+24|
+27|
+28|
+31|
+33<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">7 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">6 találat 467 665 Ft ( 
+36 db );</span> 
+<span style=" white-space: nowrap;">5 találat 8 200 Ft ( 
+2053 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1 775 Ft ( 
+35395 db );</span> 
+</i></p>
+<p class="onecolumn">
+<u>A <td>2021.év 52.hét ( 2021.12.29. )</u><br />
+<i>- gépi húzás: 
+2|
+7|
+18|
+30|
+31|
+34|
+35<br />
+<i>- kézi húzás: 
+1|
+11|
+14|
+17|
+19|
+22|
+27<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">7 találat 181 758 575 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">6 találat 298 965 Ft ( 
+63 db );</span> 
+<span style=" white-space: nowrap;">5 találat 6 775 Ft ( 
+2780 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1 575 Ft ( 
+44593 db );</span> 
+</i></p>
+<p class="onecolumn">
+<u>A <td>2021.év 51.hét ( 2021.12.22. )</u><br />
+<i>- gépi húzás: 
+13|
+18|
 22|
 23|
 24|
 26|
-27|
+31<br />
+<i>- kézi húzás: 
+5|
+13|
+14|
+15|
+19|
+28|
+34<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">7 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">6 találat 394 685 Ft ( 
+46 db );</span> 
+<span style=" white-space: nowrap;">5 találat 6 745 Ft ( 
+2692 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1 580 Ft ( 
+42845 db );</span> 
+</i></p>
+<p class="onecolumn">
+<u>A <td>2021.év 50.hét ( 2021.12.15. )</u><br />
+<i>- gépi húzás: 
+5|
+12|
+19|
+25|
+28|
+29|
 35<br />
 <i>- kézi húzás: 
 1|
 9|
-11|
-24|
-29|
-30|
-34<br />
-- nyereményei: 
-<span style=" white-space: nowrap;">7 találat 0 Ft ( 
-0 db );</span> 
-<span style=" white-space: nowrap;">6 találat 322880 Ft ( 
-56 db );</span> 
-<span style=" white-space: nowrap;">5 találat 8020 Ft ( 
-2255 db );</span> 
-<span style=" white-space: nowrap;">4 találat 1430 Ft ( 
-37093 db );</span> 
-</i></p>
-<p class="onecolumn">
-<u>A 2015.év 53.hét ( 2015.12.30. )</u><br />
-<i>- gépi húzás: 
-6|
-8|
-11|
-17|
-25|
-29|
-32<br />
-<i>- kézi húzás: 
-2|
-14|
-18|
-26|
-29|
-32|
-34<br />
-- nyereményei: 
-<span style=" white-space: nowrap;">7 találat 43433880 Ft ( 
-1 db );</span> 
-<span style=" white-space: nowrap;">6 találat 200155 Ft ( 
-98 db );</span> 
-<span style=" white-space: nowrap;">5 találat 5305 Ft ( 
-3696 db );</span> 
-<span style=" white-space: nowrap;">4 találat 1150 Ft ( 
-49920 db );</span> 
-</i></p>
-<p class="onecolumn">
-<u>A 2015.év 52.hét ( 2015.12.23. )</u><br />
-<i>- gépi húzás: 
-14|
-19|
-22|
-23|
-24|
-28|
-29<br />
-<i>- kézi húzás: 
-2|
-5|
-11|
-18|
-26|
-28|
-29<br />
-- nyereményei: 
-<span style=" white-space: nowrap;">7 találat 21879820 Ft ( 
-2 db );</span> 
-<span style=" white-space: nowrap;">6 találat 232500 Ft ( 
-85 db );</span> 
-<span style=" white-space: nowrap;">5 találat 5850 Ft ( 
-3379 db );</span> 
-<span style=" white-space: nowrap;">4 találat 1120 Ft ( 
-51650 db );</span> 
-</i></p>
-<p class="onecolumn">
-<u>A 2015.év 51.hét ( 2015.12.16. )</u><br />
-<i>- gépi húzás: 
-1|
-8|
-9|
-11|
-16|
-17|
-31<br />
-<i>- kézi húzás: 
-6|
-12|
-17|
-19|
-23|
-29|
-30<br />
-- nyereményei: 
-<span style=" white-space: nowrap;">7 találat 366392040 Ft ( 
-1 db );</span> 
-<span style=" white-space: nowrap;">6 találat 167310 Ft ( 
-136 db );</span> 
-<span style=" white-space: nowrap;">5 találat 5770 Ft ( 
-3943 db );</span> 
-<span style=" white-space: nowrap;">4 találat 1120 Ft ( 
-59596 db );</span> 
-</i></p>
-<p class="onecolumn">
-<u>A 2015.év 50.hét ( 2015.12.09. )</u><br />
-<i>- gépi húzás: 
-1|
-6|
-9|
-13|
-21|
-32|
-33<br />
-<i>- kézi húzás: 
-3|
 10|
-12|
+11|
 22|
-23|
-32|
-33<br />
+28|
+35<br />
 - nyereményei: 
 <span style=" white-space: nowrap;">7 találat 0 Ft ( 
 0 db );</span> 
-<span style=" white-space: nowrap;">6 találat 174745 Ft ( 
-127 db );</span> 
-<span style=" white-space: nowrap;">5 találat 4610 Ft ( 
-4816 db );</span> 
-<span style=" white-space: nowrap;">4 találat 1030 Ft ( 
-63199 db );</span> 
+<span style=" white-space: nowrap;">6 találat 198 210 Ft ( 
+86 db );</span> 
+<span style=" white-space: nowrap;">5 találat 5 545 Ft ( 
+3073 db );</span> 
+<span style=" white-space: nowrap;">4 találat 1 475 Ft ( 
+43121 db );</span> 
 </i></p>
 </p></div>
 <p class="onecolumn"><b> Totó 13+1 : </b><br />
 2,
+2,
 1,
+1,
+X,
+2,
+2,
+1,
+1,
+X,
+X,
 X,
 1,
 X,
-2,
-2,
-X,
-2,
-1,
-1,
-2,
-2,
-+1,
 </p>
 <div id="more-toto"><a onclick="show('less-toto'); hide('more-toto')" >
 <p class="showline">Mutass többet!</p></a>
@@ -404,301 +404,301 @@ X,
 <div id="less-toto" style="display: none; background-color: lightgray"><a onclick="show('more-toto'); hide('less-toto')" >
 <p class="showline">Rejtsd el!</p></a>
 <p class="onecolumn">
-<u>A 2016.év 1.hét 1.forduló</u><br />
+<u>A <tr><td>2022.év 2.hét 2.forduló</u><br />
 <i>- eredményei: 
 2|
+2|
 1|
+1|
+X|
+2|
+2|
+1|
+1|
+X|
+X|
 X|
 1|
 X|
-2|
-2|
+<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">13+1 találat 2 928 685 Ft ( 
+5 db );</span> 
+<span style=" white-space: nowrap;">13 találat 236 100 Ft ( 
+12 db );</span> 
+<span style=" white-space: nowrap;">12 találat 4 895 Ft ( 
+269 db );</span> 
+<span style=" white-space: nowrap;">11 találat 580 Ft ( 
+2270 db );</span> 
+<span style=" white-space: nowrap;">10 találat 230 Ft ( 
+11095 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A <td>2022.év 2.hét 1.forduló</u><br />
+<i>- eredményei: 
 X|
 2|
 1|
+2|
 1|
 2|
 2|
-+1|
+1|
+1|
+X|
+X|
+X|
+2|
+X|
 <br />
 - nyereményei: 
 <span style=" white-space: nowrap;">13+1 találat 0 Ft ( 
 0 db );</span> 
 <span style=" white-space: nowrap;">13 találat 0 Ft ( 
 0 db );</span> 
-<span style=" white-space: nowrap;">12 találat 137160 Ft ( 
+<span style=" white-space: nowrap;">12 találat 161 575 Ft ( 
 5 db );</span> 
-<span style=" white-space: nowrap;">11 találat 8575 Ft ( 
-80 db );</span> 
-<span style=" white-space: nowrap;">10 találat 1755 Ft ( 
-749 db ).</span> 
+<span style=" white-space: nowrap;">11 találat 5 770 Ft ( 
+140 db );</span> 
+<span style=" white-space: nowrap;">10 találat 1 120 Ft ( 
+1382 db ).</span> 
 </i></p>
 <p class="onecolumn">
-<u>A 2015.év 53.hét 2.forduló</u><br />
+<u>A <td>2022.év 1.hét 2.forduló</u><br />
 <i>- eredményei: 
+X|
 1|
 X|
 1|
-1|
-1|
+2|
+2|
 1|
 2|
 2|
 X|
-X|
-1|
 1|
 2|
-+X|
+2|
+1|
 <br />
 - nyereményei: 
 <span style=" white-space: nowrap;">13+1 találat 0 Ft ( 
 0 db );</span> 
-<span style=" white-space: nowrap;">13 találat 1369835 Ft ( 
+<span style=" white-space: nowrap;">13 találat 3 499 065 Ft ( 
 1 db );</span> 
-<span style=" white-space: nowrap;">12 találat 68490 Ft ( 
-15 db );</span> 
-<span style=" white-space: nowrap;">11 találat 3680 Ft ( 
-279 db );</span> 
-<span style=" white-space: nowrap;">10 találat 810 Ft ( 
-2426 db ).</span> 
+<span style=" white-space: nowrap;">12 találat 89 545 Ft ( 
+18 db );</span> 
+<span style=" white-space: nowrap;">11 találat 3 545 Ft ( 
+266 db );</span> 
+<span style=" white-space: nowrap;">10 találat 845 Ft ( 
+2141 db ).</span> 
 </i></p>
 <p class="onecolumn">
-<u>A 2015.év 53.hét 1.forduló</u><br />
-<i>- eredményei: 
-X|
-2|
-1|
-X|
-1|
-2|
-1|
-2|
-1|
-X|
-2|
-1|
-1|
-+2|
-<br />
-- nyereményei: 
-<span style=" white-space: nowrap;">13+1 találat 5746795 Ft ( 
-1 db );</span> 
-<span style=" white-space: nowrap;">13 találat 262705 Ft ( 
-3 db );</span> 
-<span style=" white-space: nowrap;">12 találat 10650 Ft ( 
-74 db );</span> 
-<span style=" white-space: nowrap;">11 találat 820 Ft ( 
-963 db );</span> 
-<span style=" white-space: nowrap;">10 találat 260 Ft ( 
-5772 db ).</span> 
-</i></p>
-<p class="onecolumn">
-<u>A 2015.év 52.hét 1.forduló</u><br />
+<u>A <td>2022.év 1.hét 1.forduló</u><br />
 <i>- eredményei: 
 1|
-X|
-X|
-X|
-1|
-1|
 1|
 2|
 1|
+2|
+2|
+X|
+2|
+2|
+X|
 1|
+2|
 1|
-1|
-1|
-+1|
+X|
 <br />
 - nyereményei: 
 <span style=" white-space: nowrap;">13+1 találat 0 Ft ( 
 0 db );</span> 
-<span style=" white-space: nowrap;">13 találat 660335 Ft ( 
-2 db );</span> 
-<span style=" white-space: nowrap;">12 találat 21075 Ft ( 
-47 db );</span> 
-<span style=" white-space: nowrap;">11 találat 1630 Ft ( 
-608 db );</span> 
-<span style=" white-space: nowrap;">10 találat 470 Ft ( 
-4046 db ).</span> 
+<span style=" white-space: nowrap;">13 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">12 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">11 találat 31 830 Ft ( 
+21 db );</span> 
+<span style=" white-space: nowrap;">10 találat 5 475 Ft ( 
+234 db ).</span> 
 </i></p>
 <p class="onecolumn">
-<u>A 2015.év 51.hét 2.forduló</u><br />
+<u>A <td>2021.év 52.hét 2.forduló</u><br />
 <i>- eredményei: 
 2|
-1|
 2|
 2|
-1|
-1|
 1|
 2|
 1|
 1|
+1|
+1|
+X|
+X|
 2|
 2|
-2|
-+2|
+X|
 <br />
 - nyereményei: 
-<span style=" white-space: nowrap;">13+1 találat 11273435 Ft ( 
-2 db );</span> 
-<span style=" white-space: nowrap;">13 találat 690650 Ft ( 
-10 db );</span> 
-<span style=" white-space: nowrap;">12 találat 5315 Ft ( 
-340 db );</span> 
-<span style=" white-space: nowrap;">11 találat 440 Ft ( 
-4115 db );</span> 
-<span style=" white-space: nowrap;">10 találat 165 Ft ( 
-20886 db ).</span> 
+<span style=" white-space: nowrap;">13+1 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">13 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">12 találat 635 875 Ft ( 
+1 db );</span> 
+<span style=" white-space: nowrap;">11 találat 105 980 Ft ( 
+6 db );</span> 
+<span style=" white-space: nowrap;">10 találat 9 030 Ft ( 
+135 db ).</span> 
 </i></p>
 </p></div>
 <p class="onecolumn"><b> Góltotó : </b><br />
-2:+,
-2:1,
-+:+,
-+:0,
-0:0,
-0:1,
-1:+,
-2:2,
-0:1,
-2:1,
-+:2,
+0:+,
 0:2,
-0:1,
-+2:1</p>
+1:0,
+2:1,
+0:0,
+1:2,
+0:+,
+2:0,
+1:0,
+0:0,
+2:2,
+1:1,
+2:1,
+1:1</p>
 <div id="more-goltoto"><a onclick="show('less-goltoto'); hide('more-goltoto')" >
 <p class="showline">Mutass többet!</p></a>
 </div>
 <div id="less-goltoto" style="display: none; background-color: lightgray"><a onclick="show('more-goltoto'); hide('less-goltoto')" >
 <p class="showline">Rejtsd el!</p></a>
 <p class="onecolumn">
-<u>A 2016.év 1.hét 1.forduló</u><br />
+<u>A <tr><td>2022.év 2.hét 2.forduló</u><br />
 <i>- eredményei: 
-2:+|
-2:1|
-+:+|
-+:0|
-0:0|
-0:1|
-1:+|
-2:2|
-0:1|
-2:1|
-+:2|
+0:+|
 0:2|
-0:1|
-+2:1<br />
-- nyereményei: 
-<span style=" white-space: nowrap;">6 találat 0 Ft ( 
-0 db );</span> 
-<span style=" white-space: nowrap;">5 találat 0 Ft ( 
-0 db );</span> 
-<span style=" white-space: nowrap;">4 találat 13805 Ft ( 
-4 db ).</span> 
-</i></p>
-<p class="onecolumn">
-<u>A 2015.év 53.hét 2.forduló</u><br />
-<i>- eredményei: 
 1:0|
+2:1|
 0:0|
-2:1|
-1:0|
-+:1|
-2:1|
 1:2|
 0:+|
-1:1|
-0:0|
-1:0|
 2:0|
+1:0|
+0:0|
+2:2|
+1:1|
+2:1|
+1:1<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 50 545 Ft ( 
+3 db );</span> 
+<span style=" white-space: nowrap;">4 találat 2 355 Ft ( 
+23 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A <td>2022.év 2.hét 1.forduló</u><br />
+<i>- eredményei: 
+2:2|
 1:2|
-+2:2<br />
++:1|
+0:+|
+2:0|
+0:1|
+0:1|
++:1|
+2:0|
+2:2|
+1:1|
+1:1|
+0:1|
+0:0<br />
 - nyereményei: 
 <span style=" white-space: nowrap;">6 találat 0 Ft ( 
 0 db );</span> 
 <span style=" white-space: nowrap;">5 találat 0 Ft ( 
 0 db );</span> 
-<span style=" white-space: nowrap;">4 találat 70470 Ft ( 
-1 db ).</span> 
+<span style=" white-space: nowrap;">4 találat 19 295 Ft ( 
+2 db ).</span> 
 </i></p>
 <p class="onecolumn">
-<u>A 2015.év 53.hét 1.forduló</u><br />
+<u>A <td>2022.év 1.hét 2.forduló</u><br />
 <i>- eredményei: 
-0:0|
-0:1|
+2:2|
 +:1|
 2:2|
 +:1|
-0:1|
-2:0|
-0:2|
-2:0|
+2:+|
+1:+|
+1:0|
+1:+|
+0:+|
 0:0|
-0:1|
-+:0|
-+:1|
-+0:1<br />
+1:0|
+2:+|
++:+|
+2:1<br />
 - nyereményei: 
 <span style=" white-space: nowrap;">6 találat 0 Ft ( 
 0 db );</span> 
-<span style=" white-space: nowrap;">5 találat 23665 Ft ( 
-9 db );</span> 
-<span style=" white-space: nowrap;">4 találat 600 Ft ( 
-108 db ).</span> 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 4 190 Ft ( 
+11 db ).</span> 
 </i></p>
 <p class="onecolumn">
-<u>A 2015.év 52.hét 1.forduló</u><br />
+<u>A <td>2022.év 1.hét 1.forduló</u><br />
 <i>- eredményei: 
+2:0|
 1:0|
+0:2|
+2:1|
+0:2|
+1:2|
++:+|
+1:2|
+1:2|
+1:1|
++:1|
+0:+|
+2:0|
+1:1<br />
+- nyereményei: 
+<span style=" white-space: nowrap;">6 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">5 találat 0 Ft ( 
+0 db );</span> 
+<span style=" white-space: nowrap;">4 találat 12 755 Ft ( 
+8 db ).</span> 
+</i></p>
+<p class="onecolumn">
+<u>A <td>2021.év 52.hét 2.forduló</u><br />
+<i>- eredményei: 
+0:1|
+0:1|
+2:+|
+2:1|
+2:+|
++:1|
+1:0|
+1:0|
+2:0|
 0:0|
 1:1|
-2:2|
-+:1|
-1:0|
-+:0|
+0:2|
 0:1|
-2:1|
-2:0|
-+:0|
-2:1|
-+:0|
-++:0<br />
+2:2<br />
 - nyereményei: 
 <span style=" white-space: nowrap;">6 találat 0 Ft ( 
 0 db );</span> 
 <span style=" white-space: nowrap;">5 találat 0 Ft ( 
 0 db );</span> 
-<span style=" white-space: nowrap;">4 találat 10785 Ft ( 
-6 db ).</span> 
-</i></p>
-<p class="onecolumn">
-<u>A 2015.év 51.hét 2.forduló</u><br />
-<i>- eredményei: 
-0:1|
-2:1|
-0:1|
-0:1|
-+:1|
-2:0|
-+:2|
-2:+|
-2:0|
-2:0|
-1:+|
-0:1|
-2:+|
-+1:2<br />
-- nyereményei: 
-<span style=" white-space: nowrap;">6 találat 0 Ft ( 
-0 db );</span> 
-<span style=" white-space: nowrap;">5 találat 0 Ft ( 
-0 db );</span> 
-<span style=" white-space: nowrap;">4 találat 12765 Ft ( 
-6 db ).</span> 
+<span style=" white-space: nowrap;">4 találat 0 Ft ( 
+0 db ).</span> 
 </i></p>
 </p></div>
 <br />
-<br /></p><p class="headfoot" align="right">A Szerencsejáték Zrt. tájékoztatása alapján 2016.01.07., csütörtök  06:20 </p></div>
+<br /></p><p class="headfoot" align="right">A Szerencsejáték Zrt. tájékoztatása alapján 2022.01.18., kedd  22:03 </p></div>

@@ -1,4 +1,7 @@
-
+	</div><div style="background-color: lightgray">
+		<h4>Képfeltöltés</h4>
+         <input type="file" name="image" style="margin-left: 10%;"/>
+	</div></td></tr></table>
 <div style="background-color: lightgray">
 <h4>Cím</h4>
  <input type="text" style="width: 80%; margin-left: 10%;" name="article_title" />

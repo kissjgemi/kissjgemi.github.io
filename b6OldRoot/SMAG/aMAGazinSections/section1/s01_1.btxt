@@ -1,6 +1,6 @@
 <div class="parabellum"><p class="onecolumn">
-<b><i>2016.01.08.</i> (péntek) </b><br />
- Eleinte erősen felhős és derült területek egyaránt lesznek, főként keleten és a Dél-Dunántúlon lehetnek tartósan felhős tájak. Északkeleten néhol hószállingózás előfordulhat. Késő délutántól délnyugat felől erősen megnövekszik, megvastagszik a felhőzet, és egyre többfelé várható eső, délnyugaton esetleg néhol ónos eső, északkeleten havazás, havas eső, ónos eső is lehet. Többnyire mérsékelt marad a légmozgás. Éjszaka főként északon, északkeleten többfelé köd képződik, amely néhol tartósabban megmaradhat. A hőmérséklet kora délután -2 és +7, késő este +1 és -4 fok között alakul.
+<b><i>2020.01.09.</i> (csütörtök) </b><br />
+ Délnyugat felől tovább szakadozik a felhőzet, de az ország keleti felében estig felhős marad az idő, és ott helyenként még előfordulhat ónos eső, fagyott eső. Többnyire mérsékelt marad a légmozgás. Késő estére általában +1 és -3 fok közé csökken a hőmérséklet.
 </p>
 <div id="more-weather"><a onclick="show('less-weather'); hide('more-weather')" >
 <p class="showline">Mutass többet!</p></a>
@@ -8,29 +8,29 @@
 <div id="less-weather" style="display: none; background-color: lightgray"><a onclick="show('more-weather'); hide('less-weather')" >
 <p class="showline">Rejtsd el!</p></a>
 <p class="onecolumn">
-<b><i>2016.01.09.</i> (szombat) </b><br />
- Erősen felhős vagy borult lesz az ég, többfelé valószínű eső, északkeleten havazás, havas eső, ónos eső is lehet. Többnyire mérsékelt marad a légmozgás. A legalacsonyabb éjszakai hőmérséklet általában +1 és -5 fok között várható, de északkeleten néhol hidegebb is lehet. A legmagasabb nappali hőmérséklet -1 és +5 fok között alakul.
+<b><i>2020.01.10.</i> (péntek) </b><br />
+ Az északi megyékben több helyen tartósan párás, ködös, felhős maradhat az idő, míg másutt többórás napsütés valószínű. A borult területeken ónos szitálás, szitálás előfordulhat. A nyugati szél a Dél-Dunántúlon olykor megélénkül. A legalacsonyabb éjszakai hőmérséklet általában +1 és -6 fok között alakul, de néhol ennél pár fokkal hidegebb is lehet. A legmagasabb nappali hőmérséklet -1 és +10 fok között valószínű, délnyugaton lesz enyhébb, a tartósan borult északi tájakon pedig hűvösebb az idő.
 </p>
 <p class="onecolumn">
-<b><i>2016.01.10.</i> (vasárnap) </b><br />
- Nagyrészt borult lesz az ég, csak az ország déli részén vékonyodhat el átmenetileg a felhőzet. Az északi országrészben többfelé tartósan párás marad a levegő. Országos, kiadós esőre számíthatunk, az Északi-középhegységben hajnalig ónos eső is előfordulhat. Délutántól átmenetileg csökken a csapadék területi kiterjedése. Kezdetben a délkeleti, majd a délnyugati szél időszakosan megélénkül. A legalacsonyabb éjszakai hőmérséklet még szombat este áll be, amikor -1 és +4 fokra számíthatunk, hajnalra egy-két fokot emelkedik a hőmérséklet. A legmagasabb nappali hőmérséklet általában 1 és 6, az ország déli, délkeleti részén néhol 7 és 10 fok között alakul.
+<b><i>2020.01.11.</i> (szombat) </b><br />
+ Északkeleten, keleten erősen felhős területek is maradhatnak, másutt napos vagy változóan felhős időre számíthatunk. Csapadék nem lesz. Az északkeleti országrész kivételével megélénkül, többfelé megerősödik az északnyugati szél. A legalacsonyabb éjszakai hőmérséklet +2 és -5 fok között alakul. A legmagasabb nappali hőmérséklet általában 4 és 9 fok között várható, de északkeleten néhány fokkal hidegebb tájak is lesznek.
 </p>
 <p class="onecolumn">
-<b><i>2016.01.11.</i> (hétfő) </b><br />
- Erősen felhős, vagy borult ég lesz jellemző, csak rövid időszakokra szakadozhat fel a felhőzet. Délelőttig többfelé párás lesz a levegő, majd a megerősödő szél megszünteti azt. A reggeli csapadék után napközben kevesebb helyen, késő délutántól ismét sokfelé valószínű nagy mennyiségű eső, intenzív beágyazott záporok, sőt ebben az időszakban egy-egy zivatar sem kizárt. A hajnalban még országszerte gyenge lesz a légmozgás, napközben azonban nagy területen megerősödik, sőt este átmenetileg több helyen viharossá fokozódik a déli, délnyugati szél. A legalacsonyabb éjszakai hőmérséklet -2 és +3, a legmagasabb nappali hőmérséklet a Tatabánya-Siófok-Nyíregyháza vonaltól északra 3 és 9, másutt 9 és 14 fok között alakul.
+<b><i>2020.01.12.</i> (vasárnap) </b><br />
+ Éjszaka nagy területen rétegfelhőzet, illetve köd képződik, amelynek egy része egész nap megmarad, másutt kitisztul az idő, kisüt a nap. Csapadék nem várható. A délnyugati szél többnyire mérsékelt marad. A legalacsonyabb éjszakai hőmérséklet 0 és -6, a legmagasabb nappali hőmérséklet 1 és 7 fok között valószínű.
 </p>
 <p class="onecolumn">
-<b><i>2016.01.12.</i> (kedd) </b><br />
- Eleinte borult lesz az ég, majd egyre nagyobb területen felszakadozik, csökken a felhőzet. Délelőtt fokozatosan délkelet felé húzódik, majd az összefüggő csapadékrendszer elhagyja az országot, később már csak néhol lehet gyenge zápor. Kezdetben még viharos lökésekkel kísért nyugati, délnyugati szél napközben csak kissé mérséklődik. A legalacsonyabb éjszakai hőmérséklet 0 és +7, a legmagasabb nappali hőmérséklet 6 és 12 fok között alakul.
+<b><i>2020.01.13.</i> (hétfő) </b><br />
+ Az ország nagy részén borult, párás, foltokban egész nap ködös időre van kilátás, kis területen lehet napsütés. Elszórtan szitálás, ónos szitálás valószínű. A szél gyenge vagy mérsékelt marad. A legalacsonyabb éjszakai hőmérséklet 0 és -6, a legmagasabb nappali hőmérséklet -2 és +4 fok között valószínű.
 </p>
 <p class="onecolumn">
-<b><i>2016.01.13.</i> (szerda) </b><br />
- Változóan felhős lesz az ég, több-kevesebb napsütéssel, a felhősebb körzetek inkább a Dunántúlon lehetnek. Legfeljebb néhol lehet kisebb eső, zápor, a hegyekben hózápor. Az északnyugati szél a főváros környékén sokfelé megerősödik, másutt mérsékeltebb lesz a légmozgás. A legalacsonyabb éjszakai hőmérséklet -6 és 0, a legmagasabb nappali hőmérséklet 3 és 8 fok között alakul.
+<b><i>2020.01.14.</i> (kedd) </b><br />
+ Borult, párás, foltokban ködös időre számíthatunk, legfeljebb kis területen lehet napsütés. Elszórtan szitálás, ónos szitálás várható. A délkeleti szél gyenge vagy mérsékelt marad. A legalacsonyabb éjszakai hőmérséklet -1 és -6, a legmagasabb nappali hőmérséklet -2 és +4 fok között valószínű.
 </p>
 <p class="onecolumn">
-<b><i>2016.01.14.</i> (csütörtök) </b><br />
- Kezdetben gyengén felhős lesz az ég, majd nyugat felől megnövekszik a felhőzet. Estig nem valószínű csapadék, estétől már több helyen számíthatunk esőre, havas esőre, északkeleten havazásra.  A déli, délnyugati szél megélénkül.  A legalacsonyabb éjszakai hőmérséklet -9 és -2, a legmagasabb nappali hőmérséklet 1 és 7 fok között alakul.
+<b><i>2020.01.15.</i> (szerda) </b><br />
+ Borult, párás, helyenként ködös időre számíthatunk, legfeljebb kis területen lehet napsütés. Elszórtan szitálás, ónos szitálás várható. A délkeleti, keleti szél gyenge vagy mérsékelt marad. A legalacsonyabb éjszakai hőmérséklet 0 és -5, a legmagasabb nappali hőmérséklet -3 és +3 fok között valószínű.
 </p>
 </div>
 <p class="onecolumn">
-<br /></p><p class="headfoot" align="right">Országos Meteorológiai Szolgálat 2016.01.08.</p></div>
+<br /></p><p class="headfoot" align="right">Országos Meteorológiai Szolgálat 2020.01.09.</p></div>

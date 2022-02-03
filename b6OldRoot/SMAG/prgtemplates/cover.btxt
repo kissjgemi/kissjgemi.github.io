@@ -1,15 +1,25 @@
 
 <a name="s00">&nbsp;</a>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 	<div id="section0">
-	<div class="front-header">
 		<div id="iconmenu">
-		<center>
-	<a href="#s01"><img src="aMAGazinImages/buttons/forecast.png" alt="időjárás" title="időjárás"></a>
-	<a href="#s02"><img src="aMAGazinImages/buttons/streetinfo.png" alt="közlekedés" title="közlekedés"></a>
-	<a href="#s03"><img src="aMAGazinImages/buttons/luck.png" alt="totó-lottó" title="totó-lottó"></a>
-		</center> </div> 
+	&nbsp;<a href="#s01"><img src="aMAGazinImages/buttons/forecast.png" alt="időjárás" title="időjárás"></a><br />
+	&nbsp;<a href="#s02"><img src="aMAGazinImages/buttons/streetinfo.png" alt="közlekedés" title="közlekedés"></a><br />
+	&nbsp;<a href="#s03"><img src="aMAGazinImages/buttons/luck.png" alt="totó-lottó" title="totó-lottó"></a><br />
+	</div> 
+    <div class="front-header">
+    <div class="fb-like iconmenu" data-href="http://mag.b6.hu/#s15" data-layout="button" 
+    data-action="recommend" data-size="small" data-show-faces="true" data-share="false"></div>	
 	<img src="aMAGazinImages/header/yinguInTheSky2.gif" alt="MAGazin" title="MAGazin">
-	<h2>&nbsp;<font color="#FFFFFF"> <span style="background-color: #000000;">                  
- </font></h2> </div></div>
+	</div></div>
  

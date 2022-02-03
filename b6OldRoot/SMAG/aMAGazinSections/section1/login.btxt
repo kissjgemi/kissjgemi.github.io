@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	MTI
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=9" /><link href="../css/StyleSheet.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />    
+    <script src="../js/Images.js" type="text/javascript"></script>
+    
+    <link href="../css/StyleSheet.css" rel="stylesheet" type="text/css" />
+<link href="/WebResource.axd?d=qR_MQPIJ730UmBX1V2LZ4bEwQYYLymA5yfp3h7IFCIH-qXxHhcP_yxScWePlzI1CCCaR2pey0C_y5b_KnwWPxMb-gBhLb_16t-RRmHA_4s8CSGbKXYwFPhtQQMvL9uakL3MQSLEX-LogXn1Q-UBTNAByFFw1&amp;t=634946106760000000" type="text/css" rel="stylesheet" /></head>
+<body>
+    <center>
+    <form name="aspnetForm" method="post" action="Default.aspx" id="aspnetForm">
+<input type="hidden" name="ctl00_ScriptManager1_HiddenField" id="ctl00_ScriptManager1_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExMDAyNzQzNjAPZBYCZg9kFgICAw9kFhICBQ8WAh4FY2xhc3MFDm10aWxvZ2ludG9waHVuFgQCAw8PFgIeB1Zpc2libGVoZGQCBQ8PFgIeBFRleHQFFjIwMjIuIGphbnXDoXIgMTguIGtlZGRkZAIHDw8WAh4ISW1hZ2VVcmwFH34vbXRpL0Rvd25sb2FkLmFzcHg/bmV3c2lkPTExMzZkZAIJDw8WAh8CBS5NZWfDump1bHQgYSBww6ljc2kgUMOhbG9zIHRlbXBsb20gw6lzIGtvbG9zdG9yZGQCCw8WAh8ABQ5tdGlsb2dpbmJveGh1bhYCAgEPZBYOAgIPFgIeCWlubmVyaHRtbAUPRS1tYWlsIGMmIzIzNzttZAIIDxYCHwQFC0plbHN6JiMyNDM7ZAIPDw8WAh8BaGRkAhMPDxYCHwFoZGQCFQ8WAh8ABRNtdGlsb2dpbnRleHRvbmx5aHVuZAIXDxYCHwFoZAIbDw8WAh8BaGRkAg0PDxYCHwFoZGQCDw8PFgIfAWhkZAITD2QWGAIDDw8WBB4LTmF2aWdhdGVVcmwFWmh0dHA6Ly9vcy5tdGkuaHUvaGlyZWsvMTY2ODk0L2FfZmlkZXN6X2V1cm9wYWlfcGFybGFtZW50aV9rZXB2aXNlbG9jc29wb3J0amFuYWtfa296bGVtZW55ZR8CBUJBIEZpZGVzeiBldXLDs3BhaSBwYXJsYW1lbnRpIGvDqXB2aXNlbMWRY3NvcG9ydGrDoW5hayBrw7Z6bGVtw6lueWVkZAIFDw8WAh8CBYQBQnVkYXBlc3QsIDIwMjIuIGphbnXDoXIgMTguLCBrZWRkIChPUykgLSBKw6Fyw7NrYSBMw612aWEgdmlzc3phbMOpcCBheiBhbGVsbsO2a2plbMO2bHRzw6lndMWRbCBheiBFdXLDs3BhaSBLb256ZXJ2YXTDrXZvayDDqXMgUmVmLi4uZGQCBw8PFgIfAgUXMjAyMi4gamFudcOhciAxOC4gMTc6MjJkZAINDw8WBB8FBU9odHRwOi8va21zLm10dmEuaHUvaGlyLzUzMTkvYnVudGV0ZXNla19oZWx5ZXR0X3RhamVrb3p0YXRhc3RfZXNfZW1iZXJpX2VsamFyYXN0HwIFPELDvG50ZXTDqXNlayBoZWx5ZXR0IHTDoWrDqWtvenRhdMOhc3Qgw6lzIGVtYmVyaSBlbGrDoXLDoXN0IWRkAg8PDxYCHwIFhAFBeiBFcmTDqWx5aSBNYWd5YXIKTsOpcHDDoXJ0IE9yc3rDoWdvcyBFbG7Dtmtzw6lnZSBheiBhbMOhYmJpIGvDtnpsZW3DqW55dCBib2Nzw6F0b3R0YSBraSBhIHJvbcOhbiBoYXTDs3PDoWdvawpiw7xudGV0xZFoYWRqw6FyYXQuLi5kZAIRDw8WAh8CBRcyMDIyLiBqYW51w6FyIDE1LiAxMTo0MmRkAhkPDxYEHwUFYmh0dHA6Ly9vbmtvcm1hbnl6YXQubXRpLmh1L2hpci80OTE5Ny9yYXZhemRfdGVsZXB1bGVzaV9rb3JueWV6ZXR2ZWRlbG1pX2luZnJhc3RydWt0dXJhLWZlamxlc3p0ZXNlHwIFQ1JhdmF6ZCB0ZWxlcMO8bMOpc2kga8O2cm55ZXpldHbDqWRlbG1pIGluZnJhc3RydWt0w7pyYS1mZWpsZXN6dMOpc2VkZAIbDw8WAh8CBYUBQSBwcm9qZWt0CmEgU3rDqWNoZW55aSAyMDIwIHByb2dyYW0sIFRPUC0yLjEuMy0xNiDigJ5UZWxlcMO8bMOpc2kga8O2cm55ZXpldHbDqWRlbG1pIEluZnJhc3RydWt0w7pyYWZlamxlc3p0w6lzZWvigJ0KZmVsaMOtdsOhc2Egay4uLmRkAh0PDxYCHwIFFzIwMjIuIGphbnXDoXIgMTguIDA5OjIwZGQCIw8PFgQfBQVMaHR0cDovL290cy5tdGkuaHUvaGlyZWsvMTY2ODc4L2thdGFzenRyb2ZhdmVkZWxtaV9lc3prb3pyZW5kc3plcl9mZWpsZXN6dGVzZR8CBTFLYXRhc3p0csOzZmF2w6lkZWxtaSBlc3prw7Z6cmVuZHN6ZXIgZmVqbGVzenTDqXNlZGQCJQ8PFgIfAgWDAUJ1ZGFwZXN0LCAyMDIyLiBqYW51w6FyIDE4Liwga2VkZCAoT1RTKSAtIEEgR0FNTUEgTcWxc3pha2kgWsOhcnRrw7ZyxbEgUsOpc3p2w6lueXTDoXJzYXPDoWcgYSAyMDIxLiDDqXZiZW4gesOhcnVsdCBwcm9ncmFtIGtlcmV0Li4uZGQCJw8PFgIfAgUXMjAyMi4gamFudcOhciAxOC4gMTA6NTVkZAIVDw8WAh8BaGRkAhsPZBYCAgEPDxYCHgdUb29sVGlwBQhXRUIxMUJVRGRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBSdjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGhsT0tidXR0b25IVU6ksRPhlb+7LLPwSKIk072Er6Xj/Q==" />
+
+
+<script src="/ScriptResource.axd?d=tcSZ6z6ozBEVPTTdr7LdPWRFgUrHsB3cWs4l2AmANXyahP2O23UAGFOSBpN2BDl5DV2Hyo4f2_cicHbXr1NrfGnGBAbEplKGjdL3unQ-XqKJMjKNuOTRR_fRAAo1e2La1vA58g2&amp;t=ffffffffecf8d3f2" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/mti/Default.aspx?_TSM_HiddenField_=ctl00_ScriptManager1_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.7.123%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3ahu%3a5a4df314-b4a2-4da2-a207-9284f1b1e96c%3a475a4ef5%3a5546a2b%3ad2e10b12%3aeffe2a26%3a37e2e5c9%3a5a682656%3abfe70f69%3a751cdd15%3adfad98a5" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="7EE98303" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBgLg08G5BAKut/yvAgKvhsD1BwL57L30DgLfm/XzBgLE9sXuDnncWK5t6mNmI1jqN5JFT7r5GtOA" />
+    
+    <div class="mtimain">
+        
+        <div class="ECSSnew">
+        <img src="../img/mti/nav/csatorna_valaszto.png" width="955" height="88" border="0" usemap="#csvMap">
+<map name="csvMap" id="csvMap">
+<area shape="rect" coords="0,0,100,88" href="http://www.hirado.hu/" target="_blank" alt="hirado.hu" />
+<area shape="rect" coords="100,0,170,88" href="http://www.mediaklikk.hu/m1/" target="_blank" alt="M1" />
+<area shape="rect" coords="170,0,250,88" href="http://www.mediaklikk.hu/m2/" target="_blank" alt="M2" />
+<area shape="rect" coords="250,0,325,88" href="http://www.mediaklikk.hu/m3/" target="_blank" alt="M3" />
+<area shape="rect" coords="325,0,400,88" href="http://www.mediaklikk.hu/m4/" target="_blank" alt="M4" />
+<area shape="rect" coords="400,0,478,88" href="http://www.mediaklikk.hu/duna/" target="_blank" alt="Duna" />
+<area shape="rect" coords="478,0,557,88" href="http://www.mediaklikk.hu/dunaworld/" target="_blank" alt="Duna World" />
+<area shape="rect" coords="557,0,635,88" href="http://www.mediaklikk.hu/kossuth/" target="_blank" alt="Kossuth" />
+<area shape="rect" coords="635,0,712,88" href="http://www.mediaklikk.hu/petofi/" target="_blank" alt="Petőfi" />
+<area shape="rect" coords="712,0,795,88" href="http://www.mediaklikk.hu/bartok/" target="_blank" alt="Bartók" />
+<area shape="rect" coords="795,0,865,88" href="http://www.mediaklikk.hu/danko/" target="_blank" alt="Dankó" />
+<area shape="rect" coords="865,0,955,44" href="http://www.hirado.hu/rovatok/in-english/" target="_blank" alt="in english" />
+<area shape="rect" coords="865,44,955,88" href="http://www.hirado.hu/rovatok/romana/" target="_blank" alt="ROMÂNĂ" />
+</map>
+        </div>
+        <div id="ctl00_pllogintop" class="mtilogintophun">
+            <div class="mtilogo"><a id="ctl00_hlLogo" href="http://www.mti.hu/"><img src="../img/mti/mti_logo.png" /></a></div>
+            <div class="mtikultudpaly"></div>
+            <div class="mtidate"><span id="ctl00_lbDate" class="mtiheaddatetext">2022. január 18. kedd</span></div>
+        </div>
+        <div class="mticenter">
+            <div class="mtipicturetop">
+                <div class="mtipicture"><img id="ctl00_imgPicture" src="Download.aspx?newsid=1136" border="0" /></div>
+                <div class="mtipicturetitle"><span id="ctl00_lbTitle" class="mtipicturetitletext">Megújult a pécsi Pálos templom és kolostor</span></div>
+            </div>
+            <div id="ctl00_plloginbox" class="mtiloginboxhun">
+                
+    <div style="text-align: left; margin-left: 90px; height: 200px;"><div id="ctl00_ContentPlaceHolder1_pNotLogged">
+	<span id="ctl00_ContentPlaceHolder1_lbErrorText" class="mtierrortext"></span>
+</div><div id="ctl00_ContentPlaceHolder1_dEmail" class="mtilogindlgtext" style="margin-bottom: 0px; margin-left: 5px; padding-top: 25px;">E-mail c&#237;m</div>
+    <div id="ctl00_ContentPlaceHolder1_plEmail" class="dropShadowPanelLogin">
+	<input name="ctl00$ContentPlaceHolder1$tbEmail" type="text" maxlength="100" id="ctl00_ContentPlaceHolder1_tbEmail" class="mtilogindlgintext" />
+    
+    <input type="hidden" name="ctl00$ContentPlaceHolder1$rvfexName_ClientState" id="ctl00_ContentPlaceHolder1_rvfexName_ClientState" />
+</div>
+    
+    <div id="ctl00_ContentPlaceHolder1_dPassword" class="mtilogindlgtext" style="margin-bottom: 0px; margin-left: 5px; padding-top: 20px;">Jelsz&#243;</div>
+    <table border="0" cellpadding="0" cellspacing="0">
+    <tr><td><div id="ctl00_ContentPlaceHolder1_plPassword" class="dropShadowPanelPassword">
+	<input name="ctl00$ContentPlaceHolder1$tbPassWord" type="password" maxlength="20" id="ctl00_ContentPlaceHolder1_tbPassWord" class="mtilogindlgintext" />
+    
+    <input type="hidden" name="ctl00$ContentPlaceHolder1$rvfexEmail_ClientState" id="ctl00_ContentPlaceHolder1_rvfexEmail_ClientState" />
+</div>
+    </td>
+    <td><input type="image" name="ctl00$ContentPlaceHolder1$hlOKbuttonHUN" id="ctl00_ContentPlaceHolder1_hlOKbuttonHUN" class="mtiokbutton" src="../img/mti/belepes_BTN.png" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$hlOKbuttonHUN&quot;, &quot;&quot;, true, &quot;send&quot;, &quot;&quot;, false, false))" border="0" /></td>
+    </tr>
+    </table>
+</div>
+<div class="mtiloginresetpasswordhun"><a id="ctl00_ContentPlaceHolder1_hlResetPassword" href="Password.aspx">Elfelejtett jelszó</a></div>
+<div class="mtiloginresetpasswordeng"></div>
+<div class="mtiloginsep"></div>
+<div id="ctl00_ContentPlaceHolder1_dLoginTextHUN" class="mtilogintextonlyhun">Az ingyenes hírszolgáltatások <br />regisztrációhoz vannak kötve. Amennyiben<br />szeretné igénybe venni szolgáltatásunkat<br />kérjük regisztráljon!</div>
+
+<div style="margin-left: 12px; text-align:left; float: left;"><a id="ctl00_ContentPlaceHolder1_btRegHUN" href="Registration.aspx"><img src="../img/mti/reg_BTN.png" border="0" /></a></div>
+<div style="margin-right: 13px; text-align:right;"></div>
+
+            </div>
+        </div>
+         
+         
+        <div class="mtiosots"><span id="ctl00_lbOsots" class="mtiosotsheadtext">Közlemények</span></div>
+        <div class="mtiannouncement"></div>
+        
+<link href="../../css/StyleSheet.css" rel="stylesheet" type="text/css" />
+<div class="mtiosotsbox">
+    <div class="mtilogobox"><a id="ctl00_ctrlOSOTS_hlMTIOS" class="mtilogoboxlink" href="http://os.mti.hu/" target="_blank"><img src="../img/mti/os_logo.jpg" /></a></div>
+    <div class="mtilinkbox"><a id="ctl00_ctrlOSOTS_hlMTIOSTitle" class="mtiosotslink" href="http://os.mti.hu/hirek/166894/a_fidesz_europai_parlamenti_kepviselocsoportjanak_kozlemenye" target="_blank">A Fidesz európai parlamenti képviselőcsoportjának közleménye</a></div>
+    <div class="mtilinkbox"><span id="ctl00_ctrlOSOTS_lbLeadOS" class="mtileadtext">Budapest, 2022. január 18., kedd (OS) - Járóka Lívia visszalép az alelnökjelöltségtől az Európai Konzervatívok és Ref...</span></div>
+    <div class="mtilinkbox"><span id="ctl00_ctrlOSOTS_lbDateOS" class="mtidatetext">2022. január 18. 17:22</span></div>
+    <div class="mtinextbox"><a id="ctl00_ctrlOSOTS_hlNextLinkOS" class="mtinextlink" href="http://os.mti.hu/" target="_blank">további közlemények...</a></div>
+</div>
+<div class="mtiosotssep"></div>
+<div class="mtiosotsbox">
+    <div class="mtilogobox"><a id="ctl00_ctrlOSOTS_hlMTIKMS" class="mtilogoboxlink" href="http://kms.mtva.hu/" target="_blank"><img src="../img/mti/kmslogo-mti.jpg" /></a></div>
+    <div class="mtilinkbox"><a id="ctl00_ctrlOSOTS_hlMTIKMSTitle" class="mtiosotslink" href="http://kms.mtva.hu/hir/5319/buntetesek_helyett_tajekoztatast_es_emberi_eljarast" target="_blank">Büntetések helyett tájékoztatást és emberi eljárást!</a></div>
+    <div class="mtilinkbox"><span id="ctl00_ctrlOSOTS_lbLeadKMS" class="mtileadtext">Az Erdélyi Magyar
+Néppárt Országos Elnöksége az alábbi közleményt bocsátotta ki a román hatóságok
+büntetőhadjárat...</span></div>
+    <div class="mtilinkbox"><span id="ctl00_ctrlOSOTS_lbDateKMS" class="mtidatetext">2022. január 15. 11:42</span></div>
+    <div class="mtinextboxmain">
+        <div class="mtinextboxlogo"><a id="ctl00_ctrlOSOTS_hlMTIKMSMTVA" class="mtilogoboxlinkkms" href="http://www.mtva.hu/" target="_blank"><img src="../img/mti/kmsMTVAlogo-mti.jpg" /></a></div>
+        <div class="mtinextboxkms"><a id="ctl00_ctrlOSOTS_hlNextLinkKMS" class="mtinextlink" href="http://kms.mtva.hu/" target="_blank">további közlemények...</a></div>
+    </div>
+</div>
+<div class="mtiosotssep"></div>
+<div class="mtiosotsbox">
+    <div class="mtilogobox"><a id="ctl00_ctrlOSOTS_hlMTIOES" class="mtilogoboxlink" href="http://onkormanyzat.mti.hu/" target="_blank"><img src="../img/mti/o_s_logo.jpg" /></a></div>
+    <div class="mtilinkbox"><a id="ctl00_ctrlOSOTS_hlMTIOESTitle" class="mtiosotslink" href="http://onkormanyzat.mti.hu/hir/49197/ravazd_telepulesi_kornyezetvedelmi_infrastruktura-fejlesztese" target="_blank">Ravazd települési környezetvédelmi infrastruktúra-fejlesztése</a></div>
+    <div class="mtilinkbox"><span id="ctl00_ctrlOSOTS_lbLeadOES" class="mtileadtext">A projekt
+a Széchenyi 2020 program, TOP-2.1.3-16 „Települési környezetvédelmi Infrastruktúrafejlesztések”
+felhívása k...</span></div>
+    <div class="mtilinkbox"><span id="ctl00_ctrlOSOTS_lbDateOES" class="mtidatetext">2022. január 18. 09:20</span></div>
+    <div class="mtinextbox"><a id="ctl00_ctrlOSOTS_hlNextLinkOES" class="mtinextlink" href="http://onkormanyzat.mti.hu/" target="_blank">további közlemények...</a></div>
+</div>
+<div class="mtiosotssep"></div>
+<div class="mtiosotsbox">
+    <div class="mtilogobox"><a id="ctl00_ctrlOSOTS_hlMTIOTS" class="mtilogoboxlink" href="http://ots.mti.hu/" target="_blank"><img src="../img/mti/ots_logo.jpg" /></a></div>
+    <div class="mtilinkbox"><a id="ctl00_ctrlOSOTS_hlMTIOTSTitle" class="mtiosotslink" href="http://ots.mti.hu/hirek/166878/katasztrofavedelmi_eszkozrendszer_fejlesztese" target="_blank">Katasztrófavédelmi eszközrendszer fejlesztése</a></div>
+    <div class="mtilinkbox"><span id="ctl00_ctrlOSOTS_lbLeadOTS" class="mtileadtext">Budapest, 2022. január 18., kedd (OTS) - A GAMMA Műszaki Zártkörű Részvénytársaság a 2021. évben zárult program keret...</span></div>
+    <div class="mtilinkbox"><span id="ctl00_ctrlOSOTS_lbDateOTS" class="mtidatetext">2022. január 18. 10:55</span></div>
+    <div class="mtinextbox"><a id="ctl00_ctrlOSOTS_hlNextLinkOTS" class="mtinextlink" href="http://ots.mti.hu/" target="_blank">további közlemények...</a></div>
+</div>
+
+
+
+
+
+                
+        
+<link href="../../css/StyleSheet.css" rel="stylesheet" type="text/css" />
+<div class="mtiosots"><span id="ctl00_ctrlEuroPhoto1_lbEuroPhoto" class="mtiosotsheadtext">EURO-PHOTO projekt</span></div>
+<div class="mtiannouncement"></div>
+<div class="europhotocenter">
+    <div class="europhotoleft"><img src="../img/mti/euro_photo_logo.jpg" />
+        <div class="europhototext">
+            <div class="europhototextin">Az Európai Bizottság által támogatott projekt<br />célja tíz vezető európai hírügynökség<br />történelmi képeinek digitalizálása.</div>
+            <div class="europhotonextbox"><a id="ctl00_ctrlEuroPhoto1_hlNextLinkEP" class="europhotonextlink" href="http://www.europhoto.eu.com" target="_blank">további részletek...</a></div>
+        </div>
+    </div>
+    <div class="europhotoright"><img src="../img/mti/hortobagy_lomosdatas.jpg" /></div>
+</div>
+        
+<link href="../../css/StyleSheet.css" rel="stylesheet" type="text/css" />
+<div class="hungarymatters"><a id="ctl00_ctrlHungaryMatters1_hlHM" class="hunarymatterslink" href="http://hungarymatters.hu" target="_blank"><img src="../img/mti/mtihu_footer_HM_banner.jpg" alt="Hungary Matters"/></a></div>
+
+        
+<link href="../../css/StyleSheet.css" rel="stylesheet" type="text/css" />
+<div class="mtiempty"></div>
+<div class="mtifoot">
+    <div class="mtifootleft"><span id="ctl00_ctrlFootMTI_lbFootText" title="WEB11BUD" class="mtifootlefttext">Duna Médiaszolgáltató Nonprofit Zrt. &copy; Minden jog fenntartva.</span></div>
+    <div class="mtifootright">
+        <a id="ctl00_ctrlFootMTI_hlNewsAgency" class="mtifootrighttext" href="http://dunamsz.hu/">dunamsz.hu</a>
+        <div class="mtifootsep">|</div>    
+        <a id="ctl00_ctrlFootMTI_hleMMX" class="mtifootrighttext" href="Inform.aspx?ty=full">Szolgáltatási információk</a>
+        <div class="mtifootsep">|</div>
+        <a id="ctl00_ctrlFootMTI_hlContact" class="mtifootrighttext" href="Inform.aspx?ty=cont">Felhasználási feltételek</a>
+        <div class="mtifootsep">|</div>
+        <a id="ctl00_ctrlFootMTI_hlImpress" class="mtifootrighttext" href="Inform.aspx?ty=imp">Impresszum</a>
+    </div>
+</div>
+<div class="mtiempty"></div>
+    </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ctl00_ScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_rvfexName_ClientState","closeImageUrl":"/WebResource.axd?d=OjU1OVjZdwAXgpGXNjFMYMgIR2Wz6ng6kco389xZ4VChDowABSeu0JXbad8eV2T-9I4j8sOuXYJnrzM7TzXr9f7FDmGSH1rWNn86X1s4T84KpJFtBmQ_jKe9eUKcNFMxeCOeMQ2&t=634946106760000000","highlightCssClass":"validator","id":"ctl00_ContentPlaceHolder1_rvfexName","warningIconImageUrl":"/WebResource.axd?d=_j1ZrZNPbckFm1tWQ9tO6EutcgTnv6Gvj83VkFw3m0mHg3EjB3fJpV5E9v4NDnSPX_sjsvs1hRgnbPeNE_7piVusUq1CQu6wrdVbcXGVfUVOCr3rqopLpZ5uKwwDahJIB5d5ZA2&t=634946106760000000"}, null, null, $get("ctl00_ContentPlaceHolder1_rfvName"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.DropShadowBehavior, {"Opacity":0.2,"Radius":4,"Rounded":true,"TrackPosition":true,"id":"ctl00_ContentPlaceHolder1_dseEmail"}, null, null, $get("ctl00_ContentPlaceHolder1_plEmail"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_rvfexEmail_ClientState","closeImageUrl":"/WebResource.axd?d=OjU1OVjZdwAXgpGXNjFMYMgIR2Wz6ng6kco389xZ4VChDowABSeu0JXbad8eV2T-9I4j8sOuXYJnrzM7TzXr9f7FDmGSH1rWNn86X1s4T84KpJFtBmQ_jKe9eUKcNFMxeCOeMQ2&t=634946106760000000","id":"ctl00_ContentPlaceHolder1_rvfexEmail","warningIconImageUrl":"/WebResource.axd?d=_j1ZrZNPbckFm1tWQ9tO6EutcgTnv6Gvj83VkFw3m0mHg3EjB3fJpV5E9v4NDnSPX_sjsvs1hRgnbPeNE_7piVusUq1CQu6wrdVbcXGVfUVOCr3rqopLpZ5uKwwDahJIB5d5ZA2&t=634946106760000000"}, null, null, $get("ctl00_ContentPlaceHolder1_rfvPassword"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.DropShadowBehavior, {"Opacity":0.2,"Radius":4,"Rounded":true,"TrackPosition":true,"id":"ctl00_ContentPlaceHolder1_DropShadowExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_plPassword"));
+});
+//]]>
+</script>
+</form>
+    </center>
+<div id="ctl00_plWebAuditFoot">
+	
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23576616-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<!-- (C)2000-2015 Gemius SA - gemiusAudience / mti_hu / Fooldal -->
+<script type="text/javascript">
+<!--    //--><![CDATA[//><!--
+    var pp_gemius_identifier = 'bJubixiOSJRvP83a5MS1_YYjnFkFW5h1Uu4ZmcfFc7..z7';
+    // lines below shouldn't be edited
+    function gemius_pending(i) { window[i] = window[i] || function() { var x = window[i + '_pdata'] = window[i + '_pdata'] || []; x[x.length] = arguments; }; };
+    gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+    (function(d, t) {
+        try {
+            var gt = d.createElement(t), s = d.getElementsByTagName(t)[0], l = 'http' + ((location.protocol == 'https:') ? 's' : ''); gt.setAttribute('async', 'async');
+            gt.setAttribute('defer', 'defer'); gt.src = l + '://gahu.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt, s);
+        } catch (e) { }
+    })(document, 'script');
+    //--><!]]>
+</script>
+
+</div>
+</body>
+</html>

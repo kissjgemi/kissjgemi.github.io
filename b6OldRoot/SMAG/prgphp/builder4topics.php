@@ -32,6 +32,7 @@ for ($row = 1; $row < 17; $row++)
 		echo "<li>" . $articles [$title][$col] . "</li>";
 		
 			fwrite( $targetfile , '   <a name="' . $jumpToTxt . '">&nbsp;</a>' . "\n");
+			fwrite( $targetfile , '   <div class="article">' . "\n");
 			fwrite( $targetfile , '   	<h3>' . $articles [$title][$col] . '</h3>' . "\n\n");
 
 			$article_path = $prg_dirs["sections"] . $title . '/';
@@ -39,7 +40,8 @@ for ($row = 1; $row < 17; $row++)
 			
 			insert_template ( $article_path , $article_name , $targetfile );
 
-			fwrite( $targetfile , '   <hr /><hr /><br />' . "\n\n");
+			fwrite( $targetfile , '   <hr /><hr />' . "\n\n");
+			fwrite( $targetfile , '   </div>' . "\n");
 		}
 	echo "</ul>";
 	}

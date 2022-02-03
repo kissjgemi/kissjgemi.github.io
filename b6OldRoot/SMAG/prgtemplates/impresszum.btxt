@@ -1,7 +1,8 @@
 
 <a name="s99">&nbsp;</a>
 
-<div id="footer-wrap">	
+<div id="footer-wrap">
+<div class="article">	
 <center>
 <p class="onecolumn">
 	<h2>
@@ -11,13 +12,13 @@
 	&nbsp;<br />
     Scienction MAGazin<br />  
 	</h2>
-    internetes újság<br />
+    tudományosan szórakoztató internetes kiadvány<br />
         2016.01.01.<br />    
 	&nbsp;<br />
 	<img src="aMAGazinImages/stamps/compass.png" width="333px" height="111px">
 	&nbsp;<br />
 	&nbsp;<br />
-Lapigazgatók: Lévai-Kiss Noémi és Ákos E. Kiss <br />         
+Vezérigazgatók: Lévai-Kiss Noémi és Ákos E. Kiss <br />         
         Főszerkesztő: Kiss József Gábor<br />         
         Főszerkesztő-helyettesek: Yin Gu & Yan Gu<br />         
 	&nbsp;<br />
@@ -54,29 +55,19 @@ Lapigazgatók: Lévai-Kiss Noémi és Ákos E. Kiss <br />
 	&nbsp;<br />
 </p>
 </center>
+</div>
+<div class="article">	
 <p class="foot">
 	&nbsp;<br />
-    Terjesztési információk: <br />         
-		A kiadvány a sryer.com internetes címen kizárólag digitális formában 
-		jelenik meg. A magazin egyes fejezetei jellegüktől függően változó 
-		időközökben frissülnek.<br />         
+    Terjesztési információk: <br />
+		A tartalom a mag.b6.hu internetes címen kizárólag digitális formában 
+		jelenik meg. A magazin egyes fejezetei jellegüktől és aktualitásuktól függően változó 
+		időközökben frissülnek.<br />
 	&nbsp;<br />
-	Előfizetési információk:<br />         
-		A kiadvány ingyenes és előfizetéses formában is elérhető. Az ingyenes 
-		újság bármikor hozzáférhető a http://magazin.sryer.com internetes címen. 
-		Az előfizetéses példányok hozzáféréséhez a mindenkori kapcsolattartó 
-		e-mail címre küldünk jelszavas internetes linket.<br />    
-		Az előfizetés díja: 
-		<span style="white-space: nowrap";>50 HUF/hónap (havi előfizetéssel)</span>
-		és 
-		<span style="white-space: nowrap";>500 HUF/év (éves előfizetéssel).</span><br />    
-	&nbsp;<br />
-	Hirdetési információk:<br />         
-		Az oldalainkon a hirdetéseket .gif, .png vagy .jpg formátumú képként 
-		jelentetjük meg. A hirdetés ára a kép méretéből számítható: 
-		<span style="white-space: nowrap";> 1 HUF / 1000 pixel / 1 hét.</span><br />
-	&nbsp;<br />
-    Jogi nyilatkozat:<br />         
+	Előfizetési információk:<br /> 
+		A kiadvány ingyenes és bármikor hozzáférhető a 
+        http://mag.b6.hu internetes címen.<br />
+    Jogi nyilatkozat:<br /> 
 	a./ Szolgáltató törekedik a szolgáltatás folyamatosságának hibamentes fenntartására, 
 	de nem garantálja, hogy a honlap funkcionalitása, 
 	és az általa nyújtott szolgáltatás mentes a hibáktól.<br />
@@ -111,7 +102,14 @@ Lapigazgatók: Lévai-Kiss Noémi és Ákos E. Kiss <br />
 <p class="main">
 <center>
 	Támogatóink:<br />
-	b6.hu - sryer.com - yingu.hu - b6shop.hu - Plastdurker Kft. - OPL-Handels GmbH.<br />
+	<b><i>
+	b6.hu - sryer.com - yingu.hu - b6shop.hu - Plastdurker Kft. - OPL-Handels GmbH.
+	</i></b><br />
+	&nbsp;<br />
+	Az alapítók:<br />
+	<b><i>A finom emberek társasága (Feynman Corporation)</i></b><br />
+	és az <br />
+	<b><i>Egykő-kör (Einstein Circle)</i></b><br />
 	&nbsp;<br />
 	<p align="center">
 	<img border="0" src="dataMti00Main/mti_hirfelhasznalo.jpg" width="200" height="141"></p>           
@@ -121,5 +119,6 @@ Lapigazgatók: Lévai-Kiss Noémi és Ákos E. Kiss <br />
 	&nbsp;<br />
 </center>
 </p>
+</div>
 
 </div>
